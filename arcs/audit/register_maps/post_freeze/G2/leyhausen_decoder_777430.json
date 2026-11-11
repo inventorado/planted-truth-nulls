@@ -1,0 +1,52 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "leyhausen_decoder_777430",
+ "gate": "G2",
+ "url": "https://neurovault.org/images/777430/gene_expression/json?mask=full",
+ "kind": "file",
+ "date_utc": "2026-10-17T17:41:02+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "server": {
+  "status_code": null,
+  "content_length": null,
+  "last_modified": null,
+  "etag_md5": null,
+  "head": "not made (RUN_PLAN_amend_3 R45 (a): one GET)"
+ },
+ "fetch": {
+  "source": "download",
+  "path": "E:/data/asdg/leyhausen_decoder_777430/carrier.json",
+  "date_utc": "2026-10-17T17:41:05+00:00",
+  "bytes": 3199910,
+  "sha256": "e3c217988259026179bf8aac66a79e3d5442a0ff41adc87d664ec874097e9452"
+ },
+ "identity": {
+  "facts": {
+   "bytes": 3199910,
+   "sha256": "e3c217988259026179bf8aac66a79e3d5442a0ff41adc87d664ec874097e9452",
+   "md5": "9236d9453694ebb9870fc876b8fd0f45",
+   "git_blob": "c02c9b5850befe55f96d8d82d5fb33fe5449824b",
+   "has_crlf": false,
+   "git_blob_lf": null,
+   "bytes_lf": null
+  },
+  "references": [],
+  "comparison": {
+   "result": "identity recorded at download (no pre-freeze identity)",
+   "checks": []
+  }
+ },
+ "identifier_bearing": false,
+ "extraction": {
+  "object_path": "D:/RESEARCH/asd-imaging-genetics/artifacts/audit/wp4/G2/leyhausen_decoder_777430/leyhausen_decoder_777430_extract.json",
+  "object_sha256": "0b8c3625737501e77e68012101b505df7fe3e5a81a1cb3f0f405ac360b328373"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "extracted"
+}

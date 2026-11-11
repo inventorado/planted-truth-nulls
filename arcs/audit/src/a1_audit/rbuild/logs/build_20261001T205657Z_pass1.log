@@ -1,0 +1,1327 @@
+# A1 rbuild: docker build --progress=plain -t a1-audit-r:wp2-r4.4.3 --build-arg BASE=rocker/r-ver:4.4.3@sha256:3dae5d2eeddf74f10e0a81fb6b7ae350295e288000304f438b844b2c1e00fe2c --build-arg CRAN_SNAPSHOT=https://p3m.dev/cran/__linux__/noble/2025-04-10 --build-arg BIOC_VERSION=3.20 D:\RESEARCH\asd-imaging-genetics\arcs\audit\src\a1_audit\rbuild
+# started 2026-10-01T20:56:58Z
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile:
+#1 transferring dockerfile: 2.57kB 0.0s done
+#1 DONE 0.2s
+
+#2 [internal] load metadata for docker.io/rocker/r-ver:4.4.3@sha256:3dae5d2eeddf74f10e0a81fb6b7ae350295e288000304f438b844b2c1e00fe2c
+#2 DONE 1.2s
+
+#3 [internal] load .dockerignore
+#3 transferring context:
+#3 transferring context: 81B done
+#3 DONE 0.2s
+
+#4 [internal] load build context
+#4 DONE 0.0s
+
+#5 [1/7] FROM docker.io/rocker/r-ver:4.4.3@sha256:3dae5d2eeddf74f10e0a81fb6b7ae350295e288000304f438b844b2c1e00fe2c
+#5 resolve docker.io/rocker/r-ver:4.4.3@sha256:3dae5d2eeddf74f10e0a81fb6b7ae350295e288000304f438b844b2c1e00fe2c 0.1s done
+#5 ...
+
+#4 [internal] load build context
+#4 transferring context: 3.89kB done
+#4 DONE 0.7s
+
+#5 [1/7] FROM docker.io/rocker/r-ver:4.4.3@sha256:3dae5d2eeddf74f10e0a81fb6b7ae350295e288000304f438b844b2c1e00fe2c
+#5 DONE 1.3s
+
+#6 [2/7] RUN echo "options(repos = c(CRAN = 'https://p3m.dev/cran/__linux__/noble/2025-04-10'), BiocManager.check_repositories = FALSE)"         >> /usr/local/lib/R/etc/Rprofile.site
+#6 DONE 1.2s
+
+#7 [3/7] COPY install_packages.R /opt/a1_rbuild/install_packages.R
+#7 DONE 0.2s
+
+#8 [4/7] RUN Rscript /opt/a1_rbuild/install_packages.R install &&     Rscript /opt/a1_rbuild/install_packages.R record > /opt/a1_rbuild/installed_versions.tsv
+#8 0.570 Installing package into ‘/usr/local/lib/R/site-library’
+#8 0.570 (as ‘lib’ is unspecified)
+#8 2.891 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/BiocManager_1.30.25.tar.gz'
+#8 5.277 Content type 'binary/octet-stream' length 509252 bytes (497 KB)
+#8 5.277 ==================================================
+#8 8.187 downloaded 497 KB
+#8 8.187 
+#8 8.499 * installing *binary* package ‘BiocManager’ ...
+#8 8.513 * DONE (BiocManager)
+#8 8.524 
+#8 8.524 The downloaded source packages are in
+#8 8.524 	‘/tmp/Rtmp31xpZc/downloaded_packages’
+#8 13.52 Bioconductor version 3.20 (BiocManager 1.30.25), R 4.4.3 (2025-02-28)
+#8 13.52 Installing package(s) 'BiocVersion'
+#8 14.05 trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/BiocVersion_3.20.0.tar.gz'
+#8 15.01 Content type 'application/gzip' length 983 bytes
+#8 15.01 ==================================================
+#8 15.01 downloaded 983 bytes
+#8 15.01 
+#8 15.31 * installing *source* package ‘BiocVersion’ ...
+#8 15.31 ** using staged installation
+#8 15.33 ** help
+#8 15.35 *** installing help indices
+#8 15.38 ** building package indices
+#8 16.53 ** testing if installed package can be loaded from temporary location
+#8 16.94 ** testing if installed package can be loaded from final location
+#8 17.25 ** testing if installed package keeps a record of temporary installation path
+#8 17.25 * DONE (BiocVersion)
+#8 17.26 
+#8 17.26 The downloaded source packages are in
+#8 17.26 	‘/tmp/Rtmp31xpZc/downloaded_packages’
+#8 17.97 Bioconductor version 3.20 (BiocManager 1.30.25), R 4.4.3 (2025-02-28)
+#8 17.97 Installing package(s) 'GeneOverlap', 'WGCNA'
+#8 18.56 also installing the dependencies ‘sys’, ‘utf8’, ‘fs’, ‘rappdirs’, ‘askpass’, ‘zlibbioc’, ‘UCSC.utils’, ‘GenomeInfoDbData’, ‘farver’, ‘labeling’, ‘munsell’, ‘R6’, ‘fansi’, ‘pillar’, ‘stringi’, ‘backports’, ‘cachem’, ‘mime’, ‘sass’, ‘bit’, ‘curl’, ‘openssl’, ‘XVector’, ‘GenomeInfoDb’, ‘crayon’, ‘bitops’, ‘cli’, ‘glue’, ‘isoband’, ‘lifecycle’, ‘rlang’, ‘scales’, ‘tibble’, ‘vctrs’, ‘withr’, ‘stringr’, ‘magrittr’, ‘checkmate’, ‘htmlwidgets’, ‘rstudioapi’, ‘viridisLite’, ‘digest’, ‘fastmap’, ‘bslib’, ‘evaluate’, ‘fontawesome’, ‘jquerylib’, ‘jsonlite’, ‘tinytex’, ‘xfun’, ‘yaml’, ‘highr’, ‘bit64’, ‘blob’, ‘memoise’, ‘pkgconfig’, ‘plogr’, ‘cpp11’, ‘httr’, ‘png’, ‘Biostrings’, ‘gtools’, ‘caTools’, ‘ggplot2’, ‘gtable’, ‘gridExtra’, ‘data.table’, ‘htmlTable’, ‘viridis’, ‘htmltools’, ‘base64enc’, ‘colorspace’, ‘rmarkdown’, ‘knitr’, ‘Formula’, ‘iterators’, ‘BiocGenerics’, ‘Biobase’, ‘IRanges’, ‘DBI’, ‘RSQLite’, ‘S4Vectors’, ‘KEGGREST’, ‘RColorBrewer’, ‘gplots’, ‘dynamicTreeCut’, ‘fastcluster’, ‘matrixStats’, ‘Hmisc’, ‘impute’, ‘foreach’, ‘doParallel’, ‘preprocessCore’, ‘GO.db’, ‘AnnotationDbi’, ‘Rcpp’
+#8 18.56 
+#8 18.56 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/sys_3.4.3.tar.gz'
+#8 19.96 Content type 'binary/octet-stream' length 40761 bytes (39 KB)
+#8 19.96 ==================================================
+#8 20.06 downloaded 39 KB
+#8 20.06 
+#8 20.09 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/utf8_1.2.4.tar.gz'
+#8 23.45 Content type 'binary/octet-stream' length 148180 bytes (144 KB)
+#8 23.45 ==================================================
+#8 23.82 downloaded 144 KB
+#8 23.82 
+#8 23.83 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/fs_1.6.5.tar.gz'
+#8 26.39 Content type 'binary/octet-stream' length 309916 bytes (302 KB)
+#8 26.39 ==================================================
+#8 27.69 downloaded 302 KB
+#8 27.69 
+#8 27.70 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/rappdirs_0.3.3.tar.gz'
+#8 29.04 Content type 'binary/octet-stream' length 45226 bytes (44 KB)
+#8 29.04 ==================================================
+#8 29.07 downloaded 44 KB
+#8 29.07 
+#8 29.08 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/askpass_1.2.1.tar.gz'
+#8 32.00 Content type 'binary/octet-stream' length 21919 bytes (21 KB)
+#8 32.00 ==================================================
+#8 32.00 downloaded 21 KB
+#8 32.00 
+#8 32.01 trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/zlibbioc_1.52.0.tar.gz'
+#8 32.96 Content type 'application/gzip' length 384828 bytes (375 KB)
+#8 32.96 ==================================================
+#8 33.17 downloaded 375 KB
+#8 33.17 
+#8 33.19 trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/UCSC.utils_1.2.0.tar.gz'
+#8 34.06 Content type 'application/gzip' length 236888 bytes (231 KB)
+#8 34.06 ==================================================
+#8 34.09 downloaded 231 KB
+#8 34.09 
+#8 34.09 trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/GenomeInfoDbData_1.2.13.tar.gz'
+#8 34.93 Content type 'application/gzip' length 12924272 bytes (12.3 MB)
+#8 35.15 ==================================================
+#8 35.58 downloaded 12.3 MB
+#8 35.58 
+#8 35.59 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/farver_2.1.2.tar.gz'
+#8 36.68 Content type 'binary/octet-stream' length 1466473 bytes (1.4 MB)
+#8 36.68 ==================================================
+#8 39.44 downloaded 1.4 MB
+#8 39.44 
+#8 39.44 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/labeling_0.4.3.tar.gz'
+#8 41.84 Content type 'binary/octet-stream' length 60734 bytes (59 KB)
+#8 41.84 ==================================================
+#8 41.84 downloaded 59 KB
+#8 41.84 
+#8 41.85 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/munsell_0.5.1.tar.gz'
+#8 43.00 Content type 'binary/octet-stream' length 243099 bytes (237 KB)
+#8 43.00 ==================================================
+#8 43.80 downloaded 237 KB
+#8 43.80 
+#8 43.81 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/R6_2.6.1.tar.gz'
+#8 72.71 Content type 'binary/octet-stream' length 86803 bytes (84 KB)
+#8 72.71 ==================================================
+#8 154.2 downloaded 84 KB
+#8 154.2 
+#8 154.2 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/fansi_1.0.6.tar.gz'
+#8 155.4 Content type 'binary/octet-stream' length 317407 bytes (309 KB)
+#8 155.4 ==================================================
+#8 155.7 downloaded 309 KB
+#8 155.7 
+#8 155.7 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/pillar_1.10.2.tar.gz'
+#8 157.4 Content type 'binary/octet-stream' length 658706 bytes (643 KB)
+#8 157.4 ==================================================
+#8 157.7 downloaded 643 KB
+#8 157.7 
+#8 157.7 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/stringi_1.8.7.tar.gz'
+#8 165.8 Content type 'binary/octet-stream' length 3294694 bytes (3.1 MB)
+#8 194.9 ====================================
+#8 457.9 downloaded 2.3 MB
+#8 457.9 
+#8 457.9 Error in download.file(url, destfile, method, mode = "wb", ...) : 
+#8 457.9   download from 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/stringi_1.8.7.tar.gz' failed
+#8 457.9 In addition: Warning messages:
+#8 457.9 1: In download.file(url, destfile, method, mode = "wb", ...) :
+#8 457.9   downloaded length 2388440 != reported length 3294694
+#8 457.9 2: In download.file(url, destfile, method, mode = "wb", ...) :
+#8 457.9   URL 'https://rspm-sync.rstudio.com/bin/4.4-noble/c751327f49e86099cf5f86d8565ac1939a7564a2ab84783bd7ac97298e1435dc.tar.gz': Timeout of 300 seconds was reached
+#8 457.9 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+#8 457.9   download of package ‘stringi’ failed
+#8 457.9 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/backports_1.5.0.tar.gz'
+#8 474.4 Content type 'binary/octet-stream' length 115743 bytes (113 KB)
+#8 474.4 ==================================================
+#8 475.3 downloaded 113 KB
+#8 475.3 
+#8 475.3 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/cachem_1.1.0.tar.gz'
+#8 536.4 Error in download.file(url, destfile, method, mode = "wb", ...) : 
+#8 536.4   cannot open URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/cachem_1.1.0.tar.gz'
+#8 536.4 In addition: Warning message:
+#8 536.4 In download.file(url, destfile, method, mode = "wb", ...) :
+#8 536.4   URL 'https://rspm-sync.rstudio.com/bin/4.4-noble/0ddad89d71caf5897bacb52d1e423bfcfaf3360b9f3e4a19e14af160a35d0f0b.tar.gz': status was 'SSL connect error'
+#8 536.4 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+#8 536.4   download of package ‘cachem’ failed
+#8 536.4 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/mime_0.13.tar.gz'
+#8 537.8 Content type 'binary/octet-stream' length 44564 bytes (43 KB)
+#8 537.8 ==================================================
+#8 537.9 downloaded 43 KB
+#8 537.9 
+#8 537.9 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/sass_0.4.9.tar.gz'
+#8 539.1 Content type 'binary/octet-stream' length 2456243 bytes (2.3 MB)
+#8 539.2 ==================================================
+#8 554.5 downloaded 2.3 MB
+#8 554.5 
+#8 554.6 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/bit_4.6.0.tar.gz'
+#8 555.7 Content type 'binary/octet-stream' length 627056 bytes (612 KB)
+#8 555.7 ==================================================
+#8 555.8 downloaded 612 KB
+#8 555.8 
+#8 555.9 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/curl_6.2.2.tar.gz'
+#8 557.3 Content type 'binary/octet-stream' length 782792 bytes (764 KB)
+#8 557.3 ==================================================
+#8 557.9 downloaded 764 KB
+#8 557.9 
+#8 558.0 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/openssl_2.3.2.tar.gz'
+#8 558.9 Content type 'binary/octet-stream' length 1310209 bytes (1.2 MB)
+#8 558.9 ==================================================
+#8 559.2 downloaded 1.2 MB
+#8 559.2 
+#8 559.2 trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/XVector_0.46.0.tar.gz'
+#8 560.4 Content type 'application/gzip' length 70185 bytes (68 KB)
+#8 560.4 ==================================================
+#8 560.5 downloaded 68 KB
+#8 560.5 
+#8 560.5 trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/GenomeInfoDb_1.42.3.tar.gz'
+#8 561.4 Content type 'application/gzip' length 3592070 bytes (3.4 MB)
+#8 561.4 ==================================================
+#8 561.8 downloaded 3.4 MB
+#8 561.8 
+#8 561.8 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/crayon_1.5.3.tar.gz'
+#8 563.4 Content type 'binary/octet-stream' length 163459 bytes (159 KB)
+#8 563.4 ==================================================
+#8 563.6 downloaded 159 KB
+#8 563.6 
+#8 563.6 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/bitops_1.0-9.tar.gz'
+#8 565.0 Content type 'binary/octet-stream' length 25879 bytes (25 KB)
+#8 565.0 ==================================================
+#8 565.1 downloaded 25 KB
+#8 565.1 
+#8 565.1 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/cli_3.6.4.tar.gz'
+#8 566.2 Content type 'binary/octet-stream' length 1328636 bytes (1.3 MB)
+#8 566.2 ==================================================
+#8 566.6 downloaded 1.3 MB
+#8 566.6 
+#8 566.6 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/glue_1.8.0.tar.gz'
+#8 568.7 Content type 'binary/octet-stream' length 168121 bytes (164 KB)
+#8 568.7 ==================================================
+#8 568.8 downloaded 164 KB
+#8 568.8 
+#8 568.8 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/isoband_0.2.7.tar.gz'
+#8 569.9 Content type 'binary/octet-stream' length 1644325 bytes (1.6 MB)
+#8 569.9 ==================================================
+#8 572.5 downloaded 1.6 MB
+#8 572.5 
+#8 572.5 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/lifecycle_1.0.4.tar.gz'
+#8 576.9 Content type 'binary/octet-stream' length 125006 bytes (122 KB)
+#8 576.9 ==================================================
+#8 577.3 downloaded 122 KB
+#8 577.3 
+#8 577.3 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/rlang_1.1.5.tar.gz'
+#8 578.5 Content type 'binary/octet-stream' length 1595150 bytes (1.5 MB)
+#8 578.5 ==================================================
+#8 578.7 downloaded 1.5 MB
+#8 578.7 
+#8 578.7 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/scales_1.3.0.tar.gz'
+#8 580.1 Content type 'binary/octet-stream' length 710365 bytes (693 KB)
+#8 580.1 ==================================================
+#8 580.2 downloaded 693 KB
+#8 580.2 
+#8 580.2 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/tibble_3.2.1.tar.gz'
+#8 581.4 Content type 'binary/octet-stream' length 678504 bytes (662 KB)
+#8 581.4 ==================================================
+#8 582.2 downloaded 662 KB
+#8 582.2 
+#8 582.2 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/vctrs_0.6.5.tar.gz'
+#8 583.3 Content type 'binary/octet-stream' length 1313013 bytes (1.3 MB)
+#8 583.4 ==================================================
+#8 583.5 downloaded 1.3 MB
+#8 583.5 
+#8 583.5 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/withr_3.0.2.tar.gz'
+#8 587.2 Content type 'binary/octet-stream' length 223887 bytes (218 KB)
+#8 587.2 ==================================================
+#8 588.7 downloaded 218 KB
+#8 588.7 
+#8 588.7 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/stringr_1.5.1.tar.gz'
+#8 589.9 Content type 'binary/octet-stream' length 311167 bytes (303 KB)
+#8 589.9 ==================================================
+#8 590.0 downloaded 303 KB
+#8 590.0 
+#8 590.0 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/magrittr_2.0.3.tar.gz'
+#8 591.2 Content type 'binary/octet-stream' length 223604 bytes (218 KB)
+#8 591.2 ==================================================
+#8 591.3 downloaded 218 KB
+#8 591.3 
+#8 591.3 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/checkmate_2.3.2.tar.gz'
+#8 592.7 Content type 'binary/octet-stream' length 743926 bytes (726 KB)
+#8 592.7 ==================================================
+#8 593.0 downloaded 726 KB
+#8 593.0 
+#8 593.0 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/htmlwidgets_1.6.4.tar.gz'
+#8 594.1 Content type 'binary/octet-stream' length 815181 bytes (796 KB)
+#8 594.1 ==================================================
+#8 594.3 downloaded 796 KB
+#8 594.3 
+#8 594.3 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/rstudioapi_0.17.1.tar.gz'
+#8 595.4 Content type 'binary/octet-stream' length 317693 bytes (310 KB)
+#8 595.4 ==================================================
+#8 595.5 downloaded 310 KB
+#8 595.5 
+#8 595.5 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/viridisLite_0.4.2.tar.gz'
+#8 596.6 Content type 'binary/octet-stream' length 1297555 bytes (1.2 MB)
+#8 596.6 ==================================================
+#8 597.4 downloaded 1.2 MB
+#8 597.4 
+#8 597.4 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/digest_0.6.37.tar.gz'
+#8 598.8 Content type 'binary/octet-stream' length 227129 bytes (221 KB)
+#8 598.8 ==================================================
+#8 598.9 downloaded 221 KB
+#8 598.9 
+#8 598.9 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/fastmap_1.2.0.tar.gz'
+#8 602.3 Content type 'binary/octet-stream' length 66050 bytes (64 KB)
+#8 602.3 ==================================================
+#8 602.4 downloaded 64 KB
+#8 602.4 
+#8 602.4 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/bslib_0.9.0.tar.gz'
+#8 603.8 Content type 'binary/octet-stream' length 5666254 bytes (5.4 MB)
+#8 604.0 ==================================================
+#8 604.2 downloaded 5.4 MB
+#8 604.2 
+#8 604.2 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/evaluate_1.0.3.tar.gz'
+#8 605.4 Content type 'binary/octet-stream' length 101604 bytes (99 KB)
+#8 605.4 ==================================================
+#8 605.5 downloaded 99 KB
+#8 605.5 
+#8 605.5 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/fontawesome_0.5.3.tar.gz'
+#8 606.6 Content type 'binary/octet-stream' length 1396219 bytes (1.3 MB)
+#8 606.6 ==================================================
+#8 623.3 downloaded 1.3 MB
+#8 623.3 
+#8 623.3 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/jquerylib_0.1.4.tar.gz'
+#8 624.4 Content type 'binary/octet-stream' length 526757 bytes (514 KB)
+#8 624.4 ==================================================
+#8 624.9 downloaded 514 KB
+#8 624.9 
+#8 624.9 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/jsonlite_2.0.0.tar.gz'
+#8 641.0 Content type 'binary/octet-stream' length 1090991 bytes (1.0 MB)
+#8 641.0 ==================================================
+#8 642.2 downloaded 1.0 MB
+#8 642.2 
+#8 642.2 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/tinytex_0.56.tar.gz'
+#8 643.3 Content type 'binary/octet-stream' length 143283 bytes (139 KB)
+#8 643.3 ==================================================
+#8 643.4 downloaded 139 KB
+#8 643.4 
+#8 643.4 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/xfun_0.52.tar.gz'
+#8 645.0 Content type 'binary/octet-stream' length 591390 bytes (577 KB)
+#8 645.0 ==================================================
+#8 645.3 downloaded 577 KB
+#8 645.3 
+#8 645.3 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/yaml_2.3.10.tar.gz'
+#8 646.5 Content type 'binary/octet-stream' length 114762 bytes (112 KB)
+#8 646.5 ==================================================
+#8 646.6 downloaded 112 KB
+#8 646.6 
+#8 646.6 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/highr_0.11.tar.gz'
+#8 647.7 Content type 'binary/octet-stream' length 37489 bytes (36 KB)
+#8 647.7 ==================================================
+#8 647.7 downloaded 36 KB
+#8 647.7 
+#8 647.7 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/bit64_4.6.0-1.tar.gz'
+#8 649.7 Error in download.file(url, destfile, method, mode = "wb", ...) : 
+#8 649.7   cannot open URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/bit64_4.6.0-1.tar.gz'
+#8 649.7 In addition: Warning message:
+#8 649.7 In download.file(url, destfile, method, mode = "wb", ...) :
+#8 649.7   URL 'https://rspm-sync.rstudio.com/bin/4.4-noble/51104d03f7576f6ada6fbee2f441f1ae47020f69f6ee0926b2e62f4af2f374c6.tar.gz': status was 'SSL connect error'
+#8 649.7 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+#8 649.7   download of package ‘bit64’ failed
+#8 649.7 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/blob_1.2.4.tar.gz'
+#8 651.7 Content type 'binary/octet-stream' length 47325 bytes (46 KB)
+#8 651.7 ==================================================
+#8 651.7 downloaded 46 KB
+#8 651.7 
+#8 651.7 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/memoise_2.0.1.tar.gz'
+#8 652.9 Content type 'binary/octet-stream' length 48801 bytes (47 KB)
+#8 652.9 ==================================================
+#8 652.9 downloaded 47 KB
+#8 652.9 
+#8 652.9 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/pkgconfig_2.0.3.tar.gz'
+#8 654.0 Content type 'binary/octet-stream' length 18130 bytes (17 KB)
+#8 654.0 ==================================================
+#8 654.0 downloaded 17 KB
+#8 654.0 
+#8 654.0 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/plogr_0.2.0.tar.gz'
+#8 655.4 Content type 'binary/octet-stream' length 13108 bytes (12 KB)
+#8 655.4 ==================================================
+#8 655.4 downloaded 12 KB
+#8 655.4 
+#8 655.4 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/cpp11_0.5.2.tar.gz'
+#8 714.5 Error in download.file(url, destfile, method, mode = "wb", ...) : 
+#8 714.5   cannot open URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/cpp11_0.5.2.tar.gz'
+#8 714.5 In addition: Warning message:
+#8 714.5 In download.file(url, destfile, method, mode = "wb", ...) :
+#8 714.5   URL 'https://rspm-sync.rstudio.com/bin/4.4-noble/f8c28215df6f5fc68d8ff187d1a52bcee567e090005dee158d44a4256399b849.tar.gz': status was 'Failure when receiving data from the peer'
+#8 714.5 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+#8 714.5   download of package ‘cpp11’ failed
+#8 714.5 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/httr_1.4.7.tar.gz'
+#8 715.7 Content type 'binary/octet-stream' length 484006 bytes (472 KB)
+#8 715.7 ==================================================
+#8 722.5 downloaded 472 KB
+#8 722.5 
+#8 722.5 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/png_0.1-8.tar.gz'
+#8 723.9 Content type 'binary/octet-stream' length 40602 bytes (39 KB)
+#8 723.9 ==================================================
+#8 724.1 downloaded 39 KB
+#8 724.1 
+#8 724.1 trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/Biostrings_2.74.1.tar.gz'
+#8 725.5 Content type 'application/gzip' length 12823307 bytes (12.2 MB)
+#8 725.7 ==================================================
+#8 726.4 downloaded 12.2 MB
+#8 726.4 
+#8 726.4 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/gtools_3.9.5.tar.gz'
+#8 727.8 Content type 'binary/octet-stream' length 361204 bytes (352 KB)
+#8 727.8 ==================================================
+#8 728.0 downloaded 352 KB
+#8 728.0 
+#8 728.0 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/caTools_1.18.3.tar.gz'
+#8 729.5 Content type 'binary/octet-stream' length 205153 bytes (200 KB)
+#8 729.5 ==================================================
+#8 729.7 downloaded 200 KB
+#8 729.7 
+#8 729.7 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/ggplot2_3.5.2.tar.gz'
+#8 731.3 Content type 'binary/octet-stream' length 5000959 bytes (4.8 MB)
+#8 731.5 ==================================================
+#8 731.9 downloaded 4.8 MB
+#8 731.9 
+#8 731.9 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/gtable_0.3.6.tar.gz'
+#8 733.2 Content type 'binary/octet-stream' length 222782 bytes (217 KB)
+#8 733.2 ==================================================
+#8 733.4 downloaded 217 KB
+#8 733.4 
+#8 733.4 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/gridExtra_2.3.tar.gz'
+#8 734.8 Content type 'binary/octet-stream' length 1106795 bytes (1.1 MB)
+#8 734.8 ==================================================
+#8 735.5 downloaded 1.1 MB
+#8 735.5 
+#8 735.5 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/data.table_1.17.0.tar.gz'
+#8 736.6 Content type 'binary/octet-stream' length 2695704 bytes (2.6 MB)
+#8 736.7 ==================================================
+#8 736.9 downloaded 2.6 MB
+#8 736.9 
+#8 736.9 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/htmlTable_2.4.3.tar.gz'
+#8 738.4 Content type 'binary/octet-stream' length 417925 bytes (408 KB)
+#8 738.4 ==================================================
+#8 738.5 downloaded 408 KB
+#8 738.5 
+#8 738.5 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/viridis_0.6.5.tar.gz'
+#8 739.9 Content type 'binary/octet-stream' length 3011785 bytes (2.9 MB)
+#8 740.0 ==================================================
+#8 740.1 downloaded 2.9 MB
+#8 740.1 
+#8 740.2 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/htmltools_0.5.8.1.tar.gz'
+#8 741.3 Content type 'binary/octet-stream' length 354538 bytes (346 KB)
+#8 741.3 ==================================================
+#8 741.5 downloaded 346 KB
+#8 741.5 
+#8 741.5 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/base64enc_0.1-3.tar.gz'
+#8 742.7 Content type 'binary/octet-stream' length 26593 bytes (25 KB)
+#8 742.7 ==================================================
+#8 742.7 downloaded 25 KB
+#8 742.7 
+#8 742.7 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/colorspace_2.1-1.tar.gz'
+#8 744.1 Content type 'binary/octet-stream' length 2626614 bytes (2.5 MB)
+#8 744.1 ==================================================
+#8 744.3 downloaded 2.5 MB
+#8 744.3 
+#8 744.4 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/rmarkdown_2.29.tar.gz'
+#8 745.8 Content type 'binary/octet-stream' length 2640883 bytes (2.5 MB)
+#8 745.8 ==================================================
+#8 746.0 downloaded 2.5 MB
+#8 746.0 
+#8 746.0 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/knitr_1.50.tar.gz'
+#8 747.6 Content type 'binary/octet-stream' length 1099561 bytes (1.0 MB)
+#8 747.6 ==================================================
+#8 747.9 downloaded 1.0 MB
+#8 747.9 
+#8 747.9 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/Formula_1.2-5.tar.gz'
+#8 749.0 Content type 'binary/octet-stream' length 159118 bytes (155 KB)
+#8 749.0 ==================================================
+#8 749.1 downloaded 155 KB
+#8 749.1 
+#8 749.1 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/iterators_1.0.14.tar.gz'
+#8 750.3 Content type 'binary/octet-stream' length 346461 bytes (338 KB)
+#8 750.3 ==================================================
+#8 750.6 downloaded 338 KB
+#8 750.6 
+#8 750.7 trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/BiocGenerics_0.52.0.tar.gz'
+#8 751.6 Content type 'application/gzip' length 57066 bytes (55 KB)
+#8 751.6 ==================================================
+#8 751.6 downloaded 55 KB
+#8 751.6 
+#8 751.6 trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/Biobase_2.66.0.tar.gz'
+#8 753.1 Content type 'application/gzip' length 1978998 bytes (1.9 MB)
+#8 753.2 ==================================================
+#8 753.5 downloaded 1.9 MB
+#8 753.5 
+#8 753.5 trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/IRanges_2.40.1.tar.gz'
+#8 754.4 Content type 'application/gzip' length 486989 bytes (475 KB)
+#8 754.4 ==================================================
+#8 754.7 downloaded 475 KB
+#8 754.7 
+#8 754.7 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/DBI_1.2.3.tar.gz'
+#8 756.1 Content type 'binary/octet-stream' length 914707 bytes (893 KB)
+#8 756.2 ==================================================
+#8 756.5 downloaded 893 KB
+#8 756.5 
+#8 756.5 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/RSQLite_2.3.9.tar.gz'
+#8 758.2 Content type 'binary/octet-stream' length 1342920 bytes (1.3 MB)
+#8 758.3 ==================================================
+#8 759.1 downloaded 1.3 MB
+#8 759.1 
+#8 759.1 trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/S4Vectors_0.44.0.tar.gz'
+#8 759.9 Content type 'application/gzip' length 1076666 bytes (1.0 MB)
+#8 759.9 ==================================================
+#8 760.2 downloaded 1.0 MB
+#8 760.2 
+#8 760.2 trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/KEGGREST_1.46.0.tar.gz'
+#8 761.1 Content type 'application/gzip' length 239655 bytes (234 KB)
+#8 761.1 ==================================================
+#8 761.1 downloaded 234 KB
+#8 761.1 
+#8 761.2 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/RColorBrewer_1.1-3.tar.gz'
+#8 762.3 Content type 'binary/octet-stream' length 51824 bytes (50 KB)
+#8 762.3 ==================================================
+#8 762.4 downloaded 50 KB
+#8 762.4 
+#8 762.4 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/gplots_3.2.0.tar.gz'
+#8 764.7 Content type 'binary/octet-stream' length 496973 bytes (485 KB)
+#8 764.7 ==================================================
+#8 765.7 downloaded 485 KB
+#8 765.7 
+#8 765.7 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/dynamicTreeCut_1.63-1.tar.gz'
+#8 767.2 Content type 'binary/octet-stream' length 90086 bytes (87 KB)
+#8 767.2 ==================================================
+#8 767.3 downloaded 87 KB
+#8 767.3 
+#8 767.3 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/fastcluster_1.2.6.tar.gz'
+#8 768.8 Content type 'binary/octet-stream' length 186897 bytes (182 KB)
+#8 768.8 ==================================================
+#8 769.1 downloaded 182 KB
+#8 769.1 
+#8 769.1 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/matrixStats_1.5.0.tar.gz'
+#8 770.5 Content type 'binary/octet-stream' length 475102 bytes (463 KB)
+#8 770.5 ==================================================
+#8 770.7 downloaded 463 KB
+#8 770.7 
+#8 770.7 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/Hmisc_5.2-3.tar.gz'
+#8 772.2 Content type 'binary/octet-stream' length 3624823 bytes (3.5 MB)
+#8 772.4 ==================================================
+#8 777.5 downloaded 3.5 MB
+#8 777.5 
+#8 777.5 trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/impute_1.80.0.tar.gz'
+#8 778.3 Content type 'application/gzip' length 641984 bytes (626 KB)
+#8 778.3 ==================================================
+#8 778.4 downloaded 626 KB
+#8 778.4 
+#8 778.4 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/foreach_1.5.2.tar.gz'
+#8 780.5 Content type 'binary/octet-stream' length 139657 bytes (136 KB)
+#8 780.5 ==================================================
+#8 780.5 downloaded 136 KB
+#8 780.5 
+#8 780.5 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/doParallel_1.0.17.tar.gz'
+#8 782.0 Content type 'binary/octet-stream' length 188121 bytes (183 KB)
+#8 782.0 ==================================================
+#8 782.2 downloaded 183 KB
+#8 782.2 
+#8 782.2 trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/preprocessCore_1.68.0.tar.gz'
+#8 783.3 Content type 'application/gzip' length 127397 bytes (124 KB)
+#8 783.5 ==================================================
+#8 783.6 downloaded 124 KB
+#8 783.6 
+#8 783.6 trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/GO.db_3.20.0.tar.gz'
+#8 784.4 Content type 'application/gzip' length 26341489 bytes (25.1 MB)
+#8 784.7 ==================================================
+#8 785.6 downloaded 25.1 MB
+#8 785.6 
+#8 785.6 trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/AnnotationDbi_1.68.0.tar.gz'
+#8 786.8 Content type 'application/gzip' length 4378038 bytes (4.2 MB)
+#8 786.9 ==================================================
+#8 787.1 downloaded 4.2 MB
+#8 787.1 
+#8 787.1 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/Rcpp_1.0.14.tar.gz'
+#8 788.2 Content type 'binary/octet-stream' length 2175360 bytes (2.1 MB)
+#8 788.2 ==================================================
+#8 788.9 downloaded 2.1 MB
+#8 788.9 
+#8 788.9 trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/GeneOverlap_1.42.0.tar.gz'
+#8 790.0 Content type 'application/gzip' length 370617 bytes (361 KB)
+#8 790.0 ==================================================
+#8 790.0 downloaded 361 KB
+#8 790.0 
+#8 790.0 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/WGCNA_1.73.tar.gz'
+#8 791.5 Content type 'binary/octet-stream' length 1177243 bytes (1.1 MB)
+#8 791.6 ==================================================
+#8 791.9 downloaded 1.1 MB
+#8 791.9 
+#8 792.9 begin installing package ‘utf8’
+#8 792.9 begin installing package ‘sys’
+#8 792.9 begin installing package ‘fs’
+#8 792.9 begin installing package ‘rappdirs’
+#8 794.1 * installing *binary* package ‘sys’ ...
+#8 794.1 * DONE (sys)
+#8 794.1 begin installing package ‘zlibbioc’
+#8 794.1 * installing *binary* package ‘rappdirs’ ...
+#8 794.1 * DONE (rappdirs)
+#8 794.1 begin installing package ‘GenomeInfoDbData’
+#8 794.2 * installing *binary* package ‘utf8’ ...
+#8 794.2 * DONE (utf8)
+#8 794.2 begin installing package ‘farver’
+#8 794.2 * installing *binary* package ‘fs’ ...
+#8 794.2 * DONE (fs)
+#8 794.2 begin installing package ‘labeling’
+#8 794.8 * installing *binary* package ‘labeling’ ...
+#8 794.8 * DONE (labeling)
+#8 794.8 begin installing package ‘R6’
+#8 795.0 * installing *binary* package ‘farver’ ...
+#8 795.0 * DONE (farver)
+#8 795.0 begin installing package ‘fansi’
+#8 795.3 * installing *binary* package ‘R6’ ...
+#8 795.3 * DONE (R6)
+#8 795.3 begin installing package ‘backports’
+#8 795.4 * installing *binary* package ‘fansi’ ...
+#8 795.4 * DONE (fansi)
+#8 795.4 begin installing package ‘mime’
+#8 796.0 * installing *binary* package ‘backports’ ...
+#8 796.0 * DONE (backports)
+#8 796.0 begin installing package ‘bit’
+#8 796.2 * installing *binary* package ‘mime’ ...
+#8 796.2 * DONE (mime)
+#8 796.2 begin installing package ‘curl’
+#8 796.7 * installing *binary* package ‘bit’ ...
+#8 796.7 * DONE (bit)
+#8 796.7 begin installing package ‘crayon’
+#8 797.1 * installing *binary* package ‘curl’ ...
+#8 797.1 * DONE (curl)
+#8 797.1 begin installing package ‘bitops’
+#8 797.4 * installing *binary* package ‘crayon’ ...
+#8 797.4 * DONE (crayon)
+#8 797.4 begin installing package ‘cli’
+#8 797.4 * installing *source* package ‘GenomeInfoDbData’ ...
+#8 797.4 ** using staged installation
+#8 797.4 ** data
+#8 797.4 ** inst
+#8 797.4 ** help
+#8 797.4 *** installing help indices
+#8 797.4 ** building package indices
+#8 797.4 ** testing if installed package can be loaded from temporary location
+#8 797.4 ** testing if installed package can be loaded from final location
+#8 797.4 ** testing if installed package keeps a record of temporary installation path
+#8 797.4 * DONE (GenomeInfoDbData)
+#8 797.4 begin installing package ‘glue’
+#8 797.7 * installing *binary* package ‘bitops’ ...
+#8 797.7 * DONE (bitops)
+#8 797.7 begin installing package ‘isoband’
+#8 797.9 * installing *binary* package ‘glue’ ...
+#8 797.9 * DONE (glue)
+#8 797.9 begin installing package ‘rlang’
+#8 798.0 * installing *source* package ‘zlibbioc’ ...
+#8 798.0 ** package ‘zlibbioc’ successfully unpacked and MD5 sums checked
+#8 798.0 ** using staged installation
+#8 798.0 configure: creating ./config.status
+#8 798.0 config.status: creating src/Makevars
+#8 798.0 ** libs
+#8 798.0 using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0’
+#8 798.0 make[1]: Entering directory '/tmp/RtmpCDhTEH/R.INSTALL14b53ab293c/zlibbioc/src'
+#8 798.0 mkdir -p "/usr/local/lib/R/site-library/00LOCK-zlibbioc/00new/zlibbioc/include"
+#8 798.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_init_zlibbioc.c -o R_init_zlibbioc.o
+#8 798.0 gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o zlibbioc.so R_init_zlibbioc.o -L/usr/local/lib/R/lib -lR
+#8 798.0 make[1]: Leaving directory '/tmp/RtmpCDhTEH/R.INSTALL14b53ab293c/zlibbioc/src'
+#8 798.0 installing to /usr/local/lib/R/site-library/00LOCK-zlibbioc/00new/zlibbioc/libs
+#8 798.0 ** R
+#8 798.0 ** inst
+#8 798.0 ** byte-compile and prepare package for lazy loading
+#8 798.0 ** help
+#8 798.0 *** installing help indices
+#8 798.0 ** building package indices
+#8 798.0 ** installing vignettes
+#8 798.0 ** testing if installed package can be loaded from temporary location
+#8 798.0 Warning in fun(libname, pkgname) :
+#8 798.0   Package 'zlibbioc' is deprecated and will be removed from Bioconductor
+#8 798.0   version 3.22
+#8 798.0 ** checking absolute paths in shared objects and dynamic libraries
+#8 798.0 ** testing if installed package can be loaded from final location
+#8 798.0 Warning in fun(libname, pkgname) :
+#8 798.0   Package 'zlibbioc' is deprecated and will be removed from Bioconductor
+#8 798.0   version 3.22
+#8 798.0 ** testing if installed package keeps a record of temporary installation path
+#8 798.0 * DONE (zlibbioc)
+#8 798.0 begin installing package ‘withr’
+#8 798.1 * installing *binary* package ‘cli’ ...
+#8 798.1 * DONE (cli)
+#8 798.1 begin installing package ‘magrittr’
+#8 798.3 * installing *binary* package ‘isoband’ ...
+#8 798.3 * DONE (isoband)
+#8 798.3 begin installing package ‘rstudioapi’
+#8 798.6 * installing *binary* package ‘rlang’ ...
+#8 798.6 * DONE (rlang)
+#8 798.6 begin installing package ‘viridisLite’
+#8 798.6 * installing *binary* package ‘withr’ ...
+#8 798.6 * DONE (withr)
+#8 798.6 begin installing package ‘digest’
+#8 798.7 * installing *binary* package ‘magrittr’ ...
+#8 798.7 * DONE (magrittr)
+#8 798.7 begin installing package ‘fastmap’
+#8 798.8 * installing *binary* package ‘rstudioapi’ ...
+#8 798.8 * DONE (rstudioapi)
+#8 798.8 begin installing package ‘evaluate’
+#8 799.1 * installing *binary* package ‘fastmap’ ...
+#8 799.1 * DONE (fastmap)
+#8 799.1 begin installing package ‘jsonlite’
+#8 799.1 * installing *binary* package ‘viridisLite’ ...
+#8 799.1 * DONE (viridisLite)
+#8 799.1 begin installing package ‘xfun’
+#8 799.1 * installing *binary* package ‘digest’ ...
+#8 799.1 * DONE (digest)
+#8 799.1 begin installing package ‘yaml’
+#8 799.2 * installing *binary* package ‘evaluate’ ...
+#8 799.2 * DONE (evaluate)
+#8 799.2 begin installing package ‘pkgconfig’
+#8 799.7 * installing *binary* package ‘xfun’ ...
+#8 799.7 * DONE (xfun)
+#8 799.7 begin installing package ‘plogr’
+#8 799.7 * installing *binary* package ‘yaml’ ...
+#8 799.7 * DONE (yaml)
+#8 799.7 begin installing package ‘png’
+#8 799.7 * installing *binary* package ‘jsonlite’ ...
+#8 799.7 * DONE (jsonlite)
+#8 799.7 begin installing package ‘gtools’
+#8 799.7 * installing *binary* package ‘pkgconfig’ ...
+#8 799.7 * DONE (pkgconfig)
+#8 799.7 begin installing package ‘data.table’
+#8 800.1 * installing *binary* package ‘png’ ...
+#8 800.1 * DONE (png)
+#8 800.1 begin installing package ‘base64enc’
+#8 800.1 * installing *binary* package ‘plogr’ ...
+#8 800.1 * DONE (plogr)
+#8 800.1 begin installing package ‘colorspace’
+#8 800.1 * installing *binary* package ‘gtools’ ...
+#8 800.1 * DONE (gtools)
+#8 800.1 begin installing package ‘Formula’
+#8 800.5 * installing *binary* package ‘base64enc’ ...
+#8 800.5 * DONE (base64enc)
+#8 800.5 begin installing package ‘iterators’
+#8 800.6 * installing *binary* package ‘Formula’ ...
+#8 800.6 * DONE (Formula)
+#8 800.6 begin installing package ‘BiocGenerics’
+#8 800.7 * installing *binary* package ‘data.table’ ...
+#8 800.7 * DONE (data.table)
+#8 800.7 begin installing package ‘DBI’
+#8 801.1 * installing *binary* package ‘iterators’ ...
+#8 801.1 * DONE (iterators)
+#8 801.1 begin installing package ‘RColorBrewer’
+#8 801.2 * installing *binary* package ‘colorspace’ ...
+#8 801.2 * DONE (colorspace)
+#8 801.2 begin installing package ‘dynamicTreeCut’
+#8 801.3 * installing *binary* package ‘DBI’ ...
+#8 801.3 * DONE (DBI)
+#8 801.3 begin installing package ‘fastcluster’
+#8 801.6 * installing *binary* package ‘RColorBrewer’ ...
+#8 801.6 * DONE (RColorBrewer)
+#8 801.6 begin installing package ‘matrixStats’
+#8 801.6 * installing *binary* package ‘dynamicTreeCut’ ...
+#8 801.6 * DONE (dynamicTreeCut)
+#8 801.6 begin installing package ‘impute’
+#8 801.8 * installing *binary* package ‘fastcluster’ ...
+#8 801.8 * DONE (fastcluster)
+#8 801.8 begin installing package ‘preprocessCore’
+#8 802.3 * installing *binary* package ‘matrixStats’ ...
+#8 802.3 * DONE (matrixStats)
+#8 802.3 begin installing package ‘Rcpp’
+#8 805.7 * installing *source* package ‘impute’ ...
+#8 805.7 ** package ‘impute’ successfully unpacked and MD5 sums checked
+#8 805.7 ** using staged installation
+#8 805.7 ** libs
+#8 805.7 using Fortran compiler: ‘GNU Fortran (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0’
+#8 805.7 make[1]: Entering directory '/tmp/RtmppMj4VP/R.INSTALL635c436e7f/impute/src'
+#8 805.7 gfortran  -fpic  -g -O2  -c knnimpute.f -o knnimpute.o
+#8 805.7 knnimpute.f:99:72:
+#8 805.7 
+#8 805.7    99 | 20                        pos(k1+1) = pos(k1)
+#8 805.7       |                                                                             1
+#8 805.7 Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 20 at (1)
+#8 805.7 knnimpute.f:113:72:
+#8 805.7 
+#8 805.7   113 | 35                        pos(k1+1) = pos(k1)
+#8 805.7       |                                                                             1
+#8 805.7 Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 35 at (1)
+#8 805.7 gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o impute.so knnimpute.o -lgfortran -lm -lquadmath -L/usr/local/lib/R/lib -lR
+#8 805.7 make[1]: Leaving directory '/tmp/RtmppMj4VP/R.INSTALL635c436e7f/impute/src'
+#8 805.7 installing to /usr/local/lib/R/site-library/00LOCK-impute/00new/impute/libs
+#8 805.7 ** R
+#8 805.7 ** data
+#8 805.7 ** byte-compile and prepare package for lazy loading
+#8 805.7 ** help
+#8 805.7 *** installing help indices
+#8 805.7 ** building package indices
+#8 805.7 ** testing if installed package can be loaded from temporary location
+#8 805.7 ** checking absolute paths in shared objects and dynamic libraries
+#8 805.7 ** testing if installed package can be loaded from final location
+#8 805.7 ** testing if installed package keeps a record of temporary installation path
+#8 805.7 * DONE (impute)
+#8 805.7 begin installing package ‘askpass’
+#8 806.2 * installing *binary* package ‘Rcpp’ ...
+#8 806.2 * DONE (Rcpp)
+#8 806.2 begin installing package ‘munsell’
+#8 806.5 * installing *binary* package ‘askpass’ ...
+#8 806.5 * DONE (askpass)
+#8 806.5 begin installing package ‘lifecycle’
+#8 806.9 * installing *binary* package ‘munsell’ ...
+#8 806.9 * DONE (munsell)
+#8 806.9 begin installing package ‘checkmate’
+#8 807.1 * installing *binary* package ‘lifecycle’ ...
+#8 807.1 * DONE (lifecycle)
+#8 807.1 begin installing package ‘tinytex’
+#8 807.5 * installing *binary* package ‘checkmate’ ...
+#8 807.5 * DONE (checkmate)
+#8 807.5 begin installing package ‘highr’
+#8 807.6 * installing *binary* package ‘tinytex’ ...
+#8 807.6 * DONE (tinytex)
+#8 807.6 begin installing package ‘memoise’
+#8 808.0 * installing *binary* package ‘highr’ ...
+#8 808.0 * DONE (highr)
+#8 808.0 begin installing package ‘caTools’
+#8 808.1 * installing *binary* package ‘memoise’ ...
+#8 808.1 * DONE (memoise)
+#8 808.2 begin installing package ‘htmltools’
+#8 808.6 * installing *binary* package ‘caTools’ ...
+#8 808.6 * DONE (caTools)
+#8 808.6 begin installing package ‘foreach’
+#8 808.7 * installing *binary* package ‘htmltools’ ...
+#8 808.7 * DONE (htmltools)
+#8 808.7 begin installing package ‘openssl’
+#8 809.2 * installing *binary* package ‘foreach’ ...
+#8 809.2 * DONE (foreach)
+#8 809.2 begin installing package ‘scales’
+#8 809.5 * installing *binary* package ‘openssl’ ...
+#8 809.5 * DONE (openssl)
+#8 809.5 begin installing package ‘vctrs’
+#8 809.7 * installing *binary* package ‘scales’ ...
+#8 809.7 * DONE (scales)
+#8 809.7 begin installing package ‘fontawesome’
+#8 810.2 * installing *binary* package ‘vctrs’ ...
+#8 810.2 * DONE (vctrs)
+#8 810.2 begin installing package ‘jquerylib’
+#8 810.3 * installing *source* package ‘BiocGenerics’ ...
+#8 810.3 ** package ‘BiocGenerics’ successfully unpacked and MD5 sums checked
+#8 810.3 ** using staged installation
+#8 810.3 ** R
+#8 810.3 ** inst
+#8 810.3 ** byte-compile and prepare package for lazy loading
+#8 810.3 Creating a new generic function for ‘aperm’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘append’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘as.data.frame’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘cbind’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘rbind’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘do.call’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘duplicated’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘anyDuplicated’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘eval’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘pmax’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘pmin’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘pmax.int’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘pmin.int’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘Reduce’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘Filter’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘Find’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘Map’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘Position’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘get’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘mget’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘grep’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘grepl’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘is.unsorted’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘lapply’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘sapply’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘mapply’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘match’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘order’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘paste’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘rank’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘rownames’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘colnames’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘saveRDS’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘union’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘intersect’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘setdiff’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘table’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘tapply’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘unique’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘unsplit’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘var’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘sd’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘which.min’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘which.max’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘IQR’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘mad’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘xtabs’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘basename’ in package ‘BiocGenerics’
+#8 810.3 Creating a new generic function for ‘dirname’ in package ‘BiocGenerics’
+#8 810.3 ** help
+#8 810.3 *** installing help indices
+#8 810.3 ** building package indices
+#8 810.3 ** testing if installed package can be loaded from temporary location
+#8 810.3 ** testing if installed package can be loaded from final location
+#8 810.3 ** testing if installed package keeps a record of temporary installation path
+#8 810.3 * DONE (BiocGenerics)
+#8 810.3 begin installing package ‘gtable’
+#8 810.5 * installing *binary* package ‘fontawesome’ ...
+#8 810.5 * DONE (fontawesome)
+#8 810.5 begin installing package ‘knitr’
+#8 810.9 * installing *binary* package ‘gtable’ ...
+#8 810.9 * DONE (gtable)
+#8 810.9 begin installing package ‘gplots’
+#8 810.9 * installing *binary* package ‘jquerylib’ ...
+#8 810.9 * DONE (jquerylib)
+#8 810.9 begin installing package ‘doParallel’
+#8 811.5 * installing *binary* package ‘knitr’ ...
+#8 811.5 * DONE (knitr)
+#8 811.5 begin installing package ‘pillar’
+#8 811.6 * installing *binary* package ‘gplots’ ...
+#8 811.6 * DONE (gplots)
+#8 811.6 begin installing package ‘stringr’
+#8 811.6 * installing *binary* package ‘doParallel’ ...
+#8 811.6 * DONE (doParallel)
+#8 811.6 begin installing package ‘blob’
+#8 812.0 * installing *binary* package ‘blob’ ...
+#8 812.0 * DONE (blob)
+#8 812.0 begin installing package ‘httr’
+#8 812.0 * installing *binary* package ‘pillar’ ...
+#8 812.0 * DONE (pillar)
+#8 812.0 begin installing package ‘gridExtra’
+#8 812.1 * installing *binary* package ‘stringr’ ...
+#8 812.1 * DONE (stringr)
+#8 812.1 begin installing package ‘GeneOverlap’
+#8 812.4 * installing *binary* package ‘httr’ ...
+#8 812.4 * DONE (httr)
+#8 812.4 begin installing package ‘tibble’
+#8 812.5 * installing *binary* package ‘gridExtra’ ...
+#8 812.5 * DONE (gridExtra)
+#8 812.5 begin installing package ‘RSQLite’
+#8 812.9 * installing *binary* package ‘tibble’ ...
+#8 812.9 * DONE (tibble)
+#8 812.9 begin installing package ‘Biobase’
+#8 813.0 * installing *binary* package ‘RSQLite’ ...
+#8 813.0 * DONE (RSQLite)
+#8 813.0 begin installing package ‘S4Vectors’
+#8 817.8 * installing *source* package ‘GeneOverlap’ ...
+#8 817.8 ** package ‘GeneOverlap’ successfully unpacked and MD5 sums checked
+#8 817.8 ** using staged installation
+#8 817.8 ** R
+#8 817.8 ** data
+#8 817.8 ** inst
+#8 817.8 ** byte-compile and prepare package for lazy loading
+#8 817.8 ** help
+#8 817.8 *** installing help indices
+#8 817.8 ** building package indices
+#8 817.8 ** installing vignettes
+#8 817.8 ** testing if installed package can be loaded from temporary location
+#8 817.8 ** testing if installed package can be loaded from final location
+#8 817.8 ** testing if installed package keeps a record of temporary installation path
+#8 817.8 * DONE (GeneOverlap)
+#8 817.8 begin installing package ‘sass’
+#8 818.7 * installing *binary* package ‘sass’ ...
+#8 818.7 * DONE (sass)
+#8 818.7 begin installing package ‘ggplot2’
+#8 819.6 * installing *binary* package ‘ggplot2’ ...
+#8 819.6 * DONE (ggplot2)
+#8 819.6 begin installing package ‘bslib’
+#8 821.0 * installing *source* package ‘preprocessCore’ ...
+#8 821.0 ** package ‘preprocessCore’ successfully unpacked and MD5 sums checked
+#8 821.0 ** using staged installation
+#8 821.0 'config' variable 'CPP' is defunct
+#8 821.0 checking for gcc... gcc
+#8 821.0 checking whether the C compiler works... yes
+#8 821.0 checking for C compiler default output file name... a.out
+#8 821.0 checking for suffix of executables... 
+#8 821.0 checking whether we are cross compiling... no
+#8 821.0 checking for suffix of object files... o
+#8 821.0 checking whether we are using the GNU C compiler... yes
+#8 821.0 checking whether gcc accepts -g... yes
+#8 821.0 checking for gcc option to accept ISO C89... none needed
+#8 821.0 checking how to run the C preprocessor... gcc -E
+#8 821.0 checking for library containing pthread_create... none required
+#8 821.0 checking for grep that handles long lines and -e... /usr/bin/grep
+#8 821.0 checking for egrep... /usr/bin/grep -E
+#8 821.0 checking for ANSI C header files... yes
+#8 821.0 checking for sys/types.h... yes
+#8 821.0 checking for sys/stat.h... yes
+#8 821.0 checking for stdlib.h... yes
+#8 821.0 checking for string.h... yes
+#8 821.0 checking for memory.h... yes
+#8 821.0 checking for strings.h... yes
+#8 821.0 checking for inttypes.h... yes
+#8 821.0 checking for stdint.h... yes
+#8 821.0 checking for unistd.h... yes
+#8 821.0 checking for stdlib.h... (cached) yes
+#8 821.0 checking if PTHREAD_STACK_MIN is defined... yes
+#8 821.0 checking if R is using flexiblas... flexiblas not found. preprocessCore threading will not be disabled
+#8 821.0 configure: Enabling threading for preprocessCore
+#8 821.0 configure: creating ./config.status
+#8 821.0 config.status: creating src/Makevars
+#8 821.0 ** libs
+#8 821.0 using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0’
+#8 821.0 make[1]: Entering directory '/tmp/RtmpjcB1K2/R.INSTALL64b5cfa839c/preprocessCore/src'
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_colSummarize.c -o R_colSummarize.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_plmd_interfaces.c -o R_plmd_interfaces.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_plmr_interfaces.c -o R_plmr_interfaces.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_rlm_interfaces.c -o R_rlm_interfaces.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_subColSummarize.c -o R_subColSummarize.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_subrcModel_interfaces.c -o R_subrcModel_interfaces.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c avg.c -o avg.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c avg_log.c -o avg_log.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c biweight.c -o biweight.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init_package.c -o init_package.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c lm.c -o lm.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c log_avg.c -o log_avg.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c log_median.c -o log_median.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c matrix_functions.c -o matrix_functions.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c median.c -o median.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c median_log.c -o median_log.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c medianpolish.c -o medianpolish.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c plmd.c -o plmd.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c plmr.c -o plmr.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c psi_fns.c -o psi_fns.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c qnorm.c -o qnorm.o
+#8 821.0 qnorm.c: In function ‘qnorm_c_l’:
+#8 821.0 qnorm.c:595:63: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+#8 821.0   595 |          error("ERROR; return code from pthread_join(thread #%d) is %d, exit status for thread was %d\n",
+#8 821.0       |                                                              ~^
+#8 821.0       |                                                               |
+#8 821.0       |                                                               int
+#8 821.0       |                                                              %ld
+#8 821.0   596 |                i, returnCode, *((int *) status));
+#8 821.0       |                ~                                               
+#8 821.0       |                |
+#8 821.0       |                size_t {aka long unsigned int}
+#8 821.0 qnorm.c:616:63: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+#8 821.0   616 |          error("ERROR; return code from pthread_join(thread #%d) is %d, exit status for thread was %d\n",
+#8 821.0       |                                                              ~^
+#8 821.0       |                                                               |
+#8 821.0       |                                                               int
+#8 821.0       |                                                              %ld
+#8 821.0   617 |                i, returnCode, *((int *) status));
+#8 821.0       |                ~                                               
+#8 821.0       |                |
+#8 821.0       |                size_t {aka long unsigned int}
+#8 821.0 qnorm.c: In function ‘qnorm_c_determine_target_l’:
+#8 821.0 qnorm.c:2004:63: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+#8 821.0  2004 |          error("ERROR; return code from pthread_join(thread #%d) is %d, exit status for thread was %d\n",
+#8 821.0       |                                                              ~^
+#8 821.0       |                                                               |
+#8 821.0       |                                                               int
+#8 821.0       |                                                              %ld
+#8 821.0  2005 |                i, returnCode, *((int *) status));
+#8 821.0       |                ~                                               
+#8 821.0       |                |
+#8 821.0       |                size_t {aka long unsigned int}
+#8 821.0 qnorm.c: In function ‘qnorm_c_determine_target_via_subset_l’:
+#8 821.0 qnorm.c:2604:63: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+#8 821.0  2604 |          error("ERROR; return code from pthread_join(thread #%d) is %d, exit status for thread was %d\n",
+#8 821.0       |                                                              ~^
+#8 821.0       |                                                               |
+#8 821.0       |                                                               int
+#8 821.0       |                                                              %ld
+#8 821.0  2605 |                i, returnCode, *((int *) status));
+#8 821.0       |                ~                                               
+#8 821.0       |                |
+#8 821.0       |                size_t {aka long unsigned int}
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rlm.c -o rlm.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rlm_anova.c -o rlm_anova.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rlm_se.c -o rlm_se.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rma_background4.c -o rma_background4.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rma_common.c -o rma_common.o
+#8 821.0 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DUSE_PTHREADS=1 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c weightedkerneldensity.c -o weightedkerneldensity.o
+#8 821.0 gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o preprocessCore.so R_colSummarize.o R_plmd_interfaces.o R_plmr_interfaces.o R_rlm_interfaces.o R_subColSummarize.o R_subrcModel_interfaces.o avg.o avg_log.o biweight.o init_package.o lm.o log_avg.o log_median.o matrix_functions.o median.o median_log.o medianpolish.o plmd.o plmr.o psi_fns.o qnorm.o rlm.o rlm_anova.o rlm_se.o rma_background4.o rma_common.o weightedkerneldensity.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/local/lib/R/lib -lR
+#8 821.0 make[1]: Leaving directory '/tmp/RtmpjcB1K2/R.INSTALL64b5cfa839c/preprocessCore/src'
+#8 821.0 installing to /usr/local/lib/R/site-library/00LOCK-preprocessCore/00new/preprocessCore/libs
+#8 821.0 ** R
+#8 821.0 ** inst
+#8 821.0 ** byte-compile and prepare package for lazy loading
+#8 821.0 ** help
+#8 821.0 *** installing help indices
+#8 821.0 ** building package indices
+#8 821.0 ** testing if installed package can be loaded from temporary location
+#8 821.0 ** checking absolute paths in shared objects and dynamic libraries
+#8 821.0 ** testing if installed package can be loaded from final location
+#8 821.0 ** testing if installed package keeps a record of temporary installation path
+#8 821.0 * DONE (preprocessCore)
+#8 821.0 begin installing package ‘viridis’
+#8 821.7 * installing *binary* package ‘viridis’ ...
+#8 821.7 * DONE (viridis)
+#8 822.2 * installing *binary* package ‘bslib’ ...
+#8 822.2 * DONE (bslib)
+#8 822.2 begin installing package ‘rmarkdown’
+#8 823.3 * installing *binary* package ‘rmarkdown’ ...
+#8 823.3 * DONE (rmarkdown)
+#8 823.3 begin installing package ‘htmlwidgets’
+#8 823.6 * installing *binary* package ‘htmlwidgets’ ...
+#8 823.6 * DONE (htmlwidgets)
+#8 823.6 begin installing package ‘htmlTable’
+#8 824.0 * installing *binary* package ‘htmlTable’ ...
+#8 824.0 * DONE (htmlTable)
+#8 824.0 begin installing package ‘Hmisc’
+#8 824.5 * installing *binary* package ‘Hmisc’ ...
+#8 824.5 * DONE (Hmisc)
+#8 830.1 * installing *source* package ‘Biobase’ ...
+#8 830.1 ** package ‘Biobase’ successfully unpacked and MD5 sums checked
+#8 830.1 ** using staged installation
+#8 830.1 ** libs
+#8 830.1 using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0’
+#8 830.1 make[1]: Entering directory '/tmp/RtmptLndbP/R.INSTALLc447a4c8137/Biobase/src'
+#8 830.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Rinit.c -o Rinit.o
+#8 830.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c anyMissing.c -o anyMissing.o
+#8 830.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c envir.c -o envir.o
+#8 830.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c matchpt.c -o matchpt.o
+#8 830.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rowMedians.c -o rowMedians.o
+#8 830.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sublist_extract.c -o sublist_extract.o
+#8 830.1 gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o Biobase.so Rinit.o anyMissing.o envir.o matchpt.o rowMedians.o sublist_extract.o -L/usr/local/lib/R/lib -lR
+#8 830.1 make[1]: Leaving directory '/tmp/RtmptLndbP/R.INSTALLc447a4c8137/Biobase/src'
+#8 830.1 installing to /usr/local/lib/R/site-library/00LOCK-Biobase/00new/Biobase/libs
+#8 830.1 ** R
+#8 830.1 ** data
+#8 830.1 ** inst
+#8 830.1 ** byte-compile and prepare package for lazy loading
+#8 830.1 ** help
+#8 830.1 *** installing help indices
+#8 830.1 ** building package indices
+#8 830.1 ** installing vignettes
+#8 830.1 ** testing if installed package can be loaded from temporary location
+#8 830.1 ** checking absolute paths in shared objects and dynamic libraries
+#8 830.1 ** testing if installed package can be loaded from final location
+#8 830.1 ** testing if installed package keeps a record of temporary installation path
+#8 830.1 * DONE (Biobase)
+#8 843.7 * installing *source* package ‘S4Vectors’ ...
+#8 843.7 ** package ‘S4Vectors’ successfully unpacked and MD5 sums checked
+#8 843.7 ** using staged installation
+#8 843.7 ** libs
+#8 843.7 using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0’
+#8 843.7 make[1]: Entering directory '/tmp/Rtmplvhovw/R.INSTALLc55194b9c56/S4Vectors/src'
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c AEbufs.c -o AEbufs.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c DataFrame_class.c -o DataFrame_class.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Hits_class.c -o Hits_class.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c LLint_class.c -o LLint_class.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c List_class.c -o List_class.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_init_S4Vectors.c -o R_init_S4Vectors.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Rle_class.c -o Rle_class.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Rle_utils.c -o Rle_utils.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c SEXP_utils.c -o SEXP_utils.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c SimpleList_class.c -o SimpleList_class.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c anyMissing.c -o anyMissing.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c character_utils.c -o character_utils.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c eval_utils.c -o eval_utils.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c hash_utils.c -o hash_utils.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c integer_utils.c -o integer_utils.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c logical_utils.c -o logical_utils.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c map_ranges_to_runs.c -o map_ranges_to_runs.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c raw_utils.c -o raw_utils.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c safe_arithm.c -o safe_arithm.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sort_utils.c -o sort_utils.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c subsetting_utils.c -o subsetting_utils.o
+#8 843.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c vector_utils.c -o vector_utils.o
+#8 843.7 gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o S4Vectors.so AEbufs.o DataFrame_class.o Hits_class.o LLint_class.o List_class.o R_init_S4Vectors.o Rle_class.o Rle_utils.o SEXP_utils.o SimpleList_class.o anyMissing.o character_utils.o eval_utils.o hash_utils.o integer_utils.o logical_utils.o map_ranges_to_runs.o raw_utils.o safe_arithm.o sort_utils.o subsetting_utils.o vector_utils.o -L/usr/local/lib/R/lib -lR
+#8 843.7 make[1]: Leaving directory '/tmp/Rtmplvhovw/R.INSTALLc55194b9c56/S4Vectors/src'
+#8 843.7 installing to /usr/local/lib/R/site-library/00LOCK-S4Vectors/00new/S4Vectors/libs
+#8 843.7 ** R
+#8 843.7 ** inst
+#8 843.7 ** byte-compile and prepare package for lazy loading
+#8 843.7 in method for ‘normalizeSingleBracketReplacementValue’ with signature ‘"List"’: no definition for class “List”
+#8 843.7 Creating a new generic function for ‘unname’ in package ‘S4Vectors’
+#8 843.7 Creating a new generic function for ‘expand.grid’ in package ‘S4Vectors’
+#8 843.7 Creating a new generic function for ‘findMatches’ in package ‘S4Vectors’
+#8 843.7 Creating a generic function for ‘setequal’ from package ‘base’ in package ‘S4Vectors’
+#8 843.7 in method for ‘coerce’ with signature ‘"Hits","DFrame"’: no definition for class “DFrame”
+#8 843.7 Creating a generic function for ‘as.factor’ from package ‘base’ in package ‘S4Vectors’
+#8 843.7 Creating a generic function for ‘tabulate’ from package ‘base’ in package ‘S4Vectors’
+#8 843.7 Creating a generic function for ‘cov’ from package ‘stats’ in package ‘S4Vectors’
+#8 843.7 Creating a generic function for ‘cor’ from package ‘stats’ in package ‘S4Vectors’
+#8 843.7 Creating a generic function for ‘smoothEnds’ from package ‘stats’ in package ‘S4Vectors’
+#8 843.7 Creating a generic function for ‘runmed’ from package ‘stats’ in package ‘S4Vectors’
+#8 843.7 Creating a generic function for ‘nchar’ from package ‘base’ in package ‘S4Vectors’
+#8 843.7 Creating a generic function for ‘substr’ from package ‘base’ in package ‘S4Vectors’
+#8 843.7 Creating a generic function for ‘substring’ from package ‘base’ in package ‘S4Vectors’
+#8 843.7 Creating a generic function for ‘chartr’ from package ‘base’ in package ‘S4Vectors’
+#8 843.7 Creating a generic function for ‘tolower’ from package ‘base’ in package ‘S4Vectors’
+#8 843.7 Creating a generic function for ‘toupper’ from package ‘base’ in package ‘S4Vectors’
+#8 843.7 Creating a generic function for ‘sub’ from package ‘base’ in package ‘S4Vectors’
+#8 843.7 Creating a generic function for ‘gsub’ from package ‘base’ in package ‘S4Vectors’
+#8 843.7 Creating a generic function for ‘nlevels’ from package ‘base’ in package ‘S4Vectors’
+#8 843.7 in method for ‘coerce’ with signature ‘"data.table","DFrame"’: no definition for class “data.table”
+#8 843.7 Creating a generic function for ‘complete.cases’ from package ‘stats’ in package ‘S4Vectors’
+#8 843.7 ** help
+#8 843.7 *** installing help indices
+#8 843.7 ** building package indices
+#8 843.7 ** installing vignettes
+#8 843.7 ** testing if installed package can be loaded from temporary location
+#8 843.7 ** checking absolute paths in shared objects and dynamic libraries
+#8 843.7 ** testing if installed package can be loaded from final location
+#8 843.7 ** testing if installed package keeps a record of temporary installation path
+#8 843.7 * DONE (S4Vectors)
+#8 843.7 begin installing package ‘IRanges’
+#8 843.7 begin installing package ‘UCSC.utils’
+#8 847.8 * installing *source* package ‘UCSC.utils’ ...
+#8 847.8 ** package ‘UCSC.utils’ successfully unpacked and MD5 sums checked
+#8 847.8 ** using staged installation
+#8 847.8 ** R
+#8 847.8 ** inst
+#8 847.8 ** byte-compile and prepare package for lazy loading
+#8 847.8 ** help
+#8 847.8 *** installing help indices
+#8 847.8 ** building package indices
+#8 847.8 ** installing vignettes
+#8 847.8 ** testing if installed package can be loaded from temporary location
+#8 847.8 ** testing if installed package can be loaded from final location
+#8 847.8 ** testing if installed package keeps a record of temporary installation path
+#8 847.8 * DONE (UCSC.utils)
+#8 924.1 * installing *source* package ‘IRanges’ ...
+#8 924.1 ** package ‘IRanges’ successfully unpacked and MD5 sums checked
+#8 924.1 ** using staged installation
+#8 924.1 ** libs
+#8 924.1 using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0’
+#8 924.1 make[1]: Entering directory '/tmp/RtmpnHHgl8/R.INSTALLe4b1891df4a/IRanges/src'
+#8 924.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CompressedAtomicList_utils.c -o CompressedAtomicList_utils.o
+#8 924.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CompressedIRangesList_class.c -o CompressedIRangesList_class.o
+#8 924.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CompressedList_class.c -o CompressedList_class.o
+#8 924.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Grouping_class.c -o Grouping_class.o
+#8 924.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c IPosRanges_comparison.c -o IPosRanges_comparison.o
+#8 924.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c IRanges_class.c -o IRanges_class.o
+#8 924.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c IRanges_constructor.c -o IRanges_constructor.o
+#8 924.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c NCList.c -o NCList.o
+#8 924.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_init_IRanges.c -o R_init_IRanges.o
+#8 924.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Ranges_class.c -o Ranges_class.o
+#8 924.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RleViews_utils.c -o RleViews_utils.o
+#8 924.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c S4Vectors_stubs.c -o S4Vectors_stubs.o
+#8 924.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c SimpleIRangesList_class.c -o SimpleIRangesList_class.o
+#8 924.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c coverage_methods.c -o coverage_methods.o
+#8 924.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c extractListFragments.c -o extractListFragments.o
+#8 924.1 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c inter_range_methods.c -o inter_range_methods.o
+#8 924.1 gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o IRanges.so CompressedAtomicList_utils.o CompressedIRangesList_class.o CompressedList_class.o Grouping_class.o IPosRanges_comparison.o IRanges_class.o IRanges_constructor.o NCList.o R_init_IRanges.o Ranges_class.o RleViews_utils.o S4Vectors_stubs.o SimpleIRangesList_class.o coverage_methods.o extractListFragments.o inter_range_methods.o -L/usr/local/lib/R/lib -lR
+#8 924.1 make[1]: Leaving directory '/tmp/RtmpnHHgl8/R.INSTALLe4b1891df4a/IRanges/src'
+#8 924.1 installing to /usr/local/lib/R/site-library/00LOCK-IRanges/00new/IRanges/libs
+#8 924.1 ** R
+#8 924.1 ** inst
+#8 924.1 ** byte-compile and prepare package for lazy loading
+#8 924.1 Creating a generic function for ‘drop’ from package ‘base’ in package ‘IRanges’
+#8 924.1 Creating a generic function for ‘runmed’ from package ‘stats’ in package ‘IRanges’
+#8 924.1 Creating a generic function for ‘chartr’ from package ‘base’ in package ‘IRanges’
+#8 924.1 Creating a generic function for ‘toupper’ from package ‘base’ in package ‘IRanges’
+#8 924.1 Creating a generic function for ‘tolower’ from package ‘base’ in package ‘IRanges’
+#8 924.1 Creating a generic function for ‘sub’ from package ‘base’ in package ‘IRanges’
+#8 924.1 Creating a generic function for ‘gsub’ from package ‘base’ in package ‘IRanges’
+#8 924.1 Creating a generic function for ‘startsWith’ from package ‘base’ in package ‘IRanges’
+#8 924.1 Creating a generic function for ‘endsWith’ from package ‘base’ in package ‘IRanges’
+#8 924.1 Creating a generic function for ‘smoothEnds’ from package ‘stats’ in package ‘IRanges’
+#8 924.1 ** help
+#8 924.1 *** installing help indices
+#8 924.1 ** building package indices
+#8 924.1 ** installing vignettes
+#8 924.1 ** testing if installed package can be loaded from temporary location
+#8 924.1 ** checking absolute paths in shared objects and dynamic libraries
+#8 924.1 ** testing if installed package can be loaded from final location
+#8 924.1 ** testing if installed package keeps a record of temporary installation path
+#8 924.1 * DONE (IRanges)
+#8 924.1 begin installing package ‘XVector’
+#8 924.1 begin installing package ‘GenomeInfoDb’
+#8 928.8 make: *** [Makefile:379: XVector.ts] Error 1
+#8 944.7 * installing *source* package ‘GenomeInfoDb’ ...
+#8 944.7 ** package ‘GenomeInfoDb’ successfully unpacked and MD5 sums checked
+#8 944.7 ** using staged installation
+#8 944.7 ** R
+#8 944.7 ** inst
+#8 944.7 ** byte-compile and prepare package for lazy loading
+#8 944.7 ** help
+#8 944.7 *** installing help indices
+#8 944.7 ** building package indices
+#8 944.7 ** installing vignettes
+#8 944.7 ** testing if installed package can be loaded from temporary location
+#8 944.7 ** testing if installed package can be loaded from final location
+#8 944.7 ** testing if installed package keeps a record of temporary installation path
+#8 944.7 * DONE (GenomeInfoDb)
+#8 944.7 make: Target 'all' not remade because of errors.
+#8 944.7 * installing *source* package ‘XVector’ ...
+#8 944.7 ** package ‘XVector’ successfully unpacked and MD5 sums checked
+#8 944.7 ** using staged installation
+#8 944.7 ** libs
+#8 944.7 using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0’
+#8 944.7 make[1]: Entering directory '/tmp/RtmpzFHNZK/R.INSTALLf034184f177/XVector/src'
+#8 944.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I'/usr/local/lib/R/site-library/IRanges/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c IRanges_stubs.c -o IRanges_stubs.o
+#8 944.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I'/usr/local/lib/R/site-library/IRanges/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Ocopy_byteblocks.c -o Ocopy_byteblocks.o
+#8 944.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I'/usr/local/lib/R/site-library/IRanges/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RDS_random_access.c -o RDS_random_access.o
+#8 944.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I'/usr/local/lib/R/site-library/IRanges/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_init_XVector.c -o R_init_XVector.o
+#8 944.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I'/usr/local/lib/R/site-library/IRanges/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c S4Vectors_stubs.c -o S4Vectors_stubs.o
+#8 944.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I'/usr/local/lib/R/site-library/IRanges/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c SharedDouble_class.c -o SharedDouble_class.o
+#8 944.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I'/usr/local/lib/R/site-library/IRanges/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c SharedInteger_class.c -o SharedInteger_class.o
+#8 944.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I'/usr/local/lib/R/site-library/IRanges/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c SharedRaw_class.c -o SharedRaw_class.o
+#8 944.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I'/usr/local/lib/R/site-library/IRanges/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c SharedVector_class.c -o SharedVector_class.o
+#8 944.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I'/usr/local/lib/R/site-library/IRanges/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c XDouble_class.c -o XDouble_class.o
+#8 944.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I'/usr/local/lib/R/site-library/IRanges/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c XInteger_class.c -o XInteger_class.o
+#8 944.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I'/usr/local/lib/R/site-library/IRanges/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c XRawList_comparison.c -o XRawList_comparison.o
+#8 944.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I'/usr/local/lib/R/site-library/IRanges/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c XRaw_class.c -o XRaw_class.o
+#8 944.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I'/usr/local/lib/R/site-library/IRanges/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c XVectorList_class.c -o XVectorList_class.o
+#8 944.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I'/usr/local/lib/R/site-library/IRanges/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c XVector_class.c -o XVector_class.o
+#8 944.7 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/S4Vectors/include' -I'/usr/local/lib/R/site-library/IRanges/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c io_utils.c -o io_utils.o
+#8 944.7 io_utils.c:16:10: fatal error: zlib.h: No such file or directory
+#8 944.7    16 | #include <zlib.h>
+#8 944.7       |          ^~~~~~~~
+#8 944.7 compilation terminated.
+#8 944.7 make[1]: *** [/usr/local/lib/R/etc/Makeconf:195: io_utils.o] Error 1
+#8 944.7 make[1]: Leaving directory '/tmp/RtmpzFHNZK/R.INSTALLf034184f177/XVector/src'
+#8 944.7 ERROR: compilation failed for package ‘XVector’
+#8 944.7 * removing ‘/usr/local/lib/R/site-library/XVector’
+#8 944.7 
+#8 944.7 The downloaded source packages are in
+#8 944.7 	‘/tmp/Rtmp31xpZc/downloaded_packages’
+#8 945.1 Error: package WGCNA does not load
+#8 945.1 In addition: Warning message:
+#8 945.1 In install.packages(...) : installation of 6 packages failed:
+#8 945.1   ‘XVector’, ‘Biostrings’, ‘KEGGREST’, ‘AnnotationDbi’, ‘GO.db’, ‘WGCNA’
+#8 945.1 Execution halted
+#8 ERROR: process "/bin/sh -c Rscript /opt/a1_rbuild/install_packages.R install &&     Rscript /opt/a1_rbuild/install_packages.R record > /opt/a1_rbuild/installed_versions.tsv" did not complete successfully: exit code: 1
+------
+ > [4/7] RUN Rscript /opt/a1_rbuild/install_packages.R install &&     Rscript /opt/a1_rbuild/install_packages.R record > /opt/a1_rbuild/installed_versions.tsv:
+944.7 ERROR: compilation failed for package ‘XVector’
+944.7 * removing ‘/usr/local/lib/R/site-library/XVector’
+944.7 
+944.7 The downloaded source packages are in
+944.7 	‘/tmp/Rtmp31xpZc/downloaded_packages’
+945.1 Error: package WGCNA does not load
+945.1 In addition: Warning message:
+945.1 In install.packages(...) : installation of 6 packages failed:
+945.1   ‘XVector’, ‘Biostrings’, ‘KEGGREST’, ‘AnnotationDbi’, ‘GO.db’, ‘WGCNA’
+945.1 Execution halted
+------
+Dockerfile:29
+--------------------
+  28 |     COPY install_packages.R /opt/a1_rbuild/install_packages.R
+  29 | >>> RUN Rscript /opt/a1_rbuild/install_packages.R install && \
+  30 | >>>     Rscript /opt/a1_rbuild/install_packages.R record > /opt/a1_rbuild/installed_versions.tsv
+  31 |     
+--------------------
+ERROR: failed to solve: process "/bin/sh -c Rscript /opt/a1_rbuild/install_packages.R install &&     Rscript /opt/a1_rbuild/install_packages.R record > /opt/a1_rbuild/installed_versions.tsv" did not complete successfully: exit code: 1
+
+# exit 1 after 952 s; ended 2026-10-01T21:12:49Z

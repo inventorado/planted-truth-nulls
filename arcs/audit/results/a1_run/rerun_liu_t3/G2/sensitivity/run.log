@@ -1,0 +1,8 @@
+[12:51:55] pass sensitivity gate G2 rows 1 K {'site': 10000, 'species': 10000, 'permutation': 10000, 'sets': 10000, 'surr': 10000, 'j1_sets': 1000} g6l exact
+[12:52:04] dispatch: 1 row(s) to compute; written so far {}
+[12:52:04] phase 1: 1 G6l screen(s) (exact mode)
+[12:54:03]   1/1 tasks (119s)
+[12:54:03] phase 2: 1 leg-group task(s), jobs 20
+[13:01:26]   1/1 tasks (443s)
+[13:01:26] row 478 (verdict: set-vs-map) written; peak task memory 321531416 B
+[13:01:26] done: outcomes {'computed': 1}

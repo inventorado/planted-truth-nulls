@@ -1,0 +1,108 @@
+{
+ "set_id": "fuma_brainspan_deg",
+ "status": "not auditable (S undefined)",
+ "definition": "FUMA GENE2FUNC BrainSpan DEG sets (PRE-B01..B14)",
+ "reason": "FUMA does not distribute its BrainSpan DEG gene sets and its version is unstated; a re-derivation needs FUMA's expression filter / normalisation, which the register does not pin. R2 examined (register v6): the sets are FUMA's, not the paper's own, and Pretzsch's article and supplements (read before the register) publish no gene names at all (register_work draft, section 1), so no gated carrier could hold source 1; the conditional form does not apply",
+ "cells_detail": [
+  {
+   "cell": "PRE-B01",
+   "row": 574,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  },
+  {
+   "cell": "PRE-B02",
+   "row": 575,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  },
+  {
+   "cell": "PRE-B03",
+   "row": 576,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  },
+  {
+   "cell": "PRE-B04",
+   "row": 577,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  },
+  {
+   "cell": "PRE-B05",
+   "row": 578,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  },
+  {
+   "cell": "PRE-B06",
+   "row": 579,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  },
+  {
+   "cell": "PRE-B07",
+   "row": 580,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  },
+  {
+   "cell": "PRE-B08",
+   "row": 581,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  },
+  {
+   "cell": "PRE-B09",
+   "row": 582,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  },
+  {
+   "cell": "PRE-B10",
+   "row": 583,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  },
+  {
+   "cell": "PRE-B11",
+   "row": 584,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  },
+  {
+   "cell": "PRE-B12",
+   "row": 585,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  },
+  {
+   "cell": "PRE-B13",
+   "row": 586,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  },
+  {
+   "cell": "PRE-B14",
+   "row": 587,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  }
+ ],
+ "cells": [
+  "PRE-B01",
+  "PRE-B02",
+  "PRE-B03",
+  "PRE-B04",
+  "PRE-B05",
+  "PRE-B06",
+  "PRE-B07",
+  "PRE-B08",
+  "PRE-B09",
+  "PRE-B10",
+  "PRE-B11",
+  "PRE-B12",
+  "PRE-B13",
+  "PRE-B14"
+ ]
+}

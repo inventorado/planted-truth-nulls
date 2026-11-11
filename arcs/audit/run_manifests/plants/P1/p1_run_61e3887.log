@@ -1,0 +1,42 @@
+ok   precheck: a linked worktree (git dir != common dir)
+ok   precheck: HEAD detached
+ok   precheck: HEAD == --commit
+ok   precheck: a1_audit imported from this worktree
+ok   precheck: --out outside the worktree
+ok   precheck: artifacts present (junction)
+ok   G2: L1 pass
+ok   G2: L2 pass
+ok   G2: L3 pass
+ok   G2: L4 pass
+ok   G2: L5 pass
+ok   G2: L6 pass
+ok   G2: L7 pass
+ok   G2: L8 pass
+ok   G2: L9 pass
+ok   G2: L10 pass
+ok   G2: L11 pass
+ok   G2: L12 pass
+ok   G2: L13 pass
+ok   G2: L14 reported 'not exercised (no G1 carrier stage)'
+ok   G2: L15 pass (gates.step3v_open)
+ok   G2: launch passed
+ok   G1: L1 pass
+ok   G1: L2 pass
+ok   G1: L3 pass
+ok   G1: L4 pass
+ok   G1: L5 pass
+ok   G1: L6 pass
+ok   G1: L7 pass
+ok   G1: L8 pass
+ok   G1: L9 pass
+ok   G1: L10 pass
+ok   G1: L11 pass
+ok   G1: L12 pass
+ok   G1: L13 pass
+ok   G1: L14 reported 'not exercised (no G1 carrier stage)'
+ok   G1: L15 pass (gates.g1_open)
+ok   G1: launch passed
+ok   CRLF demo e3_gates_a5.json: raw sha256 3952430cfba2.. vs CRLF pin 6d5533b3.. (CRLF-only check passes: False); LF True; blob True
+ok   CRLF demo e3_catch_curves_a5.json: raw sha256 c9d8d900595a.. vs CRLF pin b9ff7fed.. (CRLF-only check passes: False); LF True; blob True
+ok   CRLF demo e3_gates_a3.json: raw sha256 918606d85d55.. vs CRLF pin 105e81f1.. (CRLF-only check passes: False); LF True; blob True
+p1_worktree: PASSED; record p1_worktree_61e3887.json sha256 3e7f6028453b35eac8f5287e39557005b2e29cf743a6099f433cf9e695cc3cbd

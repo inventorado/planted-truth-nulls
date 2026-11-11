@@ -1,0 +1,477 @@
+{
+ "seconds_per_case": {
+  "P3a": {
+   "V-AAL": 64.1,
+   "V-DK": 54.44,
+   "dk-ctx": 35.82
+  },
+  "P3b": {
+   "V-AAL": 8.49,
+   "V-DK": 17.09,
+   "dk-ctx": 17.16
+  },
+  "P4": {
+   "PLS-enrichment / V-AAL": 15.24,
+   "PLS-enrichment / dk-ctx": 14.34,
+   "decoded-list / MIST64": 26.24,
+   "decoded-list / V-AAL": 15.24,
+   "decoded-list / V-DK": 14.23,
+   "decoded-list / dk-ctx": 13.25,
+   "set-vs-map / V-AAL": 15.24,
+   "set-vs-map / V-DK": 14.23,
+   "set-vs-map / V-DK-subcortex": 3.44,
+   "set-vs-map / dk-ctx": 13.73
+  },
+  "P5": {
+   "V-AAL": 16.75,
+   "V-DK": 14.71,
+   "dk-ctx": 12.76
+  },
+  "P6": {
+   "V-AAL": 38.23,
+   "V-DK": 19.81,
+   "dk-ctx": 17.59
+  },
+  "P7": {
+   "V-AAL": 15.93,
+   "dk-ctx": 14.78
+  },
+  "P8": {
+   "dk-ctx": 26.3
+  },
+  "P11": {
+   "V-AAL": 38.84,
+   "V-DK": 37.07,
+   "dk-ctx": 49.94
+  },
+  "P12": {
+   "PLS1 R2 / V-AAL / fields": 10.75,
+   "PLS1 R2 / V-AAL / two-gene": 9.01,
+   "PLS1 R2 / dk-ctx / fields": 8.79,
+   "PLS1 R2 / dk-ctx / two-gene": 8.33,
+   "PLSRegression component 3 of 3 / dk-ctx / fields": 8.75,
+   "PLSRegression component 3 of 3 / dk-ctx / two-gene": 8.05,
+   "fixed component r / dk-ctx / fields": 8.6,
+   "fixed component r / dk-ctx / two-gene": 8.6,
+   "plsr cumulative R2 (2) / MIST64 / fields": 20.22,
+   "plsr cumulative R2 (2) / MIST64 / two-gene": 20.88
+  },
+  "P22": {
+   "decoded-list / V-AAL": 159.82,
+   "decoded-list / dk-ctx": 135.04,
+   "set-vs-map / V-AAL": 152.11,
+   "set-vs-map / dk-ctx": 138.39
+  },
+  "P24": {
+   "V-AAL / T-brain": 26.83,
+   "V-AAL / T-wmod": 26.83,
+   "V-DK / T-brain": 20.0,
+   "V-DK / T-wmod": 20.0,
+   "dk-ctx / T-brain": 18.83,
+   "dk-ctx / T-wmod": 18.83
+  },
+  "P25": {
+   "V-AAL / (a)(b) T-brain brand-300": 8.94,
+   "V-AAL / (c) between-class": 9.85,
+   "V-DK / (a)(b) T-brain brand-300": 6.38,
+   "V-DK / (c) between-class": 6.48
+  },
+  "P26": {
+   "V-AAL": 43.76,
+   "V-DK": 37.16,
+   "dk-ctx": 21.09
+  }
+ },
+ "n_dev_cases": {
+  "P3a": {
+   "V-AAL": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "V-DK": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "dk-ctx": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   }
+  },
+  "P3b": {
+   "V-AAL": {
+    "n_steady": 1,
+    "n_first": 6,
+    "rule": "steady cases of the cell"
+   },
+   "V-DK": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "dk-ctx": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   }
+  },
+  "P4": {
+   "PLS-enrichment / V-AAL": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "steady cases of the same plant's cells of the same class (same work per case)"
+   },
+   "PLS-enrichment / dk-ctx": {
+    "n_steady": 1,
+    "n_first": 5,
+    "rule": "steady cases of the cell"
+   },
+   "decoded-list / MIST64": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "decoded-list / V-AAL": {
+    "n_steady": 5,
+    "n_first": 1,
+    "rule": "steady cases of the cell"
+   },
+   "decoded-list / V-DK": {
+    "n_steady": 4,
+    "n_first": 2,
+    "rule": "steady cases of the cell"
+   },
+   "decoded-list / dk-ctx": {
+    "n_steady": 3,
+    "n_first": 3,
+    "rule": "steady cases of the cell"
+   },
+   "set-vs-map / V-AAL": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "steady cases of the same plant's cells of the same class (same work per case)"
+   },
+   "set-vs-map / V-DK": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "steady cases of the same plant's cells of the same class (same work per case)"
+   },
+   "set-vs-map / V-DK-subcortex": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "set-vs-map / dk-ctx": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "steady cases of the same plant's cells of the same class (same work per case)"
+   }
+  },
+  "P5": {
+   "V-AAL": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "V-DK": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "dk-ctx": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   }
+  },
+  "P6": {
+   "V-AAL": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "V-DK": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "dk-ctx": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   }
+  },
+  "P7": {
+   "V-AAL": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "dk-ctx": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   }
+  },
+  "P8": {
+   "dk-ctx": {
+    "n_steady": 0,
+    "n_first": 7,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   }
+  },
+  "P11": {
+   "V-AAL": {
+    "n_steady": 0,
+    "n_first": 5,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "V-DK": {
+    "n_steady": 0,
+    "n_first": 5,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "dk-ctx": {
+    "n_steady": 0,
+    "n_first": 5,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   }
+  },
+  "P12": {
+   "PLS1 R2 / V-AAL / fields": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "PLS1 R2 / V-AAL / two-gene": {
+    "n_steady": 0,
+    "n_first": 5,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "PLS1 R2 / dk-ctx / fields": {
+    "n_steady": 3,
+    "n_first": 3,
+    "rule": "steady cases of the cell"
+   },
+   "PLS1 R2 / dk-ctx / two-gene": {
+    "n_steady": 4,
+    "n_first": 1,
+    "rule": "steady cases of the cell"
+   },
+   "PLSRegression component 3 of 3 / dk-ctx / fields": {
+    "n_steady": 4,
+    "n_first": 2,
+    "rule": "steady cases of the cell"
+   },
+   "PLSRegression component 3 of 3 / dk-ctx / two-gene": {
+    "n_steady": 3,
+    "n_first": 2,
+    "rule": "steady cases of the cell"
+   },
+   "fixed component r / dk-ctx / fields": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "steady cases of the same plant's cells of the same class (same work per case)"
+   },
+   "fixed component r / dk-ctx / two-gene": {
+    "n_steady": 0,
+    "n_first": 5,
+    "rule": "steady cases of the same plant's cells of the same class (same work per case)"
+   },
+   "plsr cumulative R2 (2) / MIST64 / fields": {
+    "n_steady": 0,
+    "n_first": 6,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "plsr cumulative R2 (2) / MIST64 / two-gene": {
+    "n_steady": 0,
+    "n_first": 5,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   }
+  },
+  "P22": {
+   "decoded-list / V-AAL": {
+    "n_steady": 0,
+    "n_first": 2,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "decoded-list / dk-ctx": {
+    "n_steady": 0,
+    "n_first": 2,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "set-vs-map / V-AAL": {
+    "n_steady": 0,
+    "n_first": 2,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "set-vs-map / dk-ctx": {
+    "n_steady": 0,
+    "n_first": 2,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   }
+  },
+  "P24": {
+   "V-AAL / T-brain": {
+    "n_steady": 20,
+    "n_first": 0,
+    "rule": "steady cases of the cell"
+   },
+   "V-AAL / T-wmod": {
+    "n_steady": 0,
+    "n_first": 20,
+    "rule": "steady cases of the same plant's cells of the same class (same work per case)"
+   },
+   "V-DK / T-brain": {
+    "n_steady": 20,
+    "n_first": 0,
+    "rule": "steady cases of the cell"
+   },
+   "V-DK / T-wmod": {
+    "n_steady": 0,
+    "n_first": 20,
+    "rule": "steady cases of the same plant's cells of the same class (same work per case)"
+   },
+   "dk-ctx / T-brain": {
+    "n_steady": 20,
+    "n_first": 0,
+    "rule": "steady cases of the cell"
+   },
+   "dk-ctx / T-wmod": {
+    "n_steady": 0,
+    "n_first": 20,
+    "rule": "steady cases of the same plant's cells of the same class (same work per case)"
+   }
+  },
+  "P25": {
+   "V-AAL / (a)(b) T-brain brand-300": {
+    "n_steady": 5,
+    "n_first": 15,
+    "rule": "steady cases of the cell"
+   },
+   "V-AAL / (c) between-class": {
+    "n_steady": 15,
+    "n_first": 5,
+    "rule": "steady cases of the cell"
+   },
+   "V-DK / (a)(b) T-brain brand-300": {
+    "n_steady": 1,
+    "n_first": 19,
+    "rule": "steady cases of the cell"
+   },
+   "V-DK / (c) between-class": {
+    "n_steady": 19,
+    "n_first": 1,
+    "rule": "steady cases of the cell"
+   }
+  },
+  "P26": {
+   "V-AAL": {
+    "n_steady": 0,
+    "n_first": 20,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "V-DK": {
+    "n_steady": 0,
+    "n_first": 20,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   },
+   "dk-ctx": {
+    "n_steady": 0,
+    "n_first": 20,
+    "rule": "first cases (no steady case of this plant x class; includes warm-up)"
+   }
+  }
+ },
+ "warmup_excess_seconds": {
+  "P3b": {
+   "V-AAL": 18.97
+  },
+  "P4": {
+   "PLS-enrichment / V-AAL": 1.5,
+   "PLS-enrichment / dk-ctx": -0.9,
+   "decoded-list / V-AAL": 0.55,
+   "decoded-list / V-DK": -1.59,
+   "decoded-list / dk-ctx": 1.24,
+   "set-vs-map / V-AAL": -1.01,
+   "set-vs-map / V-DK": -2.33,
+   "set-vs-map / dk-ctx": -1.61
+  },
+  "P12": {
+   "PLS1 R2 / dk-ctx / fields": -0.28,
+   "PLS1 R2 / dk-ctx / two-gene": 1.44,
+   "PLSRegression component 3 of 3 / dk-ctx / fields": -0.62,
+   "PLSRegression component 3 of 3 / dk-ctx / two-gene": -0.05,
+   "fixed component r / dk-ctx / fields": 0.62,
+   "fixed component r / dk-ctx / two-gene": 1.18
+  },
+  "P24": {
+   "V-AAL / T-wmod": 89.79,
+   "V-DK / T-wmod": 89.94,
+   "dk-ctx / T-wmod": 79.63
+  },
+  "P25": {
+   "V-AAL / (a)(b) T-brain brand-300": -1.0,
+   "V-AAL / (c) between-class": -0.0,
+   "V-DK / (a)(b) T-brain brand-300": 0.38,
+   "V-DK / (c) between-class": 1.32
+  }
+ },
+ "source": [
+  {
+   "plant": "P3a",
+   "dir": "C:\\Users\\info\\AppData\\Local\\Temp\\claude\\d--RESEARCH-asd-imaging-genetics\\94ea0193-526b-46ff-8cae-49417dd75d62\\scratchpad\\wp2\\dev2"
+  },
+  {
+   "plant": "P3b",
+   "dir": "C:\\Users\\info\\AppData\\Local\\Temp\\claude\\d--RESEARCH-asd-imaging-genetics\\94ea0193-526b-46ff-8cae-49417dd75d62\\scratchpad\\wp2\\dev2"
+  },
+  {
+   "plant": "P4",
+   "dir": "C:\\Users\\info\\AppData\\Local\\Temp\\claude\\d--RESEARCH-asd-imaging-genetics\\94ea0193-526b-46ff-8cae-49417dd75d62\\scratchpad\\wp2\\dev2"
+  },
+  {
+   "plant": "P5",
+   "dir": "C:\\Users\\info\\AppData\\Local\\Temp\\claude\\d--RESEARCH-asd-imaging-genetics\\94ea0193-526b-46ff-8cae-49417dd75d62\\scratchpad\\wp2\\dev2"
+  },
+  {
+   "plant": "P6",
+   "dir": "C:\\Users\\info\\AppData\\Local\\Temp\\claude\\d--RESEARCH-asd-imaging-genetics\\94ea0193-526b-46ff-8cae-49417dd75d62\\scratchpad\\wp2\\dev2"
+  },
+  {
+   "plant": "P7",
+   "dir": "C:\\Users\\info\\AppData\\Local\\Temp\\claude\\d--RESEARCH-asd-imaging-genetics\\94ea0193-526b-46ff-8cae-49417dd75d62\\scratchpad\\wp2\\dev2"
+  },
+  {
+   "plant": "P8",
+   "dir": "C:\\Users\\info\\AppData\\Local\\Temp\\claude\\d--RESEARCH-asd-imaging-genetics\\94ea0193-526b-46ff-8cae-49417dd75d62\\scratchpad\\wp2\\dev2"
+  },
+  {
+   "plant": "P11",
+   "dir": "C:\\Users\\info\\AppData\\Local\\Temp\\claude\\d--RESEARCH-asd-imaging-genetics\\94ea0193-526b-46ff-8cae-49417dd75d62\\scratchpad\\wp2\\dev2"
+  },
+  {
+   "plant": "P12",
+   "dir": "C:\\Users\\info\\AppData\\Local\\Temp\\claude\\d--RESEARCH-asd-imaging-genetics\\94ea0193-526b-46ff-8cae-49417dd75d62\\scratchpad\\wp2\\dev2"
+  },
+  {
+   "plant": "P22",
+   "dir": "C:\\Users\\info\\AppData\\Local\\Temp\\claude\\d--RESEARCH-asd-imaging-genetics\\94ea0193-526b-46ff-8cae-49417dd75d62\\scratchpad\\wp2\\dev2"
+  },
+  {
+   "plant": "P24",
+   "dir": "C:\\Users\\info\\AppData\\Local\\Temp\\claude\\d--RESEARCH-asd-imaging-genetics\\94ea0193-526b-46ff-8cae-49417dd75d62\\scratchpad\\wp2\\dev3"
+  },
+  {
+   "plant": "P25",
+   "dir": "C:\\Users\\info\\AppData\\Local\\Temp\\claude\\d--RESEARCH-asd-imaging-genetics\\94ea0193-526b-46ff-8cae-49417dd75d62\\scratchpad\\wp2\\dev3"
+  },
+  {
+   "plant": "P26",
+   "dir": "C:\\Users\\info\\AppData\\Local\\Temp\\claude\\d--RESEARCH-asd-imaging-genetics\\94ea0193-526b-46ff-8cae-49417dd75d62\\scratchpad\\wp2\\dev3"
+  }
+ ],
+ "rule": "median wall seconds per case of each cell over the steady-state DEV cases (each worker's first case of a (plant, class) left out when later cases exist), under the DEV run's job count"
+}

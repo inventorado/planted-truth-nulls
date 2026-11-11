@@ -1,0 +1,17 @@
+{
+ "set_id": "pgc_asd_magma_common_variant",
+ "status": "not auditable (S undefined)",
+ "definition": "common-variant genes, PGC ASD (5,305 trios) MAGMA",
+ "reason": "register v6.5 (1) (orchestrator under the operator's standing delegation; decided after five review rounds, v6.0 -> v6.4, showed that the text criterion alone could not exclude result lists): source 1 must be corroborated -- Jaccard >= .80 with a pinned external definition of the set (sources 2-3), else a length equal to a printed size; this cell has neither, so no carrier list can be corroborated: not auditable (S undefined: source 1 uncorroborated): no gene list or gene-level threshold is published by the primary source (the set would require running MAGMA on PGC summary statistics with an unstated threshold), so no external definition is pinned, and the paper prints no size (v6-v6.4: S conditional on the supplements, R2)",
+ "cells_detail": [
+  {
+   "cell": "RG-N03",
+   "row": 176,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  }
+ ],
+ "cells": [
+  "RG-N03"
+ ]
+}

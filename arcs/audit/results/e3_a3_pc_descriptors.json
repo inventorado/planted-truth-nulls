@@ -1,0 +1,943 @@
+{
+ "status": "amendment 3 \u00a74 descriptor cells (PC1 / PC2 targets); reported, not gated",
+ "alpha_v": 0.025,
+ "cells": [
+  {
+   "cls": "aal",
+   "target": "pc1",
+   "w": 0.5,
+   "kind": "clus-25",
+   "n": 200,
+   "naive": 0.28,
+   "site": 0.0,
+   "G1": 0.24,
+   "G3m": 0.25,
+   "G6s": 0.035,
+   "G6l": 0.02,
+   "species": 0.01,
+   "verdict": 0.0,
+   "status": {
+    "ok": 196,
+    "uninformative": 4
+   },
+   "step0": {
+    "naive": 0.27,
+    "site": 0.0,
+    "G1": 0.2,
+    "G3m": 0.23,
+    "G6s": 0.03,
+    "G6l": 0.01,
+    "species": 0.0,
+    "verdict": 0.0
+   },
+   "step1": {
+    "naive": 0.29,
+    "site": 0.0,
+    "G1": 0.28,
+    "G3m": 0.27,
+    "G6s": 0.04,
+    "G6l": 0.03,
+    "species": 0.02,
+    "verdict": 0.0
+   }
+  },
+  {
+   "cls": "aal",
+   "target": "pc1",
+   "w": 0.5,
+   "kind": "rand-25",
+   "n": 200,
+   "naive": 0.38,
+   "site": 0.02,
+   "G1": 0.005,
+   "G3m": 0.005,
+   "G6s": 0.015,
+   "G6l": 0.01,
+   "species": 0.005,
+   "verdict": 0.005,
+   "status": {
+    "ok": 200
+   },
+   "step0": {
+    "naive": 0.41,
+    "site": 0.01,
+    "G1": 0.0,
+    "G3m": 0.0,
+    "G6s": 0.02,
+    "G6l": 0.01,
+    "species": 0.0,
+    "verdict": 0.0
+   },
+   "step1": {
+    "naive": 0.35,
+    "site": 0.03,
+    "G1": 0.01,
+    "G3m": 0.01,
+    "G6s": 0.01,
+    "G6l": 0.01,
+    "species": 0.01,
+    "verdict": 0.01
+   }
+  },
+  {
+   "cls": "aal",
+   "target": "pc1",
+   "w": 0.9,
+   "kind": "clus-25",
+   "n": 200,
+   "naive": 0.455,
+   "site": 0.025,
+   "G1": 0.24,
+   "G3m": 0.26,
+   "G6s": 0.015,
+   "G6l": 0.015,
+   "species": 0.005,
+   "verdict": 0.005,
+   "status": {
+    "ok": 197,
+    "uninformative": 3
+   },
+   "step0": {
+    "naive": 0.36,
+    "site": 0.01,
+    "G1": 0.25,
+    "G3m": 0.25,
+    "G6s": 0.01,
+    "G6l": 0.0,
+    "species": 0.0,
+    "verdict": 0.0
+   },
+   "step1": {
+    "naive": 0.55,
+    "site": 0.04,
+    "G1": 0.23,
+    "G3m": 0.27,
+    "G6s": 0.02,
+    "G6l": 0.03,
+    "species": 0.01,
+    "verdict": 0.01
+   }
+  },
+  {
+   "cls": "aal",
+   "target": "pc1",
+   "w": 0.9,
+   "kind": "rand-25",
+   "n": 200,
+   "naive": 0.555,
+   "site": 0.025,
+   "G1": 0.035,
+   "G3m": 0.04,
+   "G6s": 0.03,
+   "G6l": 0.03,
+   "species": 0.01,
+   "verdict": 0.005,
+   "status": {
+    "ok": 200
+   },
+   "step0": {
+    "naive": 0.53,
+    "site": 0.02,
+    "G1": 0.04,
+    "G3m": 0.05,
+    "G6s": 0.02,
+    "G6l": 0.04,
+    "species": 0.01,
+    "verdict": 0.0
+   },
+   "step1": {
+    "naive": 0.58,
+    "site": 0.03,
+    "G1": 0.03,
+    "G3m": 0.03,
+    "G6s": 0.04,
+    "G6l": 0.02,
+    "species": 0.01,
+    "verdict": 0.01
+   }
+  },
+  {
+   "cls": "aal",
+   "target": "pc2",
+   "w": 0.5,
+   "kind": "clus-25",
+   "n": 200,
+   "naive": 0.27,
+   "site": 0.005,
+   "G1": 0.32,
+   "G3m": 0.33,
+   "G6s": 0.01,
+   "G6l": 0.02,
+   "species": 0.0,
+   "verdict": 0.0,
+   "status": {
+    "ok": 199,
+    "uninformative": 1
+   },
+   "step0": {
+    "naive": 0.32,
+    "site": 0.0,
+    "G1": 0.33,
+    "G3m": 0.35,
+    "G6s": 0.0,
+    "G6l": 0.03,
+    "species": 0.0,
+    "verdict": 0.0
+   },
+   "step1": {
+    "naive": 0.22,
+    "site": 0.01,
+    "G1": 0.31,
+    "G3m": 0.31,
+    "G6s": 0.02,
+    "G6l": 0.01,
+    "species": 0.0,
+    "verdict": 0.0
+   }
+  },
+  {
+   "cls": "aal",
+   "target": "pc2",
+   "w": 0.5,
+   "kind": "rand-25",
+   "n": 200,
+   "naive": 0.29,
+   "site": 0.025,
+   "G1": 0.035,
+   "G3m": 0.045,
+   "G6s": 0.05,
+   "G6l": 0.035,
+   "species": 0.015,
+   "verdict": 0.005,
+   "status": {
+    "ok": 200
+   },
+   "step0": {
+    "naive": 0.22,
+    "site": 0.02,
+    "G1": 0.02,
+    "G3m": 0.05,
+    "G6s": 0.05,
+    "G6l": 0.03,
+    "species": 0.01,
+    "verdict": 0.0
+   },
+   "step1": {
+    "naive": 0.36,
+    "site": 0.03,
+    "G1": 0.05,
+    "G3m": 0.04,
+    "G6s": 0.05,
+    "G6l": 0.04,
+    "species": 0.02,
+    "verdict": 0.01
+   }
+  },
+  {
+   "cls": "aal",
+   "target": "pc2",
+   "w": 0.9,
+   "kind": "clus-25",
+   "n": 200,
+   "naive": 0.325,
+   "site": 0.11,
+   "G1": 0.285,
+   "G3m": 0.275,
+   "G6s": 0.03,
+   "G6l": 0.03,
+   "species": 0.0,
+   "verdict": 0.0,
+   "status": {
+    "ok": 200
+   },
+   "step0": {
+    "naive": 0.41,
+    "site": 0.14,
+    "G1": 0.26,
+    "G3m": 0.26,
+    "G6s": 0.04,
+    "G6l": 0.03,
+    "species": 0.0,
+    "verdict": 0.0
+   },
+   "step1": {
+    "naive": 0.24,
+    "site": 0.08,
+    "G1": 0.31,
+    "G3m": 0.29,
+    "G6s": 0.02,
+    "G6l": 0.03,
+    "species": 0.0,
+    "verdict": 0.0
+   }
+  },
+  {
+   "cls": "aal",
+   "target": "pc2",
+   "w": 0.9,
+   "kind": "rand-25",
+   "n": 200,
+   "naive": 0.36,
+   "site": 0.09,
+   "G1": 0.035,
+   "G3m": 0.04,
+   "G6s": 0.04,
+   "G6l": 0.055,
+   "species": 0.01,
+   "verdict": 0.005,
+   "status": {
+    "ok": 200
+   },
+   "step0": {
+    "naive": 0.34,
+    "site": 0.1,
+    "G1": 0.02,
+    "G3m": 0.02,
+    "G6s": 0.04,
+    "G6l": 0.04,
+    "species": 0.01,
+    "verdict": 0.0
+   },
+   "step1": {
+    "naive": 0.38,
+    "site": 0.08,
+    "G1": 0.05,
+    "G3m": 0.06,
+    "G6s": 0.04,
+    "G6l": 0.07,
+    "species": 0.01,
+    "verdict": 0.01
+   }
+  },
+  {
+   "cls": "dk",
+   "target": "pc1",
+   "w": 0.5,
+   "kind": "clus-25",
+   "n": 200,
+   "naive": 0.305,
+   "site": 0.015,
+   "G1": 0.255,
+   "G3m": 0.275,
+   "G6s": 0.025,
+   "G6l": 0.025,
+   "species": 0.0,
+   "verdict": 0.0,
+   "status": {
+    "ok": 198,
+    "uninformative": 2
+   },
+   "step0": {
+    "naive": 0.32,
+    "site": 0.01,
+    "G1": 0.27,
+    "G3m": 0.3,
+    "G6s": 0.01,
+    "G6l": 0.03,
+    "species": 0.0,
+    "verdict": 0.0
+   },
+   "step1": {
+    "naive": 0.29,
+    "site": 0.02,
+    "G1": 0.24,
+    "G3m": 0.25,
+    "G6s": 0.04,
+    "G6l": 0.02,
+    "species": 0.0,
+    "verdict": 0.0
+   }
+  },
+  {
+   "cls": "dk",
+   "target": "pc1",
+   "w": 0.5,
+   "kind": "rand-25",
+   "n": 200,
+   "naive": 0.28,
+   "site": 0.03,
+   "G1": 0.035,
+   "G3m": 0.04,
+   "G6s": 0.03,
+   "G6l": 0.04,
+   "species": 0.02,
+   "verdict": 0.01,
+   "status": {
+    "ok": 200
+   },
+   "step0": {
+    "naive": 0.33,
+    "site": 0.05,
+    "G1": 0.05,
+    "G3m": 0.05,
+    "G6s": 0.04,
+    "G6l": 0.05,
+    "species": 0.03,
+    "verdict": 0.02
+   },
+   "step1": {
+    "naive": 0.23,
+    "site": 0.01,
+    "G1": 0.02,
+    "G3m": 0.03,
+    "G6s": 0.02,
+    "G6l": 0.03,
+    "species": 0.01,
+    "verdict": 0.0
+   }
+  },
+  {
+   "cls": "dk",
+   "target": "pc1",
+   "w": 0.9,
+   "kind": "clus-25",
+   "n": 200,
+   "naive": 0.395,
+   "site": 0.07,
+   "G1": 0.39,
+   "G3m": 0.41,
+   "G6s": 0.03,
+   "G6l": 0.025,
+   "species": 0.005,
+   "verdict": 0.005,
+   "status": {
+    "ok": 200
+   },
+   "step0": {
+    "naive": 0.42,
+    "site": 0.07,
+    "G1": 0.35,
+    "G3m": 0.39,
+    "G6s": 0.02,
+    "G6l": 0.04,
+    "species": 0.01,
+    "verdict": 0.01
+   },
+   "step1": {
+    "naive": 0.37,
+    "site": 0.07,
+    "G1": 0.43,
+    "G3m": 0.43,
+    "G6s": 0.04,
+    "G6l": 0.01,
+    "species": 0.0,
+    "verdict": 0.0
+   }
+  },
+  {
+   "cls": "dk",
+   "target": "pc1",
+   "w": 0.9,
+   "kind": "rand-25",
+   "n": 200,
+   "naive": 0.44,
+   "site": 0.05,
+   "G1": 0.03,
+   "G3m": 0.035,
+   "G6s": 0.025,
+   "G6l": 0.045,
+   "species": 0.01,
+   "verdict": 0.01,
+   "status": {
+    "ok": 200
+   },
+   "step0": {
+    "naive": 0.49,
+    "site": 0.06,
+    "G1": 0.04,
+    "G3m": 0.05,
+    "G6s": 0.04,
+    "G6l": 0.07,
+    "species": 0.02,
+    "verdict": 0.02
+   },
+   "step1": {
+    "naive": 0.39,
+    "site": 0.04,
+    "G1": 0.02,
+    "G3m": 0.02,
+    "G6s": 0.01,
+    "G6l": 0.02,
+    "species": 0.0,
+    "verdict": 0.0
+   }
+  },
+  {
+   "cls": "dk",
+   "target": "pc2",
+   "w": 0.5,
+   "kind": "clus-25",
+   "n": 200,
+   "naive": 0.205,
+   "site": 0.055,
+   "G1": 0.175,
+   "G3m": 0.165,
+   "G6s": 0.02,
+   "G6l": 0.01,
+   "species": 0.0,
+   "verdict": 0.0,
+   "status": {
+    "ok": 183,
+    "uninformative": 17
+   },
+   "step0": {
+    "naive": 0.17,
+    "site": 0.05,
+    "G1": 0.2,
+    "G3m": 0.18,
+    "G6s": 0.04,
+    "G6l": 0.02,
+    "species": 0.0,
+    "verdict": 0.0
+   },
+   "step1": {
+    "naive": 0.24,
+    "site": 0.06,
+    "G1": 0.15,
+    "G3m": 0.15,
+    "G6s": 0.0,
+    "G6l": 0.0,
+    "species": 0.0,
+    "verdict": 0.0
+   }
+  },
+  {
+   "cls": "dk",
+   "target": "pc2",
+   "w": 0.5,
+   "kind": "rand-25",
+   "n": 200,
+   "naive": 0.145,
+   "site": 0.08,
+   "G1": 0.035,
+   "G3m": 0.03,
+   "G6s": 0.045,
+   "G6l": 0.05,
+   "species": 0.01,
+   "verdict": 0.005,
+   "status": {
+    "ok": 200
+   },
+   "step0": {
+    "naive": 0.12,
+    "site": 0.07,
+    "G1": 0.02,
+    "G3m": 0.01,
+    "G6s": 0.06,
+    "G6l": 0.04,
+    "species": 0.01,
+    "verdict": 0.01
+   },
+   "step1": {
+    "naive": 0.17,
+    "site": 0.09,
+    "G1": 0.05,
+    "G3m": 0.05,
+    "G6s": 0.03,
+    "G6l": 0.06,
+    "species": 0.01,
+    "verdict": 0.0
+   }
+  },
+  {
+   "cls": "dk",
+   "target": "pc2",
+   "w": 0.9,
+   "kind": "clus-25",
+   "n": 200,
+   "naive": 0.21,
+   "site": 0.185,
+   "G1": 0.195,
+   "G3m": 0.21,
+   "G6s": 0.01,
+   "G6l": 0.0,
+   "species": 0.0,
+   "verdict": 0.0,
+   "status": {
+    "ok": 120,
+    "uninformative": 80
+   },
+   "step0": {
+    "naive": 0.22,
+    "site": 0.19,
+    "G1": 0.2,
+    "G3m": 0.21,
+    "G6s": 0.02,
+    "G6l": 0.0,
+    "species": 0.0,
+    "verdict": 0.0
+   },
+   "step1": {
+    "naive": 0.2,
+    "site": 0.18,
+    "G1": 0.19,
+    "G3m": 0.21,
+    "G6s": 0.0,
+    "G6l": 0.0,
+    "species": 0.0,
+    "verdict": 0.0
+   }
+  },
+  {
+   "cls": "dk",
+   "target": "pc2",
+   "w": 0.9,
+   "kind": "rand-25",
+   "n": 200,
+   "naive": 0.25,
+   "site": 0.17,
+   "G1": 0.035,
+   "G3m": 0.035,
+   "G6s": 0.04,
+   "G6l": 0.035,
+   "species": 0.005,
+   "verdict": 0.005,
+   "status": {
+    "ok": 161,
+    "uninformative": 39
+   },
+   "step0": {
+    "naive": 0.26,
+    "site": 0.16,
+    "G1": 0.04,
+    "G3m": 0.03,
+    "G6s": 0.05,
+    "G6l": 0.04,
+    "species": 0.01,
+    "verdict": 0.01
+   },
+   "step1": {
+    "naive": 0.24,
+    "site": 0.18,
+    "G1": 0.03,
+    "G3m": 0.04,
+    "G6s": 0.03,
+    "G6l": 0.03,
+    "species": 0.0,
+    "verdict": 0.0
+   }
+  },
+  {
+   "cls": "cc200",
+   "target": "pc1",
+   "w": 0.5,
+   "kind": "clus-25",
+   "n": 200,
+   "naive": 0.36,
+   "site": 0.02,
+   "G1": 0.25,
+   "G3m": 0.255,
+   "G6s": 0.01,
+   "G6l": 0.035,
+   "species": 0.005,
+   "verdict": 0.005,
+   "status": {
+    "ok": 200
+   },
+   "step0": {
+    "naive": 0.4,
+    "site": 0.04,
+    "G1": 0.25,
+    "G3m": 0.26,
+    "G6s": 0.02,
+    "G6l": 0.03,
+    "species": 0.01,
+    "verdict": 0.01
+   },
+   "step1": {
+    "naive": 0.32,
+    "site": 0.0,
+    "G1": 0.25,
+    "G3m": 0.25,
+    "G6s": 0.0,
+    "G6l": 0.04,
+    "species": 0.0,
+    "verdict": 0.0
+   }
+  },
+  {
+   "cls": "cc200",
+   "target": "pc1",
+   "w": 0.5,
+   "kind": "rand-25",
+   "n": 200,
+   "naive": 0.43,
+   "site": 0.02,
+   "G1": 0.03,
+   "G3m": 0.035,
+   "G6s": 0.02,
+   "G6l": 0.02,
+   "species": 0.015,
+   "verdict": 0.005,
+   "status": {
+    "ok": 200
+   },
+   "step0": {
+    "naive": 0.49,
+    "site": 0.01,
+    "G1": 0.04,
+    "G3m": 0.05,
+    "G6s": 0.02,
+    "G6l": 0.02,
+    "species": 0.02,
+    "verdict": 0.01
+   },
+   "step1": {
+    "naive": 0.37,
+    "site": 0.03,
+    "G1": 0.02,
+    "G3m": 0.02,
+    "G6s": 0.02,
+    "G6l": 0.02,
+    "species": 0.01,
+    "verdict": 0.0
+   }
+  },
+  {
+   "cls": "cc200",
+   "target": "pc1",
+   "w": 0.9,
+   "kind": "clus-25",
+   "n": 200,
+   "naive": 0.455,
+   "site": 0.11,
+   "G1": 0.31,
+   "G3m": 0.32,
+   "G6s": 0.025,
+   "G6l": 0.015,
+   "species": 0.005,
+   "verdict": 0.005,
+   "status": {
+    "ok": 200
+   },
+   "step0": {
+    "naive": 0.53,
+    "site": 0.11,
+    "G1": 0.3,
+    "G3m": 0.3,
+    "G6s": 0.04,
+    "G6l": 0.01,
+    "species": 0.01,
+    "verdict": 0.01
+   },
+   "step1": {
+    "naive": 0.38,
+    "site": 0.11,
+    "G1": 0.32,
+    "G3m": 0.34,
+    "G6s": 0.01,
+    "G6l": 0.02,
+    "species": 0.0,
+    "verdict": 0.0
+   }
+  },
+  {
+   "cls": "cc200",
+   "target": "pc1",
+   "w": 0.9,
+   "kind": "rand-25",
+   "n": 200,
+   "naive": 0.59,
+   "site": 0.055,
+   "G1": 0.02,
+   "G3m": 0.025,
+   "G6s": 0.015,
+   "G6l": 0.015,
+   "species": 0.005,
+   "verdict": 0.005,
+   "status": {
+    "ok": 200
+   },
+   "step0": {
+    "naive": 0.63,
+    "site": 0.08,
+    "G1": 0.02,
+    "G3m": 0.02,
+    "G6s": 0.02,
+    "G6l": 0.01,
+    "species": 0.01,
+    "verdict": 0.01
+   },
+   "step1": {
+    "naive": 0.55,
+    "site": 0.03,
+    "G1": 0.02,
+    "G3m": 0.03,
+    "G6s": 0.01,
+    "G6l": 0.02,
+    "species": 0.0,
+    "verdict": 0.0
+   }
+  },
+  {
+   "cls": "cc200",
+   "target": "pc2",
+   "w": 0.5,
+   "kind": "clus-25",
+   "n": 200,
+   "naive": 0.345,
+   "site": 0.13,
+   "G1": 0.27,
+   "G3m": 0.28,
+   "G6s": 0.03,
+   "G6l": 0.035,
+   "species": 0.01,
+   "verdict": 0.005,
+   "status": {
+    "ok": 200
+   },
+   "step0": {
+    "naive": 0.3,
+    "site": 0.13,
+    "G1": 0.26,
+    "G3m": 0.26,
+    "G6s": 0.02,
+    "G6l": 0.01,
+    "species": 0.01,
+    "verdict": 0.01
+   },
+   "step1": {
+    "naive": 0.39,
+    "site": 0.13,
+    "G1": 0.28,
+    "G3m": 0.3,
+    "G6s": 0.04,
+    "G6l": 0.06,
+    "species": 0.01,
+    "verdict": 0.0
+   }
+  },
+  {
+   "cls": "cc200",
+   "target": "pc2",
+   "w": 0.5,
+   "kind": "rand-25",
+   "n": 200,
+   "naive": 0.295,
+   "site": 0.03,
+   "G1": 0.01,
+   "G3m": 0.015,
+   "G6s": 0.025,
+   "G6l": 0.02,
+   "species": 0.005,
+   "verdict": 0.005,
+   "status": {
+    "ok": 200
+   },
+   "step0": {
+    "naive": 0.31,
+    "site": 0.04,
+    "G1": 0.02,
+    "G3m": 0.02,
+    "G6s": 0.01,
+    "G6l": 0.03,
+    "species": 0.01,
+    "verdict": 0.01
+   },
+   "step1": {
+    "naive": 0.28,
+    "site": 0.02,
+    "G1": 0.0,
+    "G3m": 0.01,
+    "G6s": 0.04,
+    "G6l": 0.01,
+    "species": 0.0,
+    "verdict": 0.0
+   }
+  },
+  {
+   "cls": "cc200",
+   "target": "pc2",
+   "w": 0.9,
+   "kind": "clus-25",
+   "n": 200,
+   "naive": 0.42,
+   "site": 0.31,
+   "G1": 0.275,
+   "G3m": 0.27,
+   "G6s": 0.03,
+   "G6l": 0.025,
+   "species": 0.0,
+   "verdict": 0.0,
+   "status": {
+    "ok": 176,
+    "uninformative": 24
+   },
+   "step0": {
+    "naive": 0.4,
+    "site": 0.26,
+    "G1": 0.26,
+    "G3m": 0.26,
+    "G6s": 0.03,
+    "G6l": 0.02,
+    "species": 0.0,
+    "verdict": 0.0
+   },
+   "step1": {
+    "naive": 0.44,
+    "site": 0.36,
+    "G1": 0.29,
+    "G3m": 0.28,
+    "G6s": 0.03,
+    "G6l": 0.03,
+    "species": 0.0,
+    "verdict": 0.0
+   }
+  },
+  {
+   "cls": "cc200",
+   "target": "pc2",
+   "w": 0.9,
+   "kind": "rand-25",
+   "n": 200,
+   "naive": 0.39,
+   "site": 0.225,
+   "G1": 0.02,
+   "G3m": 0.015,
+   "G6s": 0.015,
+   "G6l": 0.01,
+   "species": 0.005,
+   "verdict": 0.005,
+   "status": {
+    "ok": 198,
+    "uninformative": 2
+   },
+   "step0": {
+    "naive": 0.37,
+    "site": 0.22,
+    "G1": 0.04,
+    "G3m": 0.03,
+    "G6s": 0.01,
+    "G6l": 0.02,
+    "species": 0.01,
+    "verdict": 0.01
+   },
+   "step1": {
+    "naive": 0.41,
+    "site": 0.23,
+    "G1": 0.0,
+    "G3m": 0.0,
+    "G6s": 0.02,
+    "G6l": 0.0,
+    "species": 0.0,
+    "verdict": 0.0
+   }
+  }
+ ],
+ "inputs_sha256": {
+  "aal_F-align-pc_pc1_0.5.csv.gz": "87a083468f59dabe3ba300a2a6a9f9baa2305e4c44a3997c3c6681e7ce2785b7",
+  "aal_F-align-pc_pc1_0.9.csv.gz": "4503876516b1b59c3293aef8bb574536ccfa195ab14d37dbbcedc6398c36990f",
+  "aal_F-align-pc_pc2_0.5.csv.gz": "03b4fb4f54cffbf0e4d36503fc82fe8ad827529400eb76f22543c0066392c476",
+  "aal_F-align-pc_pc2_0.9.csv.gz": "bc42e9080c2b50042c80582347949214a1ad5d5a3ae62dae0bd5c256cde5f79b",
+  "dk_F-align-pc_pc1_0.5.csv.gz": "a8c8c67b65dd809e1403999f25ccde30c73cb098851e2c99d8c67b89ba586d29",
+  "dk_F-align-pc_pc1_0.9.csv.gz": "ec6fb554659cef3e659d9173b9992befaea382631b68445505e9a0e2d7f2f359",
+  "dk_F-align-pc_pc2_0.5.csv.gz": "1dbb586ed264411a89248caa328a4bb756a837105c591d74597e655321a4b07a",
+  "dk_F-align-pc_pc2_0.9.csv.gz": "8a50df2d9e7a24f267a51c3e43d10df1f2624eb6661e77b81eeeafed16cd1ec4",
+  "cc200_F-align-pc_pc1_0.5.csv.gz": "7ba93c4c25b4507a6a17b7f1b29d899eeb1fa5827247642daa6a50d0b7651277",
+  "cc200_F-align-pc_pc1_0.9.csv.gz": "eaee98a124e7ca8008c3da237b793d6c81e1271cdf33931d41ded1d9eeca878e",
+  "cc200_F-align-pc_pc2_0.5.csv.gz": "cc67b3641f0fa64060fa7304f8be7a5882b70411ee1706cc6594d761cca766fc",
+  "cc200_F-align-pc_pc2_0.9.csv.gz": "a7a0f8a24d8a958e0210cd9035d554964a9a4095beb3ea3d02a240561e10b916"
+ },
+ "script_sha256": "ef13641b8176a17796ed65d23646469c13d1dc3c0fdbea3609b1240c1f78ee72",
+ "commit": "8b97eb3647a745de568e2ed0fd6016aeaa0445a4"
+}

@@ -1,0 +1,53 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "giacomel_ahpa_brain",
+ "gate": "G2",
+ "url": "https://raw.githubusercontent.com/alegiac95/METAXCAN_TWAS_ANALYSIS/e045bc51961b0425f51bbdf54672d59222cfa8b9/data/AHBA/AHPA_mrna_brain.tsv",
+ "kind": "file",
+ "date_utc": "2026-10-20T23:46:14+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "fetch": {
+  "source": "copy on disk",
+  "path": "E:/data/asdg/giacomel_ahpa_brain/carrier.tsv"
+ },
+ "identity": {
+  "facts": {
+   "bytes": 324506,
+   "sha256": "1b85136a7dc582ada3395132827a43b7751a3a7c585d8d2099d0cb4b59dd15cf",
+   "md5": "a26249680cbd246ae4113a09a9663c21",
+   "git_blob": "ea300c5c5483f954d8f7d850beefcbe3c0187c4f",
+   "has_crlf": true,
+   "git_blob_lf": "e25895dabc67ac366eaada1ad8eed615c7572327",
+   "bytes_lf": 319535
+  },
+  "references": [
+   {
+    "basis": "git blob",
+    "bytes": 324506,
+    "git_blob": "ea300c5c5483f954d8f7d850beefcbe3c0187c4f"
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "git blob",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "identifier_bearing": false,
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "identity recorded (no extraction declared)"
+}

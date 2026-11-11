@@ -1,0 +1,360 @@
+{
+ "schema": "a1_gated_set_manifest_v1",
+ "gate": "G2",
+ "sets": [
+  {
+   "set_id": "gated_G2_GIA-C01",
+   "cell": "GIA-C01",
+   "json": "gated_G2_GIA-C01.json",
+   "sha256": "c7830ee30dc05d4cd0a03c202b746628b84d571870f835ace3855e3cd885b4c2",
+   "status": "built under gate G2",
+   "n_hgnc": 28
+  },
+  {
+   "set_id": "gated_G2_GIA-C02",
+   "cell": "GIA-C02",
+   "json": "gated_G2_GIA-C02.json",
+   "sha256": "2748aaed688b6705efa5394d8e1adff3f0839b7f6dbbec7da68f586c9301bcbf",
+   "status": "built under gate G2",
+   "n_hgnc": 28
+  },
+  {
+   "set_id": "gated_G2_GIA-C03",
+   "cell": "GIA-C03",
+   "json": "gated_G2_GIA-C03.json",
+   "sha256": "8480d08d9eb2f88b79452ed2e978cb8319d6a7a2158db5a9e80599dc13686058",
+   "status": "built under gate G2",
+   "n_hgnc": 138
+  },
+  {
+   "set_id": "gated_G2_GIA-C04",
+   "cell": "GIA-C04",
+   "json": "gated_G2_GIA-C04.json",
+   "sha256": "39c0622fbf0b264dc1474fd9b5c78302c77bdf76206cd32e03b73ecb1ce1559e",
+   "status": "built under gate G2",
+   "n_hgnc": 138
+  },
+  {
+   "set_id": "gated_G2_GIA-C05",
+   "cell": "GIA-C05",
+   "json": "gated_G2_GIA-C05.json",
+   "sha256": "2af356d1d8b9a3b7096d46e8cf890755af8bbeb87af78f83ced30fa94e02467d",
+   "status": "built under gate G2",
+   "n_hgnc": 277
+  },
+  {
+   "set_id": "gated_G2_GIA-C06",
+   "cell": "GIA-C06",
+   "json": "gated_G2_GIA-C06.json",
+   "sha256": "bef4240fab6b41cfba1af00084eedc4ea1fc0adec0f550adecb247838c002f91",
+   "status": "built under gate G2",
+   "n_hgnc": 277
+  },
+  {
+   "set_id": "gated_G2_GIA-C07",
+   "cell": "GIA-C07",
+   "json": "gated_G2_GIA-C07.json",
+   "sha256": "ebd88bd6a1e4cf67232c51ac634679c39e79440c1be5cf1aca807da335a2bf2c",
+   "status": "built under gate G2",
+   "n_hgnc": 14
+  },
+  {
+   "set_id": "gated_G2_GIA-C08",
+   "cell": "GIA-C08",
+   "json": "gated_G2_GIA-C08.json",
+   "sha256": "5cf5d1bb1af372b88a505e7ed3be1de85ccaeb29012ea2289147072a199d503a",
+   "status": "built under gate G2",
+   "n_hgnc": 14
+  },
+  {
+   "set_id": "gated_G2_GIA-C09",
+   "cell": "GIA-C09",
+   "json": "gated_G2_GIA-C09.json",
+   "sha256": "1221c074bdfc1b8e7a50af431fb5ad05a9058e9bb0a4c27a752b757bdf228789",
+   "status": "built under gate G2",
+   "n_hgnc": 71
+  },
+  {
+   "set_id": "gated_G2_GIA-C10",
+   "cell": "GIA-C10",
+   "json": "gated_G2_GIA-C10.json",
+   "sha256": "eba58f144e1e9fe3a4b7e2e7ad407cf6ab6bc68a1260a993a1915cde5278d9ae",
+   "status": "built under gate G2",
+   "n_hgnc": 71
+  },
+  {
+   "set_id": "gated_G2_GIA-C11",
+   "cell": "GIA-C11",
+   "json": "gated_G2_GIA-C11.json",
+   "sha256": "d3f70fa83193942cec393a0479c12e4aa1757b14a781b4f3efb1060152953f05",
+   "status": "built under gate G2",
+   "n_hgnc": 143
+  },
+  {
+   "set_id": "gated_G2_GIA-C12",
+   "cell": "GIA-C12",
+   "json": "gated_G2_GIA-C12.json",
+   "sha256": "53ffb1f9a85887e64b7e668635aff22e2af1954abc8449d99c40f1b5bcd40d50",
+   "status": "built under gate G2",
+   "n_hgnc": 143
+  },
+  {
+   "set_id": "gated_G2_GIA-C13",
+   "cell": "GIA-C13",
+   "json": "gated_G2_GIA-C13.json",
+   "sha256": "40aeb86b337e06564a047b4e693f97821ed796ae97b1b9f4067ce7bd8fcc4fed",
+   "status": "built under gate G2",
+   "n_hgnc": 13
+  },
+  {
+   "set_id": "gated_G2_GIA-C14",
+   "cell": "GIA-C14",
+   "json": "gated_G2_GIA-C14.json",
+   "sha256": "6feaa97c887afc7158e979ecb3203565c7b89c0eaf3f401af6278e2285a01dff",
+   "status": "built under gate G2",
+   "n_hgnc": 13
+  },
+  {
+   "set_id": "gated_G2_GIA-C15",
+   "cell": "GIA-C15",
+   "json": "gated_G2_GIA-C15.json",
+   "sha256": "d52c77c8d9d9599012e4e768e8d4917687a435bc656049163cf088dc5fa044b4",
+   "status": "built under gate G2",
+   "n_hgnc": 66
+  },
+  {
+   "set_id": "gated_G2_GIA-C16",
+   "cell": "GIA-C16",
+   "json": "gated_G2_GIA-C16.json",
+   "sha256": "aa9135e801bd581079d4f86b1770f7983469675e696eafcef727e301eecad078",
+   "status": "built under gate G2",
+   "n_hgnc": 66
+  },
+  {
+   "set_id": "gated_G2_GIA-C17",
+   "cell": "GIA-C17",
+   "json": "gated_G2_GIA-C17.json",
+   "sha256": "ec8d6acc2d64a90d740d76113f9ec80808a1ddf66692770152b796955f081e9b",
+   "status": "built under gate G2",
+   "n_hgnc": 133
+  },
+  {
+   "set_id": "gated_G2_GIA-C18",
+   "cell": "GIA-C18",
+   "json": "gated_G2_GIA-C18.json",
+   "sha256": "f6c2c1ffc81a89ea928e848000521264166cd4e0f93ef600f38bfadf1d2f0f66",
+   "status": "built under gate G2",
+   "n_hgnc": 133
+  },
+  {
+   "set_id": "gated_G2_GIA-MDD-C1",
+   "cell": "GIA-MDD-C1",
+   "json": "gated_G2_GIA-MDD-C1.json",
+   "sha256": "7797266d2a6ae7f511898569a81ec68e97e00ee93eb2fa9b33b9a96fc8da1c6d",
+   "status": "built under gate G2",
+   "n_hgnc": 28
+  },
+  {
+   "set_id": "gated_G2_GIA-MDD-C10",
+   "cell": "GIA-MDD-C10",
+   "json": "gated_G2_GIA-MDD-C10.json",
+   "sha256": "90ede1d4981350b92903b7435ef9c4a1ea713456121f01d2eb558da07930f361",
+   "status": "built under gate G2",
+   "n_hgnc": 276
+  },
+  {
+   "set_id": "gated_G2_GIA-MDD-C5",
+   "cell": "GIA-MDD-C5",
+   "json": "gated_G2_GIA-MDD-C5.json",
+   "sha256": "de2f3e41a4227f7aed32da7796e8ae003d0f4631d05b5ce66cd5acfd5aa04816",
+   "status": "built under gate G2",
+   "n_hgnc": 138
+  },
+  {
+   "set_id": "gated_G2_GIA-MDD-D10",
+   "cell": "GIA-MDD-D10",
+   "json": "gated_G2_GIA-MDD-D10.json",
+   "sha256": "1b2ef66bb0c52bcb992f9a5a38b7382ed2c8f37c410c0354498c23726e9650bd",
+   "status": "built under gate G2",
+   "n_hgnc": 139
+  },
+  {
+   "set_id": "gated_G2_GIA-MDD-U1",
+   "cell": "GIA-MDD-U1",
+   "json": "gated_G2_GIA-MDD-U1.json",
+   "sha256": "c7e3d0e82873bb318ee5b3fc6d544ecbaf67824ea44d61c6ab1f131ddb03d07d",
+   "status": "built under gate G2",
+   "n_hgnc": 13
+  }
+ ],
+ "restatement": {
+  "cells": {
+   "GIA-C01": {
+    "class": "dk-ctx",
+    "n_columns": 28,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": false
+   },
+   "GIA-C02": {
+    "class": "V-DK-subcortex",
+    "n_columns": 28,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": false
+   },
+   "GIA-C03": {
+    "class": "dk-ctx",
+    "n_columns": 138,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": false
+   },
+   "GIA-C04": {
+    "class": "V-DK-subcortex",
+    "n_columns": 138,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": false
+   },
+   "GIA-C05": {
+    "class": "dk-ctx",
+    "n_columns": 277,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": false
+   },
+   "GIA-C06": {
+    "class": "V-DK-subcortex",
+    "n_columns": 277,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": false
+   },
+   "GIA-C07": {
+    "class": "dk-ctx",
+    "n_columns": 14,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": true
+   },
+   "GIA-C08": {
+    "class": "V-DK-subcortex",
+    "n_columns": 14,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": true
+   },
+   "GIA-C09": {
+    "class": "dk-ctx",
+    "n_columns": 71,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": true
+   },
+   "GIA-C10": {
+    "class": "V-DK-subcortex",
+    "n_columns": 71,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": true
+   },
+   "GIA-C11": {
+    "class": "dk-ctx",
+    "n_columns": 143,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": true
+   },
+   "GIA-C12": {
+    "class": "V-DK-subcortex",
+    "n_columns": 143,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": true
+   },
+   "GIA-C13": {
+    "class": "dk-ctx",
+    "n_columns": 13,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": true
+   },
+   "GIA-C14": {
+    "class": "V-DK-subcortex",
+    "n_columns": 13,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": true
+   },
+   "GIA-C15": {
+    "class": "dk-ctx",
+    "n_columns": 66,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": true
+   },
+   "GIA-C16": {
+    "class": "V-DK-subcortex",
+    "n_columns": 66,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": true
+   },
+   "GIA-C17": {
+    "class": "dk-ctx",
+    "n_columns": 133,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": true
+   },
+   "GIA-C18": {
+    "class": "V-DK-subcortex",
+    "n_columns": 133,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": true
+   },
+   "GIA-MDD-C1": {
+    "class": "dk-ctx",
+    "n_columns": 28,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": false
+   },
+   "GIA-MDD-C10": {
+    "class": "dk-ctx",
+    "n_columns": 276,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": false
+   },
+   "GIA-MDD-C5": {
+    "class": "dk-ctx",
+    "n_columns": 138,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": false
+   },
+   "GIA-MDD-D10": {
+    "class": "dk-ctx",
+    "n_columns": 139,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": true
+   },
+   "GIA-MDD-U1": {
+    "class": "dk-ctx",
+    "n_columns": 13,
+    "outcome": "testable",
+    "status": "built under gate G2",
+    "in_m": true
+   }
+  },
+  "n_cells": 23,
+  "n_not_testable_lt5": 0,
+  "n_in_m_not_testable_lt5": 0,
+  "rule": "claims_register.md:337-338 '< 5 columns in the class universe -> not testable'; RUN_PLAN §16 :1690 'the < 5 outcomes of gated sets are reported, and the population is restated'"
+ },
+ "s_build_sha256": "0bea273fcb15cecabea8eb2fa8816cce0d2f6b6ac86664c0362201d3b92e5f98"
+}

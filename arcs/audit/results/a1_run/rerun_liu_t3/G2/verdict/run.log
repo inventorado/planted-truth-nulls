@@ -1,0 +1,9 @@
+[10:10:29] pass verdict gate G2 rows 1 K {'site': 10000, 'species': 10000, 'permutation': 10000, 'sets': 10000, 'surr': 10000, 'j1_sets': 1000} g6l exact
+[10:10:36] dispatch: 1 row(s) to compute; written so far {}
+[10:10:36] phase 1: 1 G6l screen(s) (exact mode)
+[10:12:30]   1/1 tasks (115s)
+[10:12:30] phase 2: 1 leg-group task(s), jobs 20
+[10:17:02]   1/1 tasks (272s)
+[10:17:02] row 478 (verdict: set-vs-map) written; peak task memory 321962876 B
+[10:17:03] row 478 reproduction record written
+[10:17:03] done: outcomes {'computed': 1}

@@ -1,0 +1,64 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "segura_moesm2",
+ "gate": "ungated",
+ "url": "https://none.invalid/segura-moesm2-pinned-copy",
+ "kind": "file",
+ "date_utc": "2026-10-11T22:40:35+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": "ff55ffe904838fe59d3575261639c0ca922e4c6cfa788e4f7df28c2459a1be93"
+ },
+ "url_note": "no URL registered: the url field is a placeholder; the register names Europe PMC PMC12700815 supplementaryFiles (MOESM2 pdf); the pinned copy is used as found (FE15)",
+ "fetch": {
+  "source": "pinned copy on disk",
+  "path_sha256": "b10045ac421124eacdd30bb5573ff3c46032e8b802ed53fdc8431469823a2207",
+  "screen_hits": {
+   "V": 0,
+   "N": 0
+  }
+ },
+ "identity": {
+  "facts": {
+   "bytes": 1014208,
+   "sha256": "ff55ffe904838fe59d3575261639c0ca922e4c6cfa788e4f7df28c2459a1be93",
+   "md5": "e7325fd02e64e5c25ba4a93ac30f5388",
+   "git_blob": "618b295eddc9f9025d99b448607334813d342c07",
+   "has_crlf": true,
+   "git_blob_lf": "e024fc0f32414ec9d6d380f8417cfce17d1a8005",
+   "bytes_lf": 1010716
+  },
+  "references": [
+   {
+    "basis": "pinned sha256",
+    "sha256": "ff55ffe904838fe59d3575261639c0ca922e4c6cfa788e4f7df28c2459a1be93",
+    "bytes": null
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "pinned sha256",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "identifier_bearing": false,
+ "extraction": {
+  "object_path": "D:/RESEARCH/asd-imaging-genetics/artifacts/audit/wp3/ungated/segura_moesm2/segura_moesm2_extract.json",
+  "object_sha256": "fa8d49518f34e06b44bcfbb123105c780b2f6c2ee339bb288d63c49e96a9ceba"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {
+  "DEBUG": 139539
+ },
+ "status": "extracted"
+}

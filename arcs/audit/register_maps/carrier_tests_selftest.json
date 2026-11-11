@@ -1,0 +1,5647 @@
+{
+ "what": "carrier_test.py selftest on SYNTHETIC carriers (public-atlas labels, random values; seed 20260926)",
+ "n_cases": 141,
+ "n_caught": 141,
+ "cases": [
+  {
+   "target": "rasero2023neurogenetics",
+   "case": "planted pass (xlsx, FreeSurfer names, dk41)",
+   "variant": "dk41",
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": {
+    "y_S1": "pass",
+    "y_S2": "pass"
+   },
+   "expected_reason_contains": {},
+   "observed": [
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 41,
+     "n_numeric": 41,
+     "map_id": "y_S1",
+     "n_required": 41
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 41,
+     "n_numeric": 41,
+     "map_id": "y_S2",
+     "n_required": 41
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "rasero2023neurogenetics",
+   "case": "planted pass (ipynb output table, lh_ names, dk34)",
+   "variant": "dk34",
+   "carrier_types": [
+    ".ipynb"
+   ],
+   "expected": {
+    "y_S1": "pass",
+    "y_S2": "pass"
+   },
+   "expected_reason_contains": {},
+   "observed": [
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 34,
+     "n_numeric": 34,
+     "map_id": "y_S1",
+     "n_required": 34
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 34,
+     "n_numeric": 34,
+     "map_id": "y_S2",
+     "n_required": 34
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "rasero2023neurogenetics",
+   "case": "planted fail: one required label absent",
+   "variant": "dk34",
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": {
+    "y_S1": "fail",
+    "y_S2": "fail"
+   },
+   "expected_reason_contains": {
+    "y_S1": "labels missing",
+    "y_S2": "labels missing"
+   },
+   "observed": [
+    {
+     "result": "fail",
+     "reason": "labels missing",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 0,
+     "n_distinct_passing": 0,
+     "n_present": 33,
+     "n_numeric": 33,
+     "map_id": "y_S1",
+     "n_required": 34
+    },
+    {
+     "result": "fail",
+     "reason": "labels missing",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 0,
+     "n_distinct_passing": 0,
+     "n_present": 33,
+     "n_numeric": 33,
+     "map_id": "y_S2",
+     "n_required": 34
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "rasero2023neurogenetics",
+   "case": "planted fail: one non-numeric value (y_S2)",
+   "variant": "dk41",
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": {
+    "y_S1": "pass",
+    "y_S2": "fail"
+   },
+   "expected_reason_contains": {
+    "y_S2": "non-numeric"
+   },
+   "observed": [
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 41,
+     "n_numeric": 41,
+     "map_id": "y_S1",
+     "n_required": 41
+    },
+    {
+     "result": "fail",
+     "reason": "non-numeric values",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 0,
+     "n_distinct_passing": 0,
+     "n_present": 41,
+     "n_numeric": 40,
+     "map_id": "y_S2",
+     "n_required": 41
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "rasero2023neurogenetics",
+   "case": "planted fail: two different y_S2 columns",
+   "variant": "dk41",
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": {
+    "y_S1": "pass",
+    "y_S2": "fail"
+   },
+   "expected_reason_contains": {
+    "y_S2": "ambiguous"
+   },
+   "observed": [
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 41,
+     "n_numeric": 41,
+     "map_id": "y_S1",
+     "n_required": 41
+    },
+    {
+     "result": "fail",
+     "reason": "ambiguous map column",
+     "tier": 1,
+     "n_candidates": 2,
+     "n_passing_candidates": 2,
+     "n_distinct_passing": 2,
+     "n_present": 41,
+     "n_numeric": 41,
+     "map_id": "y_S2",
+     "n_required": 41
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "rasero2023neurogenetics",
+   "case": "planted fail: names without hemisphere",
+   "variant": "dk34",
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": {
+    "y_S1": "fail",
+    "y_S2": "fail"
+   },
+   "expected_reason_contains": {
+    "y_S1": "no labelled table",
+    "y_S2": "no labelled table"
+   },
+   "observed": [
+    {
+     "result": "fail",
+     "reason": "no labelled table",
+     "tier": null,
+     "n_candidates": 0,
+     "n_passing_candidates": 0,
+     "n_distinct_passing": 0,
+     "n_present": 0,
+     "n_numeric": 0,
+     "map_id": "y_S1",
+     "n_required": 34
+    },
+    {
+     "result": "fail",
+     "reason": "no labelled table",
+     "tier": null,
+     "n_candidates": 0,
+     "n_passing_candidates": 0,
+     "n_distinct_passing": 0,
+     "n_present": 0,
+     "n_numeric": 0,
+     "map_id": "y_S2",
+     "n_required": 34
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "buch2023asdsubgroups",
+   "case": "planted pass (237 usable ROIs, 7 extra, 10 empty)",
+   "variant": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": {
+    "y_1": "pass",
+    "y_2": "pass",
+    "y_3": "pass",
+    "y_4": "pass"
+   },
+   "expected_reason_contains": {},
+   "observed": [
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_usable": 237,
+     "map_id": "y_1",
+     "n_required": 230,
+     "required_comparison": ">="
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_usable": 237,
+     "map_id": "y_2",
+     "n_required": 230,
+     "required_comparison": ">="
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_usable": 237,
+     "map_id": "y_3",
+     "n_required": 230,
+     "required_comparison": ">="
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_usable": 237,
+     "map_id": "y_4",
+     "n_required": 230,
+     "required_comparison": ">="
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "buch2023asdsubgroups",
+   "case": "planted fail: subgroup 2 has 229 usable ROIs",
+   "variant": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": {
+    "y_1": "pass",
+    "y_2": "fail",
+    "y_3": "pass",
+    "y_4": "pass"
+   },
+   "expected_reason_contains": {
+    "y_2": "count below required"
+   },
+   "observed": [
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_usable": 237,
+     "map_id": "y_1",
+     "n_required": 230,
+     "required_comparison": ">="
+    },
+    {
+     "result": "fail",
+     "reason": "count below required",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_distinct_passing": 0,
+     "n_usable": 229,
+     "map_id": "y_2",
+     "n_required": 230,
+     "required_comparison": ">="
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_usable": 237,
+     "map_id": "y_3",
+     "n_required": 230,
+     "required_comparison": ">="
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_usable": 237,
+     "map_id": "y_4",
+     "n_required": 230,
+     "required_comparison": ">="
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "buch2023asdsubgroups",
+   "case": "planted fail: no ROI coordinates",
+   "variant": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": {
+    "y_1": "fail",
+    "y_2": "fail",
+    "y_3": "fail",
+    "y_4": "fail"
+   },
+   "expected_reason_contains": {
+    "y_1": "coordinates missing",
+    "y_2": "coordinates missing",
+    "y_3": "coordinates missing",
+    "y_4": "coordinates missing"
+   },
+   "observed": [
+    {
+     "result": "fail",
+     "reason": "coordinates missing",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_distinct_passing": 0,
+     "n_usable": 0,
+     "map_id": "y_1",
+     "n_required": 230,
+     "required_comparison": ">="
+    },
+    {
+     "result": "fail",
+     "reason": "coordinates missing",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_distinct_passing": 0,
+     "n_usable": 0,
+     "map_id": "y_2",
+     "n_required": 230,
+     "required_comparison": ">="
+    },
+    {
+     "result": "fail",
+     "reason": "coordinates missing",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_distinct_passing": 0,
+     "n_usable": 0,
+     "map_id": "y_3",
+     "n_required": 230,
+     "required_comparison": ">="
+    },
+    {
+     "result": "fail",
+     "reason": "coordinates missing",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_distinct_passing": 0,
+     "n_usable": 0,
+     "map_id": "y_4",
+     "n_required": 230,
+     "required_comparison": ">="
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "buch2023asdsubgroups",
+   "case": "planted pass: coordinates without ROI ids (237 usable ROIs)",
+   "variant": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": {
+    "y_1": "pass",
+    "y_2": "pass",
+    "y_3": "pass",
+    "y_4": "pass"
+   },
+   "expected_reason_contains": {},
+   "observed": [
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_usable": 237,
+     "map_id": "y_1",
+     "n_required": 230,
+     "required_comparison": ">="
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_usable": 237,
+     "map_id": "y_2",
+     "n_required": 230,
+     "required_comparison": ">="
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_usable": 237,
+     "map_id": "y_3",
+     "n_required": 230,
+     "required_comparison": ">="
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_usable": 237,
+     "map_id": "y_4",
+     "n_required": 230,
+     "required_comparison": ">="
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "mamat2025molecular",
+   "case": "planted pass (sheet-named cohorts; prefixed / unprefixed names)",
+   "variant": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": {
+    "ABIDE I FD t-map": "pass",
+    "ABIDE II FD t-map": "pass"
+   },
+   "expected_reason_contains": {},
+   "observed": [
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 3,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 400,
+     "n_numeric": 400,
+     "map_id": "ABIDE I FD t-map",
+     "n_required": 400
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 3,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 400,
+     "n_numeric": 400,
+     "map_id": "ABIDE II FD t-map",
+     "n_required": 400
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "mamat2025molecular",
+   "case": "planted fail: ABIDE II map with 399 parcels",
+   "variant": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": {
+    "ABIDE I FD t-map": "pass",
+    "ABIDE II FD t-map": "fail"
+   },
+   "expected_reason_contains": {
+    "ABIDE II FD t-map": "labels missing"
+   },
+   "observed": [
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 3,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 400,
+     "n_numeric": 400,
+     "map_id": "ABIDE I FD t-map",
+     "n_required": 400
+    },
+    {
+     "result": "fail",
+     "reason": "labels missing",
+     "tier": 3,
+     "n_candidates": 1,
+     "n_passing_candidates": 0,
+     "n_distinct_passing": 0,
+     "n_present": 399,
+     "n_numeric": 399,
+     "map_id": "ABIDE II FD t-map",
+     "n_required": 400
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "mamat2025molecular",
+   "case": "planted pass: parcel indices 1 ... 400; the carrier names the 17-network order file (R9)",
+   "variant": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": {
+    "ABIDE I FD t-map": "pass",
+    "ABIDE II FD t-map": "pass"
+   },
+   "expected_reason_contains": {},
+   "observed": [
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 400,
+     "n_numeric": 400,
+     "map_id": "ABIDE I FD t-map",
+     "n_required": 400
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 400,
+     "n_numeric": 400,
+     "map_id": "ABIDE II FD t-map",
+     "n_required": 400
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "mamat2025molecular",
+   "case": "planted fail: parcel indices 1 ... 399 (a 399-index table; 17-network order named)",
+   "variant": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": {
+    "ABIDE I FD t-map": "fail",
+    "ABIDE II FD t-map": "fail"
+   },
+   "expected_reason_contains": {
+    "ABIDE I FD t-map": "labels missing",
+    "ABIDE II FD t-map": "labels missing"
+   },
+   "observed": [
+    {
+     "result": "fail",
+     "reason": "labels missing",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 0,
+     "n_distinct_passing": 0,
+     "n_present": 399,
+     "n_numeric": 399,
+     "map_id": "ABIDE I FD t-map",
+     "n_required": 400
+    },
+    {
+     "result": "fail",
+     "reason": "labels missing",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 0,
+     "n_distinct_passing": 0,
+     "n_present": 399,
+     "n_numeric": 399,
+     "map_id": "ABIDE II FD t-map",
+     "n_required": 400
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "mamat2025molecular",
+   "case": "planted fail: parcel indices 1 ... 400; the carrier names no order file (R9)",
+   "variant": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": {
+    "ABIDE I FD t-map": "fail",
+    "ABIDE II FD t-map": "fail"
+   },
+   "expected_reason_contains": {
+    "ABIDE I FD t-map": "no order file named",
+    "ABIDE II FD t-map": "no order file named"
+   },
+   "observed": [
+    {
+     "result": "fail",
+     "reason": "no labelled table (index-only table not accepted: no order file named; R9)",
+     "tier": null,
+     "n_candidates": 0,
+     "n_passing_candidates": 0,
+     "n_distinct_passing": 0,
+     "n_present": 0,
+     "n_numeric": 0,
+     "map_id": "ABIDE I FD t-map",
+     "n_required": 400
+    },
+    {
+     "result": "fail",
+     "reason": "no labelled table (index-only table not accepted: no order file named; R9)",
+     "tier": null,
+     "n_candidates": 0,
+     "n_passing_candidates": 0,
+     "n_distinct_passing": 0,
+     "n_present": 0,
+     "n_numeric": 0,
+     "map_id": "ABIDE II FD t-map",
+     "n_required": 400
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "mamat2025molecular",
+   "case": "planted fail: parcel indices 1 ... 400; the carrier names the 7-network order file (R9)",
+   "variant": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": {
+    "ABIDE I FD t-map": "fail",
+    "ABIDE II FD t-map": "fail"
+   },
+   "expected_reason_contains": {
+    "ABIDE I FD t-map": "another order file named",
+    "ABIDE II FD t-map": "another order file named"
+   },
+   "observed": [
+    {
+     "result": "fail",
+     "reason": "no labelled table (index-only table not accepted: another order file named; R9)",
+     "tier": null,
+     "n_candidates": 0,
+     "n_passing_candidates": 0,
+     "n_distinct_passing": 0,
+     "n_present": 0,
+     "n_numeric": 0,
+     "map_id": "ABIDE I FD t-map",
+     "n_required": 400
+    },
+    {
+     "result": "fail",
+     "reason": "no labelled table (index-only table not accepted: another order file named; R9)",
+     "tier": null,
+     "n_candidates": 0,
+     "n_passing_candidates": 0,
+     "n_distinct_passing": 0,
+     "n_present": 0,
+     "n_numeric": 0,
+     "map_id": "ABIDE II FD t-map",
+     "n_required": 400
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "romerogarcia2019synaptic",
+   "case": "planted pass (two identical docx carriers merge)",
+   "variant": null,
+   "carrier_types": [
+    ".docx"
+   ],
+   "expected": {
+    "discovery DeltaCT": "pass",
+    "Validation 1 DeltaCT": "pass",
+    "Validation 2 DeltaCT": "pass"
+   },
+   "expected_reason_contains": {},
+   "observed": [
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 2,
+     "n_passing_candidates": 2,
+     "n_distinct_passing": 1,
+     "n_present": 152,
+     "n_numeric": 152,
+     "map_id": "discovery DeltaCT",
+     "n_required": 152
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 2,
+     "n_passing_candidates": 2,
+     "n_distinct_passing": 1,
+     "n_present": 152,
+     "n_numeric": 152,
+     "map_id": "Validation 1 DeltaCT",
+     "n_required": 152
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 2,
+     "n_passing_candidates": 2,
+     "n_distinct_passing": 1,
+     "n_present": 152,
+     "n_numeric": 152,
+     "map_id": "Validation 2 DeltaCT",
+     "n_required": 152
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "romerogarcia2019synaptic",
+   "case": "planted fail: carriers disagree on one discovery value",
+   "variant": null,
+   "carrier_types": [
+    ".docx"
+   ],
+   "expected": {
+    "discovery DeltaCT": "fail",
+    "Validation 1 DeltaCT": "pass",
+    "Validation 2 DeltaCT": "pass"
+   },
+   "expected_reason_contains": {
+    "discovery DeltaCT": "ambiguous"
+   },
+   "observed": [
+    {
+     "result": "fail",
+     "reason": "ambiguous map column",
+     "tier": 1,
+     "n_candidates": 2,
+     "n_passing_candidates": 2,
+     "n_distinct_passing": 2,
+     "n_present": 152,
+     "n_numeric": 152,
+     "map_id": "discovery DeltaCT",
+     "n_required": 152
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 2,
+     "n_passing_candidates": 2,
+     "n_distinct_passing": 1,
+     "n_present": 152,
+     "n_numeric": 152,
+     "map_id": "Validation 1 DeltaCT",
+     "n_required": 152
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 2,
+     "n_passing_candidates": 2,
+     "n_distinct_passing": 1,
+     "n_present": 152,
+     "n_numeric": 152,
+     "map_id": "Validation 2 DeltaCT",
+     "n_required": 152
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "romerogarcia2019synaptic",
+   "case": "planted fail: 151 of the 152 left regions (all 156 right present)",
+   "variant": null,
+   "carrier_types": [
+    ".docx"
+   ],
+   "expected": {
+    "discovery DeltaCT": "fail",
+    "Validation 1 DeltaCT": "fail",
+    "Validation 2 DeltaCT": "fail"
+   },
+   "expected_reason_contains": {
+    "discovery DeltaCT": "labels missing"
+   },
+   "observed": [
+    {
+     "result": "fail",
+     "reason": "labels missing",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 0,
+     "n_distinct_passing": 0,
+     "n_present": 151,
+     "n_numeric": 151,
+     "map_id": "discovery DeltaCT",
+     "n_required": 152
+    },
+    {
+     "result": "fail",
+     "reason": "labels missing",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 0,
+     "n_distinct_passing": 0,
+     "n_present": 151,
+     "n_numeric": 151,
+     "map_id": "Validation 1 DeltaCT",
+     "n_required": 152
+    },
+    {
+     "result": "fail",
+     "reason": "labels missing",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 0,
+     "n_distinct_passing": 0,
+     "n_present": 151,
+     "n_numeric": 151,
+     "map_id": "Validation 2 DeltaCT",
+     "n_required": 152
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "romerogarcia2019synaptic",
+   "case": "planted pass: left-only carrier (the 152 lh labels, no rh rows)",
+   "variant": null,
+   "carrier_types": [
+    ".docx"
+   ],
+   "expected": {
+    "discovery DeltaCT": "pass",
+    "Validation 1 DeltaCT": "pass",
+    "Validation 2 DeltaCT": "pass"
+   },
+   "expected_reason_contains": {},
+   "observed": [
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 152,
+     "n_numeric": 152,
+     "map_id": "discovery DeltaCT",
+     "n_required": 152
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 152,
+     "n_numeric": 152,
+     "map_id": "Validation 1 DeltaCT",
+     "n_required": 152
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 152,
+     "n_numeric": 152,
+     "map_id": "Validation 2 DeltaCT",
+     "n_required": 152
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "mamat2025molecular",
+   "case": "PDF planted pass: 400 named parcels over 11 pages, both cohorts (Q8)",
+   "variant": null,
+   "carrier_types": [
+    ".pdf"
+   ],
+   "expected": {
+    "ABIDE I FD t-map": "pass",
+    "ABIDE II FD t-map": "pass"
+   },
+   "expected_reason_contains": {},
+   "observed": [
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 400,
+     "n_numeric": 400,
+     "map_id": "ABIDE I FD t-map",
+     "n_required": 400
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 400,
+     "n_numeric": 400,
+     "map_id": "ABIDE II FD t-map",
+     "n_required": 400
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "mamat2025molecular",
+   "case": "PDF planted pass: indices 1 ... 400; the page text names the 17-network order file (Q8, R9)",
+   "variant": null,
+   "carrier_types": [
+    ".pdf"
+   ],
+   "expected": {
+    "ABIDE I FD t-map": "pass",
+    "ABIDE II FD t-map": "pass"
+   },
+   "expected_reason_contains": {},
+   "observed": [
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 400,
+     "n_numeric": 400,
+     "map_id": "ABIDE I FD t-map",
+     "n_required": 400
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 400,
+     "n_numeric": 400,
+     "map_id": "ABIDE II FD t-map",
+     "n_required": 400
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "mamat2025molecular",
+   "case": "PDF planted fail: values misaligned with labels by one row (Q8)",
+   "variant": null,
+   "carrier_types": [
+    ".pdf"
+   ],
+   "expected": {
+    "ABIDE I FD t-map": "fail",
+    "ABIDE II FD t-map": "fail"
+   },
+   "expected_reason_contains": {
+    "ABIDE I FD t-map": "non-numeric",
+    "ABIDE II FD t-map": "non-numeric"
+   },
+   "observed": [
+    {
+     "result": "fail",
+     "reason": "non-numeric values",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 0,
+     "n_distinct_passing": 0,
+     "n_present": 400,
+     "n_numeric": 399,
+     "map_id": "ABIDE I FD t-map",
+     "n_required": 400
+    },
+    {
+     "result": "fail",
+     "reason": "non-numeric values",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 0,
+     "n_distinct_passing": 0,
+     "n_present": 400,
+     "n_numeric": 399,
+     "map_id": "ABIDE II FD t-map",
+     "n_required": 400
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "rasero2023neurogenetics",
+   "case": "PDF planted pass (dk34, one page) (Q8)",
+   "variant": "dk34",
+   "carrier_types": [
+    ".pdf"
+   ],
+   "expected": {
+    "y_S1": "pass",
+    "y_S2": "pass"
+   },
+   "expected_reason_contains": {},
+   "observed": [
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 34,
+     "n_numeric": 34,
+     "map_id": "y_S1",
+     "n_required": 34
+    },
+    {
+     "result": "pass",
+     "reason": "ok",
+     "tier": 1,
+     "n_candidates": 1,
+     "n_passing_candidates": 1,
+     "n_distinct_passing": 1,
+     "n_present": 34,
+     "n_numeric": 34,
+     "map_id": "y_S2",
+     "n_required": 34
+    }
+   ],
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "planted pass: a membership list under the set's name in a sheet named as input (by cell id)",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "ok",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 40,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "none",
+     "why": "no external definition ('*Ribosomal structure' reaches no PANTHER 16.0 GO-slim term by the name rule) and no printed size: not auditable (S undefined: source 1 uncorroborated)"
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (mode none -- no external definition ('*Ribosomal structure' reaches no PANTHER 16.0 GO-slim term by the name rule) and no printed size: not auditable (S undefined: source 1 uncorroborated))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "planted refusal: the same list, no input wording in the sheet name, title or caption (v6.2 P1)",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "not presented as input",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "not presented as input (no input wording in the caption or the list's own title)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: not presented as input (no input wording in the caption or the list's own title))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: not presented as input (no input wording in the caption or the list's own title))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "planted refusal: a leading-edge list in a results-table row under the set's name (Q1)",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (result wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (result wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (result wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "planted refusal: a column titled with the set's name and 'leading edge' (Q1)",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (result wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (result wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (result wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "planted refusal: overlap genes of an enrichment-results row (Q1; v6.3 O1 (a): statistics in its table's column titles)",
+   "cell": null,
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list (statistics wording)",
+   "expected_counts": {},
+   "observed": {
+    "cell": null,
+    "target": null,
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "planted pass: 500 symbols under 'Neuron-specific genes (top 500)', RG-04's printed size 500 from the spec ('top' is part of the set's name) (P2)",
+   "cell": "RG-04",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "ok",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-04",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 500,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "printed_size",
+     "n_rows": 500,
+     "n_distinct_approved": 500,
+     "printed_size": 500,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "qualifies",
+    "reason": "ok (corroborated: printed_size)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "planted else branch: the same carrier for RG-N05 (oligodendrocyte): no list names the set (P2)",
+   "cell": "RG-N05",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "no qualifying list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-N05",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 0,
+    "n_refused": 0,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list",
+    "result": "else branch",
+    "reason": "no qualifying list"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "planted else branch: 499 symbols against RG-04's printed size 500 (Q1, P2; since v6.5 corroboration (b))",
+   "cell": "RG-04",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "size mismatch",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-04",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 499,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "printed_size",
+     "n_rows": 499,
+     "n_distinct_approved": 499,
+     "printed_size": 500,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (size mismatch: the list's length differs from the printed size)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "planted else branch: two distinct input lists under the set's name",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "ambiguous",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 2,
+    "n_refused": 0,
+    "n_qualifying_distinct": 2,
+    "refused_reasons": [],
+    "text_result": "else branch",
+    "text_reason": "two or more distinct qualifying lists (ambiguous)",
+    "result": "else branch",
+    "reason": "two or more distinct qualifying lists (ambiguous)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "reviewer plant 1: sheet 'Genes driving the enrichment of each gene set (subgroup 1)', one column per set (P1)",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (result wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (result wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (result wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "reviewer plant 2: a column 'Ribosomal structure core genes' (P1)",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list (result wording)",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (result wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (result wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (result wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "reviewer plant 3: sheet 'Subgroup 1' listing the set's genes, the NES / padj table on another sheet (P1)",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "no qualifying list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (the heading names a map, subgroup or cohort)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (the heading names a map, subgroup or cohort))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (the heading names a map, subgroup or cohort))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "Pagani layout: 'ASD DE genes' beside 'Hypo decoded genes' -> PAG-C1 refused since v6.4 N1 (decoded / hypo on the sheet; P6 had let it qualify)",
+   "cell": "PAG-C1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list (statistics, result or map wording on the sheet)",
+   "expected_counts": {},
+   "observed": {
+    "cell": "PAG-C1",
+    "target": "pagani2026crossspecies",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics, result or map wording on the sheet)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics, result or map wording on the sheet))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics, result or map wording on the sheet))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "Pagani layout: the upper-case title 'SYNGO' is a title, not data; PAG-C4 refused since v6.4 N1 (the sheet holds a decoded list)",
+   "cell": "PAG-C4",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list (statistics, result or map wording on the sheet)",
+   "expected_counts": {},
+   "observed": {
+    "cell": "PAG-C4",
+    "target": "pagani2026crossspecies",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics, result or map wording on the sheet)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics, result or map wording on the sheet))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics, result or map wording on the sheet))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "Pagani layout: a 'Gene set | Genes' table, the 'TGF-beta signaling' row qualifies ('beta' is part of the name) (P6)",
+   "cell": null,
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "ok",
+   "expected_counts": {},
+   "observed": {
+    "cell": null,
+    "target": null,
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 6,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "none",
+     "why": "no cell entry (explicit names)"
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (mode none -- no cell entry (explicit names))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "Pagani layout: the same table, PAG-C7's row qualifies (P2, P6)",
+   "cell": "PAG-C7",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "ok",
+   "expected_counts": {},
+   "observed": {
+    "cell": "PAG-C7",
+    "target": "pagani2026crossspecies",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 6,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "set_id": "cmp66_pagani_reactome92_RHSA1280215",
+     "class": "V-AAL",
+     "used": {
+      "set_id": "cmp66_pagani_reactome92_RHSA1280215",
+      "file": "cmp66_pagani_reactome92_RHSA1280215.json",
+      "pinned_json_sha256": "e6bb6c180931bb0c7f4dc98842dce4447d1f882f98fa77d0ae8ecaf7f2ac52fc",
+      "pinned_members_sha256": "433571d0885d545279abed74110b6ad4d7be935ff9d45749fee35491ea9f1a31",
+      "json_sha256": "e6bb6c180931bb0c7f4dc98842dce4447d1f882f98fa77d0ae8ecaf7f2ac52fc",
+      "members_sha256": "433571d0885d545279abed74110b6ad4d7be935ff9d45749fee35491ea9f1a31"
+     },
+     "n_list_in_universe": 2,
+     "n_external_in_universe": 596,
+     "n_both": 2,
+     "jaccard": 0.0034,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (Jaccard 0.0034 < 0.80 with the pinned comparator)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "docx: a 'Pathway | Genes' table whose caption paragraph carries input wording; the family cell RG-03 with the printed name passed (P1, P2)",
+   "cell": "RG-03",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".docx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "ok",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-03",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 15,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "kegg_family_recipe",
+     "set_id": null,
+     "class": "dk-ctx",
+     "used": {
+      "recipe": "enrichr_kegg_family_v6_6",
+      "name": "Ribosome",
+      "KEGG_2015_sha256": "ac721aed19bbc618c766cf1a76cc3dfa99c1df13055073ebc3d3e112fbf69369",
+      "KEGG_2016_sha256": "a501968146264e4a7ba2b2fb06ff8b9c0cb9a209655f31c095ece502e04d61f5",
+      "chosen_library": "KEGG_2015",
+      "library": "KEGG_2015",
+      "pathway": "ribosome",
+      "members_sha256": "8c4cd4c836887763679c5924beefae5ab719e539fe2ea7e35aa12abfe6fa4b9b"
+     },
+     "n_list_in_universe": 14,
+     "n_external_in_universe": 66,
+     "n_both": 9,
+     "jaccard": 0.1268,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (Jaccard 0.1268 < 0.80 with the pinned comparator)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "PDF: the same table under a caption line with input wording; RG-V06 with the printed name passed (P1, Q8)",
+   "cell": "RG-V06",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".pdf"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "ok",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-V06",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 6,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "kegg_family_recipe",
+     "set_id": null,
+     "class": "dk-ctx",
+     "used": {
+      "recipe": "enrichr_kegg_family_v6_6",
+      "name": "Ribosome",
+      "KEGG_2015_sha256": "ac721aed19bbc618c766cf1a76cc3dfa99c1df13055073ebc3d3e112fbf69369",
+      "KEGG_2016_sha256": "a501968146264e4a7ba2b2fb06ff8b9c0cb9a209655f31c095ece502e04d61f5",
+      "chosen_library": "KEGG_2015",
+      "library": "KEGG_2015",
+      "pathway": "ribosome",
+      "members_sha256": "8c4cd4c836887763679c5924beefae5ab719e539fe2ea7e35aa12abfe6fa4b9b"
+     },
+     "n_list_in_universe": 6,
+     "n_external_in_universe": 66,
+     "n_both": 4,
+     "jaccard": 0.0588,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (Jaccard 0.0588 < 0.80 with the pinned comparator)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "PDF: the same table under a caption naming a PLS result -> refused (P1)",
+   "cell": "RG-V06",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".pdf"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-V06",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (result wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (result wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (result wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "GAP1: an Enrichr export (Term | Overlap | P-value | Adjusted P-value | Odds Ratio | Combined Score | Genes) on a sheet 'Enrichment of the gene sets tested' -> refused (v6.3 O1 (a): statistics in the table's column titles)",
+   "cell": "BUCH-E-Syn-ChemSynTransmission-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list (statistics wording)",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Syn-ChemSynTransmission-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "GAP2: 'Supplementary Table 5. GSEA of the gene sets used', Gene set | Subgroup | NES | padj | Genes -> refused (O1 (a); 'NES' over numbers is a title)",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list (statistics wording)",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "P1b: clusterProfiler Description | NES | p.adjust | core_enrichment under 'Gene sets tested' -> refused (O1 (b): 'core_enrichment' read as 'core enrichment')",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (result wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (result wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (result wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "GAP3: a table under 'KEGG pathways enriched in the input gene list (PLS1 Z > 3)' -> refused (O1 (b): 'PLS1' read; 'enriched' a result word)",
+   "cell": "RG-03",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list (result wording)",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-03",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (result wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (result wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (result wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "GAP4: a 'top_genes' column -> refused (O1 (b): 'top_genes' read as 'top genes')",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list (result wording)",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (result wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (result wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (result wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "O1 (b): six columns 'Ribosomal structure GSEA_results / SG1 / hit_gene / urg_list / pls1 gene / PLS1' -> all six refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "no qualifying list",
+   "expected_counts": {
+    "n_candidates": 6,
+    "n_refused": 6
+   },
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 6,
+    "n_refused": 6,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (result wording)",
+     "result list (the heading names a map, subgroup or cohort)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (result wording); result list (the heading names a map, subgroup or cohort))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (result wording); result list (the heading names a map, subgroup or cohort))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "PAG1: Table S3's index title as the caption ('decoded genes' beside 'gene lists used') -> PAG-C1 refused (stays refused under O2)",
+   "cell": "PAG-C1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list (result wording)",
+   "expected_counts": {},
+   "observed": {
+    "cell": "PAG-C1",
+    "target": "pagani2026crossspecies",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (result wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (result wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (result wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "PAG3: a merged super-header 'Gene lists used in enrichment analyses' over the input columns beside decoded columns -> PAG-C1 refused since v6.4 N1 (O2 had let it qualify)",
+   "cell": "PAG-C1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list (statistics, result or map wording on the sheet)",
+   "expected_counts": {},
+   "observed": {
+    "cell": "PAG-C1",
+    "target": "pagani2026crossspecies",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics, result or map wording on the sheet)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics, result or map wording on the sheet))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics, result or map wording on the sheet))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "ZH1: 'Top 500 cell-type-specific genes (Zhang 2014)' over one column per class -> RG-04 (neuron) qualifies (O3: own phrases stripped, 'top 500' = the printed size exempt)",
+   "cell": "RG-04",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "ok",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-04",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 500,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "printed_size",
+     "n_rows": 500,
+     "n_distinct_approved": 0,
+     "printed_size": 500,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (size mismatch: the list's length differs from the printed size)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "ZH1: 'Top 500 cell-type-specific genes (Zhang 2014)' over one column per class -> RG-N04 (astrocyte) qualifies (O3: own phrases stripped, 'top 500' = the printed size exempt)",
+   "cell": "RG-N04",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "ok",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-N04",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 500,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "printed_size",
+     "n_rows": 500,
+     "n_distinct_approved": 0,
+     "printed_size": 500,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (size mismatch: the list's length differs from the printed size)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "ZH1: 'Top 500 cell-type-specific genes (Zhang 2014)' over one column per class -> RG-N05 (oligodendrocyte) qualifies (O3: own phrases stripped, 'top 500' = the printed size exempt)",
+   "cell": "RG-N05",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "ok",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-N05",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 500,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "printed_size",
+     "n_rows": 500,
+     "n_distinct_approved": 0,
+     "printed_size": 500,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (size mismatch: the list's length differs from the printed size)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "ZH1: 'Top 500 cell-type-specific genes (Zhang 2014)' over one column per class -> RG-N06 (microglia) qualifies (O3: own phrases stripped, 'top 500' = the printed size exempt)",
+   "cell": "RG-N06",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "ok",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-N06",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 500,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "printed_size",
+     "n_rows": 500,
+     "n_distinct_approved": 0,
+     "printed_size": 500,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (size mismatch: the list's length differs from the printed size)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "ZH1: 'Top 500 cell-type-specific genes (Zhang 2014)' over one column per class -> RG-N07 (vascular) qualifies (O3: own phrases stripped, 'top 500' = the printed size exempt)",
+   "cell": "RG-N07",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "ok",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-N07",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 500,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "printed_size",
+     "n_rows": 500,
+     "n_distinct_approved": 0,
+     "printed_size": 500,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (size mismatch: the list's length differs from the printed size)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "RB1: a list headed 'Structural constituent of ribosome' is not 'Ribosome' (O6: rival name) -> else branch",
+   "cell": "BUCH-E-Trans-Ribosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "no qualifying list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-Ribosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 0,
+    "n_refused": 0,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list",
+    "result": "else branch",
+    "reason": "no qualifying list"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "RB2: 'Ribosome' beside 'Structural constituent of ribosome' -> Ribosome qualifies with its own list only (O6)",
+   "cell": "BUCH-E-Trans-Ribosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "ok",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-Ribosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 30,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "set_id": "buch_goslim_fallback_GO0005840",
+     "class": "V-AAL",
+     "used": {
+      "set_id": "buch_goslim_fallback_GO0005840",
+      "file": "buch_goslim_fallback_GO0005840.json",
+      "pinned_json_sha256": "165ca435c13003071c2f8399c07c59c6c8047430c0cd682f2e8432d1dc62e131",
+      "pinned_members_sha256": "5c88e92a9fc1c2f05d4dee5c90f975b231052e32bf89cc1b433bad243e9398fd",
+      "json_sha256": "165ca435c13003071c2f8399c07c59c6c8047430c0cd682f2e8432d1dc62e131",
+      "members_sha256": "5c88e92a9fc1c2f05d4dee5c90f975b231052e32bf89cc1b433bad243e9398fd"
+     },
+     "n_list_in_universe": 27,
+     "n_external_in_universe": 133,
+     "n_both": 25,
+     "jaccard": 0.1852,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (Jaccard 0.1852 < 0.80 with the pinned comparator)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "O4: RG-03 run with --name 'Ribosome_Homo_sapiens_hsa03010' (suffix split off) -> qualifies",
+   "cell": "RG-03",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "ok",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-03",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 12,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "kegg_family_recipe",
+     "set_id": null,
+     "class": "dk-ctx",
+     "used": {
+      "recipe": "enrichr_kegg_family_v6_6",
+      "name": "Ribosome_Homo_sapiens_hsa03010",
+      "KEGG_2015_sha256": "ac721aed19bbc618c766cf1a76cc3dfa99c1df13055073ebc3d3e112fbf69369",
+      "KEGG_2016_sha256": "a501968146264e4a7ba2b2fb06ff8b9c0cb9a209655f31c095ece502e04d61f5",
+      "chosen_library": "KEGG_2016",
+      "library": "KEGG_2016",
+      "pathway": "hsa03010",
+      "members_sha256": "861c978680d4e28619eb587a3697bfa6f3a4ec3b9245a2a0e60ada1dadbe73ae"
+     },
+     "n_list_in_universe": 12,
+     "n_external_in_universe": 129,
+     "n_both": 12,
+     "jaccard": 0.093,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (Jaccard 0.0930 < 0.80 with the pinned comparator)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "O4: one RG-03 run given two pathway names -> the run is refused (no alternative accumulates across pathways)",
+   "cell": "RG-03",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "run refused",
+   "expected_reason_contains": "one source-1 run per pathway",
+   "expected_counts": {},
+   "observed": {
+    "result": "run refused",
+    "reason": "RG-03: one source-1 run per pathway with exactly one --name (2 names given; v6.3 O4)",
+    "text_result": "run refused",
+    "text_reason": "RG-03: one source-1 run per pathway with exactly one --name (2 names given; v6.3 O4)",
+    "n_candidates": 0,
+    "n_refused": 0,
+    "n_qualifying_distinct": 0
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N1: 'NES' over 'NA' beside the gene lists (xlsx) -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N1: 'FDR' over 'NS' beside the gene lists (xlsx) -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N1: 'P' over 'NS' beside the gene lists (xlsx) -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N1: 'FDR' over 'NA' (csv named 'gene_set_definitions') -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".csv"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N1: 'FDR' over 'N/A' (docx under 'Gene set definitions') -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".docx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N1: 'SG' over 'SG1' ... (long format: a gene per row with its subgroup) -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list (statistics, result or map wording on the sheet)",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics, result or map wording on the sheet)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics, result or map wording on the sheet))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics, result or map wording on the sheet))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N1: RG-03 'Pathway | P | FDR | Genes' with FDR 'NA' -> refused",
+   "cell": "RG-03",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-03",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N1: 'Gene set | PLS1' -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (result wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (result wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (result wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N1: 'Gene set | SG1 ... SG4' -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 4,
+    "n_refused": 4,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (the heading names a map, subgroup or cohort)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (the heading names a map, subgroup or cohort))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (the heading names a map, subgroup or cohort))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N1: the set name over 'PLS1' over genes -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (result wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (result wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (result wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N1: the set name over 'CORE' over genes -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (result wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (result wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (result wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N1: a results table stacked under a neutral list on the same sheet -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list (statistics, result or map wording on the sheet)",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics, result or map wording on the sheet)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics, result or map wording on the sheet))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics, result or map wording on the sheet))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N2: RG-15 -- 'second' only in the caption, 'dysregulated' in the column title -> not named, no list",
+   "cell": "RG-15",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "no qualifying list",
+   "expected_counts": {
+    "n_candidates": 0
+   },
+   "observed": {
+    "cell": "RG-15",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 0,
+    "n_refused": 0,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list",
+    "result": "else branch",
+    "reason": "no qualifying list"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N2: RG-V23 -- both phrases only in the sheet name (a one-column 'Genes' list) -> not named, no list",
+   "cell": "RG-V23",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "no qualifying list",
+   "expected_counts": {
+    "n_candidates": 0
+   },
+   "observed": {
+    "cell": "RG-V23",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 0,
+    "n_refused": 0,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list",
+    "result": "else branch",
+    "reason": "no qualifying list"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N3: 'Neuron enriched' beside the other classes' 'X enriched' columns -> RG-04 qualifies",
+   "cell": "RG-04",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "ok",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-04",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 500,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "printed_size",
+     "n_rows": 500,
+     "n_distinct_approved": 0,
+     "printed_size": 500,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (size mismatch: the list's length differs from the printed size)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N3: 'Second list of genes dysregulated in autism (weighted gene co-expression network analysis)' -> RG-15 qualifies",
+   "cell": "RG-15",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "ok",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-15",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 30,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "none",
+     "why": "no external definition (the list is identified only in the supplement) and no printed size"
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (mode none -- no external definition (the list is identified only in the supplement) and no printed size)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N1 / O2: Pagani input lists on a sheet of their own (no decoded list on it) -> PAG-C1 qualifies",
+   "cell": "PAG-C1",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "ok",
+   "expected_counts": {},
+   "observed": {
+    "cell": "PAG-C1",
+    "target": "pagani2026crossspecies",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 30,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "set_id": "cmp66_pagani_gandal2022_24_de_modules",
+     "class": "V-AAL",
+     "used": {
+      "set_id": "cmp66_pagani_gandal2022_24_de_modules",
+      "file": "cmp66_pagani_gandal2022_24_de_modules.json",
+      "pinned_json_sha256": "72b7f15a967eef259ee549cc879e2845004a49811e92186628fa4c1ca31e3bad",
+      "pinned_members_sha256": "416ceae14ce37cd63ef23f2f861383741cf9ffa3d58240244a9020f439d7cb39",
+      "json_sha256": "72b7f15a967eef259ee549cc879e2845004a49811e92186628fa4c1ca31e3bad",
+      "members_sha256": "416ceae14ce37cd63ef23f2f861383741cf9ffa3d58240244a9020f439d7cb39"
+     },
+     "n_list_in_universe": 0,
+     "n_external_in_universe": 4401,
+     "n_both": 0,
+     "jaccard": 0.0,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (Jaccard 0.0000 < 0.80 with the pinned comparator)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N1 (2) refined: a Zhang microglia input list whose first gene is P2RY12 -> RG-N06 qualifies (P2RY12 is data)",
+   "cell": "RG-N06",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "ok",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-N06",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 500,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "printed_size",
+     "n_rows": 500,
+     "n_distinct_approved": 3,
+     "printed_size": 500,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (size mismatch: the list's length differs from the printed size)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N4 (I7) control: RG-03 'Ribosome' with no rival names -> both rows named (ambiguous)",
+   "cell": "RG-03",
+   "rival_only": null,
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "ambiguous",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-03",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 2,
+    "n_refused": 0,
+    "n_qualifying_distinct": 2,
+    "refused_reasons": [],
+    "text_result": "else branch",
+    "text_reason": "two or more distinct qualifying lists (ambiguous)",
+    "result": "else branch",
+    "reason": "two or more distinct qualifying lists (ambiguous)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N4 (I7): the same run with the table's other printed names as --rival -> 'Ribosome' resolves to its own row",
+   "cell": "RG-03",
+   "rival_only": [
+    "Ribosome biogenesis in eukaryotes",
+    "Spliceosome"
+   ],
+   "level": "text",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "ok",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-03",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 12,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "kegg_family_recipe",
+     "set_id": null,
+     "class": "dk-ctx",
+     "used": {
+      "recipe": "enrichr_kegg_family_v6_6",
+      "name": "Ribosome",
+      "KEGG_2015_sha256": "ac721aed19bbc618c766cf1a76cc3dfa99c1df13055073ebc3d3e112fbf69369",
+      "KEGG_2016_sha256": "a501968146264e4a7ba2b2fb06ff8b9c0cb9a209655f31c095ece502e04d61f5",
+      "chosen_library": "KEGG_2016",
+      "library": "KEGG_2016",
+      "pathway": "hsa03010",
+      "members_sha256": "861c978680d4e28619eb587a3697bfa6f3a4ec3b9245a2a0e60ada1dadbe73ae"
+     },
+     "n_list_in_universe": 12,
+     "n_external_in_universe": 129,
+     "n_both": 12,
+     "jaccard": 0.093,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (Jaccard 0.0930 < 0.80 with the pinned comparator)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "M1: capital-letter GAP1 (an Enrichr export in capitals: 'P VALUE', 'ADJUSTED P VALUE', 'ODDS RATIO', 'COMBINED SCORE' over the rows) -> refused",
+   "cell": "BUCH-E-Syn-ChemSynTransmission-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Syn-ChemSynTransmission-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "M1: capital-letter fGSEA export with multi-word headers ('ADJUSTED P VALUE', 'RANK AT MAX', 'LEADING EDGE GENES') -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (result wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (result wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (result wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "M1: capital-letter GAP2 -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "M1: capital-letter Pagani layout -> PAG-C1 refused",
+   "cell": "PAG-C1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "PAG-C1",
+    "target": "pagani2026crossspecies",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics, result or map wording on the sheet)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics, result or map wording on the sheet))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics, result or map wording on the sheet))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "M2: a column 'leading-edge genes' -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (result wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (result wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (result wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "M2: a column 'leading\\u2010edge genes' -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (result wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (result wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (result wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "M2: a column 'leading\\u2013edge genes' -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (result wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (result wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (result wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "M2: a column 'leadingEdge' -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (result wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (result wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (result wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "M1: capital-letter fGSEA export -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (result wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (result wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (result wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "M3: clusterProfiler camelCase statistics only (GeneRatio, BgRatio) -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics, result or map wording on the sheet)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics, result or map wording on the sheet))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics, result or map wording on the sheet))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "M3: Metascape-style 'LogP' / '-log10(FDR)' -> refused",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "(1)(a): a leading-edge-like subset (30 of the set's 112 in-universe genes) in an input-worded sheet passes the text filter and fails corroboration",
+   "cell": "BUCH-E-Syn-SecVesicle-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "uncorroborated (Jaccard",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Syn-SecVesicle-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 30,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "set_id": "buch_goslim_fallback_GO0099503",
+     "class": "V-AAL",
+     "used": {
+      "set_id": "buch_goslim_fallback_GO0099503",
+      "file": "buch_goslim_fallback_GO0099503.json",
+      "pinned_json_sha256": "9e6ec90aec146711b96a5eb3b14bbf7030087e0edbb49678e7e20817ec9fe4d9",
+      "pinned_members_sha256": "3238882f9469fad9bef205ad0dd4e13627cbb442a02f9d4bebea4bf472b6cc14",
+      "json_sha256": "9e6ec90aec146711b96a5eb3b14bbf7030087e0edbb49678e7e20817ec9fe4d9",
+      "members_sha256": "3238882f9469fad9bef205ad0dd4e13627cbb442a02f9d4bebea4bf472b6cc14"
+     },
+     "n_list_in_universe": 30,
+     "n_external_in_universe": 112,
+     "n_both": 30,
+     "jaccard": 0.2679,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (Jaccard 0.2679 < 0.80 with the pinned comparator)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "(1)(a): an input list equal to the pinned external set -> qualifies (Jaccard 1)",
+   "cell": "BUCH-E-Syn-SecVesicle-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "corroborated: external",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Syn-SecVesicle-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 112,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "set_id": "buch_goslim_fallback_GO0099503",
+     "class": "V-AAL",
+     "used": {
+      "set_id": "buch_goslim_fallback_GO0099503",
+      "file": "buch_goslim_fallback_GO0099503.json",
+      "pinned_json_sha256": "9e6ec90aec146711b96a5eb3b14bbf7030087e0edbb49678e7e20817ec9fe4d9",
+      "pinned_members_sha256": "3238882f9469fad9bef205ad0dd4e13627cbb442a02f9d4bebea4bf472b6cc14",
+      "json_sha256": "9e6ec90aec146711b96a5eb3b14bbf7030087e0edbb49678e7e20817ec9fe4d9",
+      "members_sha256": "3238882f9469fad9bef205ad0dd4e13627cbb442a02f9d4bebea4bf472b6cc14"
+     },
+     "n_list_in_universe": 112,
+     "n_external_in_universe": 112,
+     "n_both": 112,
+     "jaccard": 1.0,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "qualifies",
+    "reason": "ok (corroborated: external)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "(1)(a) / M4: the same list with NA cells among its genes -> NA dropped from the members, qualifies",
+   "cell": "BUCH-E-Syn-SecVesicle-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "corroborated: external",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Syn-SecVesicle-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 112,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "set_id": "buch_goslim_fallback_GO0099503",
+     "class": "V-AAL",
+     "used": {
+      "set_id": "buch_goslim_fallback_GO0099503",
+      "file": "buch_goslim_fallback_GO0099503.json",
+      "pinned_json_sha256": "9e6ec90aec146711b96a5eb3b14bbf7030087e0edbb49678e7e20817ec9fe4d9",
+      "pinned_members_sha256": "3238882f9469fad9bef205ad0dd4e13627cbb442a02f9d4bebea4bf472b6cc14",
+      "json_sha256": "9e6ec90aec146711b96a5eb3b14bbf7030087e0edbb49678e7e20817ec9fe4d9",
+      "members_sha256": "3238882f9469fad9bef205ad0dd4e13627cbb442a02f9d4bebea4bf472b6cc14"
+     },
+     "n_list_in_universe": 112,
+     "n_external_in_universe": 112,
+     "n_both": 112,
+     "jaccard": 1.0,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "qualifies",
+    "reason": "ok (corroborated: external)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "(1)(a): an input list at Jaccard 0.7946 (89 of 112) -> fails",
+   "cell": "BUCH-E-Syn-SecVesicle-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "uncorroborated (Jaccard",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Syn-SecVesicle-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 89,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "set_id": "buch_goslim_fallback_GO0099503",
+     "class": "V-AAL",
+     "used": {
+      "set_id": "buch_goslim_fallback_GO0099503",
+      "file": "buch_goslim_fallback_GO0099503.json",
+      "pinned_json_sha256": "9e6ec90aec146711b96a5eb3b14bbf7030087e0edbb49678e7e20817ec9fe4d9",
+      "pinned_members_sha256": "3238882f9469fad9bef205ad0dd4e13627cbb442a02f9d4bebea4bf472b6cc14",
+      "json_sha256": "9e6ec90aec146711b96a5eb3b14bbf7030087e0edbb49678e7e20817ec9fe4d9",
+      "members_sha256": "3238882f9469fad9bef205ad0dd4e13627cbb442a02f9d4bebea4bf472b6cc14"
+     },
+     "n_list_in_universe": 89,
+     "n_external_in_universe": 112,
+     "n_both": 89,
+     "jaccard": 0.7946,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (Jaccard 0.7946 < 0.80 with the pinned comparator)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "positive control: a genuine all-capitals input sheet ('SECRETORY VESICLE' over its genes) -> qualifies when corroborated",
+   "cell": "BUCH-E-Syn-SecVesicle-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "corroborated: external",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Syn-SecVesicle-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 112,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "set_id": "buch_goslim_fallback_GO0099503",
+     "class": "V-AAL",
+     "used": {
+      "set_id": "buch_goslim_fallback_GO0099503",
+      "file": "buch_goslim_fallback_GO0099503.json",
+      "pinned_json_sha256": "9e6ec90aec146711b96a5eb3b14bbf7030087e0edbb49678e7e20817ec9fe4d9",
+      "pinned_members_sha256": "3238882f9469fad9bef205ad0dd4e13627cbb442a02f9d4bebea4bf472b6cc14",
+      "json_sha256": "9e6ec90aec146711b96a5eb3b14bbf7030087e0edbb49678e7e20817ec9fe4d9",
+      "members_sha256": "3238882f9469fad9bef205ad0dd4e13627cbb442a02f9d4bebea4bf472b6cc14"
+     },
+     "n_list_in_universe": 112,
+     "n_external_in_universe": 112,
+     "n_both": 112,
+     "jaccard": 1.0,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "qualifies",
+    "reason": "ok (corroborated: external)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "(1)(b): RG-04's 500-symbol list against its printed size 500 -> qualifies",
+   "cell": "RG-04",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "corroborated: printed_size",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-04",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 500,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "printed_size",
+     "n_rows": 500,
+     "n_distinct_approved": 500,
+     "printed_size": 500,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "qualifies",
+    "reason": "ok (corroborated: printed_size)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "(1)(b): 501 symbols against RG-04's printed size 500 -> fails",
+   "cell": "RG-04",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "size mismatch",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-04",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 501,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "printed_size",
+     "n_rows": 501,
+     "n_distinct_approved": 501,
+     "printed_size": 500,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (size mismatch: the list's length differs from the printed size)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "(1)(c): a cell with no external definition and no printed size ('*Ribosomal structure') -> the text filter admits the list, the else branch applies",
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "mode none",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 40,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "none",
+     "why": "no external definition ('*Ribosomal structure' reaches no PANTHER 16.0 GO-slim term by the name rule) and no printed size: not auditable (S undefined: source 1 uncorroborated)"
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (mode none -- no external definition ('*Ribosomal structure' reaches no PANTHER 16.0 GO-slim term by the name rule) and no printed size: not auditable (S undefined: source 1 uncorroborated))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "(1)(c) v6.6: a cell whose comparator is not buildable pre-freeze (BUCH-E-ASDup-S1) -> the text filter admits the list, the else branch applies",
+   "cell": "BUCH-E-ASDup-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "comparator not buildable pre-freeze",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-ASDup-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 30,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "none",
+     "why": "comparator not buildable pre-freeze (register 1.6, v6.6): R-a / R-e: the sources the paper cites for asdM16 distribute no list of its members -- ref 118 (Voineagu 2011) prints the M12 genes (Supplementary Table 14) but no M16 / tan gene table, and its Supplementary Table 2 gives module membership kME only, no assignment; ref 119 (Parikshak 2016) holds no list named asdM16 (its CTX.M16 is its own rWGCNA module); the list 'asdM16 from Vioneagu et al 2011' is distributed by Parikshak 2013 Table S1D (ref 123, cited by Buch for 'ID All', not for this set) -- R-a does not reach it; it is the near-miss view's comparator (register 1.6, v6.7)"
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (mode none -- comparator not buildable pre-freeze (register 1.6, v6.6): R-a / R-e: the sources the paper cites for asdM16 distribute no list of its members -- ref 118 (Voineagu 2011) prints the M12 genes (Supplementary Table 14) but no M16 / tan gene table, and its Supplementary Table 2 gives module membership kME only, no assignment; ref 119 (Parikshak 2016) holds no list named asdM16 (its CTX.M16 is its own rWGCNA module); the list 'asdM16 from Vioneagu et al 2011' is distributed by Parikshak 2013 Table S1D (ref 123, cited by Buch for 'ID All', not for this set) -- R-a does not reach it; it is the near-miss view's comparator (register 1.6, v6.7))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "v6.8 B S1: BUCH-E-ASDdown-S1, a list equal to its near-miss comparator (Voineagu 2011 Supplementary Table 14, 370 in-universe genes) -> qualifies in the near-miss view",
+   "cell": "BUCH-E-ASDdown-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": "near_miss",
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "corroborated: external",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-ASDdown-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 370,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "set_id": "nm68_buch_voineagu2011_M12_table14",
+     "class": "V-AAL",
+     "used": {
+      "set_id": "nm68_buch_voineagu2011_M12_table14",
+      "file": "nm68_buch_voineagu2011_M12_table14.json",
+      "pinned_json_sha256": "b40f69589f09219e5e465b461c4648a8cc2558d7e57a8b2289afe93a288cfdc6",
+      "pinned_members_sha256": "63a80ceeb0ca72b995af282190f30227a8ac3f1e9cf99ce440377bd915feb6aa",
+      "json_sha256": "b40f69589f09219e5e465b461c4648a8cc2558d7e57a8b2289afe93a288cfdc6",
+      "members_sha256": "63a80ceeb0ca72b995af282190f30227a8ac3f1e9cf99ce440377bd915feb6aa"
+     },
+     "n_list_in_universe": 370,
+     "n_external_in_universe": 370,
+     "n_both": 370,
+     "jaccard": 1.0,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "qualifies",
+    "reason": "ok (corroborated: external)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "v6.8 B S1: the same list for BUCH-E-ASDdown-S1 in the PRIMARY view -> else branch (comparator not buildable)",
+   "cell": "BUCH-E-ASDdown-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "comparator not buildable pre-freeze",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-ASDdown-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 370,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "none",
+     "why": "comparator not buildable pre-freeze (register 1.6, v6.6): R-d (v6.8, applied uniformly -- the orchestrator under the operator's standing delegation, decided after the v6.7 final re-check, post hoc, declared): the paper's names for the set ('asdM12 from 118', 'ASD downregulated') reach no list under the cited sources' own names -- ref 118 (Voineagu 2011) calls the module 'M12' and prints its genes (Supplementary Table 14), and 'asdM12' is Parikshak 2013's name for it (ref 123, which Buch cites for 'ID All', not for this set); ref 119 (Parikshak 2016) holds no list named asdM12 (its CTX.M12 is its own rWGCNA module). The bridge 'asdM12' -> M12 rests on a reference the paper does not cite for the set -- the standard that sends Tourette's, CNS autoimmune and PAG-C9 / C10 to the secondary view; v6.7 N1 had admitted it to the primary view. Table 14's list is the near-miss view's comparator (register 1.6, v6.8)"
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (mode none -- comparator not buildable pre-freeze (register 1.6, v6.6): R-d (v6.8, applied uniformly -- the orchestrator under the operator's standing delegation, decided after the v6.7 final re-check, post hoc, declared): the paper's names for the set ('asdM12 from 118', 'ASD downregulated') reach no list under the cited sources' own names -- ref 118 (Voineagu 2011) calls the module 'M12' and prints its genes (Supplementary Table 14), and 'asdM12' is Parikshak 2013's name for it (ref 123, which Buch cites for 'ID All', not for this set); ref 119 (Parikshak 2016) holds no list named asdM12 (its CTX.M12 is its own rWGCNA module). The bridge 'asdM12' -> M12 rests on a reference the paper does not cite for the set -- the standard that sends Tourette's, CNS autoimmune and PAG-C9 / C10 to the secondary view; v6.7 N1 had admitted it to the primary view. Table 14's list is the near-miss view's comparator (register 1.6, v6.8))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "v6.8 B S1: BUCH-E-ASDdown-S1, 30 of its near-miss comparator's genes -> fails corroboration in the view",
+   "cell": "BUCH-E-ASDdown-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": "near_miss",
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "uncorroborated (Jaccard",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-ASDdown-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 30,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "set_id": "nm68_buch_voineagu2011_M12_table14",
+     "class": "V-AAL",
+     "used": {
+      "set_id": "nm68_buch_voineagu2011_M12_table14",
+      "file": "nm68_buch_voineagu2011_M12_table14.json",
+      "pinned_json_sha256": "b40f69589f09219e5e465b461c4648a8cc2558d7e57a8b2289afe93a288cfdc6",
+      "pinned_members_sha256": "63a80ceeb0ca72b995af282190f30227a8ac3f1e9cf99ce440377bd915feb6aa",
+      "json_sha256": "b40f69589f09219e5e465b461c4648a8cc2558d7e57a8b2289afe93a288cfdc6",
+      "members_sha256": "63a80ceeb0ca72b995af282190f30227a8ac3f1e9cf99ce440377bd915feb6aa"
+     },
+     "n_list_in_universe": 30,
+     "n_external_in_universe": 370,
+     "n_both": 30,
+     "jaccard": 0.0811,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (Jaccard 0.0811 < 0.80 with the pinned comparator)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "v6.9 C5: BUCH-E-RDNV-S1, a list equal to its near-miss comparator (Sanders 2019 ASD65, 61 in-universe genes) -> qualifies in the near-miss view",
+   "cell": "BUCH-E-RDNV-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": "near_miss",
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "corroborated: external",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-RDNV-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 61,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "set_id": "nm69_buch_sanders2019_asd65",
+     "class": "V-AAL",
+     "used": {
+      "set_id": "nm69_buch_sanders2019_asd65",
+      "file": "nm69_buch_sanders2019_asd65.json",
+      "pinned_json_sha256": "b96783ecc23784741fb7062b02fb7c711f2226d9dc524bcebcc3c675f6ec7441",
+      "pinned_members_sha256": "15693a2cde05b1ad0018932fe1736f3724069b6380ddaf58a7028a2018b1afd2",
+      "json_sha256": "b96783ecc23784741fb7062b02fb7c711f2226d9dc524bcebcc3c675f6ec7441",
+      "members_sha256": "15693a2cde05b1ad0018932fe1736f3724069b6380ddaf58a7028a2018b1afd2"
+     },
+     "n_list_in_universe": 61,
+     "n_external_in_universe": 61,
+     "n_both": 61,
+     "jaccard": 1.0,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "qualifies",
+    "reason": "ok (corroborated: external)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "v6.9 C5: the same list for BUCH-E-RDNV-S1 in the PRIMARY view -> else branch (comparator not buildable)",
+   "cell": "BUCH-E-RDNV-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "comparator not buildable pre-freeze",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-RDNV-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 61,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "none",
+     "why": "comparator not buildable pre-freeze (register 1.6, v6.6): R-e by reading (iii) (v6.9 C5, applied uniformly -- the orchestrator under the operator's standing delegation, decided after the v6.8 skeptic re-check, post hoc, declared): ref 120's Table S1 presents several gene flags (ASD65, DDD93, CHD253 and the sfari* columns it imports) and names none as the set the paper names ('ASD rare de novo' / 'ASD RDNV'); v6.6-v6.8 took ASD65 by a semantic reading of its column note ('associated with autism spectrum disorder: Sanders et al. Neuron 2015') -- a list reached by description, the standard that sends PAG-C9 / C10 to the secondary view. ASD65's 65 genes are the near-miss view's comparator (register 1.6, v6.9); the four cells are descriptor cells (m, m' unchanged)"
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (mode none -- comparator not buildable pre-freeze (register 1.6, v6.6): R-e by reading (iii) (v6.9 C5, applied uniformly -- the orchestrator under the operator's standing delegation, decided after the v6.8 skeptic re-check, post hoc, declared): ref 120's Table S1 presents several gene flags (ASD65, DDD93, CHD253 and the sfari* columns it imports) and names none as the set the paper names ('ASD rare de novo' / 'ASD RDNV'); v6.6-v6.8 took ASD65 by a semantic reading of its column note ('associated with autism spectrum disorder: Sanders et al. Neuron 2015') -- a list reached by description, the standard that sends PAG-C9 / C10 to the secondary view. ASD65's 65 genes are the near-miss view's comparator (register 1.6, v6.9); the four cells are descriptor cells (m, m' unchanged))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "B1: PAG-C1, an input list equal to its pinned comparator (Gandal 2022, 24 DE modules; register_sets) -> qualifies",
+   "cell": "PAG-C1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "corroborated: external",
+   "expected_counts": {},
+   "observed": {
+    "cell": "PAG-C1",
+    "target": "pagani2026crossspecies",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 4401,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "set_id": "cmp66_pagani_gandal2022_24_de_modules",
+     "class": "V-AAL",
+     "used": {
+      "set_id": "cmp66_pagani_gandal2022_24_de_modules",
+      "file": "cmp66_pagani_gandal2022_24_de_modules.json",
+      "pinned_json_sha256": "72b7f15a967eef259ee549cc879e2845004a49811e92186628fa4c1ca31e3bad",
+      "pinned_members_sha256": "416ceae14ce37cd63ef23f2f861383741cf9ffa3d58240244a9020f439d7cb39",
+      "json_sha256": "72b7f15a967eef259ee549cc879e2845004a49811e92186628fa4c1ca31e3bad",
+      "members_sha256": "416ceae14ce37cd63ef23f2f861383741cf9ffa3d58240244a9020f439d7cb39"
+     },
+     "n_list_in_universe": 4401,
+     "n_external_in_universe": 4401,
+     "n_both": 4401,
+     "jaccard": 1.0,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "qualifies",
+    "reason": "ok (corroborated: external)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "B1 refused: PAG-C1 with the genuine list, wrong set: the file under PAG-C1's set id is another committed set (SynGO) -> else branch",
+   "cell": "PAG-C1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": "wrong set: the file under PAG-C1's set id is another committed set (SynGO)",
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "file sha256 differs",
+   "expected_counts": {},
+   "observed": {
+    "cell": "PAG-C1",
+    "target": "pagani2026crossspecies",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 4401,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "why": "comparator refused: file sha256 differs from the pinned committed set",
+     "used": {
+      "set_id": "cmp66_pagani_gandal2022_24_de_modules",
+      "file": "cmp66_pagani_gandal2022_24_de_modules.json",
+      "pinned_json_sha256": "72b7f15a967eef259ee549cc879e2845004a49811e92186628fa4c1ca31e3bad",
+      "pinned_members_sha256": "416ceae14ce37cd63ef23f2f861383741cf9ffa3d58240244a9020f439d7cb39",
+      "json_sha256": "a4e55b0e08609b9ce8a239d9025bd0b1fb0e6e154f1c64b75f2be3181b6804cb"
+     },
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (comparator refused: file sha256 differs from the pinned committed set)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "B1 refused: PAG-C1 with the genuine list, wrong set, file pin moved to it: the pins name PAG-C1's set id but the other set's file hash -> else branch",
+   "cell": "PAG-C1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": "wrong set, file pin moved to it: the pins name PAG-C1's set id but the other set's file hash",
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "set id differs",
+   "expected_counts": {},
+   "observed": {
+    "cell": "PAG-C1",
+    "target": "pagani2026crossspecies",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 4401,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "why": "comparator refused: set id differs from the pinned set",
+     "used": {
+      "set_id": "cmp66_pagani_gandal2022_24_de_modules",
+      "file": "cmp66_pagani_gandal2022_24_de_modules.json",
+      "pinned_json_sha256": "a4e55b0e08609b9ce8a239d9025bd0b1fb0e6e154f1c64b75f2be3181b6804cb",
+      "pinned_members_sha256": "416ceae14ce37cd63ef23f2f861383741cf9ffa3d58240244a9020f439d7cb39",
+      "json_sha256": "a4e55b0e08609b9ce8a239d9025bd0b1fb0e6e154f1c64b75f2be3181b6804cb"
+     },
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (comparator refused: set id differs from the pinned set)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "B1 refused: PAG-C1 with the genuine list, self-made set (the list itself) under the right set id -> else branch",
+   "cell": "PAG-C1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": "self-made set (the list itself) under the right set id",
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "file sha256 differs",
+   "expected_counts": {},
+   "observed": {
+    "cell": "PAG-C1",
+    "target": "pagani2026crossspecies",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 4401,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "why": "comparator refused: file sha256 differs from the pinned committed set",
+     "used": {
+      "set_id": "cmp66_pagani_gandal2022_24_de_modules",
+      "file": "cmp66_pagani_gandal2022_24_de_modules.json",
+      "pinned_json_sha256": "72b7f15a967eef259ee549cc879e2845004a49811e92186628fa4c1ca31e3bad",
+      "pinned_members_sha256": "416ceae14ce37cd63ef23f2f861383741cf9ffa3d58240244a9020f439d7cb39",
+      "json_sha256": "a76c0eb6d20f42e4082d8ab55383dbed2a9f57a5e5f853575292d5830a1b32c9"
+     },
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (comparator refused: file sha256 differs from the pinned committed set)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "B1 refused: PAG-C1 with the genuine list, self-made set with its file hash pinned: the members hash still differs -> else branch",
+   "cell": "PAG-C1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": "self-made set with its file hash pinned: the members hash still differs",
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "members sha256 differs",
+   "expected_counts": {},
+   "observed": {
+    "cell": "PAG-C1",
+    "target": "pagani2026crossspecies",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 4401,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "why": "comparator refused: members sha256 differs from the pinned set",
+     "used": {
+      "set_id": "cmp66_pagani_gandal2022_24_de_modules",
+      "file": "cmp66_pagani_gandal2022_24_de_modules.json",
+      "pinned_json_sha256": "a76c0eb6d20f42e4082d8ab55383dbed2a9f57a5e5f853575292d5830a1b32c9",
+      "pinned_members_sha256": "416ceae14ce37cd63ef23f2f861383741cf9ffa3d58240244a9020f439d7cb39",
+      "json_sha256": "a76c0eb6d20f42e4082d8ab55383dbed2a9f57a5e5f853575292d5830a1b32c9",
+      "members_sha256": "2f3ea7c95053eeeb621c662f22e39e6d5820cd5b7b62dda9ef59526e08d4b133"
+     },
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (comparator refused: members sha256 differs from the pinned set)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "B1 refused: PAG-C1 with the genuine list, missing file -> else branch",
+   "cell": "PAG-C1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": "missing file",
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "file unreadable",
+   "expected_counts": {},
+   "observed": {
+    "cell": "PAG-C1",
+    "target": "pagani2026crossspecies",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 4401,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "why": "comparator refused: file unreadable (FileNotFoundError)",
+     "used": {
+      "set_id": "cmp66_pagani_gandal2022_24_de_modules",
+      "file": "cmp66_pagani_gandal2022_24_de_modules.json",
+      "pinned_json_sha256": "72b7f15a967eef259ee549cc879e2845004a49811e92186628fa4c1ca31e3bad",
+      "pinned_members_sha256": "416ceae14ce37cd63ef23f2f861383741cf9ffa3d58240244a9020f439d7cb39"
+     },
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (comparator refused: file unreadable (FileNotFoundError))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "B1 refused: PAG-C1 with the genuine list, malformed JSON (its bytes pinned, so the parser is reached) -> else branch",
+   "cell": "PAG-C1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": "malformed JSON (its bytes pinned, so the parser is reached)",
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "malformed JSON",
+   "expected_counts": {},
+   "observed": {
+    "cell": "PAG-C1",
+    "target": "pagani2026crossspecies",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 4401,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "why": "comparator refused: malformed JSON",
+     "used": {
+      "set_id": "cmp66_pagani_gandal2022_24_de_modules",
+      "file": "cmp66_pagani_gandal2022_24_de_modules.json",
+      "pinned_json_sha256": "92072df399cb74703f8e86f450d552bc0bb01eeeb98a90985a1b7772c8fd0016",
+      "pinned_members_sha256": "416ceae14ce37cd63ef23f2f861383741cf9ffa3d58240244a9020f439d7cb39",
+      "json_sha256": "92072df399cb74703f8e86f450d552bc0bb01eeeb98a90985a1b7772c8fd0016"
+     },
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (comparator refused: malformed JSON)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "B1 refused: PAG-C1 with the genuine list, hash mismatch: the genuine file with one byte appended -> else branch",
+   "cell": "PAG-C1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": "hash mismatch: the genuine file with one byte appended",
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "file sha256 differs",
+   "expected_counts": {},
+   "observed": {
+    "cell": "PAG-C1",
+    "target": "pagani2026crossspecies",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 4401,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "why": "comparator refused: file sha256 differs from the pinned committed set",
+     "used": {
+      "set_id": "cmp66_pagani_gandal2022_24_de_modules",
+      "file": "cmp66_pagani_gandal2022_24_de_modules.json",
+      "pinned_json_sha256": "72b7f15a967eef259ee549cc879e2845004a49811e92186628fa4c1ca31e3bad",
+      "pinned_members_sha256": "416ceae14ce37cd63ef23f2f861383741cf9ffa3d58240244a9020f439d7cb39",
+      "json_sha256": "de795e5de7c39dbc7250182324ac4ecbb07eac24e13de26556eaa1f792760057"
+     },
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (comparator refused: file sha256 differs from the pinned committed set)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "B1 refused: PAG-C1 with the genuine list, class mismatch: the pins name a class the committed set has no universe for -> else branch",
+   "cell": "PAG-C1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": "class mismatch: the pins name a class the committed set has no universe for",
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "class XYZ not in the committed set's universe",
+   "expected_counts": {},
+   "observed": {
+    "cell": "PAG-C1",
+    "target": "pagani2026crossspecies",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 4401,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "why": "comparator refused: class XYZ not in the committed set's universe",
+     "used": {
+      "set_id": "cmp66_pagani_gandal2022_24_de_modules",
+      "file": "cmp66_pagani_gandal2022_24_de_modules.json",
+      "pinned_json_sha256": "72b7f15a967eef259ee549cc879e2845004a49811e92186628fa4c1ca31e3bad",
+      "pinned_members_sha256": "416ceae14ce37cd63ef23f2f861383741cf9ffa3d58240244a9020f439d7cb39",
+      "json_sha256": "72b7f15a967eef259ee549cc879e2845004a49811e92186628fa4c1ca31e3bad",
+      "members_sha256": "416ceae14ce37cd63ef23f2f861383741cf9ffa3d58240244a9020f439d7cb39"
+     },
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (comparator refused: class XYZ not in the committed set's universe)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "B1 recipe: RG-03 'Ribosome' (--rival 'Spliceosome'), the list equal to the pathway the family rule picks (KEGG_2016 hsa03010) -> qualifies",
+   "cell": "RG-03",
+   "rival_only": [
+    "Spliceosome"
+   ],
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".docx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "corroborated: kegg_family_recipe",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-03",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 129,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "kegg_family_recipe",
+     "set_id": null,
+     "class": "dk-ctx",
+     "used": {
+      "recipe": "enrichr_kegg_family_v6_6",
+      "name": "Ribosome",
+      "KEGG_2015_sha256": "ac721aed19bbc618c766cf1a76cc3dfa99c1df13055073ebc3d3e112fbf69369",
+      "KEGG_2016_sha256": "a501968146264e4a7ba2b2fb06ff8b9c0cb9a209655f31c095ece502e04d61f5",
+      "chosen_library": "KEGG_2016",
+      "library": "KEGG_2016",
+      "pathway": "hsa03010",
+      "members_sha256": "861c978680d4e28619eb587a3697bfa6f3a4ec3b9245a2a0e60ada1dadbe73ae"
+     },
+     "n_list_in_universe": 129,
+     "n_external_in_universe": 129,
+     "n_both": 129,
+     "jaccard": 1.0,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "qualifies",
+    "reason": "ok (corroborated: kegg_family_recipe)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "B1 recipe refused: the same run with a KEGG_2015 library pin that differs -> else branch",
+   "cell": "RG-03",
+   "rival_only": [
+    "Spliceosome"
+   ],
+   "level": "final",
+   "spec_modified": "KEGG_2015 pin changed",
+   "view": null,
+   "carrier_types": [
+    ".docx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "library KEGG_2015 sha256 differs",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-03",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 129,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "kegg_family_recipe",
+     "why": "comparator refused: library KEGG_2015 sha256 differs from the pinned one",
+     "used": {
+      "recipe": "enrichr_kegg_family_v6_6",
+      "name": "Ribosome",
+      "KEGG_2015_sha256": "ac721aed19bbc618c766cf1a76cc3dfa99c1df13055073ebc3d3e112fbf69369"
+     },
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (comparator refused: library KEGG_2015 sha256 differs from the pinned one)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "B1 recipe refused: a printed name that reaches no pathway of either library -> else branch",
+   "cell": "RG-03",
+   "rival_only": [
+    "Spliceosome"
+   ],
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".docx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "reaches no pathway",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-03",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 129,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "kegg_family_recipe",
+     "why": "comparator refused: the name reaches no pathway of either library",
+     "used": {
+      "recipe": "enrichr_kegg_family_v6_6",
+      "name": "Planted pathway zeta",
+      "KEGG_2015_sha256": "ac721aed19bbc618c766cf1a76cc3dfa99c1df13055073ebc3d3e112fbf69369",
+      "KEGG_2016_sha256": "a501968146264e4a7ba2b2fb06ff8b9c0cb9a209655f31c095ece502e04d61f5",
+      "chosen_library": "KEGG_2016",
+      "library": null,
+      "pathway": null
+     },
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (comparator refused: the name reaches no pathway of either library)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "C1 (A9): 400 distinct approved symbols + 100 repeats = 500 rows against RG-04's printed 500 -> size mismatch",
+   "cell": "RG-04",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "size mismatch",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-04",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 500,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "printed_size",
+     "n_rows": 500,
+     "n_distinct_approved": 400,
+     "printed_size": 500,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (size mismatch: the list's length differs from the printed size)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "C1 (A10): 500 arbitrary symbol-shaped tokens (no HGNC symbol) under 'Neuron genes (Zhang)' -> size mismatch",
+   "cell": "RG-04",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "size mismatch",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-04",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 500,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "printed_size",
+     "n_rows": 500,
+     "n_distinct_approved": 0,
+     "printed_size": 500,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (size mismatch: the list's length differs from the printed size)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "C1: 500 distinct approved symbols and one token no HGNC symbol matches (501 rows) -> qualifies (the count is of approved symbols)",
+   "cell": "RG-04",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "corroborated: printed_size",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-04",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 501,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "printed_size",
+     "n_rows": 501,
+     "n_distinct_approved": 500,
+     "printed_size": 500,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "qualifies",
+    "reason": "ok (corroborated: printed_size)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "C3: RG-04's 500 genes under the title and a 'GENES' header row -> 500 counted, qualifies",
+   "cell": "RG-04",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "corroborated: printed_size",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-04",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 500,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "printed_size",
+     "n_rows": 500,
+     "n_distinct_approved": 500,
+     "printed_size": 500,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "qualifies",
+    "reason": "ok (corroborated: printed_size)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "C3: RG-04's 500 genes under the title and a 'SYMBOL' header row -> 500 counted, qualifies",
+   "cell": "RG-04",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "corroborated: printed_size",
+   "expected_counts": {},
+   "observed": {
+    "cell": "RG-04",
+    "target": "romerogarcia2019synaptic",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 500,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "printed_size",
+     "n_rows": 500,
+     "n_distinct_approved": 500,
+     "printed_size": 500,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "qualifies",
+    "reason": "ok (corroborated: printed_size)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "C2 (A6): a genuine input sheet whose other set's column holds the approved pseudogene C9orf78P1 -> Secretory vesicle qualifies (an HGNC symbol is never split into pieces)",
+   "cell": "BUCH-E-Syn-SecVesicle-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "corroborated: external",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Syn-SecVesicle-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 112,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "set_id": "buch_goslim_fallback_GO0099503",
+     "class": "V-AAL",
+     "used": {
+      "set_id": "buch_goslim_fallback_GO0099503",
+      "file": "buch_goslim_fallback_GO0099503.json",
+      "pinned_json_sha256": "9e6ec90aec146711b96a5eb3b14bbf7030087e0edbb49678e7e20817ec9fe4d9",
+      "pinned_members_sha256": "3238882f9469fad9bef205ad0dd4e13627cbb442a02f9d4bebea4bf472b6cc14",
+      "json_sha256": "9e6ec90aec146711b96a5eb3b14bbf7030087e0edbb49678e7e20817ec9fe4d9",
+      "members_sha256": "3238882f9469fad9bef205ad0dd4e13627cbb442a02f9d4bebea4bf472b6cc14"
+     },
+     "n_list_in_universe": 112,
+     "n_external_in_universe": 112,
+     "n_both": 112,
+     "jaccard": 1.0,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "qualifies",
+    "reason": "ok (corroborated: external)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "C6 (A5): the list beside a 't value' column -> refused",
+   "cell": "BUCH-E-Syn-SecVesicle-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Syn-SecVesicle-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "C6 (A5): the list beside a 'T-VALUE' column -> refused",
+   "cell": "BUCH-E-Syn-SecVesicle-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Syn-SecVesicle-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "C6 (A5): the list beside a 'Correlation' column -> refused",
+   "cell": "BUCH-E-Syn-SecVesicle-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Syn-SecVesicle-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics, result or map wording on the sheet)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics, result or map wording on the sheet))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics, result or map wording on the sheet))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "C6 (A5): the list beside a 'r' column -> refused",
+   "cell": "BUCH-E-Syn-SecVesicle-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Syn-SecVesicle-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics, result or map wording on the sheet)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics, result or map wording on the sheet))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics, result or map wording on the sheet))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "C6 (A5): the list beside a 'OR (95% CI)' column -> refused",
+   "cell": "BUCH-E-Syn-SecVesicle-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "result list",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Syn-SecVesicle-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 1,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [
+     "result list (statistics wording)"
+    ],
+    "text_result": "else branch",
+    "text_reason": "no qualifying list (refused: result list (statistics wording))",
+    "result": "else branch",
+    "reason": "no qualifying list (refused: result list (statistics wording))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "residual, declared (A7): an 85 % subset (96 of 112) of Secretory vesicle's comparator in an input-worded sheet -> qualifies (Jaccard >= .80)",
+   "cell": "BUCH-E-Syn-SecVesicle-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "corroborated: external",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Syn-SecVesicle-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 96,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "set_id": "buch_goslim_fallback_GO0099503",
+     "class": "V-AAL",
+     "used": {
+      "set_id": "buch_goslim_fallback_GO0099503",
+      "file": "buch_goslim_fallback_GO0099503.json",
+      "pinned_json_sha256": "9e6ec90aec146711b96a5eb3b14bbf7030087e0edbb49678e7e20817ec9fe4d9",
+      "pinned_members_sha256": "3238882f9469fad9bef205ad0dd4e13627cbb442a02f9d4bebea4bf472b6cc14",
+      "json_sha256": "9e6ec90aec146711b96a5eb3b14bbf7030087e0edbb49678e7e20817ec9fe4d9",
+      "members_sha256": "3238882f9469fad9bef205ad0dd4e13627cbb442a02f9d4bebea4bf472b6cc14"
+     },
+     "n_list_in_universe": 96,
+     "n_external_in_universe": 112,
+     "n_both": 96,
+     "jaccard": 0.8571,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "qualifies",
+    "reason": "ok (corroborated: external)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "v6.7 near-miss view: BUCH-E-ASDup-S1, a list equal to its near-miss comparator (asdM16) -> qualifies in the view",
+   "cell": "BUCH-E-ASDup-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": "near_miss",
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "corroborated: external",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-ASDup-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 357,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "set_id": "nm67_buch_parikshak2013_asdM16",
+     "class": "V-AAL",
+     "used": {
+      "set_id": "nm67_buch_parikshak2013_asdM16",
+      "file": "nm67_buch_parikshak2013_asdM16.json",
+      "pinned_json_sha256": "26216ddcf6af9eb33fdd836336c0783e9d2812e156134246ce6cd20e3ccf8445",
+      "pinned_members_sha256": "0d01d30a2a0193d534813c7b91fd3f277a17041abc9740f0b85a1a3ff4157ec1",
+      "json_sha256": "26216ddcf6af9eb33fdd836336c0783e9d2812e156134246ce6cd20e3ccf8445",
+      "members_sha256": "0d01d30a2a0193d534813c7b91fd3f277a17041abc9740f0b85a1a3ff4157ec1"
+     },
+     "n_list_in_universe": 357,
+     "n_external_in_universe": 357,
+     "n_both": 357,
+     "jaccard": 1.0,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "qualifies",
+    "reason": "ok (corroborated: external)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "v6.7 near-miss view: the same list for BUCH-E-ASDup-S1 in the PRIMARY view -> else branch (comparator not buildable)",
+   "cell": "BUCH-E-ASDup-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "comparator not buildable pre-freeze",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-ASDup-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 357,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "none",
+     "why": "comparator not buildable pre-freeze (register 1.6, v6.6): R-a / R-e: the sources the paper cites for asdM16 distribute no list of its members -- ref 118 (Voineagu 2011) prints the M12 genes (Supplementary Table 14) but no M16 / tan gene table, and its Supplementary Table 2 gives module membership kME only, no assignment; ref 119 (Parikshak 2016) holds no list named asdM16 (its CTX.M16 is its own rWGCNA module); the list 'asdM16 from Vioneagu et al 2011' is distributed by Parikshak 2013 Table S1D (ref 123, cited by Buch for 'ID All', not for this set) -- R-a does not reach it; it is the near-miss view's comparator (register 1.6, v6.7)"
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (mode none -- comparator not buildable pre-freeze (register 1.6, v6.6): R-a / R-e: the sources the paper cites for asdM16 distribute no list of its members -- ref 118 (Voineagu 2011) prints the M12 genes (Supplementary Table 14) but no M16 / tan gene table, and its Supplementary Table 2 gives module membership kME only, no assignment; ref 119 (Parikshak 2016) holds no list named asdM16 (its CTX.M16 is its own rWGCNA module); the list 'asdM16 from Vioneagu et al 2011' is distributed by Parikshak 2013 Table S1D (ref 123, cited by Buch for 'ID All', not for this set) -- R-a does not reach it; it is the near-miss view's comparator (register 1.6, v6.7))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "v6.7 near-miss view: BUCH-E-FMRP-S1, a list equal to its near-miss comparator (FMRP842) -> qualifies in the view",
+   "cell": "BUCH-E-FMRP-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": "near_miss",
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "corroborated: external",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-FMRP-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 823,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "set_id": "nm67_buch_darnell2011_fmrp842",
+     "class": "V-AAL",
+     "used": {
+      "set_id": "nm67_buch_darnell2011_fmrp842",
+      "file": "nm67_buch_darnell2011_fmrp842.json",
+      "pinned_json_sha256": "6694ee5636584bee56b6575fbf50f28ca941da2ca6fece8c29c36cdc4547fd01",
+      "pinned_members_sha256": "d523d28049a8991add13d5c74dbffd62b11b18a2a0793ab7911fdc6b6754e6d0",
+      "json_sha256": "6694ee5636584bee56b6575fbf50f28ca941da2ca6fece8c29c36cdc4547fd01",
+      "members_sha256": "d523d28049a8991add13d5c74dbffd62b11b18a2a0793ab7911fdc6b6754e6d0"
+     },
+     "n_list_in_universe": 823,
+     "n_external_in_universe": 823,
+     "n_both": 823,
+     "jaccard": 1.0,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "qualifies",
+    "reason": "ok (corroborated: external)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "v6.7 near-miss view: the same list for BUCH-E-FMRP-S1 in the PRIMARY view -> else branch (comparator not buildable)",
+   "cell": "BUCH-E-FMRP-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "comparator not buildable pre-freeze",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-FMRP-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 823,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "none",
+     "why": "comparator not buildable pre-freeze (register 1.6, v6.6): R-a / R-e: ref 122 (Steinberg & Webber 2013) uses the 842 FMRP targets of Darnell 2011 but distributes no list of them (Document S1: Figures S1-S5, Tables S1-S16 -- only subsets disrupted in probands, Table S14); Darnell 2011 (Cell 146:247), which Buch does not cite, distributes the 842 in its Table S2A -- R-a does not reach it; it is the near-miss view's comparator (register 1.6, v6.7 N7)"
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (mode none -- comparator not buildable pre-freeze (register 1.6, v6.6): R-a / R-e: ref 122 (Steinberg & Webber 2013) uses the 842 FMRP targets of Darnell 2011 but distributes no list of them (Document S1: Figures S1-S5, Tables S1-S16 -- only subsets disrupted in probands, Table S14); Darnell 2011 (Cell 146:247), which Buch does not cite, distributes the 842 in its Table S2A -- R-a does not reach it; it is the near-miss view's comparator (register 1.6, v6.7 N7))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "v6.7 near-miss view: BUCH-E-TS-S1, a list equal to its near-miss comparator (Tourette) -> qualifies in the view",
+   "cell": "BUCH-E-TS-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": "near_miss",
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "qualifies",
+   "expected_reason_contains": "corroborated: external",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-TS-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 105,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "external",
+     "set_id": "nm67_buch_diseases_DOID11119",
+     "class": "V-AAL",
+     "used": {
+      "set_id": "nm67_buch_diseases_DOID11119",
+      "file": "nm67_buch_diseases_DOID11119.json",
+      "pinned_json_sha256": "663b6c5a01fc0509fe457f4a20d3d17653fbc3884ab1ab3ddfe6dd1a68b12ef3",
+      "pinned_members_sha256": "c3899ac8948dbf6bb818f81a2b2ad3f82fb558de0214c6160db9473271b9bca7",
+      "json_sha256": "663b6c5a01fc0509fe457f4a20d3d17653fbc3884ab1ab3ddfe6dd1a68b12ef3",
+      "members_sha256": "c3899ac8948dbf6bb818f81a2b2ad3f82fb558de0214c6160db9473271b9bca7"
+     },
+     "n_list_in_universe": 105,
+     "n_external_in_universe": 105,
+     "n_both": 105,
+     "jaccard": 1.0,
+     "threshold": 0.8,
+     "env": {
+      "universe_genes": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+      "pinned_universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_table": "E:\\data\\asdg\\explore_public\\hgnc_complete_set\\hgnc_complete_set_2026-09-04.txt",
+      "pinned_hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+      "universe_genes_sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046",
+      "hgnc_sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20"
+     }
+    },
+    "result": "qualifies",
+    "reason": "ok (corroborated: external)"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "v6.7 near-miss view: the same list for BUCH-E-TS-S1 in the PRIMARY view -> else branch (comparator not buildable)",
+   "cell": "BUCH-E-TS-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "comparator not buildable pre-freeze",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-TS-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 105,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "none",
+     "why": "comparator not buildable pre-freeze (register 1.6, v6.6): R-d: no name the paper gives reaches a term of the source by the name rule (\"Tourette's syndrome\": tiers {'a': 0, 'b': 0, 'c_name': 0, 'c_synonym': 0}; \"Tourette's\": tiers {'a': 0, 'b': 0, 'c_name': 0, 'c_synonym': 0})"
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (mode none -- comparator not buildable pre-freeze (register 1.6, v6.6): R-d: no name the paper gives reaches a term of the source by the name rule (\"Tourette's syndrome\": tiers {'a': 0, 'b': 0, 'c_name': 0, 'c_synonym': 0}; \"Tourette's\": tiers {'a': 0, 'b': 0, 'c_name': 0, 'c_synonym': 0}))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "v6.7 near-miss view: a cell with no near-miss pin (BUCH-E-Syn-SecVesicle-S1) -> the view is refused",
+   "cell": "BUCH-E-Syn-SecVesicle-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": "near_miss",
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "run refused",
+   "expected_reason_contains": "no 'near_miss' view is pinned",
+   "expected_counts": {},
+   "observed": {
+    "result": "run refused",
+    "reason": "no 'near_miss' view is pinned for this cell (register 1.6, v6.7)",
+    "text_result": "run refused",
+    "text_reason": "no 'near_miss' view is pinned for this cell (register 1.6, v6.7)",
+    "n_candidates": 0,
+    "n_refused": 0,
+    "n_qualifying_distinct": 0
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "v6.7 near-miss view: BUCH-E-CNSauto-S1, whose near-miss comparator is not buildable either -> else branch in the view",
+   "cell": "BUCH-E-CNSauto-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": null,
+   "view": "near_miss",
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "near-miss comparator not buildable either",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-CNSauto-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 1,
+    "n_refused": 0,
+    "n_qualifying_distinct": 1,
+    "refused_reasons": [],
+    "n_genes": 30,
+    "text_result": "qualifies",
+    "text_reason": "ok",
+    "corroboration": {
+     "mode": "none",
+     "why": "near-miss comparator not buildable either (register 1.6, v6.7): R-d after the declared normalisation (expand 'CNS' to 'central nervous system'): no name the paper gives reaches a term of the source by the name rule ('central nervous system autoimmune': tiers {'a': 0, 'b': 0, 'c_name': 0, 'c_synonym': 0}; 'central nervous system autoimmune': tiers {'a': 0, 'b': 0, 'c_name': 0, 'c_synonym': 0})"
+    },
+    "result": "else branch",
+    "reason": "source 1 uncorroborated (mode none -- near-miss comparator not buildable either (register 1.6, v6.7): R-d after the declared normalisation (expand 'CNS' to 'central nervous system'): no name the paper gives reaches a term of the source by the name rule ('central nervous system autoimmune': tiers {'a': 0, 'b': 0, 'c_name': 0, 'c_synonym': 0}; 'central nervous system autoimmune': tiers {'a': 0, 'b': 0, 'c_name': 0, 'c_synonym': 0}))"
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N3 refused: Secretory vesicle's genuine list (qualifies with the pinned tables), a universe restricted to the 30 leading-edge genes (pin unchanged) -> else branch",
+   "cell": "BUCH-E-Syn-SecVesicle-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": "N3: a universe restricted to the 30 leading-edge genes (pin unchanged)",
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "UNIVERSE_GENES.json sha256 differs",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Syn-SecVesicle-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 0,
+    "n_refused": 0,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [],
+    "text_result": "else branch",
+    "text_reason": "the pinned universe / HGNC table could not be used (ValueError: UNIVERSE_GENES.json sha256 differs from the pinned one)",
+    "result": "else branch",
+    "reason": "the pinned universe / HGNC table could not be used (ValueError: UNIVERSE_GENES.json sha256 differs from the pinned one)",
+    "corroboration": {
+     "why": "comparator refused: the pinned universe / HGNC table could not be used (ValueError: UNIVERSE_GENES.json sha256 differs from the pinned one)"
+    }
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N3 refused: Secretory vesicle's genuine list (qualifies with the pinned tables), the same 30-gene universe with its own hash pinned -> else branch",
+   "cell": "BUCH-E-Syn-SecVesicle-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": "N3: the same 30-gene universe with its own hash pinned",
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "universe too small",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Syn-SecVesicle-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 0,
+    "n_refused": 0,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [],
+    "text_result": "else branch",
+    "text_reason": "the pinned universe / HGNC table could not be used (ValueError: universe too small: classes ['MIST64', 'V-AAL', 'V-DK', 'dk-ctx'] under 10000 genes)",
+    "result": "else branch",
+    "reason": "the pinned universe / HGNC table could not be used (ValueError: universe too small: classes ['MIST64', 'V-AAL', 'V-DK', 'dk-ctx'] under 10000 genes)",
+    "corroboration": {
+     "why": "comparator refused: the pinned universe / HGNC table could not be used (ValueError: universe too small: classes ['MIST64', 'V-AAL', 'V-DK', 'dk-ctx'] under 10000 genes)"
+    }
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N3 refused: Secretory vesicle's genuine list (qualifies with the pinned tables), a missing universe file -> else branch",
+   "cell": "BUCH-E-Syn-SecVesicle-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": "N3: a missing universe file",
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "could not be used (FileNotFoundError",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Syn-SecVesicle-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 0,
+    "n_refused": 0,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [],
+    "text_result": "else branch",
+    "text_reason": "the pinned universe / HGNC table could not be used (FileNotFoundError)",
+    "result": "else branch",
+    "reason": "the pinned universe / HGNC table could not be used (FileNotFoundError)",
+    "corroboration": {
+     "why": "comparator refused: the pinned universe / HGNC table could not be used (FileNotFoundError)"
+    }
+   },
+   "caught": true
+  },
+  {
+   "target": "source1_lists",
+   "case": "N3 refused: Secretory vesicle's genuine list (qualifies with the pinned tables), an HGNC table pin that differs -> else branch",
+   "cell": "BUCH-E-Syn-SecVesicle-S1",
+   "rival_only": null,
+   "level": "final",
+   "spec_modified": "N3: an HGNC table pin that differs",
+   "view": null,
+   "carrier_types": [
+    ".xlsx"
+   ],
+   "expected": "else branch",
+   "expected_reason_contains": "the HGNC table's sha256 differs",
+   "expected_counts": {},
+   "observed": {
+    "cell": "BUCH-E-Syn-SecVesicle-S1",
+    "target": "buch2023asdsubgroups",
+    "n_candidates": 0,
+    "n_refused": 0,
+    "n_qualifying_distinct": 0,
+    "refused_reasons": [],
+    "text_result": "else branch",
+    "text_reason": "the pinned universe / HGNC table could not be used (ValueError: the HGNC table's sha256 differs from the pinned one)",
+    "result": "else branch",
+    "reason": "the pinned universe / HGNC table could not be used (ValueError: the HGNC table's sha256 differs from the pinned one)",
+    "corroboration": {
+     "why": "comparator refused: the pinned universe / HGNC table could not be used (ValueError: the HGNC table's sha256 differs from the pinned one)"
+    }
+   },
+   "caught": true
+  }
+ ],
+ "untested_adapters": [
+  "xls",
+  "zip (recursion; members use tested adapters)",
+  "txt (whitespace table)"
+ ],
+ "pdf_adapter": {
+  "pdfplumber": "0.11.10",
+  "pdfminer.six": "20260107",
+  "pypdfium2": "5.13.0",
+  "pinned_in_spec": "0.11.10",
+  "pdf_writer_for_plants": "matplotlib 3.11.2 (vector text, fonttype 42)"
+ },
+ "script_sha256": "96fedc6a6705fad948d68118b56b127ca63f75f870a7ea498d0ba03ff1b3a539",
+ "spec_sha256": "5ea64bcdc17e32562e0d91c38c72a3abeb4e1f8e155bb9fd4349f120056179b4"
+}

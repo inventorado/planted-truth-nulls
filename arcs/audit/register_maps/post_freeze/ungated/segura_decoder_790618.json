@@ -1,0 +1,52 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "segura_decoder_790618",
+ "gate": "ungated",
+ "url": "https://neurovault.org/images/790618/gene_expression/json?mask=full",
+ "kind": "file",
+ "date_utc": "2026-10-11T22:40:39+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "server": {
+  "status_code": null,
+  "content_length": null,
+  "last_modified": null,
+  "etag_md5": null,
+  "head": "not made (RUN_PLAN_amend_3 R45 (a): one GET)"
+ },
+ "fetch": {
+  "source": "download",
+  "path": "E:/data/asdg/segura_decoder_790618/carrier.json",
+  "date_utc": "2026-10-11T22:40:46+00:00",
+  "bytes": 3214848,
+  "sha256": "088a7ca758fc07dd97417bf61325605ea217b5d5a78a2af4d2c98488ad10ace6"
+ },
+ "identity": {
+  "facts": {
+   "bytes": 3214848,
+   "sha256": "088a7ca758fc07dd97417bf61325605ea217b5d5a78a2af4d2c98488ad10ace6",
+   "md5": "776cf4aca53203741164f70d6d6a09d4",
+   "git_blob": "9028cc60751e3f3df6213628f6bc5f4ad7b2ba65",
+   "has_crlf": false,
+   "git_blob_lf": null,
+   "bytes_lf": null
+  },
+  "references": [],
+  "comparison": {
+   "result": "identity recorded at download (no pre-freeze identity)",
+   "checks": []
+  }
+ },
+ "identifier_bearing": false,
+ "extraction": {
+  "object_path": "D:/RESEARCH/asd-imaging-genetics/artifacts/audit/wp3/ungated/segura_decoder_790618/segura_decoder_790618_extract.json",
+  "object_sha256": "eac712b0bdfd04be860caa57c4aa7f5a11730de708b9136211256cd900d5b504"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "extracted"
+}

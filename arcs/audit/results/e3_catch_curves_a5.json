@@ -1,0 +1,866 @@
+{
+ "amendment": "prereg_amend_5 \u00a73 (registered descriptor; not a gate)",
+ "alpha_v": 0.025,
+ "a9_reproduces_amendment_5": true,
+ "curves": [
+  {
+   "cls": "aal",
+   "family": "C-sp",
+   "a": 0.3,
+   "k": 14,
+   "n": 300,
+   "rate": 0.04666666666666667,
+   "by_step": {
+    "0": {
+     "k": 7,
+     "n": 150,
+     "rate": 0.04666666666666667,
+     "missing": 0,
+     "blocked": 0
+    },
+    "1": {
+     "k": 7,
+     "n": 150,
+     "rate": 0.04666666666666667,
+     "missing": 0,
+     "blocked": 0
+    }
+   },
+   "status_counts": {
+    "ok": 300
+   },
+   "legs": {
+    "level0": {
+     "k": 166,
+     "n": 300,
+     "rate": 0.5533333333333333
+    },
+    "site": {
+     "k": 76,
+     "n": 300,
+     "rate": 0.25333333333333335
+    },
+    "G1": {
+     "k": 48,
+     "n": 300,
+     "rate": 0.16
+    },
+    "G3m": {
+     "k": 51,
+     "n": 300,
+     "rate": 0.17
+    },
+    "G6s": {
+     "k": 46,
+     "n": 300,
+     "rate": 0.15333333333333332
+    },
+    "G6l": {
+     "k": 48,
+     "n": 300,
+     "rate": 0.16
+    },
+    "species": {
+     "k": 20,
+     "n": 300,
+     "rate": 0.06666666666666667
+    },
+    "level0_and_site": {
+     "k": 61,
+     "n": 300,
+     "rate": 0.20333333333333334
+    }
+   }
+  },
+  {
+   "cls": "aal",
+   "family": "C-sp",
+   "a": 0.6,
+   "k": 97,
+   "n": 300,
+   "rate": 0.3233333333333333,
+   "by_step": {
+    "0": {
+     "k": 55,
+     "n": 150,
+     "rate": 0.36666666666666664,
+     "missing": 0,
+     "blocked": 0
+    },
+    "1": {
+     "k": 42,
+     "n": 150,
+     "rate": 0.28,
+     "missing": 0,
+     "blocked": 0
+    }
+   },
+   "status_counts": {
+    "ok": 300
+   },
+   "legs": {
+    "level0": {
+     "k": 279,
+     "n": 300,
+     "rate": 0.93
+    },
+    "site": {
+     "k": 203,
+     "n": 300,
+     "rate": 0.6766666666666666
+    },
+    "G1": {
+     "k": 155,
+     "n": 300,
+     "rate": 0.5166666666666667
+    },
+    "G3m": {
+     "k": 151,
+     "n": 300,
+     "rate": 0.5033333333333333
+    },
+    "G6s": {
+     "k": 143,
+     "n": 300,
+     "rate": 0.4766666666666667
+    },
+    "G6l": {
+     "k": 151,
+     "n": 300,
+     "rate": 0.5033333333333333
+    },
+    "species": {
+     "k": 107,
+     "n": 300,
+     "rate": 0.3566666666666667
+    },
+    "level0_and_site": {
+     "k": 192,
+     "n": 300,
+     "rate": 0.64
+    }
+   }
+  },
+  {
+   "cls": "aal",
+   "family": "C-sp",
+   "a": 0.9,
+   "k": 291,
+   "n": 300,
+   "rate": 0.97,
+   "by_step": {
+    "0": {
+     "k": 148,
+     "n": 150,
+     "rate": 0.9866666666666667,
+     "missing": 0,
+     "blocked": 0
+    },
+    "1": {
+     "k": 143,
+     "n": 150,
+     "rate": 0.9533333333333334,
+     "missing": 0,
+     "blocked": 0
+    }
+   },
+   "status_counts": {
+    "ok": 300
+   },
+   "legs": {
+    "level0": {
+     "k": 300,
+     "n": 300,
+     "rate": 1.0
+    },
+    "site": {
+     "k": 299,
+     "n": 300,
+     "rate": 0.9966666666666667
+    },
+    "G1": {
+     "k": 293,
+     "n": 300,
+     "rate": 0.9766666666666667
+    },
+    "G3m": {
+     "k": 294,
+     "n": 300,
+     "rate": 0.98
+    },
+    "G6s": {
+     "k": 292,
+     "n": 300,
+     "rate": 0.9733333333333334
+    },
+    "G6l": {
+     "k": 294,
+     "n": 300,
+     "rate": 0.98
+    },
+    "species": {
+     "k": 291,
+     "n": 300,
+     "rate": 0.97
+    },
+    "level0_and_site": {
+     "k": 299,
+     "n": 300,
+     "rate": 0.9966666666666667
+    }
+   }
+  },
+  {
+   "cls": "aal",
+   "family": "C-gene",
+   "a": 0.3,
+   "k": 22,
+   "n": 300,
+   "rate": 0.07333333333333333,
+   "by_step": {
+    "0": {
+     "k": 10,
+     "n": 150,
+     "rate": 0.06666666666666667,
+     "missing": 0,
+     "blocked": 0
+    },
+    "1": {
+     "k": 12,
+     "n": 150,
+     "rate": 0.08,
+     "missing": 0,
+     "blocked": 0
+    }
+   },
+   "status_counts": {
+    "ok": 300
+   },
+   "legs": {
+    "level0": {
+     "k": 97,
+     "n": 300,
+     "rate": 0.3233333333333333
+    },
+    "site": {
+     "k": 83,
+     "n": 300,
+     "rate": 0.27666666666666667
+    },
+    "G1": {
+     "k": 95,
+     "n": 300,
+     "rate": 0.31666666666666665
+    },
+    "G3m": {
+     "k": 86,
+     "n": 300,
+     "rate": 0.2866666666666667
+    },
+    "G6s": {
+     "k": 109,
+     "n": 300,
+     "rate": 0.36333333333333334
+    },
+    "G6l": {
+     "k": 95,
+     "n": 300,
+     "rate": 0.31666666666666665
+    },
+    "species": {
+     "k": 60,
+     "n": 300,
+     "rate": 0.2
+    },
+    "level0_and_site": {
+     "k": 41,
+     "n": 300,
+     "rate": 0.13666666666666666
+    }
+   }
+  },
+  {
+   "cls": "aal",
+   "family": "C-gene",
+   "a": 0.6,
+   "k": 124,
+   "n": 299,
+   "rate": 0.41471571906354515,
+   "by_step": {
+    "0": {
+     "k": 64,
+     "n": 149,
+     "rate": 0.42953020134228187,
+     "missing": 0,
+     "blocked": 0
+    },
+    "1": {
+     "k": 60,
+     "n": 150,
+     "rate": 0.4,
+     "missing": 0,
+     "blocked": 0
+    }
+   },
+   "status_counts": {
+    "ok": 299
+   },
+   "legs": {
+    "level0": {
+     "k": 170,
+     "n": 299,
+     "rate": 0.568561872909699
+    },
+    "site": {
+     "k": 227,
+     "n": 299,
+     "rate": 0.7591973244147158
+    },
+    "G1": {
+     "k": 232,
+     "n": 299,
+     "rate": 0.7759197324414716
+    },
+    "G3m": {
+     "k": 231,
+     "n": 299,
+     "rate": 0.7725752508361204
+    },
+    "G6s": {
+     "k": 238,
+     "n": 299,
+     "rate": 0.7959866220735786
+    },
+    "G6l": {
+     "k": 228,
+     "n": 299,
+     "rate": 0.7625418060200669
+    },
+    "species": {
+     "k": 196,
+     "n": 299,
+     "rate": 0.6555183946488294
+    },
+    "level0_and_site": {
+     "k": 143,
+     "n": 299,
+     "rate": 0.4782608695652174
+    }
+   }
+  },
+  {
+   "cls": "aal",
+   "family": "C-gene",
+   "a": 0.9,
+   "k": 197,
+   "n": 296,
+   "rate": 0.6655405405405406,
+   "by_step": {
+    "0": {
+     "k": 105,
+     "n": 150,
+     "rate": 0.7,
+     "missing": 0,
+     "blocked": 0
+    },
+    "1": {
+     "k": 92,
+     "n": 146,
+     "rate": 0.6301369863013698,
+     "missing": 0,
+     "blocked": 0
+    }
+   },
+   "status_counts": {
+    "ok": 296
+   },
+   "legs": {
+    "level0": {
+     "k": 210,
+     "n": 296,
+     "rate": 0.7094594594594594
+    },
+    "site": {
+     "k": 284,
+     "n": 296,
+     "rate": 0.9594594594594594
+    },
+    "G1": {
+     "k": 288,
+     "n": 296,
+     "rate": 0.972972972972973
+    },
+    "G3m": {
+     "k": 288,
+     "n": 296,
+     "rate": 0.972972972972973
+    },
+    "G6s": {
+     "k": 283,
+     "n": 296,
+     "rate": 0.956081081081081
+    },
+    "G6l": {
+     "k": 286,
+     "n": 296,
+     "rate": 0.9662162162162162
+    },
+    "species": {
+     "k": 273,
+     "n": 296,
+     "rate": 0.9222972972972973
+    },
+    "level0_and_site": {
+     "k": 205,
+     "n": 296,
+     "rate": 0.6925675675675675
+    }
+   }
+  },
+  {
+   "cls": "dk",
+   "family": "C-sp",
+   "a": 0.3,
+   "k": 14,
+   "n": 300,
+   "rate": 0.04666666666666667,
+   "by_step": {
+    "0": {
+     "k": 9,
+     "n": 150,
+     "rate": 0.06,
+     "missing": 0,
+     "blocked": 0
+    },
+    "1": {
+     "k": 5,
+     "n": 150,
+     "rate": 0.03333333333333333,
+     "missing": 0,
+     "blocked": 0
+    }
+   },
+   "status_counts": {
+    "ok": 300
+   },
+   "legs": {
+    "level0": {
+     "k": 150,
+     "n": 300,
+     "rate": 0.5
+    },
+    "site": {
+     "k": 61,
+     "n": 300,
+     "rate": 0.20333333333333334
+    },
+    "G1": {
+     "k": 51,
+     "n": 300,
+     "rate": 0.17
+    },
+    "G3m": {
+     "k": 49,
+     "n": 300,
+     "rate": 0.16333333333333333
+    },
+    "G6s": {
+     "k": 47,
+     "n": 300,
+     "rate": 0.15666666666666668
+    },
+    "G6l": {
+     "k": 48,
+     "n": 300,
+     "rate": 0.16
+    },
+    "species": {
+     "k": 27,
+     "n": 300,
+     "rate": 0.09
+    },
+    "level0_and_site": {
+     "k": 50,
+     "n": 300,
+     "rate": 0.16666666666666666
+    }
+   }
+  },
+  {
+   "cls": "dk",
+   "family": "C-sp",
+   "a": 0.6,
+   "k": 130,
+   "n": 300,
+   "rate": 0.43333333333333335,
+   "by_step": {
+    "0": {
+     "k": 75,
+     "n": 150,
+     "rate": 0.5,
+     "missing": 0,
+     "blocked": 0
+    },
+    "1": {
+     "k": 55,
+     "n": 150,
+     "rate": 0.36666666666666664,
+     "missing": 1,
+     "blocked": 0
+    }
+   },
+   "status_counts": {
+    "ok": 299,
+    "uninformative": 1
+   },
+   "legs": {
+    "level0": {
+     "k": 275,
+     "n": 300,
+     "rate": 0.9166666666666666
+    },
+    "site": {
+     "k": 222,
+     "n": 300,
+     "rate": 0.74
+    },
+    "G1": {
+     "k": 210,
+     "n": 300,
+     "rate": 0.7
+    },
+    "G3m": {
+     "k": 203,
+     "n": 300,
+     "rate": 0.6766666666666666
+    },
+    "G6s": {
+     "k": 166,
+     "n": 300,
+     "rate": 0.5533333333333333
+    },
+    "G6l": {
+     "k": 200,
+     "n": 300,
+     "rate": 0.6666666666666666
+    },
+    "species": {
+     "k": 138,
+     "n": 300,
+     "rate": 0.46
+    },
+    "level0_and_site": {
+     "k": 209,
+     "n": 300,
+     "rate": 0.6966666666666667
+    }
+   }
+  },
+  {
+   "cls": "dk",
+   "family": "C-sp",
+   "a": 0.9,
+   "k": 291,
+   "n": 300,
+   "rate": 0.97,
+   "by_step": {
+    "0": {
+     "k": 146,
+     "n": 150,
+     "rate": 0.9733333333333334,
+     "missing": 2,
+     "blocked": 0
+    },
+    "1": {
+     "k": 145,
+     "n": 150,
+     "rate": 0.9666666666666667,
+     "missing": 1,
+     "blocked": 0
+    }
+   },
+   "status_counts": {
+    "ok": 297,
+    "uninformative": 3
+   },
+   "legs": {
+    "level0": {
+     "k": 300,
+     "n": 300,
+     "rate": 1.0
+    },
+    "site": {
+     "k": 300,
+     "n": 300,
+     "rate": 1.0
+    },
+    "G1": {
+     "k": 297,
+     "n": 300,
+     "rate": 0.99
+    },
+    "G3m": {
+     "k": 296,
+     "n": 300,
+     "rate": 0.9866666666666667
+    },
+    "G6s": {
+     "k": 294,
+     "n": 300,
+     "rate": 0.98
+    },
+    "G6l": {
+     "k": 297,
+     "n": 300,
+     "rate": 0.99
+    },
+    "species": {
+     "k": 293,
+     "n": 300,
+     "rate": 0.9766666666666667
+    },
+    "level0_and_site": {
+     "k": 300,
+     "n": 300,
+     "rate": 1.0
+    }
+   }
+  },
+  {
+   "cls": "dk",
+   "family": "C-gene",
+   "a": 0.3,
+   "k": 19,
+   "n": 299,
+   "rate": 0.06354515050167224,
+   "by_step": {
+    "0": {
+     "k": 9,
+     "n": 150,
+     "rate": 0.06,
+     "missing": 0,
+     "blocked": 0
+    },
+    "1": {
+     "k": 10,
+     "n": 149,
+     "rate": 0.06711409395973154,
+     "missing": 0,
+     "blocked": 0
+    }
+   },
+   "status_counts": {
+    "ok": 299
+   },
+   "legs": {
+    "level0": {
+     "k": 97,
+     "n": 299,
+     "rate": 0.32441471571906355
+    },
+    "site": {
+     "k": 51,
+     "n": 299,
+     "rate": 0.1705685618729097
+    },
+    "G1": {
+     "k": 54,
+     "n": 299,
+     "rate": 0.1806020066889632
+    },
+    "G3m": {
+     "k": 53,
+     "n": 299,
+     "rate": 0.17725752508361203
+    },
+    "G6s": {
+     "k": 62,
+     "n": 299,
+     "rate": 0.20735785953177258
+    },
+    "G6l": {
+     "k": 55,
+     "n": 299,
+     "rate": 0.18394648829431437
+    },
+    "species": {
+     "k": 35,
+     "n": 299,
+     "rate": 0.11705685618729098
+    },
+    "level0_and_site": {
+     "k": 42,
+     "n": 299,
+     "rate": 0.14046822742474915
+    }
+   }
+  },
+  {
+   "cls": "dk",
+   "family": "C-gene",
+   "a": 0.6,
+   "k": 85,
+   "n": 299,
+   "rate": 0.2842809364548495,
+   "by_step": {
+    "0": {
+     "k": 43,
+     "n": 149,
+     "rate": 0.28859060402684567,
+     "missing": 0,
+     "blocked": 0
+    },
+    "1": {
+     "k": 42,
+     "n": 150,
+     "rate": 0.28,
+     "missing": 0,
+     "blocked": 0
+    }
+   },
+   "status_counts": {
+    "ok": 299
+   },
+   "legs": {
+    "level0": {
+     "k": 163,
+     "n": 299,
+     "rate": 0.5451505016722408
+    },
+    "site": {
+     "k": 152,
+     "n": 299,
+     "rate": 0.5083612040133779
+    },
+    "G1": {
+     "k": 165,
+     "n": 299,
+     "rate": 0.5518394648829431
+    },
+    "G3m": {
+     "k": 174,
+     "n": 299,
+     "rate": 0.5819397993311036
+    },
+    "G6s": {
+     "k": 175,
+     "n": 299,
+     "rate": 0.5852842809364549
+    },
+    "G6l": {
+     "k": 167,
+     "n": 299,
+     "rate": 0.5585284280936454
+    },
+    "species": {
+     "k": 129,
+     "n": 299,
+     "rate": 0.431438127090301
+    },
+    "level0_and_site": {
+     "k": 114,
+     "n": 299,
+     "rate": 0.38127090301003347
+    }
+   }
+  },
+  {
+   "cls": "dk",
+   "family": "C-gene",
+   "a": 0.9,
+   "k": 175,
+   "n": 299,
+   "rate": 0.5852842809364549,
+   "by_step": {
+    "0": {
+     "k": 96,
+     "n": 150,
+     "rate": 0.64,
+     "missing": 0,
+     "blocked": 0
+    },
+    "1": {
+     "k": 79,
+     "n": 149,
+     "rate": 0.5302013422818792,
+     "missing": 0,
+     "blocked": 0
+    }
+   },
+   "status_counts": {
+    "ok": 299
+   },
+   "legs": {
+    "level0": {
+     "k": 229,
+     "n": 299,
+     "rate": 0.7658862876254181
+    },
+    "site": {
+     "k": 243,
+     "n": 299,
+     "rate": 0.8127090301003345
+    },
+    "G1": {
+     "k": 257,
+     "n": 299,
+     "rate": 0.8595317725752508
+    },
+    "G3m": {
+     "k": 255,
+     "n": 299,
+     "rate": 0.8528428093645485
+    },
+    "G6s": {
+     "k": 244,
+     "n": 299,
+     "rate": 0.8160535117056856
+    },
+    "G6l": {
+     "k": 249,
+     "n": 299,
+     "rate": 0.8327759197324415
+    },
+    "species": {
+     "k": 220,
+     "n": 299,
+     "rate": 0.7357859531772575
+    },
+    "level0_and_site": {
+     "k": 200,
+     "n": 299,
+     "rate": 0.6688963210702341
+    }
+   }
+  }
+ ],
+ "inputs_sha256": {
+  "artifacts/plants/aal_C-sp_m25_a0.3.csv.gz": "0fae9549044a93fcf012fd43a94262397a7eea7a0a4505dcd0693a189f4d2f03",
+  "artifacts/plants/a3species_aal_C-sp_m25_a0.3.csv.gz": "e0c81b077a3de7824a052c795a0aa1a9ba47e24014209221a5658dad13f6fe5c",
+  "artifacts/plants/aal_C-sp_m25_a0.6.csv.gz": "461db6494ff9fc9b84f7af46a088320cd47cc7e6bcab461916d3b5a5a683fe5d",
+  "artifacts/plants/a3species_aal_C-sp_m25_a0.6.csv.gz": "f32ef31c800977f56fac6092a73c62d08e7481a8a32331143d05e0531275ffff",
+  "artifacts/plants/aal_C-sp_m25_a0.9.csv.gz": "5d7916ab379731982addcfdf0dbed76ad582a198eec6713f548d3d69e1e2c792",
+  "artifacts/plants/a3species_aal_C-sp_m25_a0.9.csv.gz": "9efdfb5c9075310f5f3321d21e39696e2270d23b3eb2eb6d88df8cfba4a1ac12",
+  "artifacts/plants/aal_C-gene_m25_a0.3.csv.gz": "87c504f961eef2a0a3f079194aa76d9e9b9e60a8e1e12110f2b73f693979736e",
+  "artifacts/plants/a3species_aal_C-gene_m25_a0.3.csv.gz": "c1087375d1935e7f206ea8c07f8bc1089c75efac6263fea1691950cb00556096",
+  "artifacts/plants/aal_C-gene_m25_a0.6.csv.gz": "10feac626df18dbcdfced07dc4df69a817db92f3e1eb053bc68a8aab10e3fae0",
+  "artifacts/plants/a3species_aal_C-gene_m25_a0.6.csv.gz": "822b09f23960de583d207b68f2c5740f03e46bd9976fe730a4bbd3f87b37c854",
+  "artifacts/plants/aal_C-gene_m25_a0.9.csv.gz": "f71d8cbb5fc80e0af71dc88bcfeb3ed6a751d61e80fa22568f95d0c5779c3a68",
+  "artifacts/plants/a3species_aal_C-gene_m25_a0.9.csv.gz": "e02f43700b9afbac58ac20059ed75660f713f8ec173910d7c52d1855ff9f9966",
+  "artifacts/plants/dk_C-sp_m25_a0.3.csv.gz": "6ec8027db209d0014fb6e74bb8b72f29e80655d38ccdcfd5c09d0868af0bc70a",
+  "artifacts/plants/a3species_dk_C-sp_m25_a0.3.csv.gz": "ac64ef4ab4a11dc0d1d0e906966d8e8ceee486da5234419d1fea014ea62960cb",
+  "artifacts/plants/dk_C-sp_m25_a0.6.csv.gz": "05af3fcb79e99443d79b164b38d6fcfedd3df618b86c31b76966e50b4ef1c69c",
+  "artifacts/plants/a3species_dk_C-sp_m25_a0.6.csv.gz": "226913c33bdf8e073217008e06b65028696e9fcb2a0631bcc53b1e6d150d511f",
+  "artifacts/plants/dk_C-sp_m25_a0.9.csv.gz": "79a536d47332b7c8ed08f3b20a98848a61c705486e9852aa01ad65e768c4b399",
+  "artifacts/plants/a3species_dk_C-sp_m25_a0.9.csv.gz": "730bbcfd631adda7b7222825ecc94f6b38f20b5c06480802d324952b177c9637",
+  "artifacts/plants/dk_C-gene_m25_a0.3.csv.gz": "d206e7e9cde16dc707e052c100689a27b92d1f14311a4bbc2c42775c2d299ce6",
+  "artifacts/plants/a3species_dk_C-gene_m25_a0.3.csv.gz": "8b97ed38e183e03fa1cc750f1bbcf06dbe4ccdda07a7a128593ab2dfbfc2ee78",
+  "artifacts/plants/dk_C-gene_m25_a0.6.csv.gz": "109343f4d67cb6c43d6e990ead5f89fe73697f2f8efd7951a377dcc8826aa3a8",
+  "artifacts/plants/a3species_dk_C-gene_m25_a0.6.csv.gz": "7764cce187353f43219077cac157b444ee5a4460a6ac6ad11c5df300496117c4",
+  "artifacts/plants/dk_C-gene_m25_a0.9.csv.gz": "24b81d76ec4efa81a23a07211e6c00f6c7e7ca0fdfb434d6dbf6844aec7fe1c7",
+  "artifacts/plants/a3species_dk_C-gene_m25_a0.9.csv.gz": "1544de2fbd1b9638b6020a3406c006401a9e03d4e1dab0f39a4ee880a7be7eb9"
+ },
+ "script_sha256": "5a5e5a1cf96edf048f217acec6f726cb6cfebb18c31687fded5fdd0b666e9b85",
+ "commit": "fbb530732221d07d65176563b7439c7a76dd69ba",
+ "dirty": false
+}

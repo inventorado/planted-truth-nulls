@@ -1,0 +1,88 @@
+{
+ "what": "P25 (a) v2 species max re-scored 'as frozen' (degenerate G6l windows scored; WP2 review B1)",
+ "beside": "reported BESIDE the official P25 (a), never replacing it (RUN_PLAN.md §17; RUN_PLAN_amend_2 §8.1: the plant rule is pinned)",
+ "cases_file": "../run_manifests/plants/P25/cases_P25.jsonl",
+ "recompute": "needed",
+ "limit": null,
+ "cells": null,
+ "rule": "The plant's flawed leg (a) (plants/flaws.py:79, v2_species_max) scores the claim's own G6l windows only when the claim's G6l status is \"ok\"; a \"degenerate\" pool (mean pairwise Jaccard >= .5) gets no G6l p, so the v2 max has no p and the case is a non-rejection. The frozen reference leg scores degenerate windows: e3_align_plants.py:162 passes `info.get(\"sets\")` (\"None if unmatched; the v2 draft had no pool-diversity rule, so degenerate pools stay\"), and asdg.species.WithinClassBasis.v2_species (src/asdg/species.py:267-271) returns NaN only when there are no windows (sets None: unmatched). Re-scoring \"as frozen\" changes only that gate: a G6l p whenever windows exist.  What the case records hold (determined from the record format, p25.py:242-247, p24.species_record): - G6l \"ok\": the plant and the frozen gate score the same windows -> the recorded (a) IS the frozen (a) (no change); - G6l \"unmatched\" (no windows, R8 included): the frozen leg is NaN too -> non-rejection (no change); - G6l \"degenerate\": the record holds the v2 G1 (whole) and G6s (centred on mu^w) p's but NOT the degenerate windows'   unconditioned p (recorded None). Since p_max = max(G1, G6s, G6l) >= max(G1, G6s), a case with max(G1, G6s) p(+) >=   .025 is a frozen non-rejection DECIDED FROM THE RECORD; a case with max(G1, G6s) p(+) < .025 needs the windows' p,   i.e. a RECOMPUTATION of the case from its plant seed keys. So the records suffice except for degenerate cases with max(G1, G6s) p(+) < .025.  The recomputation (--recompute needed: only those cases; all: every (a)(b) case, a reproduction check). The case is recomputed by the plant's own code, imported read-only: p25.P25.run_case(cell, i, K) with the plant K (§8.1b, asserted by plants.driver.plant_constants), on the case's plant keys (the construction and leg keys are functions of (plant 25, case, class id), seeds.py). During that call plants.flaws.v2_species_max is wrapped in memory (restored after): the wrapper returns the plant's own result unchanged and, beside it, calls the same function on the same adapter, the same windows and the same leg streams with the frozen gate (status \"ok\" whenever windows exist). The recomputed record must equal the recorded one field for field (plants_dev_compare.compare_records, per-process fields left out): every p, decision, status and seed key exactly; a continuous number (category \"number\", e.g. the uninformative share) may differ within 1e-12 relative (floating-point noise of a fresh process: found on DEV case V-AAL i0, 6.7e-16 in correct/uninformative_share) and is listed; any other difference refuses (the reconstruction is not the recorded case). For a G6l \"ok\" case the frozen-gate p's must equal the plant's.",
+ "frozen_refs": [
+  "arcs/audit/src/e3_align_plants.py:162",
+  "src/asdg/species.py:267-271"
+ ],
+ "plant_ref": "arcs/audit/src/a1_audit/plants/flaws.py:79",
+ "by_cell": {
+  "V-AAL / (a)(b) T-brain brand-300": {
+   "n": 500,
+   "k_official": 66,
+   "k_frozen_decided": 66,
+   "n_undecided": 0,
+   "n_by_g6l_status": {
+    "ok": 500
+   },
+   "n_by_basis": {
+    "identical: G6l ok, the plant and the frozen gate score the same windows": 500
+   },
+   "n_recomputed": 0,
+   "n_decision_changed": 0,
+   "k_frozen": 66,
+   "criterion_beside": {
+    "kind": "must-catch test",
+    "k": 66,
+    "n": 500,
+    "threshold": "caught iff >= 22 / 500",
+    "result": "CAUGHT"
+   },
+   "official_criterion_recomputed_from_records": {
+    "kind": "must-catch test",
+    "k": 66,
+    "n": 500,
+    "threshold": "caught iff >= 22 / 500",
+    "result": "CAUGHT"
+   },
+   "note": "reported BESIDE the official P25 (a), never replacing it (RUN_PLAN.md §17; RUN_PLAN_amend_2 §8.1: the plant rule is pinned)"
+  },
+  "V-DK / (a)(b) T-brain brand-300": {
+   "n": 500,
+   "k_official": 58,
+   "k_frozen_decided": 58,
+   "n_undecided": 0,
+   "n_by_g6l_status": {
+    "ok": 500
+   },
+   "n_by_basis": {
+    "identical: G6l ok, the plant and the frozen gate score the same windows": 500
+   },
+   "n_recomputed": 0,
+   "n_decision_changed": 0,
+   "k_frozen": 58,
+   "criterion_beside": {
+    "kind": "must-catch test",
+    "k": 58,
+    "n": 500,
+    "threshold": "caught iff >= 22 / 500",
+    "result": "CAUGHT"
+   },
+   "official_criterion_recomputed_from_records": {
+    "kind": "must-catch test",
+    "k": 58,
+    "n": 500,
+    "threshold": "caught iff >= 22 / 500",
+    "result": "CAUGHT"
+   },
+   "note": "reported BESIDE the official P25 (a), never replacing it (RUN_PLAN.md §17; RUN_PLAN_amend_2 §8.1: the plant rule is pinned)"
+  }
+ },
+ "n_cases": 1000,
+ "n_undecided": 0,
+ "cost": {
+  "n_recomputed": 0,
+  "seconds": [],
+  "mean_seconds_per_case": null,
+  "estimated_seconds_for_undecided": null,
+  "note": "single process (OMP_NUM_THREADS=1, run.py); wall seconds of P25.run_case plus one extra v2 scoring per case"
+ },
+ "cases": [],
+ "n_cases_ok_not_listed": 1000,
+ "commit": "a0b74066259fe59f645e4cfeb5ad89e169cd6db2"
+}

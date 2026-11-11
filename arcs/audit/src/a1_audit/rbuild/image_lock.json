@@ -1,0 +1,134 @@
+{
+ "what": "A1 audit R image (RUN_PLAN.md v3.1 R13, R17, R30; plant P17); synthetic data only",
+ "status": "provisional for R17 (WP2): R 4.4.3 / CRAN snapshot 2025-04-10 / Bioconductor 3.20 chosen before G2; the repository's R version, commit date and the script's package list are read under G2 only (RUN_PLAN R17), and the image is rebuilt with them in WP4. Serves R13 (WGCNA::bicor) and R30 (GeneOverlap source) now.",
+ "built_utc": "2026-10-01T21:30:24Z",
+ "base": {
+  "ref": "rocker/r-ver:4.4.3",
+  "digest": "sha256:3dae5d2eeddf74f10e0a81fb6b7ae350295e288000304f438b844b2c1e00fe2c",
+  "repo_digests": [
+   "rocker/r-ver@sha256:3dae5d2eeddf74f10e0a81fb6b7ae350295e288000304f438b844b2c1e00fe2c"
+  ],
+  "created": "2026-03-11T11:02:54.599749516Z"
+ },
+ "image": {
+  "tag": "a1-audit-r:wp2-r4.4.3",
+  "id": "sha256:a321d154f383f629df4518daf1116740e14f344eee61c2ac6cd5f5b31fdd6fa4",
+  "created": "2026-10-01T21:23:35.518254223Z",
+  "size_bytes": 510581644,
+  "exported_digests": {
+   "manifest list": "sha256:a321d154f383f629df4518daf1116740e14f344eee61c2ac6cd5f5b31fdd6fa4",
+   "manifest": "sha256:dddaa4689efa0baa712ea647fa2086cc8438a28d114b0f011980d1c5479af32e",
+   "config": "sha256:9fe7ce75f4083beec8741770942c5813450a705d6ac4d1e1f289c8988888efce"
+  },
+  "digest_note": "id = `docker image inspect` Id = with Docker Desktop's containerd image store the image index (manifest list) digest; it changes on every build, even a fully cached one, because the index carries a BuildKit attestation (provenance) manifest. The content-stable identity is the image manifest digest (and its config digest), read from the final build log. The image is local only (never pushed)."
+ },
+ "build_args": {
+  "BASE": "rocker/r-ver:4.4.3@sha256:3dae5d2eeddf74f10e0a81fb6b7ae350295e288000304f438b844b2c1e00fe2c",
+  "CRAN_SNAPSHOT": "https://p3m.dev/cran/__linux__/noble/2025-04-10",
+  "BIOC_VERSION": "3.20",
+  "BIOC_BINARIES": "https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker"
+ },
+ "inputs_sha256": {
+  "Dockerfile": "70fc9b7aa06f727e9641deba77ae2f6ad7afd6a9db0d6dc04fdb9b60ec157847",
+  "install_packages.R": "ad7e46f0ae10a7e538207cc92afc7d452167c3cf166c7e872205ebb02cf4e2b9",
+  "packages.lock.tsv": "7e5d176cc51a989d188fb426b089c1182644a5bfa20bda25dd06dd103737a40d"
+ },
+ "r_version": "4.4.3",
+ "bioc_version": "3.20",
+ "cran": "https://p3m.dev/cran/__linux__/noble/2025-04-10",
+ "packages": {
+  "n_installed": 131,
+  "named": {
+   "WGCNA": "1.73",
+   "GeneOverlap": "1.42.0",
+   "BiocManager": "1.30.25",
+   "impute": "1.80.0",
+   "preprocessCore": "1.68.0",
+   "GO.db": "3.20.0",
+   "AnnotationDbi": "1.68.0"
+  }
+ },
+ "build_logs": [
+  {
+   "path": "logs/build_20261001T213009Z_pass1.log",
+   "exit": 0,
+   "seconds": 1.9,
+   "sha256": "e30598e62379cd4f8f96bf1c3c019764a5a5c71d014b05d331a9526d02a84cb3",
+   "lock_sha256_at_build": "7e5d176cc51a989d188fb426b089c1182644a5bfa20bda25dd06dd103737a40d"
+  }
+ ],
+ "session_info": {
+  "path": "logs/session_info_20261001T213009Z.txt",
+  "sha256": "3afadb8116696c83dff7f9687826de46dedc1473b8af712d6a5d0b65129f7669"
+ },
+ "lock_verify": {
+  "path": "logs/verify_20261001T213009Z.log",
+  "sha256": "10ada685c8e1eea09ceef9c0cd6dad08a979a6a57a42df76cbdf7589218e1b05"
+ },
+ "log_inventory": [
+  {
+   "path": "logs/build_20261001T205657Z_pass1.log",
+   "sha256": "c1b3985f37e10a7e25f7d2ba2778af6606a83aed87134b2f438ff692a259496e",
+   "exit": 1,
+   "install_ran": false,
+   "verify_ran": false,
+   "verify_mode": null,
+   "exported_manifest": null
+  },
+  {
+   "path": "logs/build_20261001T211604Z_pass1.log",
+   "sha256": "606be10d4685470c6f9f06292f3fd138a948743180d35eb63702bb8b07023d6e",
+   "exit": 1,
+   "install_ran": true,
+   "verify_ran": true,
+   "verify_mode": "record (empty lock)",
+   "exported_manifest": "sha256:06add9903cb1b4e6275705b82ae324a12c71ca1bbda5ce716a2ea4f198b8f3cb"
+  },
+  {
+   "path": "logs/build_20261001T211812Z_pass1.log",
+   "sha256": "68bfcc9c61a525394c2823fd1477e70ecfaed3f7f309ea57856dea1e276b6239",
+   "exit": 0,
+   "install_ran": true,
+   "verify_ran": true,
+   "verify_mode": "record (empty lock)",
+   "exported_manifest": "sha256:e60025abf5c2575607d7f1d762ff01f2f2bf943431a4071eab67d921099adc55"
+  },
+  {
+   "path": "logs/build_20261001T211812Z_pass2_verify.log",
+   "sha256": "05aa5871e703b379d937ef1b91cbacd4bab0998d1eacb5051cb135df0d0a130c",
+   "exit": 0,
+   "install_ran": false,
+   "verify_ran": true,
+   "verify_mode": "pass",
+   "exported_manifest": "sha256:dddaa4689efa0baa712ea647fa2086cc8438a28d114b0f011980d1c5479af32e"
+  },
+  {
+   "path": "logs/build_20261001T212629Z_pass1.log",
+   "sha256": "3f585534edc175a776b25a1d99c0872f0146ecc451758bff8f83668856029540",
+   "exit": 0,
+   "install_ran": false,
+   "verify_ran": false,
+   "verify_mode": null,
+   "exported_manifest": "sha256:dddaa4689efa0baa712ea647fa2086cc8438a28d114b0f011980d1c5479af32e"
+  },
+  {
+   "path": "logs/build_20261001T212706Z_pass1.log",
+   "sha256": "eb38a5011996896b7b0ade57223bf2af7268f398e1ef889bee5f094038317ee1",
+   "exit": 0,
+   "install_ran": false,
+   "verify_ran": false,
+   "verify_mode": null,
+   "exported_manifest": "sha256:dddaa4689efa0baa712ea647fa2086cc8438a28d114b0f011980d1c5479af32e"
+  },
+  {
+   "path": "logs/build_20261001T213009Z_pass1.log",
+   "sha256": "e30598e62379cd4f8f96bf1c3c019764a5a5c71d014b05d331a9526d02a84cb3",
+   "exit": 0,
+   "install_ran": false,
+   "verify_ran": false,
+   "verify_mode": null,
+   "exported_manifest": "sha256:dddaa4689efa0baa712ea647fa2086cc8438a28d114b0f011980d1c5479af32e"
+  }
+ ],
+ "docker": "28.1.1"
+}

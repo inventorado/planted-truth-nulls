@@ -1,0 +1,115 @@
+[04:10:27] pass descriptor gate none rows 115 K {'site': 10000, 'species': 10000, 'permutation': 10000, 'sets': 10000, 'surr': 10000, 'j1_sets': 1000} g6l exact
+[05:57:50] DEFECT row 471: a job above 2.5 GB (RUN_PLAN ?4 memory)
+[05:57:51] row 471 (descriptor: gene-set-only (R10)) written
+[05:57:51] row 471 reproduction record written
+[07:38:21] DEFECT row 472: a job above 2.5 GB (RUN_PLAN ?4 memory)
+[07:38:21] row 472 (descriptor: gene-set-only (R10)) written
+[07:38:21] row 472 reproduction record written
+[09:38:28] DEFECT row 475: a job above 2.5 GB (RUN_PLAN ?4 memory)
+[09:38:28] row 475 (descriptor: gene-set-only (R10)) written
+[09:38:28] row 475 reproduction record written
+[11:55:01] DEFECT row 476: a job above 2.5 GB (RUN_PLAN ?4 memory)
+[11:55:01] row 476 (descriptor: gene-set-only (R10)) written
+[11:55:01] row 476 reproduction record written
+[16:18:06] DEFECT row 477: a job above 2.5 GB (RUN_PLAN ?4 memory)
+[16:18:06] row 477 (descriptor: gene-set-only (R10)) written
+[16:18:06] row 477 reproduction record written
+[16:18:12] dispatch: 80 row(s) to compute; written so far {'computed': 5, 'no statistic': 30}
+[16:18:14] phase 2: 158 leg-group task(s), jobs 20
+[19:06:45]   10/158 tasks (10111s)
+[20:42:27]   20/158 tasks (15853s)
+[21:22:13]   30/158 tasks (18239s)
+[22:03:29]   40/158 tasks (20716s)
+[22:56:19]   50/158 tasks (23885s)
+[00:05:20]   60/158 tasks (28026s)
+[00:32:32]   70/158 tasks (29658s)
+[00:47:01]   80/158 tasks (30527s)
+[00:59:39]   90/158 tasks (31285s)
+[01:10:30]   100/158 tasks (31936s)
+[01:22:37]   110/158 tasks (32663s)
+[01:30:02]   120/158 tasks (33108s)
+[01:38:15]   130/158 tasks (33601s)
+[01:46:26]   140/158 tasks (34093s)
+[02:05:02]   150/158 tasks (35208s)
+[05:42:08]   158/158 tasks (48234s)
+[05:42:09] row 1 (verdict: decoded-list) written; peak task memory 1085910249 B
+[05:42:09] row 2 (verdict: decoded-list) written; peak task memory 1086945618 B
+[05:42:09] row 3 (verdict: decoded-list) written; peak task memory 936698367 B
+[05:42:09] row 5 (verdict: decoded-list) written; peak task memory 939261401 B
+[05:42:09] row 7 (verdict: decoded-list) written; peak task memory 928840614 B
+[05:42:09] row 8 (verdict: decoded-list) written; peak task memory 933329183 B
+[05:42:09] row 9 (verdict: decoded-list) written; peak task memory 931243204 B
+[05:42:09] row 10 (verdict: decoded-list) written; peak task memory 938298940 B
+[05:42:09] row 11 (verdict: decoded-list) written; peak task memory 945026514 B
+[05:42:09] row 12 (verdict: decoded-list) written; peak task memory 960257445 B
+[05:42:09] row 13 (verdict: decoded-list) written; peak task memory 973239837 B
+[05:42:09] row 14 (verdict: decoded-list) written; peak task memory 973401786 B
+[05:42:09] row 15 (verdict: decoded-list) written; peak task memory 996958661 B
+[05:42:09] row 16 (verdict: decoded-list) written; peak task memory 992309821 B
+[05:42:09] row 17 (verdict: decoded-list) written; peak task memory 949195723 B
+[05:42:09] row 18 (verdict: decoded-list) written; peak task memory 950479409 B
+[05:42:09] row 19 (verdict: decoded-list) written; peak task memory 952720397 B
+[05:42:09] row 20 (verdict: decoded-list) written; peak task memory 964746918 B
+[05:42:09] row 21 (verdict: decoded-list) written; peak task memory 977725321 B
+[05:42:09] row 22 (verdict: decoded-list) written; peak task memory 982211561 B
+[05:42:09] row 23 (verdict: decoded-list) written; peak task memory 630234479 B
+[05:42:09] row 24 (verdict: decoded-list) written; peak task memory 573974996 B
+[05:42:09] row 25 (verdict: decoded-list) written; peak task memory 591285862 B
+[05:42:09] row 26 (verdict: decoded-list) written; peak task memory 573019939 B
+[05:42:09] row 27 (verdict: decoded-list) written; peak task memory 576543263 B
+[05:42:09] row 28 (verdict: decoded-list) written; peak task memory 576541600 B
+[05:42:10] row 29 (verdict: decoded-list) written; peak task memory 633450102 B
+[05:42:10] row 30 (verdict: decoded-list) written; peak task memory 634723187 B
+[05:42:10] row 31 (verdict: decoded-list) written; peak task memory 570584729 B
+[05:42:10] row 32 (verdict: decoded-list) written; peak task memory 570620942 B
+[05:42:10] row 33 (verdict: decoded-list) written; peak task memory 571416506 B
+[05:42:10] row 34 (verdict: decoded-list) written; peak task memory 568339068 B
+[05:42:10] row 35 (verdict: decoded-list) written; peak task memory 559052285 B
+[05:42:10] row 36 (verdict: decoded-list) written; peak task memory 567250193 B
+[05:42:10] row 37 (verdict: decoded-list) written; peak task memory 570901747 B
+[05:42:10] row 38 (verdict: decoded-list) written; peak task memory 560643387 B
+[05:42:10] row 39 (verdict: decoded-list) written; peak task memory 559873332 B
+[05:42:10] row 40 (verdict: decoded-list) written; peak task memory 559203760 B
+[05:42:10] row 41 (verdict: decoded-list) written; peak task memory 559202507 B
+[05:42:10] row 42 (verdict: decoded-list) written; peak task memory 572985316 B
+[05:42:10] row 43 (verdict: decoded-list) written; peak task memory 573468154 B
+[05:42:10] row 44 (verdict: decoded-list) written; peak task memory 565295240 B
+[05:42:10] row 45 (verdict: decoded-list) written; peak task memory 565291013 B
+[05:42:10] row 46 (verdict: decoded-list) written; peak task memory 559361925 B
+[05:42:10] row 47 (verdict: decoded-list) written; peak task memory 560655455 B
+[05:42:10] row 48 (verdict: decoded-list) written; peak task memory 561284207 B
+[05:42:10] row 49 (verdict: decoded-list) written; peak task memory 559842880 B
+[05:42:10] row 50 (verdict: decoded-list) written; peak task memory 559845826 B
+[05:42:10] row 51 (verdict: decoded-list) written; peak task memory 560004359 B
+[05:42:10] row 52 (verdict: decoded-list) written; peak task memory 568017059 B
+[05:42:10] row 53 (verdict: decoded-list) written; peak task memory 569460267 B
+[05:42:10] row 54 (verdict: decoded-list) written; peak task memory 570129263 B
+[05:42:10] row 55 (verdict: decoded-list) written; peak task memory 676718113 B
+[05:42:10] row 56 (verdict: decoded-list) written; peak task memory 681333590 B
+[05:42:10] row 57 (verdict: decoded-list) written; peak task memory 683895114 B
+[05:42:10] row 58 (verdict: decoded-list) written; peak task memory 572825701 B
+[05:42:10] row 59 (verdict: decoded-list) written; peak task memory 561284254 B
+[05:42:10] row 60 (verdict: decoded-list) written; peak task memory 564328913 B
+[05:42:10] row 61 (verdict: decoded-list) written; peak task memory 564679189 B
+[05:42:10] row 62 (verdict: decoded-list) written; peak task memory 567053745 B
+[05:42:10] row 63 (verdict: decoded-list) written; peak task memory 569938083 B
+[05:42:10] row 64 (verdict: decoded-list) written; peak task memory 569942325 B
+[05:42:10] row 65 (verdict: decoded-list) written; peak task memory 604747365 B
+[05:42:10] row 66 (verdict: decoded-list) written; peak task memory 604720921 B
+[05:42:10] row 67 (verdict: decoded-list) written; peak task memory 566412885 B
+[05:42:10] row 68 (verdict: decoded-list) written; peak task memory 566412153 B
+[05:42:10] row 69 (verdict: decoded-list) written; peak task memory 566737511 B
+[05:42:10] row 70 (verdict: decoded-list) written; peak task memory 567377824 B
+[05:42:10] row 71 (verdict: decoded-list) written; peak task memory 613855631 B
+[05:42:10] row 72 (verdict: decoded-list) written; peak task memory 616258929 B
+[05:42:10] row 73 (verdict: decoded-list) written; peak task memory 565639973 B
+[05:42:10] row 74 (verdict: decoded-list) written; peak task memory 568978141 B
+[05:42:10] row 75 (verdict: decoded-list) written; peak task memory 584688054 B
+[05:42:10] row 76 (verdict: decoded-list) written; peak task memory 569457218 B
+[05:42:10] row 77 (verdict: decoded-list) written; peak task memory 570899169 B
+[05:42:10] row 78 (verdict: decoded-list) written; peak task memory 571702631 B
+[05:42:10] row 79 (verdict: decoded-list) written; peak task memory 582444164 B
+[05:42:10] row 80 (verdict: decoded-list) written; peak task memory 598977294 B
+[05:42:10] row 618 (verdict: decoded-list (descriptor: MOR-T, R21)) written; peak task memory 626245827 B
+[05:42:10] row 619 (verdict: decoded-list (descriptor: MOR-T, R21)) written; peak task memory 628331100 B
+[05:42:10] done: outcomes {'computed': 85, 'no statistic': 30}

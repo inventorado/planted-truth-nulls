@@ -1,0 +1,6082 @@
+{
+ "what": "register DRAFT v6 R1 (orchestrator under the operator's standing delegation, 2026-09-26; fixed after the v5 S-build outcome was seen, replacing a reading applied unevenly -- v5 section 1.11 item 2): every GO, KEGG, MSigDB, Reactome and figure-label mapping of the register, one record per TSV cell: the name as printed, the query, the pinned release, the tier of the name rule that identified exactly one live term ((a) exact name; (b) synonym of any scope / former name; (c) case, UK-US spelling or singular-plural normalisation) or 'S undefined', and the label written into the TSV",
+ "rule": {
+  "module": "arcs/audit/src_register/name_match.py",
+  "sha256": "e31d7d090aa2ef4fdd85c1ccf2179b3f3f7db525612ef5e8f9912cf0f330deae"
+ },
+ "n_cells": 338,
+ "tier_counts": {
+  "None": 15,
+  "a": 181,
+  "b": 9,
+  "c": 133
+ },
+ "cells": [
+  {
+   "cell": "SEG-C3a",
+   "row": 3,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "axonogenesis",
+   "query": "axonogenesis",
+   "tier": "a",
+   "id": "GO:0007409",
+   "name": "axonogenesis",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0007409 'axonogenesis'"
+  },
+  {
+   "cell": "SEG-C3b",
+   "row": 4,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "axonogenesis involved in innervation",
+   "query": "axonogenesis involved in innervation",
+   "tier": "a",
+   "id": "GO:0060385",
+   "name": "axonogenesis involved in innervation",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0060385 'axonogenesis involved in innervation'"
+  },
+  {
+   "cell": "SEG-C3c",
+   "row": 5,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "neuron projection morphogenesis",
+   "query": "neuron projection morphogenesis",
+   "tier": "a",
+   "id": "GO:0048812",
+   "name": "neuron projection morphogenesis",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0048812 'neuron projection morphogenesis'"
+  },
+  {
+   "cell": "SEG-C3d",
+   "row": 6,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "dendritic spine morphogenesis",
+   "query": "dendritic spine morphogenesis",
+   "tier": "a",
+   "id": "GO:0060997",
+   "name": "dendritic spine morphogenesis",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0060997 'dendritic spine morphogenesis'"
+  },
+  {
+   "cell": "SEG-C3e",
+   "row": 7,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "axon extension",
+   "query": "axon extension",
+   "tier": "a",
+   "id": "GO:0048675",
+   "name": "axon extension",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0048675 'axon extension'"
+  },
+  {
+   "cell": "SEG-C3f",
+   "row": 8,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "axon guidance",
+   "query": "axon guidance",
+   "tier": "a",
+   "id": "GO:0007411",
+   "name": "axon guidance",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0007411 'axon guidance'"
+  },
+  {
+   "cell": "SEG-C3g",
+   "row": 9,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "regulation of axonogenesis",
+   "query": "regulation of axonogenesis",
+   "tier": "a",
+   "id": "GO:0050770",
+   "name": "regulation of axonogenesis",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0050770 'regulation of axonogenesis'"
+  },
+  {
+   "cell": "SEG-C3-D01",
+   "row": 10,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "cell morphogenesis involved in neuron differentiation",
+   "query": "cell morphogenesis involved in neuron differentiation",
+   "tier": "a",
+   "id": "GO:0048667",
+   "name": "cell morphogenesis involved in neuron differentiation",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0048667 'cell morphogenesis involved in neuron differentiation'"
+  },
+  {
+   "cell": "SEG-C3-D02",
+   "row": 11,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "neuron development",
+   "query": "neuron development",
+   "tier": "a",
+   "id": "GO:0048666",
+   "name": "neuron development",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0048666 'neuron development'"
+  },
+  {
+   "cell": "SEG-C3-D03",
+   "row": 12,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "cell development",
+   "query": "cell development",
+   "tier": "a",
+   "id": "GO:0048468",
+   "name": "cell development",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0048468 'cell development'"
+  },
+  {
+   "cell": "SEG-C3-D04",
+   "row": 13,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "cell differentiation",
+   "query": "cell differentiation",
+   "tier": "a",
+   "id": "GO:0030154",
+   "name": "cell differentiation",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0030154 'cell differentiation'"
+  },
+  {
+   "cell": "SEG-C3-D05",
+   "row": 14,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "cellular developmental process",
+   "query": "cellular developmental process",
+   "tier": "a",
+   "id": "GO:0048869",
+   "name": "cellular developmental process",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0048869 'cellular developmental process'"
+  },
+  {
+   "cell": "SEG-C3-D06",
+   "row": 15,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "developmental process",
+   "query": "developmental process",
+   "tier": "a",
+   "id": "GO:0032502",
+   "name": "developmental process",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0032502 'developmental process'"
+  },
+  {
+   "cell": "SEG-C3-D07",
+   "row": 16,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "anatomical structure development",
+   "query": "anatomical structure development",
+   "tier": "a",
+   "id": "GO:0048856",
+   "name": "anatomical structure development",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0048856 'anatomical structure development'"
+  },
+  {
+   "cell": "SEG-C3-D08",
+   "row": 17,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "neuron differentiation",
+   "query": "neuron differentiation",
+   "tier": "a",
+   "id": "GO:0030182",
+   "name": "neuron differentiation",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0030182 'neuron differentiation'"
+  },
+  {
+   "cell": "SEG-C3-D09",
+   "row": 18,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "generation of neurons",
+   "query": "generation of neurons",
+   "tier": "a",
+   "id": "GO:0048699",
+   "name": "generation of neurons",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0048699 'generation of neurons'"
+  },
+  {
+   "cell": "SEG-C3-D10",
+   "row": 19,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "neurogenesis",
+   "query": "neurogenesis",
+   "tier": "a",
+   "id": "GO:0022008",
+   "name": "neurogenesis",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0022008 'neurogenesis'"
+  },
+  {
+   "cell": "SEG-C3-D11",
+   "row": 20,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "nervous system development",
+   "query": "nervous system development",
+   "tier": "a",
+   "id": "GO:0007399",
+   "name": "nervous system development",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0007399 'nervous system development'"
+  },
+  {
+   "cell": "SEG-C3-D12",
+   "row": 21,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "system development",
+   "query": "system development",
+   "tier": "a",
+   "id": "GO:0048731",
+   "name": "system development",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0048731 'system development'"
+  },
+  {
+   "cell": "SEG-C3-D13",
+   "row": 22,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "multicellular organism development",
+   "query": "multicellular organism development",
+   "tier": "a",
+   "id": "GO:0007275",
+   "name": "multicellular organism development",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0007275 'multicellular organism development'"
+  },
+  {
+   "cell": "SEG-C3-D14",
+   "row": 23,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "multicellular organismal process",
+   "query": "multicellular organismal process",
+   "tier": "a",
+   "id": "GO:0032501",
+   "name": "multicellular organismal process",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0032501 'multicellular organismal process'"
+  },
+  {
+   "cell": "SEG-C3-D15",
+   "row": 24,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "cell morphogenesis",
+   "query": "cell morphogenesis",
+   "tier": "a",
+   "id": "GO:0000902",
+   "name": "cell morphogenesis",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0000902 'cell morphogenesis'"
+  },
+  {
+   "cell": "SEG-C3-D16",
+   "row": 25,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "anatomical structure morphogenesis",
+   "query": "anatomical structure morphogenesis",
+   "tier": "a",
+   "id": "GO:0009653",
+   "name": "anatomical structure morphogenesis",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0009653 'anatomical structure morphogenesis'"
+  },
+  {
+   "cell": "SEG-C3-D17",
+   "row": 26,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "neuron projection development",
+   "query": "neuron projection development",
+   "tier": "a",
+   "id": "GO:0031175",
+   "name": "neuron projection development",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0031175 'neuron projection development'"
+  },
+  {
+   "cell": "SEG-C3-D18",
+   "row": 27,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "plasma membrane bounded cell projection organization",
+   "query": "plasma membrane bounded cell projection organization",
+   "tier": "a",
+   "id": "GO:0120036",
+   "name": "plasma membrane bounded cell projection organization",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0120036 'plasma membrane bounded cell projection organization'"
+  },
+  {
+   "cell": "SEG-C3-D19",
+   "row": 28,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "cell projection organization",
+   "query": "cell projection organization",
+   "tier": "a",
+   "id": "GO:0030030",
+   "name": "cell projection organization",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0030030 'cell projection organization'"
+  },
+  {
+   "cell": "SEG-C3-D20",
+   "row": 29,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "cellular component organization",
+   "query": "cellular component organization",
+   "tier": "a",
+   "id": "GO:0016043",
+   "name": "cellular component organization",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0016043 'cellular component organization'"
+  },
+  {
+   "cell": "SEG-C3-D21",
+   "row": 30,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "cellular component organization or biogenesis",
+   "query": "cellular component organization or biogenesis",
+   "tier": "a",
+   "id": "GO:0071840",
+   "name": "cellular component organization or biogenesis",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0071840 'cellular component organization or biogenesis'"
+  },
+  {
+   "cell": "SEG-C3-D22",
+   "row": 31,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "plasma membrane bounded cell projection morphogenesis",
+   "query": "plasma membrane bounded cell projection morphogenesis",
+   "tier": "a",
+   "id": "GO:0120039",
+   "name": "plasma membrane bounded cell projection morphogenesis",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0120039 'plasma membrane bounded cell projection morphogenesis'"
+  },
+  {
+   "cell": "SEG-C3-D23",
+   "row": 32,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "cell projection morphogenesis",
+   "query": "cell projection morphogenesis",
+   "tier": "a",
+   "id": "GO:0048858",
+   "name": "cell projection morphogenesis",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0048858 'cell projection morphogenesis'"
+  },
+  {
+   "cell": "SEG-C3-D24",
+   "row": 33,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "cellular anatomical entity morphogenesis",
+   "query": "cellular anatomical entity morphogenesis",
+   "tier": "a",
+   "id": "GO:0032989",
+   "name": "cellular anatomical entity morphogenesis",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0032989 'cellular anatomical entity morphogenesis'"
+  },
+  {
+   "cell": "SEG-C3-D25",
+   "row": 34,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "axon development",
+   "query": "axon development",
+   "tier": "a",
+   "id": "GO:0061564",
+   "name": "axon development",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0061564 'axon development'"
+  },
+  {
+   "cell": "SEG-C3-D26",
+   "row": 35,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "neuron projection organization",
+   "query": "neuron projection organization",
+   "tier": "a",
+   "id": "GO:0106027",
+   "name": "neuron projection organization",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0106027 'neuron projection organization'"
+  },
+  {
+   "cell": "SEG-C3-D27",
+   "row": 36,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "synapse organization",
+   "query": "synapse organization",
+   "tier": "a",
+   "id": "GO:0050808",
+   "name": "synapse organization",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0050808 'synapse organization'"
+  },
+  {
+   "cell": "SEG-C3-D28",
+   "row": 37,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "cell junction organization",
+   "query": "cell junction organization",
+   "tier": "a",
+   "id": "GO:0034330",
+   "name": "cell junction organization",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0034330 'cell junction organization'"
+  },
+  {
+   "cell": "SEG-C3-D29",
+   "row": 38,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "dendrite development",
+   "query": "dendrite development",
+   "tier": "a",
+   "id": "GO:0016358",
+   "name": "dendrite development",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0016358 'dendrite development'"
+  },
+  {
+   "cell": "SEG-C3-D30",
+   "row": 39,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "dendrite morphogenesis",
+   "query": "dendrite morphogenesis",
+   "tier": "a",
+   "id": "GO:0048813",
+   "name": "dendrite morphogenesis",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0048813 'dendrite morphogenesis'"
+  },
+  {
+   "cell": "SEG-C3-D31",
+   "row": 40,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "olfactory bulb development",
+   "query": "olfactory bulb development",
+   "tier": "a",
+   "id": "GO:0021772",
+   "name": "olfactory bulb development",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0021772 'olfactory bulb development'"
+  },
+  {
+   "cell": "SEG-C3-D32",
+   "row": 41,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "olfactory lobe development",
+   "query": "olfactory lobe development",
+   "tier": "a",
+   "id": "GO:0021988",
+   "name": "olfactory lobe development",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0021988 'olfactory lobe development'"
+  },
+  {
+   "cell": "SEG-C3-D33",
+   "row": 42,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "brain development",
+   "query": "brain development",
+   "tier": "a",
+   "id": "GO:0007420",
+   "name": "brain development",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0007420 'brain development'"
+  },
+  {
+   "cell": "SEG-C3-D34",
+   "row": 43,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "head development",
+   "query": "head development",
+   "tier": "a",
+   "id": "GO:0060322",
+   "name": "head development",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0060322 'head development'"
+  },
+  {
+   "cell": "SEG-C3-D35",
+   "row": 44,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "developmental growth",
+   "query": "developmental growth",
+   "tier": "a",
+   "id": "GO:0048589",
+   "name": "developmental growth",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0048589 'developmental growth'"
+  },
+  {
+   "cell": "SEG-C3-D36",
+   "row": 45,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "growth",
+   "query": "growth",
+   "tier": "a",
+   "id": "GO:0040007",
+   "name": "growth",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0040007 'growth'"
+  },
+  {
+   "cell": "SEG-C3-D37",
+   "row": 46,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "ovulation cycle process",
+   "query": "ovulation cycle process",
+   "tier": "a",
+   "id": "GO:0022602",
+   "name": "ovulation cycle process",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0022602 'ovulation cycle process'"
+  },
+  {
+   "cell": "SEG-C3-D38",
+   "row": 47,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "protein localization to synapse",
+   "query": "protein localization to synapse",
+   "tier": "a",
+   "id": "GO:0035418",
+   "name": "protein localization to synapse",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0035418 'protein localization to synapse'"
+  },
+  {
+   "cell": "SEG-C3-D39",
+   "row": 48,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "protein localization to cell junction",
+   "query": "protein localization to cell junction",
+   "tier": "a",
+   "id": "GO:1902414",
+   "name": "protein localization to cell junction",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:1902414 'protein localization to cell junction'"
+  },
+  {
+   "cell": "SEG-C3-D40",
+   "row": 49,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "female gonad development",
+   "query": "female gonad development",
+   "tier": "a",
+   "id": "GO:0008585",
+   "name": "female gonad development",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0008585 'female gonad development'"
+  },
+  {
+   "cell": "SEG-C3-D41",
+   "row": 50,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "development of primary female sexual characteristics",
+   "query": "development of primary female sexual characteristics",
+   "tier": "a",
+   "id": "GO:0046545",
+   "name": "development of primary female sexual characteristics",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0046545 'development of primary female sexual characteristics'"
+  },
+  {
+   "cell": "SEG-C3-D42",
+   "row": 51,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "female sex differentiation",
+   "query": "female sex differentiation",
+   "tier": "a",
+   "id": "GO:0046660",
+   "name": "female sex differentiation",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0046660 'female sex differentiation'"
+  },
+  {
+   "cell": "SEG-C3-D43",
+   "row": 52,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "regulation of neuron projection development",
+   "query": "regulation of neuron projection development",
+   "tier": "a",
+   "id": "GO:0010975",
+   "name": "regulation of neuron projection development",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0010975 'regulation of neuron projection development'"
+  },
+  {
+   "cell": "SEG-C3-D44",
+   "row": 53,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "regulation of plasma membrane bounded cell projection organization",
+   "query": "regulation of plasma membrane bounded cell projection organization",
+   "tier": "a",
+   "id": "GO:0120035",
+   "name": "regulation of plasma membrane bounded cell projection organization",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0120035 'regulation of plasma membrane bounded cell projection organization'"
+  },
+  {
+   "cell": "SEG-C3-D45",
+   "row": 54,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "regulation of cell projection organization",
+   "query": "regulation of cell projection organization",
+   "tier": "a",
+   "id": "GO:0031344",
+   "name": "regulation of cell projection organization",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0031344 'regulation of cell projection organization'"
+  },
+  {
+   "cell": "SEG-C3-D46",
+   "row": 55,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "regulation of cellular process",
+   "query": "regulation of cellular process",
+   "tier": "a",
+   "id": "GO:0050794",
+   "name": "regulation of cellular process",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0050794 'regulation of cellular process'"
+  },
+  {
+   "cell": "SEG-C3-D47",
+   "row": 56,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "regulation of biological process",
+   "query": "regulation of biological process",
+   "tier": "a",
+   "id": "GO:0050789",
+   "name": "regulation of biological process",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0050789 'regulation of biological process'"
+  },
+  {
+   "cell": "SEG-C3-D48",
+   "row": 57,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "biological regulation",
+   "query": "biological regulation",
+   "tier": "a",
+   "id": "GO:0065007",
+   "name": "biological regulation",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0065007 'biological regulation'"
+  },
+  {
+   "cell": "SEG-C3-D49",
+   "row": 58,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "regulation of anatomical structure morphogenesis",
+   "query": "regulation of anatomical structure morphogenesis",
+   "tier": "a",
+   "id": "GO:0022603",
+   "name": "regulation of anatomical structure morphogenesis",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0022603 'regulation of anatomical structure morphogenesis'"
+  },
+  {
+   "cell": "SEG-C3-D50",
+   "row": 59,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "ameboidal-type cell migration",
+   "query": "ameboidal-type cell migration",
+   "tier": "a",
+   "id": "GO:0001667",
+   "name": "ameboidal-type cell migration",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0001667 'ameboidal-type cell migration'"
+  },
+  {
+   "cell": "SEG-C3-D51",
+   "row": 60,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "neuron projection guidance",
+   "query": "neuron projection guidance",
+   "tier": "a",
+   "id": "GO:0097485",
+   "name": "neuron projection guidance",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0097485 'neuron projection guidance'"
+  },
+  {
+   "cell": "SEG-C3-D52",
+   "row": 61,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "positive regulation of nervous system development",
+   "query": "positive regulation of nervous system development",
+   "tier": "a",
+   "id": "GO:0051962",
+   "name": "positive regulation of nervous system development",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0051962 'positive regulation of nervous system development'"
+  },
+  {
+   "cell": "SEG-C3-D53",
+   "row": 62,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "regulation of nervous system development",
+   "query": "regulation of nervous system development",
+   "tier": "a",
+   "id": "GO:0051960",
+   "name": "regulation of nervous system development",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0051960 'regulation of nervous system development'"
+  },
+  {
+   "cell": "SEG-C3-D54",
+   "row": 63,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "modulation of chemical synaptic transmission",
+   "query": "modulation of chemical synaptic transmission",
+   "tier": "a",
+   "id": "GO:0050804",
+   "name": "modulation of chemical synaptic transmission",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0050804 'modulation of chemical synaptic transmission'"
+  },
+  {
+   "cell": "SEG-C3-D55",
+   "row": 64,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "regulation of trans-synaptic signaling",
+   "query": "regulation of trans-synaptic signaling",
+   "tier": "a",
+   "id": "GO:0099177",
+   "name": "regulation of trans-synaptic signaling",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0099177 'regulation of trans-synaptic signaling'"
+  },
+  {
+   "cell": "SEG-C3-D56",
+   "row": 65,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "regulation of cell communication",
+   "query": "regulation of cell communication",
+   "tier": "a",
+   "id": "GO:0010646",
+   "name": "regulation of cell communication",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0010646 'regulation of cell communication'"
+  },
+  {
+   "cell": "SEG-C3-D57",
+   "row": 66,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "regulation of signaling",
+   "query": "regulation of signaling",
+   "tier": "a",
+   "id": "GO:0023051",
+   "name": "regulation of signaling",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0023051 'regulation of signaling'"
+  },
+  {
+   "cell": "SEG-C3-D58",
+   "row": 67,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "chemical synaptic transmission",
+   "query": "chemical synaptic transmission",
+   "tier": "a",
+   "id": "GO:0007268",
+   "name": "chemical synaptic transmission",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0007268 'chemical synaptic transmission'"
+  },
+  {
+   "cell": "SEG-C3-D59",
+   "row": 68,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "anterograde trans-synaptic signaling",
+   "query": "anterograde trans-synaptic signaling",
+   "tier": "a",
+   "id": "GO:0098916",
+   "name": "anterograde trans-synaptic signaling",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0098916 'anterograde trans-synaptic signaling'"
+  },
+  {
+   "cell": "SEG-C3-D60",
+   "row": 69,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "trans-synaptic signaling",
+   "query": "trans-synaptic signaling",
+   "tier": "a",
+   "id": "GO:0099537",
+   "name": "trans-synaptic signaling",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0099537 'trans-synaptic signaling'"
+  },
+  {
+   "cell": "SEG-C3-D61",
+   "row": 70,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "synaptic signaling",
+   "query": "synaptic signaling",
+   "tier": "a",
+   "id": "GO:0099536",
+   "name": "synaptic signaling",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0099536 'synaptic signaling'"
+  },
+  {
+   "cell": "SEG-C3-D62",
+   "row": 71,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "signaling",
+   "query": "signaling",
+   "tier": "a",
+   "id": "GO:0023052",
+   "name": "signaling",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0023052 'signaling'"
+  },
+  {
+   "cell": "SEG-C3-D63",
+   "row": 72,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "cell communication",
+   "query": "cell communication",
+   "tier": "a",
+   "id": "GO:0007154",
+   "name": "cell communication",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0007154 'cell communication'"
+  },
+  {
+   "cell": "SEG-C3-D64",
+   "row": 73,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "regulation of neurogenesis",
+   "query": "regulation of neurogenesis",
+   "tier": "a",
+   "id": "GO:0050767",
+   "name": "regulation of neurogenesis",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0050767 'regulation of neurogenesis'"
+  },
+  {
+   "cell": "SEG-C3-D65",
+   "row": 74,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "enzyme-linked receptor protein signaling pathway",
+   "query": "enzyme-linked receptor protein signaling pathway",
+   "tier": "a",
+   "id": "GO:0007167",
+   "name": "enzyme-linked receptor protein signaling pathway",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0007167 'enzyme-linked receptor protein signaling pathway'"
+  },
+  {
+   "cell": "SEG-C3-D66",
+   "row": 75,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "cell surface receptor signaling pathway",
+   "query": "cell surface receptor signaling pathway",
+   "tier": "a",
+   "id": "GO:0007166",
+   "name": "cell surface receptor signaling pathway",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0007166 'cell surface receptor signaling pathway'"
+  },
+  {
+   "cell": "SEG-C3-D67",
+   "row": 76,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "behavior",
+   "query": "behavior",
+   "tier": "a",
+   "id": "GO:0007610",
+   "name": "behavior",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0007610 'behavior'"
+  },
+  {
+   "cell": "SEG-C3-D68",
+   "row": 77,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "cell adhesion",
+   "query": "cell adhesion",
+   "tier": "a",
+   "id": "GO:0007155",
+   "name": "cell adhesion",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0007155 'cell adhesion'"
+  },
+  {
+   "cell": "SEG-C3-D69",
+   "row": 78,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "animal organ morphogenesis",
+   "query": "animal organ morphogenesis",
+   "tier": "a",
+   "id": "GO:0009887",
+   "name": "animal organ morphogenesis",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0009887 'animal organ morphogenesis'"
+  },
+  {
+   "cell": "SEG-C3-D70",
+   "row": 79,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "regulation of molecular function",
+   "query": "regulation of molecular function",
+   "tier": "a",
+   "id": "GO:0065009",
+   "name": "regulation of molecular function",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0065009 'regulation of molecular function'"
+  },
+  {
+   "cell": "SEG-C3-D71",
+   "row": 80,
+   "target_key": "segura2024symptommapping",
+   "mapping": "GO (Segura Table S7 term)",
+   "release": "GO 2024-01-17 (biological_process)",
+   "printed": "regulation of biological quality",
+   "query": "regulation of biological quality",
+   "tier": "a",
+   "id": "GO:0065008",
+   "name": "regulation of biological quality",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0065008 'regulation of biological quality'"
+  },
+  {
+   "cell": "RG-02",
+   "row": 136,
+   "target_key": "romerogarcia2019synaptic",
+   "mapping": "GO BP (Enrichr library term)",
+   "release": "Enrichr GO_Biological_Process_2015",
+   "printed": "Synaptic Transmission",
+   "query": "Synaptic Transmission",
+   "tier": "c",
+   "id": "GO:0007268",
+   "name": "synaptic transmission",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0007268 'synaptic transmission'"
+  },
+  {
+   "cell": "RG-V03",
+   "row": 150,
+   "target_key": "romerogarcia2019synaptic",
+   "mapping": "GO BP (Enrichr library term)",
+   "release": "Enrichr GO_Biological_Process_2015",
+   "printed": "Synaptic transmission",
+   "query": "Synaptic transmission",
+   "tier": "c",
+   "id": "GO:0007268",
+   "name": "synaptic transmission",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0007268 'synaptic transmission'"
+  },
+  {
+   "cell": "RG-V04",
+   "row": 151,
+   "target_key": "romerogarcia2019synaptic",
+   "mapping": "GO BP (Enrichr library term)",
+   "release": "Enrichr GO_Biological_Process_2015",
+   "printed": "Synaptic transmission",
+   "query": "Synaptic transmission",
+   "tier": "c",
+   "id": "GO:0007268",
+   "name": "synaptic transmission",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0007268 'synaptic transmission'"
+  },
+  {
+   "cell": "RG-V05",
+   "row": 152,
+   "target_key": "romerogarcia2019synaptic",
+   "mapping": "GO BP (Enrichr library term)",
+   "release": "Enrichr GO_Biological_Process_2015",
+   "printed": "Membrane depolarization",
+   "query": "Membrane depolarization",
+   "tier": "c",
+   "id": "GO:0051899",
+   "name": "membrane depolarization",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0051899 'membrane depolarization'"
+  },
+  {
+   "cell": "RA-01",
+   "row": 198,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "Reactome (Rasero Fig. 4A label)",
+   "release": "WebGestalt Reactome (server as fetched 2026-09-26)",
+   "printed": "Neuronal system",
+   "query": "Neuronal system",
+   "tier": "c",
+   "id": "R-HSA-112316",
+   "name": "Neuronal System",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> R-HSA-112316 'Neuronal System'"
+  },
+  {
+   "cell": "RA-02",
+   "row": 199,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "Reactome (Rasero Fig. 4A label)",
+   "release": "WebGestalt Reactome (server as fetched 2026-09-26)",
+   "printed": "Glutamate binding, activation of AMPA receptors and synaptic plasticity",
+   "query": "Glutamate binding, activation of AMPA receptors and synaptic plasticity",
+   "tier": "a",
+   "id": "R-HSA-399721",
+   "name": "Glutamate binding, activation of AMPA receptors and synaptic plasticity",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> R-HSA-399721 'Glutamate binding, activation of AMPA receptors and synaptic plasticity'"
+  },
+  {
+   "cell": "RA-03",
+   "row": 200,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "Reactome (Rasero Fig. 4A label)",
+   "release": "WebGestalt Reactome (server as fetched 2026-09-26)",
+   "printed": "Trafficking of AMPA receptors",
+   "query": "Trafficking of AMPA receptors",
+   "tier": "a",
+   "id": "R-HSA-399719",
+   "name": "Trafficking of AMPA receptors",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> R-HSA-399719 'Trafficking of AMPA receptors'"
+  },
+  {
+   "cell": "RA-04",
+   "row": 201,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "GO BP (Rasero Fig. 4A label)",
+   "release": "WebGestalt GO BP (server as fetched 2026-09-26)",
+   "printed": "Glutamate receptor signaling pathway",
+   "query": "Glutamate receptor signaling pathway",
+   "tier": "c",
+   "id": "GO:0007215",
+   "name": "glutamate receptor signaling pathway",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0007215 'glutamate receptor signaling pathway'"
+  },
+  {
+   "cell": "RA-05",
+   "row": 202,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "Reactome (Rasero Fig. 4A label)",
+   "release": "WebGestalt Reactome (server as fetched 2026-09-26)",
+   "printed": "Transmission across Chemical Synapses",
+   "query": "Transmission across Chemical Synapses",
+   "tier": "a",
+   "id": "R-HSA-112315",
+   "name": "Transmission across Chemical Synapses",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> R-HSA-112315 'Transmission across Chemical Synapses'"
+  },
+  {
+   "cell": "RA-06",
+   "row": 203,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "Reactome (Rasero Fig. 4A label)",
+   "release": "WebGestalt Reactome (server as fetched 2026-09-26)",
+   "printed": "Neurotransmitter receptors and postsynaptic signal transmission",
+   "query": "Neurotransmitter receptors and postsynaptic signal transmission",
+   "tier": "a",
+   "id": "R-HSA-112314",
+   "name": "Neurotransmitter receptors and postsynaptic signal transmission",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> R-HSA-112314 'Neurotransmitter receptors and postsynaptic signal transmission'"
+  },
+  {
+   "cell": "RA-07",
+   "row": 204,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "GO BP (Rasero Fig. 4A label)",
+   "release": "WebGestalt GO BP (server as fetched 2026-09-26)",
+   "printed": "Synapse organization",
+   "query": "Synapse organization",
+   "tier": "c",
+   "id": "GO:0050808",
+   "name": "synapse organization",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0050808 'synapse organization'"
+  },
+  {
+   "cell": "RA-08",
+   "row": 205,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "Reactome (Rasero Fig. 4A label)",
+   "release": "WebGestalt Reactome (server as fetched 2026-09-26)",
+   "printed": "Protein-protein interactions at synapses",
+   "query": "Protein-protein interactions at synapses",
+   "tier": "a",
+   "id": "R-HSA-6794362",
+   "name": "Protein-protein interactions at synapses",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> R-HSA-6794362 'Protein-protein interactions at synapses'"
+  },
+  {
+   "cell": "RA-09",
+   "row": 206,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "Reactome (Rasero Fig. 4A label)",
+   "release": "WebGestalt Reactome (server as fetched 2026-09-26)",
+   "printed": "Unblocking of NMDA receptors, glutamate binding and activation",
+   "query": "Unblocking of NMDA receptors, glutamate binding and activation",
+   "tier": "a",
+   "id": "R-HSA-438066",
+   "name": "Unblocking of NMDA receptors, glutamate binding and activation",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> R-HSA-438066 'Unblocking of NMDA receptors, glutamate binding and activation'"
+  },
+  {
+   "cell": "RA-10",
+   "row": 207,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "Reactome (Rasero Fig. 4A label)",
+   "release": "WebGestalt Reactome (server as fetched 2026-09-26)",
+   "printed": "Activation of NMDA receptors and postsynaptic events",
+   "query": "Activation of NMDA receptors and postsynaptic events",
+   "tier": "a",
+   "id": "R-HSA-442755",
+   "name": "Activation of NMDA receptors and postsynaptic events",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> R-HSA-442755 'Activation of NMDA receptors and postsynaptic events'"
+  },
+  {
+   "cell": "RA-N3-01",
+   "row": 214,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "Reactome (Rasero Fig. 4A label)",
+   "release": "WebGestalt Reactome (server as fetched 2026-09-26)",
+   "printed": "Neuronal system",
+   "query": "Neuronal system",
+   "tier": "c",
+   "id": "R-HSA-112316",
+   "name": "Neuronal System",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> R-HSA-112316 'Neuronal System'"
+  },
+  {
+   "cell": "RA-N3-02",
+   "row": 215,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "Reactome (Rasero Fig. 4A label)",
+   "release": "WebGestalt Reactome (server as fetched 2026-09-26)",
+   "printed": "Glutamate binding, activation of AMPA receptors and synaptic plasticity",
+   "query": "Glutamate binding, activation of AMPA receptors and synaptic plasticity",
+   "tier": "a",
+   "id": "R-HSA-399721",
+   "name": "Glutamate binding, activation of AMPA receptors and synaptic plasticity",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> R-HSA-399721 'Glutamate binding, activation of AMPA receptors and synaptic plasticity'"
+  },
+  {
+   "cell": "RA-N3-03",
+   "row": 216,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "Reactome (Rasero Fig. 4A label)",
+   "release": "WebGestalt Reactome (server as fetched 2026-09-26)",
+   "printed": "Trafficking of AMPA receptors",
+   "query": "Trafficking of AMPA receptors",
+   "tier": "a",
+   "id": "R-HSA-399719",
+   "name": "Trafficking of AMPA receptors",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> R-HSA-399719 'Trafficking of AMPA receptors'"
+  },
+  {
+   "cell": "RA-N3-04",
+   "row": 217,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "GO BP (Rasero Fig. 4A label)",
+   "release": "WebGestalt GO BP (server as fetched 2026-09-26)",
+   "printed": "Glutamate receptor signaling pathway",
+   "query": "Glutamate receptor signaling pathway",
+   "tier": "c",
+   "id": "GO:0007215",
+   "name": "glutamate receptor signaling pathway",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0007215 'glutamate receptor signaling pathway'"
+  },
+  {
+   "cell": "RA-N3-05",
+   "row": 218,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "Reactome (Rasero Fig. 4A label)",
+   "release": "WebGestalt Reactome (server as fetched 2026-09-26)",
+   "printed": "Transmission across Chemical Synapses",
+   "query": "Transmission across Chemical Synapses",
+   "tier": "a",
+   "id": "R-HSA-112315",
+   "name": "Transmission across Chemical Synapses",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> R-HSA-112315 'Transmission across Chemical Synapses'"
+  },
+  {
+   "cell": "RA-N3-06",
+   "row": 219,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "Reactome (Rasero Fig. 4A label)",
+   "release": "WebGestalt Reactome (server as fetched 2026-09-26)",
+   "printed": "Neurotransmitter receptors and postsynaptic signal transmission",
+   "query": "Neurotransmitter receptors and postsynaptic signal transmission",
+   "tier": "a",
+   "id": "R-HSA-112314",
+   "name": "Neurotransmitter receptors and postsynaptic signal transmission",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> R-HSA-112314 'Neurotransmitter receptors and postsynaptic signal transmission'"
+  },
+  {
+   "cell": "RA-N3-07",
+   "row": 220,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "GO BP (Rasero Fig. 4A label)",
+   "release": "WebGestalt GO BP (server as fetched 2026-09-26)",
+   "printed": "Synapse organization",
+   "query": "Synapse organization",
+   "tier": "c",
+   "id": "GO:0050808",
+   "name": "synapse organization",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0050808 'synapse organization'"
+  },
+  {
+   "cell": "RA-N3-08",
+   "row": 221,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "Reactome (Rasero Fig. 4A label)",
+   "release": "WebGestalt Reactome (server as fetched 2026-09-26)",
+   "printed": "Protein-protein interactions at synapses",
+   "query": "Protein-protein interactions at synapses",
+   "tier": "a",
+   "id": "R-HSA-6794362",
+   "name": "Protein-protein interactions at synapses",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> R-HSA-6794362 'Protein-protein interactions at synapses'"
+  },
+  {
+   "cell": "RA-N3-09",
+   "row": 222,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "Reactome (Rasero Fig. 4A label)",
+   "release": "WebGestalt Reactome (server as fetched 2026-09-26)",
+   "printed": "Unblocking of NMDA receptors, glutamate binding and activation",
+   "query": "Unblocking of NMDA receptors, glutamate binding and activation",
+   "tier": "a",
+   "id": "R-HSA-438066",
+   "name": "Unblocking of NMDA receptors, glutamate binding and activation",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> R-HSA-438066 'Unblocking of NMDA receptors, glutamate binding and activation'"
+  },
+  {
+   "cell": "RA-N3-10",
+   "row": 223,
+   "target_key": "rasero2023neurogenetics",
+   "mapping": "Reactome (Rasero Fig. 4A label)",
+   "release": "WebGestalt Reactome (server as fetched 2026-09-26)",
+   "printed": "Activation of NMDA receptors and postsynaptic events",
+   "query": "Activation of NMDA receptors and postsynaptic events",
+   "tier": "a",
+   "id": "R-HSA-442755",
+   "name": "Activation of NMDA receptors and postsynaptic events",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> R-HSA-442755 'Activation of NMDA receptors and postsynaptic events'"
+  },
+  {
+   "cell": "BUCH-E-CNSauto-S1",
+   "row": 248,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5d label)",
+   "release": "RGD RDO 1.283",
+   "printed": "CNS autoimmune",
+   "query": "CNS autoimmune",
+   "tier": null,
+   "id": null,
+   "name": null,
+   "label": "S undefined",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 0,
+    "c_synonym": 0
+   },
+   "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+  },
+  {
+   "cell": "BUCH-E-CNSauto-S2",
+   "row": 249,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5d label)",
+   "release": "RGD RDO 1.283",
+   "printed": "CNS autoimmune",
+   "query": "CNS autoimmune",
+   "tier": null,
+   "id": null,
+   "name": null,
+   "label": "S undefined",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 0,
+    "c_synonym": 0
+   },
+   "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+  },
+  {
+   "cell": "BUCH-E-CNSauto-S3",
+   "row": 250,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5d label)",
+   "release": "RGD RDO 1.283",
+   "printed": "CNS autoimmune",
+   "query": "CNS autoimmune",
+   "tier": null,
+   "id": null,
+   "name": null,
+   "label": "S undefined",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 0,
+    "c_synonym": 0
+   },
+   "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+  },
+  {
+   "cell": "BUCH-E-CNSauto-S4",
+   "row": 251,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5d label)",
+   "release": "RGD RDO 1.283",
+   "printed": "CNS autoimmune",
+   "query": "CNS autoimmune",
+   "tier": null,
+   "id": null,
+   "name": null,
+   "label": "S undefined",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 0,
+    "c_synonym": 0
+   },
+   "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+  },
+  {
+   "cell": "BUCH-E-Osteo-S1",
+   "row": 252,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5d label)",
+   "release": "RGD RDO 1.283",
+   "printed": "osteoarthritis",
+   "query": "osteoarthritis",
+   "tier": "a",
+   "id": "DOID:8398",
+   "name": "osteoarthritis",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:8398 'osteoarthritis'"
+  },
+  {
+   "cell": "BUCH-E-Osteo-S3",
+   "row": 253,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5d label)",
+   "release": "RGD RDO 1.283",
+   "printed": "osteoarthritis",
+   "query": "osteoarthritis",
+   "tier": "a",
+   "id": "DOID:8398",
+   "name": "osteoarthritis",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:8398 'osteoarthritis'"
+  },
+  {
+   "cell": "BUCH-E-Osteo-S4",
+   "row": 254,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5d label)",
+   "release": "RGD RDO 1.283",
+   "printed": "osteoarthritis",
+   "query": "osteoarthritis",
+   "tier": "a",
+   "id": "DOID:8398",
+   "name": "osteoarthritis",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:8398 'osteoarthritis'"
+  },
+  {
+   "cell": "BUCH-E-ADHD-S1",
+   "row": 258,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "ADHD",
+   "query": "ADHD",
+   "tier": "b",
+   "id": "DOID:1094",
+   "name": "attention deficit hyperactivity disorder",
+   "label": "S matched by DISEASES dictionary synonym",
+   "tier_hits": {
+    "a": 0,
+    "b": 1
+   },
+   "summary": "name rule (b): S matched by DISEASES dictionary synonym -> DOID:1094 'attention deficit hyperactivity disorder'"
+  },
+  {
+   "cell": "BUCH-E-ADHD-S4",
+   "row": 259,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "ADHD",
+   "query": "ADHD",
+   "tier": "b",
+   "id": "DOID:1094",
+   "name": "attention deficit hyperactivity disorder",
+   "label": "S matched by DISEASES dictionary synonym",
+   "tier_hits": {
+    "a": 0,
+    "b": 1
+   },
+   "summary": "name rule (b): S matched by DISEASES dictionary synonym -> DOID:1094 'attention deficit hyperactivity disorder'"
+  },
+  {
+   "cell": "BUCH-E-TS-S1",
+   "row": 260,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "Tourette's syndrome",
+   "query": "Tourette's syndrome",
+   "tier": null,
+   "id": null,
+   "name": null,
+   "label": "S undefined",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 0,
+    "c_synonym": 0
+   },
+   "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+  },
+  {
+   "cell": "BUCH-E-TS-S4",
+   "row": 261,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "Tourette's syndrome",
+   "query": "Tourette's syndrome",
+   "tier": null,
+   "id": null,
+   "name": null,
+   "label": "S undefined",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 0,
+    "c_synonym": 0
+   },
+   "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+  },
+  {
+   "cell": "BUCH-E-Syn-SecVesicle-S1",
+   "row": 262,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Secretory vesicle",
+   "query": "Secretory vesicle",
+   "tier": "c",
+   "id": "GO:0099503",
+   "name": "secretory vesicle",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0099503 'secretory vesicle'"
+  },
+  {
+   "cell": "BUCH-E-Syn-SecVesicle-S3",
+   "row": 263,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Secretory vesicle",
+   "query": "Secretory vesicle",
+   "tier": "c",
+   "id": "GO:0099503",
+   "name": "secretory vesicle",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0099503 'secretory vesicle'"
+  },
+  {
+   "cell": "BUCH-E-Syn-SecVesicle-S4",
+   "row": 264,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Secretory vesicle",
+   "query": "Secretory vesicle",
+   "tier": "c",
+   "id": "GO:0099503",
+   "name": "secretory vesicle",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0099503 'secretory vesicle'"
+  },
+  {
+   "cell": "BUCH-E-Syn-PresynActiveZone-S1",
+   "row": 265,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Presynaptic active zone",
+   "query": "Presynaptic active zone",
+   "tier": "c",
+   "id": "GO:0048786",
+   "name": "presynaptic active zone",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0048786 'presynaptic active zone'"
+  },
+  {
+   "cell": "BUCH-E-Syn-PresynActiveZone-S3",
+   "row": 266,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Presynaptic active zone",
+   "query": "Presynaptic active zone",
+   "tier": "c",
+   "id": "GO:0048786",
+   "name": "presynaptic active zone",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0048786 'presynaptic active zone'"
+  },
+  {
+   "cell": "BUCH-E-Syn-PresynActiveZone-S4",
+   "row": 267,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Presynaptic active zone",
+   "query": "Presynaptic active zone",
+   "tier": "c",
+   "id": "GO:0048786",
+   "name": "presynaptic active zone",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0048786 'presynaptic active zone'"
+  },
+  {
+   "cell": "BUCH-E-Syn-PostsynMembrane-S1",
+   "row": 268,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Postsynaptic membrane",
+   "query": "Postsynaptic membrane",
+   "tier": "c",
+   "id": "GO:0045211",
+   "name": "postsynaptic membrane",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0045211 'postsynaptic membrane'"
+  },
+  {
+   "cell": "BUCH-E-Syn-PostsynMembrane-S3",
+   "row": 269,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Postsynaptic membrane",
+   "query": "Postsynaptic membrane",
+   "tier": "c",
+   "id": "GO:0045211",
+   "name": "postsynaptic membrane",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0045211 'postsynaptic membrane'"
+  },
+  {
+   "cell": "BUCH-E-Syn-PostsynMembrane-S4",
+   "row": 270,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Postsynaptic membrane",
+   "query": "Postsynaptic membrane",
+   "tier": "c",
+   "id": "GO:0045211",
+   "name": "postsynaptic membrane",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0045211 'postsynaptic membrane'"
+  },
+  {
+   "cell": "BUCH-E-Syn-IonChannelComplex-S1",
+   "row": 271,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Ion channel complex",
+   "query": "Ion channel complex",
+   "tier": "c",
+   "id": "GO:0034702",
+   "name": "ion channel complex",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0034702 'ion channel complex'"
+  },
+  {
+   "cell": "BUCH-E-Syn-IonChannelComplex-S3",
+   "row": 272,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Ion channel complex",
+   "query": "Ion channel complex",
+   "tier": "c",
+   "id": "GO:0034702",
+   "name": "ion channel complex",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0034702 'ion channel complex'"
+  },
+  {
+   "cell": "BUCH-E-Syn-IonChannelComplex-S4",
+   "row": 273,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Ion channel complex",
+   "query": "Ion channel complex",
+   "tier": "c",
+   "id": "GO:0034702",
+   "name": "ion channel complex",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0034702 'ion channel complex'"
+  },
+  {
+   "cell": "BUCH-E-Syn-ChemSynTransmission-S1",
+   "row": 274,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Chemical synaptic transmission",
+   "query": "Chemical synaptic transmission",
+   "tier": "c",
+   "id": "GO:0007268",
+   "name": "chemical synaptic transmission",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0007268 'chemical synaptic transmission'"
+  },
+  {
+   "cell": "BUCH-E-Syn-ChemSynTransmission-S2",
+   "row": 275,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Chemical synaptic transmission",
+   "query": "Chemical synaptic transmission",
+   "tier": "c",
+   "id": "GO:0007268",
+   "name": "chemical synaptic transmission",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0007268 'chemical synaptic transmission'"
+  },
+  {
+   "cell": "BUCH-E-Syn-ChemSynTransmission-S3",
+   "row": 276,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Chemical synaptic transmission",
+   "query": "Chemical synaptic transmission",
+   "tier": "c",
+   "id": "GO:0007268",
+   "name": "chemical synaptic transmission",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0007268 'chemical synaptic transmission'"
+  },
+  {
+   "cell": "BUCH-E-Syn-ChemSynTransmission-S4",
+   "row": 277,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Chemical synaptic transmission",
+   "query": "Chemical synaptic transmission",
+   "tier": "c",
+   "id": "GO:0007268",
+   "name": "chemical synaptic transmission",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0007268 'chemical synaptic transmission'"
+  },
+  {
+   "cell": "BUCH-E-Syn-MembranePotential-S1",
+   "row": 278,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Regulation of membrane potential",
+   "query": "Regulation of membrane potential",
+   "tier": "c",
+   "id": "GO:0042391",
+   "name": "regulation of membrane potential",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0042391 'regulation of membrane potential'"
+  },
+  {
+   "cell": "BUCH-E-Syn-MembranePotential-S3",
+   "row": 279,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Regulation of membrane potential",
+   "query": "Regulation of membrane potential",
+   "tier": "c",
+   "id": "GO:0042391",
+   "name": "regulation of membrane potential",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0042391 'regulation of membrane potential'"
+  },
+  {
+   "cell": "BUCH-E-Syn-MembranePotential-S4",
+   "row": 280,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Regulation of membrane potential",
+   "query": "Regulation of membrane potential",
+   "tier": "c",
+   "id": "GO:0042391",
+   "name": "regulation of membrane potential",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0042391 'regulation of membrane potential'"
+  },
+  {
+   "cell": "BUCH-E-Syn-NTSecretion-S1",
+   "row": 281,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Neurotransmitter secretion",
+   "query": "Neurotransmitter secretion",
+   "tier": "c",
+   "id": "GO:0007269",
+   "name": "neurotransmitter secretion",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0007269 'neurotransmitter secretion'"
+  },
+  {
+   "cell": "BUCH-E-Syn-NTSecretion-S2",
+   "row": 282,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Neurotransmitter secretion",
+   "query": "Neurotransmitter secretion",
+   "tier": "c",
+   "id": "GO:0007269",
+   "name": "neurotransmitter secretion",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0007269 'neurotransmitter secretion'"
+  },
+  {
+   "cell": "BUCH-E-Syn-NTSecretion-S3",
+   "row": 283,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Neurotransmitter secretion",
+   "query": "Neurotransmitter secretion",
+   "tier": "c",
+   "id": "GO:0007269",
+   "name": "neurotransmitter secretion",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0007269 'neurotransmitter secretion'"
+  },
+  {
+   "cell": "BUCH-E-Syn-NTSecretion-S4",
+   "row": 284,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Neurotransmitter secretion",
+   "query": "Neurotransmitter secretion",
+   "tier": "c",
+   "id": "GO:0007269",
+   "name": "neurotransmitter secretion",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0007269 'neurotransmitter secretion'"
+  },
+  {
+   "cell": "BUCH-E-Syn-GPCR-S1",
+   "row": 285,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "GPCR signaling pathway",
+   "query": "GPCR signaling pathway",
+   "tier": "b",
+   "id": "GO:0007186",
+   "name": "G protein-coupled receptor signaling pathway",
+   "label": "S matched by EXACT synonym",
+   "tier_hits": {
+    "a": 0,
+    "b": 1
+   },
+   "summary": "name rule (b): S matched by EXACT synonym -> GO:0007186 'G protein-coupled receptor signaling pathway'"
+  },
+  {
+   "cell": "BUCH-E-Syn-GPCR-S4",
+   "row": 286,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "GPCR signaling pathway",
+   "query": "GPCR signaling pathway",
+   "tier": "b",
+   "id": "GO:0007186",
+   "name": "G protein-coupled receptor signaling pathway",
+   "label": "S matched by EXACT synonym",
+   "tier_hits": {
+    "a": 0,
+    "b": 1
+   },
+   "summary": "name rule (b): S matched by EXACT synonym -> GO:0007186 'G protein-coupled receptor signaling pathway'"
+  },
+  {
+   "cell": "BUCH-E-Syn-SynapseOrg-S1",
+   "row": 287,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Synapse organization",
+   "query": "Synapse organization",
+   "tier": "c",
+   "id": "GO:0050808",
+   "name": "synapse organization",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0050808 'synapse organization'"
+  },
+  {
+   "cell": "BUCH-E-Syn-SynapseOrg-S3",
+   "row": 288,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Synapse organization",
+   "query": "Synapse organization",
+   "tier": "c",
+   "id": "GO:0050808",
+   "name": "synapse organization",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0050808 'synapse organization'"
+  },
+  {
+   "cell": "BUCH-E-Syn-SynapseOrg-S4",
+   "row": 289,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Synapse organization",
+   "query": "Synapse organization",
+   "tier": "c",
+   "id": "GO:0050808",
+   "name": "synapse organization",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0050808 'synapse organization'"
+  },
+  {
+   "cell": "BUCH-E-Syn-cAMP-S1",
+   "row": 290,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "cAMP-mediated signaling",
+   "query": "cAMP-mediated signaling",
+   "tier": "a",
+   "id": "GO:0019933",
+   "name": "cAMP-mediated signaling",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0019933 'cAMP-mediated signaling'"
+  },
+  {
+   "cell": "BUCH-E-Syn-cAMP-S4",
+   "row": 291,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "cAMP-mediated signaling",
+   "query": "cAMP-mediated signaling",
+   "tier": "a",
+   "id": "GO:0019933",
+   "name": "cAMP-mediated signaling",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0019933 'cAMP-mediated signaling'"
+  },
+  {
+   "cell": "BUCH-E-Syn-GluRSignaling-S1",
+   "row": 292,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Glutamate receptor signaling pathway",
+   "query": "Glutamate receptor signaling pathway",
+   "tier": "c",
+   "id": "GO:0007215",
+   "name": "glutamate receptor signaling pathway",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0007215 'glutamate receptor signaling pathway'"
+  },
+  {
+   "cell": "BUCH-E-Syn-GluRSignaling-S4",
+   "row": 293,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Glutamate receptor signaling pathway",
+   "query": "Glutamate receptor signaling pathway",
+   "tier": "c",
+   "id": "GO:0007215",
+   "name": "glutamate receptor signaling pathway",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0007215 'glutamate receptor signaling pathway'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineReceptorBinding-S3",
+   "row": 294,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine receptor binding",
+   "query": "Cytokine receptor binding",
+   "tier": "c",
+   "id": "GO:0005126",
+   "name": "cytokine receptor binding",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0005126 'cytokine receptor binding'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineActivity-S2",
+   "row": 295,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine activity",
+   "query": "Cytokine activity",
+   "tier": "c",
+   "id": "GO:0005125",
+   "name": "cytokine activity",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0005125 'cytokine activity'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineActivity-S3",
+   "row": 296,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine activity",
+   "query": "Cytokine activity",
+   "tier": "c",
+   "id": "GO:0005125",
+   "name": "cytokine activity",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0005125 'cytokine activity'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineBinding-S2",
+   "row": 297,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine binding",
+   "query": "Cytokine binding",
+   "tier": "c",
+   "id": "GO:0019955",
+   "name": "cytokine binding",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0019955 'cytokine binding'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineBinding-S3",
+   "row": 298,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine binding",
+   "query": "Cytokine binding",
+   "tier": "c",
+   "id": "GO:0019955",
+   "name": "cytokine binding",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0019955 'cytokine binding'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineReceptorActivity-S2",
+   "row": 299,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine receptor activity",
+   "query": "Cytokine receptor activity",
+   "tier": "c",
+   "id": "GO:0004896",
+   "name": "cytokine receptor activity",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0004896 'cytokine receptor activity'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineReceptorActivity-S3",
+   "row": 300,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine receptor activity",
+   "query": "Cytokine receptor activity",
+   "tier": "c",
+   "id": "GO:0004896",
+   "name": "cytokine receptor activity",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0004896 'cytokine receptor activity'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineReceptorActivity-S4",
+   "row": 301,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine receptor activity",
+   "query": "Cytokine receptor activity",
+   "tier": "c",
+   "id": "GO:0004896",
+   "name": "cytokine receptor activity",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0004896 'cytokine receptor activity'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ProteaseBinding-S2",
+   "row": 302,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Protease binding",
+   "query": "Protease binding",
+   "tier": "c",
+   "id": "GO:0002020",
+   "name": "protease binding",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0002020 'protease binding'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ProteaseBinding-S3",
+   "row": 303,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Protease binding",
+   "query": "Protease binding",
+   "tier": "c",
+   "id": "GO:0002020",
+   "name": "protease binding",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0002020 'protease binding'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ProteaseBinding-S4",
+   "row": 304,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Protease binding",
+   "query": "Protease binding",
+   "tier": "c",
+   "id": "GO:0002020",
+   "name": "protease binding",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0002020 'protease binding'"
+  },
+  {
+   "cell": "BUCH-E-Imm-LeukocyteChemotaxis-S3",
+   "row": 305,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Leukocyte chemotaxis",
+   "query": "Leukocyte chemotaxis",
+   "tier": "c",
+   "id": "GO:0030595",
+   "name": "leukocyte chemotaxis",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0030595 'leukocyte chemotaxis'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ResponseToxicSubstance-S1",
+   "row": 306,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Response to toxic substance",
+   "query": "Response to toxic substance",
+   "tier": "c",
+   "id": "GO:0009636",
+   "name": "response to toxic substance",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0009636 'response to toxic substance'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ResponseToxicSubstance-S3",
+   "row": 307,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Response to toxic substance",
+   "query": "Response to toxic substance",
+   "tier": "c",
+   "id": "GO:0009636",
+   "name": "response to toxic substance",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0009636 'response to toxic substance'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineProduction-S1",
+   "row": 308,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine production",
+   "query": "Cytokine production",
+   "tier": "c",
+   "id": "GO:0001816",
+   "name": "cytokine production",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0001816 'cytokine production'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineProduction-S3",
+   "row": 309,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine production",
+   "query": "Cytokine production",
+   "tier": "c",
+   "id": "GO:0001816",
+   "name": "cytokine production",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0001816 'cytokine production'"
+  },
+  {
+   "cell": "BUCH-E-Imm-TCRSignaling-S1",
+   "row": 310,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "T cell receptor signaling pathway",
+   "query": "T cell receptor signaling pathway",
+   "tier": "a",
+   "id": "GO:0050852",
+   "name": "T cell receptor signaling pathway",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0050852 'T cell receptor signaling pathway'"
+  },
+  {
+   "cell": "BUCH-E-Imm-TCRSignaling-S2",
+   "row": 311,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "T cell receptor signaling pathway",
+   "query": "T cell receptor signaling pathway",
+   "tier": "a",
+   "id": "GO:0050852",
+   "name": "T cell receptor signaling pathway",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0050852 'T cell receptor signaling pathway'"
+  },
+  {
+   "cell": "BUCH-E-Imm-TCRSignaling-S3",
+   "row": 312,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "T cell receptor signaling pathway",
+   "query": "T cell receptor signaling pathway",
+   "tier": "a",
+   "id": "GO:0050852",
+   "name": "T cell receptor signaling pathway",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0050852 'T cell receptor signaling pathway'"
+  },
+  {
+   "cell": "BUCH-E-Imm-TCRSignaling-S4",
+   "row": 313,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "T cell receptor signaling pathway",
+   "query": "T cell receptor signaling pathway",
+   "tier": "a",
+   "id": "GO:0050852",
+   "name": "T cell receptor signaling pathway",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0050852 'T cell receptor signaling pathway'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ResponseToCytokine-S1",
+   "row": 314,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Response to cytokine",
+   "query": "Response to cytokine",
+   "tier": "c",
+   "id": "GO:0034097",
+   "name": "response to cytokine",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0034097 'response to cytokine'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ResponseToCytokine-S2",
+   "row": 315,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Response to cytokine",
+   "query": "Response to cytokine",
+   "tier": "c",
+   "id": "GO:0034097",
+   "name": "response to cytokine",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0034097 'response to cytokine'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ResponseToCytokine-S3",
+   "row": 316,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Response to cytokine",
+   "query": "Response to cytokine",
+   "tier": "c",
+   "id": "GO:0034097",
+   "name": "response to cytokine",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0034097 'response to cytokine'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ResponseToCytokine-S4",
+   "row": 317,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Response to cytokine",
+   "query": "Response to cytokine",
+   "tier": "c",
+   "id": "GO:0034097",
+   "name": "response to cytokine",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0034097 'response to cytokine'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ImmuneActivatingST-S1",
+   "row": 318,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Immune response-activating signal transduction",
+   "query": "Immune response-activating signal transduction",
+   "tier": "c",
+   "id": "GO:0002757",
+   "name": "immune response-activating signal transduction",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0002757 'immune response-activating signal transduction'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ImmuneActivatingST-S2",
+   "row": 319,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Immune response-activating signal transduction",
+   "query": "Immune response-activating signal transduction",
+   "tier": "c",
+   "id": "GO:0002757",
+   "name": "immune response-activating signal transduction",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0002757 'immune response-activating signal transduction'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ImmuneActivatingST-S3",
+   "row": 320,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Immune response-activating signal transduction",
+   "query": "Immune response-activating signal transduction",
+   "tier": "c",
+   "id": "GO:0002757",
+   "name": "immune response-activating signal transduction",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0002757 'immune response-activating signal transduction'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ImmuneActivatingST-S4",
+   "row": 321,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Immune response-activating signal transduction",
+   "query": "Immune response-activating signal transduction",
+   "tier": "c",
+   "id": "GO:0002757",
+   "name": "immune response-activating signal transduction",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0002757 'immune response-activating signal transduction'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ImmuneResponse-S1",
+   "row": 322,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Immune response",
+   "query": "Immune response",
+   "tier": "c",
+   "id": "GO:0006955",
+   "name": "immune response",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0006955 'immune response'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ImmuneResponse-S2",
+   "row": 323,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Immune response",
+   "query": "Immune response",
+   "tier": "c",
+   "id": "GO:0006955",
+   "name": "immune response",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0006955 'immune response'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ImmuneResponse-S3",
+   "row": 324,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Immune response",
+   "query": "Immune response",
+   "tier": "c",
+   "id": "GO:0006955",
+   "name": "immune response",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0006955 'immune response'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ImmuneResponse-S4",
+   "row": 325,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Immune response",
+   "query": "Immune response",
+   "tier": "c",
+   "id": "GO:0006955",
+   "name": "immune response",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0006955 'immune response'"
+  },
+  {
+   "cell": "BUCH-E-Trans-StructConstRibosome-S1",
+   "row": 326,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "*Ribosomal structure",
+   "query": "Ribosomal structure",
+   "tier": null,
+   "id": null,
+   "name": null,
+   "label": "S undefined",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 0,
+    "c_synonym": 0
+   },
+   "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+  },
+  {
+   "cell": "BUCH-E-Trans-RibosomalSubunit-S1",
+   "row": 327,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Ribosomal subunit",
+   "query": "Ribosomal subunit",
+   "tier": "c",
+   "id": "GO:0044391",
+   "name": "ribosomal subunit",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0044391 'ribosomal subunit'"
+  },
+  {
+   "cell": "BUCH-E-Trans-Ribosome-S1",
+   "row": 328,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Ribosome",
+   "query": "Ribosome",
+   "tier": "c",
+   "id": "GO:0005840",
+   "name": "ribosome",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0005840 'ribosome'"
+  },
+  {
+   "cell": "BUCH-E-Trans-CytosolicRibosome-S1",
+   "row": 329,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytosolic ribosome",
+   "query": "Cytosolic ribosome",
+   "tier": "c",
+   "id": "GO:0022626",
+   "name": "cytosolic ribosome",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0022626 'cytosolic ribosome'"
+  },
+  {
+   "cell": "BUCH-E-Trans-CytoplasmicTranslation-S1",
+   "row": 330,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytoplasmic translation",
+   "query": "Cytoplasmic translation",
+   "tier": "c",
+   "id": "GO:0002181",
+   "name": "cytoplasmic translation",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0002181 'cytoplasmic translation'"
+  },
+  {
+   "cell": "BUCH-E-Syn-GPCR-S2",
+   "row": 331,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "GPCR signaling pathway",
+   "query": "GPCR signaling pathway",
+   "tier": "b",
+   "id": "GO:0007186",
+   "name": "G protein-coupled receptor signaling pathway",
+   "label": "S matched by EXACT synonym",
+   "tier_hits": {
+    "a": 0,
+    "b": 1
+   },
+   "summary": "name rule (b): S matched by EXACT synonym -> GO:0007186 'G protein-coupled receptor signaling pathway'"
+  },
+  {
+   "cell": "BUCH-E-SZ-S1",
+   "row": 332,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "CTD (report created 2024-01-31; captured 2024-02-10)",
+   "printed": "schizophrenia",
+   "query": "schizophrenia",
+   "tier": "c",
+   "id": "MESH:D012559",
+   "name": "Schizophrenia",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> MESH:D012559 'Schizophrenia'"
+  },
+  {
+   "cell": "BUCH-E-SZ-S4",
+   "row": 333,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "CTD (report created 2024-01-31; captured 2024-02-10)",
+   "printed": "schizophrenia",
+   "query": "schizophrenia",
+   "tier": "c",
+   "id": "MESH:D012559",
+   "name": "Schizophrenia",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> MESH:D012559 'Schizophrenia'"
+  },
+  {
+   "cell": "BUCH-E-MDD-S4",
+   "row": 334,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "Major Depressive Disorder",
+   "query": "Major Depressive Disorder",
+   "tier": "c",
+   "id": "DOID:1470",
+   "name": "major depressive disorder",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> DOID:1470 'major depressive disorder'"
+  },
+  {
+   "cell": "BUCH-E-GAD-S4",
+   "row": 335,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "Generalized Anxiety Disorder",
+   "query": "Generalized Anxiety Disorder",
+   "tier": "c",
+   "id": "DOID:14320",
+   "name": "generalized anxiety disorder",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> DOID:14320 'generalized anxiety disorder'"
+  },
+  {
+   "cell": "BUCH-E-MSA-S1",
+   "row": 336,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5d label)",
+   "release": "RGD RDO 1.283",
+   "printed": "multiple system atrophy",
+   "query": "multiple system atrophy",
+   "tier": "a",
+   "id": "DOID:4752",
+   "name": "multiple system atrophy",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:4752 'multiple system atrophy'"
+  },
+  {
+   "cell": "BUCH-E-MSA-S2",
+   "row": 337,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5d label)",
+   "release": "RGD RDO 1.283",
+   "printed": "multiple system atrophy",
+   "query": "multiple system atrophy",
+   "tier": "a",
+   "id": "DOID:4752",
+   "name": "multiple system atrophy",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:4752 'multiple system atrophy'"
+  },
+  {
+   "cell": "BUCH-E-MSA-S3",
+   "row": 338,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5d label)",
+   "release": "RGD RDO 1.283",
+   "printed": "multiple system atrophy",
+   "query": "multiple system atrophy",
+   "tier": "a",
+   "id": "DOID:4752",
+   "name": "multiple system atrophy",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:4752 'multiple system atrophy'"
+  },
+  {
+   "cell": "BUCH-E-MSA-S4",
+   "row": 339,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5d label)",
+   "release": "RGD RDO 1.283",
+   "printed": "multiple system atrophy",
+   "query": "multiple system atrophy",
+   "tier": "a",
+   "id": "DOID:4752",
+   "name": "multiple system atrophy",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:4752 'multiple system atrophy'"
+  },
+  {
+   "cell": "BUCH-E-Dementia-S1",
+   "row": 340,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5d label)",
+   "release": "RGD RDO 1.283",
+   "printed": "dementia",
+   "query": "dementia",
+   "tier": "a",
+   "id": "DOID:1307",
+   "name": "dementia",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:1307 'dementia'"
+  },
+  {
+   "cell": "BUCH-E-Dementia-S2",
+   "row": 341,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5d label)",
+   "release": "RGD RDO 1.283",
+   "printed": "dementia",
+   "query": "dementia",
+   "tier": "a",
+   "id": "DOID:1307",
+   "name": "dementia",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:1307 'dementia'"
+  },
+  {
+   "cell": "BUCH-E-Dementia-S3",
+   "row": 342,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5d label)",
+   "release": "RGD RDO 1.283",
+   "printed": "dementia",
+   "query": "dementia",
+   "tier": "a",
+   "id": "DOID:1307",
+   "name": "dementia",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:1307 'dementia'"
+  },
+  {
+   "cell": "BUCH-E-Dementia-S4",
+   "row": 343,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5d label)",
+   "release": "RGD RDO 1.283",
+   "printed": "dementia",
+   "query": "dementia",
+   "tier": "a",
+   "id": "DOID:1307",
+   "name": "dementia",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:1307 'dementia'"
+  },
+  {
+   "cell": "BUCH-E-Osteo-S2",
+   "row": 361,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5d label)",
+   "release": "RGD RDO 1.283",
+   "printed": "osteoarthritis",
+   "query": "osteoarthritis",
+   "tier": "a",
+   "id": "DOID:8398",
+   "name": "osteoarthritis",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:8398 'osteoarthritis'"
+  },
+  {
+   "cell": "BUCH-E-ADHD-S2",
+   "row": 363,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "ADHD",
+   "query": "ADHD",
+   "tier": "b",
+   "id": "DOID:1094",
+   "name": "attention deficit hyperactivity disorder",
+   "label": "S matched by DISEASES dictionary synonym",
+   "tier_hits": {
+    "a": 0,
+    "b": 1
+   },
+   "summary": "name rule (b): S matched by DISEASES dictionary synonym -> DOID:1094 'attention deficit hyperactivity disorder'"
+  },
+  {
+   "cell": "BUCH-E-ADHD-S3",
+   "row": 364,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "ADHD",
+   "query": "ADHD",
+   "tier": "b",
+   "id": "DOID:1094",
+   "name": "attention deficit hyperactivity disorder",
+   "label": "S matched by DISEASES dictionary synonym",
+   "tier_hits": {
+    "a": 0,
+    "b": 1
+   },
+   "summary": "name rule (b): S matched by DISEASES dictionary synonym -> DOID:1094 'attention deficit hyperactivity disorder'"
+  },
+  {
+   "cell": "BUCH-E-TS-S2",
+   "row": 365,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "Tourette's syndrome",
+   "query": "Tourette's syndrome",
+   "tier": null,
+   "id": null,
+   "name": null,
+   "label": "S undefined",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 0,
+    "c_synonym": 0
+   },
+   "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+  },
+  {
+   "cell": "BUCH-E-TS-S3",
+   "row": 366,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "Tourette's syndrome",
+   "query": "Tourette's syndrome",
+   "tier": null,
+   "id": null,
+   "name": null,
+   "label": "S undefined",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 0,
+    "c_synonym": 0
+   },
+   "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+  },
+  {
+   "cell": "BUCH-E-SZ-S2",
+   "row": 367,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "CTD (report created 2024-01-31; captured 2024-02-10)",
+   "printed": "schizophrenia",
+   "query": "schizophrenia",
+   "tier": "c",
+   "id": "MESH:D012559",
+   "name": "Schizophrenia",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> MESH:D012559 'Schizophrenia'"
+  },
+  {
+   "cell": "BUCH-E-SZ-S3",
+   "row": 368,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "CTD (report created 2024-01-31; captured 2024-02-10)",
+   "printed": "schizophrenia",
+   "query": "schizophrenia",
+   "tier": "c",
+   "id": "MESH:D012559",
+   "name": "Schizophrenia",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> MESH:D012559 'Schizophrenia'"
+  },
+  {
+   "cell": "BUCH-E-MDD-S1",
+   "row": 369,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "Major Depressive Disorder",
+   "query": "Major Depressive Disorder",
+   "tier": "c",
+   "id": "DOID:1470",
+   "name": "major depressive disorder",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> DOID:1470 'major depressive disorder'"
+  },
+  {
+   "cell": "BUCH-E-MDD-S2",
+   "row": 370,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "Major Depressive Disorder",
+   "query": "Major Depressive Disorder",
+   "tier": "c",
+   "id": "DOID:1470",
+   "name": "major depressive disorder",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> DOID:1470 'major depressive disorder'"
+  },
+  {
+   "cell": "BUCH-E-MDD-S3",
+   "row": 371,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "Major Depressive Disorder",
+   "query": "Major Depressive Disorder",
+   "tier": "c",
+   "id": "DOID:1470",
+   "name": "major depressive disorder",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> DOID:1470 'major depressive disorder'"
+  },
+  {
+   "cell": "BUCH-E-GAD-S1",
+   "row": 372,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "Generalized Anxiety Disorder",
+   "query": "Generalized Anxiety Disorder",
+   "tier": "c",
+   "id": "DOID:14320",
+   "name": "generalized anxiety disorder",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> DOID:14320 'generalized anxiety disorder'"
+  },
+  {
+   "cell": "BUCH-E-GAD-S2",
+   "row": 373,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "Generalized Anxiety Disorder",
+   "query": "Generalized Anxiety Disorder",
+   "tier": "c",
+   "id": "DOID:14320",
+   "name": "generalized anxiety disorder",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> DOID:14320 'generalized anxiety disorder'"
+  },
+  {
+   "cell": "BUCH-E-GAD-S3",
+   "row": 374,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "Generalized Anxiety Disorder",
+   "query": "Generalized Anxiety Disorder",
+   "tier": "c",
+   "id": "DOID:14320",
+   "name": "generalized anxiety disorder",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> DOID:14320 'generalized anxiety disorder'"
+  },
+  {
+   "cell": "BUCH-E-Aphasia-S1",
+   "row": 379,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "aphasia",
+   "query": "aphasia",
+   "tier": "a",
+   "id": "DOID:0060046",
+   "name": "aphasia",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:0060046 'aphasia'"
+  },
+  {
+   "cell": "BUCH-E-Aphasia-S2",
+   "row": 380,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "aphasia",
+   "query": "aphasia",
+   "tier": "a",
+   "id": "DOID:0060046",
+   "name": "aphasia",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:0060046 'aphasia'"
+  },
+  {
+   "cell": "BUCH-E-Aphasia-S3",
+   "row": 381,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "aphasia",
+   "query": "aphasia",
+   "tier": "a",
+   "id": "DOID:0060046",
+   "name": "aphasia",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:0060046 'aphasia'"
+  },
+  {
+   "cell": "BUCH-E-Aphasia-S4",
+   "row": 382,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "aphasia",
+   "query": "aphasia",
+   "tier": "a",
+   "id": "DOID:0060046",
+   "name": "aphasia",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:0060046 'aphasia'"
+  },
+  {
+   "cell": "BUCH-E-ConductDisorder-S1",
+   "row": 383,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "conduct disorder",
+   "query": "conduct disorder",
+   "tier": "a",
+   "id": "DOID:12995",
+   "name": "conduct disorder",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:12995 'conduct disorder'"
+  },
+  {
+   "cell": "BUCH-E-ConductDisorder-S2",
+   "row": 384,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "conduct disorder",
+   "query": "conduct disorder",
+   "tier": "a",
+   "id": "DOID:12995",
+   "name": "conduct disorder",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:12995 'conduct disorder'"
+  },
+  {
+   "cell": "BUCH-E-ConductDisorder-S3",
+   "row": 385,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "conduct disorder",
+   "query": "conduct disorder",
+   "tier": "a",
+   "id": "DOID:12995",
+   "name": "conduct disorder",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:12995 'conduct disorder'"
+  },
+  {
+   "cell": "BUCH-E-ConductDisorder-S4",
+   "row": 386,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "conduct disorder",
+   "query": "conduct disorder",
+   "tier": "a",
+   "id": "DOID:12995",
+   "name": "conduct disorder",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:12995 'conduct disorder'"
+  },
+  {
+   "cell": "BUCH-E-AntisocialPD-S1",
+   "row": 387,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "antisocial personality disorder",
+   "query": "antisocial personality disorder",
+   "tier": "a",
+   "id": "DOID:10939",
+   "name": "antisocial personality disorder",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:10939 'antisocial personality disorder'"
+  },
+  {
+   "cell": "BUCH-E-AntisocialPD-S2",
+   "row": 388,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "antisocial personality disorder",
+   "query": "antisocial personality disorder",
+   "tier": "a",
+   "id": "DOID:10939",
+   "name": "antisocial personality disorder",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:10939 'antisocial personality disorder'"
+  },
+  {
+   "cell": "BUCH-E-AntisocialPD-S3",
+   "row": 389,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "antisocial personality disorder",
+   "query": "antisocial personality disorder",
+   "tier": "a",
+   "id": "DOID:10939",
+   "name": "antisocial personality disorder",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:10939 'antisocial personality disorder'"
+  },
+  {
+   "cell": "BUCH-E-AntisocialPD-S4",
+   "row": 390,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "antisocial personality disorder",
+   "query": "antisocial personality disorder",
+   "tier": "a",
+   "id": "DOID:10939",
+   "name": "antisocial personality disorder",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:10939 'antisocial personality disorder'"
+  },
+  {
+   "cell": "BUCH-E-NeuroticDisorder-S1",
+   "row": 391,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "neurotic disorder",
+   "query": "neurotic disorder",
+   "tier": "a",
+   "id": "DOID:4964",
+   "name": "neurotic disorder",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:4964 'neurotic disorder'"
+  },
+  {
+   "cell": "BUCH-E-NeuroticDisorder-S2",
+   "row": 392,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "neurotic disorder",
+   "query": "neurotic disorder",
+   "tier": "a",
+   "id": "DOID:4964",
+   "name": "neurotic disorder",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:4964 'neurotic disorder'"
+  },
+  {
+   "cell": "BUCH-E-NeuroticDisorder-S3",
+   "row": 393,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "neurotic disorder",
+   "query": "neurotic disorder",
+   "tier": "a",
+   "id": "DOID:4964",
+   "name": "neurotic disorder",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:4964 'neurotic disorder'"
+  },
+  {
+   "cell": "BUCH-E-NeuroticDisorder-S4",
+   "row": 394,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "set name (Buch Methods / Fig. 5e label)",
+   "release": "DISEASES v2 (2022-02-09)",
+   "printed": "neurotic disorder",
+   "query": "neurotic disorder",
+   "tier": "a",
+   "id": "DOID:4964",
+   "name": "neurotic disorder",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> DOID:4964 'neurotic disorder'"
+  },
+  {
+   "cell": "BUCH-E-Syn-SecVesicle-S2",
+   "row": 395,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Secretory vesicle",
+   "query": "Secretory vesicle",
+   "tier": "c",
+   "id": "GO:0099503",
+   "name": "secretory vesicle",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0099503 'secretory vesicle'"
+  },
+  {
+   "cell": "BUCH-E-Syn-PresynActiveZone-S2",
+   "row": 396,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Presynaptic active zone",
+   "query": "Presynaptic active zone",
+   "tier": "c",
+   "id": "GO:0048786",
+   "name": "presynaptic active zone",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0048786 'presynaptic active zone'"
+  },
+  {
+   "cell": "BUCH-E-Syn-PostsynMembrane-S2",
+   "row": 397,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Postsynaptic membrane",
+   "query": "Postsynaptic membrane",
+   "tier": "c",
+   "id": "GO:0045211",
+   "name": "postsynaptic membrane",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0045211 'postsynaptic membrane'"
+  },
+  {
+   "cell": "BUCH-E-Syn-IonChannelComplex-S2",
+   "row": 398,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Ion channel complex",
+   "query": "Ion channel complex",
+   "tier": "c",
+   "id": "GO:0034702",
+   "name": "ion channel complex",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0034702 'ion channel complex'"
+  },
+  {
+   "cell": "BUCH-E-Syn-MembranePotential-S2",
+   "row": 399,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Regulation of membrane potential",
+   "query": "Regulation of membrane potential",
+   "tier": "c",
+   "id": "GO:0042391",
+   "name": "regulation of membrane potential",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0042391 'regulation of membrane potential'"
+  },
+  {
+   "cell": "BUCH-E-Syn-GPCR-S3",
+   "row": 400,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "GPCR signaling pathway",
+   "query": "GPCR signaling pathway",
+   "tier": "b",
+   "id": "GO:0007186",
+   "name": "G protein-coupled receptor signaling pathway",
+   "label": "S matched by EXACT synonym",
+   "tier_hits": {
+    "a": 0,
+    "b": 1
+   },
+   "summary": "name rule (b): S matched by EXACT synonym -> GO:0007186 'G protein-coupled receptor signaling pathway'"
+  },
+  {
+   "cell": "BUCH-E-Syn-SynapseOrg-S2",
+   "row": 401,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Synapse organization",
+   "query": "Synapse organization",
+   "tier": "c",
+   "id": "GO:0050808",
+   "name": "synapse organization",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0050808 'synapse organization'"
+  },
+  {
+   "cell": "BUCH-E-Syn-cAMP-S2",
+   "row": 402,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "cAMP-mediated signaling",
+   "query": "cAMP-mediated signaling",
+   "tier": "a",
+   "id": "GO:0019933",
+   "name": "cAMP-mediated signaling",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0019933 'cAMP-mediated signaling'"
+  },
+  {
+   "cell": "BUCH-E-Syn-cAMP-S3",
+   "row": 403,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "cAMP-mediated signaling",
+   "query": "cAMP-mediated signaling",
+   "tier": "a",
+   "id": "GO:0019933",
+   "name": "cAMP-mediated signaling",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0019933 'cAMP-mediated signaling'"
+  },
+  {
+   "cell": "BUCH-E-Syn-GluRSignaling-S2",
+   "row": 404,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Glutamate receptor signaling pathway",
+   "query": "Glutamate receptor signaling pathway",
+   "tier": "c",
+   "id": "GO:0007215",
+   "name": "glutamate receptor signaling pathway",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0007215 'glutamate receptor signaling pathway'"
+  },
+  {
+   "cell": "BUCH-E-Syn-GluRSignaling-S3",
+   "row": 405,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5f)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Glutamate receptor signaling pathway",
+   "query": "Glutamate receptor signaling pathway",
+   "tier": "c",
+   "id": "GO:0007215",
+   "name": "glutamate receptor signaling pathway",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0007215 'glutamate receptor signaling pathway'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineReceptorBinding-S1",
+   "row": 406,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine receptor binding",
+   "query": "Cytokine receptor binding",
+   "tier": "c",
+   "id": "GO:0005126",
+   "name": "cytokine receptor binding",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0005126 'cytokine receptor binding'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineReceptorBinding-S2",
+   "row": 407,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine receptor binding",
+   "query": "Cytokine receptor binding",
+   "tier": "c",
+   "id": "GO:0005126",
+   "name": "cytokine receptor binding",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0005126 'cytokine receptor binding'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineReceptorBinding-S4",
+   "row": 408,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine receptor binding",
+   "query": "Cytokine receptor binding",
+   "tier": "c",
+   "id": "GO:0005126",
+   "name": "cytokine receptor binding",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0005126 'cytokine receptor binding'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineActivity-S1",
+   "row": 409,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine activity",
+   "query": "Cytokine activity",
+   "tier": "c",
+   "id": "GO:0005125",
+   "name": "cytokine activity",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0005125 'cytokine activity'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineActivity-S4",
+   "row": 410,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine activity",
+   "query": "Cytokine activity",
+   "tier": "c",
+   "id": "GO:0005125",
+   "name": "cytokine activity",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0005125 'cytokine activity'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineBinding-S1",
+   "row": 411,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine binding",
+   "query": "Cytokine binding",
+   "tier": "c",
+   "id": "GO:0019955",
+   "name": "cytokine binding",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0019955 'cytokine binding'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineBinding-S4",
+   "row": 412,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine binding",
+   "query": "Cytokine binding",
+   "tier": "c",
+   "id": "GO:0019955",
+   "name": "cytokine binding",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0019955 'cytokine binding'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineReceptorActivity-S1",
+   "row": 413,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine receptor activity",
+   "query": "Cytokine receptor activity",
+   "tier": "c",
+   "id": "GO:0004896",
+   "name": "cytokine receptor activity",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0004896 'cytokine receptor activity'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ProteaseBinding-S1",
+   "row": 414,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Protease binding",
+   "query": "Protease binding",
+   "tier": "c",
+   "id": "GO:0002020",
+   "name": "protease binding",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0002020 'protease binding'"
+  },
+  {
+   "cell": "BUCH-E-Imm-LeukocyteChemotaxis-S1",
+   "row": 415,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Leukocyte chemotaxis",
+   "query": "Leukocyte chemotaxis",
+   "tier": "c",
+   "id": "GO:0030595",
+   "name": "leukocyte chemotaxis",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0030595 'leukocyte chemotaxis'"
+  },
+  {
+   "cell": "BUCH-E-Imm-LeukocyteChemotaxis-S2",
+   "row": 416,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Leukocyte chemotaxis",
+   "query": "Leukocyte chemotaxis",
+   "tier": "c",
+   "id": "GO:0030595",
+   "name": "leukocyte chemotaxis",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0030595 'leukocyte chemotaxis'"
+  },
+  {
+   "cell": "BUCH-E-Imm-LeukocyteChemotaxis-S4",
+   "row": 417,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Leukocyte chemotaxis",
+   "query": "Leukocyte chemotaxis",
+   "tier": "c",
+   "id": "GO:0030595",
+   "name": "leukocyte chemotaxis",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0030595 'leukocyte chemotaxis'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ResponseToxicSubstance-S2",
+   "row": 418,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Response to toxic substance",
+   "query": "Response to toxic substance",
+   "tier": "c",
+   "id": "GO:0009636",
+   "name": "response to toxic substance",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0009636 'response to toxic substance'"
+  },
+  {
+   "cell": "BUCH-E-Imm-ResponseToxicSubstance-S4",
+   "row": 419,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Response to toxic substance",
+   "query": "Response to toxic substance",
+   "tier": "c",
+   "id": "GO:0009636",
+   "name": "response to toxic substance",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0009636 'response to toxic substance'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineProduction-S2",
+   "row": 420,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine production",
+   "query": "Cytokine production",
+   "tier": "c",
+   "id": "GO:0001816",
+   "name": "cytokine production",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0001816 'cytokine production'"
+  },
+  {
+   "cell": "BUCH-E-Imm-CytokineProduction-S4",
+   "row": 421,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5g)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytokine production",
+   "query": "Cytokine production",
+   "tier": "c",
+   "id": "GO:0001816",
+   "name": "cytokine production",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0001816 'cytokine production'"
+  },
+  {
+   "cell": "BUCH-E-Trans-StructConstRibosome-S2",
+   "row": 422,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "*Ribosomal structure",
+   "query": "Ribosomal structure",
+   "tier": null,
+   "id": null,
+   "name": null,
+   "label": "S undefined",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 0,
+    "c_synonym": 0
+   },
+   "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+  },
+  {
+   "cell": "BUCH-E-Trans-StructConstRibosome-S3",
+   "row": 423,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "*Ribosomal structure",
+   "query": "Ribosomal structure",
+   "tier": null,
+   "id": null,
+   "name": null,
+   "label": "S undefined",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 0,
+    "c_synonym": 0
+   },
+   "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+  },
+  {
+   "cell": "BUCH-E-Trans-StructConstRibosome-S4",
+   "row": 424,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "*Ribosomal structure",
+   "query": "Ribosomal structure",
+   "tier": null,
+   "id": null,
+   "name": null,
+   "label": "S undefined",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 0,
+    "c_synonym": 0
+   },
+   "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+  },
+  {
+   "cell": "BUCH-E-Trans-RibosomalSubunit-S2",
+   "row": 425,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Ribosomal subunit",
+   "query": "Ribosomal subunit",
+   "tier": "c",
+   "id": "GO:0044391",
+   "name": "ribosomal subunit",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0044391 'ribosomal subunit'"
+  },
+  {
+   "cell": "BUCH-E-Trans-RibosomalSubunit-S3",
+   "row": 426,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Ribosomal subunit",
+   "query": "Ribosomal subunit",
+   "tier": "c",
+   "id": "GO:0044391",
+   "name": "ribosomal subunit",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0044391 'ribosomal subunit'"
+  },
+  {
+   "cell": "BUCH-E-Trans-RibosomalSubunit-S4",
+   "row": 427,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Ribosomal subunit",
+   "query": "Ribosomal subunit",
+   "tier": "c",
+   "id": "GO:0044391",
+   "name": "ribosomal subunit",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0044391 'ribosomal subunit'"
+  },
+  {
+   "cell": "BUCH-E-Trans-Ribosome-S2",
+   "row": 428,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Ribosome",
+   "query": "Ribosome",
+   "tier": "c",
+   "id": "GO:0005840",
+   "name": "ribosome",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0005840 'ribosome'"
+  },
+  {
+   "cell": "BUCH-E-Trans-Ribosome-S3",
+   "row": 429,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Ribosome",
+   "query": "Ribosome",
+   "tier": "c",
+   "id": "GO:0005840",
+   "name": "ribosome",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0005840 'ribosome'"
+  },
+  {
+   "cell": "BUCH-E-Trans-Ribosome-S4",
+   "row": 430,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Ribosome",
+   "query": "Ribosome",
+   "tier": "c",
+   "id": "GO:0005840",
+   "name": "ribosome",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0005840 'ribosome'"
+  },
+  {
+   "cell": "BUCH-E-Trans-CytosolicRibosome-S2",
+   "row": 431,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytosolic ribosome",
+   "query": "Cytosolic ribosome",
+   "tier": "c",
+   "id": "GO:0022626",
+   "name": "cytosolic ribosome",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0022626 'cytosolic ribosome'"
+  },
+  {
+   "cell": "BUCH-E-Trans-CytosolicRibosome-S3",
+   "row": 432,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytosolic ribosome",
+   "query": "Cytosolic ribosome",
+   "tier": "c",
+   "id": "GO:0022626",
+   "name": "cytosolic ribosome",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0022626 'cytosolic ribosome'"
+  },
+  {
+   "cell": "BUCH-E-Trans-CytosolicRibosome-S4",
+   "row": 433,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytosolic ribosome",
+   "query": "Cytosolic ribosome",
+   "tier": "c",
+   "id": "GO:0022626",
+   "name": "cytosolic ribosome",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0022626 'cytosolic ribosome'"
+  },
+  {
+   "cell": "BUCH-E-Trans-CytoplasmicTranslation-S2",
+   "row": 434,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytoplasmic translation",
+   "query": "Cytoplasmic translation",
+   "tier": "c",
+   "id": "GO:0002181",
+   "name": "cytoplasmic translation",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0002181 'cytoplasmic translation'"
+  },
+  {
+   "cell": "BUCH-E-Trans-CytoplasmicTranslation-S3",
+   "row": 435,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytoplasmic translation",
+   "query": "Cytoplasmic translation",
+   "tier": "c",
+   "id": "GO:0002181",
+   "name": "cytoplasmic translation",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0002181 'cytoplasmic translation'"
+  },
+  {
+   "cell": "BUCH-E-Trans-CytoplasmicTranslation-S4",
+   "row": 436,
+   "target_key": "buch2023asdsubgroups",
+   "mapping": "figure label (Buch Fig. 5h)",
+   "release": "PANTHER 16.0 GO-slim (PANTHERGOslim.obo)",
+   "printed": "Cytoplasmic translation",
+   "query": "Cytoplasmic translation",
+   "tier": "c",
+   "id": "GO:0002181",
+   "name": "cytoplasmic translation",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> GO:0002181 'cytoplasmic translation'"
+  },
+  {
+   "cell": "MAMAT-E-URG-BP-1",
+   "row": 440,
+   "target_key": "mamat2025molecular",
+   "mapping": "GO BP (Mamat text)",
+   "release": "GO 2024-06-17 (biological_process)",
+   "printed": "modulation of synaptic transmission",
+   "query": "modulation of synaptic transmission",
+   "tier": "b",
+   "id": "GO:0050804",
+   "name": "modulation of chemical synaptic transmission",
+   "label": "S matched by BROAD synonym",
+   "tier_hits": {
+    "a": 0,
+    "b": 1
+   },
+   "summary": "name rule (b): S matched by BROAD synonym -> GO:0050804 'modulation of chemical synaptic transmission'"
+  },
+  {
+   "cell": "MAMAT-E-URG-BP-2",
+   "row": 441,
+   "target_key": "mamat2025molecular",
+   "mapping": "GO BP (Mamat text)",
+   "release": "GO 2024-06-17 (biological_process)",
+   "printed": "signaling",
+   "query": "signaling",
+   "tier": "a",
+   "id": "GO:0023052",
+   "name": "signaling",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0023052 'signaling'"
+  },
+  {
+   "cell": "MAMAT-E-URG-BP-3",
+   "row": 442,
+   "target_key": "mamat2025molecular",
+   "mapping": "GO BP (Mamat text)",
+   "release": "GO 2024-06-17 (biological_process)",
+   "printed": "nervous system processes",
+   "query": "nervous system processes",
+   "tier": "c",
+   "id": "GO:0050877",
+   "name": "nervous system process",
+   "label": "S matched by normalised name (singular / plural)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (singular / plural) -> GO:0050877 'nervous system process'"
+  },
+  {
+   "cell": "MAMAT-E-URG-CC-1",
+   "row": 443,
+   "target_key": "mamat2025molecular",
+   "mapping": "GO CC (Mamat text)",
+   "release": "GO 2024-06-17 (cellular_component)",
+   "printed": "mitochondrial membrane",
+   "query": "mitochondrial membrane",
+   "tier": "a",
+   "id": "GO:0031966",
+   "name": "mitochondrial membrane",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0031966 'mitochondrial membrane'"
+  },
+  {
+   "cell": "MAMAT-E-URG-CC-2",
+   "row": 444,
+   "target_key": "mamat2025molecular",
+   "mapping": "GO CC (Mamat text)",
+   "release": "GO 2024-06-17 (cellular_component)",
+   "printed": "respirasome",
+   "query": "respirasome",
+   "tier": "a",
+   "id": "GO:0070469",
+   "name": "respirasome",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0070469 'respirasome'"
+  },
+  {
+   "cell": "MAMAT-E-URG-MF-1",
+   "row": 445,
+   "target_key": "mamat2025molecular",
+   "mapping": "GO MF (Mamat text)",
+   "release": "GO 2024-06-17 (molecular_function)",
+   "printed": "electron transfer activity",
+   "query": "electron transfer activity",
+   "tier": "a",
+   "id": "GO:0009055",
+   "name": "electron transfer activity",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0009055 'electron transfer activity'"
+  },
+  {
+   "cell": "MAMAT-E-URG-MF-2",
+   "row": 446,
+   "target_key": "mamat2025molecular",
+   "mapping": "GO MF (Mamat text)",
+   "release": "GO 2024-06-17 (molecular_function)",
+   "printed": "inorganic molecular entity transmembrane transporter activity",
+   "query": "inorganic molecular entity transmembrane transporter activity",
+   "tier": "a",
+   "id": "GO:0015318",
+   "name": "inorganic molecular entity transmembrane transporter activity",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0015318 'inorganic molecular entity transmembrane transporter activity'"
+  },
+  {
+   "cell": "MAMAT-E-DRG-BP-1",
+   "row": 447,
+   "target_key": "mamat2025molecular",
+   "mapping": "GO BP (Mamat text)",
+   "release": "GO 2024-06-17 (biological_process)",
+   "printed": "chromatin organization",
+   "query": "chromatin organization",
+   "tier": "a",
+   "id": "GO:0006325",
+   "name": "chromatin organization",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0006325 'chromatin organization'"
+  },
+  {
+   "cell": "MAMAT-E-DRG-BP-2",
+   "row": 448,
+   "target_key": "mamat2025molecular",
+   "mapping": "GO BP (Mamat text)",
+   "release": "GO 2024-06-17 (biological_process)",
+   "printed": "regulation of cellular response to stress",
+   "query": "regulation of cellular response to stress",
+   "tier": "a",
+   "id": "GO:0080135",
+   "name": "regulation of cellular response to stress",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0080135 'regulation of cellular response to stress'"
+  },
+  {
+   "cell": "MAMAT-E-DRG-CC-1",
+   "row": 449,
+   "target_key": "mamat2025molecular",
+   "mapping": "GO CC (Mamat text)",
+   "release": "GO 2024-06-17 (cellular_component)",
+   "printed": "centrosome",
+   "query": "centrosome",
+   "tier": "a",
+   "id": "GO:0005813",
+   "name": "centrosome",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0005813 'centrosome'"
+  },
+  {
+   "cell": "MAMAT-E-DRG-CC-2",
+   "row": 450,
+   "target_key": "mamat2025molecular",
+   "mapping": "GO CC (Mamat text)",
+   "release": "GO 2024-06-17 (cellular_component)",
+   "printed": "Golgi membrane",
+   "query": "Golgi membrane",
+   "tier": "a",
+   "id": "GO:0000139",
+   "name": "Golgi membrane",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0000139 'Golgi membrane'"
+  },
+  {
+   "cell": "MAMAT-E-DRG-MF-1",
+   "row": 451,
+   "target_key": "mamat2025molecular",
+   "mapping": "GO MF (Mamat text)",
+   "release": "GO 2024-06-17 (molecular_function)",
+   "printed": "histone binding",
+   "query": "histone binding",
+   "tier": "a",
+   "id": "GO:0042393",
+   "name": "histone binding",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0042393 'histone binding'"
+  },
+  {
+   "cell": "MAMAT-E-DRG-MF-2",
+   "row": 452,
+   "target_key": "mamat2025molecular",
+   "mapping": "GO MF (Mamat text)",
+   "release": "GO 2024-06-17 (molecular_function)",
+   "printed": "molecular adaptor activity",
+   "query": "molecular adaptor activity",
+   "tier": "a",
+   "id": "GO:0060090",
+   "name": "molecular adaptor activity",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GO:0060090 'molecular adaptor activity'"
+  },
+  {
+   "cell": "VR-E1",
+   "row": 466,
+   "target_key": "vairam2026hyperhypo",
+   "mapping": "KEGG (Vairam / Roy GSEA term)",
+   "release": "Enrichr KEGG_2021_Human",
+   "printed": "circadian entrainment",
+   "query": "circadian entrainment",
+   "tier": "c",
+   "id": "Circadian entrainment",
+   "name": "Circadian entrainment",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> Circadian entrainment 'Circadian entrainment'"
+  },
+  {
+   "cell": "VR-E2",
+   "row": 467,
+   "target_key": "vairam2026hyperhypo",
+   "mapping": "KEGG (Vairam / Roy GSEA term)",
+   "release": "Enrichr KEGG_2021_Human",
+   "printed": "glutamatergic synapse",
+   "query": "glutamatergic synapse",
+   "tier": "c",
+   "id": "Glutamatergic synapse",
+   "name": "Glutamatergic synapse",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> Glutamatergic synapse 'Glutamatergic synapse'"
+  },
+  {
+   "cell": "VR-E3",
+   "row": 468,
+   "target_key": "vairam2026hyperhypo",
+   "mapping": "KEGG (Vairam / Roy GSEA term)",
+   "release": "Enrichr KEGG_2021_Human",
+   "printed": "retrograde endocannabinoid signalling",
+   "query": "retrograde endocannabinoid signalling",
+   "tier": "c",
+   "id": "Retrograde endocannabinoid signaling",
+   "name": "Retrograde endocannabinoid signaling",
+   "label": "S matched by normalised name (case, UK / US spelling)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case, UK / US spelling) -> Retrograde endocannabinoid signaling 'Retrograde endocannabinoid signaling'"
+  },
+  {
+   "cell": "VR-E4",
+   "row": 469,
+   "target_key": "vairam2026hyperhypo",
+   "mapping": "KEGG (Vairam / Roy GSEA term)",
+   "release": "Enrichr KEGG_2021_Human",
+   "printed": "long-term potentiation",
+   "query": "long-term potentiation",
+   "tier": "c",
+   "id": "Long-term potentiation",
+   "name": "Long-term potentiation",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> Long-term potentiation 'Long-term potentiation'"
+  },
+  {
+   "cell": "PAG-C3",
+   "row": 496,
+   "target_key": "pagani2026crossspecies",
+   "mapping": "set name (Pagani, as the register transcribes it)",
+   "release": "Reactome release 92",
+   "printed": "transmission across chemical synapses",
+   "query": "transmission across chemical synapses",
+   "tier": "c",
+   "id": "R-HSA-112315",
+   "name": "Transmission across Chemical Synapses",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> R-HSA-112315 'Transmission across Chemical Synapses'"
+  },
+  {
+   "cell": "PAG-C5",
+   "row": 498,
+   "target_key": "pagani2026crossspecies",
+   "mapping": "set name (Pagani, as the register transcribes it)",
+   "release": "Reactome release 92",
+   "printed": "protein-protein interaction at synapses",
+   "query": "protein-protein interaction at synapses",
+   "tier": "c",
+   "id": "R-HSA-6794362",
+   "name": "Protein-protein interactions at synapses",
+   "label": "S matched by normalised name (case, singular / plural)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case, singular / plural) -> R-HSA-6794362 'Protein-protein interactions at synapses'"
+  },
+  {
+   "cell": "PAG-C6",
+   "row": 499,
+   "target_key": "pagani2026crossspecies",
+   "mapping": "set name (Pagani, as the register transcribes it)",
+   "release": "Reactome release 92",
+   "printed": "membrane trafficking",
+   "query": "membrane trafficking",
+   "tier": "c",
+   "id": "R-HSA-199991",
+   "name": "Membrane Trafficking",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> R-HSA-199991 'Membrane Trafficking'"
+  },
+  {
+   "cell": "PAG-C7",
+   "row": 500,
+   "target_key": "pagani2026crossspecies",
+   "mapping": "set name (Pagani, as the register transcribes it)",
+   "release": "Reactome release 92",
+   "printed": "cytokine signaling in immune system",
+   "query": "cytokine signaling in immune system",
+   "tier": "c",
+   "id": "R-HSA-1280215",
+   "name": "Cytokine Signaling in Immune system",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> R-HSA-1280215 'Cytokine Signaling in Immune system'"
+  },
+  {
+   "cell": "PAG-C8",
+   "row": 501,
+   "target_key": "pagani2026crossspecies",
+   "mapping": "set name (Pagani, as the register transcribes it)",
+   "release": "Reactome release 92",
+   "printed": "innate immune system",
+   "query": "innate immune system",
+   "tier": "c",
+   "id": "R-HSA-168249",
+   "name": "Innate Immune System",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> R-HSA-168249 'Innate Immune System'"
+  },
+  {
+   "cell": "PAG-C9",
+   "row": 502,
+   "target_key": "pagani2026crossspecies",
+   "mapping": "set name (Pagani, as the register transcribes it)",
+   "release": "Gandal 2022 module labels (Fig. 3a / 4a)",
+   "printed": "vesicle transport and release",
+   "query": "vesicle transport and release",
+   "tier": null,
+   "id": null,
+   "name": null,
+   "label": "S undefined",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 0,
+    "c_synonym": 0
+   },
+   "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+  },
+  {
+   "cell": "PAG-C10",
+   "row": 503,
+   "target_key": "pagani2026crossspecies",
+   "mapping": "set name (Pagani, as the register transcribes it)",
+   "release": "Gandal 2022 module labels (Fig. 3a / 4a)",
+   "printed": "synaptic vesicles and plasticity",
+   "query": "synaptic vesicles and plasticity",
+   "tier": null,
+   "id": null,
+   "name": null,
+   "label": "S undefined",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 0,
+    "c_synonym": 0
+   },
+   "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+  },
+  {
+   "cell": "PAG-C11",
+   "row": 504,
+   "target_key": "pagani2026crossspecies",
+   "mapping": "set name (Pagani, as the register transcribes it)",
+   "release": "Gandal 2022 module labels (Fig. 3a / 4a)",
+   "printed": "immune response",
+   "query": "immune response",
+   "tier": "a",
+   "id": "GeneM7",
+   "name": "immune response",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GeneM7 'immune response'"
+  },
+  {
+   "cell": "PAG-C12",
+   "row": 505,
+   "target_key": "pagani2026crossspecies",
+   "mapping": "set name (Pagani, as the register transcribes it)",
+   "release": "Gandal 2022 module labels (Fig. 3a / 4a)",
+   "printed": "reactive microglia",
+   "query": "reactive microglia",
+   "tier": "a",
+   "id": "GeneM8",
+   "name": "reactive microglia",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GeneM8 'reactive microglia'"
+  },
+  {
+   "cell": "PRE-GO-07",
+   "row": 524,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_CELL_CYCLE",
+   "query": "GOBP_CELL_CYCLE",
+   "tier": "a",
+   "id": "GOBP_CELL_CYCLE",
+   "name": "GOBP_CELL_CYCLE",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_CELL_CYCLE 'GOBP_CELL_CYCLE'"
+  },
+  {
+   "cell": "PRE-GO-13",
+   "row": 525,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_NEURON_DEVELOPMENT",
+   "query": "GOBP_NEURON_DEVELOPMENT",
+   "tier": "a",
+   "id": "GOBP_NEURON_DEVELOPMENT",
+   "name": "GOBP_NEURON_DEVELOPMENT",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_NEURON_DEVELOPMENT 'GOBP_NEURON_DEVELOPMENT'"
+  },
+  {
+   "cell": "PRE-GO-15",
+   "row": 526,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_NEUROGENESIS",
+   "query": "GOBP_NEUROGENESIS",
+   "tier": "a",
+   "id": "GOBP_NEUROGENESIS",
+   "name": "GOBP_NEUROGENESIS",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_NEUROGENESIS 'GOBP_NEUROGENESIS'"
+  },
+  {
+   "cell": "PRE-GO-01",
+   "row": 537,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_CELLULAR_RESPONSE_TO_STRESS",
+   "query": "GOBP_CELLULAR_RESPONSE_TO_STRESS",
+   "tier": "a",
+   "id": "GOBP_CELLULAR_RESPONSE_TO_STRESS",
+   "name": "GOBP_CELLULAR_RESPONSE_TO_STRESS",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_CELLULAR_RESPONSE_TO_STRESS 'GOBP_CELLULAR_RESPONSE_TO_STRESS'"
+  },
+  {
+   "cell": "PRE-GO-02",
+   "row": 538,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_CELL_PROJECTION_ORGANIZATION",
+   "query": "GOBP_CELL_PROJECTION_ORGANIZATION",
+   "tier": "a",
+   "id": "GOBP_CELL_PROJECTION_ORGANIZATION",
+   "name": "GOBP_CELL_PROJECTION_ORGANIZATION",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_CELL_PROJECTION_ORGANIZATION 'GOBP_CELL_PROJECTION_ORGANIZATION'"
+  },
+  {
+   "cell": "PRE-GO-03",
+   "row": 539,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_POSITIVE_REGULATION_OF_RNA_METABOLIC_PROCESS",
+   "query": "GOBP_POSITIVE_REGULATION_OF_RNA_METABOLIC_PROCESS",
+   "tier": "a",
+   "id": "GOBP_POSITIVE_REGULATION_OF_RNA_METABOLIC_PROCESS",
+   "name": "GOBP_POSITIVE_REGULATION_OF_RNA_METABOLIC_PROCESS",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_POSITIVE_REGULATION_OF_RNA_METABOLIC_PROCESS 'GOBP_POSITIVE_REGULATION_OF_RNA_METABOLIC_PROCESS'"
+  },
+  {
+   "cell": "PRE-GO-04",
+   "row": 540,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_DNA_REPAIR",
+   "query": "GOBP_DNA_REPAIR",
+   "tier": "a",
+   "id": "GOBP_DNA_REPAIR",
+   "name": "GOBP_DNA_REPAIR",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_DNA_REPAIR 'GOBP_DNA_REPAIR'"
+  },
+  {
+   "cell": "PRE-GO-05",
+   "row": 541,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_CHROMATIN_ORGANIZATION",
+   "query": "GOBP_CHROMATIN_ORGANIZATION",
+   "tier": "a",
+   "id": "GOBP_CHROMATIN_ORGANIZATION",
+   "name": "GOBP_CHROMATIN_ORGANIZATION",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_CHROMATIN_ORGANIZATION 'GOBP_CHROMATIN_ORGANIZATION'"
+  },
+  {
+   "cell": "PRE-GO-06",
+   "row": 542,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_CELLULAR_RESPONSE_TO_DNA_DAMAGE_STIMULUS",
+   "query": "GOBP_CELLULAR_RESPONSE_TO_DNA_DAMAGE_STIMULUS",
+   "tier": "a",
+   "id": "GOBP_CELLULAR_RESPONSE_TO_DNA_DAMAGE_STIMULUS",
+   "name": "GOBP_CELLULAR_RESPONSE_TO_DNA_DAMAGE_STIMULUS",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_CELLULAR_RESPONSE_TO_DNA_DAMAGE_STIMULUS 'GOBP_CELLULAR_RESPONSE_TO_DNA_DAMAGE_STIMULUS'"
+  },
+  {
+   "cell": "PRE-GO-08",
+   "row": 543,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_GROWTH",
+   "query": "GOBP_GROWTH",
+   "tier": "a",
+   "id": "GOBP_GROWTH",
+   "name": "GOBP_GROWTH",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_GROWTH 'GOBP_GROWTH'"
+  },
+  {
+   "cell": "PRE-GO-09",
+   "row": 544,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_PROTEIN_CONTAINING_COMPLEX_ORGANIZATION",
+   "query": "GOBP_PROTEIN_CONTAINING_COMPLEX_ORGANIZATION",
+   "tier": "a",
+   "id": "GOBP_PROTEIN_CONTAINING_COMPLEX_ORGANIZATION",
+   "name": "GOBP_PROTEIN_CONTAINING_COMPLEX_ORGANIZATION",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_PROTEIN_CONTAINING_COMPLEX_ORGANIZATION 'GOBP_PROTEIN_CONTAINING_COMPLEX_ORGANIZATION'"
+  },
+  {
+   "cell": "PRE-GO-10",
+   "row": 545,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_DNA_METABOLIC_PROCESS",
+   "query": "GOBP_DNA_METABOLIC_PROCESS",
+   "tier": "a",
+   "id": "GOBP_DNA_METABOLIC_PROCESS",
+   "name": "GOBP_DNA_METABOLIC_PROCESS",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_DNA_METABOLIC_PROCESS 'GOBP_DNA_METABOLIC_PROCESS'"
+  },
+  {
+   "cell": "PRE-GO-11",
+   "row": 546,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_CELL_PROJECTION_ORGANIZATION",
+   "query": "GOBP_CELL_PROJECTION_ORGANIZATION",
+   "tier": "a",
+   "id": "GOBP_CELL_PROJECTION_ORGANIZATION",
+   "name": "GOBP_CELL_PROJECTION_ORGANIZATION",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_CELL_PROJECTION_ORGANIZATION 'GOBP_CELL_PROJECTION_ORGANIZATION'"
+  },
+  {
+   "cell": "PRE-GO-12",
+   "row": 547,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_GENERATION_OF_NEURONS",
+   "query": "GOBP_GENERATION_OF_NEURONS",
+   "tier": "a",
+   "id": "GOBP_GENERATION_OF_NEURONS",
+   "name": "GOBP_GENERATION_OF_NEURONS",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_GENERATION_OF_NEURONS 'GOBP_GENERATION_OF_NEURONS'"
+  },
+  {
+   "cell": "PRE-GO-14",
+   "row": 548,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_REGULATION_OF_CELL_PROJECTION_ORGANIZATION",
+   "query": "GOBP_REGULATION_OF_CELL_PROJECTION_ORGANIZATION",
+   "tier": "a",
+   "id": "GOBP_REGULATION_OF_CELL_PROJECTION_ORGANIZATION",
+   "name": "GOBP_REGULATION_OF_CELL_PROJECTION_ORGANIZATION",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_REGULATION_OF_CELL_PROJECTION_ORGANIZATION 'GOBP_REGULATION_OF_CELL_PROJECTION_ORGANIZATION'"
+  },
+  {
+   "cell": "PRE-GO-16",
+   "row": 549,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_REGULATION_OF_NEURON_PROJECTION_DEVELOPMENT",
+   "query": "GOBP_REGULATION_OF_NEURON_PROJECTION_DEVELOPMENT",
+   "tier": "a",
+   "id": "GOBP_REGULATION_OF_NEURON_PROJECTION_DEVELOPMENT",
+   "name": "GOBP_REGULATION_OF_NEURON_PROJECTION_DEVELOPMENT",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_REGULATION_OF_NEURON_PROJECTION_DEVELOPMENT 'GOBP_REGULATION_OF_NEURON_PROJECTION_DEVELOPMENT'"
+  },
+  {
+   "cell": "PRE-GO-17",
+   "row": 550,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_CELL_JUNCTION_ORGANIZATION",
+   "query": "GOBP_CELL_JUNCTION_ORGANIZATION",
+   "tier": "a",
+   "id": "GOBP_CELL_JUNCTION_ORGANIZATION",
+   "name": "GOBP_CELL_JUNCTION_ORGANIZATION",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_CELL_JUNCTION_ORGANIZATION 'GOBP_CELL_JUNCTION_ORGANIZATION'"
+  },
+  {
+   "cell": "PRE-GO-18",
+   "row": 551,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_CELL_MORPHOGENESIS",
+   "query": "GOBP_CELL_MORPHOGENESIS",
+   "tier": "a",
+   "id": "GOBP_CELL_MORPHOGENESIS",
+   "name": "GOBP_CELL_MORPHOGENESIS",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_CELL_MORPHOGENESIS 'GOBP_CELL_MORPHOGENESIS'"
+  },
+  {
+   "cell": "PRE-GO-19",
+   "row": 552,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_POSITIVE_REGULATION_OF_RNA_METABOLIC_PROCESS",
+   "query": "GOBP_POSITIVE_REGULATION_OF_RNA_METABOLIC_PROCESS",
+   "tier": "a",
+   "id": "GOBP_POSITIVE_REGULATION_OF_RNA_METABOLIC_PROCESS",
+   "name": "GOBP_POSITIVE_REGULATION_OF_RNA_METABOLIC_PROCESS",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_POSITIVE_REGULATION_OF_RNA_METABOLIC_PROCESS 'GOBP_POSITIVE_REGULATION_OF_RNA_METABOLIC_PROCESS'"
+  },
+  {
+   "cell": "PRE-GO-20",
+   "row": 553,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_CHROMATIN_ORGANIZATION",
+   "query": "GOBP_CHROMATIN_ORGANIZATION",
+   "tier": "a",
+   "id": "GOBP_CHROMATIN_ORGANIZATION",
+   "name": "GOBP_CHROMATIN_ORGANIZATION",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_CHROMATIN_ORGANIZATION 'GOBP_CHROMATIN_ORGANIZATION'"
+  },
+  {
+   "cell": "PRE-GO-21",
+   "row": 554,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_REGULATION_OF_TRANSPORT",
+   "query": "GOBP_REGULATION_OF_TRANSPORT",
+   "tier": "a",
+   "id": "GOBP_REGULATION_OF_TRANSPORT",
+   "name": "GOBP_REGULATION_OF_TRANSPORT",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_REGULATION_OF_TRANSPORT 'GOBP_REGULATION_OF_TRANSPORT'"
+  },
+  {
+   "cell": "PRE-GO-22",
+   "row": 555,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_CELL_CELL_SIGNALING",
+   "query": "GOBP_CELL_CELL_SIGNALING",
+   "tier": "a",
+   "id": "GOBP_CELL_CELL_SIGNALING",
+   "name": "GOBP_CELL_CELL_SIGNALING",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_CELL_CELL_SIGNALING 'GOBP_CELL_CELL_SIGNALING'"
+  },
+  {
+   "cell": "PRE-GO-23",
+   "row": 556,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_NEGATIVE_REGULATION_OF_RESPONSE_TO_STIMULUS",
+   "query": "GOBP_NEGATIVE_REGULATION_OF_RESPONSE_TO_STIMULUS",
+   "tier": "a",
+   "id": "GOBP_NEGATIVE_REGULATION_OF_RESPONSE_TO_STIMULUS",
+   "name": "GOBP_NEGATIVE_REGULATION_OF_RESPONSE_TO_STIMULUS",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_NEGATIVE_REGULATION_OF_RESPONSE_TO_STIMULUS 'GOBP_NEGATIVE_REGULATION_OF_RESPONSE_TO_STIMULUS'"
+  },
+  {
+   "cell": "PRE-GO-24",
+   "row": 557,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_CELL_ADHESION",
+   "query": "GOBP_CELL_ADHESION",
+   "tier": "a",
+   "id": "GOBP_CELL_ADHESION",
+   "name": "GOBP_CELL_ADHESION",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_CELL_ADHESION 'GOBP_CELL_ADHESION'"
+  },
+  {
+   "cell": "PRE-GO-25",
+   "row": 558,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_RESPONSE_TO_OXYGEN_CONTAINING_COMPOUND",
+   "query": "GOBP_RESPONSE_TO_OXYGEN_CONTAINING_COMPOUND",
+   "tier": "a",
+   "id": "GOBP_RESPONSE_TO_OXYGEN_CONTAINING_COMPOUND",
+   "name": "GOBP_RESPONSE_TO_OXYGEN_CONTAINING_COMPOUND",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_RESPONSE_TO_OXYGEN_CONTAINING_COMPOUND 'GOBP_RESPONSE_TO_OXYGEN_CONTAINING_COMPOUND'"
+  },
+  {
+   "cell": "PRE-GO-26",
+   "row": 559,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_REGULATION_OF_IMMUNE_SYSTEM_PROCESS",
+   "query": "GOBP_REGULATION_OF_IMMUNE_SYSTEM_PROCESS",
+   "tier": "a",
+   "id": "GOBP_REGULATION_OF_IMMUNE_SYSTEM_PROCESS",
+   "name": "GOBP_REGULATION_OF_IMMUNE_SYSTEM_PROCESS",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_REGULATION_OF_IMMUNE_SYSTEM_PROCESS 'GOBP_REGULATION_OF_IMMUNE_SYSTEM_PROCESS'"
+  },
+  {
+   "cell": "PRE-GO-27",
+   "row": 560,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_SMALL_MOLECULE_METABOLIC_PROCESS",
+   "query": "GOBP_SMALL_MOLECULE_METABOLIC_PROCESS",
+   "tier": "a",
+   "id": "GOBP_SMALL_MOLECULE_METABOLIC_PROCESS",
+   "name": "GOBP_SMALL_MOLECULE_METABOLIC_PROCESS",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_SMALL_MOLECULE_METABOLIC_PROCESS 'GOBP_SMALL_MOLECULE_METABOLIC_PROCESS'"
+  },
+  {
+   "cell": "PRE-GO-28",
+   "row": 561,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_REGULATION_OF_SECRETION",
+   "query": "GOBP_REGULATION_OF_SECRETION",
+   "tier": "a",
+   "id": "GOBP_REGULATION_OF_SECRETION",
+   "name": "GOBP_REGULATION_OF_SECRETION",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_REGULATION_OF_SECRETION 'GOBP_REGULATION_OF_SECRETION'"
+  },
+  {
+   "cell": "PRE-GO-29",
+   "row": 562,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_MONOATOMIC_ION_TRANSPORT",
+   "query": "GOBP_MONOATOMIC_ION_TRANSPORT",
+   "tier": "a",
+   "id": "GOBP_MONOATOMIC_ION_TRANSPORT",
+   "name": "GOBP_MONOATOMIC_ION_TRANSPORT",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_MONOATOMIC_ION_TRANSPORT 'GOBP_MONOATOMIC_ION_TRANSPORT'"
+  },
+  {
+   "cell": "PRE-GO-30",
+   "row": 563,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_EXPORT_FROM_CELL",
+   "query": "GOBP_EXPORT_FROM_CELL",
+   "tier": "a",
+   "id": "GOBP_EXPORT_FROM_CELL",
+   "name": "GOBP_EXPORT_FROM_CELL",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_EXPORT_FROM_CELL 'GOBP_EXPORT_FROM_CELL'"
+  },
+  {
+   "cell": "PRE-GO-31",
+   "row": 564,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_ESTABLISHMENT_OF_PROTEIN_LOCALIZATION",
+   "query": "GOBP_ESTABLISHMENT_OF_PROTEIN_LOCALIZATION",
+   "tier": "a",
+   "id": "GOBP_ESTABLISHMENT_OF_PROTEIN_LOCALIZATION",
+   "name": "GOBP_ESTABLISHMENT_OF_PROTEIN_LOCALIZATION",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_ESTABLISHMENT_OF_PROTEIN_LOCALIZATION 'GOBP_ESTABLISHMENT_OF_PROTEIN_LOCALIZATION'"
+  },
+  {
+   "cell": "PRE-GO-32",
+   "row": 565,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_REGULATION_OF_CELLULAR_COMPONENT_BIOGENESIS",
+   "query": "GOBP_REGULATION_OF_CELLULAR_COMPONENT_BIOGENESIS",
+   "tier": "a",
+   "id": "GOBP_REGULATION_OF_CELLULAR_COMPONENT_BIOGENESIS",
+   "name": "GOBP_REGULATION_OF_CELLULAR_COMPONENT_BIOGENESIS",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_REGULATION_OF_CELLULAR_COMPONENT_BIOGENESIS 'GOBP_REGULATION_OF_CELLULAR_COMPONENT_BIOGENESIS'"
+  },
+  {
+   "cell": "PRE-GO-33",
+   "row": 566,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_RESPONSE_TO_OXYGEN_CONTAINING_COMPOUND",
+   "query": "GOBP_RESPONSE_TO_OXYGEN_CONTAINING_COMPOUND",
+   "tier": "a",
+   "id": "GOBP_RESPONSE_TO_OXYGEN_CONTAINING_COMPOUND",
+   "name": "GOBP_RESPONSE_TO_OXYGEN_CONTAINING_COMPOUND",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_RESPONSE_TO_OXYGEN_CONTAINING_COMPOUND 'GOBP_RESPONSE_TO_OXYGEN_CONTAINING_COMPOUND'"
+  },
+  {
+   "cell": "PRE-GO-34",
+   "row": 567,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_REGULATION_OF_CELL_JUNCTION_ASSEMBLY",
+   "query": "GOBP_REGULATION_OF_CELL_JUNCTION_ASSEMBLY",
+   "tier": "a",
+   "id": "GOBP_REGULATION_OF_CELL_JUNCTION_ASSEMBLY",
+   "name": "GOBP_REGULATION_OF_CELL_JUNCTION_ASSEMBLY",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_REGULATION_OF_CELL_JUNCTION_ASSEMBLY 'GOBP_REGULATION_OF_CELL_JUNCTION_ASSEMBLY'"
+  },
+  {
+   "cell": "PRE-GO-35",
+   "row": 568,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_REGULATION_OF_TRANSPORT",
+   "query": "GOBP_REGULATION_OF_TRANSPORT",
+   "tier": "a",
+   "id": "GOBP_REGULATION_OF_TRANSPORT",
+   "name": "GOBP_REGULATION_OF_TRANSPORT",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_REGULATION_OF_TRANSPORT 'GOBP_REGULATION_OF_TRANSPORT'"
+  },
+  {
+   "cell": "PRE-GO-36",
+   "row": 569,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_REGULATION_OF_MONOATOMIC_ION_TRANSPORT",
+   "query": "GOBP_REGULATION_OF_MONOATOMIC_ION_TRANSPORT",
+   "tier": "a",
+   "id": "GOBP_REGULATION_OF_MONOATOMIC_ION_TRANSPORT",
+   "name": "GOBP_REGULATION_OF_MONOATOMIC_ION_TRANSPORT",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_REGULATION_OF_MONOATOMIC_ION_TRANSPORT 'GOBP_REGULATION_OF_MONOATOMIC_ION_TRANSPORT'"
+  },
+  {
+   "cell": "PRE-GO-37",
+   "row": 570,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_CELLULAR_COMPONENT_MORPHOGENESIS",
+   "query": "GOBP_CELLULAR_COMPONENT_MORPHOGENESIS",
+   "tier": "a",
+   "id": "GOBP_CELLULAR_COMPONENT_MORPHOGENESIS",
+   "name": "GOBP_CELLULAR_COMPONENT_MORPHOGENESIS",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_CELLULAR_COMPONENT_MORPHOGENESIS 'GOBP_CELLULAR_COMPONENT_MORPHOGENESIS'"
+  },
+  {
+   "cell": "PRE-GO-38",
+   "row": 571,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_REGULATION_OF_MONOATOMIC_CATION_TRANSMEMBRANE_TRANSPORT",
+   "query": "GOBP_REGULATION_OF_MONOATOMIC_CATION_TRANSMEMBRANE_TRANSPORT",
+   "tier": "a",
+   "id": "GOBP_REGULATION_OF_MONOATOMIC_CATION_TRANSMEMBRANE_TRANSPORT",
+   "name": "GOBP_REGULATION_OF_MONOATOMIC_CATION_TRANSMEMBRANE_TRANSPORT",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_REGULATION_OF_MONOATOMIC_CATION_TRANSMEMBRANE_TRANSPORT 'GOBP_REGULATION_OF_MONOATOMIC_CATION_TRANSMEMBRANE_TRANSPORT'"
+  },
+  {
+   "cell": "PRE-GO-39",
+   "row": 572,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_REGULATION_OF_MONOATOMIC_ION_TRANSMEMBRANE_TRANSPORT",
+   "query": "GOBP_REGULATION_OF_MONOATOMIC_ION_TRANSMEMBRANE_TRANSPORT",
+   "tier": "a",
+   "id": "GOBP_REGULATION_OF_MONOATOMIC_ION_TRANSMEMBRANE_TRANSPORT",
+   "name": "GOBP_REGULATION_OF_MONOATOMIC_ION_TRANSMEMBRANE_TRANSPORT",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_REGULATION_OF_MONOATOMIC_ION_TRANSMEMBRANE_TRANSPORT 'GOBP_REGULATION_OF_MONOATOMIC_ION_TRANSMEMBRANE_TRANSPORT'"
+  },
+  {
+   "cell": "PRE-GO-40",
+   "row": 573,
+   "target_key": "pretzsch2024patterns",
+   "mapping": "MSigDB (Pretzsch eTable 5 name)",
+   "release": "MSigDB 2023.1.Hs C5 GO:BP",
+   "printed": "GOBP_INTRACELLULAR_TRANSPORT",
+   "query": "GOBP_INTRACELLULAR_TRANSPORT",
+   "tier": "a",
+   "id": "GOBP_INTRACELLULAR_TRANSPORT",
+   "name": "GOBP_INTRACELLULAR_TRANSPORT",
+   "label": "exact name",
+   "tier_hits": {
+    "a": 1
+   },
+   "summary": "name rule (a): exact name -> GOBP_INTRACELLULAR_TRANSPORT 'GOBP_INTRACELLULAR_TRANSPORT'"
+  },
+  {
+   "cell": "LEY-K1",
+   "row": 635,
+   "target_key": "leyhausen2024intrinsic",
+   "mapping": "KEGG (Leyhausen Fig. 3B label)",
+   "release": "Enrichr KEGG_2021_Human",
+   "printed": "axon guidance",
+   "query": "axon guidance",
+   "tier": "c",
+   "id": "Axon guidance",
+   "name": "Axon guidance",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> Axon guidance 'Axon guidance'"
+  },
+  {
+   "cell": "LEY-K2",
+   "row": 636,
+   "target_key": "leyhausen2024intrinsic",
+   "mapping": "KEGG (Leyhausen Fig. 3B label)",
+   "release": "Enrichr KEGG_2021_Human",
+   "printed": "retrograde endocannabinoid signaling",
+   "query": "retrograde endocannabinoid signaling",
+   "tier": "c",
+   "id": "Retrograde endocannabinoid signaling",
+   "name": "Retrograde endocannabinoid signaling",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> Retrograde endocannabinoid signaling 'Retrograde endocannabinoid signaling'"
+  },
+  {
+   "cell": "LEY-K3",
+   "row": 637,
+   "target_key": "leyhausen2024intrinsic",
+   "mapping": "KEGG (Leyhausen Fig. 3B label)",
+   "release": "Enrichr KEGG_2021_Human",
+   "printed": "calcium signaling pathway",
+   "query": "calcium signaling pathway",
+   "tier": "c",
+   "id": "Calcium signaling pathway",
+   "name": "Calcium signaling pathway",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> Calcium signaling pathway 'Calcium signaling pathway'"
+  },
+  {
+   "cell": "LEY-K4",
+   "row": 638,
+   "target_key": "leyhausen2024intrinsic",
+   "mapping": "KEGG (Leyhausen Fig. 3B label)",
+   "release": "Enrichr KEGG_2021_Human",
+   "printed": "pathways of neurodegeneration - multiple diseases",
+   "query": "pathways of neurodegeneration - multiple diseases",
+   "tier": null,
+   "id": null,
+   "name": null,
+   "label": "S undefined",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 0,
+    "c_synonym": 0
+   },
+   "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+  },
+  {
+   "cell": "LEY-K5",
+   "row": 639,
+   "target_key": "leyhausen2024intrinsic",
+   "mapping": "KEGG (Leyhausen Fig. 3B label)",
+   "release": "Enrichr KEGG_2021_Human",
+   "printed": "retrograde endocannabinoid signaling",
+   "query": "retrograde endocannabinoid signaling",
+   "tier": "c",
+   "id": "Retrograde endocannabinoid signaling",
+   "name": "Retrograde endocannabinoid signaling",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> Retrograde endocannabinoid signaling 'Retrograde endocannabinoid signaling'"
+  },
+  {
+   "cell": "LEY-K6",
+   "row": 640,
+   "target_key": "leyhausen2024intrinsic",
+   "mapping": "KEGG (Leyhausen Fig. 3B label)",
+   "release": "Enrichr KEGG_2021_Human",
+   "printed": "calcium signaling pathway",
+   "query": "calcium signaling pathway",
+   "tier": "c",
+   "id": "Calcium signaling pathway",
+   "name": "Calcium signaling pathway",
+   "label": "S matched by normalised name (case)",
+   "tier_hits": {
+    "a": 0,
+    "b": 0,
+    "c_name": 1
+   },
+   "summary": "name rule (c): S matched by normalised name (case) -> Calcium signaling pathway 'Calcium signaling pathway'"
+  }
+ ]
+}

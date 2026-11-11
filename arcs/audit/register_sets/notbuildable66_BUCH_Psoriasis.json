@@ -1,0 +1,67 @@
+{
+ "set_id": "notbuildable66_BUCH_Psoriasis",
+ "status": "not auditable (S undefined: comparator not buildable pre-freeze)",
+ "definition": "comparator of BUCH:Psoriasis (methods: psoriasis; figure: Psoriasis)",
+ "reason": "comparator not buildable pre-freeze -- register 1.6 resolution rule (v6.6): R-e: ref 124 distributes loci, not a gene list -- Table 2 lists the loci followed up with their 'notable nearby genes' (18 loci, 10 with support, 7 confirmed) and Supplementary Table 4 the seven confirmed loci; the list cannot be read unambiguously",
+ "comparator_v6_6": {
+  "paper": "buch2023asdsubgroups",
+  "paper_received": "2021-11-29",
+  "names_in_paper": {
+   "methods": "psoriasis",
+   "figure": "Psoriasis"
+  },
+  "reference": {
+   "124": "Nair et al. 2009, Nat Genet 41:199"
+  },
+  "R-a_source": "ref 124 (Nair 2009): the article's tables and its supplement",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2745122/",
+  "release": "n/a",
+  "R-b_release_outcome": "n/a",
+  "R-c_threshold": "n/a",
+  "R-d_names": "n/a",
+  "access_date": "2026-09-27",
+  "files": [
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\nair2009_psoriasis\\PMC2745122.html",
+    "sha256": "86064dc9cd427c52c5c94df978ba89b2689336241aba0c9518bff3a04aaa8de4"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\nair2009_psoriasis\\NIHMS83342-supplement-1.pdf",
+    "sha256": "00067a4800987d4cb47f4fd8637d291a903dc1163a5a84f7befe49aa360280c0"
+   }
+  ],
+  "R-e": "R-e: ref 124 distributes loci, not a gene list -- Table 2 lists the loci followed up with their 'notable nearby genes' (18 loci, 10 with support, 7 confirmed) and Supplementary Table 4 the seven confirmed loci; the list cannot be read unambiguously"
+ },
+ "cells_detail": [
+  {
+   "cell": "BUCH-E-Psoriasis-S1",
+   "row": 348,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-Psoriasis-S2",
+   "row": 349,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-Psoriasis-S3",
+   "row": 350,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-Psoriasis-S4",
+   "row": 351,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  }
+ ],
+ "cells": [
+  "BUCH-E-Psoriasis-S1",
+  "BUCH-E-Psoriasis-S2",
+  "BUCH-E-Psoriasis-S3",
+  "BUCH-E-Psoriasis-S4"
+ ]
+}

@@ -1,0 +1,60 @@
+# A1 rbuild: docker build --progress=plain -t a1-audit-r:wp2-r4.4.3 --build-arg BASE=rocker/r-ver:4.4.3@sha256:3dae5d2eeddf74f10e0a81fb6b7ae350295e288000304f438b844b2c1e00fe2c --build-arg CRAN_SNAPSHOT=https://p3m.dev/cran/__linux__/noble/2025-04-10 --build-arg BIOC_VERSION=3.20 --build-arg BIOC_BINARIES=https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker D:\RESEARCH\asd-imaging-genetics\arcs\audit\src\a1_audit\rbuild
+# started 2026-10-01T21:23:32Z
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 3.38kB done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/rocker/r-ver:4.4.3@sha256:3dae5d2eeddf74f10e0a81fb6b7ae350295e288000304f438b844b2c1e00fe2c
+#2 DONE 0.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 81B done
+#3 DONE 0.1s
+
+#4 [internal] load build context
+#4 DONE 0.0s
+
+#5 [1/7] FROM docker.io/rocker/r-ver:4.4.3@sha256:3dae5d2eeddf74f10e0a81fb6b7ae350295e288000304f438b844b2c1e00fe2c
+#5 resolve docker.io/rocker/r-ver:4.4.3@sha256:3dae5d2eeddf74f10e0a81fb6b7ae350295e288000304f438b844b2c1e00fe2c 0.1s done
+#5 DONE 0.1s
+
+#4 [internal] load build context
+#4 transferring context: 10.23kB done
+#4 DONE 0.1s
+
+#6 [3/7] COPY install_packages.R /opt/a1_rbuild/install_packages.R
+#6 CACHED
+
+#7 [2/7] RUN echo "options(repos = c(CRAN = 'https://p3m.dev/cran/__linux__/noble/2025-04-10'), BiocManager.check_repositories = FALSE)"         >> /usr/local/lib/R/etc/Rprofile.site
+#7 CACHED
+
+#8 [4/7] RUN Rscript /opt/a1_rbuild/install_packages.R install &&     Rscript /opt/a1_rbuild/install_packages.R record > /opt/a1_rbuild/installed_versions.tsv
+#8 CACHED
+
+#9 [5/7] COPY packages.lock.tsv /opt/a1_rbuild/packages.lock.tsv
+#9 DONE 0.1s
+
+#10 [6/7] RUN Rscript /opt/a1_rbuild/install_packages.R verify /opt/a1_rbuild/packages.lock.tsv
+#10 1.067 A1 rbuild verify: pass; 131 packages at the locked versions
+#10 DONE 1.2s
+
+#11 [7/7] WORKDIR /work
+#11 DONE 0.2s
+
+#12 exporting to image
+#12 exporting layers
+#12 exporting layers 0.8s done
+#12 exporting manifest sha256:dddaa4689efa0baa712ea647fa2086cc8438a28d114b0f011980d1c5479af32e 0.0s done
+#12 exporting config sha256:9fe7ce75f4083beec8741770942c5813450a705d6ac4d1e1f289c8988888efce 0.0s done
+#12 exporting attestation manifest sha256:85b0e7f77322b0fc1dd30810f007e8d762aafdc4ea0cc51dcafad12c758b39d1
+#12 exporting attestation manifest sha256:85b0e7f77322b0fc1dd30810f007e8d762aafdc4ea0cc51dcafad12c758b39d1 0.1s done
+#12 exporting manifest list sha256:4e7d93dc7c96c38d7f3c6b3aa48fef5d179e7870095de9a62f20e3e5c94814f7
+#12 exporting manifest list sha256:4e7d93dc7c96c38d7f3c6b3aa48fef5d179e7870095de9a62f20e3e5c94814f7 0.0s done
+#12 naming to docker.io/library/a1-audit-r:wp2-r4.4.3 done
+#12 unpacking to docker.io/library/a1-audit-r:wp2-r4.4.3
+#12 unpacking to docker.io/library/a1-audit-r:wp2-r4.4.3 0.2s done
+#12 DONE 1.4s
+
+# exit 0 after 5 s; ended 2026-10-01T21:23:37Z

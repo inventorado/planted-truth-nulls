@@ -1,0 +1,55 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "gia_gedar_MDD_TPRS_thr_5",
+ "gate": "G2",
+ "url": "https://raw.githubusercontent.com/alegiac95/METAXCAN_TWAS_ANALYSIS/eda33abddd5acd396caa0ace2817a0bcd427cfe5/results/MDD/MDD_TPRS_thr_5.tsv",
+ "kind": "file",
+ "date_utc": "2026-10-20T22:11:32+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "fetch": {
+  "source": "copy on disk",
+  "path": "E:/data/asdg/gia_gedar_MDD_TPRS_thr_5/carrier.tsv"
+ },
+ "identity": {
+  "facts": {
+   "bytes": 3736,
+   "sha256": "932a78bbc75e6b82dc3e714cf57e5f7d90045a4672f8c5e0215250e0af154d29",
+   "md5": "5a988bda6d85986b4c110516476bfb93",
+   "git_blob": "feb3c029c5631e60873d4b09adb87069a784ecb2",
+   "has_crlf": false,
+   "git_blob_lf": null,
+   "bytes_lf": null
+  },
+  "references": [
+   {
+    "basis": "git blob",
+    "bytes": 3736,
+    "git_blob": "feb3c029c5631e60873d4b09adb87069a784ecb2"
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "git blob",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "failed_stage": "read:file",
+ "failed_class": "UnlistedException",
+ "failed_where": "wp4_read.py:138",
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "not computable (the paper's GEDAR map layout not matched)"
+}

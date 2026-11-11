@@ -1,0 +1,111 @@
+{
+ "set_id": "notbuildable66_BUCH_Vocal",
+ "status": "not auditable (S undefined: comparator not buildable pre-freeze)",
+ "definition": "comparator of BUCH:Vocal (methods: vocal learning; figure: Vocal learning)",
+ "reason": "comparator not buildable pre-freeze -- register 1.6 resolution rule (v6.6): R-e (v6.7 N4, on the tables' contents): Tables S1-S8 distribute several specialisation lists -- Table S3's nine region sheets (A.Striatum ... F.LMAN, G-I macaque) and Table S6's cross-species RA-analogue / LMC list -- and name none of them 'vocal learning' genes (no sheet name carries 'vocal'); the list cannot be read unambiguously (v6.6 read the captions only: the tables were then unobtainable)",
+ "comparator_v6_6": {
+  "paper": "buch2023asdsubgroups",
+  "paper_received": "2021-11-29",
+  "names_in_paper": {
+   "methods": "vocal learning",
+   "figure": "Vocal learning"
+  },
+  "reference": {
+   "61": "Pfenning et al. 2014, Science 346:1256846"
+  },
+  "R-a_source": "ref 61 (Pfenning 2014): Tables S1-S8 ('zipped folder, Excel format'), obtained from science.org (v6.7 N4)",
+  "url": "https://www.science.org/doi/suppl/10.1126/science.1256846/suppl_file/pfenning-tables-s1-to-s8.zip (plain HTTPS meets a Cloudflare bot challenge, HTTP 403; no Wayback capture; Europe PMC does not serve it; fetched 2026-09-27 by a real Chrome browser started with a fresh, empty profile -- no login, cookie or identifier)",
+  "release": "n/a",
+  "R-b_release_outcome": "n/a",
+  "R-c_threshold": "n/a",
+  "R-d_names": "n/a",
+  "access_date": "2026-09-27",
+  "files": [
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\pfenning2014_vocal\\NIHMS666880-supplement-Supplemental_material.pdf",
+    "sha256": "8c41e7c42657e39e9529d74bde8ecc70319576dfc4a7aa6fd6bed4b3384a9c4a"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\pfenning2014_vocal\\science_download\\pfenning-tables-s1-to-s8.zip",
+    "sha256": "9a7037b135e9848cc342b74d1ff3d8791782fc3e397e1926ff159ae570da616f"
+   }
+  ],
+  "sheets": {
+   "SuppTable1-Region_Abbreviations V25.xlsx": [
+    "A.Human",
+    "B.Macaque"
+   ],
+   "SuppTable2-GeneMapping V25.xlsx": [
+    "ST1"
+   ],
+   "SuppTable3-Finch_Gene_Specializations V25.xlsx": [
+    "A.Striatum",
+    "B.Pallium",
+    "C.AreaX",
+    "D.RA",
+    "E.HVC",
+    "F.LMAN",
+    "G.Mac-RA",
+    "H.Mac-HVC",
+    "I.Mac-LMAN"
+   ],
+   "SuppTable4-CrossSpeciesLMCSimiarlity V25.xlsx": [
+    "lmcNumbers.xSpec.8.2.2.txt"
+   ],
+   "SuppTable5-GeneOntologyResults V25.xlsx": [
+    "A. Striatum",
+    "B. Pallium",
+    "C. Area X",
+    "D. RA",
+    "E. Convergent",
+    "F. RA Proteomics"
+   ],
+   "SuppTable6-CrossSpecies_Specializations V25.xlsx": [
+    "zfbgUnique.LMC-RA.xSpec.8.2.2.t"
+   ],
+   "SuppTable7-Proteomics V25.xlsx": [
+    "protTable.8.2.txt"
+   ],
+   "SuppTable8-InsituClone IDs V25.xlsx": [
+    "Sheet1"
+   ]
+  },
+  "gene_lists": {
+   "Table S3 (9 sheets)": "zebra finch (A-F) and macaque (G-I) region specialisations shared with human regions",
+   "Table S6 (1 sheet)": "genes with common specialisations between avian RA analogues and human LMC / LSC, broken into sections"
+  },
+  "R-e": "R-e (v6.7 N4, on the tables' contents): Tables S1-S8 distribute several specialisation lists -- Table S3's nine region sheets (A.Striatum ... F.LMAN, G-I macaque) and Table S6's cross-species RA-analogue / LMC list -- and name none of them 'vocal learning' genes (no sheet name carries 'vocal'); the list cannot be read unambiguously (v6.6 read the captions only: the tables were then unobtainable)"
+ },
+ "cells_detail": [
+  {
+   "cell": "BUCH-E-Vocal-S1",
+   "row": 255,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-Vocal-S3",
+   "row": 256,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-Vocal-S4",
+   "row": 257,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-Vocal-S2",
+   "row": 362,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  }
+ ],
+ "cells": [
+  "BUCH-E-Vocal-S1",
+  "BUCH-E-Vocal-S3",
+  "BUCH-E-Vocal-S4",
+  "BUCH-E-Vocal-S2"
+ ]
+}

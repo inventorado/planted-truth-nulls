@@ -1,0 +1,206 @@
+{
+ "set_id": "cmp66_buch_diseases_DOID14320",
+ "status": "built (comparator, v6.6: the else-branch S and the pinned set of corroboration (a); source 1 in the gated carrier is checked first, under G1)",
+ "definition": "DISEASES v2 DOID:14320 'generalized anxiety disorder': the genes of its filtered knowledge, experiments and text-mining associations",
+ "source": {
+  "source_id": "cmp66_buch_diseases_DOID14320",
+  "files": [
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\diseases_v2_2022-02-09\\human_disease_knowledge_filtered.tsv.gz",
+    "sha256": "1bbc88fdefefd5c0b3643d8cb7f0594015e3e899c332f8ef2cd360941c21ec9a"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\diseases_v2_2022-02-09\\human_disease_experiments_filtered.tsv.gz",
+    "sha256": "a20892ce3fd30f856a3b14d63785620e55920117d9966aa29d91e95550fc90f4"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\diseases_v2_2022-02-09\\human_disease_textmining_filtered.tsv.gz",
+    "sha256": "a567aa9159e9aaa9b0dac1d77cd1c7f08076d9ae89ed06c53428d58b0b014e24"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\diseases_v2_2022-02-09\\diseases_dictionary.tar.gz",
+    "sha256": "66154a233d48455b21605294bdc135e9b6327b7358b09ec65e117beb1cc25fba"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\diseases_v2_2022-02-09\\cdx_knowledge_filtered.json",
+    "sha256": "a5c2d4de370d02d4809daad567a172946cbef436b41f903423175f69b6d4bc41"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\diseases_v2_2022-02-09\\cdx_experiments_filtered.json",
+    "sha256": "bf4bf2f15c35ad92941a744a8624f67b1108de5964e2378628342bc3f8c0b712"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\diseases_v2_2022-02-09\\cdx_textmining_filtered.json",
+    "sha256": "7f22a4616564889ecf6095e6c0dc5bfc3c25956f19b8ff8519efa427b4b9e377"
+   }
+  ],
+  "url": "https://figshare.com/authors/Lars_Juhl_Jensen/96428 (DISEASES v2, 2022-02-09: items 19146077 / 19146101 / 19146107; dictionary 19146044)",
+  "release": "DISEASES v2 (figshare, published 2022-02-09)"
+ },
+ "rule": "register 1.6 resolution rule (v6.6, R-a ... R-e; rule text sha256 43cefdcc81bee3cecb1d764150f9a6d39bf814f98525fd65006a4c0bbd3fa1a1, written 2026-09-27T02:56:44Z before any download): R-a ref 128 (DISEASES): the three filtered channel files (knowledge, experiments, text mining); R-b DISEASES is rebuilt weekly and no weekly set of its channel files is archived near the date: the Wayback captures are per file and on different dates (knowledge: last on or before 20210928020437, first after 20211205023615; experiments: last on or before 20210413101809, first after 20230331221130; text mining: last on or before 20210928004928, first after 20220125174606), none brackets 2021-11-29; the Jensen lab's own archived release DISEASES v2 (2022-02-09) is the earliest archived release after the date; R-c the source's documented default: the filtered files ('the non-redundant associations shown within the web interface'), every association of the term in the three channels (the interface shows the three on the disease's page); associations as distributed (DISEASES already backtracks child terms' evidence to their parents)",
+ "labels": [
+  "S re-derived"
+ ],
+ "paper_size": null,
+ "n_raw_unique": 3,
+ "n_hgnc": 3,
+ "members_hgnc": [
+  "CTU2",
+  "GPATCH11",
+  "TMEM132D"
+ ],
+ "mapping": {
+  "approved": 3
+ },
+ "n_id_symbol_disagreements": 0,
+ "n_drops": 0,
+ "drops": [],
+ "universe": {
+  "dk-ctx": {
+   "n_in_universe": 3,
+   "n_columns": 3,
+   "columns": [
+    "CTU2",
+    "GPATCH11",
+    "TMEM132D"
+   ],
+   "outcome": "not testable (< 5 columns in the class universe)"
+  },
+  "V-DK": {
+   "n_in_universe": 3,
+   "n_columns": 3,
+   "columns": [
+    "CTU2",
+    "GPATCH11",
+    "TMEM132D"
+   ],
+   "outcome": "not testable (< 5 columns in the class universe)"
+  },
+  "V-AAL": {
+   "n_in_universe": 3,
+   "n_columns": 3,
+   "columns": [
+    "CTU2",
+    "GPATCH11",
+    "TMEM132D"
+   ],
+   "outcome": "not testable (< 5 columns in the class universe)"
+  },
+  "MIST64": {
+   "n_in_universe": 3,
+   "n_columns": 3,
+   "columns": [
+    "CTU2",
+    "GPATCH11",
+    "TMEM132D"
+   ],
+   "outcome": "not testable (< 5 columns in the class universe)"
+  }
+ },
+ "comparator_v6_6": {
+  "paper": "buch2023asdsubgroups",
+  "paper_received": "2021-11-29",
+  "names_in_paper": {
+   "methods": "Generalized Anxiety Disorder",
+   "figure": "GAD"
+  },
+  "reference": {
+   "128": "Pletscher-Frankild et al. 2015, Methods 74:83 (DISEASES)"
+  },
+  "R-a_source": "ref 128 (DISEASES): the three filtered channel files (knowledge, experiments, text mining)",
+  "url": "https://figshare.com/authors/Lars_Juhl_Jensen/96428 (DISEASES v2, 2022-02-09: items 19146077 / 19146101 / 19146107; dictionary 19146044)",
+  "release": "DISEASES v2 (figshare, published 2022-02-09)",
+  "R-b_release_outcome": "DISEASES is rebuilt weekly and no weekly set of its channel files is archived near the date: the Wayback captures are per file and on different dates (knowledge: last on or before 20210928020437, first after 20211205023615; experiments: last on or before 20210413101809, first after 20230331221130; text mining: last on or before 20210928004928, first after 20220125174606), none brackets 2021-11-29; the Jensen lab's own archived release DISEASES v2 (2022-02-09) is the earliest archived release after the date",
+  "R-c_threshold": "the source's documented default: the filtered files ('the non-redundant associations shown within the web interface'), every association of the term in the three channels (the interface shows the three on the disease's page); associations as distributed (DISEASES already backtracks child terms' evidence to their parents)",
+  "R-d_names": [
+   {
+    "query": "Generalized Anxiety Disorder",
+    "tier": "c",
+    "id": "DOID:14320",
+    "name": "generalized anxiety disorder",
+    "label": "S matched by normalised name (case)",
+    "summary": "name rule (c): S matched by normalised name (case) -> DOID:14320 'generalized anxiety disorder'"
+   },
+   {
+    "query": "GAD",
+    "tier": null,
+    "id": null,
+    "name": null,
+    "label": "S undefined",
+    "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+   }
+  ],
+  "access_date": "2026-09-27",
+  "files": [
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\diseases_v2_2022-02-09\\human_disease_knowledge_filtered.tsv.gz",
+    "sha256": "1bbc88fdefefd5c0b3643d8cb7f0594015e3e899c332f8ef2cd360941c21ec9a"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\diseases_v2_2022-02-09\\human_disease_experiments_filtered.tsv.gz",
+    "sha256": "a20892ce3fd30f856a3b14d63785620e55920117d9966aa29d91e95550fc90f4"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\diseases_v2_2022-02-09\\human_disease_textmining_filtered.tsv.gz",
+    "sha256": "a567aa9159e9aaa9b0dac1d77cd1c7f08076d9ae89ed06c53428d58b0b014e24"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\diseases_v2_2022-02-09\\diseases_dictionary.tar.gz",
+    "sha256": "66154a233d48455b21605294bdc135e9b6327b7358b09ec65e117beb1cc25fba"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\diseases_v2_2022-02-09\\cdx_knowledge_filtered.json",
+    "sha256": "a5c2d4de370d02d4809daad567a172946cbef436b41f903423175f69b6d4bc41"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\diseases_v2_2022-02-09\\cdx_experiments_filtered.json",
+    "sha256": "bf4bf2f15c35ad92941a744a8624f67b1108de5964e2378628342bc3f8c0b712"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\diseases_v2_2022-02-09\\cdx_textmining_filtered.json",
+    "sha256": "7f22a4616564889ecf6095e6c0dc5bfc3c25956f19b8ff8519efa427b4b9e377"
+   }
+  ],
+  "term": {
+   "id": "DOID:14320",
+   "name": "generalized anxiety disorder",
+   "n_genes_per_channel": {
+    "knowledge": 0,
+    "experiments": 0,
+    "textmining": 3
+   }
+  }
+ },
+ "cells_detail": [
+  {
+   "cell": "BUCH-E-GAD-S4",
+   "row": 335,
+   "analysis_class": "V-AAL",
+   "outcome": "not testable (< 5 columns in the class universe)"
+  },
+  {
+   "cell": "BUCH-E-GAD-S1",
+   "row": 372,
+   "analysis_class": "V-AAL",
+   "outcome": "not testable (< 5 columns in the class universe)"
+  },
+  {
+   "cell": "BUCH-E-GAD-S2",
+   "row": 373,
+   "analysis_class": "V-AAL",
+   "outcome": "not testable (< 5 columns in the class universe)"
+  },
+  {
+   "cell": "BUCH-E-GAD-S3",
+   "row": 374,
+   "analysis_class": "V-AAL",
+   "outcome": "not testable (< 5 columns in the class universe)"
+  }
+ ],
+ "cells": [
+  "BUCH-E-GAD-S4",
+  "BUCH-E-GAD-S1",
+  "BUCH-E-GAD-S2",
+  "BUCH-E-GAD-S3"
+ ]
+}

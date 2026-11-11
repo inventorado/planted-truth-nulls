@@ -1,0 +1,93 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "segura_790618",
+ "gate": "ungated",
+ "url": "https://neurovault.org/media/images/12297/zstat1_ADOS2Total_dm_MFG%20iFC%20corrected%20sex%20ADOSPOS%20-%20AS%20TX.nii.nii.gz",
+ "kind": "file",
+ "date_utc": "2026-10-11T22:40:33+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "fetch": {
+  "source": "pinned copy on disk",
+  "path_sha256": "cbb1d1aff8765d8a1127b40ec4b479bfb524eeade8918d195fc885c2d88d2251",
+  "screen_hits": {
+   "V": 0,
+   "N": 0
+  }
+ },
+ "identity": {
+  "facts": {
+   "bytes": 71440,
+   "sha256": "802b4b6bf31136aee0507676a3ca4c14e0ba97bafe378f5b6aaddbe5c160af12",
+   "md5": "dbe9c0505ed3da8f87c4cdb877a710b8",
+   "git_blob": "45967d0f9590006f759d114f8d13652c12cf283b",
+   "has_crlf": false,
+   "git_blob_lf": null,
+   "bytes_lf": null
+  },
+  "references": [
+   {
+    "basis": "size only",
+    "bytes": 71440
+   },
+   {
+    "basis": "size only",
+    "bytes": 71440
+   },
+   {
+    "basis": "sha256 of the copy on disk",
+    "bytes": 71440,
+    "sha256": "802b4b6bf31136aee0507676a3ca4c14e0ba97bafe378f5b6aaddbe5c160af12"
+   },
+   {
+    "basis": "git blob",
+    "bytes": 71440,
+    "git_blob": "45967d0f9590006f759d114f8d13652c12cf283b"
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "size only",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true
+    },
+    {
+     "basis": "size only",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true
+    },
+    {
+     "basis": "sha256 of the copy on disk",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    },
+    {
+     "basis": "git blob",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "identifier_bearing": false,
+ "extraction": {
+  "object_path": "D:/RESEARCH/asd-imaging-genetics/artifacts/audit/wp3/ungated/segura_790618/segura_790618_extract.json",
+  "object_sha256": "21c4c321e283c4b479afe6cb24d4bf40f0837bb6cf5df7ccb00872773502c1a5"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "extracted"
+}

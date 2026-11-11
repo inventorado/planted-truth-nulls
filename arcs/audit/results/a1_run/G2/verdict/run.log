@@ -1,0 +1,106 @@
+[03:19:23] pass verdict gate G2 rows 194 K {'site': 10000, 'species': 10000, 'permutation': 10000, 'sets': 10000, 'surr': 10000, 'j1_sets': 1000} g6l exact
+[03:20:00] dispatch: 46 row(s) to compute; written so far {'no statistic': 66, 'not run': 82}
+[03:20:00] phase 1: 37 G6l screen(s) (exact mode)
+[03:24:53]   10/37 tasks (292s)
+[03:25:16]   20/37 tasks (315s)
+[03:28:11]   30/37 tasks (491s)
+[03:28:20]   37/37 tasks (500s)
+[03:28:21] phase 2: 46 leg-group task(s), jobs 20
+[03:40:49]   10/46 tasks (748s)
+[03:42:20]   20/46 tasks (839s)
+[03:52:29]   30/46 tasks (1449s)
+[03:53:37]   40/46 tasks (1516s)
+[03:59:36]   46/46 tasks (1875s)
+[03:59:36] row 81 (verdict: set-vs-map) written; peak task memory 288024050 B
+[03:59:36] row 82 (verdict: set-vs-map) written; peak task memory 234722111 B
+[03:59:36] row 83 (verdict: set-vs-map) written; peak task memory 270727620 B
+[03:59:36] row 85 (verdict: set-vs-map) written; peak task memory 279703489 B
+[03:59:36] row 86 (verdict: set-vs-map) written; peak task memory 286743625 B
+[03:59:36] row 87 (verdict: set-vs-map) written; peak task memory 274577222 B
+[03:59:36] row 88 (verdict: set-vs-map) written; peak task memory 280341175 B
+[03:59:36] row 89 (verdict: set-vs-map) written; peak task memory 274892055 B
+[03:59:36] row 90 (verdict: set-vs-map) written; peak task memory 263681578 B
+[03:59:36] row 91 (verdict: set-vs-map) written; peak task memory 357594863 B
+[03:59:37] row 93 (verdict: set-vs-map) written; peak task memory 375878821 B
+[03:59:37] row 95 (verdict: set-vs-map) written; peak task memory 407685132 B
+[03:59:37] row 97 (verdict: set-vs-map) written; peak task memory 357272246 B
+[03:59:37] row 99 (verdict: set-vs-map) written; peak task memory 374270227 B
+[03:59:37] row 101 (verdict: set-vs-map) written; peak task memory 401524342 B
+[03:59:37] row 118 (verdict: set-vs-map) written; peak task memory 357276938 B
+[03:59:37] row 119 (verdict: set-vs-map) written; peak task memory 405373760 B
+[03:59:37] row 624 (verdict: component (fixed)) written; peak task memory 186938754 B
+[03:59:37] row 625 (verdict: component (fixed)) written; peak task memory 186933729 B
+[03:59:37] row 626 (verdict: decoded-list) written; peak task memory 456509588 B
+[03:59:37] row 627 (verdict: decoded-list) written; peak task memory 405922278 B
+[03:59:37] row 628 (verdict: decoded-list) written; peak task memory 281658297 B
+[03:59:37] row 629 (verdict: decoded-list) written; peak task memory 486987349 B
+[03:59:37] row 630 (verdict: decoded-list) written; peak task memory 393158649 B
+[03:59:37] row 631 (verdict: decoded-list) written; peak task memory 405922278 B
+[03:59:37] row 632 (verdict: decoded-list) written; peak task memory 409983778 B
+[03:59:37] row 633 (verdict: decoded-list) written; peak task memory 454293128 B
+[03:59:37] row 634 (verdict: decoded-list) written; peak task memory 351971677 B
+[03:59:37] row 635 (verdict: decoded-list) written; peak task memory 308313808 B
+[03:59:37] row 636 (verdict: decoded-list) written; peak task memory 282553779 B
+[03:59:37] row 637 (verdict: decoded-list) written; peak task memory 317951346 B
+[03:59:37] row 639 (verdict: decoded-list) written; peak task memory 283051439 B
+[03:59:37] row 640 (verdict: decoded-list) written; peak task memory 318471900 B
+[03:59:37] row 645 (verdict: decoded-list) written; peak task memory 717965461 B
+[03:59:37] row 646 (verdict: decoded-list) written; peak task memory 435158236 B
+[03:59:37] row 647 (verdict: decoded-list) written; peak task memory 304387291 B
+[03:59:37] row 648 (verdict: decoded-list) written; peak task memory 697555439 B
+[03:59:37] row 649 (verdict: decoded-list) written; peak task memory 717965461 B
+[03:59:37] row 650 (verdict: decoded-list) written; peak task memory 335776590 B
+[03:59:37] row 651 (verdict: decoded-list) written; peak task memory 331763175 B
+[03:59:37] row 652 (verdict: decoded-list) written; peak task memory 526488122 B
+[03:59:37] row 653 (verdict: decoded-list) written; peak task memory 418902342 B
+[03:59:37] row 654 (verdict: decoded-list) written; peak task memory 697555439 B
+[03:59:37] row 655 (verdict: decoded-list) written; peak task memory 717965461 B
+[03:59:37] row 656 (verdict: decoded-list) written; peak task memory 335201737 B
+[03:59:37] row 657 (verdict: decoded-list) written; peak task memory 442367690 B
+[03:59:38] row 81 reproduction record written
+[03:59:39] row 82 reproduction record written
+[03:59:39] row 83 reproduction record written
+[03:59:40] row 85 reproduction record written
+[03:59:41] row 86 reproduction record written
+[03:59:41] row 87 reproduction record written
+[03:59:42] row 88 reproduction record written
+[03:59:43] row 89 reproduction record written
+[03:59:43] row 90 reproduction record written
+[03:59:43] row 91 reproduction record written
+[03:59:44] row 93 reproduction record written
+[03:59:45] row 95 reproduction record written
+[03:59:45] row 97 reproduction record written
+[03:59:45] row 99 reproduction record written
+[03:59:46] row 101 reproduction record written
+[03:59:47] row 118 reproduction record written
+[03:59:47] row 119 reproduction record written
+[03:59:47] row 624 reproduction record written
+[03:59:47] row 625 reproduction record written
+[03:59:47] row 626 reproduction record written
+[03:59:47] row 627 reproduction record written
+[03:59:47] row 628 reproduction record written
+[03:59:47] row 629 reproduction record written
+[03:59:48] row 630 reproduction record written
+[03:59:48] row 631 reproduction record written
+[03:59:48] row 632 reproduction record written
+[03:59:48] row 633 reproduction record written
+[03:59:48] row 634 reproduction record written
+[03:59:48] row 635 reproduction record written
+[03:59:48] row 636 reproduction record written
+[03:59:48] row 637 reproduction record written
+[03:59:48] row 639 reproduction record written
+[03:59:48] row 640 reproduction record written
+[03:59:48] row 645 reproduction record written
+[03:59:48] row 646 reproduction record written
+[03:59:48] row 647 reproduction record written
+[03:59:48] row 648 reproduction record written
+[03:59:48] row 649 reproduction record written
+[03:59:48] row 650 reproduction record written
+[03:59:48] row 651 reproduction record written
+[03:59:48] row 652 reproduction record written
+[03:59:48] row 653 reproduction record written
+[03:59:48] row 654 reproduction record written
+[03:59:48] row 655 reproduction record written
+[03:59:48] row 656 reproduction record written
+[03:59:48] row 657 reproduction record written
+[03:59:49] done: outcomes {'computed': 46, 'no statistic': 66, 'not run': 82}

@@ -1,0 +1,349 @@
+{
+  "id": "ASDG-AUD-E4-apparatus / R2 Giacomel 2026 (prereg §3.3)",
+  "citation": "giacomel2026cartography",
+  "source_repo": "github.com/alegiac95/METAXCAN_TWAS_ANALYSIS@e045bc51961b0425f51bbdf54672d59222cfa8b9",
+  "scheme_mapping": {
+    "combined": "<DIS>_TPRS_thr_<thr>.tsv / <DIS>_cortical_corr_<thr>.tsv / <DIS>_cortical_correlations_results.tsv",
+    "up_only": "_TPRS_pos_ / _cortical_top_pos_",
+    "down_only": "_TPRS_neg_ / _cortical_top_neg_",
+    "abs_not_in_paper": "_TPRS_abs_ / _cortical_abs_"
+  },
+  "procedure": {
+    "spins": "netneurotools 0.2.5 stats.gen_spinsamples(method='vasa', n_rotate=1000, seed=2024)",
+    "centroids": "netneurotools 0.2.5 freesurfer.find_parcel_centroids(fsaverage5, sphere, surface), left hemisphere (34)",
+    "null": "Spearman(enigma, gedar[spins[:, i]]) for i=1..999",
+    "p": "one-sided in sign of rho: #{null > rho}/1000 if rho>0 else #{null < rho}/1000 (their code)"
+  },
+  "identity": {
+    "identical": false,
+    "max_abs_diff": 1.3585202035509214,
+    "tolerance": 1e-06,
+    "neuromaps_identical": false,
+    "neuromaps_max_abs_diff": 1.3585202035509214,
+    "neuromaps_spins_equal_nnt025_spins": true,
+    "centroid_max_abs_diff_nibabel_vs_nnt025": 0.0
+  },
+  "branch": "not identical: rho +-0.001, p +- 3*sqrt(2)*sqrt(p(1-p)/1000)",
+  "cells": [
+    {
+      "disorder": "MDD",
+      "threshold_pct": 10,
+      "rho_paper": 0.529,
+      "p_paper": 0.005,
+      "rho_table": 0.5286882130182518,
+      "p_table": 0.005,
+      "rho_ours": 0.5286882130182518,
+      "p_ours": 0.005,
+      "p_from_shipped_null": 0.005,
+      "rho_neuromaps": 0.5286882130182518,
+      "p_neuromaps": 0.005,
+      "null_maxabs_diff_vs_shipped": 0.0,
+      "null_maxabs_diff_neuromaps_vs_shipped": 0.0,
+      "rho_pass": true,
+      "p_pass": true,
+      "p_tolerance": 0.009463086177352505,
+      "rho_tolerance": 0.001,
+      "abs_rho_diff": 0.00031178698174827435,
+      "abs_p_diff": 0.0,
+      "pass": true,
+      "table_matches_paper_3dp": true
+    },
+    {
+      "disorder": "MDD",
+      "threshold_pct": 5,
+      "rho_paper": 0.546,
+      "p_paper": 0.003,
+      "rho_table": 0.54656582022147,
+      "p_table": 0.003,
+      "rho_ours": 0.54656582022147,
+      "p_ours": 0.003,
+      "p_from_shipped_null": 0.003,
+      "rho_neuromaps": 0.54656582022147,
+      "p_neuromaps": 0.003,
+      "null_maxabs_diff_vs_shipped": 0.0,
+      "null_maxabs_diff_neuromaps_vs_shipped": 0.0,
+      "rho_pass": true,
+      "p_pass": true,
+      "p_tolerance": 0.007337438245055288,
+      "rho_tolerance": 0.001,
+      "abs_rho_diff": 0.0005658202214700037,
+      "abs_p_diff": 0.0,
+      "pass": true,
+      "table_matches_paper_3dp": true
+    },
+    {
+      "disorder": "MDD",
+      "threshold_pct": 1,
+      "rho_paper": 0.531,
+      "p_paper": 0.003,
+      "rho_table": 0.5309802139417413,
+      "p_table": 0.003,
+      "rho_ours": 0.5309802139417413,
+      "p_ours": 0.003,
+      "p_from_shipped_null": 0.003,
+      "rho_neuromaps": 0.5309802139417413,
+      "p_neuromaps": 0.003,
+      "null_maxabs_diff_vs_shipped": 0.0,
+      "null_maxabs_diff_neuromaps_vs_shipped": 0.0,
+      "rho_pass": true,
+      "p_pass": true,
+      "p_tolerance": 0.007337438245055288,
+      "rho_tolerance": 0.001,
+      "abs_rho_diff": 1.978605825869728e-05,
+      "abs_p_diff": 0.0,
+      "pass": true,
+      "table_matches_paper_3dp": true
+    },
+    {
+      "disorder": "ASD",
+      "threshold_pct": 1,
+      "rho_paper": -0.15,
+      "p_paper": 0.252,
+      "rho_table": -0.1505048277746123,
+      "p_table": 0.252,
+      "rho_ours": -0.022025096747504243,
+      "p_ours": 0.476,
+      "p_from_shipped_null": 0.252,
+      "rho_neuromaps": -0.022025096747504243,
+      "p_neuromaps": 0.476,
+      "null_maxabs_diff_vs_shipped": 0.9925059221844101,
+      "null_maxabs_diff_neuromaps_vs_shipped": 0.9925059221844101,
+      "rho_pass": false,
+      "p_pass": false,
+      "p_tolerance": 0.058248845482120934,
+      "rho_tolerance": 0.001,
+      "abs_rho_diff": 0.12797490325249575,
+      "abs_p_diff": 0.22399999999999998,
+      "pass": false,
+      "table_matches_paper_3dp": true
+    },
+    {
+      "disorder": "ASD",
+      "threshold_pct": 5,
+      "rho_paper": 0.413,
+      "p_paper": 0.073,
+      "rho_table": 0.4125117078334649,
+      "p_table": 0.073,
+      "rho_ours": -0.05338026920054848,
+      "p_ours": 0.446,
+      "p_from_shipped_null": 0.073,
+      "rho_neuromaps": -0.05338026920054848,
+      "p_neuromaps": 0.446,
+      "null_maxabs_diff_vs_shipped": 1.3585202035509214,
+      "null_maxabs_diff_neuromaps_vs_shipped": 1.3585202035509214,
+      "rho_pass": false,
+      "p_pass": false,
+      "p_tolerance": 0.034900974198437504,
+      "rho_tolerance": 0.001,
+      "abs_rho_diff": 0.4663802692005485,
+      "abs_p_diff": 0.373,
+      "pass": false,
+      "table_matches_paper_3dp": true
+    },
+    {
+      "disorder": "ASD",
+      "threshold_pct": 10,
+      "rho_paper": -0.053,
+      "p_paper": 0.423,
+      "rho_table": -0.0533802692005484,
+      "p_table": 0.423,
+      "rho_ours": 0.10400740130765894,
+      "p_ours": 0.397,
+      "p_from_shipped_null": 0.423,
+      "rho_neuromaps": 0.10400740130765894,
+      "p_neuromaps": 0.397,
+      "null_maxabs_diff_vs_shipped": 0.6963907325790752,
+      "null_maxabs_diff_neuromaps_vs_shipped": 0.6963907325790752,
+      "rho_pass": false,
+      "p_pass": true,
+      "p_tolerance": 0.066281807458759,
+      "rho_tolerance": 0.001,
+      "abs_rho_diff": 0.15700740130765894,
+      "abs_p_diff": 0.025999999999999968,
+      "pass": false,
+      "table_matches_paper_3dp": true
+    }
+  ],
+  "overall_R2_pass": false,
+  "reconciliation": {
+    "note": "Descriptor for the K2 'unless reconciled to a documented source difference' clause; the prereg verdict is overall_R2_pass on the pinned-commit inputs.",
+    "source": "ASD_TPRS_thr_<thr>.tsv at alegiac95/METAXCAN_TWAS_ANALYSIS@eda33abddd5acd396caa0ace2817a0bcd427cfe5",
+    "documented_difference": "commit 94df2231248134ea083aa3ddc4bb01baf8df1171 (2024-04-30, 'Add top up and down regulated genes + abs results') modified results/ASD/ASD_TPRS_thr_{0.1,0.5,1,5,10}.tsv but not ASD_cortical_corr_*.tsv or ASD_cortical_correlations_results.tsv (last changed in eda33ab, 2024-04-16); MDD_TPRS_thr_* last changed in eda33ab",
+    "identical": true,
+    "max_abs_diff": 0.0,
+    "cells": [
+      {
+        "disorder": "ASD",
+        "threshold_pct": 1,
+        "rho_paper": -0.15,
+        "p_paper": 0.252,
+        "rho_ours": -0.15050482777461235,
+        "p_ours": 0.252,
+        "null_maxabs_diff_vs_shipped": 0.0,
+        "rho_pass": true,
+        "p_pass": true,
+        "p_tolerance": 0.001,
+        "pass": true
+      },
+      {
+        "disorder": "ASD",
+        "threshold_pct": 5,
+        "rho_paper": 0.413,
+        "p_paper": 0.073,
+        "rho_ours": 0.41251170783346497,
+        "p_ours": 0.073,
+        "null_maxabs_diff_vs_shipped": 0.0,
+        "rho_pass": true,
+        "p_pass": true,
+        "p_tolerance": 0.001,
+        "pass": true
+      },
+      {
+        "disorder": "ASD",
+        "threshold_pct": 10,
+        "rho_paper": -0.053,
+        "p_paper": 0.423,
+        "rho_ours": -0.05338026920054848,
+        "p_ours": 0.423,
+        "null_maxabs_diff_vs_shipped": 0.0,
+        "rho_pass": true,
+        "p_pass": true,
+        "p_tolerance": 0.001,
+        "pass": true
+      }
+    ],
+    "all_asd_cells_pass": true,
+    "inputs": {
+      "giacomel2026_repo_eda33ab/results/ASD/ASD_TPRS_thr_1.tsv": "58fa941a722a9ec16ce911d2d470895e0ccf6b59199f7b5997ed90881327bc67",
+      "giacomel2026_repo_eda33ab/results/ASD/ASD_TPRS_thr_5.tsv": "8b33a6799f409b957678a34be42398a631152c67336d75ca0c57694f09813401",
+      "giacomel2026_repo_eda33ab/results/ASD/ASD_TPRS_thr_10.tsv": "b93820fbe411f6a54029aca7eaadb2d5677d3116a0b9b17c0055b38621fa9ed6"
+    },
+    "mdd_cells_pass_pinned": true,
+    "R2_pass_if_reconciled": true
+  },
+  "plants": {
+    "null_value_perturbed_1e-5_breaks_identity": {
+      "caught": true
+    },
+    "spins_seed_2025_break_identity": {
+      "caught": true,
+      "max_abs_diff": 1.1534114900897885
+    },
+    "rho_paper_plus_0.002_fails_rho_clause": {
+      "caught": true
+    },
+    "p_shifted_beyond_tolerance_fails_p_clause_identical_branch": {
+      "caught": true
+    },
+    "p_shifted_beyond_tolerance_fails_p_clause_nonidentical_branch": {
+      "caught": true
+    }
+  },
+  "plants_all_caught": true,
+  "versions": {
+    "main": [
+      "python=3.13.5",
+      "numpy=2.4.6",
+      "scipy=1.18.1",
+      "pandas=3.0.6",
+      "nibabel=5.4.2",
+      "neuromaps=0.0.7"
+    ],
+    "nnt_worker": [
+      "netneurotools=0.2.5",
+      "numpy=1.26.4",
+      "scipy=1.15.3",
+      "python=3.10.20"
+    ],
+    "nnt_worker_python": "C:\\Users\\info\\AppData\\Local\\Temp\\claude\\d--RESEARCH\\5b88368b-d4d3-46f0-820d-c5c29d4c70ea\\scratchpad\\nnt025\\Scripts\\python.exe",
+    "nnt_worker_freeze": [
+      "bctpy==0.6.1",
+      "certifi==2026.7.22",
+      "charset-normalizer==3.5.1",
+      "cloudpickle==3.1.2",
+      "colorama==0.4.6",
+      "contourpy==1.3.2",
+      "cycler==0.12.1",
+      "et-xmlfile==2.0.0",
+      "fonttools==4.65.0",
+      "idna==3.20",
+      "importlib-resources==7.1.0",
+      "joblib==1.6.0",
+      "kiwisolver==1.5.1",
+      "lxml==6.1.3",
+      "matplotlib==3.10.9",
+      "netneurotools==0.2.5",
+      "nibabel==5.4.2",
+      "nilearn==0.10.4",
+      "numpy==1.26.4",
+      "openpyxl==3.1.5",
+      "packaging==26.3",
+      "pandas==1.5.3",
+      "pillow==12.3.0",
+      "pyparsing==3.3.3",
+      "python-dateutil==2.9.0.post0",
+      "pytz==2026.3.post1",
+      "requests==2.34.2",
+      "scikit-learn==1.7.2",
+      "scipy==1.15.3",
+      "six==1.17.0",
+      "threadpoolctl==3.7.0",
+      "tqdm==4.70.1",
+      "typing-extensions==4.16.0",
+      "urllib3==2.8.0"
+    ]
+  },
+  "inputs": {
+    "giacomel2026_repo/data/ENIGMA/ENIGMA_structural_organised.xlsx": "a4d4feecb028366c6ccd2ee06b216fc2be758e9b6cf92b039549b78ab5d888c8",
+    "giacomel2026_repo/data/DK-files/atlas-DK_fsa5_lh_aparc.annot": "74d1c2fd5e6b7ca193f06fee45a86f5638f347e38cea5ba27fce9fd69c0056be",
+    "giacomel2026_repo/data/DK-files/atlas-DK_fsa5_rh_aparc.annot": "ca86b3b0bd5b74e367519dd94157154ae7c61ad128680fcc7b52e1a799e34e9f",
+    "nnt_data/tpl-fsaverage/fsaverage5/surf/lh.sphere": "5772df32ee7a0eaaf1f3296a3c4f1c51c075e7fe58e53cbc92bdb5ddec62fbf4",
+    "nnt_data/tpl-fsaverage/fsaverage5/surf/rh.sphere": "5772df32ee7a0eaaf1f3296a3c4f1c51c075e7fe58e53cbc92bdb5ddec62fbf4",
+    "giacomel2026_repo/results/MDD/MDD_cortical_correlations_results.tsv": "50420d24bf82fec54de97478f11e508cdbf1b190ad599a5112f57295a01eac9e",
+    "giacomel2026_repo/results/ASD/ASD_cortical_correlations_results.tsv": "5df971b076c9ec80dd67593897ec2e3362972848cc6e14c1762c27f4d604ca51",
+    "giacomel2026_repo/code/spatial_transcriptomics_analysis.py": "5baa38e5fe6720e896c87381a0e02f9e97be334b0255dd92e4a3d045cdeccbc3",
+    "giacomel2026_repo/code/PTRS_estimation.R": "be38bfda8ec9f4054c1ec789c0ae6cfc3e41684d851ac7a3787bb35a92e55898",
+    "giacomel2026_repo/results/MDD/MDD_TPRS_thr_10.tsv": "66258b5a911b44232e7bdb9eff7283bf943ea638b624868fdbbd2ca68d07f6c8",
+    "giacomel2026_repo/results/MDD/MDD_TPRS_thr_5.tsv": "932a78bbc75e6b82dc3e714cf57e5f7d90045a4672f8c5e0215250e0af154d29",
+    "giacomel2026_repo/results/MDD/MDD_TPRS_thr_1.tsv": "b15cc69180f015f33e72998e7f73e8e8ea784de75a9c4b9f1484b18af01e0aea",
+    "giacomel2026_repo/results/ASD/ASD_TPRS_thr_1.tsv": "3b62b0e1d4596579639eb04ed799c6ddb7d64ec35ad15c0049087b98fdbd5d58",
+    "giacomel2026_repo/results/ASD/ASD_TPRS_thr_5.tsv": "a761413628e43c9ca7c76b87ed077c6c0fb9a05b3889f97594c0cd30f3c310cb",
+    "giacomel2026_repo/results/ASD/ASD_TPRS_thr_10.tsv": "10a4e56fc501017422cc98e513d5c81605c590a54c932c51d874f102b48cc765",
+    "giacomel2026_repo/results/MDD/MDD_cortical_corr_10.tsv": "2cda2ab94ec0b8cc20d8aa347c66bc39c2aef87ec593e5221b7b91f1a97a37e5",
+    "giacomel2026_repo/results/MDD/MDD_cortical_corr_5.tsv": "5262e04c0158a7de7caa2e25a6c56f1592aa45baf1d03c192e0cd343eb83ae24",
+    "giacomel2026_repo/results/MDD/MDD_cortical_corr_1.tsv": "8bd555bc5d37a1ff6170f4bde416ce6d47fa1997c4b2000b4b14e153f40a943d",
+    "giacomel2026_repo/results/ASD/ASD_cortical_corr_1.tsv": "a411b422fd217dc6b8ecd78336090611f5fbf49bd0bd6a5d82f23ef624bb6aaa",
+    "giacomel2026_repo/results/ASD/ASD_cortical_corr_5.tsv": "b124778a9f24bb94d53ac2b06ab42f463979ff7d9d21401110831404234125fe",
+    "giacomel2026_repo/results/ASD/ASD_cortical_corr_10.tsv": "207f1ffa1258d953b57223def477210532baef708558a190fd615ea21352c45f"
+  },
+  "loads": {
+    "MDD_10": {
+      "map": "results/MDD/MDD_TPRS_thr_10.tsv",
+      "null": "results/MDD/MDD_cortical_corr_10.tsv"
+    },
+    "MDD_5": {
+      "map": "results/MDD/MDD_TPRS_thr_5.tsv",
+      "null": "results/MDD/MDD_cortical_corr_5.tsv"
+    },
+    "MDD_1": {
+      "map": "results/MDD/MDD_TPRS_thr_1.tsv",
+      "null": "results/MDD/MDD_cortical_corr_1.tsv"
+    },
+    "ASD_1": {
+      "map": "results/ASD/ASD_TPRS_thr_1.tsv",
+      "null": "results/ASD/ASD_cortical_corr_1.tsv"
+    },
+    "ASD_5": {
+      "map": "results/ASD/ASD_TPRS_thr_5.tsv",
+      "null": "results/ASD/ASD_cortical_corr_5.tsv"
+    },
+    "ASD_10": {
+      "map": "results/ASD/ASD_TPRS_thr_10.tsv",
+      "null": "results/ASD/ASD_cortical_corr_10.tsv"
+    }
+  },
+  "script": "arcs/audit/src/e4_r2_giacomel.py",
+  "script_sha256": "288c5ea23454ee697cee3f5e52f060c0ed97ac49aafa4fbbe80d346e6010cd2f",
+  "git_head": "474cd5186b5ae71517f50514ef950b9a2ccbf8fe",
+  "script_dirty_vs_head": true
+}

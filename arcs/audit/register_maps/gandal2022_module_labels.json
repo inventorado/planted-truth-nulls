@@ -1,0 +1,25 @@
+{
+ "what": "Gandal et al. 2022 (Nature 611:532, doi 10.1038/s41586-022-05377-7; PMC9668748): the function labels the paper prints for its co-expression modules, transcribed from the two figures that print them (register DRAFT v6.6, B2; the name rule of section 1.1 maps Pagani's printed module names to these labels). Supplementary Data 5 (module membership) and Extended Data Fig. 7 (all 35 gene modules) print module ids only. v6.7 N6 CORRECTION: v6.6 called these 'the only module names the source gives besides the module ids' -- wrong: Gandal's Results text also describes modules in words, among them GeneM3 ('a neuronal module enriched for energy generation and neuronal processes that are highly energy dependent, such as vesicle transport and release') and GeneM5 ('contains many neuronal genes involved in synaptic vesicle function, cytoskeleton and synaptic plasticity'); the figure labels stay the primary view's names (R-d), the two text descriptions are read by the registered near-miss view only (register 1.6, v6.7).",
+ "blind_check": "v6.7: an independent blind re-transcription of both figures (the v6.6 re-check of b5335d1) matches every label; the labels are kept as transcribed",
+ "transcribed": "2026-09-27, from the PMC figure images below (read by eye; label text as printed, the module id and the '(n = ... genes)' parts split off)",
+ "figures": [
+  {"figure": "Fig. 3a", "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/af98/9668748/ab4c8e9bb88f/41586_2022_5377_Fig3_HTML.jpg",
+   "sha256": "42bb7c2dba9e6821ef3d6feb940daf6028cc941aa8b97f1a15eae445ad74d8ff"},
+  {"figure": "Fig. 4a", "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/af98/9668748/85cfc3a5c3a3/41586_2022_5377_Fig4_HTML.jpg",
+   "sha256": "8a7096d7fe1ff21ea2341485d4897a3ac8079223c18d0b8ff3bb57028e18f9bb"}
+ ],
+ "labels": [
+  {"figure": "Fig. 3a", "module": "GeneM9", "label": "neuronal noncoding genes", "printed_n_genes": 243},
+  {"figure": "Fig. 3a", "module": "GeneM32", "label": "reactive astrocyte", "printed_n_genes": 65},
+  {"figure": "Fig. 3a", "module": "IsoformM37", "label": "protein folding", "printed_n_genes": 64, "note": "an isoform module (n = isoforms)"},
+  {"figure": "Fig. 3a", "module": "GeneM24", "label": "blood-brain barrier membrane transport", "printed_n_genes": 102},
+  {"figure": "Fig. 3a", "module": "GeneM5", "label": "synaptic plasticity", "printed_n_genes": 398},
+  {"figure": "Fig. 4a", "module": "GeneM7", "label": "immune response", "printed_n_genes": null},
+  {"figure": "Fig. 4a", "module": "GeneM8", "label": "reactive microglia", "printed_n_genes": null},
+  {"figure": "Fig. 4a", "module": "GeneM4", "label": "neuronal signal transduction", "printed_n_genes": null},
+  {"figure": "Fig. 4a", "module": "GeneM23", "label": "oligo organelle regulation", "printed_n_genes": null},
+  {"figure": "Fig. 4a", "module": "GeneM14", "label": "neurite morphogenesis", "printed_n_genes": null},
+  {"figure": "Fig. 4a", "module": "GeneM3", "label": "neuronal energy processes", "printed_n_genes": null}
+ ],
+ "check": "the printed n of the four Fig. 3a gene modules (243, 65, 102, 398) equal the module sizes of Supplementary Data 5 'Gene_Level' (asserted by s_build.py)"
+}

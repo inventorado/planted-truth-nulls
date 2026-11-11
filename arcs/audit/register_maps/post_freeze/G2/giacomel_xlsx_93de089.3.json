@@ -1,0 +1,154 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "giacomel_xlsx_93de089",
+ "gate": "G2",
+ "url": "https://raw.githubusercontent.com/alegiac95/METAXCAN_TWAS_ANALYSIS/93de089b614f72bda25f441518ad04b1e938fb9b/data/ENIGMA/ENIGMA_structural_organised.xlsx",
+ "kind": "workbook",
+ "date_utc": "2026-10-20T22:27:49+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "fetch": {
+  "source": "copy on disk",
+  "path": "E:/data/asdg/giacomel_xlsx_93de089/carrier.xlsx"
+ },
+ "identity": {
+  "facts": {
+   "bytes": 16073,
+   "sha256": "15101878fd0cae3763bcdd46f4ee9c28aeece550a1d40f9de73cc049230dcea0",
+   "md5": "633b0fc3265bd9fcf3950613aa31bd3b",
+   "git_blob": "46323903b2c05730e9b1c61760a11c310234edee",
+   "has_crlf": true,
+   "git_blob_lf": "b4e883e4b673c50d7cfa9ea2bd52826e89410789",
+   "bytes_lf": 16072
+  },
+  "references": [
+   {
+    "basis": "git blob",
+    "bytes": 16073,
+    "git_blob": "46323903b2c05730e9b1c61760a11c310234edee"
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "git blob",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "sheets": {
+  "n_sheets": 3,
+  "n_declared": 2,
+  "declared_found": 2,
+  "n_undeclared": 1,
+  "undeclared_not_fetched": true,
+  "name_sha256": [
+   "0905f7f59021c2a85f1c0a50d7c252a3e6c6ee006514f01d7264097f1fd4337a",
+   "7b5944144275ea10a17c903d2d06c015e34740dab2ea4930aeb7573b43bb635e",
+   "16c995252b9fe1a011aadf5bea4210362cd317ea2f9471392222165d812cbb8f"
+  ],
+  "screen_hits": {
+   "V": 0,
+   "N": 0
+  },
+  "declared": [
+   {
+    "sheet_key": "thickness",
+    "name_sha256": "7b5944144275ea10a17c903d2d06c015e34740dab2ea4930aeb7573b43bb635e",
+    "rules": "",
+    "identifier_bearing": false,
+    "n_rows": 35,
+    "n_cols": 8,
+    "n_cols_dimension_tag": 8,
+    "id_wording_cells": 0,
+    "bare_subject_headers": 0,
+    "id_value_hits_total": 0,
+    "header_rows_tried": 1,
+    "header_row": 0,
+    "positions_handed": [
+     0,
+     2,
+     4
+    ],
+    "n_rows_skipped_before_block": 0,
+    "n_block_rows": 34,
+    "n_cells_after_block": 0,
+    "n_after_block_matching_dk": 0,
+    "n_after_block_dropped_kind": 0
+   },
+   {
+    "sheet_key": "subcortical",
+    "name_sha256": "16c995252b9fe1a011aadf5bea4210362cd317ea2f9471392222165d812cbb8f",
+    "rules": "",
+    "identifier_bearing": false,
+    "n_rows": 8,
+    "n_cols": 8,
+    "n_cols_dimension_tag": 8,
+    "id_wording_cells": 0,
+    "bare_subject_headers": 0,
+    "id_value_hits_total": 0,
+    "header_rows_tried": 1,
+    "header_row": 0,
+    "positions_handed": [
+     0,
+     2,
+     4
+    ],
+    "n_rows_skipped_before_block": 0,
+    "n_block_rows": 7,
+    "n_cells_after_block": 0,
+    "n_after_block_matching_dk": 0,
+    "n_after_block_dropped_kind": 0
+   }
+  ],
+  "access_log": [
+   "7b5944144275ea10a17c903d2d06c015e34740dab2ea4930aeb7573b43bb635e",
+   "16c995252b9fe1a011aadf5bea4210362cd317ea2f9471392222165d812cbb8f"
+  ],
+  "access_log_declared_only": true,
+  "parts_opened_undeclared": 0,
+  "chartsheets": 0
+ },
+ "positions_consumed": {
+  "thickness": [
+   0,
+   2,
+   4
+  ],
+  "subcortical": [
+   0,
+   2,
+   4
+  ]
+ },
+ "positions_handed": {
+  "thickness": [
+   0,
+   2,
+   4
+  ],
+  "subcortical": [
+   0,
+   2,
+   4
+  ]
+ },
+ "identifier_bearing": false,
+ "extraction": {
+  "object_path": "D:/RESEARCH/asd-imaging-genetics/artifacts/audit/wp4/G2/giacomel_xlsx_93de089/giacomel_xlsx_93de089_extract.json",
+  "object_sha256": "e944c4d13103a635d3e0dda030fa70b5fe9bd7aa244bcb71f47e337953f44287"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "extracted"
+}

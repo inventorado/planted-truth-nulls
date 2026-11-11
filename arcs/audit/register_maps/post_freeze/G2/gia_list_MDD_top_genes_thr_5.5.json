@@ -1,0 +1,57 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "gia_list_MDD_top_genes_thr_5",
+ "gate": "G2",
+ "url": "https://raw.githubusercontent.com/alegiac95/METAXCAN_TWAS_ANALYSIS/e045bc51961b0425f51bbdf54672d59222cfa8b9/results/MDD/MDD_top_genes_thr_5.tsv",
+ "kind": "file",
+ "date_utc": "2026-10-21T00:05:01+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "fetch": {
+  "source": "copy on disk",
+  "path": "E:/data/asdg/gia_list_MDD_top_genes_thr_5/carrier.tsv"
+ },
+ "identity": {
+  "facts": {
+   "bytes": 6309,
+   "sha256": "64a8ce999d9354427d1ea720ad5f1b43695046da66a1f4374c82e27f5c17ebd8",
+   "md5": "a255455a3d757a8a4eba7af63e0dad0c",
+   "git_blob": "38e34d9ea1e2da4537083a728b8b94b94150f63c",
+   "has_crlf": false,
+   "git_blob_lf": null,
+   "bytes_lf": null
+  },
+  "references": [
+   {
+    "basis": "git blob",
+    "bytes": 6309,
+    "git_blob": "38e34d9ea1e2da4537083a728b8b94b94150f63c"
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "git blob",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "identifier_bearing": false,
+ "extraction": {
+  "object_path": "D:/RESEARCH/asd-imaging-genetics/artifacts/audit/wp4/G2/gia_list_MDD_top_genes_thr_5/gia_list_MDD_top_genes_thr_5_extract.json",
+  "object_sha256": "d663aa5ebcaa1bf2a0a224a575d8cdf1ab4642c8d251df52000905ef2ad2ed7b"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "extracted"
+}

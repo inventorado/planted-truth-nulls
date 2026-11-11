@@ -1,0 +1,147 @@
+{
+ "what": "MOR-C1..C3 R27 block: the WP3 run's code vs the pre-WP4 fix (run.component_r27); no statistic recomputed (a1_audit.r27_relabel)",
+ "script": "arcs/audit/src/a1_audit/r27_relabel.py",
+ "code": {
+  "old": "run.py r27_for_map at the run commit 6b8fb62 (kind == 'component')",
+  "new": "run.py component_r27 (COMPONENT_KINDS = ['component-permutation', 'component-parametric']), committed with this file",
+  "generated_at_head": "221691af5c90a42503d0e181d569ca447e8b7d49"
+ },
+ "species_label_note": "not meaningful for a component claim (no species leg; prereg_amend_5.md:153-159: the component test is Level 0 and the site leg at .025); kept among the labels because a routing choice cannot remove a label (prereg_amend_5.md:199, :230; orchestrator decision on the pre-WP4 review, B2)",
+ "descriptor_rule": "a descriptor-routed component row (verdict.descriptor_row_record): the reading is the row's own descriptive reading (verdict.DESCRIPTIVE marker); the inner component reading is kept beside it as component_reading, marked DESCRIPTIVE the same way",
+ "revision": "pre-WP4 review B1 / B2: a descriptor-routed row keeps its DESCRIPTIVE reading; the species-leg label is kept in the labels with a note (it was moved out in 221691a)",
+ "cells": {
+  "MOR-C1": {
+   "row": 615,
+   "kind": "component-permutation",
+   "primary_status": "ok",
+   "input": {
+    "file": "arcs/audit/results/a1_run/ungated/verdict/row_0615.json",
+    "sha256": "0f22c73f1bf9f68c399c0a73e52b4a483659cc2a60b56b9653411029c65ab64d",
+    "committed_in": "7a5fef5e2b917440ca97a8add0fbbeffd6f40877"
+   },
+   "per_map": {
+    "0": {
+     "old_code": {
+      "reading": "not detectable at this power",
+      "labels": [
+       "power not measured in this class",
+       "power not measured at this set size"
+      ]
+     },
+     "new_code": {
+      "reading": "does not pass at component level (Level 0 and site leg at .025)",
+      "reading_r27": "not detectable at this power",
+      "labels": [
+       "power not measured in this class",
+       "power not measured at this set size"
+      ],
+      "labels_notes": null,
+      "component_reading": null,
+      "component_label": "site leg only; not calibrated against expression-aligned maps",
+      "reading_rule": "component level: the component reading (prereg_amend_5.md:156) beside R27's labels"
+     },
+     "unchanged": {
+      "power_columns": [
+       "V-AAL",
+       "V-DK"
+      ],
+      "reading_class": "MIST64",
+      "m": 24,
+      "R2_grad": 0.10042779092031384
+     }
+    }
+   }
+  },
+  "MOR-C2": {
+   "row": 616,
+   "kind": "component-permutation",
+   "primary_status": "ok",
+   "input": {
+    "file": "arcs/audit/results/a1_run/ungated/verdict/row_0616.json",
+    "sha256": "584afd1cf9a170062b58ecf0cc6abbb8e3657e046a07fb51175946b367d0923d",
+    "committed_in": "7a5fef5e2b917440ca97a8add0fbbeffd6f40877"
+   },
+   "per_map": {
+    "0": {
+     "old_code": {
+      "reading": "not detectable at this power",
+      "labels": [
+       "species leg untested (gradient)",
+       "power not measured in this class"
+      ]
+     },
+     "new_code": {
+      "reading": "does not pass at component level (Level 0 and site leg at .025)",
+      "reading_r27": "not detectable at this power",
+      "labels": [
+       "species leg untested (gradient)",
+       "power not measured in this class"
+      ],
+      "labels_notes": {
+       "species leg untested (gradient)": "not meaningful for a component claim (no species leg; prereg_amend_5.md:153-159: the component test is Level 0 and the site leg at .025); kept among the labels because a routing choice cannot remove a label (prereg_amend_5.md:199, :230; orchestrator decision on the pre-WP4 review, B2)"
+      },
+      "component_reading": null,
+      "component_label": "site leg only; not calibrated against expression-aligned maps",
+      "reading_rule": "component level: the component reading (prereg_amend_5.md:156) beside R27's labels"
+     },
+     "unchanged": {
+      "power_columns": [
+       "V-AAL",
+       "V-DK"
+      ],
+      "reading_class": "MIST64",
+      "m": 37,
+      "R2_grad": 0.45033893773058997
+     }
+    }
+   }
+  },
+  "MOR-C3": {
+   "row": 617,
+   "kind": "component-permutation",
+   "primary_status": "auditable (ungated)",
+   "input": {
+    "file": "arcs/audit/results/a1_run/ungated/verdict/row_0617.json",
+    "sha256": "30a6d15ea3b80a99a87b61746a04ed0c584bcb08f2c5377dcb51f0f6515bdd3b",
+    "committed_in": "7a5fef5e2b917440ca97a8add0fbbeffd6f40877"
+   },
+   "per_map": {
+    "0": {
+     "old_code": {
+      "reading": "auditable (ungated)",
+      "labels": [
+       "species leg untested (gradient)",
+       "power not measured in this class",
+       "power not measured at this set size"
+      ]
+     },
+     "new_code": {
+      "reading": "descriptive (not a verdict): does not pass at alpha .025",
+      "reading_r27": "auditable (ungated)",
+      "labels": [
+       "species leg untested (gradient)",
+       "power not measured in this class",
+       "power not measured at this set size"
+      ],
+      "labels_notes": {
+       "species leg untested (gradient)": "not meaningful for a component claim (no species leg; prereg_amend_5.md:153-159: the component test is Level 0 and the site leg at .025); kept among the labels because a routing choice cannot remove a label (prereg_amend_5.md:199, :230; orchestrator decision on the pre-WP4 review, B2)"
+      },
+      "component_reading": "descriptive (not a verdict): does not pass at component level (Level 0 and site leg at .025)",
+      "component_label": "site leg only; not calibrated against expression-aligned maps",
+      "reading_rule": "a descriptor-routed component row (verdict.descriptor_row_record): the reading is the row's own descriptive reading (verdict.DESCRIPTIVE marker); the inner component reading is kept beside it as component_reading, marked DESCRIPTIVE the same way"
+     },
+     "unchanged": {
+      "power_columns": [
+       "V-AAL",
+       "V-DK"
+      ],
+      "reading_class": "MIST64",
+      "m": 24,
+      "R2_grad": 0.45033893773058997
+     }
+    }
+   }
+  }
+ },
+ "replaces_sha256": "847c654cdda407079aab2a1e848ac73b4bc148d15722d00c45bdf388b513b2c4"
+}

@@ -1,0 +1,85 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "liu_t3_cortthick",
+ "gate": "G2",
+ "url": "https://github.com/MICA-MNI/ENIGMA/blob/b08974b55243060cbc1fad12c87048037446e8f7/enigmatoolbox/datasets/summary_statistics/asd_meta-analysis_case-controls_CortThick.csv",
+ "kind": "file",
+ "date_utc": "2026-11-02T09:07:42+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "fetch": {
+  "source": "pinned copy on disk",
+  "path_sha256": "c38abc02166323f9da693eab3b1d66372b53c2aa3d12538af8a9e168108df2f0",
+  "screen_hits": {
+   "V": 0,
+   "N": 0
+  }
+ },
+ "identity": {
+  "facts": {
+   "bytes": 5005,
+   "sha256": "ee076971be6688bc99106fce4a7198a3bd927d183adb245f9810d6f71efe4f29",
+   "md5": "6864ee83687d891c07acece5e70ac854",
+   "git_blob": "6eb2c4c846f0b6fff712a8db21df704fc80ed474",
+   "has_crlf": false,
+   "git_blob_lf": null,
+   "bytes_lf": null
+  },
+  "references": [
+   {
+    "basis": "git blob",
+    "bytes": 5005,
+    "git_blob": "6eb2c4c846f0b6fff712a8db21df704fc80ed474"
+   },
+   {
+    "basis": "sha256 of the copy on disk",
+    "bytes": 5005,
+    "sha256": "ee076971be6688bc99106fce4a7198a3bd927d183adb245f9810d6f71efe4f29"
+   },
+   {
+    "basis": "git blob",
+    "bytes": 5005,
+    "git_blob": "6eb2c4c846f0b6fff712a8db21df704fc80ed474"
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "git blob",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    },
+    {
+     "basis": "sha256 of the copy on disk",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    },
+    {
+     "basis": "git blob",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "identifier_bearing": false,
+ "extraction": {
+  "object_path": "D:/RESEARCH/asd-imaging-genetics/artifacts/audit/wp4/G2/liu_t3_cortthick/liu_t3_cortthick_extract.json",
+  "object_sha256": "03c6ab6989c5bee787a4ad2ed011c9b609ea0dd49b514392de275884a349440e"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "extracted"
+}

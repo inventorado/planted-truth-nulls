@@ -1,0 +1,142 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "liu_sd7_labels",
+ "gate": "ungated",
+ "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs42003-026-10045-x/MediaObjects/42003_2026_10045_MOESM3_ESM.xlsx",
+ "kind": "workbook",
+ "date_utc": "2026-10-11T22:40:38+00:00",
+ "pinned": {
+  "pinned_bytes": 1442234,
+  "pinned_sha256": "e2bd735c0f799d8a79f1f4f72d360d1d77a0570986a2beeb9b9be08ac8661242"
+ },
+ "fetch": {
+  "source": "pinned copy on disk",
+  "path_sha256": "1c18b29b9a35ebc937fa5895339f04d51ecf8437c9ccff9027aae0837867a973",
+  "screen_hits": {
+   "V": 0,
+   "N": 0
+  }
+ },
+ "identity": {
+  "facts": {
+   "bytes": 1442234,
+   "sha256": "e2bd735c0f799d8a79f1f4f72d360d1d77a0570986a2beeb9b9be08ac8661242",
+   "md5": "a7d54e926eb24d62271d6a0fc40e873e",
+   "git_blob": "d2746622c68a038472e847ef022f27e7f1ee3986",
+   "has_crlf": true,
+   "git_blob_lf": "f51eaec2d3c7e0273f36b6074fc6dcb8ec0d8b7f",
+   "bytes_lf": 1442213
+  },
+  "references": [
+   {
+    "basis": "pinned sha256",
+    "sha256": "e2bd735c0f799d8a79f1f4f72d360d1d77a0570986a2beeb9b9be08ac8661242",
+    "bytes": 1442234
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "pinned sha256",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "sheets": {
+  "n_sheets": 24,
+  "n_declared": 1,
+  "declared_found": 1,
+  "n_undeclared": 23,
+  "undeclared_not_fetched": true,
+  "name_sha256": [
+   "98ab7dfb80cf255fd031c56b9d6a2b4dd13ecf835d5b8c5f57ee4dcc0e9e797e",
+   "ccba2e4f64ccfca402e0eb59e25f724e6110ba2de451306650845a864461d258",
+   "dac9ca8f66726eef069f966825034e54a6f2dee09371d79c5cbb30c51d06c417",
+   "99ea7a7e6dac07f7644dafd042708173392f6a371707a9c4069bc571be07f404",
+   "f0d4272b531f84863e6e2d3dac29909d75d88ddcbf2eb50c86ee2ba9587e3d63",
+   "9a130aaf8c2e22a98da547859fa460ab0163b6f0afb0d381329d2c2684ea219d",
+   "dacb0ffbcccb5268a879bb98513969205e74d402143118a01986e0551a69a41b",
+   "d775a0a70732e94f5435c6194c28f842d4b3d0f0bc1484265f3aebc6b863e894",
+   "051266a4fffd45f3d06ec1966a58a71ab900ee15df04155d27de70977a2f41df",
+   "f16bd36b755b021e009be4eef7361f680699ba1ae2dc4ea7d023d17a46370b7a",
+   "4a90e49ea67b24f3ef40d138578f210e6d7ffe593a3f9ea82152bbd7dde67e9e",
+   "a376ec19538a5859b40600017daac5b5daca5ea6ce4a2578512340b26eeab269",
+   "e89fb9ff76852a66fc3de828c345918e8311c7d4a71b5c338c0c21816eb2defc",
+   "021c0684775bf1c715284ac6793fffd3586c8bcfb49e5e55b6d4074feb3027b3",
+   "6b1f80bc692009422ffe6b19902104c22e3a933a1a9705c33c5abcea1dc68221",
+   "9d4c78943ae9d7d0e7a8d5e6a2e03a5477827fb8bef19c37d66bcbaf334d889c",
+   "ced477d98ab596679afc3850eb3d193d344af0974c82001efdef8582511cdfdd",
+   "d0842d9de81de441b04f508b67d4ae8b00c474dbd3ab21c001afc4957d3547c2",
+   "1e9ae229551deb0d1e130791376325ff3f530288a5500c6e6ab7196511a475d6",
+   "f042260d8c9beb23718d7f4e5a6c793b53a730a456bf4fe6d0638613e607a795",
+   "bc0b80e3c1d32373504ff530c3ef85b0e4eae2efede600bf879feaaf22090dca",
+   "893a6f8357f838a3e129c4696bbd8d7aaf0f73984885528c63eabb7e000b9c96",
+   "b74bbfc2d6d8194bd34f34e318d501db97c6675300cd3a69200352c5e357f8d5",
+   "7c90fc9f1bdd89574a26c8e3e9f14915ccb2340adabc8f622f2d27e062c36bec"
+  ],
+  "screen_hits": {
+   "V": 0,
+   "N": 0
+  },
+  "declared": [
+   {
+    "sheet_key": "sd7",
+    "name_sha256": "4a90e49ea67b24f3ef40d138578f210e6d7ffe593a3f9ea82152bbd7dde67e9e",
+    "rules": "",
+    "identifier_bearing": false,
+    "n_rows": 107,
+    "n_cols": 16,
+    "n_cols_dimension_tag": 16,
+    "id_wording_cells": 0,
+    "bare_subject_headers": 0,
+    "id_value_hits_total": 0,
+    "header_rows_tried": 2,
+    "header_row": 1,
+    "positions_handed": [
+     0
+    ],
+    "sd7_pass": 1,
+    "n_rows_skipped_before_block": 0,
+    "n_block_rows": 105,
+    "n_cells_after_block": 0,
+    "n_after_block_matching_dk": 0,
+    "n_after_block_dropped_kind": 0
+   }
+  ],
+  "access_log": [
+   "4a90e49ea67b24f3ef40d138578f210e6d7ffe593a3f9ea82152bbd7dde67e9e"
+  ],
+  "access_log_declared_only": true,
+  "parts_opened_undeclared": 0,
+  "chartsheets": 0
+ },
+ "sheet_rule_matches": {
+  "sd7": 1
+ },
+ "positions_consumed": {
+  "sd7": [
+   0
+  ]
+ },
+ "positions_handed": {
+  "sd7": [
+   0
+  ]
+ },
+ "identifier_bearing": false,
+ "extraction": {
+  "object_path": "D:/RESEARCH/asd-imaging-genetics/artifacts/audit/wp3/ungated/liu_sd7_labels/liu_sd7_labels_extract.json",
+  "object_sha256": "5dd86cac8098affeac3af397b580b98986db6afad7536e952ad6e58e39a38be5"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "extracted"
+}

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this archive, please cite it as below."
+title: "Calibrating gene-set nulls for imaging transcriptomics with planted truths: where coexpression-matched and spatial nulls fail, a fourth-corner fix, and a preregistered demonstration on autism claims"
+type: software
+authors:
+  - family-names: "Lovecký"
+    given-names: "Radoslav"
+    affiliation: "Arperon"
+doi: "10.5281/zenodo.24130310"
+repository-code: "https://github.com/inventorado/planted-truth-nulls"
+license: MIT
+date-released: "2026-11-11"
+abstract: "Code, frozen preregistration and amendments, claims register, result files, figure and table scripts, and manuscript for paper P1."
+keywords:
+  - imaging transcriptomics
+  - gene-set enrichment
+  - null models
+  - planted truths
+  - spatial autocorrelation

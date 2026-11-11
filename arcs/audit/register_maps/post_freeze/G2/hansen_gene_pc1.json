@@ -1,0 +1,73 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "hansen_gene_pc1",
+ "gate": "G2",
+ "url": "https://github.com/netneurolab/hansen_crossdisorder_vulnerability/blob/54d34055bd765a79777437f362fbaf338403926e/data/predictors/gene_pc1.csv",
+ "kind": "file",
+ "date_utc": "2026-10-17T17:39:55+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "fetch": {
+  "source": "pinned copy on disk",
+  "path_sha256": "25a9d6af94e2a4c08163c36c8d95ca6861d4a7b045643a7b978dea9086f388c7",
+  "screen_hits": {
+   "V": 0,
+   "N": 0
+  }
+ },
+ "identity": {
+  "facts": {
+   "bytes": 1805,
+   "sha256": "a078a86d4e6e48980fb12bd464d7b7684a0fc21925c3a5399c8d8e8e54e599d6",
+   "md5": "e29c9a6680167410abce51991cef437c",
+   "git_blob": "ef9f4a8133d1d050a0a55f4b8e024197612d8431",
+   "has_crlf": true,
+   "git_blob_lf": "a5caaf68f62e43b0c8ac7007ef2aa6094be9ca9d",
+   "bytes_lf": 1737
+  },
+  "references": [
+   {
+    "basis": "git blob",
+    "bytes": 1737,
+    "git_blob": "a5caaf68f62e43b0c8ac7007ef2aa6094be9ca9d"
+   },
+   {
+    "basis": "sha256 of the copy on disk",
+    "bytes": 1805,
+    "sha256": "a078a86d4e6e48980fb12bd464d7b7684a0fc21925c3a5399c8d8e8e54e599d6"
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "git blob after CRLF to LF conversion",
+     "result": "identity match",
+     "lf_conversion": true,
+     "size_equal": true,
+     "hash_equal": true
+    },
+    {
+     "basis": "sha256 of the copy on disk",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": true
+  }
+ },
+ "identifier_bearing": false,
+ "extraction": {
+  "object_path": "D:/RESEARCH/asd-imaging-genetics/artifacts/audit/wp4/G2/hansen_gene_pc1/hansen_gene_pc1_extract.json",
+  "object_sha256": "f5ad3be794b254d6131075b66be88be625e601b83122139ed447b930b8b357bb"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "extracted"
+}

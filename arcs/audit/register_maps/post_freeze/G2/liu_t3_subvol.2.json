@@ -1,0 +1,73 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "liu_t3_subvol",
+ "gate": "G2",
+ "url": "https://github.com/MICA-MNI/ENIGMA/blob/b08974b55243060cbc1fad12c87048037446e8f7/enigmatoolbox/datasets/summary_statistics/asd_meta-analysis_case-controls_SubVol.csv",
+ "kind": "file",
+ "date_utc": "2026-11-02T09:07:42+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "fetch": {
+  "source": "pinned copy on disk",
+  "path_sha256": "c5dce9a761bc3de12ff85721e04e68f173b6f9636e82ea24386ac161651c7f2e",
+  "screen_hits": {
+   "V": 0,
+   "N": 0
+  }
+ },
+ "identity": {
+  "facts": {
+   "bytes": 1092,
+   "sha256": "b2b0b02c260ec87c6ab22f40e6162ab8a475dab373390be1edd465910ca62066",
+   "md5": "ab84231b16caff264376bd37581170d4",
+   "git_blob": "0ec6cb158d6bc1786f793e824c0a70549f9f341d",
+   "has_crlf": true,
+   "git_blob_lf": "0298ed4f602d5ec0fa5511233a6c85c178531b49",
+   "bytes_lf": 1076
+  },
+  "references": [
+   {
+    "basis": "git blob",
+    "bytes": 1092,
+    "git_blob": "0ec6cb158d6bc1786f793e824c0a70549f9f341d"
+   },
+   {
+    "basis": "sha256 of the copy on disk",
+    "bytes": 1092,
+    "sha256": "b2b0b02c260ec87c6ab22f40e6162ab8a475dab373390be1edd465910ca62066"
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "git blob",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    },
+    {
+     "basis": "sha256 of the copy on disk",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "identifier_bearing": false,
+ "extraction": {
+  "object_path": "D:/RESEARCH/asd-imaging-genetics/artifacts/audit/wp4/G2/liu_t3_subvol/liu_t3_subvol_extract.json",
+  "object_sha256": "16e3e507507dea6e69e3f59c778c2cd54d2fba00ec4ff2d9dbe81cbd71be0645"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "extracted"
+}

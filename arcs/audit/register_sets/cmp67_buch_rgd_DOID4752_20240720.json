@@ -1,0 +1,386 @@
+{
+ "set_id": "cmp67_buch_rgd_DOID4752_20240720",
+ "status": "built (comparator, v6.6: the else-branch S and the pinned set of corroboration (a); source 1 in the gated carrier is checked first, under G1)",
+ "definition": "RGD human genes annotated to RDO DOID:4752 'multiple system atrophy' or a descendant (annotations of 2024-07-20)",
+ "source": {
+  "source_id": "cmp67_buch_rgd_DOID4752_20240720",
+  "files": [
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\rgd_wayback_2024-07-24\\homo_genes_rdo",
+    "sha256": "d64b8ea7ec1eacd4997f77a0332c92a0d3fbc1b3983e5de4588780fb786cd83c"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\rgd_wayback_2024-07-24\\extract\\RDO_20240720_v1.283.obo",
+    "sha256": "808671d49b5d17c05c64a822f7e703e48232b01f3c2e651df654e9a7c00e0d27"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\rgd_wayback_2024-07-24\\RDO_20240720_v1.283.obo.gz",
+    "sha256": "eb2a299f090abf4df7d20e3cf1ffabba65523369220d71feeccc352db15d9847"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\rgd_wayback_2024-07-24\\cdx_homo_genes_rdo.json",
+    "sha256": "21c640388a0dec9eca67a61470629d8d033cd051da0558fd08be795913f24633"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\rgd_wayback_2024-07-24\\capture_lengths.json",
+    "sha256": "43ffe0efd48b7e691bc8bc8fd14bb58fe6c811f5574a97618637318d9c55ed69"
+   }
+  ],
+  "url": "https://web.archive.org/web/20240724223811id_/https://download.rgd.mcw.edu/ontology/annotated_rgd_objects_by_ontology/homo_genes_rdo; https://download.rgd.mcw.edu/ontology/disease/2024/RDO_20240720_v1.283.obo.gz",
+  "release": "RGD annotations generated 2024-07-20 (Wayback capture 20240724223811); RDO 1.283"
+ },
+ "rule": "register 1.6 resolution rule (v6.6, R-a ... R-e; rule text sha256 43cefdcc81bee3cecb1d764150f9a6d39bf814f98525fd65006a4c0bbd3fa1a1, written 2026-09-27T02:56:44Z before any download): R-a ref 129 (RGD disease ontology): RGD's human gene -> RDO annotations (GAF 2.2) and RDO.obo; R-b earliest archived release after the date (the uniform archive rule, v6.7 (2)): the Wayback captures of the annotation file after 2021-11-29 are 20230606133203, 20240526215239, 20240724223811, 20240908071549, 20250324170409, 20260308044433; 20230606133203, 20240526215239 are cut short by the crawler (x-archive-orig-x-crawler-content-length), so the earliest COMPLETE capture, 20240724223811 ('date-generated: 2024-07-20'), is the earliest obtainable release; the ontology of the same week from RGD's own weekly archive, RDO 1.283 (v6.6: 'release substituted', 2026-09-19, when the one capture examined was a truncated one); R-c every gene annotated to the term or a descendant (is_a / part_of; RGD's ontology report shows a term's descendants' annotations by default -- 'show annotations for term's descendants' is checked), all evidence codes; a row qualified 'no_association' is not an association (1073 such rows)",
+ "labels": [
+  "S re-derived"
+ ],
+ "paper_size": null,
+ "n_raw_unique": 49,
+ "n_hgnc": 43,
+ "members_hgnc": [
+  "ABCB7",
+  "AMBRA1",
+  "AMER1",
+  "APTX",
+  "ATP2B3",
+  "ATP5F1B",
+  "ATP7A",
+  "ATXN1",
+  "ATXN2",
+  "AVP",
+  "CFAP96",
+  "COQ2",
+  "FAS",
+  "GDNF",
+  "HMOX1",
+  "HSPA5",
+  "HSPA8",
+  "HYOU1",
+  "IGF2",
+  "IL4I1",
+  "KLK6",
+  "MAPT",
+  "MFN2",
+  "MIR96",
+  "MT-ATP6",
+  "MT-ND6",
+  "MT3",
+  "NHSL2",
+  "NQO1",
+  "NUP62",
+  "P4HB",
+  "PDIA3",
+  "PGAM4",
+  "PHKA1",
+  "RTL9",
+  "SLC1A1",
+  "SLC6A6",
+  "SNCA",
+  "TBP",
+  "TSEN54",
+  "UFSP2",
+  "VAC14",
+  "VAC14-AS1"
+ ],
+ "mapping": {
+  "approved": 43,
+  "unmapped symbol": 6
+ },
+ "n_id_symbol_disagreements": 0,
+ "n_drops": 6,
+ "drops": [
+  {
+   "raw": "LOC108663993",
+   "reason": "unmapped symbol"
+  },
+  {
+   "raw": "LOC108663996",
+   "reason": "unmapped symbol"
+  },
+  {
+   "raw": "LOC112533671",
+   "reason": "unmapped symbol"
+  },
+  {
+   "raw": "LOC112997540",
+   "reason": "unmapped symbol"
+  },
+  {
+   "raw": "LOC130008791",
+   "reason": "unmapped symbol"
+  },
+  {
+   "raw": "LOC130008792",
+   "reason": "unmapped symbol"
+  }
+ ],
+ "universe": {
+  "dk-ctx": {
+   "n_in_universe": 36,
+   "n_columns": 36,
+   "columns": [
+    "ABCB7",
+    "AMBRA1",
+    "AMER1",
+    "APTX",
+    "ATP2B3",
+    "ATP5F1B",
+    "ATP7A",
+    "ATXN1",
+    "ATXN2",
+    "AVP",
+    "C4orf47",
+    "COQ2",
+    "FAS",
+    "GDNF",
+    "HMOX1",
+    "HSPA5",
+    "HSPA8",
+    "HYOU1",
+    "IL4I1",
+    "KLK6",
+    "MAPT",
+    "MFN2",
+    "MT3",
+    "NQO1",
+    "NUP62",
+    "P4HB",
+    "PDIA3",
+    "PGAM4",
+    "PHKA1",
+    "SLC1A1",
+    "SLC6A6",
+    "SNCA",
+    "TBP",
+    "TSEN54",
+    "UFSP2",
+    "VAC14"
+   ],
+   "outcome": "testable"
+  },
+  "V-DK": {
+   "n_in_universe": 36,
+   "n_columns": 36,
+   "columns": [
+    "ABCB7",
+    "AMBRA1",
+    "AMER1",
+    "APTX",
+    "ATP2B3",
+    "ATP5F1B",
+    "ATP7A",
+    "ATXN1",
+    "ATXN2",
+    "AVP",
+    "C4orf47",
+    "COQ2",
+    "FAS",
+    "GDNF",
+    "HMOX1",
+    "HSPA5",
+    "HSPA8",
+    "HYOU1",
+    "IL4I1",
+    "KLK6",
+    "MAPT",
+    "MFN2",
+    "MT3",
+    "NQO1",
+    "NUP62",
+    "P4HB",
+    "PDIA3",
+    "PGAM4",
+    "PHKA1",
+    "SLC1A1",
+    "SLC6A6",
+    "SNCA",
+    "TBP",
+    "TSEN54",
+    "UFSP2",
+    "VAC14"
+   ],
+   "outcome": "testable"
+  },
+  "V-AAL": {
+   "n_in_universe": 36,
+   "n_columns": 36,
+   "columns": [
+    "ABCB7",
+    "AMBRA1",
+    "AMER1",
+    "APTX",
+    "ATP2B3",
+    "ATP5F1B",
+    "ATP7A",
+    "ATXN1",
+    "ATXN2",
+    "AVP",
+    "C4orf47",
+    "COQ2",
+    "FAS",
+    "GDNF",
+    "HMOX1",
+    "HSPA5",
+    "HSPA8",
+    "HYOU1",
+    "IL4I1",
+    "KLK6",
+    "MAPT",
+    "MFN2",
+    "MT3",
+    "NQO1",
+    "NUP62",
+    "P4HB",
+    "PDIA3",
+    "PGAM4",
+    "PHKA1",
+    "SLC1A1",
+    "SLC6A6",
+    "SNCA",
+    "TBP",
+    "TSEN54",
+    "UFSP2",
+    "VAC14"
+   ],
+   "outcome": "testable"
+  },
+  "MIST64": {
+   "n_in_universe": 36,
+   "n_columns": 36,
+   "columns": [
+    "ABCB7",
+    "AMBRA1",
+    "AMER1",
+    "APTX",
+    "ATP2B3",
+    "ATP5F1B",
+    "ATP7A",
+    "ATXN1",
+    "ATXN2",
+    "AVP",
+    "C4orf47",
+    "COQ2",
+    "FAS",
+    "GDNF",
+    "HMOX1",
+    "HSPA5",
+    "HSPA8",
+    "HYOU1",
+    "IL4I1",
+    "KLK6",
+    "MAPT",
+    "MFN2",
+    "MT3",
+    "NQO1",
+    "NUP62",
+    "P4HB",
+    "PDIA3",
+    "PGAM4",
+    "PHKA1",
+    "SLC1A1",
+    "SLC6A6",
+    "SNCA",
+    "TBP",
+    "TSEN54",
+    "UFSP2",
+    "VAC14"
+   ],
+   "outcome": "testable"
+  }
+ },
+ "comparator_v6_6": {
+  "paper": "buch2023asdsubgroups",
+  "paper_received": "2021-11-29",
+  "names_in_paper": {
+   "methods": "multiple system atrophy",
+   "figure": "MSA"
+  },
+  "reference": {
+   "129": "Shimoyama et al. 2015, Nucleic Acids Res 43:D743 (RGD disease ontology)"
+  },
+  "R-a_source": "ref 129 (RGD disease ontology): RGD's human gene -> RDO annotations (GAF 2.2) and RDO.obo",
+  "url": "https://web.archive.org/web/20240724223811id_/https://download.rgd.mcw.edu/ontology/annotated_rgd_objects_by_ontology/homo_genes_rdo; https://download.rgd.mcw.edu/ontology/disease/2024/RDO_20240720_v1.283.obo.gz",
+  "release": "RGD annotations generated 2024-07-20 (Wayback capture 20240724223811); RDO 1.283",
+  "R-b_release_outcome": "earliest archived release after the date (the uniform archive rule, v6.7 (2)): the Wayback captures of the annotation file after 2021-11-29 are 20230606133203, 20240526215239, 20240724223811, 20240908071549, 20250324170409, 20260308044433; 20230606133203, 20240526215239 are cut short by the crawler (x-archive-orig-x-crawler-content-length), so the earliest COMPLETE capture, 20240724223811 ('date-generated: 2024-07-20'), is the earliest obtainable release; the ontology of the same week from RGD's own weekly archive, RDO 1.283 (v6.6: 'release substituted', 2026-09-19, when the one capture examined was a truncated one)",
+  "R-c_threshold": "every gene annotated to the term or a descendant (is_a / part_of; RGD's ontology report shows a term's descendants' annotations by default -- 'show annotations for term's descendants' is checked), all evidence codes; a row qualified 'no_association' is not an association (1073 such rows)",
+  "R-d_names": [
+   {
+    "query": "multiple system atrophy",
+    "tier": "a",
+    "id": "DOID:4752",
+    "name": "multiple system atrophy",
+    "label": "exact name",
+    "summary": "name rule (a): exact name -> DOID:4752 'multiple system atrophy'"
+   },
+   {
+    "query": "MSA",
+    "tier": null,
+    "id": null,
+    "name": null,
+    "label": "S undefined",
+    "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+   }
+  ],
+  "access_date": "2026-09-27",
+  "files": [
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\rgd_wayback_2024-07-24\\homo_genes_rdo",
+    "sha256": "d64b8ea7ec1eacd4997f77a0332c92a0d3fbc1b3983e5de4588780fb786cd83c"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\rgd_wayback_2024-07-24\\extract\\RDO_20240720_v1.283.obo",
+    "sha256": "808671d49b5d17c05c64a822f7e703e48232b01f3c2e651df654e9a7c00e0d27"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\rgd_wayback_2024-07-24\\RDO_20240720_v1.283.obo.gz",
+    "sha256": "eb2a299f090abf4df7d20e3cf1ffabba65523369220d71feeccc352db15d9847"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\rgd_wayback_2024-07-24\\cdx_homo_genes_rdo.json",
+    "sha256": "21c640388a0dec9eca67a61470629d8d033cd051da0558fd08be795913f24633"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\rgd_wayback_2024-07-24\\capture_lengths.json",
+    "sha256": "43ffe0efd48b7e691bc8bc8fd14bb58fe6c811f5574a97618637318d9c55ed69"
+   }
+  ],
+  "term": {
+   "id": "DOID:4752",
+   "name": "multiple system atrophy",
+   "n_terms_with_descendants": 17,
+   "n_genes_term_only": 14
+  },
+  "supersedes": "v6.6's cmp66_buch_rgd_DOID4752 (RGD 2026-09-19, 'release substituted')"
+ },
+ "cells_detail": [
+  {
+   "cell": "BUCH-E-MSA-S1",
+   "row": 336,
+   "analysis_class": "V-AAL",
+   "outcome": "testable"
+  },
+  {
+   "cell": "BUCH-E-MSA-S2",
+   "row": 337,
+   "analysis_class": "V-AAL",
+   "outcome": "testable"
+  },
+  {
+   "cell": "BUCH-E-MSA-S3",
+   "row": 338,
+   "analysis_class": "V-AAL",
+   "outcome": "testable"
+  },
+  {
+   "cell": "BUCH-E-MSA-S4",
+   "row": 339,
+   "analysis_class": "V-AAL",
+   "outcome": "testable"
+  }
+ ],
+ "cells": [
+  "BUCH-E-MSA-S1",
+  "BUCH-E-MSA-S2",
+  "BUCH-E-MSA-S3",
+  "BUCH-E-MSA-S4"
+ ]
+}

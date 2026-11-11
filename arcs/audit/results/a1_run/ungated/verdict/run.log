@@ -1,0 +1,190 @@
+[03:14:15] pass verdict gate none rows 115 K {'site': 10000, 'species': 10000, 'permutation': 10000, 'sets': 10000, 'surr': 10000, 'j1_sets': 1000} g6l exact
+[03:14:47] row 4 reproduction record written
+[03:14:47] row 6 reproduction record written
+[03:15:31] dispatch: 83 row(s) to compute; written so far {'no statistic': 32}
+[03:15:31] phase 1: 72 G6l screen(s) (exact mode)
+[03:19:42]   10/72 tasks (250s)
+[03:19:54]   20/72 tasks (263s)
+[03:23:02]   30/72 tasks (451s)
+[03:23:14]   40/72 tasks (462s)
+[03:26:28]   50/72 tasks (657s)
+[03:26:47]   60/72 tasks (675s)
+[03:29:00]   70/72 tasks (808s)
+[03:29:36]   72/72 tasks (845s)
+[03:29:37] phase 2: 83 leg-group task(s), jobs 20
+[03:38:03]   10/83 tasks (507s)
+[03:38:44]   20/83 tasks (548s)
+[03:46:25]   30/83 tasks (1008s)
+[03:46:53]   40/83 tasks (1037s)
+[03:54:39]   50/83 tasks (1503s)
+[03:55:13]   60/83 tasks (1537s)
+[04:02:59]   70/83 tasks (2003s)
+[04:04:47]   80/83 tasks (2111s)
+[04:09:09]   83/83 tasks (2372s)
+[04:09:09] row 1 (verdict: decoded-list) written; peak task memory 666121181 B
+[04:09:09] row 2 (verdict: decoded-list) written; peak task memory 667094812 B
+[04:09:10] row 3 (verdict: decoded-list) written; peak task memory 303009887 B
+[04:09:10] row 5 (verdict: decoded-list) written; peak task memory 308134219 B
+[04:09:10] row 7 (verdict: decoded-list) written; peak task memory 287316348 B
+[04:09:10] row 8 (verdict: decoded-list) written; peak task memory 296285462 B
+[04:09:10] row 9 (verdict: decoded-list) written; peak task memory 292121607 B
+[04:09:10] row 10 (verdict: decoded-list) written; peak task memory 306215412 B
+[04:09:10] row 11 (verdict: decoded-list) written; peak task memory 319668530 B
+[04:09:10] row 12 (verdict: decoded-list) written; peak task memory 369126758 B
+[04:09:10] row 13 (verdict: decoded-list) written; peak task memory 398352453 B
+[04:09:10] row 14 (verdict: decoded-list) written; peak task memory 398683774 B
+[04:09:10] row 15 (verdict: decoded-list) written; peak task memory 446026501 B
+[04:09:10] row 16 (verdict: decoded-list) written; peak task memory 436732809 B
+[04:09:10] row 17 (verdict: decoded-list) written; peak task memory 333423946 B
+[04:09:10] row 18 (verdict: decoded-list) written; peak task memory 338343155 B
+[04:09:10] row 19 (verdict: decoded-list) written; peak task memory 346488988 B
+[04:09:10] row 20 (verdict: decoded-list) written; peak task memory 380048944 B
+[04:09:10] row 21 (verdict: decoded-list) written; peak task memory 407495340 B
+[04:09:10] row 22 (verdict: decoded-list) written; peak task memory 416527142 B
+[04:09:10] row 23 (verdict: decoded-list) written; peak task memory 412245168 B
+[04:09:10] row 24 (verdict: decoded-list) written; peak task memory 277241668 B
+[04:09:10] row 25 (verdict: decoded-list) written; peak task memory 330802632 B
+[04:09:10] row 26 (verdict: decoded-list) written; peak task memory 223755359 B
+[04:09:10] row 27 (verdict: decoded-list) written; peak task memory 282365512 B
+[04:09:10] row 28 (verdict: decoded-list) written; peak task memory 282361757 B
+[04:09:10] row 29 (verdict: decoded-list) written; peak task memory 418651483 B
+[04:09:10] row 30 (verdict: decoded-list) written; peak task memory 421213692 B
+[04:09:10] row 31 (verdict: decoded-list) written; peak task memory 270512121 B
+[04:09:10] row 32 (verdict: decoded-list) written; peak task memory 270513322 B
+[04:09:10] row 33 (verdict: decoded-list) written; peak task memory 272113054 B
+[04:09:10] row 34 (verdict: decoded-list) written; peak task memory 266027693 B
+[04:09:10] row 35 (verdict: decoded-list) written; peak task memory 247452171 B
+[04:09:10] row 36 (verdict: decoded-list) written; peak task memory 263789955 B
+[04:09:10] row 37 (verdict: decoded-list) written; peak task memory 271155757 B
+[04:09:10] row 38 (verdict: decoded-list) written; peak task memory 250654195 B
+[04:09:10] row 39 (verdict: decoded-list) written; peak task memory 249059558 B
+[04:09:10] row 40 (verdict: decoded-list) written; peak task memory 247770926 B
+[04:09:10] row 41 (verdict: decoded-list) written; peak task memory 247775708 B
+[04:09:10] row 42 (verdict: decoded-list) written; peak task memory 275318727 B
+[04:09:10] row 43 (verdict: decoded-list) written; peak task memory 276279668 B
+[04:09:10] row 44 (verdict: decoded-list) written; peak task memory 259923909 B
+[04:09:10] row 45 (verdict: decoded-list) written; peak task memory 259926145 B
+[04:09:10] row 46 (verdict: decoded-list) written; peak task memory 196553605 B
+[04:09:10] row 47 (verdict: decoded-list) written; peak task memory 250636965 B
+[04:09:10] row 48 (verdict: decoded-list) written; peak task memory 251918453 B
+[04:09:10] row 49 (verdict: decoded-list) written; peak task memory 249034054 B
+[04:09:10] row 50 (verdict: decoded-list) written; peak task memory 249034329 B
+[04:09:10] row 51 (verdict: decoded-list) written; peak task memory 249355751 B
+[04:09:10] row 52 (verdict: decoded-list) written; peak task memory 265370237 B
+[04:09:10] row 53 (verdict: decoded-list) written; peak task memory 268251279 B
+[04:09:10] row 54 (verdict: decoded-list) written; peak task memory 269531840 B
+[04:09:10] row 55 (verdict: decoded-list) written; peak task memory 505110562 B
+[04:09:10] row 56 (verdict: decoded-list) written; peak task memory 514397037 B
+[04:09:10] row 57 (verdict: decoded-list) written; peak task memory 519523543 B
+[04:09:10] row 58 (verdict: decoded-list) written; peak task memory 274977429 B
+[04:09:10] row 59 (verdict: decoded-list) written; peak task memory 251922733 B
+[04:09:10] row 60 (verdict: decoded-list) written; peak task memory 258006248 B
+[04:09:10] row 61 (verdict: decoded-list) written; peak task memory 258645697 B
+[04:09:10] row 62 (verdict: decoded-list) written; peak task memory 263448365 B
+[04:09:11] row 63 (verdict: decoded-list) written; peak task memory 269212251 B
+[04:09:11] row 64 (verdict: decoded-list) written; peak task memory 269212854 B
+[04:09:11] row 65 (verdict: decoded-list) written; peak task memory 361056950 B
+[04:09:11] row 66 (verdict: decoded-list) written; peak task memory 361056167 B
+[04:09:11] row 67 (verdict: decoded-list) written; peak task memory 262166972 B
+[04:09:11] row 68 (verdict: decoded-list) written; peak task memory 262167371 B
+[04:09:11] row 69 (verdict: decoded-list) written; peak task memory 262809960 B
+[04:09:11] row 70 (verdict: decoded-list) written; peak task memory 264091200 B
+[04:09:11] row 71 (verdict: decoded-list) written; peak task memory 379529623 B
+[04:09:11] row 72 (verdict: decoded-list) written; peak task memory 384348069 B
+[04:09:11] row 73 (verdict: decoded-list) written; peak task memory 260569147 B
+[04:09:11] row 74 (verdict: decoded-list) written; peak task memory 267293665 B
+[04:09:11] row 75 (verdict: decoded-list) written; peak task memory 311524105 B
+[04:09:11] row 76 (verdict: decoded-list) written; peak task memory 268251410 B
+[04:09:11] row 77 (verdict: decoded-list) written; peak task memory 271133354 B
+[04:09:11] row 78 (verdict: decoded-list) written; peak task memory 272735395 B
+[04:09:11] row 79 (verdict: decoded-list) written; peak task memory 303715072 B
+[04:09:11] row 80 (verdict: decoded-list) written; peak task memory 348906178 B
+[04:09:11] row 615 (verdict: component (plsr)) written; peak task memory 62261592 B
+[04:09:11] row 616 (verdict: component (plsr)) written; peak task memory 124256442 B
+[04:09:11] row 617 (verdict: component (plsr)) written; peak task memory 124250407 B
+[04:09:11] row 618 (verdict: decoded-list (descriptor: MOR-T, R21)) written; peak task memory 327271392 B
+[04:09:11] row 619 (verdict: decoded-list (descriptor: MOR-T, R21)) written; peak task memory 331436638 B
+[04:09:11] row 1 reproduction record written
+[04:09:11] row 2 reproduction record written
+[04:09:11] row 3 reproduction record written
+[04:09:11] row 5 reproduction record written
+[04:09:11] row 7 reproduction record written
+[04:09:11] row 8 reproduction record written
+[04:09:11] row 9 reproduction record written
+[04:09:11] row 10 reproduction record written
+[04:09:11] row 11 reproduction record written
+[04:09:11] row 12 reproduction record written
+[04:09:11] row 13 reproduction record written
+[04:09:11] row 14 reproduction record written
+[04:09:11] row 15 reproduction record written
+[04:09:11] row 16 reproduction record written
+[04:09:11] row 17 reproduction record written
+[04:09:11] row 18 reproduction record written
+[04:09:11] row 19 reproduction record written
+[04:09:11] row 20 reproduction record written
+[04:09:11] row 21 reproduction record written
+[04:09:11] row 22 reproduction record written
+[04:09:11] row 23 reproduction record written
+[04:09:11] row 24 reproduction record written
+[04:09:11] row 25 reproduction record written
+[04:09:11] row 26 reproduction record written
+[04:09:11] row 27 reproduction record written
+[04:09:11] row 28 reproduction record written
+[04:09:11] row 29 reproduction record written
+[04:09:11] row 30 reproduction record written
+[04:09:11] row 31 reproduction record written
+[04:09:11] row 32 reproduction record written
+[04:09:11] row 33 reproduction record written
+[04:09:11] row 34 reproduction record written
+[04:09:11] row 35 reproduction record written
+[04:09:11] row 36 reproduction record written
+[04:09:11] row 37 reproduction record written
+[04:09:11] row 38 reproduction record written
+[04:09:11] row 39 reproduction record written
+[04:09:11] row 40 reproduction record written
+[04:09:11] row 41 reproduction record written
+[04:09:11] row 42 reproduction record written
+[04:09:11] row 43 reproduction record written
+[04:09:11] row 44 reproduction record written
+[04:09:12] row 45 reproduction record written
+[04:09:12] row 46 reproduction record written
+[04:09:12] row 47 reproduction record written
+[04:09:12] row 48 reproduction record written
+[04:09:12] row 49 reproduction record written
+[04:09:12] row 50 reproduction record written
+[04:09:12] row 51 reproduction record written
+[04:09:12] row 52 reproduction record written
+[04:09:12] row 53 reproduction record written
+[04:09:12] row 54 reproduction record written
+[04:09:12] row 55 reproduction record written
+[04:09:12] row 56 reproduction record written
+[04:09:12] row 57 reproduction record written
+[04:09:12] row 58 reproduction record written
+[04:09:12] row 59 reproduction record written
+[04:09:12] row 60 reproduction record written
+[04:09:12] row 61 reproduction record written
+[04:09:12] row 62 reproduction record written
+[04:09:12] row 63 reproduction record written
+[04:09:12] row 64 reproduction record written
+[04:09:12] row 65 reproduction record written
+[04:09:12] row 66 reproduction record written
+[04:09:12] row 67 reproduction record written
+[04:09:12] row 68 reproduction record written
+[04:09:12] row 69 reproduction record written
+[04:09:12] row 70 reproduction record written
+[04:09:12] row 71 reproduction record written
+[04:09:12] row 72 reproduction record written
+[04:09:12] row 73 reproduction record written
+[04:09:12] row 74 reproduction record written
+[04:09:12] row 75 reproduction record written
+[04:09:12] row 76 reproduction record written
+[04:09:12] row 77 reproduction record written
+[04:09:12] row 78 reproduction record written
+[04:09:12] row 79 reproduction record written
+[04:09:12] row 80 reproduction record written
+[04:09:15] row 615 reproduction record written
+[04:09:15] row 616 reproduction record written
+[04:09:16] row 617 reproduction record written
+[04:09:16] row 618 reproduction record written
+[04:09:16] row 619 reproduction record written
+[04:09:16] done: outcomes {'computed': 83, 'no statistic': 32}

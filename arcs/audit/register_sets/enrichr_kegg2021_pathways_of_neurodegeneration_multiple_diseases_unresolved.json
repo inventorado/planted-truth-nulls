@@ -1,0 +1,40 @@
+{
+ "set_id": "enrichr_kegg2021_pathways_of_neurodegeneration_multiple_diseases_unresolved",
+ "status": "not auditable (S undefined)",
+ "definition": "KEGG 'pathways of neurodegeneration - multiple diseases' (Enrichr KEGG_2021_Human)",
+ "reason": "the printed name reaches no pathway of Enrichr KEGG_2021_Human (the obtainable KEGG release closest in date to the paper's retrieval, 2021-12-14; register 1.6 KEGG rule (ii), v6.1 Q3) by the name rule: S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0); Leyhausen's own list (source 1) lies in no gated carrier (its supplements were read before the register), so the conditional form does not apply. Cause (v6.2 P4): Enrichr KEGG_2021_Human truncates KEGG names at ' - ' (of the 27 KEGG REST names holding ' - ', 0 appear in full, 18 only as the part before ' - '); the pathway was hsa05022 at retrieval (the library's 'Pathways of neurodegeneration' entry, 475 genes, is closest to hsa05022: symbol Jaccard 0.967)",
+ "cause_v6_2_P4": {
+  "kegg_rest": "KEGG REST list/pathway/hsa (Last update 2026/09/25; pinned)",
+  "rest_names_with_dash": 27,
+  "in_kegg_2021_human_in_full": 0,
+  "in_kegg_2021_human_only_as_the_part_before_dash": 18,
+  "in_neither_form": 9,
+  "kegg_2021_human_names_with_dash": 0,
+  "hsa05022_rest_name": "Pathways of neurodegeneration - multiple diseases",
+  "kegg_2021_human_entry": "Pathways of neurodegeneration",
+  "entry_n_genes": 475,
+  "closest_rest_pathways_by_symbol_jaccard": [
+   {
+    "id": "hsa05022",
+    "jaccard": 0.967,
+    "n_genes": 481
+   },
+   {
+    "id": "hsa05010",
+    "jaccard": 0.621,
+    "n_genes": 389
+   }
+  ]
+ },
+ "cells_detail": [
+  {
+   "cell": "LEY-K4",
+   "row": 638,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  }
+ ],
+ "cells": [
+  "LEY-K4"
+ ]
+}

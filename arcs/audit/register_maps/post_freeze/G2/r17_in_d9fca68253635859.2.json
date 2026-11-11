@@ -1,0 +1,53 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "r17_in_d9fca68253635859",
+ "gate": "G2",
+ "url": "https://raw.githubusercontent.com/alegiac95/METAXCAN_TWAS_ANALYSIS/e045bc51961b0425f51bbdf54672d59222cfa8b9/data/DK-files/DesikanKilliany_atlas.csv",
+ "kind": "file",
+ "date_utc": "2026-10-21T00:06:08+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "fetch": {
+  "source": "copy on disk",
+  "path": "E:/data/asdg/r17_in_d9fca68253635859/carrier.csv"
+ },
+ "identity": {
+  "facts": {
+   "bytes": 2640,
+   "sha256": "58b623281e1d3fe7f690d1ad40d66bfcfe92cb50e1d5689d388f3615b69c4ac1",
+   "md5": "e92034d4445ebf06044cbc01da8c4abe",
+   "git_blob": "d65d00f03f171571588ee5055e14b4a88f61cde4",
+   "has_crlf": false,
+   "git_blob_lf": null,
+   "bytes_lf": null
+  },
+  "references": [
+   {
+    "basis": "git blob",
+    "bytes": 2640,
+    "git_blob": "d65d00f03f171571588ee5055e14b4a88f61cde4"
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "git blob",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "identifier_bearing": false,
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "identity recorded (no extraction declared)"
+}

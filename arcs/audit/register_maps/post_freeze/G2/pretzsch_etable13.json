@@ -1,0 +1,60 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "pretzsch_etable13",
+ "gate": "G2",
+ "url": "https://none.invalid/no-url-registered",
+ "kind": "file",
+ "date_utc": "2026-10-17T17:39:57+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "url_note": "no URL registered",
+ "fetch": {
+  "source": "pinned copy on disk",
+  "path_sha256": "24b84337242f2c705100b978feb39685928a41449840338e75e28bf4ae21fd40",
+  "screen_hits": {
+   "V": 0,
+   "N": 0
+  }
+ },
+ "identity": {
+  "facts": {
+   "bytes": 26343,
+   "sha256": "0ef57d234055505918e4f99a674c6e446402b5c2bea69046e2c2429f60df5d67",
+   "md5": "374bbc0ee71470c14ac88f19007da7a3",
+   "git_blob": "1b0b5a76dee61276c0b75a46437e8ce5c4a16028",
+   "has_crlf": true,
+   "git_blob_lf": "7b9dc1dc09c885f153b7502e500dfbf6cd695524",
+   "bytes_lf": 25982
+  },
+  "references": [
+   {
+    "basis": "sha256 of the copy on disk",
+    "bytes": 26343,
+    "sha256": "0ef57d234055505918e4f99a674c6e446402b5c2bea69046e2c2429f60df5d67"
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "sha256 of the copy on disk",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "failed_stage": "read:file",
+ "failed_class": "UnlistedException",
+ "failed_where": "wp4_read.py:458",
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "not auditable (definition not applicable: the declared eTable13 layout not matched)"
+}

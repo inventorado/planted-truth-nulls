@@ -1,0 +1,17 @@
+{
+ "set_id": "zhang2014_top500_astrocyte",
+ "status": "S conditional (source 1 in a gated carrier; else not auditable (S undefined))",
+ "definition": "Zhang 2014 (J Neurosci) top 500 astrocyte-specific genes among 5 classes (mouse)",
+ "reason": "register v6 R2 (orchestrator under the operator's standing delegation, 2026-09-26): S from Romero-Garcia's mixed supplements (MOESM1 / MOESM2 docx, the Apollo record's SI .txt and Figures_Tables.zip; gate G1) (source 1) if present, by the source-1 criterion (register 1.6, v6.1 Q1 as revised by v6.2 P1 / P2 / P6, v6.3 O1-O4 / O6 and v6.4 N1-N4): a carrier list qualifies only if the carrier presents it as the set's membership used as input to the enrichment -- a list of gene symbols under a heading naming the set (the cell's pinned name alternatives; rival names win when more specific), its sheet name, table title, caption or its own title carrying input wording; refused if its own title or the caption carries result wording or names one of the paper's maps, subgroups or cohorts (leading edge, core, driving, top, PLS, loading, weight, enriched, decoded, overlap or hit genes; '_' and '.' read as spaces), or if its own title, the caption or any column title of its table carries statistics wording, or if any cell of its sheet (docx / pdf: its table and caption) other than the lists' own genes carries statistics, result or map wording (v6.4 N1); where the paper prints a set size the list length must equal it; exactly one qualifying list, else the else branch (carrier_tests.json source1_lists, cells keyed by cell id; carrier_test.py source1 --cell, one run per pathway for a family); and (v6.5) the list must be corroborated: Jaccard >= .80 with the cell's pinned external definition (in the class universe, by HGNC gene), else its length equal to the cell's printed size; a cell with neither is never corroborated -- the set named here by the cell class ('astrocyte') together with 'specific', 'top 500', 'Zhang' or 'enriched' (the paper prints the size: 500 symbols; v6.5: the list is corroborated only if its length is 500); built under that gate by the 1.6 rules; else not auditable (S undefined): the rule does not determine a set from sources 2-3 -- Zhang 2014 publishes FPKM per cell type, not a 'top 500 by specificity' list; the specificity statistic and the mouse -> human orthology mapping are stated neither by Romero-Garcia nor by §1.6; the journal supplement is also not obtainable by script (jneurosci.org answers with a Cloudflare challenge)",
+ "cells_detail": [
+  {
+   "cell": "RG-N04",
+   "row": 177,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  }
+ ],
+ "cells": [
+  "RG-N04"
+ ]
+}

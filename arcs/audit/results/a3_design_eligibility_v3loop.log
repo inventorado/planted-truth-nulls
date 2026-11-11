@@ -1,0 +1,63 @@
+# a3_design_eligibility.py, FIRST run (2026-09-23 21:26-21:35), the v3 draft's G6l window loop (parcels x genes, float64)
+# 22 workers; eligibility on the same 672 sets as the JSON; ms/draw = the v3 loop's per-draw cost under load. Superseded JSON; kept for the §6 figures.
+aal: genes=15633 parcels=54 128s
+  rand-25    c_w=0.015 elig min/med/max=1.000/1.000/1.000 46.6 ms/draw
+  rand-100   c_w=0.016 elig min/med/max=1.000/1.000/1.000 46.0 ms/draw
+  rand-300   c_w=0.016 elig min/med/max=1.000/1.000/1.000 48.6 ms/draw
+  brand-25   c_w=0.002 elig min/med/max=0.817/1.000/1.000 46.7 ms/draw
+  brand-100  c_w=0.011 elig min/med/max=1.000/1.000/1.000 47.5 ms/draw
+  brand-300  c_w=0.014 elig min/med/max=1.000/1.000/1.000 47.8 ms/draw
+  brand-500  c_w=0.015 elig min/med/max=1.000/1.000/1.000 49.0 ms/draw
+  fill-25    c_w=0.029 elig min/med/max=1.000/1.000/1.000 46.2 ms/draw
+  fill-100   c_w=0.029 elig min/med/max=1.000/1.000/1.000 46.5 ms/draw
+  fill-300   c_w=0.035 elig min/med/max=1.000/1.000/1.000 48.1 ms/draw
+  clus-25    c_w=0.365 elig min/med/max=0.927/1.000/1.000 47.2 ms/draw
+  clus-100   c_w=0.476 elig min/med/max=0.717/0.942/1.000 47.2 ms/draw
+  multi-500  c_w=0.090 elig min/med/max=1.000/1.000/1.000 47.5 ms/draw
+  multi-1000 c_w=0.090 elig min/med/max=0.997/1.000/1.000 36.1 ms/draw
+dk: genes=15633 parcels=42 101s
+  rand-25    c_w=0.002 elig min/med/max=1.000/1.000/1.000 37.0 ms/draw
+  rand-100   c_w=0.007 elig min/med/max=1.000/1.000/1.000 35.8 ms/draw
+  rand-300   c_w=0.008 elig min/med/max=1.000/1.000/1.000 37.4 ms/draw
+  brand-25   c_w=0.000 elig min/med/max=1.000/1.000/1.000 37.8 ms/draw
+  brand-100  c_w=0.004 elig min/med/max=1.000/1.000/1.000 37.5 ms/draw
+  brand-300  c_w=0.007 elig min/med/max=1.000/1.000/1.000 36.9 ms/draw
+  brand-500  c_w=0.007 elig min/med/max=1.000/1.000/1.000 37.1 ms/draw
+  fill-25    c_w=0.017 elig min/med/max=1.000/1.000/1.000 36.2 ms/draw
+  fill-100   c_w=0.027 elig min/med/max=1.000/1.000/1.000 36.7 ms/draw
+  fill-300   c_w=0.035 elig min/med/max=1.000/1.000/1.000 37.3 ms/draw
+  clus-25    c_w=0.565 elig min/med/max=0.653/0.987/1.000 36.9 ms/draw
+  clus-100   c_w=0.493 elig min/med/max=0.770/0.983/1.000 37.5 ms/draw
+  multi-500  c_w=0.148 elig min/med/max=1.000/1.000/1.000 36.3 ms/draw
+  multi-1000 c_w=0.097 elig min/med/max=1.000/1.000/1.000 27.4 ms/draw
+cc200: genes=15633 parcels=107 255s
+  rand-25    c_w=0.005 elig min/med/max=1.000/1.000/1.000 96.1 ms/draw
+  rand-100   c_w=0.011 elig min/med/max=1.000/1.000/1.000 98.5 ms/draw
+  rand-300   c_w=0.013 elig min/med/max=1.000/1.000/1.000 101.7 ms/draw
+  brand-25   c_w=0.008 elig min/med/max=1.000/1.000/1.000 100.7 ms/draw
+  brand-100  c_w=0.009 elig min/med/max=1.000/1.000/1.000 100.2 ms/draw
+  brand-300  c_w=0.011 elig min/med/max=0.997/1.000/1.000 103.4 ms/draw
+  brand-500  c_w=0.012 elig min/med/max=1.000/1.000/1.000 104.3 ms/draw
+  fill-25    c_w=0.024 elig min/med/max=1.000/1.000/1.000 101.2 ms/draw
+  fill-100   c_w=0.028 elig min/med/max=1.000/1.000/1.000 101.3 ms/draw
+  fill-300   c_w=0.029 elig min/med/max=1.000/1.000/1.000 99.6 ms/draw
+  clus-25    c_w=0.469 elig min/med/max=0.577/0.983/1.000 100.3 ms/draw
+  clus-100   c_w=0.495 elig min/med/max=0.657/0.913/1.000 99.6 ms/draw
+  multi-500  c_w=0.084 elig min/med/max=0.960/1.000/1.000 101.6 ms/draw
+  multi-1000 c_w=0.122 elig min/med/max=0.800/1.000/1.000 76.4 ms/draw
+dk-ctx: genes=15633 parcels=34 85s
+  rand-25    c_w=0.009 elig min/med/max=0.997/1.000/1.000 29.0 ms/draw
+  rand-100   c_w=0.011 elig min/med/max=0.983/1.000/1.000 30.4 ms/draw
+  rand-300   c_w=0.011 elig min/med/max=0.890/0.957/0.993 30.5 ms/draw
+  brand-25   c_w=-0.000 elig min/med/max=0.990/1.000/1.000 29.1 ms/draw
+  brand-100  c_w=0.010 elig min/med/max=0.890/1.000/1.000 30.3 ms/draw
+  brand-300  c_w=0.009 elig min/med/max=0.847/0.925/0.963 32.2 ms/draw
+  brand-500  c_w=0.009 elig min/med/max=0.707/0.853/0.993 30.3 ms/draw
+  fill-25    c_w=0.029 elig min/med/max=1.000/1.000/1.000 30.2 ms/draw
+  fill-100   c_w=0.033 elig min/med/max=1.000/1.000/1.000 31.3 ms/draw
+  fill-300   c_w=0.036 elig min/med/max=1.000/1.000/1.000 31.0 ms/draw
+  clus-25    c_w=0.682 elig min/med/max=0.717/0.930/1.000 31.3 ms/draw
+  clus-100   c_w=0.545 elig min/med/max=0.493/0.957/0.997 29.5 ms/draw
+  multi-500  c_w=0.160 elig min/med/max=0.983/1.000/1.000 29.3 ms/draw
+  multi-1000 c_w=0.135 elig min/med/max=0.987/1.000/1.000 23.9 ms/draw
+

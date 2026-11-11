@@ -1,0 +1,1684 @@
+{
+ "schema": "a1_wp4_material_manifest_v1",
+ "gate": "G2",
+ "final": true,
+ "date_utc": "2026-10-21T00:23:25+00:00",
+ "objects": {
+  "freesurfer741_fsaverage_annot": {
+   "status": "extracted",
+   "record_path": "G2/freesurfer741_fsaverage_annot.json",
+   "record_sha256": "07008e4c9c2d6207eac191714166ed24bdc34d346e23afcc3ce561d08c69294e",
+   "identity_result": null,
+   "identifier_bearing": true,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": null,
+   "member_path": "E:/data/asdg/freesurfer741_fsaverage_annot/lh.aparc.annot",
+   "member_sha256": "39b1acde9a32b4227631eb51cbcd8dff84e2138c57bf9f96d74026f2c17f1480",
+   "member_bytes": 1312250,
+   "resumed": "the member saved by an earlier run, re-hashed equal to its record (no stream)",
+   "governing_artefact_index": 0,
+   "artefacts_tried": []
+  },
+  "hcpmmp1_figshare_metadata": {
+   "status": "extracted",
+   "record_path": "G2/hcpmmp1_figshare_metadata.7.json",
+   "record_sha256": "ac818ae77e63b0bf182ddefc7080ea8abc44a309a71d471bc3c88cbe4c47db7c",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "abbcb182447d684452e272479b9a08bf3f0918e327324a8217ed88a46b104957",
+   "object_path": "G2/hcpmmp1_figshare_metadata/hcpmmp1_figshare_metadata_extract.json",
+   "object_sha256": "cc7d251db3876cc49b9374040a9c43b8bc0e0010e72be28522c47989e1a4cd90"
+  },
+  "hcpmmp1_volume": {
+   "status": "identity recorded (no extraction declared)",
+   "record_path": "G2/hcpmmp1_volume.7.json",
+   "record_sha256": "55f0ca020612e116c4f44f7670f0778444f2cef18d388ede41e7b7e4987749f1",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "99a6ae33753687e3ef37330dac7b6b9ececd46750938fb1c58e7ed7b157ba1a1"
+  },
+  "hcpmmp1_labels": {
+   "status": "extracted",
+   "record_path": "G2/hcpmmp1_labels.7.json",
+   "record_sha256": "c2689994af2b69cab1f3a760cfbd8f9956fda41f8bd272a86fd0bdc67c47a7fa",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "d008cea4903e4047079020cf1d31f8b1fd8ca092d6ac8b060a8e71da40836e57",
+   "object_path": "G2/hcpmmp1_labels/hcpmmp1_labels_extract.json",
+   "object_sha256": "3b1aeea5ca4505958db5bf14c408074bf8e20e3650a765d65f8a002cb7cb3db3"
+  },
+  "perdonor_hcpmmp1": {
+   "status": "built",
+   "exit": 0,
+   "record_sha256": "86c9db99689db528e1d5437d46c2d9c5f4d58717223abba21b58e74bfb0df05b",
+   "resumed": true
+  },
+  "patel_etable4": {
+   "status": "extracted",
+   "record_path": "G2/patel_etable4.6.json",
+   "record_sha256": "801b485445dfce82cda762d9c7a60deb6b4672a25eb38dc48e502e87a8bd76ec",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "d9da0b801a43eb14b11276ba0b2df5cb3dbe376d1c56820f6f756b504a54f2e8",
+   "object_path": "G2/patel_etable4/patel_etable4_extract.json",
+   "object_sha256": "16ab9ff09dbbf86d45bab7e71984cfafce098c9cc10c3195d64a69762837871a"
+  },
+  "giacomel_xlsx_c022a29": {
+   "status": "extracted",
+   "record_path": "G2/giacomel_xlsx_c022a29.6.json",
+   "record_sha256": "ae15443e431ebc9ab5c851500498001d99f06237bbf1c855c34211e10a20ff8b",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "a4d4feecb028366c6ccd2ee06b216fc2be758e9b6cf92b039549b78ab5d888c8",
+   "object_path": "G2/giacomel_xlsx_c022a29/giacomel_xlsx_c022a29_extract.json",
+   "object_sha256": "53b87dde9805295741998cc3813901d3138e7b08fe98905b835308cf969e5e8b"
+  },
+  "hansen_enigma_ct": {
+   "status": "extracted",
+   "record_path": "G2/hansen_enigma_ct.6.json",
+   "record_sha256": "352505095279a8400237cdde1dbb33b170eaa4c8a4ff25878da38df34d87210f",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "3140921933909a8b9b4b3489a72d253abb5de60f117b762d2b8f7fefa407f2e7",
+   "object_path": "G2/hansen_enigma_ct/hansen_enigma_ct_extract.json",
+   "object_sha256": "fc71364144558a6e42fd68a57a0855428a67d4d3ed476bea0460d2677f7f372c"
+  },
+  "hansen_gene_pc1": {
+   "status": "extracted",
+   "record_path": "G2/hansen_gene_pc1.6.json",
+   "record_sha256": "ca1b7f782ff76ac9e44029eb5b8a84631f15e37d56a5cbbf1a0c55298d7ecfae",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "a078a86d4e6e48980fb12bd464d7b7684a0fc21925c3a5399c8d8e8e54e599d6",
+   "object_path": "G2/hansen_gene_pc1/hansen_gene_pc1_extract.json",
+   "object_sha256": "f5ad3be794b254d6131075b66be88be625e601b83122139ed447b930b8b357bb"
+  },
+  "hansen_local_biol_predictors": {
+   "status": "extracted",
+   "record_path": "G2/hansen_local_biol_predictors.6.json",
+   "record_sha256": "c86d41ae0751868bf5d7db754c473a74907bbca487f140def14e21a589a49193",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "d73853619b543bf9c84964933d9d2801a4d86aff777bafb23f76268eb459e502",
+   "object_path": "G2/hansen_local_biol_predictors/hansen_local_biol_predictors_extract.json",
+   "object_sha256": "075f4d110d459b13f24f01e0d1f8976425035f3bbadb1db56c472325a0eed5fa",
+   "prefix_len": 16,
+   "prefix_source": "registered (wp4_layout prefix pins)"
+  },
+  "hansen_cammoun_info": {
+   "status": "extracted",
+   "record_path": "G2/hansen_cammoun_info.6.json",
+   "record_sha256": "368973230515b8afb4653db9307dca0b4c2bbf575999c0bfd35de32dd7e92fb3",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "348246e7d997c3958cae46c7de0781ef005d6bcf2e85307e29ef23c8b7bd0ae0",
+   "object_path": "G2/hansen_cammoun_info/hansen_cammoun_info_extract.json",
+   "object_sha256": "0faad1c1fcee602e97ab788c2d63e32e6b417385cb6ea7fffcfc88ad599d4a50",
+   "prefix_len": 16,
+   "prefix_source": "registered (wp4_layout prefix pins)"
+  },
+  "liu_t3_cortthick": {
+   "status": "refused (carrier in quarantine; the operator moves it back)",
+   "screen_exemption": {
+    "applied": false,
+    "why": "the pinned copy's bytes are not the declared ones"
+   }
+  },
+  "liu_t3_subvol": {
+   "status": "refused (carrier in quarantine; the operator moves it back)",
+   "screen_exemption": {
+    "applied": false,
+    "why": "the pinned copy's bytes are not the declared ones"
+   }
+  },
+  "pretzsch_etable13": {
+   "status": "not auditable (definition not applicable: the declared eTable13 layout not matched)",
+   "record_path": "G2/pretzsch_etable13.6.json",
+   "record_sha256": "a0ac8bb8012394143fbbde165751f524da7cafe2e4c71cb55aee6826ee67668f",
+   "identity_result": "identity match",
+   "identifier_bearing": null,
+   "quarantined": false,
+   "failed_stage": "read:file",
+   "refused_reason": null,
+   "sha256": "0ef57d234055505918e4f99a674c6e446402b5c2bea69046e2c2429f60df5d67",
+   "layout_condition": {
+    "status": "not auditable (definition not applicable: the declared eTable13 layout not matched)",
+    "counts": {
+     "n_label_columns": 0
+    }
+   }
+  },
+  "leyhausen_777428_vol": {
+   "status": "identity recorded (no extraction declared)",
+   "record_path": "G2/leyhausen_777428_vol.6.json",
+   "record_sha256": "9d7a5667c8a201439170767d1d3ece2b1a1fb9b810549d2e4a2588b8c82ff23f",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "3c5dfc21681e2aa279623ab7d6d2f31e98ee1fbd05ca0a4e8fb58e7e76708aff"
+  },
+  "leyhausen_777428_lh": {
+   "status": "extracted",
+   "record_path": "G2/leyhausen_777428_lh.6.json",
+   "record_sha256": "09ac4daf0bdcc6de9abfd833149d0df9f8cc9cb36885ae9b42e62c643cfebcc1",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "5889a68733b8d541d7969bdfa8d31c859d75f646a5586839d4a539c71f2680e4",
+   "object_path": "G2/leyhausen_777428_lh/leyhausen_777428_lh_extract.json",
+   "object_sha256": "8045ce2167b7ad0ad1f6a1667ab07bbb5e9e58cdc84264087a8424cf755b5f56"
+  },
+  "leyhausen_777429_vol": {
+   "status": "identity recorded (no extraction declared)",
+   "record_path": "G2/leyhausen_777429_vol.6.json",
+   "record_sha256": "ce9983387165446a4283430e416fcb8934c6111fca9f77a115367f354f2e612a",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "4429d1da1981770588e1c37e072d67d51e7843694aa92462c0ac24d77a6a561d"
+  },
+  "leyhausen_777429_lh": {
+   "status": "extracted",
+   "record_path": "G2/leyhausen_777429_lh.6.json",
+   "record_sha256": "25c428c0a960e577f9f29854a62e3441377035657577e5df0efcf88f8fa25a29",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "1299426288ba4938872621c2bac06dac39bcf2ec473dd284e5c2ef41a18fc47a",
+   "object_path": "G2/leyhausen_777429_lh/leyhausen_777429_lh_extract.json",
+   "object_sha256": "908301d203c13f17b990a40fe09d161664941e1647c23983f33438a09c20268c"
+  },
+  "leyhausen_777430_vol": {
+   "status": "identity recorded (no extraction declared)",
+   "record_path": "G2/leyhausen_777430_vol.6.json",
+   "record_sha256": "5697cf5ac7bfd8bc99e3d3ba8452597a622c94785442616639c54883738c436d",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "9436a9e9061aced63eb0fcd3f54212f399722ffe8e042d0e078e3ede9932119e"
+  },
+  "leyhausen_777430_lh": {
+   "status": "extracted",
+   "record_path": "G2/leyhausen_777430_lh.6.json",
+   "record_sha256": "13617f6daaea19d860a95e185eeb703df68e338137f61264092c84dd400f6aa2",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "e6478fdab840f63ba2df5e72d817cfe388d8eecf003847cd027a238cb2344934",
+   "object_path": "G2/leyhausen_777430_lh/leyhausen_777430_lh_extract.json",
+   "object_sha256": "afe41d2388986d3f9bfe27376d7ef9b6580d911b529e51505936fdbc41135261"
+  },
+  "giacomel_xlsx_93de089": {
+   "status": "extracted",
+   "record_path": "G2/giacomel_xlsx_93de089.6.json",
+   "record_sha256": "15c0dc99be8ff5c0ede5e585f8efe89d06a572218ab28de1d4a0371ff002ac83",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "15101878fd0cae3763bcdd46f4ee9c28aeece550a1d40f9de73cc049230dcea0",
+   "object_path": "G2/giacomel_xlsx_93de089/giacomel_xlsx_93de089_extract.json",
+   "object_sha256": "e944c4d13103a635d3e0dda030fa70b5fe9bd7aa244bcb71f47e337953f44287"
+  },
+  "gia_tree_e045bc5": {
+   "status": "extracted",
+   "record_path": "G2/gia_tree_e045bc5.6.json",
+   "record_sha256": "86fba64930ee2bdf37032e2f5b69fd3d0b9d856d5ea7e31300c43fd9de8a09e3",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "83ac78912343b59c5a2f9fe1f4624586fb48f469334eef5741c9837beab1799b",
+   "object_path": "G2/gia_tree_e045bc5/gia_tree_e045bc5_extract.json",
+   "object_sha256": "d2b04a708bc0261588dce50d4772590325777024b9c66f0f36698b5dbf6c5f02"
+  },
+  "gia_list_ASD_top_genes_thr_1": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_ASD_top_genes_thr_1.6.json",
+   "record_sha256": "0b11a811e3b8cf2e874906f0a1d1bcf1b4a2b0b1483a286489d267c57f1c777d",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "f415415bed1d251c8649bbc843237d3c7f0507865a027b6d7184ba8148e842be",
+   "object_path": "G2/gia_list_ASD_top_genes_thr_1/gia_list_ASD_top_genes_thr_1_extract.json",
+   "object_sha256": "4e7194e38dcfb3e82f7ba3223d18ae24ecbb8dc221e7b6934a28f8a6975b0941"
+  },
+  "gia_list_ASD_top_genes_thr_5": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_ASD_top_genes_thr_5.6.json",
+   "record_sha256": "625702c035cfa39beeb4f54086914a3021538cdc9f3b4a551db7ae036b886fd1",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "f133259f93d15b824e7217ad1a68ac4eff4a232590aea5af4a46534d0a84beff",
+   "object_path": "G2/gia_list_ASD_top_genes_thr_5/gia_list_ASD_top_genes_thr_5_extract.json",
+   "object_sha256": "35ceadb5d36ff62baa075e96d8e88a8f749079d0ab80fb2624e196f9ffca6ec5"
+  },
+  "gia_list_ASD_top_genes_thr_10": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_ASD_top_genes_thr_10.6.json",
+   "record_sha256": "823f2419a5ee6b48a39873847cd4b58dcd3c37999fdfa811e35b9f36e56a6793",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "082f3bc1918bed777686e4d606f53024328fd686f54e9f69afd7ca0e938fa0c3",
+   "object_path": "G2/gia_list_ASD_top_genes_thr_10/gia_list_ASD_top_genes_thr_10_extract.json",
+   "object_sha256": "430ed07cf839a97482bac3b42850fc5e3ce077fb0cd28237c5f2cd1381168803"
+  },
+  "gia_list_ASD_top_pos_genes_thr_1": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_ASD_top_pos_genes_thr_1.6.json",
+   "record_sha256": "e8c6d449c34a58de808fc9f89b44697eb955e6566bd87c87fb9d9576b8fa13f5",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "488302e6e8ca7f5bfca3fff2e96e26e157461f0ac965643e50672c6803740b24",
+   "object_path": "G2/gia_list_ASD_top_pos_genes_thr_1/gia_list_ASD_top_pos_genes_thr_1_extract.json",
+   "object_sha256": "1cf6582b15309a5cc703e93215c644167ed25ce437e3c587ef91c247d4b4740d"
+  },
+  "gia_list_ASD_top_pos_genes_thr_5": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_ASD_top_pos_genes_thr_5.6.json",
+   "record_sha256": "615496270ca66392672dae598682ffad5c54175d6736e451cd408da1fe98e487",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "8657eb62a42d51e70fba2968c76dad40f81673cf2d492c0a22abfc4a44c25963",
+   "object_path": "G2/gia_list_ASD_top_pos_genes_thr_5/gia_list_ASD_top_pos_genes_thr_5_extract.json",
+   "object_sha256": "12fae0144c31d78cb08ec6f889df91915dedb781c9ad67570f090b1a2f209e8a"
+  },
+  "gia_list_ASD_top_pos_genes_thr_10": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_ASD_top_pos_genes_thr_10.6.json",
+   "record_sha256": "cbd59469917e19a54d2e56f33f09ebe597a0e0a35a46ea820222a811fb56b204",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "3312c95b04bf6408cd1cad0bbc918d104ff95550f1c2acac2565f4fb04890000",
+   "object_path": "G2/gia_list_ASD_top_pos_genes_thr_10/gia_list_ASD_top_pos_genes_thr_10_extract.json",
+   "object_sha256": "cbccaaa9965a92b52dc8585069712ac02ce5f95c7be5a4e87c229f5a22c40a27"
+  },
+  "gia_list_ASD_top_neg_genes_thr_1": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_ASD_top_neg_genes_thr_1.6.json",
+   "record_sha256": "69988260fb3f686533a1281a4495ee0f61c36fbbe703dcd15c16f1f8861ee5ee",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "08915d071a0a6c2f1ec312644b43b55a82cb8b6329184643973d8fd94578eee3",
+   "object_path": "G2/gia_list_ASD_top_neg_genes_thr_1/gia_list_ASD_top_neg_genes_thr_1_extract.json",
+   "object_sha256": "73abcb1acb02191363601fa2136beddd9546fccc8e3eae8e521d11937bec6abf"
+  },
+  "gia_list_ASD_top_neg_genes_thr_5": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_ASD_top_neg_genes_thr_5.6.json",
+   "record_sha256": "9e2225bf4f77f2eda7c4b4c20bfc6e970b42807b1246437851659c220222b462",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "4adcc2a1170e5b48a0851d236bb35a24c6fa6793a34d14c716e618ae344ea28c",
+   "object_path": "G2/gia_list_ASD_top_neg_genes_thr_5/gia_list_ASD_top_neg_genes_thr_5_extract.json",
+   "object_sha256": "df590a96f5498bff7a7c1322c2e296d70653ca664b53d9e5e4ae5dc2d121a4b5"
+  },
+  "gia_list_ASD_top_neg_genes_thr_10": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_ASD_top_neg_genes_thr_10.6.json",
+   "record_sha256": "5317658101f3424739e7a7d518b4f5b20c55d27529b27e79d6d450747415c670",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "9855cc6be5abcd43829d07ef31904bc61323ffe0d22faf185b112ff56bf15bd8",
+   "object_path": "G2/gia_list_ASD_top_neg_genes_thr_10/gia_list_ASD_top_neg_genes_thr_10_extract.json",
+   "object_sha256": "23091881e82054463f441ecb0b6d82fa0da19c4bbcfd85cfec92e302e252df55"
+  },
+  "gia_list_MDD_top_pos_genes_thr_1": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_MDD_top_pos_genes_thr_1.6.json",
+   "record_sha256": "2a016b59c3ef801f81492c6974aab7fffb41d245199dd54a84e338840f484bc3",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "df4376f8cd5e445d1aa10362381179bfae69d9eebe9c515bbdf0354c2bd890b3",
+   "object_path": "G2/gia_list_MDD_top_pos_genes_thr_1/gia_list_MDD_top_pos_genes_thr_1_extract.json",
+   "object_sha256": "add73f381c0b88f10117c7080cecd41454ca061a8a37e7749a190930907c46ad"
+  },
+  "gia_list_MDD_top_neg_genes_thr_10": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_MDD_top_neg_genes_thr_10.6.json",
+   "record_sha256": "3d116e5d89a01e877dfe41801af3a680dc41854ef02391e0fedee2026d3208b7",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "85fa10597bbe22f228f32d7ef2bf6287385416937e9427d8cc2254660023de44",
+   "object_path": "G2/gia_list_MDD_top_neg_genes_thr_10/gia_list_MDD_top_neg_genes_thr_10_extract.json",
+   "object_sha256": "00a3a7d331ce2701169f13e13e83383276c330d98d49028dfee9e7b8ab23d719"
+  },
+  "gia_list_MDD_top_genes_thr_1": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_MDD_top_genes_thr_1.6.json",
+   "record_sha256": "7a8e01864488b8a676ad2d5c387c83d729961392d4631e641878fa75ad9c0146",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "9ca9b56b6c2c7d6173d54262269970e755c5b90720145d6cceb1735aa4eb8493",
+   "object_path": "G2/gia_list_MDD_top_genes_thr_1/gia_list_MDD_top_genes_thr_1_extract.json",
+   "object_sha256": "dbceb7fefda54d81b5b6567d59dda407f8bc3e7a9b3ec31d6bf362df55da76cc"
+  },
+  "gia_list_MDD_top_genes_thr_5": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_MDD_top_genes_thr_5.6.json",
+   "record_sha256": "c2045ada8388e0c2b8b65fb022f418705ea9c4b7967224af24afa8abd283e059",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "64a8ce999d9354427d1ea720ad5f1b43695046da66a1f4374c82e27f5c17ebd8",
+   "object_path": "G2/gia_list_MDD_top_genes_thr_5/gia_list_MDD_top_genes_thr_5_extract.json",
+   "object_sha256": "d663aa5ebcaa1bf2a0a224a575d8cdf1ab4642c8d251df52000905ef2ad2ed7b"
+  },
+  "gia_list_MDD_top_genes_thr_10": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_MDD_top_genes_thr_10.6.json",
+   "record_sha256": "ab9f428a57aa2ef57a61444772348fe4f634c4fa29ec7fe9bfed04f556650bb2",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "348335e2b8944b6dcdd6ff9c50aeeedfbc9d20575129ec4da2cb1fc2721d0396",
+   "object_path": "G2/gia_list_MDD_top_genes_thr_10/gia_list_MDD_top_genes_thr_10_extract.json",
+   "object_sha256": "227ced30c9c8908c4f6ff794d001ca71453fa202aa02cf1846bf79a5355d7d8c"
+  },
+  "gia_gedar_ASD_TPRS_thr_1": {
+   "status": "not computable (the paper's GEDAR map layout not matched)",
+   "record_path": "G2/gia_gedar_ASD_TPRS_thr_1.6.json",
+   "record_sha256": "949cb187e464d7755fbbff14030322330a3919908855f82a2134b9583cd7dd22",
+   "identity_result": "identity match",
+   "identifier_bearing": null,
+   "quarantined": false,
+   "failed_stage": "read:file",
+   "refused_reason": null,
+   "sha256": "58fa941a722a9ec16ce911d2d470895e0ccf6b59199f7b5997ed90881327bc67",
+   "layout_condition": {
+    "status": "not computable (the paper's GEDAR map layout not matched)",
+    "counts": {
+     "n_labels": 83,
+     "n_matched": 0,
+     "n_dropped_latvent": 0,
+     "n_dropped_global": 0,
+     "n_unmatched": 83,
+     "n_conflicting": 0,
+     "n_collisions": 0,
+     "n_glued_markers": 0,
+     "n_bilateral_mean": 0,
+     "n_right": 0
+    }
+   }
+  },
+  "gia_gedar_ASD_TPRS_thr_5": {
+   "status": "not computable (the paper's GEDAR map layout not matched)",
+   "record_path": "G2/gia_gedar_ASD_TPRS_thr_5.6.json",
+   "record_sha256": "7efbc50b1fbdc697f757927e572a98abb218c97d97f975cb9b6cba6772c1ae0c",
+   "identity_result": "identity match",
+   "identifier_bearing": null,
+   "quarantined": false,
+   "failed_stage": "read:file",
+   "refused_reason": null,
+   "sha256": "8b33a6799f409b957678a34be42398a631152c67336d75ca0c57694f09813401",
+   "layout_condition": {
+    "status": "not computable (the paper's GEDAR map layout not matched)",
+    "counts": {
+     "n_labels": 83,
+     "n_matched": 0,
+     "n_dropped_latvent": 0,
+     "n_dropped_global": 0,
+     "n_unmatched": 83,
+     "n_conflicting": 0,
+     "n_collisions": 0,
+     "n_glued_markers": 0,
+     "n_bilateral_mean": 0,
+     "n_right": 0
+    }
+   }
+  },
+  "gia_gedar_ASD_TPRS_thr_10": {
+   "status": "not computable (the paper's GEDAR map layout not matched)",
+   "record_path": "G2/gia_gedar_ASD_TPRS_thr_10.6.json",
+   "record_sha256": "598bfabf83656e218b08765b0403e18ce80b73774009d74f53289bbe8202c37f",
+   "identity_result": "identity match",
+   "identifier_bearing": null,
+   "quarantined": false,
+   "failed_stage": "read:file",
+   "refused_reason": null,
+   "sha256": "b93820fbe411f6a54029aca7eaadb2d5677d3116a0b9b17c0055b38621fa9ed6",
+   "layout_condition": {
+    "status": "not computable (the paper's GEDAR map layout not matched)",
+    "counts": {
+     "n_labels": 83,
+     "n_matched": 0,
+     "n_dropped_latvent": 0,
+     "n_dropped_global": 0,
+     "n_unmatched": 83,
+     "n_conflicting": 0,
+     "n_collisions": 0,
+     "n_glued_markers": 0,
+     "n_bilateral_mean": 0,
+     "n_right": 0
+    }
+   }
+  },
+  "gia_gedar_MDD_TPRS_thr_1": {
+   "status": "not computable (the paper's GEDAR map layout not matched)",
+   "record_path": "G2/gia_gedar_MDD_TPRS_thr_1.6.json",
+   "record_sha256": "d8bba63bd44f9457831280fff3428c07b30b8ec65b49010ab0c064e46113fc5d",
+   "identity_result": "identity match",
+   "identifier_bearing": null,
+   "quarantined": false,
+   "failed_stage": "read:file",
+   "refused_reason": null,
+   "sha256": "b15cc69180f015f33e72998e7f73e8e8ea784de75a9c4b9f1484b18af01e0aea",
+   "layout_condition": {
+    "status": "not computable (the paper's GEDAR map layout not matched)",
+    "counts": {
+     "n_labels": 83,
+     "n_matched": 0,
+     "n_dropped_latvent": 0,
+     "n_dropped_global": 0,
+     "n_unmatched": 83,
+     "n_conflicting": 0,
+     "n_collisions": 0,
+     "n_glued_markers": 0,
+     "n_bilateral_mean": 0,
+     "n_right": 0
+    }
+   }
+  },
+  "gia_gedar_MDD_TPRS_thr_5": {
+   "status": "not computable (the paper's GEDAR map layout not matched)",
+   "record_path": "G2/gia_gedar_MDD_TPRS_thr_5.6.json",
+   "record_sha256": "2d44b5f8605304e3cd5d141490aed32480e25a32dbc9b102f0241de148617428",
+   "identity_result": "identity match",
+   "identifier_bearing": null,
+   "quarantined": false,
+   "failed_stage": "read:file",
+   "refused_reason": null,
+   "sha256": "932a78bbc75e6b82dc3e714cf57e5f7d90045a4672f8c5e0215250e0af154d29",
+   "layout_condition": {
+    "status": "not computable (the paper's GEDAR map layout not matched)",
+    "counts": {
+     "n_labels": 83,
+     "n_matched": 0,
+     "n_dropped_latvent": 0,
+     "n_dropped_global": 0,
+     "n_unmatched": 83,
+     "n_conflicting": 0,
+     "n_collisions": 0,
+     "n_glued_markers": 0,
+     "n_bilateral_mean": 0,
+     "n_right": 0
+    }
+   }
+  },
+  "gia_gedar_MDD_TPRS_thr_10": {
+   "status": "not computable (the paper's GEDAR map layout not matched)",
+   "record_path": "G2/gia_gedar_MDD_TPRS_thr_10.6.json",
+   "record_sha256": "f53a5307b2e7e88d7eba11a802bfc66c565200e2906437d7dc21b346652cc86a",
+   "identity_result": "identity match",
+   "identifier_bearing": null,
+   "quarantined": false,
+   "failed_stage": "read:file",
+   "refused_reason": null,
+   "sha256": "66258b5a911b44232e7bdb9eff7283bf943ea638b624868fdbbd2ca68d07f6c8",
+   "layout_condition": {
+    "status": "not computable (the paper's GEDAR map layout not matched)",
+    "counts": {
+     "n_labels": 83,
+     "n_matched": 0,
+     "n_dropped_latvent": 0,
+     "n_dropped_global": 0,
+     "n_unmatched": 83,
+     "n_conflicting": 0,
+     "n_collisions": 0,
+     "n_glued_markers": 0,
+     "n_bilateral_mean": 0,
+     "n_right": 0
+    }
+   }
+  },
+  "giacomel_literature_gwas_script": {
+   "status": "extracted",
+   "record_path": "G2/giacomel_literature_gwas_script_v2.2.json",
+   "record_sha256": "46432cf9e77f2937b4f96e2a013e240444a9dbabd8de49bfd1fdb7a68d1b2301",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "9c361b5a5e0802f5ec41e75b484b854a9b3b62179b2a2388663e4111dac460af",
+   "object_path": "G2/giacomel_literature_gwas_script_v2/giacomel_literature_gwas_script_v2_extract.json",
+   "object_sha256": "01d3d386b4e58feb730803f81a6bf0e6725f066ed9f39d5b9472436108e95aaa",
+   "object_key": "giacomel_literature_gwas_script_v2",
+   "versioned": "an earlier object of other bytes kept (never overwritten)",
+   "repo_path_sha256": "ac40a37bfc384354deb38807d760411595b49a0814b4962ece1ef64009ea8121"
+  },
+  "giacomel_ahba_no_norm": {
+   "status": "identity recorded (no extraction declared)",
+   "record_path": "G2/giacomel_ahba_no_norm.6.json",
+   "record_sha256": "98ab3e82531970f9a926e6ef7530b09b824b76c4805c9ce5913ed63b62a89b58",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "4b4ace458d3923664dc1c5d397760d7dc229d4ebf40035fc6577919b1cdffb7c",
+   "prefix_len": 16,
+   "prefix_match": true
+  },
+  "giacomel_ahpa_brain": {
+   "status": "identity recorded (no extraction declared)",
+   "record_path": "G2/giacomel_ahpa_brain.6.json",
+   "record_sha256": "107065453b38829318914acac179afcc9ffe9bedf0d8ecca0d3c6673c1d90a7f",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "1b85136a7dc582ada3395132827a43b7751a3a7c585d8d2099d0cb4b59dd15cf",
+   "prefix_len": 16,
+   "prefix_match": true
+  },
+  "sadeghi2022_deg": {
+   "status": "extracted",
+   "record_path": "G2/sadeghi2022_deg.6.json",
+   "record_sha256": "be143a752e5bee735da85f7414a4359d093385231353586bf6e0993c94bebf50",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "ef4aee97e746b5e4a9400498c9e60377911910a4ac4685932bbbd56e062a153c",
+   "object_path": "G2/sadeghi2022_deg/sadeghi2022_deg_extract.json",
+   "object_sha256": "e4360ddc9bd2e02c3222ca7fbce317c7ceb5e5a8777b1d38765296a2bd647802",
+   "listing": {
+    "found": true,
+    "name_sha256": [
+     "39b447ea98beeb77c3dd126f99e355dea9247b5a4cdd74bad7f959bc9ec58cdf",
+     "5fdbac0460473f2a64b22eec9297ce1e4682312189fde763db816f4ea854cad2"
+    ],
+    "n_names": 2
+   },
+   "prefix_len": 16,
+   "prefix_source": "registered (wp4_layout prefix pins)"
+  },
+  "gia_commit_e045bc5": {
+   "status": "identity recorded (no extraction declared)",
+   "record_path": "G2/gia_commit_e045bc5.7.json",
+   "record_sha256": "cbd3ce11ed820c8e872e2398ea9a8b546c2f7140484a440b88a4c45a0d3897e1",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "a3fc79dbb502af3271b890ff5eb5fb9fdbe2be5bfc1135e22ac6c243954a7e73"
+  },
+  "r17_rhub_rversions": {
+   "status": "identity recorded (no extraction declared)",
+   "record_path": "G2/r17_rhub_rversions.7.json",
+   "record_sha256": "f21fa30bb231c15592c9968cf2b24f3ec9687e7fbc9d7a1dd67050f89f220be0",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "177c6be9a6f642cc282bf3c4f197cd990a8bd2cdae10ae00dfc896efd0ebf761"
+  },
+  "r17_bioc_config": {
+   "status": "identity recorded (no extraction declared)",
+   "record_path": "G2/r17_bioc_config.7.json",
+   "record_sha256": "cddea77b14e56f2626e6db011409d2fa4c4ecb32d52f097609bf154a8309e6c1",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "deaee3f8e0bd3383407d57695d3d5131ed085e6f70cc4121f94ec7806e079e3c"
+  },
+  "r17_in_d9fca68253635859": {
+   "status": "identity recorded (no extraction declared)",
+   "record_path": "G2/r17_in_d9fca68253635859.4.json",
+   "record_sha256": "1135e8d5c7be635ddf2ab36e250a90340a6f3a9c9a872198250544e5b0dac8e5",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "58b623281e1d3fe7f690d1ad40d66bfcfe92cb50e1d5689d388f3615b69c4ac1"
+  },
+  "r17": {
+   "exit": 1,
+   "ok": false,
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)",
+   "created": {},
+   "declared_outputs_found": 0,
+   "declared_outputs": 0,
+   "stdout_lines": 3,
+   "stderr_lines": 36,
+   "stdout_sha256": "fcff9d8fbe0bd407fd10897072f78493487de3c2884993579bfde05b4639eb10",
+   "stderr_sha256": "7268acbd6a2342161ab8293f6505fcf8aa1dc97cee056e178203b704eff736ae",
+   "inputs_sha256": {
+    "ac40a37bfc384354deb38807d760411595b49a0814b4962ece1ef64009ea8121": "9c361b5a5e0802f5ec41e75b484b854a9b3b62179b2a2388663e4111dac460af",
+    "ccf94acf8e9fa19acb8b0d99b99f21f6b6ca493a8c590cc5f06ad4c95a6e696f": "4b4ace458d3923664dc1c5d397760d7dc229d4ebf40035fc6577919b1cdffb7c",
+    "7fdcc52993ecb1238a8ae53a24affc050235c49f437c0d255002599c65dce6e8": "1b85136a7dc582ada3395132827a43b7751a3a7c585d8d2099d0cb4b59dd15cf",
+    "d9fca68253635859b79e462586aa874154331b94e4dc17454384fb36cd218c20": "58b623281e1d3fe7f690d1ad40d66bfcfe92cb50e1d5689d388f3615b69c4ac1"
+   },
+   "network": "none",
+   "cwd": "repository root",
+   "workdir_index": 5,
+   "build": {
+    "dockerfile_sha256": "fd08f4a5b88a7ef0ec30937febc8c3992a9f95f31e6e946e3efc8a6529dc8f23",
+    "image_id": "sha256:ad10ecc1b26cd323dddbb51d01387e9f01002c841840bd60251ccc089382ec5f",
+    "base_digest": "sha256:03b023fbf7b1b24ac1bb8b2ac5fd7e15a767e67b40ff50c155e328110981c2aa",
+    "base_override": false,
+    "session_info_sha256": "d7ee7d5302dd5ff872110920550acf9bc4e05b13c1a687727b159ea53ef8da3a",
+    "session_info_lines": 24,
+    "session_info_exit": 0
+   },
+   "params_sha256": "5736368092c74721b07982df47ec2b791c13f742060fee71d4bb84789309c87e",
+   "r_version": "4.5.1",
+   "bioc_version": "3.21",
+   "n_packages": 6,
+   "preinstalled": false,
+   "facts": {
+    "commit_date": "2025-10-20T11:11:27Z",
+    "n_read_paths": 4,
+    "n_read_paths_unresolved": 1,
+    "n_tree_inputs": 1,
+    "n_abs_roots": 2,
+    "n_out_dirs": 6,
+    "n_read_vars": 1,
+    "sadeghi_dup_name": {
+     "applied": false
+    }
+   }
+  },
+  "leyhausen_decoder_777428": {
+   "status": "extracted",
+   "record_path": "G2/leyhausen_decoder_777428.json",
+   "record_sha256": "1c8cb4439be49d8ab4a18dc9b8610c50666d552ae30ba23a1a098baeda91c225",
+   "identity_result": "identity recorded at download (no pre-freeze identity)",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "5789b8cfc902be606a654b7a17e985a983e23fb18393bcd6e972de25b7b2046c",
+   "object_path": "G2/leyhausen_decoder_777428/leyhausen_decoder_777428_extract.json",
+   "object_sha256": "29d70b24ded51e6be4af56bf04bf5ebfb7813f6f2d5705446bab184fe2f0ec67"
+  },
+  "leyhausen_decoder_777429": {
+   "status": "extracted",
+   "record_path": "G2/leyhausen_decoder_777429.json",
+   "record_sha256": "691668e5886fb3be3075b5cc285e3e40a4d2b53ce317191fcf1b2f07d3115e2b",
+   "identity_result": "identity recorded at download (no pre-freeze identity)",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "3017c3d961598a872bf9fb857b11dfbcaeb40fd7b3245abddce0e2006e0373a1",
+   "object_path": "G2/leyhausen_decoder_777429/leyhausen_decoder_777429_extract.json",
+   "object_sha256": "cd1ca625d58997f3248ec7ac68ecc1d11a92c6e7e8b5702215caee1b3b3b8846"
+  },
+  "leyhausen_decoder_777430": {
+   "status": "extracted",
+   "record_path": "G2/leyhausen_decoder_777430.json",
+   "record_sha256": "e165bb71a92eae7f2d2b0b9957058d09023403d8ca3850758c5aa71d49726d83",
+   "identity_result": "identity recorded at download (no pre-freeze identity)",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "e3c217988259026179bf8aac66a79e3d5442a0ff41adc87d664ec874097e9452",
+   "object_path": "G2/leyhausen_decoder_777430/leyhausen_decoder_777430_extract.json",
+   "object_sha256": "0b8c3625737501e77e68012101b505df7fe3e5a81a1cb3f0f405ac360b328373"
+  }
+ },
+ "steps": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11
+ ],
+ "run": {
+  "commit": "237f248d6d17de2f41689b67ad55f2e8ff6b135d",
+  "launch_passed": true
+ },
+ "scratch": false,
+ "post_exposure": {
+  "label": "post-exposure version (amend_5)",
+  "readings": [
+   "R61' (Pretzsch '.' = '-')",
+   "R54' (pallidus alias; unmarked Subcortical -> left)",
+   "R58' (d) (mmc2(<n>).xlsx = the pinned Sadeghi copy)"
+  ],
+  "objects": {
+   "giacomel_xlsx_c022a29": {
+    "status": "extracted",
+    "record_path": "G2/giacomel_xlsx_c022a29_a5.3.json",
+    "record_sha256": "f965878169911e1534dd81a60d949a21218779f07e6842121b1a0916aa1f8026",
+    "identity_result": "identity match",
+    "identifier_bearing": false,
+    "quarantined": false,
+    "failed_stage": null,
+    "refused_reason": null,
+    "sha256": "a4d4feecb028366c6ccd2ee06b216fc2be758e9b6cf92b039549b78ab5d888c8",
+    "object_path": "G2/giacomel_xlsx_c022a29_a5/giacomel_xlsx_c022a29_a5_extract.json",
+    "object_sha256": "cba5796418c087273cdf5f0050485c706672b7fc134768f6c674549b1910d471",
+    "object_key": "giacomel_xlsx_c022a29_a5"
+   },
+   "pretzsch_etable13": {
+    "status": "extracted",
+    "record_path": "G2/pretzsch_etable13_a5.3.json",
+    "record_sha256": "c38415eb8fa2dd208fc149e3a033f7a2d731a0586872e781f7501e2e8a417945",
+    "identity_result": "identity match",
+    "identifier_bearing": false,
+    "quarantined": false,
+    "failed_stage": null,
+    "refused_reason": null,
+    "sha256": "0ef57d234055505918e4f99a674c6e446402b5c2bea69046e2c2429f60df5d67",
+    "object_path": "G2/pretzsch_etable13_a5/pretzsch_etable13_a5_extract.json",
+    "object_sha256": "b3ff0f31aaea47dbe66d4717c5b9ce5d9739c83b2cc1de857078dffa1fd09ebe",
+    "object_key": "pretzsch_etable13_a5"
+   },
+   "giacomel_xlsx_93de089": {
+    "status": "extracted",
+    "record_path": "G2/giacomel_xlsx_93de089_a5.3.json",
+    "record_sha256": "b5f381987057518ed1b3cb7a38566c4d56959d58addb90c22b6d45f1a2da42f0",
+    "identity_result": "identity match",
+    "identifier_bearing": false,
+    "quarantined": false,
+    "failed_stage": null,
+    "refused_reason": null,
+    "sha256": "15101878fd0cae3763bcdd46f4ee9c28aeece550a1d40f9de73cc049230dcea0",
+    "object_path": "G2/giacomel_xlsx_93de089_a5/giacomel_xlsx_93de089_a5_extract.json",
+    "object_sha256": "2ecbe4929387fa08d5d54e4bcad7c417593c71a6af5469aee6efebaaf4f10d59",
+    "object_key": "giacomel_xlsx_93de089_a5"
+   },
+   "r17": {
+    "exit": 0,
+    "ok": true,
+    "status": "ran",
+    "created": {
+     "d834fe150ff4b88747c599fcfd51906459418638eb248aa925353483caa61e45": "7a1f39fb3fe9ffa55efe30a501f5250c7006a4830c8991275849853eb35b6879",
+     "a2aacaf1a4de9739f1cf0d84a116630b76f479e8782e2e256f2c66bb959e4d8b": "f7f712e5e12e290c1529a0f5908d5c74b0beec90624b130ffaeb3ee576d45fc9",
+     "01b934beb997339a148ba6da0589ac9400e513d2ccaa8f76897c6c40b42ba528": "05968f6ef32fcc926f650c033c39edf643e5175b69a107a85f8a0a7fe29dee5c",
+     "50c3c3da5d45c30c4ab6cdf3028ed4b2ea80101b309cb5c49ce81459eb2ba03c": "fdd62b897fc6eeb02e259f810f26697840d5eda11e1589d9d278d92713b0ed18",
+     "c55b0e257e47eabc4a86dab503b91f30e8c5a7cdfa57c68a5beed0825e10799c": "2bc73782be3842795790713b8d92c9934b3bf2752895e999677cbf40d20c474a",
+     "fc3260af34113364fd8e69c565ff4f930011a96ff9d77c574fa22465b3ca7035": "e1ba97f28a9aef730674a69d8dab4fbc72d34c8f08ac122f623cfda09a226947",
+     "5054c9bb155532d77ed26e9f85f879d322f1eae948f94d8d819963febb2b7256": "a791afcc6b93efc85300703a43a8d284e6c137133d6c06badf4a6d41eafaeca2",
+     "cd21dd59cc33e513c43c4f9e1d737261af6ecfdcde601b5e5842faa9879d6c41": "861ab0e13299d6ef742faadb19615ca07592d61f15e7ce60760bb1ce15114222",
+     "33abd84ced4571e32cac7e8c8833f81646aceb0fa1561f917a2e09d85c95f558": "077c48437eba86467dbb45a14efc6fe8171f0da7bc569770030ef443e35758fa",
+     "eea0d8d7e1eca79586056b1cd3922643ad5368abac0db57d634ed9befe6d9509": "a8bc66d50222daff0133b7b395e688c5676002f87f72a1b45277923214b19eb1",
+     "20913aa3a585ed4a821d2c2a6fa3144390fa2bda25d8cef860b2141a22081fa0": "5fe412c70a8557f8119f43f463d4edc5fe6e4f5305540310572157c61e82c868",
+     "c99b1429719a229af167ba11b5739d50eede06cf75aad254149534c70fb06c38": "ebd24928ee6086b488f174f622b27b7c2ea388c4d66424f7c1e4ab1a3c42cba4",
+     "43d0895071c901dc9a0b1d1325da13a7abfc5ab3bfa8079c248abdf03efe55cb": "6935a0a621c092a9df643aa2c1f938ad65f0576f815c107b7b3286448855fd83",
+     "b200dfc4839f3d582ca11ad9500cd540db76c08907ffeb9330c385a79bb0dce3": "f7f712e5e12e290c1529a0f5908d5c74b0beec90624b130ffaeb3ee576d45fc9",
+     "b4249ea75fca1b45aaf3af19e3d2ef042e4dbfa4de64f73bc34b232dbc19a337": "05968f6ef32fcc926f650c033c39edf643e5175b69a107a85f8a0a7fe29dee5c",
+     "8be0765408dd6fc70f548a787e9892a7343d490001997376bed23ae9f622bbb4": "fdd62b897fc6eeb02e259f810f26697840d5eda11e1589d9d278d92713b0ed18",
+     "2f17d98bb158d45dc4531223c417e823b668d95a94512f25f65040e85445340e": "04f8d171a2e26089694670ac124b6f0949192d83b14862d0ff6293f62c0770c3",
+     "603090115939cd13ad8bbeffe029e6a9f300570c65fa67d0f6574b4af54fb949": "14388c066ce8a0d235922a580b29a4d80b626e0b6aaa6f2fde46c5907f8636ff",
+     "798d35da359a6c853f6bd1761bc2a35f23cf5af53605e29d618ab5a76da9870c": "b4dea44d0228a8bd63ac3bc1de38a834ff55b28cf465d401909344d6d0bb377c",
+     "a451f7ab10537a8353ab8791ed05c9f1a85aef1c60b2b09a3184cf8e25c95385": "69e7f65688db761ca5722b1f4e56068bfb49b5228486f461698f51bdca22b9e8",
+     "c0c3e6ed6b7dad0d4fde26013b4da4ed954be67cdecfb6a7569dc473d761adc8": "dffa853a76e8afcd4f2e0bbcfdb1f84c584ca74a9b65884a3184ad3bcbd7ffcc",
+     "75c4653a34363dd482427d8d51ec5bcd359750b9a95dc706eed856d111e7dd06": "0f3208368d026e8c2665869c8813d76727f4973b1dd8c7beb9c6902c4c1b3b1f",
+     "3f955e15863779e5912c95288c4a546970d4629c239dfed75b11aa3e22a684db": "33bfb71142ef920c02d9bd0f4a4347f03554cd19935900a5a596d72dce0f4f1e",
+     "fa7ddd3a54e2a5c3ea1ddaea4c9f455ed5085abfb0e4759d1a253431b93cefaf": "8cbee3b1e50cf527f8b149d53669a689101b43470d0610d9da1dd4add493fc7d",
+     "7f68470719bf633c498a7950d7f58751a429a586c6dced6ab811f5442cf905e3": "27789afd63a6bba766ff52c739fdaea6b62a4653c18ae4c4b16be3ab68afa2eb"
+    },
+    "declared_outputs_found": 0,
+    "declared_outputs": 0,
+    "stdout_lines": 3,
+    "stderr_lines": 34,
+    "stdout_sha256": "fcff9d8fbe0bd407fd10897072f78493487de3c2884993579bfde05b4639eb10",
+    "stderr_sha256": "8f282fa11525ce5924534b1abaa63a502e0220147e50883440afff323458527c",
+    "inputs_sha256": {
+     "ac40a37bfc384354deb38807d760411595b49a0814b4962ece1ef64009ea8121": "9c361b5a5e0802f5ec41e75b484b854a9b3b62179b2a2388663e4111dac460af",
+     "ccf94acf8e9fa19acb8b0d99b99f21f6b6ca493a8c590cc5f06ad4c95a6e696f": "4b4ace458d3923664dc1c5d397760d7dc229d4ebf40035fc6577919b1cdffb7c",
+     "7fdcc52993ecb1238a8ae53a24affc050235c49f437c0d255002599c65dce6e8": "1b85136a7dc582ada3395132827a43b7751a3a7c585d8d2099d0cb4b59dd15cf",
+     "d9fca68253635859b79e462586aa874154331b94e4dc17454384fb36cd218c20": "58b623281e1d3fe7f690d1ad40d66bfcfe92cb50e1d5689d388f3615b69c4ac1",
+     "a4f83ab4d3d8d52247bd2ff23cf8c109c16861987688aa701178251c7382d33e": "ef4aee97e746b5e4a9400498c9e60377911910a4ac4685932bbbd56e062a153c"
+    },
+    "network": "none",
+    "cwd": "repository root",
+    "workdir_index": 6,
+    "build": {
+     "dockerfile_sha256": "fd08f4a5b88a7ef0ec30937febc8c3992a9f95f31e6e946e3efc8a6529dc8f23",
+     "image_id": "sha256:5b2186bd7194677ec132c496d233a67f96c8a874fb62e2fcdaaf2f3b73b0b85c",
+     "base_digest": "sha256:03b023fbf7b1b24ac1bb8b2ac5fd7e15a767e67b40ff50c155e328110981c2aa",
+     "base_override": false,
+     "session_info_sha256": "d7ee7d5302dd5ff872110920550acf9bc4e05b13c1a687727b159ea53ef8da3a",
+     "session_info_lines": 24,
+     "session_info_exit": 0
+    },
+    "params_sha256": "5736368092c74721b07982df47ec2b791c13f742060fee71d4bb84789309c87e",
+    "r_version": "4.5.1",
+    "bioc_version": "3.21",
+    "n_packages": 6,
+    "preinstalled": false,
+    "facts": {
+     "commit_date": "2025-10-20T11:11:27Z",
+     "n_read_paths": 4,
+     "n_read_paths_unresolved": 0,
+     "n_tree_inputs": 1,
+     "n_abs_roots": 2,
+     "n_out_dirs": 6,
+     "n_read_vars": 1,
+     "sadeghi_dup_name": {
+      "applied": true,
+      "sha256_match": true,
+      "sha256": "ef4aee97e746b5e4a9400498c9e60377911910a4ac4685932bbbd56e062a153c"
+     }
+    }
+   },
+   "r17_map_ASD_1": {
+    "status": "refused (stage failed)",
+    "record_path": "G2/r17_map_ASD_1_r6.json",
+    "record_sha256": "14b32f9b2f414a72a87c08b0e43029750d16cc5851c397dfe2478c5fcefae226",
+    "identity_result": "identity match",
+    "identifier_bearing": null,
+    "quarantined": false,
+    "failed_stage": "read:file",
+    "refused_reason": null,
+    "sha256": "f7f712e5e12e290c1529a0f5908d5c74b0beec90624b130ffaeb3ee576d45fc9",
+    "layout_condition": {
+     "status": "not computable (the paper's GEDAR map layout not matched)",
+     "counts": {
+      "n_labels": 83,
+      "n_matched": 0,
+      "n_dropped_latvent": 0,
+      "n_dropped_global": 0,
+      "n_unmatched": 83,
+      "n_conflicting": 0,
+      "n_collisions": 0,
+      "n_glued_markers": 0,
+      "n_bilateral_mean": 0,
+      "n_right": 0
+     }
+    },
+    "object_key": "r17_map_ASD_1_r6"
+   },
+   "r17_map_ASD_10": {
+    "status": "refused (stage failed)",
+    "record_path": "G2/r17_map_ASD_10_r6.json",
+    "record_sha256": "7e831c40e5deda0b9eb1273131fae24c8e920426182bdf73090605aebf4904e8",
+    "identity_result": "identity match",
+    "identifier_bearing": null,
+    "quarantined": false,
+    "failed_stage": "read:file",
+    "refused_reason": null,
+    "sha256": "05968f6ef32fcc926f650c033c39edf643e5175b69a107a85f8a0a7fe29dee5c",
+    "layout_condition": {
+     "status": "not computable (the paper's GEDAR map layout not matched)",
+     "counts": {
+      "n_labels": 83,
+      "n_matched": 0,
+      "n_dropped_latvent": 0,
+      "n_dropped_global": 0,
+      "n_unmatched": 83,
+      "n_conflicting": 0,
+      "n_collisions": 0,
+      "n_glued_markers": 0,
+      "n_bilateral_mean": 0,
+      "n_right": 0
+     }
+    },
+    "object_key": "r17_map_ASD_10_r6"
+   },
+   "r17_map_ASD_5": {
+    "status": "refused (stage failed)",
+    "record_path": "G2/r17_map_ASD_5_r6.json",
+    "record_sha256": "35c422c20c36d1a50d3ec8bf2c3d856a10b7fa12337836f3a05f33c708dd9d34",
+    "identity_result": "identity match",
+    "identifier_bearing": null,
+    "quarantined": false,
+    "failed_stage": "read:file",
+    "refused_reason": null,
+    "sha256": "fdd62b897fc6eeb02e259f810f26697840d5eda11e1589d9d278d92713b0ed18",
+    "layout_condition": {
+     "status": "not computable (the paper's GEDAR map layout not matched)",
+     "counts": {
+      "n_labels": 83,
+      "n_matched": 0,
+      "n_dropped_latvent": 0,
+      "n_dropped_global": 0,
+      "n_unmatched": 83,
+      "n_conflicting": 0,
+      "n_collisions": 0,
+      "n_glued_markers": 0,
+      "n_bilateral_mean": 0,
+      "n_right": 0
+     }
+    },
+    "object_key": "r17_map_ASD_5_r6"
+   },
+   "r17_map_MDD_1": {
+    "status": "refused (stage failed)",
+    "record_path": "G2/r17_map_MDD_1_r6.json",
+    "record_sha256": "c6acb39463e31ae8671460e2341a7239c69db262aa020fff689de752b31dc73b",
+    "identity_result": "identity match",
+    "identifier_bearing": null,
+    "quarantined": false,
+    "failed_stage": "read:file",
+    "refused_reason": null,
+    "sha256": "f7f712e5e12e290c1529a0f5908d5c74b0beec90624b130ffaeb3ee576d45fc9",
+    "layout_condition": {
+     "status": "not computable (the paper's GEDAR map layout not matched)",
+     "counts": {
+      "n_labels": 83,
+      "n_matched": 0,
+      "n_dropped_latvent": 0,
+      "n_dropped_global": 0,
+      "n_unmatched": 83,
+      "n_conflicting": 0,
+      "n_collisions": 0,
+      "n_glued_markers": 0,
+      "n_bilateral_mean": 0,
+      "n_right": 0
+     }
+    },
+    "object_key": "r17_map_MDD_1_r6"
+   },
+   "r17_map_MDD_10": {
+    "status": "refused (stage failed)",
+    "record_path": "G2/r17_map_MDD_10_r6.json",
+    "record_sha256": "3398a40ac9d2452d4b3cdbf43594f5b9c8db4e0a0d3c6964cd6375cb163f1c35",
+    "identity_result": "identity match",
+    "identifier_bearing": null,
+    "quarantined": false,
+    "failed_stage": "read:file",
+    "refused_reason": null,
+    "sha256": "05968f6ef32fcc926f650c033c39edf643e5175b69a107a85f8a0a7fe29dee5c",
+    "layout_condition": {
+     "status": "not computable (the paper's GEDAR map layout not matched)",
+     "counts": {
+      "n_labels": 83,
+      "n_matched": 0,
+      "n_dropped_latvent": 0,
+      "n_dropped_global": 0,
+      "n_unmatched": 83,
+      "n_conflicting": 0,
+      "n_collisions": 0,
+      "n_glued_markers": 0,
+      "n_bilateral_mean": 0,
+      "n_right": 0
+     }
+    },
+    "object_key": "r17_map_MDD_10_r6"
+   },
+   "r17_map_MDD_5": {
+    "status": "refused (stage failed)",
+    "record_path": "G2/r17_map_MDD_5_r6.json",
+    "record_sha256": "844831449ca58e6fa2558efe4a2d42d417f305d987c657a5cf7a1d108401c791",
+    "identity_result": "identity match",
+    "identifier_bearing": null,
+    "quarantined": false,
+    "failed_stage": "read:file",
+    "refused_reason": null,
+    "sha256": "fdd62b897fc6eeb02e259f810f26697840d5eda11e1589d9d278d92713b0ed18",
+    "layout_condition": {
+     "status": "not computable (the paper's GEDAR map layout not matched)",
+     "counts": {
+      "n_labels": 83,
+      "n_matched": 0,
+      "n_dropped_latvent": 0,
+      "n_dropped_global": 0,
+      "n_unmatched": 83,
+      "n_conflicting": 0,
+      "n_collisions": 0,
+      "n_glued_markers": 0,
+      "n_bilateral_mean": 0,
+      "n_right": 0
+     }
+    },
+    "object_key": "r17_map_MDD_5_r6"
+   },
+   "r17_deg_ASD_1": {
+    "status": "extracted",
+    "record_path": "G2/r17_deg_ASD_1_r6.json",
+    "record_sha256": "6e5ba70520c04ec8738fe494458a2928596acd97306ab2431e02cdc768d36a01",
+    "identity_result": "identity match",
+    "identifier_bearing": false,
+    "quarantined": false,
+    "failed_stage": null,
+    "refused_reason": null,
+    "sha256": "2bc73782be3842795790713b8d92c9934b3bf2752895e999677cbf40d20c474a",
+    "object_path": "G2/r17_deg_ASD_1_r6/r17_deg_ASD_1_r6_extract.json",
+    "object_sha256": "888869fcbd321369e0782a2431d03c52a1381686e5a08466e813b2dd9abfec73",
+    "object_key": "r17_deg_ASD_1_r6"
+   },
+   "r17_deg_ASD_10": {
+    "status": "extracted",
+    "record_path": "G2/r17_deg_ASD_10_r6.json",
+    "record_sha256": "82a7633aa8a13b03ff3d4c6abdd0fb9ff9bfb495c92a4ef40c4952da3c0d7cb2",
+    "identity_result": "identity match",
+    "identifier_bearing": false,
+    "quarantined": false,
+    "failed_stage": null,
+    "refused_reason": null,
+    "sha256": "e1ba97f28a9aef730674a69d8dab4fbc72d34c8f08ac122f623cfda09a226947",
+    "object_path": "G2/r17_deg_ASD_10_r6/r17_deg_ASD_10_r6_extract.json",
+    "object_sha256": "d0628aae65467a26b64e7d42661cb2a7427cc6d0a7529b89816ecdfa3d26954c",
+    "object_key": "r17_deg_ASD_10_r6"
+   },
+   "r17_deg_ASD_5": {
+    "status": "extracted",
+    "record_path": "G2/r17_deg_ASD_5_r6.json",
+    "record_sha256": "be7a30ba683ea0e05eafcb7f2c8700aff68c64bb871d64142d3f6dc67b8efe05",
+    "identity_result": "identity match",
+    "identifier_bearing": false,
+    "quarantined": false,
+    "failed_stage": null,
+    "refused_reason": null,
+    "sha256": "a791afcc6b93efc85300703a43a8d284e6c137133d6c06badf4a6d41eafaeca2",
+    "object_path": "G2/r17_deg_ASD_5_r6/r17_deg_ASD_5_r6_extract.json",
+    "object_sha256": "e2566b590f8646cbf1faeb8702cd22cd4aaf071dea6bdf78e52116a456577f1e",
+    "object_key": "r17_deg_ASD_5_r6"
+   },
+   "r17_deg_MDD_1": {
+    "status": "extracted",
+    "record_path": "G2/r17_deg_MDD_1_r6.json",
+    "record_sha256": "bfd0b8ef9bb6bca482b5af17781f0daa5351e3ab2fac9a2936ce167bd29faea2",
+    "identity_result": "identity match",
+    "identifier_bearing": false,
+    "quarantined": false,
+    "failed_stage": null,
+    "refused_reason": null,
+    "sha256": "04f8d171a2e26089694670ac124b6f0949192d83b14862d0ff6293f62c0770c3",
+    "object_path": "G2/r17_deg_MDD_1_r6/r17_deg_MDD_1_r6_extract.json",
+    "object_sha256": "7191826126802bada41335ed05bae5c740f6943c00ac5869dff97ce6e1987eab",
+    "object_key": "r17_deg_MDD_1_r6"
+   },
+   "r17_deg_MDD_10": {
+    "status": "extracted",
+    "record_path": "G2/r17_deg_MDD_10_r6.json",
+    "record_sha256": "d969fa71b1174e3a83b436cf6f8312abc0c01e413977bb8b553a5a74c6e2fdf9",
+    "identity_result": "identity match",
+    "identifier_bearing": false,
+    "quarantined": false,
+    "failed_stage": null,
+    "refused_reason": null,
+    "sha256": "14388c066ce8a0d235922a580b29a4d80b626e0b6aaa6f2fde46c5907f8636ff",
+    "object_path": "G2/r17_deg_MDD_10_r6/r17_deg_MDD_10_r6_extract.json",
+    "object_sha256": "2aec8c16d6996444ba0788ee0584860b4f0d6db8e5d1cb9b34eab172d651904e",
+    "object_key": "r17_deg_MDD_10_r6"
+   },
+   "r17_deg_MDD_5": {
+    "status": "extracted",
+    "record_path": "G2/r17_deg_MDD_5_r6.json",
+    "record_sha256": "f6aff316a0beeea1f85d2c61209ec077d47912128cc24e6066737288887cd33d",
+    "identity_result": "identity match",
+    "identifier_bearing": false,
+    "quarantined": false,
+    "failed_stage": null,
+    "refused_reason": null,
+    "sha256": "b4dea44d0228a8bd63ac3bc1de38a834ff55b28cf465d401909344d6d0bb377c",
+    "object_path": "G2/r17_deg_MDD_5_r6/r17_deg_MDD_5_r6_extract.json",
+    "object_sha256": "7d452bf6f030ea6844e81ae114d60d09f55473fad5f04e735307a5a82fed0cbd",
+    "object_key": "r17_deg_MDD_5_r6"
+   }
+  },
+  "giacomel_comparison": {
+   "thickness": {
+    "n_cells_compared": 68,
+    "n_cells_differing": 0
+   },
+   "subcortical": {
+    "n_cells_compared": 14,
+    "n_cells_differing": 0
+   },
+   "governs": "93de089"
+  },
+  "labels": {
+   "line130": {
+    "r17_mdd_equals_asd": {
+     "1": true,
+     "5": true,
+     "10": true
+    },
+    "eda33ab_mdd_equals_asd": {
+     "1": false,
+     "5": false,
+     "10": false
+    },
+    "label": "the paper's script writes the ASD values into the MDD TPRS files (line 130)",
+    "cells": [
+     "GIA-MDD-DEG-MDDset-01-ctx",
+     "GIA-MDD-DEG-MDDset-01-sub",
+     "GIA-MDD-DEG-MDDset-05-ctx",
+     "GIA-MDD-DEG-MDDset-05-sub",
+     "GIA-MDD-DEG-MDDset-10-ctx",
+     "GIA-MDD-DEG-MDDset-10-sub"
+    ]
+   }
+  },
+  "sets": {
+   "manifest_sha256": "bfd7244254b0277756e56ca761e1f6bf395b3562591ebae14583769d559a7d40",
+   "manifest_name": "MANIFEST_G2.2.json",
+   "n_sets": 41,
+   "restatement": {
+    "n_cells": 41,
+    "n_not_testable_lt5": 0,
+    "n_in_m_not_testable_lt5": 0
+   }
+  },
+  "deg_checks": {
+   "GIA-C19": {
+    "passed": true,
+    "m_script": 36,
+    "m_definition": 36,
+    "n_pool": 3599,
+    "cross_check": {
+     "n_common": 36,
+     "n_script_only": 0,
+     "n_python_only": 0,
+     "equal": true,
+     "role": "cross-check only (the script's S governs)"
+    },
+    "status": null
+   },
+   "GIA-C20": {
+    "passed": true,
+    "m_script": 36,
+    "m_definition": 36,
+    "n_pool": 3599,
+    "cross_check": {
+     "n_common": 36,
+     "n_script_only": 0,
+     "n_python_only": 0,
+     "equal": true,
+     "role": "cross-check only (the script's S governs)"
+    },
+    "status": null
+   },
+   "GIA-C21": {
+    "passed": true,
+    "m_script": 180,
+    "m_definition": 180,
+    "n_pool": 3599,
+    "cross_check": {
+     "n_common": 180,
+     "n_script_only": 0,
+     "n_python_only": 0,
+     "equal": true,
+     "role": "cross-check only (the script's S governs)"
+    },
+    "status": null
+   },
+   "GIA-C22": {
+    "passed": true,
+    "m_script": 180,
+    "m_definition": 180,
+    "n_pool": 3599,
+    "cross_check": {
+     "n_common": 180,
+     "n_script_only": 0,
+     "n_python_only": 0,
+     "equal": true,
+     "role": "cross-check only (the script's S governs)"
+    },
+    "status": null
+   },
+   "GIA-C23": {
+    "passed": true,
+    "m_script": 360,
+    "m_definition": 360,
+    "n_pool": 3599,
+    "cross_check": {
+     "n_common": 360,
+     "n_script_only": 0,
+     "n_python_only": 0,
+     "equal": true,
+     "role": "cross-check only (the script's S governs)"
+    },
+    "status": null
+   },
+   "GIA-C24": {
+    "passed": true,
+    "m_script": 360,
+    "m_definition": 360,
+    "n_pool": 3599,
+    "cross_check": {
+     "n_common": 360,
+     "n_script_only": 0,
+     "n_python_only": 0,
+     "equal": true,
+     "role": "cross-check only (the script's S governs)"
+    },
+    "status": null
+   },
+   "GIA-MDD-DEG-MDDset-01-ctx": {
+    "passed": true,
+    "m_script": 36,
+    "m_definition": 36,
+    "n_pool": 3609,
+    "cross_check": {
+     "n_common": 36,
+     "n_script_only": 0,
+     "n_python_only": 0,
+     "equal": true,
+     "role": "cross-check only (the script's S governs)"
+    },
+    "status": null
+   },
+   "GIA-MDD-DEG-MDDset-01-sub": {
+    "passed": true,
+    "m_script": 36,
+    "m_definition": 36,
+    "n_pool": 3609,
+    "cross_check": {
+     "n_common": 36,
+     "n_script_only": 0,
+     "n_python_only": 0,
+     "equal": true,
+     "role": "cross-check only (the script's S governs)"
+    },
+    "status": null
+   },
+   "GIA-MDD-DEG-MDDset-05-ctx": {
+    "passed": true,
+    "m_script": 180,
+    "m_definition": 180,
+    "n_pool": 3609,
+    "cross_check": {
+     "n_common": 180,
+     "n_script_only": 0,
+     "n_python_only": 0,
+     "equal": true,
+     "role": "cross-check only (the script's S governs)"
+    },
+    "status": null
+   },
+   "GIA-MDD-DEG-MDDset-05-sub": {
+    "passed": true,
+    "m_script": 180,
+    "m_definition": 180,
+    "n_pool": 3609,
+    "cross_check": {
+     "n_common": 180,
+     "n_script_only": 0,
+     "n_python_only": 0,
+     "equal": true,
+     "role": "cross-check only (the script's S governs)"
+    },
+    "status": null
+   },
+   "GIA-MDD-DEG-MDDset-10-ctx": {
+    "passed": true,
+    "m_script": 361,
+    "m_definition": 361,
+    "n_pool": 3609,
+    "cross_check": {
+     "n_common": 361,
+     "n_script_only": 0,
+     "n_python_only": 0,
+     "equal": true,
+     "role": "cross-check only (the script's S governs)"
+    },
+    "status": null
+   },
+   "GIA-MDD-DEG-MDDset-10-sub": {
+    "passed": true,
+    "m_script": 361,
+    "m_definition": 361,
+    "n_pool": 3609,
+    "cross_check": {
+     "n_common": 361,
+     "n_script_only": 0,
+     "n_python_only": 0,
+     "equal": true,
+     "role": "cross-check only (the script's S governs)"
+    },
+    "status": null
+   },
+   "GIA-MDD-DEG-ASDset-01-ctx": {
+    "passed": true,
+    "m_script": 36,
+    "m_definition": 36,
+    "n_pool": 3599,
+    "cross_check": {
+     "n_common": 36,
+     "n_script_only": 0,
+     "n_python_only": 0,
+     "equal": true,
+     "role": "cross-check only (the script's S governs)"
+    },
+    "status": null
+   },
+   "GIA-MDD-DEG-ASDset-01-sub": {
+    "passed": true,
+    "m_script": 36,
+    "m_definition": 36,
+    "n_pool": 3599,
+    "cross_check": {
+     "n_common": 36,
+     "n_script_only": 0,
+     "n_python_only": 0,
+     "equal": true,
+     "role": "cross-check only (the script's S governs)"
+    },
+    "status": null
+   },
+   "GIA-MDD-DEG-ASDset-05-ctx": {
+    "passed": true,
+    "m_script": 180,
+    "m_definition": 180,
+    "n_pool": 3599,
+    "cross_check": {
+     "n_common": 180,
+     "n_script_only": 0,
+     "n_python_only": 0,
+     "equal": true,
+     "role": "cross-check only (the script's S governs)"
+    },
+    "status": null
+   },
+   "GIA-MDD-DEG-ASDset-05-sub": {
+    "passed": true,
+    "m_script": 180,
+    "m_definition": 180,
+    "n_pool": 3599,
+    "cross_check": {
+     "n_common": 180,
+     "n_script_only": 0,
+     "n_python_only": 0,
+     "equal": true,
+     "role": "cross-check only (the script's S governs)"
+    },
+    "status": null
+   },
+   "GIA-MDD-DEG-ASDset-10-ctx": {
+    "passed": true,
+    "m_script": 360,
+    "m_definition": 360,
+    "n_pool": 3599,
+    "cross_check": {
+     "n_common": 360,
+     "n_script_only": 0,
+     "n_python_only": 0,
+     "equal": true,
+     "role": "cross-check only (the script's S governs)"
+    },
+    "status": null
+   },
+   "GIA-MDD-DEG-ASDset-10-sub": {
+    "passed": true,
+    "m_script": 360,
+    "m_definition": 360,
+    "n_pool": 3599,
+    "cross_check": {
+     "n_common": 360,
+     "n_script_only": 0,
+     "n_python_only": 0,
+     "equal": true,
+     "role": "cross-check only (the script's S governs)"
+    },
+    "status": null
+   }
+  }
+ },
+ "pins": {
+  "references": {
+   "brainspan_cols": {
+    "sha256": "995a8e75b76459ba2bdbb51ad2db8970272f546baae14ddd3a7df6bc3ac18a01",
+    "bytes": 43050,
+    "result": "pin match"
+   },
+   "brainspan_expr": {
+    "sha256": "e8d98aa02874f6b12fe7e071f4f88435b88256b6e5c4ba1d799e7b82aad28ee2",
+    "bytes": 183262070,
+    "result": "pin match"
+   },
+   "brainspan_rows": {
+    "sha256": "dbfea0211aea42f6032084c3cdacb737943cbd786115dc5fde0f754708ae988b",
+    "bytes": 2151132,
+    "result": "pin match"
+   },
+   "dk_atlas": {
+    "sha256": "0a28c93f5967f0892810219e68edb32abcaa9fd796a217096512fb0724c20d8a",
+    "bytes": 216876,
+    "result": "pin match"
+   },
+   "dk_info": {
+    "sha256": "abb69a9bf976a153b749eb5333e92cf03d4f61f2ce3efd34e49ea6e82f18729b",
+    "bytes": 2484,
+    "result": "pin match"
+   },
+   "gamba": {
+    "sha256": "442334c3cb487625349fc6e6be6fee121dbc7bdb35b9277133c04032ee0fa53a",
+    "bytes": 268733,
+    "result": "pin match"
+   },
+   "hgnc": {
+    "sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+    "bytes": 16903161,
+    "result": "pin match"
+   }
+  },
+  "builds": {
+   "manifest_sha256": "aa16374367c9be9c1559f16973b6517a9960158aacdb17c93401812a97ae246b",
+   "builds": {
+    "primary-dk": {
+     "record_sha256": "8df7f5ed8fb844129c06890d9894115ca52aed378bc3f63abbf206b9543ec552",
+     "files": {
+      "counts": "7c98bbc22c8ab2e860985a8a8c6de08d4a4c6b24a0d9155bb5b2c4d8086cb963"
+     }
+    },
+    "perdonor-dk": {
+     "record_sha256": "1bd2ad6d630108b4180104ed62b9fa37006dc3bc53e05c1fc67ee1abaa5a859d",
+     "files": {
+      "matrix_d1": "3b6f49a47fbea91aa1dca6ab59a55ac17903883e1aded261ddadd4538456e1c6",
+      "matrix_d2": "66289d8ffdb3f9c34967c98c77724122ae450e3d5948965268c8ea390b55709a",
+      "matrix_d3": "73b079285127126d4656d92e63c9c01d91c3f839ef326c28cc0fba2cae9a7eaf",
+      "matrix_d4": "a2f0c9d01bfbb86820db4c6f33f96d05298f9b93de141396c1fe1a04127cd36a",
+      "matrix_d5": "832f9e488653ab128517aa26f5843d46d8ed0244711380b67b0248f9eebc3ba3",
+      "matrix_d6": "c9a25fdf9df143ba469e5467ae450530ab36c6dd06f344dd13d00765773bdc32",
+      "counts": "7c98bbc22c8ab2e860985a8a8c6de08d4a4c6b24a0d9155bb5b2c4d8086cb963"
+     }
+    },
+    "r12-han-c1-ourpc1": {
+     "record_sha256": "db2d69871221a263d93aa074e07b777bdb37b4198a5acada21ca7580feacd469",
+     "files": {
+      "ds_dk_ctx_perdonor.csv": "135363e814e8c0c6a5dd1b3d39de478bd60f49a47f23bb0124ce3d34abd02ce9",
+      "pc1_dk_ctx.csv": "29c1155688ed0e2205fa69063e5015a2456657b1ea39af32fbd89b87cc38b13f",
+      "pc1_loadings.csv": "a651a9547535a786119547548c999867c960c7baae58311689f276e4fd4defda"
+     }
+    }
+   }
+  },
+  "r13": {
+   "result": "pass",
+   "record_sha256": "3e5414398eae9cb16c2b2c984a21269f10f5bcbee9ddd23d28179e1f0cb922fb"
+  }
+ },
+ "giacomel_comparison": {
+  "thickness": {
+   "n_cells_compared": 68,
+   "n_cells_differing": 0
+  },
+  "subcortical": "not compared (a sheet not read)",
+  "governs": "93de089"
+ },
+ "labels": {
+  "line130": {
+   "r17_mdd_equals_asd": {
+    "1": null,
+    "5": null,
+    "10": null
+   },
+   "eda33ab_mdd_equals_asd": {
+    "1": false,
+    "5": false,
+    "10": false
+   },
+   "label": "the paper's script writes the ASD values into the MDD TPRS files (line 130)",
+   "cells": [
+    "GIA-MDD-DEG-MDDset-01-ctx",
+    "GIA-MDD-DEG-MDDset-01-sub",
+    "GIA-MDD-DEG-MDDset-05-ctx",
+    "GIA-MDD-DEG-MDDset-05-sub",
+    "GIA-MDD-DEG-MDDset-10-ctx",
+    "GIA-MDD-DEG-MDDset-10-sub"
+   ]
+  }
+ },
+ "deg_checks": {
+  "GIA-C19": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-C20": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-C21": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-C22": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-C23": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-C24": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-MDDset-01-ctx": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-MDDset-01-sub": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-MDDset-05-ctx": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-MDDset-05-sub": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-MDDset-10-ctx": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-MDDset-10-sub": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-ASDset-01-ctx": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-ASDset-01-sub": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-ASDset-05-ctx": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-ASDset-05-sub": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-ASDset-10-ctx": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-ASDset-10-sub": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  }
+ },
+ "sets": {
+  "manifest_sha256": "40f7aec4664dd2306955b566af9669c59d77b7bdba5dfc53c921b8c2f33613ef",
+  "manifest_name": "MANIFEST_G2.2.json",
+  "n_sets": 23,
+  "restatement": {
+   "n_cells": 23,
+   "n_not_testable_lt5": 0,
+   "n_in_m_not_testable_lt5": 0
+  }
+ },
+ "counts": {
+  "built": 1,
+  "extracted": 33,
+  "identity recorded (no extraction declared)": 10,
+  "not auditable (definition not applicable: the declared eTable13 layout not matched)": 1,
+  "not auditable (definition not applicable: the paper's code not runnable here)": 1,
+  "not computable (the paper's GEDAR map layout not matched)": 6,
+  "refused (carrier in quarantine; the operator moves it back)": 2
+ },
+ "door_admitted": 141
+}

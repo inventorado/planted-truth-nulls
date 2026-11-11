@@ -1,0 +1,48 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "gia_commit_e045bc5",
+ "gate": "G2",
+ "url": "https://api.github.com/repos/alegiac95/METAXCAN_TWAS_ANALYSIS/commits/e045bc51961b0425f51bbdf54672d59222cfa8b9",
+ "kind": "file",
+ "date_utc": "2026-10-17T17:40:30+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "server": {
+  "status_code": null,
+  "content_length": null,
+  "last_modified": null,
+  "etag_md5": null,
+  "head": "not made (RUN_PLAN_amend_3 R45 (a): one GET)"
+ },
+ "fetch": {
+  "source": "download",
+  "path": "E:/data/asdg/gia_commit_e045bc5/carrier.json",
+  "date_utc": "2026-10-17T17:40:30+00:00",
+  "bytes": 14671,
+  "sha256": "a3fc79dbb502af3271b890ff5eb5fb9fdbe2be5bfc1135e22ac6c243954a7e73"
+ },
+ "identity": {
+  "facts": {
+   "bytes": 14671,
+   "sha256": "a3fc79dbb502af3271b890ff5eb5fb9fdbe2be5bfc1135e22ac6c243954a7e73",
+   "md5": "ab86d3e1621d5fae258fcbcb77fddde6",
+   "git_blob": "6a09c0957d21d845e4b4f62ad9a8f5da414335ef",
+   "has_crlf": false,
+   "git_blob_lf": null,
+   "bytes_lf": null
+  },
+  "references": [],
+  "comparison": {
+   "result": "identity recorded at download (no pre-freeze identity)",
+   "checks": []
+  }
+ },
+ "identifier_bearing": false,
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "identity recorded (no extraction declared)"
+}

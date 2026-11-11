@@ -1,0 +1,256 @@
+{
+ "entity": "ASDG-AUD-E4-apparatus",
+ "reproduction": "R1 Cao 2024 (cao2024unraveling), prereg \u00a73.3",
+ "smoke": false,
+ "n_maps": 1000,
+ "n_sets": 500,
+ "n_null": 5000,
+ "readcheck": {
+  "competitive/mean": {
+   "ref_psig": 0.052724,
+   "figure_read": 0.053,
+   "abs_diff": 0.00027599999999999847,
+   "pass_": true
+  },
+  "competitive/meanabs": {
+   "ref_psig": 0.049268,
+   "figure_read": 0.049,
+   "abs_diff": 0.0002679999999999974,
+   "pass_": true
+  },
+  "spin/mean": {
+   "ref_psig": 0.061438,
+   "figure_read": 0.061,
+   "abs_diff": 0.0004380000000000009,
+   "pass_": true
+  },
+  "spin/meanabs": {
+   "ref_psig": 0.09562,
+   "figure_read": 0.096,
+   "abs_diff": 0.00038000000000000533,
+   "pass_": true
+  },
+  "coexp/mean": {
+   "ref_psig": 0.048608,
+   "figure_read": 0.049,
+   "abs_diff": 0.00039200000000000346,
+   "pass_": true
+  },
+  "coexp/meanabs": {
+   "ref_psig": 0.049242,
+   "figure_read": 0.049,
+   "abs_diff": 0.00024199999999999916,
+   "pass_": true
+  },
+  "joint/mean": {
+   "ref_psig": 0.068982,
+   "figure_read": 0.069,
+   "abs_diff": 1.8000000000004124e-05,
+   "pass_": true
+  },
+  "joint/meanabs": {
+   "ref_psig": 0.093496,
+   "figure_read": 0.093,
+   "abs_diff": 0.0004959999999999964,
+   "pass_": true
+  }
+ },
+ "readcheck_pass": true,
+ "cells": {
+  "competitive/mean": {
+   "ref_psig": 0.052724,
+   "ours_psig": 0.052382,
+   "ours_psig_refformula": 0.052614,
+   "abs_diff": 0.000342000000000002,
+   "psig_pass": true,
+   "spearman": 0.9996113205265342,
+   "frac_within_band": 0.99757,
+   "r2_psigG_coexp_ours": 0.5406527770759008,
+   "r2_psigG_coexp_ref": 0.537719689135358,
+   "spearman_threshold": 0.95,
+   "spearman_pass": true,
+   "band_pass": true,
+   "cell_pass": true
+  },
+  "competitive/meanabs": {
+   "ref_psig": 0.049268,
+   "ours_psig": 0.048968,
+   "ours_psig_refformula": 0.049168,
+   "abs_diff": 0.00030000000000000165,
+   "psig_pass": true,
+   "spearman": 0.9995991012205769,
+   "frac_within_band": 0.997396,
+   "r2_psigG_coexp_ours": 0.0013898216976045228,
+   "r2_psigG_coexp_ref": 0.0016128862064797673,
+   "spearman_threshold": 0.95,
+   "spearman_pass": true,
+   "band_pass": true,
+   "cell_pass": true
+  },
+  "spin/mean": {
+   "ref_psig": 0.061438,
+   "ours_psig": 0.06118,
+   "ours_psig_refformula": 0.061438,
+   "abs_diff": 0.0002580000000000013,
+   "psig_pass": true,
+   "spearman": 1.0,
+   "frac_within_band": 1.0,
+   "r2_psigG_coexp_ours": 0.10799831552463122,
+   "r2_psigG_coexp_ref": 0.107396378422179,
+   "spearman_threshold": 0.99,
+   "spearman_pass": true,
+   "band_pass": true,
+   "cell_pass": true
+  },
+  "spin/meanabs": {
+   "ref_psig": 0.09562,
+   "ours_psig": 0.095314,
+   "ours_psig_refformula": 0.09562,
+   "abs_diff": 0.0003060000000000007,
+   "psig_pass": true,
+   "spearman": 0.9999999999991795,
+   "frac_within_band": 1.0,
+   "r2_psigG_coexp_ours": 0.002680853744499296,
+   "r2_psigG_coexp_ref": 0.0024284865106485036,
+   "spearman_threshold": 0.99,
+   "spearman_pass": true,
+   "band_pass": true,
+   "cell_pass": true
+  },
+  "coexp/mean": {
+   "ref_psig": 0.048608,
+   "ours_psig": 0.043678,
+   "ours_psig_refformula": 0.043872,
+   "abs_diff": 0.004929999999999997,
+   "psig_pass": true,
+   "spearman": 0.9757432644344808,
+   "frac_within_band": 0.51744,
+   "r2_psigG_coexp_ours": 0.048310122367390004,
+   "r2_psigG_coexp_ref": 0.0010131289849042461,
+   "spearman_threshold": null,
+   "note": "per-test Spearman/band are descriptors only for this cell (prereg)",
+   "cell_pass": true
+  },
+  "coexp/meanabs": {
+   "ref_psig": 0.049242,
+   "ours_psig": 0.049024,
+   "ours_psig_refformula": 0.04923,
+   "abs_diff": 0.00021800000000000291,
+   "psig_pass": true,
+   "spearman": 0.9988990505484234,
+   "frac_within_band": 0.94353,
+   "r2_psigG_coexp_ours": 4.1995976032124744e-05,
+   "r2_psigG_coexp_ref": 5.60178437861187e-07,
+   "spearman_threshold": null,
+   "note": "per-test Spearman/band are descriptors only for this cell (prereg)",
+   "cell_pass": true
+  },
+  "joint/mean": {
+   "ref_psig": 0.068982,
+   "ours_psig": 0.068668,
+   "ours_psig_refformula": 0.068928,
+   "abs_diff": 0.00031399999999999484,
+   "psig_pass": true,
+   "spearman": 0.999675769284779,
+   "frac_within_band": 0.998578,
+   "r2_psigG_coexp_ours": 0.6798254986673048,
+   "r2_psigG_coexp_ref": 0.6766916114176751,
+   "spearman_threshold": null,
+   "note": "per-test Spearman/band are descriptors only for this cell (prereg)",
+   "cell_pass": true
+  },
+  "joint/meanabs": {
+   "ref_psig": 0.093496,
+   "ours_psig": 0.093186,
+   "ours_psig_refformula": 0.093506,
+   "abs_diff": 0.00030999999999999084,
+   "psig_pass": true,
+   "spearman": 0.9999117511458755,
+   "frac_within_band": 1.0,
+   "r2_psigG_coexp_ours": 0.00037401640556392144,
+   "r2_psigG_coexp_ref": 0.00031194061470251,
+   "spearman_threshold": null,
+   "note": "per-test Spearman/band are descriptors only for this cell (prereg)",
+   "cell_pass": true
+  }
+ },
+ "r2_clause_competitive_mean": {
+  "r2_ours": 0.5406527770759008,
+  "r2_ref": 0.537719689135358,
+  "abs_diff_pp": 0.2933087940542811,
+  "pass_": true
+ },
+ "R1_pass": true,
+ "coexp_sampler": {
+  "sets_not_reaching_5000": [],
+  "ref_sets_off_5001_lattice": [
+   "S366760"
+  ],
+  "median_draws": 7304.0,
+  "max_abs_achieved_minus_target": 0.00999999807921469
+ },
+ "g2_descriptor": {
+  "maps": "all",
+  "n_maps": 1000,
+  "n_sets_matched": 499,
+  "unmatched_sets": [
+   "S957717"
+  ],
+  "psig": {
+   "mean": 0.036340681362725454,
+   "meanabs": 0.05149899799599198
+  },
+  "cao_coexp_psig_same_tests": {
+   "mean": 0.04376553106212425,
+   "meanabs": 0.04892585170340681
+  },
+  "ref_coexp_psig_same_tests": {
+   "mean": 0.04870140280561122,
+   "meanabs": 0.04912424849699399
+  },
+  "r2_psigG_coexp": {
+   "mean": 0.01277839407228679,
+   "meanabs": 6.669671026172994e-05
+  },
+  "achieved_coexp_minus_target_mean": 0.00010835488048350552,
+  "seconds": 2200.2723050117493
+ },
+ "deviations": [
+  "random draws shared across maps (competitive and joint permutations; coexp sets are shared in Cao too)",
+  "p = (k+1)/(n+1) per prereg; the shipped reference CSVs use k/(n+1) (p=0 occurs, max 5000/5001); ours_psig_refformula reports Psig with the reference formula",
+  "coexp sampler draws uniform same-size sets exactly but not with R's RNG stream; uniqueness by sorted set"
+ ],
+ "seeds": {
+  "competitive": 202609231,
+  "joint": 202609232,
+  "coexp": 202609233,
+  "g2": 202609234,
+  "g2_subset": 202609235
+ },
+ "runtime_s": 3121.8897671699524,
+ "timing": {
+  "competitive_s": 115.52107071876526,
+  "spin_joint_s": 634.2300007343292,
+  "coexp_s": 164.3693492412567,
+  "g2_s": 2200.2723050117493
+ },
+ "script": "arcs/audit/src/e4_r1_cao.py",
+ "script_sha256": "efef6490795fc77c0fd15ba02de7863db9253aba6113e9b81a5e2bb290413e29",
+ "script_uncommitted": false,
+ "inputs": {
+  "data/GeneExp/desikan_r0.4.csv": "f506a51d00946ebeadd48824e1bbca6eebabba46bd8093484d105764aeedbedc",
+  "data/BrainDat/desikan_sim_spatial0.03.csv": "9bc14224b7a1c662fe2bc9ac098d8391c3a8c8c476e8f5431f24f6eec9b57b3c",
+  "data/GeneSets/desikan_r0.4_Sim.rds": "128f837781a92f4eebe7093ff647888e3f4372b33ef6d90ec00eb709b34e0d45",
+  "data/BrainInfo/perm_id_weights/desikan_spin_brain_perm_id.rds": "fa6eb9060220a0d6ca082c947c13e5887fedeb9dfb90245c2eca5ee1e6a99d71",
+  "results/Res_desikan_r0.4_sim_spatial0.03_Sim_random_gene_pearson_sim1000.csv": "bd7ebc7e51332e6e2a5fd15b5afd9a94f544112fe983b47eac1679b76dbb2035",
+  "results/Res_desikan_r0.4_sim_spatial0.03_Sim_spin_brain_pearson_sim1000.csv": "be85cc4344fb87abb56eaa0a4902f77aec534e6f09e51b5d1f11e82e3c7f769e",
+  "results/Res_desikan_r0.4_sim_spatial0.03_Sim_random_gene_coexp_pearson_sim1000.csv": "08030449afa94cc85f375712e9f5a8892f754328517566e9beb86814fd1f9e62",
+  "results/Res_desikan_r0.4_sim_spatial0.03_Sim_spin_random_mixed_pearson_sim1000.csv": "d2a645ea979e4c35e6f8f28c5de6f29c74cc643b33e740840047509c2e8f920d"
+ },
+ "cao_repo": "E:\\data\\asdg\\cao2024\\repo\\2024_NI_Imaging_Transcriptomics",
+ "git_head": "4561221a302feba9c38dedc85ed3703e1adb5037",
+ "artifacts": "artifacts/r1_cao/r1_cao_pertest.npz",
+ "python": "3.13.5",
+ "numpy": "2.4.6",
+ "pandas": "3.0.6"
+}

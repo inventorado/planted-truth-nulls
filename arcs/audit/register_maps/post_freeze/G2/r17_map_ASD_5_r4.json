@@ -1,0 +1,60 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "r17_map_ASD_5_r4",
+ "gate": "G2",
+ "url": "https://none.invalid/r17-run-output",
+ "kind": "file",
+ "date_utc": "2026-10-21T00:07:06+00:00",
+ "pinned": {
+  "pinned_bytes": 3672,
+  "pinned_sha256": "fdd62b897fc6eeb02e259f810f26697840d5eda11e1589d9d278d92713b0ed18"
+ },
+ "url_note": "no URL: a file the R17 run created (sha256 and size from the run's record)",
+ "fetch": {
+  "source": "pinned copy on disk",
+  "path_sha256": "5d9023fac9d53564f11da31c36f8e116281c83f1b35c46bf14de840838e48ec9",
+  "screen_hits": {
+   "V": 0,
+   "N": 0
+  }
+ },
+ "identity": {
+  "facts": {
+   "bytes": 3672,
+   "sha256": "fdd62b897fc6eeb02e259f810f26697840d5eda11e1589d9d278d92713b0ed18",
+   "md5": "bda451ea17fc9614971ed4672cae36de",
+   "git_blob": "105c3a60db01888e99912a1b65e112b9295e539f",
+   "has_crlf": false,
+   "git_blob_lf": null,
+   "bytes_lf": null
+  },
+  "references": [
+   {
+    "basis": "pinned sha256",
+    "sha256": "fdd62b897fc6eeb02e259f810f26697840d5eda11e1589d9d278d92713b0ed18",
+    "bytes": 3672
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "pinned sha256",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "failed_stage": "read:file",
+ "failed_class": "UnlistedException",
+ "failed_where": "wp4_read.py:143",
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "refused (stage failed)"
+}

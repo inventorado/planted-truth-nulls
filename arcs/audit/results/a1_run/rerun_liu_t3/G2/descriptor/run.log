@@ -1,0 +1,6 @@
+[10:17:28] pass descriptor gate G2 rows 1 K {'site': 10000, 'species': 10000, 'permutation': 10000, 'sets': 10000, 'surr': 10000, 'j1_sets': 1000} g6l exact
+[10:17:33] dispatch: 1 row(s) to compute; written so far {}
+[10:17:36] phase 2: 1 leg-group task(s), jobs 20
+[12:51:18]   1/1 tasks (9222s)
+[12:51:19] row 478 (verdict: set-vs-map) written; peak task memory 808821422 B
+[12:51:19] done: outcomes {'computed': 1}

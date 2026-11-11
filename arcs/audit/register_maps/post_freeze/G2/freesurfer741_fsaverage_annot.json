@@ -1,0 +1,49 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "freesurfer741_fsaverage_annot",
+ "gate": "G2",
+ "url": "https://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/7.4.1/freesurfer-linux-ubuntu22_amd64-7.4.1.tar.gz",
+ "kind": "tar_member",
+ "date_utc": "2026-10-17T17:26:46+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "tar": {
+  "tarball_note": "tarball sha256 not computed (stream stopped at the member)",
+  "first_note": "the first member with the declared path ending is asserted (the stream stops there)",
+  "passes": 1,
+  "bytes_streamed": [
+   6497874432
+  ],
+  "names_streamed": [
+   71864
+  ],
+  "stream_stopped": true,
+  "declared_member": "found",
+  "member_type": "regular",
+  "member_path_sha256": "9c9f49f5448466c8570f9d8c10713eb0ecb546c012a8c9749f5c2f80c3585098",
+  "saved_path": "E:/data/asdg/freesurfer741_fsaverage_annot/lh.aparc.annot",
+  "saved_sha256": "39b1acde9a32b4227631eb51cbcd8dff84e2138c57bf9f96d74026f2c17f1480",
+  "bytes": 1312250,
+  "screen_hits": {
+   "V": 171,
+   "N": 1349
+  }
+ },
+ "server": {
+  "status_code": 200,
+  "content_length": 9484461482,
+  "last_modified": "Tue, 27 Jun 2023 03:25:20 GMT",
+  "etag_md5": null
+ },
+ "identifier_bearing": true,
+ "quarantine": {
+  "note": "carrier not stored (stream); nothing quarantined"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "extracted"
+}

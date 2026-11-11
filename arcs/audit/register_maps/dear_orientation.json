@@ -1,0 +1,16 @@
+{
+ "what": "Dear 2024 (target 15, deferred pending provenance): orientation of Supplementary Table 4 (claims register v4 section 3.3; NF14), checked only against text already on disk before this session. Dear's workbook (MOESM3), its repo files and its Supplementary Information PDF were NOT opened.",
+ "checked_utc": "2026-09-26",
+ "text_on_disk_searched": [
+  "arcs/audit/register_work/dear2024corticalgene.md (the draft; quotes the Methods and the Fig. 4a caption)",
+  "literature/notes/dear2024corticalgene.md"
+ ],
+ "paper_or_supplement_pdf_on_disk": "none (the draft read the full text and the SI PDF in memory only; no local copy under E:\\data\\asdg or the library)",
+ "supp_table_4_orientation_quote": null,
+ "nearest_text_on_disk": {
+  "quote": "cortical volume shrinkage in ASD ... Red indicates greater shrinkage, computed as z-scores of centiles from normative modeling of more than 125,000 MRI scans.",
+  "where": "Fig. 4a caption, as quoted in the draft (register_work/dear2024corticalgene.md, section 2)",
+  "why_it_does_not_fix_the_orientation": "it gives the colour convention of the figure, not the sign of the values in Supplementary Table 4; the draft records 'Sign convention of the file values (shrinkage-positive or centile-positive): not stated in text'. Register 3.3 accepts only Supp Table 4's own header or legend."
+ },
+ "result": "rule applies at opening (Supp Table 4's own header or legend, else DEAR-C1 / C2 two-sided)"
+}

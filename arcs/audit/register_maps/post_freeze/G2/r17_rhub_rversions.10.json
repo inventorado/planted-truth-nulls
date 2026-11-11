@@ -1,0 +1,53 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "r17_rhub_rversions",
+ "gate": "G2",
+ "url": "https://api.r-hub.io/rversions/r-versions",
+ "kind": "file",
+ "date_utc": "2026-11-02T09:07:58+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "fetch": {
+  "source": "copy on disk",
+  "path": "E:/data/asdg/r17_rhub_rversions/carrier.json"
+ },
+ "identity": {
+  "facts": {
+   "bytes": 15800,
+   "sha256": "177c6be9a6f642cc282bf3c4f197cd990a8bd2cdae10ae00dfc896efd0ebf761",
+   "md5": "db440001e9f8c727d9bdff71510ffd7d",
+   "git_blob": "ead4ee05907019cabbd844f024dd02e81a0635d3",
+   "has_crlf": false,
+   "git_blob_lf": null,
+   "bytes_lf": null
+  },
+  "references": [
+   {
+    "basis": "sha256 of the copy on disk",
+    "bytes": 15800,
+    "sha256": "177c6be9a6f642cc282bf3c4f197cd990a8bd2cdae10ae00dfc896efd0ebf761"
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "sha256 of the copy on disk",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "identifier_bearing": false,
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "identity recorded (no extraction declared)"
+}

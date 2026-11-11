@@ -1,0 +1,53 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "giacomel_ahba_no_norm",
+ "gate": "G2",
+ "url": "https://raw.githubusercontent.com/alegiac95/METAXCAN_TWAS_ANALYSIS/e045bc51961b0425f51bbdf54672d59222cfa8b9/data/AHBA/AHBA_data_no_norm.csv",
+ "kind": "file",
+ "date_utc": "2026-10-21T00:05:02+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "fetch": {
+  "source": "copy on disk",
+  "path": "E:/data/asdg/giacomel_ahba_no_norm/carrier.csv"
+ },
+ "identity": {
+  "facts": {
+   "bytes": 23559290,
+   "sha256": "4b4ace458d3923664dc1c5d397760d7dc229d4ebf40035fc6577919b1cdffb7c",
+   "md5": "7d98d6073faf0b5a3c4c25a3870d41f3",
+   "git_blob": "4165d858797b1bdae46ea20208e31102dd911fbf",
+   "has_crlf": false,
+   "git_blob_lf": null,
+   "bytes_lf": null
+  },
+  "references": [
+   {
+    "basis": "git blob",
+    "bytes": 23559290,
+    "git_blob": "4165d858797b1bdae46ea20208e31102dd911fbf"
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "git blob",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "identifier_bearing": false,
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "identity recorded (no extraction declared)"
+}

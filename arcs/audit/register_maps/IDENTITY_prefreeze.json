@@ -1,0 +1,1542 @@
+{
+ "what": "Identity of every registered map and map carrier before the freeze (claims register v4 section 1.10 (0); NF11): URL, byte size, ETag / git blob id, listing date. Listing-level only; sha256 of gated remote files is taken at download under the gate (a mismatch with this record -> 'not auditable (map changed)').",
+ "run_utc": "2026-09-26T06:19:14+00:00",
+ "script": {
+  "path": "arcs/audit/src_register/identity_prefreeze.py",
+  "sha256": "93777e5a9a58480c92754e76694717e5612530c4c8209462f2f47a7e0b6768fc",
+  "repo_head_at_run": "30922eb8997ac702f25a0db82216332c47ea6b44"
+ },
+ "github_trees": {
+  "pagani": {
+   "repo": "functional-neuroimaging/biological_subtyping",
+   "commit": "ef58cf1622e5b60885919d108b6033d78be84d52",
+   "n_entries": 31,
+   "truncated": false,
+   "listed_utc": "2026-09-26T06:18:44+00:00"
+  },
+  "gia_93de089": {
+   "repo": "alegiac95/METAXCAN_TWAS_ANALYSIS",
+   "commit": "93de089b614f72bda25f441518ad04b1e938fb9b",
+   "n_entries": 207,
+   "truncated": false,
+   "listed_utc": "2026-09-26T06:18:56+00:00"
+  },
+  "gia_c022a29": {
+   "repo": "alegiac95/METAXCAN_TWAS_ANALYSIS",
+   "commit": "c022a29bb74009f870a14abc1e0e6c1c8fcfb81c",
+   "n_entries": 299,
+   "truncated": false,
+   "listed_utc": "2026-09-26T06:18:57+00:00"
+  },
+  "hansen": {
+   "repo": "netneurolab/hansen_crossdisorder_vulnerability",
+   "commit": "54d34055bd765a79777437f362fbaf338403926e",
+   "n_entries": 93,
+   "truncated": false,
+   "listed_utc": "2026-09-26T06:18:58+00:00"
+  },
+  "enigma": {
+   "repo": "MICA-MNI/ENIGMA",
+   "commit": "b08974b55243060cbc1fad12c87048037446e8f7",
+   "n_entries": 1297,
+   "truncated": false,
+   "listed_utc": "2026-09-26T06:18:58+00:00"
+  },
+  "dear": {
+   "repo": "richardajdear/AHBA_gradients",
+   "commit": "ab7939cf1811cba6296b882e35e60b09fed7d653",
+   "n_entries": 100,
+   "truncated": false,
+   "listed_utc": "2026-09-26T06:19:02+00:00"
+  },
+  "rasero": {
+   "repo": "compneurobilbao/asd-subtyping-enrichment",
+   "commit": "9a333d93dbc6249f3d24e8a492246d62a1f23d31",
+   "n_entries": 110,
+   "truncated": false,
+   "listed_utc": "2026-09-26T06:19:03+00:00"
+  },
+  "subparc": {
+   "repo": "RafaelRomeroGarcia/subParcellation",
+   "commit": "e351b3cf03fac04713eb915b5754e6144998f757",
+   "n_entries": 53,
+   "truncated": false,
+   "listed_utc": "2026-09-26T06:19:10+00:00"
+  },
+  "moreau": {
+   "repo": "kkumar-iitkgp-livia/GeneExp_and_CNV_FCsignatures",
+   "commit": "9e8af9c1ea094247ba1ee8824daeb7339a0a0d0e",
+   "n_entries": 42,
+   "truncated": false,
+   "listed_utc": "2026-09-26T06:19:12+00:00"
+  },
+  "gia_e045bc5": {
+   "repo": "alegiac95/METAXCAN_TWAS_ANALYSIS",
+   "commit": "e045bc51961b0425f51bbdf54672d59222cfa8b9",
+   "n_entries": 1125,
+   "truncated": false,
+   "listed_utc": "2026-09-26T06:19:13+00:00"
+  },
+  "gia_eda33ab": {
+   "repo": "alegiac95/METAXCAN_TWAS_ANALYSIS",
+   "commit": "eda33abddd5acd396caa0ace2817a0bcd427cfe5",
+   "n_entries": 291,
+   "truncated": false,
+   "listed_utc": "2026-09-26T06:19:14+00:00"
+  }
+ },
+ "records": [
+  {
+   "target": "pagani2026crossspecies",
+   "target_no": 13,
+   "gate": "G1",
+   "object": "hyper Cohen's d map (GitHub, paper-cited; governs)",
+   "probes": [
+    {
+     "method": "GitHub git-tree listing (recursive)",
+     "repo": "functional-neuroimaging/biological_subtyping",
+     "commit": "ef58cf1622e5b60885919d108b6033d78be84d52",
+     "listed_utc": "2026-09-26T06:18:44+00:00",
+     "tree_truncated": false,
+     "url": "https://github.com/functional-neuroimaging/biological_subtyping/blob/ef58cf1622e5b60885919d108b6033d78be84d52/cognitive_maps/00_mean_regressed_global_connectivity_maps/stats_two_sample_ASD_hyper_vs_CTR_cohensd_global_connectivity_voxelwise_smoothed.nii.gz",
+     "path": "cognitive_maps/00_mean_regressed_global_connectivity_maps/stats_two_sample_ASD_hyper_vs_CTR_cohensd_global_connectivity_voxelwise_smoothed.nii.gz",
+     "status": "ok",
+     "type": "blob",
+     "blob_sha": "9106aaf50bebd7f4e9689f5217193c6f7188f30a",
+     "size": 629343
+    }
+   ]
+  },
+  {
+   "target": "pagani2026crossspecies",
+   "target_no": 13,
+   "gate": "G1",
+   "object": "hypo Cohen's d map (GitHub, paper-cited; governs)",
+   "probes": [
+    {
+     "method": "GitHub git-tree listing (recursive)",
+     "repo": "functional-neuroimaging/biological_subtyping",
+     "commit": "ef58cf1622e5b60885919d108b6033d78be84d52",
+     "listed_utc": "2026-09-26T06:18:44+00:00",
+     "tree_truncated": false,
+     "url": "https://github.com/functional-neuroimaging/biological_subtyping/blob/ef58cf1622e5b60885919d108b6033d78be84d52/cognitive_maps/00_mean_regressed_global_connectivity_maps/stats_two_sample_ASD_hypo_vs_CTR_cohensd_global_connectivity_voxelwise_smoothed.nii.gz",
+     "path": "cognitive_maps/00_mean_regressed_global_connectivity_maps/stats_two_sample_ASD_hypo_vs_CTR_cohensd_global_connectivity_voxelwise_smoothed.nii.gz",
+     "status": "ok",
+     "type": "blob",
+     "blob_sha": "1bfd99e31d3df0ac52862989d87a0165ca1dc600",
+     "size": 628525
+    }
+   ]
+  },
+  {
+   "target": "pagani2026crossspecies",
+   "target_no": 13,
+   "gate": "G1",
+   "object": "NeuroVault 14698 image 798767 (hyper; byte-equality with GitHub asserted at download)",
+   "probes": [
+    {
+     "method": "NeuroVault image metadata (file, file_size only) + HTTP HEAD",
+     "api_url": "https://neurovault.org/api/images/798767/",
+     "listed_utc": "2026-09-26T06:18:44+00:00",
+     "field": "file",
+     "file_url": "https://neurovault.org/media/images/14698/stats_two_sample_ASD_hyper_vs_CTR_cohensd_global_connectivity_voxelwise_smoothed.nii.gz",
+     "collection_in_url_matches": true,
+     "api_file_size": 629343,
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 629343,
+     "etag": null,
+     "last_modified": "Wed, 28 Jun 2023 14:02:48 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok",
+     "head_listed_utc": "2026-09-26T06:18:45+00:00",
+     "api_size_equals_head": true
+    }
+   ]
+  },
+  {
+   "target": "pagani2026crossspecies",
+   "target_no": 13,
+   "gate": "G1",
+   "object": "NeuroVault 14698 image 798768 (hypo)",
+   "probes": [
+    {
+     "method": "NeuroVault image metadata (file, file_size only) + HTTP HEAD",
+     "api_url": "https://neurovault.org/api/images/798768/",
+     "listed_utc": "2026-09-26T06:18:45+00:00",
+     "field": "file",
+     "file_url": "https://neurovault.org/media/images/14698/stats_two_sample_ASD_hypo_vs_CTR_cohensd_global_connectivity_voxelwise_smoothed.nii.gz",
+     "collection_in_url_matches": true,
+     "api_file_size": 628525,
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 628525,
+     "etag": null,
+     "last_modified": "Wed, 28 Jun 2023 14:17:45 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok",
+     "head_listed_utc": "2026-09-26T06:18:46+00:00",
+     "api_size_equals_head": true
+    }
+   ]
+  },
+  {
+   "target": "pagani2026crossspecies",
+   "target_no": 13,
+   "gate": "G1",
+   "object": "Supplementary Table 3 (decoded lists; gated set carrier) MOESM4",
+   "probes": [
+    {
+     "method": "HTTP HEAD",
+     "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41593-026-02287-z/MediaObjects/41593_2026_2287_MOESM4_ESM.xlsx",
+     "listed_utc": "2026-09-26T06:18:46+00:00",
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 224528,
+     "etag": "\"6c61ccf5d6ef8310c39c4995fba7b20d\"",
+     "last_modified": "Thu, 07 May 2026 12:16:31 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok"
+    }
+   ]
+  },
+  {
+   "target": "benkarim2021connectivity",
+   "target_no": 14,
+   "gate": "G1",
+   "object": "NeuroVault 8667 image 404555 sdistRaw (SD)",
+   "probes": [
+    {
+     "method": "NeuroVault image metadata (file, file_size only) + HTTP HEAD",
+     "api_url": "https://neurovault.org/api/images/404555/",
+     "listed_utc": "2026-09-26T06:18:46+00:00",
+     "field": "file",
+     "file_url": "https://neurovault.org/media/images/8667/sdist_dil.nii.gz",
+     "collection_in_url_matches": true,
+     "api_file_size": 543871,
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 543871,
+     "etag": null,
+     "last_modified": "Thu, 03 Sep 2020 17:06:46 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok",
+     "head_listed_utc": "2026-09-26T06:18:47+00:00",
+     "api_size_equals_head": true
+    }
+   ]
+  },
+  {
+   "target": "benkarim2021connectivity",
+   "target_no": 14,
+   "gate": "G1",
+   "object": "NeuroVault 8667 image 404554 edistRaw (DD)",
+   "probes": [
+    {
+     "method": "NeuroVault image metadata (file, file_size only) + HTTP HEAD",
+     "api_url": "https://neurovault.org/api/images/404554/",
+     "listed_utc": "2026-09-26T06:18:47+00:00",
+     "field": "file",
+     "file_url": "https://neurovault.org/media/images/8667/edist_dil.nii.gz",
+     "collection_in_url_matches": true,
+     "api_file_size": 541677,
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 541677,
+     "etag": null,
+     "last_modified": "Thu, 03 Sep 2020 17:04:26 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok",
+     "head_listed_utc": "2026-09-26T06:18:48+00:00",
+     "api_size_equals_head": true
+    }
+   ]
+  },
+  {
+   "target": "park2021subcortico",
+   "target_no": 17,
+   "gate": "G1",
+   "object": "NeuroVault 743 image 396720 (registered map)",
+   "probes": [
+    {
+     "method": "NeuroVault image metadata (file, file_size only) + HTTP HEAD",
+     "api_url": "https://neurovault.org/api/images/396720/",
+     "listed_utc": "2026-09-26T06:18:48+00:00",
+     "field": "file",
+     "file_url": "https://neurovault.org/media/images/743/grad123_multivariate_totT_perm_dil.nii.gz",
+     "collection_in_url_matches": true,
+     "api_file_size": 591269,
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 591269,
+     "etag": null,
+     "last_modified": "Mon, 03 Aug 2020 20:44:27 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok",
+     "head_listed_utc": "2026-09-26T06:18:49+00:00",
+     "api_size_equals_head": true
+    }
+   ]
+  },
+  {
+   "target": "park2021subcortico",
+   "target_no": 17,
+   "gate": "G1",
+   "object": "NeuroVault 743 image 319367 (descriptor image)",
+   "probes": [
+    {
+     "method": "NeuroVault image metadata (file, file_size only) + HTTP HEAD",
+     "api_url": "https://neurovault.org/api/images/319367/",
+     "listed_utc": "2026-09-26T06:18:49+00:00",
+     "field": "file",
+     "file_url": "https://neurovault.org/media/images/743/grad123_multivariate_totT_dil.nii.gz",
+     "collection_in_url_matches": true,
+     "api_file_size": 576995,
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 576995,
+     "etag": null,
+     "last_modified": "Sun, 29 Dec 2019 01:31:26 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok",
+     "head_listed_utc": "2026-09-26T06:18:50+00:00",
+     "api_size_equals_head": true
+    }
+   ]
+  },
+  {
+   "target": "leyhausen2024intrinsic",
+   "target_no": 20,
+   "gate": "G2",
+   "object": "NeuroVault 12301 image 777428 (MSD)",
+   "probes": [
+    {
+     "method": "NeuroVault image metadata (file, file_size only) + HTTP HEAD",
+     "api_url": "https://neurovault.org/api/images/777428/",
+     "listed_utc": "2026-09-26T06:18:50+00:00",
+     "field": "file",
+     "file_url": "https://neurovault.org/media/images/12301/t-map_m.nii.gz",
+     "collection_in_url_matches": true,
+     "api_file_size": 1990492,
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 1990492,
+     "etag": null,
+     "last_modified": "Tue, 08 Mar 2022 13:56:36 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok",
+     "head_listed_utc": "2026-09-26T06:18:50+00:00",
+     "api_size_equals_head": true
+    },
+    {
+     "method": "NeuroVault image metadata (file, file_size only) + HTTP HEAD",
+     "api_url": "https://neurovault.org/api/images/777428/",
+     "listed_utc": "2026-09-26T06:18:50+00:00",
+     "field": "surface_left_file",
+     "file_url": "https://neurovault.org/media/images/12301/t-map_m.fsaverage.lh.func.gii",
+     "collection_in_url_matches": true,
+     "api_file_size": null,
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 614205,
+     "etag": null,
+     "last_modified": "Tue, 08 Mar 2022 13:56:36 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok",
+     "head_listed_utc": "2026-09-26T06:18:51+00:00"
+    },
+    {
+     "method": "NeuroVault image metadata (file, file_size only) + HTTP HEAD",
+     "api_url": "https://neurovault.org/api/images/777428/",
+     "listed_utc": "2026-09-26T06:18:50+00:00",
+     "field": "surface_right_file",
+     "file_url": "https://neurovault.org/media/images/12301/t-map_m.fsaverage.rh.func.gii",
+     "collection_in_url_matches": true,
+     "api_file_size": null,
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 620506,
+     "etag": null,
+     "last_modified": "Tue, 08 Mar 2022 13:56:36 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok",
+     "head_listed_utc": "2026-09-26T06:18:51+00:00"
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\leyhausen2024intrinsic\\neurovault_12301\\image_777428_t-map_m.nii.gz",
+     "listed_utc": "2026-09-26T06:18:52+00:00",
+     "status": "ok",
+     "size": 1990492,
+     "mtime_utc": "2026-09-24T19:54:04+00:00",
+     "sha256": "3c5dfc21681e2aa279623ab7d6d2f31e98ee1fbd05ca0a4e8fb58e7e76708aff",
+     "git_blob_sha": "e37dd47d515b27f820ce0bf70038ad65e883fe73"
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\leyhausen2024intrinsic\\neurovault_12301\\image_777428_t-map_m.fsaverage.lh.func.gii",
+     "listed_utc": "2026-09-26T06:18:52+00:00",
+     "status": "ok",
+     "size": 614205,
+     "mtime_utc": "2026-09-24T19:54:53+00:00",
+     "sha256": "5889a68733b8d541d7969bdfa8d31c859d75f646a5586839d4a539c71f2680e4",
+     "git_blob_sha": "455bc0cda1d9aa0297392e8f950d40df5bed009f"
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\leyhausen2024intrinsic\\neurovault_12301\\image_777428_t-map_m.fsaverage.rh.func.gii",
+     "listed_utc": "2026-09-26T06:18:52+00:00",
+     "status": "ok",
+     "size": 620506,
+     "mtime_utc": "2026-09-24T19:56:11+00:00",
+     "sha256": "21477bb70a329a3ad87b4a09aef414de6ab80741ed7ccdd6a0675ce23df9d1b2",
+     "git_blob_sha": "c740d78a209c676052b7c4f6109d4733f22fc175"
+    }
+   ]
+  },
+  {
+   "target": "leyhausen2024intrinsic",
+   "target_no": 20,
+   "gate": "G2",
+   "object": "NeuroVault 12301 image 777429 (PF)",
+   "probes": [
+    {
+     "method": "NeuroVault image metadata (file, file_size only) + HTTP HEAD",
+     "api_url": "https://neurovault.org/api/images/777429/",
+     "listed_utc": "2026-09-26T06:18:52+00:00",
+     "field": "file",
+     "file_url": "https://neurovault.org/media/images/12301/t-map_pf.nii.gz",
+     "collection_in_url_matches": true,
+     "api_file_size": 2004019,
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 2004019,
+     "etag": null,
+     "last_modified": "Tue, 08 Mar 2022 13:58:59 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok",
+     "head_listed_utc": "2026-09-26T06:18:52+00:00",
+     "api_size_equals_head": true
+    },
+    {
+     "method": "NeuroVault image metadata (file, file_size only) + HTTP HEAD",
+     "api_url": "https://neurovault.org/api/images/777429/",
+     "listed_utc": "2026-09-26T06:18:52+00:00",
+     "field": "surface_left_file",
+     "file_url": "https://neurovault.org/media/images/12301/t-map_pf.fsaverage.lh.func.gii",
+     "collection_in_url_matches": true,
+     "api_file_size": null,
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 630761,
+     "etag": null,
+     "last_modified": "Tue, 08 Mar 2022 13:58:59 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok",
+     "head_listed_utc": "2026-09-26T06:18:53+00:00"
+    },
+    {
+     "method": "NeuroVault image metadata (file, file_size only) + HTTP HEAD",
+     "api_url": "https://neurovault.org/api/images/777429/",
+     "listed_utc": "2026-09-26T06:18:52+00:00",
+     "field": "surface_right_file",
+     "file_url": "https://neurovault.org/media/images/12301/t-map_pf.fsaverage.rh.func.gii",
+     "collection_in_url_matches": true,
+     "api_file_size": null,
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 626842,
+     "etag": null,
+     "last_modified": "Tue, 08 Mar 2022 13:58:59 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok",
+     "head_listed_utc": "2026-09-26T06:18:53+00:00"
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\leyhausen2024intrinsic\\neurovault_12301\\image_777429_t-map_pf.nii.gz",
+     "listed_utc": "2026-09-26T06:18:54+00:00",
+     "status": "ok",
+     "size": 2004019,
+     "mtime_utc": "2026-09-24T19:56:31+00:00",
+     "sha256": "4429d1da1981770588e1c37e072d67d51e7843694aa92462c0ac24d77a6a561d",
+     "git_blob_sha": "a1da189c7de81f26b008b61ab9f1531d835fe317"
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\leyhausen2024intrinsic\\neurovault_12301\\image_777429_t-map_pf.fsaverage.lh.func.gii",
+     "listed_utc": "2026-09-26T06:18:54+00:00",
+     "status": "ok",
+     "size": 630761,
+     "mtime_utc": "2026-09-24T19:58:06+00:00",
+     "sha256": "1299426288ba4938872621c2bac06dac39bcf2ec473dd284e5c2ef41a18fc47a",
+     "git_blob_sha": "1b1d5ea1c4387156594b33fe905427cd6c254b0b"
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\leyhausen2024intrinsic\\neurovault_12301\\image_777429_t-map_pf.fsaverage.rh.func.gii",
+     "listed_utc": "2026-09-26T06:18:54+00:00",
+     "status": "ok",
+     "size": 626842,
+     "mtime_utc": "2026-09-24T19:58:08+00:00",
+     "sha256": "c293196e1240a924c87104af8fec9e1b355e619e1185ab9a9873ad3fa4a10b7d",
+     "git_blob_sha": "373829887a1004ff04acf88a1918313f9e5b96c7"
+    }
+   ]
+  },
+  {
+   "target": "leyhausen2024intrinsic",
+   "target_no": 20,
+   "gate": "G2",
+   "object": "NeuroVault 12301 image 777430 (RF)",
+   "probes": [
+    {
+     "method": "NeuroVault image metadata (file, file_size only) + HTTP HEAD",
+     "api_url": "https://neurovault.org/api/images/777430/",
+     "listed_utc": "2026-09-26T06:18:54+00:00",
+     "field": "file",
+     "file_url": "https://neurovault.org/media/images/12301/t-map_r.nii.gz",
+     "collection_in_url_matches": true,
+     "api_file_size": 2002496,
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 2002496,
+     "etag": null,
+     "last_modified": "Tue, 08 Mar 2022 14:09:47 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok",
+     "head_listed_utc": "2026-09-26T06:18:54+00:00",
+     "api_size_equals_head": true
+    },
+    {
+     "method": "NeuroVault image metadata (file, file_size only) + HTTP HEAD",
+     "api_url": "https://neurovault.org/api/images/777430/",
+     "listed_utc": "2026-09-26T06:18:54+00:00",
+     "field": "surface_left_file",
+     "file_url": "https://neurovault.org/media/images/12301/t-map_r.fsaverage.lh.func.gii",
+     "collection_in_url_matches": true,
+     "api_file_size": null,
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 627325,
+     "etag": null,
+     "last_modified": "Tue, 08 Mar 2022 14:09:47 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok",
+     "head_listed_utc": "2026-09-26T06:18:54+00:00"
+    },
+    {
+     "method": "NeuroVault image metadata (file, file_size only) + HTTP HEAD",
+     "api_url": "https://neurovault.org/api/images/777430/",
+     "listed_utc": "2026-09-26T06:18:54+00:00",
+     "field": "surface_right_file",
+     "file_url": "https://neurovault.org/media/images/12301/t-map_r.fsaverage.rh.func.gii",
+     "collection_in_url_matches": true,
+     "api_file_size": null,
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 628658,
+     "etag": null,
+     "last_modified": "Tue, 08 Mar 2022 14:09:47 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok",
+     "head_listed_utc": "2026-09-26T06:18:55+00:00"
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\leyhausen2024intrinsic\\neurovault_12301\\image_777430_t-map_r.nii.gz",
+     "listed_utc": "2026-09-26T06:18:55+00:00",
+     "status": "ok",
+     "size": 2002496,
+     "mtime_utc": "2026-09-24T19:58:15+00:00",
+     "sha256": "9436a9e9061aced63eb0fcd3f54212f399722ffe8e042d0e078e3ede9932119e",
+     "git_blob_sha": "347100293a6345a587eee6b29abd557f8d5ad9a2"
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\leyhausen2024intrinsic\\neurovault_12301\\image_777430_t-map_r.fsaverage.lh.func.gii",
+     "listed_utc": "2026-09-26T06:18:55+00:00",
+     "status": "ok",
+     "size": 627325,
+     "mtime_utc": "2026-09-24T19:58:17+00:00",
+     "sha256": "e6478fdab840f63ba2df5e72d817cfe388d8eecf003847cd027a238cb2344934",
+     "git_blob_sha": "528520041adead633fddd90c9c038a3e0bc0e752"
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\leyhausen2024intrinsic\\neurovault_12301\\image_777430_t-map_r.fsaverage.rh.func.gii",
+     "listed_utc": "2026-09-26T06:18:55+00:00",
+     "status": "ok",
+     "size": 628658,
+     "mtime_utc": "2026-09-24T19:58:18+00:00",
+     "sha256": "cff33991527c1775c40172bcf8faa1de072887f3d2a79b12185a5501ab3b4a20",
+     "git_blob_sha": "a22e32f66d0e534fd8971113f7e78a7e5a1d527d"
+    }
+   ]
+  },
+  {
+   "target": "giacomel2026cartography",
+   "target_no": 3,
+   "gate": "G2",
+   "object": "ENIGMA_structural_organised.xlsx @93de089 (Thickness / Subcortical / MDD; governs)",
+   "probes": [
+    {
+     "method": "GitHub git-tree listing (recursive)",
+     "repo": "alegiac95/METAXCAN_TWAS_ANALYSIS",
+     "commit": "93de089b614f72bda25f441518ad04b1e938fb9b",
+     "listed_utc": "2026-09-26T06:18:56+00:00",
+     "tree_truncated": false,
+     "url": "https://github.com/alegiac95/METAXCAN_TWAS_ANALYSIS/blob/93de089b614f72bda25f441518ad04b1e938fb9b/data/ENIGMA/ENIGMA_structural_organised.xlsx",
+     "path": "data/ENIGMA/ENIGMA_structural_organised.xlsx",
+     "status": "ok",
+     "type": "blob",
+     "blob_sha": "46323903b2c05730e9b1c61760a11c310234edee",
+     "size": 16073
+    }
+   ]
+  },
+  {
+   "target": "giacomel2026cartography",
+   "target_no": 3,
+   "gate": "G2",
+   "object": "ENIGMA_structural_organised.xlsx @c022a29 (compared with 93de089; local copy)",
+   "probes": [
+    {
+     "method": "GitHub git-tree listing (recursive)",
+     "repo": "alegiac95/METAXCAN_TWAS_ANALYSIS",
+     "commit": "c022a29bb74009f870a14abc1e0e6c1c8fcfb81c",
+     "listed_utc": "2026-09-26T06:18:57+00:00",
+     "tree_truncated": false,
+     "url": "https://github.com/alegiac95/METAXCAN_TWAS_ANALYSIS/blob/c022a29bb74009f870a14abc1e0e6c1c8fcfb81c/data/ENIGMA/ENIGMA_structural_organised.xlsx",
+     "path": "data/ENIGMA/ENIGMA_structural_organised.xlsx",
+     "status": "ok",
+     "type": "blob",
+     "blob_sha": "9fb55217260230200ab6839099de77a22650bd69",
+     "size": 16118
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\enigma_asd\\giacomel2026_repo\\data\\ENIGMA\\ENIGMA_structural_organised.xlsx",
+     "listed_utc": "2026-09-26T06:18:57+00:00",
+     "status": "ok",
+     "size": 16118,
+     "mtime_utc": "2026-09-23T06:28:13+00:00",
+     "sha256": "a4d4feecb028366c6ccd2ee06b216fc2be758e9b6cf92b039549b78ab5d888c8",
+     "git_blob_sha": "9fb55217260230200ab6839099de77a22650bd69"
+    }
+   ],
+   "local_blob_equals_tree_blob": [
+    true
+   ]
+  },
+  {
+   "target": "hansen2022local",
+   "target_no": 19,
+   "gate": "G2",
+   "object": "enigma_ct.csv (y: column asd)",
+   "probes": [
+    {
+     "method": "GitHub git-tree listing (recursive)",
+     "repo": "netneurolab/hansen_crossdisorder_vulnerability",
+     "commit": "54d34055bd765a79777437f362fbaf338403926e",
+     "listed_utc": "2026-09-26T06:18:58+00:00",
+     "tree_truncated": false,
+     "url": "https://github.com/netneurolab/hansen_crossdisorder_vulnerability/blob/54d34055bd765a79777437f362fbaf338403926e/data/enigma_ct.csv",
+     "path": "data/enigma_ct.csv",
+     "status": "ok",
+     "type": "blob",
+     "blob_sha": "caebb2c05fba0dd0e39e575bbf63da58a514a95f",
+     "size": 22767
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\hansen2022local\\repo\\data\\enigma_ct.csv",
+     "listed_utc": "2026-09-26T06:18:58+00:00",
+     "status": "ok",
+     "size": 22835,
+     "mtime_utc": "2026-09-24T19:42:20+00:00",
+     "sha256": "3140921933909a8b9b4b3489a72d253abb5de60f117b762d2b8f7fefa407f2e7",
+     "git_blob_sha": "f333389b765e40e4408c32ccff703912684b499b",
+     "git_blob_sha_crlf_to_lf": "caebb2c05fba0dd0e39e575bbf63da58a514a95f"
+    }
+   ],
+   "local_blob_equals_tree_blob": [
+    false
+   ],
+   "local_blob_equals_tree_blob_after_crlf_to_lf": [
+    true
+   ]
+  },
+  {
+   "target": "hansen2022local",
+   "target_no": 19,
+   "gate": "G2",
+   "object": "gene_pc1.csv (component)",
+   "probes": [
+    {
+     "method": "GitHub git-tree listing (recursive)",
+     "repo": "netneurolab/hansen_crossdisorder_vulnerability",
+     "commit": "54d34055bd765a79777437f362fbaf338403926e",
+     "listed_utc": "2026-09-26T06:18:58+00:00",
+     "tree_truncated": false,
+     "url": "https://github.com/netneurolab/hansen_crossdisorder_vulnerability/blob/54d34055bd765a79777437f362fbaf338403926e/data/predictors/gene_pc1.csv",
+     "path": "data/predictors/gene_pc1.csv",
+     "status": "ok",
+     "type": "blob",
+     "blob_sha": "a5caaf68f62e43b0c8ac7007ef2aa6094be9ca9d",
+     "size": 1737
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\hansen2022local\\repo\\data\\predictors\\gene_pc1.csv",
+     "listed_utc": "2026-09-26T06:18:58+00:00",
+     "status": "ok",
+     "size": 1805,
+     "mtime_utc": "2026-09-24T19:42:20+00:00",
+     "sha256": "a078a86d4e6e48980fb12bd464d7b7684a0fc21925c3a5399c8d8e8e54e599d6",
+     "git_blob_sha": "ef9f4a8133d1d050a0a55f4b8e024197612d8431",
+     "git_blob_sha_crlf_to_lf": "a5caaf68f62e43b0c8ac7007ef2aa6094be9ca9d"
+    }
+   ],
+   "local_blob_equals_tree_blob": [
+    false
+   ],
+   "local_blob_equals_tree_blob_after_crlf_to_lf": [
+    true
+   ]
+  },
+  {
+   "target": "liu2026spatiotemporal",
+   "target_no": 10,
+   "gate": "G2",
+   "object": "LIU-T3 y: ENIGMA Toolbox asd meta-analysis CortThick",
+   "probes": [
+    {
+     "method": "GitHub git-tree listing (recursive)",
+     "repo": "MICA-MNI/ENIGMA",
+     "commit": "b08974b55243060cbc1fad12c87048037446e8f7",
+     "listed_utc": "2026-09-26T06:18:58+00:00",
+     "tree_truncated": false,
+     "url": "https://github.com/MICA-MNI/ENIGMA/blob/b08974b55243060cbc1fad12c87048037446e8f7/enigmatoolbox/datasets/summary_statistics/asd_meta-analysis_case-controls_CortThick.csv",
+     "path": "enigmatoolbox/datasets/summary_statistics/asd_meta-analysis_case-controls_CortThick.csv",
+     "status": "ok",
+     "type": "blob",
+     "blob_sha": "6eb2c4c846f0b6fff712a8db21df704fc80ed474",
+     "size": 5005
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\enigma_asd\\enigma_toolbox\\enigmatoolbox\\datasets\\summary_statistics\\asd_meta-analysis_case-controls_CortThick.csv",
+     "listed_utc": "2026-09-26T06:18:58+00:00",
+     "status": "ok",
+     "size": 5005,
+     "mtime_utc": "2026-09-23T06:28:10+00:00",
+     "sha256": "ee076971be6688bc99106fce4a7198a3bd927d183adb245f9810d6f71efe4f29",
+     "git_blob_sha": "6eb2c4c846f0b6fff712a8db21df704fc80ed474"
+    }
+   ],
+   "local_blob_equals_tree_blob": [
+    true
+   ]
+  },
+  {
+   "target": "liu2026spatiotemporal",
+   "target_no": 10,
+   "gate": "G2",
+   "object": "LIU-T3 y: ENIGMA Toolbox asd meta-analysis SubVol",
+   "probes": [
+    {
+     "method": "GitHub git-tree listing (recursive)",
+     "repo": "MICA-MNI/ENIGMA",
+     "commit": "b08974b55243060cbc1fad12c87048037446e8f7",
+     "listed_utc": "2026-09-26T06:18:58+00:00",
+     "tree_truncated": false,
+     "url": "https://github.com/MICA-MNI/ENIGMA/blob/b08974b55243060cbc1fad12c87048037446e8f7/enigmatoolbox/datasets/summary_statistics/asd_meta-analysis_case-controls_SubVol.csv",
+     "path": "enigmatoolbox/datasets/summary_statistics/asd_meta-analysis_case-controls_SubVol.csv",
+     "status": "ok",
+     "type": "blob",
+     "blob_sha": "0ec6cb158d6bc1786f793e824c0a70549f9f341d",
+     "size": 1092
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\enigma_asd\\enigma_toolbox\\enigmatoolbox\\datasets\\summary_statistics\\asd_meta-analysis_case-controls_SubVol.csv",
+     "listed_utc": "2026-09-26T06:18:58+00:00",
+     "status": "ok",
+     "size": 1092,
+     "mtime_utc": "2026-09-23T06:28:11+00:00",
+     "sha256": "b2b0b02c260ec87c6ab22f40e6162ab8a475dab373390be1edd465910ca62066",
+     "git_blob_sha": "0ec6cb158d6bc1786f793e824c0a70549f9f341d",
+     "git_blob_sha_crlf_to_lf": "0298ed4f602d5ec0fa5511233a6c85c178531b49"
+    }
+   ],
+   "local_blob_equals_tree_blob": [
+    true
+   ]
+  },
+  {
+   "target": "patel2021virtual",
+   "target_no": 2,
+   "gate": "G2",
+   "object": "eTable 4 (supplement PDF p. 26)",
+   "probes": [
+    {
+     "method": "HTTP HEAD",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7450410/bin/jamapsychiatry-e202694-s001.pdf",
+     "listed_utc": "2026-09-26T06:18:58+00:00",
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 0,
+     "etag": null,
+     "last_modified": null,
+     "content_type": "text/html; charset=utf-8",
+     "status": "unreachable",
+     "error": "HTML page returned for a file URL (interstitial; Content-Length 0)"
+    },
+    {
+     "method": "HTTP HEAD",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7450410/supplementaryFiles",
+     "listed_utc": "2026-09-26T06:18:59+00:00",
+     "status_code": 200,
+     "final_url": null,
+     "content_length": null,
+     "etag": null,
+     "last_modified": null,
+     "content_type": "application/xml",
+     "status": "reachable, size not returned by HEAD"
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\patel2021virtual\\supp\\jamapsychiatry-e202694-s001.pdf",
+     "listed_utc": "2026-09-26T06:18:59+00:00",
+     "status": "ok",
+     "size": 2545816,
+     "mtime_utc": "2026-09-24T19:50:47+00:00",
+     "sha256": "d9da0b801a43eb14b11276ba0b2df5cb3dbe376d1c56820f6f756b504a54f2e8",
+     "git_blob_sha": "e85c3b9fb201faf20bd50480c0c0b216b1d53842"
+    }
+   ]
+  },
+  {
+   "target": "pretzsch2024patterns",
+   "target_no": 16,
+   "gate": "G2",
+   "object": "eTable13 loadings (Supplement 2; Europe PMC supplementary archive; derived CSV on disk)",
+   "probes": [
+    {
+     "method": "HTTP HEAD",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11581727/supplementaryFiles",
+     "listed_utc": "2026-09-26T06:18:59+00:00",
+     "status_code": 200,
+     "final_url": null,
+     "content_length": null,
+     "etag": null,
+     "last_modified": null,
+     "content_type": "application/zip",
+     "status": "reachable, size not returned by HEAD"
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\pretzsch2024patterns\\derived\\eTable13_glasser360_pls_comp1_loadings.csv",
+     "listed_utc": "2026-09-26T06:19:01+00:00",
+     "status": "ok",
+     "size": 26343,
+     "mtime_utc": "2026-09-24T19:57:19+00:00",
+     "sha256": "0ef57d234055505918e4f99a674c6e446402b5c2bea69046e2c2429f60df5d67",
+     "git_blob_sha": "1b0b5a76dee61276c0b75a46437e8ce5c4a16028",
+     "git_blob_sha_crlf_to_lf": "7b9dc1dc09c885f153b7502e500dfbf6cd695524"
+    }
+   ]
+  },
+  {
+   "target": "dear2024corticalgene",
+   "target_no": 15,
+   "gate": "deferred (G1+G2 once provenance is established)",
+   "object": "Supplementary Tables 1-4 workbook (Supp Table 4 = y) MOESM3",
+   "probes": [
+    {
+     "method": "HTTP HEAD",
+     "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41593-024-01624-4/MediaObjects/41593_2024_1624_MOESM3_ESM.xlsx",
+     "listed_utc": "2026-09-26T06:19:01+00:00",
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 499436,
+     "etag": "\"459315460f188079facab9b6384081d3\"",
+     "last_modified": "Thu, 13 Jun 2024 08:34:33 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok"
+    }
+   ]
+  },
+  {
+   "target": "dear2024corticalgene",
+   "target_no": 15,
+   "gate": "deferred",
+   "object": "repo data/brainchart_maps_dk.csv (y check copy)",
+   "probes": [
+    {
+     "method": "GitHub git-tree listing (recursive)",
+     "repo": "richardajdear/AHBA_gradients",
+     "commit": "ab7939cf1811cba6296b882e35e60b09fed7d653",
+     "listed_utc": "2026-09-26T06:19:02+00:00",
+     "tree_truncated": false,
+     "url": "https://github.com/richardajdear/AHBA_gradients/blob/ab7939cf1811cba6296b882e35e60b09fed7d653/data/brainchart_maps_dk.csv",
+     "path": "data/brainchart_maps_dk.csv",
+     "status": "ok",
+     "type": "blob",
+     "blob_sha": "0e0e0a92e820e6afce1408b0d97c5c2bcfe4cfb1",
+     "size": 2260
+    }
+   ]
+  },
+  {
+   "target": "dear2024corticalgene",
+   "target_no": 15,
+   "gate": "deferred",
+   "object": "repo outputs/ahba_dme_scores_in_dk.csv (components, DK projection)",
+   "probes": [
+    {
+     "method": "GitHub git-tree listing (recursive)",
+     "repo": "richardajdear/AHBA_gradients",
+     "commit": "ab7939cf1811cba6296b882e35e60b09fed7d653",
+     "listed_utc": "2026-09-26T06:19:02+00:00",
+     "tree_truncated": false,
+     "url": "https://github.com/richardajdear/AHBA_gradients/blob/ab7939cf1811cba6296b882e35e60b09fed7d653/outputs/ahba_dme_scores_in_dk.csv",
+     "path": "outputs/ahba_dme_scores_in_dk.csv",
+     "status": "ok",
+     "type": "blob",
+     "blob_sha": "2c72d45955cdc058e198fdbc52b0b4f1e665a22f",
+     "size": 2637
+    }
+   ]
+  },
+  {
+   "target": "dear2024corticalgene",
+   "target_no": 15,
+   "gate": "deferred",
+   "object": "repo outputs/ahba_dme_hcp_top8kgenes_weights.csv / _scores.csv (listed)",
+   "probes": [
+    {
+     "method": "GitHub git-tree listing (recursive)",
+     "repo": "richardajdear/AHBA_gradients",
+     "commit": "ab7939cf1811cba6296b882e35e60b09fed7d653",
+     "listed_utc": "2026-09-26T06:19:02+00:00",
+     "tree_truncated": false,
+     "url": "https://github.com/richardajdear/AHBA_gradients/blob/ab7939cf1811cba6296b882e35e60b09fed7d653/outputs/ahba_dme_hcp_top8kgenes_weights.csv",
+     "path": "outputs/ahba_dme_hcp_top8kgenes_weights.csv",
+     "status": "ok",
+     "type": "blob",
+     "blob_sha": "9842002c3121345cc47481b36b4d51703bbdc46a",
+     "size": 530731
+    },
+    {
+     "method": "GitHub git-tree listing (recursive)",
+     "repo": "richardajdear/AHBA_gradients",
+     "commit": "ab7939cf1811cba6296b882e35e60b09fed7d653",
+     "listed_utc": "2026-09-26T06:19:02+00:00",
+     "tree_truncated": false,
+     "url": "https://github.com/richardajdear/AHBA_gradients/blob/ab7939cf1811cba6296b882e35e60b09fed7d653/outputs/ahba_dme_hcp_top8kgenes_scores.csv",
+     "path": "outputs/ahba_dme_hcp_top8kgenes_scores.csv",
+     "status": "ok",
+     "type": "blob",
+     "blob_sha": "bd54d99a89c794b5de78bf246260298e086345ce",
+     "size": 9144
+    }
+   ]
+  },
+  {
+   "target": "rasero2023neurogenetics",
+   "target_no": 6,
+   "gate": "G1",
+   "object": "notebook 05-mdmr_subtypes_vs_TDC.ipynb (carrier of y_S1, y_S2)",
+   "probes": [
+    {
+     "method": "GitHub git-tree listing (recursive)",
+     "repo": "compneurobilbao/asd-subtyping-enrichment",
+     "commit": "9a333d93dbc6249f3d24e8a492246d62a1f23d31",
+     "listed_utc": "2026-09-26T06:19:03+00:00",
+     "tree_truncated": false,
+     "url": "https://github.com/compneurobilbao/asd-subtyping-enrichment/blob/9a333d93dbc6249f3d24e8a492246d62a1f23d31/notebooks/05-mdmr_subtypes_vs_TDC.ipynb",
+     "path": "notebooks/05-mdmr_subtypes_vs_TDC.ipynb",
+     "status": "ok",
+     "type": "blob",
+     "blob_sha": "165a1812ecefe3c64658e7c317922db8d79a2b24",
+     "size": 1800744
+    }
+   ]
+  },
+  {
+   "target": "rasero2023neurogenetics",
+   "target_no": 6,
+   "gate": "G1",
+   "object": "notebook 08-calculate_gen_pvals.ipynb (per-gene step; ML_Lag weights)",
+   "probes": [
+    {
+     "method": "GitHub git-tree listing (recursive)",
+     "repo": "compneurobilbao/asd-subtyping-enrichment",
+     "commit": "9a333d93dbc6249f3d24e8a492246d62a1f23d31",
+     "listed_utc": "2026-09-26T06:19:03+00:00",
+     "tree_truncated": false,
+     "url": "https://github.com/compneurobilbao/asd-subtyping-enrichment/blob/9a333d93dbc6249f3d24e8a492246d62a1f23d31/notebooks/08-calculate_gen_pvals.ipynb",
+     "path": "notebooks/08-calculate_gen_pvals.ipynb",
+     "status": "ok",
+     "type": "blob",
+     "blob_sha": "0bc8713062ba4d930cae45451a4fa95c22a4a957",
+     "size": 6630
+    }
+   ]
+  },
+  {
+   "target": "rasero2023neurogenetics",
+   "target_no": 6,
+   "gate": "G1",
+   "object": "results/desikan/Subtype_{1,2}_r2_gen_association_results.csv (RA-11 ... 14 lists)",
+   "probes": [
+    {
+     "method": "GitHub git-tree listing (recursive)",
+     "repo": "compneurobilbao/asd-subtyping-enrichment",
+     "commit": "9a333d93dbc6249f3d24e8a492246d62a1f23d31",
+     "listed_utc": "2026-09-26T06:19:03+00:00",
+     "tree_truncated": false,
+     "url": "https://github.com/compneurobilbao/asd-subtyping-enrichment/blob/9a333d93dbc6249f3d24e8a492246d62a1f23d31/results/desikan/Subtype_1_r2_gen_association_results.csv",
+     "path": "results/desikan/Subtype_1_r2_gen_association_results.csv",
+     "status": "ok",
+     "type": "blob",
+     "blob_sha": "4423cf836b8740425f615f1dbc56369835e9968d",
+     "size": 25658
+    },
+    {
+     "method": "GitHub git-tree listing (recursive)",
+     "repo": "compneurobilbao/asd-subtyping-enrichment",
+     "commit": "9a333d93dbc6249f3d24e8a492246d62a1f23d31",
+     "listed_utc": "2026-09-26T06:19:03+00:00",
+     "tree_truncated": false,
+     "url": "https://github.com/compneurobilbao/asd-subtyping-enrichment/blob/9a333d93dbc6249f3d24e8a492246d62a1f23d31/results/desikan/Subtype_2_r2_gen_association_results.csv",
+     "path": "results/desikan/Subtype_2_r2_gen_association_results.csv",
+     "status": "ok",
+     "type": "blob",
+     "blob_sha": "7d074c6f7a0b7bce6c105d2c15d4243864a619ec",
+     "size": 14793
+    }
+   ]
+  },
+  {
+   "target": "rasero2023neurogenetics",
+   "target_no": 6,
+   "gate": "G1",
+   "object": "journal mmc1.pdf",
+   "probes": [
+    {
+     "method": "HTTP HEAD",
+     "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0006322323012301-mmc1.pdf",
+     "listed_utc": "2026-09-26T06:19:03+00:00",
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 1691460,
+     "etag": null,
+     "last_modified": "Tue, 09 Jan 2024 13:19:33 GMT",
+     "content_type": "application/pdf",
+     "status": "ok"
+    }
+   ]
+  },
+  {
+   "target": "buch2023asdsubgroups",
+   "target_no": 7,
+   "gate": "G1",
+   "object": "MOESM3.xlsx (Supplementary Tables 4-5)",
+   "probes": [
+    {
+     "method": "HTTP HEAD",
+     "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41593-023-01259-x/MediaObjects/41593_2023_1259_MOESM3_ESM.xlsx",
+     "listed_utc": "2026-09-26T06:19:03+00:00",
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 1586689,
+     "etag": "\"e5fc61d710df8d2c38c58b31f8d1b715\"",
+     "last_modified": "Tue, 14 Nov 2023 17:51:31 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok"
+    }
+   ]
+  },
+  {
+   "target": "mamat2025molecular",
+   "target_no": 8,
+   "gate": "G1",
+   "object": "Additional file 1",
+   "probes": [
+    {
+     "method": "HTTP HEAD",
+     "url": "https://static-content.springer.com/esm/art%3A10.1186%2Fs13229-024-00632-2/MediaObjects/13229_2024_632_MOESM1_ESM.pdf",
+     "listed_utc": "2026-09-26T06:19:03+00:00",
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 5191334,
+     "etag": "\"f5d395ba6d63cfe8a22ce0c4dd66e340\"",
+     "last_modified": "Thu, 09 Jan 2025 10:15:20 GMT",
+     "content_type": "application/pdf",
+     "status": "ok"
+    }
+   ]
+  },
+  {
+   "target": "mamat2025molecular",
+   "target_no": 8,
+   "gate": "G1",
+   "object": "Additional file 2",
+   "probes": [
+    {
+     "method": "HTTP HEAD",
+     "url": "https://static-content.springer.com/esm/art%3A10.1186%2Fs13229-024-00632-2/MediaObjects/13229_2024_632_MOESM2_ESM.xlsx",
+     "listed_utc": "2026-09-26T06:19:04+00:00",
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 1349131,
+     "etag": "\"37cb541c39d21d47ac8db2abc977f9a7\"",
+     "last_modified": "Thu, 09 Jan 2025 10:15:19 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok"
+    }
+   ]
+  },
+  {
+   "target": "mamat2025molecular",
+   "target_no": 8,
+   "gate": "G1",
+   "object": "Additional file 3",
+   "probes": [
+    {
+     "method": "HTTP HEAD",
+     "url": "https://static-content.springer.com/esm/art%3A10.1186%2Fs13229-024-00632-2/MediaObjects/13229_2024_632_MOESM3_ESM.xlsx",
+     "listed_utc": "2026-09-26T06:19:04+00:00",
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 30487,
+     "etag": "\"719a4740b0b90af3b3db3b53d46db1fa\"",
+     "last_modified": "Thu, 09 Jan 2025 10:15:19 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok"
+    }
+   ]
+  },
+  {
+   "target": "mamat2025molecular",
+   "target_no": 8,
+   "gate": "G1",
+   "object": "Additional file 4",
+   "probes": [
+    {
+     "method": "HTTP HEAD",
+     "url": "https://static-content.springer.com/esm/art%3A10.1186%2Fs13229-024-00632-2/MediaObjects/13229_2024_632_MOESM4_ESM.xlsx",
+     "listed_utc": "2026-09-26T06:19:04+00:00",
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 186923,
+     "etag": "\"665fe53f7109a37e15413178bc40f75f\"",
+     "last_modified": "Thu, 09 Jan 2025 10:15:20 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok"
+    }
+   ]
+  },
+  {
+   "target": "romerogarcia2019synaptic",
+   "target_no": 4,
+   "gate": "G1",
+   "object": "MOESM1",
+   "probes": [
+    {
+     "method": "HTTP HEAD",
+     "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41380-018-0023-7/MediaObjects/41380_2018_23_MOESM1_ESM.docx",
+     "listed_utc": "2026-09-26T06:19:05+00:00",
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 1408376,
+     "etag": "\"2ac766d15d6086fd8d56d942b860d1f4\"",
+     "last_modified": "Mon, 04 Dec 2023 01:00:00 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok"
+    }
+   ]
+  },
+  {
+   "target": "romerogarcia2019synaptic",
+   "target_no": 4,
+   "gate": "G1",
+   "object": "MOESM2",
+   "probes": [
+    {
+     "method": "HTTP HEAD",
+     "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41380-018-0023-7/MediaObjects/41380_2018_23_MOESM2_ESM.docx",
+     "listed_utc": "2026-09-26T06:19:05+00:00",
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 1406579,
+     "etag": "\"bb924d75e146da96bd9eee5f3d3585d6\"",
+     "last_modified": "Mon, 04 Dec 2023 01:00:00 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok"
+    }
+   ]
+  },
+  {
+   "target": "romerogarcia2019synaptic",
+   "target_no": 4,
+   "gate": "G1",
+   "object": "MOESM3",
+   "probes": [
+    {
+     "method": "HTTP HEAD",
+     "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41380-018-0023-7/MediaObjects/41380_2018_23_MOESM3_ESM.xlsx",
+     "listed_utc": "2026-09-26T06:19:05+00:00",
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 2128249,
+     "etag": "\"6ab24f5ad7cd4ae3c58fb9b25abbfef4\"",
+     "last_modified": "Mon, 04 Dec 2023 01:00:00 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok"
+    }
+   ]
+  },
+  {
+   "target": "romerogarcia2019synaptic",
+   "target_no": 4,
+   "gate": "G1",
+   "object": "Apollo record 10.17863/CAM.17116 (handle 1810/273626): every bitstream",
+   "probes": [
+    {
+     "method": "Apollo DSpace 7 REST listing (bundles / bitstreams: name, sizeBytes, checksum)",
+     "handle": "1810/273626",
+     "listed_utc": "2026-09-26T06:19:06+00:00",
+     "status": "ok",
+     "item_uuid": "a69ee514-000a-42ca-8ff7-18e3e187939d",
+     "bundle": "ORIGINAL",
+     "name": "s41380-018-0023-7.pdf",
+     "size": 2378414,
+     "checksum": "a7aa814c4425e7c8df8f6fe18b98f265",
+     "checksum_algorithm": "MD5",
+     "bitstream_uuid": "f9d3a007-b78f-479f-b25a-7544fa0c771c",
+     "url": "https://www.repository.cam.ac.uk/bitstreams/f9d3a007-b78f-479f-b25a-7544fa0c771c/download"
+    },
+    {
+     "method": "Apollo DSpace 7 REST listing (bundles / bitstreams: name, sizeBytes, checksum)",
+     "handle": "1810/273626",
+     "listed_utc": "2026-09-26T06:19:06+00:00",
+     "status": "ok",
+     "item_uuid": "a69ee514-000a-42ca-8ff7-18e3e187939d",
+     "bundle": "ORIGINAL",
+     "name": "RomeroGarcia_etal_2017_R1_SI_clean.docx",
+     "size": 1408376,
+     "checksum": "2ac766d15d6086fd8d56d942b860d1f4",
+     "checksum_algorithm": "MD5",
+     "bitstream_uuid": "0f2563b6-8ee5-4dca-aef1-fcae06cf46ba",
+     "url": "https://www.repository.cam.ac.uk/bitstreams/0f2563b6-8ee5-4dca-aef1-fcae06cf46ba/download"
+    },
+    {
+     "method": "Apollo DSpace 7 REST listing (bundles / bitstreams: name, sizeBytes, checksum)",
+     "handle": "1810/273626",
+     "listed_utc": "2026-09-26T06:19:06+00:00",
+     "status": "ok",
+     "item_uuid": "a69ee514-000a-42ca-8ff7-18e3e187939d",
+     "bundle": "ORIGINAL",
+     "name": "Figures_Tables.zip",
+     "size": 19078215,
+     "checksum": "e1764461bacc2570f4c99731218ec2fb",
+     "checksum_algorithm": "MD5",
+     "bitstream_uuid": "ce1417e6-1a18-4c38-9107-185994cbe059",
+     "url": "https://www.repository.cam.ac.uk/bitstreams/ce1417e6-1a18-4c38-9107-185994cbe059/download"
+    },
+    {
+     "method": "Apollo DSpace 7 REST listing (bundles / bitstreams: name, sizeBytes, checksum)",
+     "handle": "1810/273626",
+     "listed_utc": "2026-09-26T06:19:06+00:00",
+     "status": "ok",
+     "item_uuid": "a69ee514-000a-42ca-8ff7-18e3e187939d",
+     "bundle": "ORIGINAL",
+     "name": "RomeroGarcia_etal_2017_R1_Mol_Psych_clean.doc",
+     "size": 604672,
+     "checksum": "f51001ca21b252197730ef7f4852f1f3",
+     "checksum_algorithm": "MD5",
+     "bitstream_uuid": "1ea3d376-2e80-456f-a5b8-f0f6b4aa7e3e",
+     "url": "https://www.repository.cam.ac.uk/bitstreams/1ea3d376-2e80-456f-a5b8-f0f6b4aa7e3e/download"
+    },
+    {
+     "method": "Apollo DSpace 7 REST listing (bundles / bitstreams: name, sizeBytes, checksum)",
+     "handle": "1810/273626",
+     "listed_utc": "2026-09-26T06:19:06+00:00",
+     "status": "ok",
+     "item_uuid": "a69ee514-000a-42ca-8ff7-18e3e187939d",
+     "bundle": "LICENSE",
+     "name": "DepositLicenceAgreement.pdf",
+     "size": 427807,
+     "checksum": "dc15e953c5bb65731138629ef41004fc",
+     "checksum_algorithm": "MD5",
+     "bitstream_uuid": "f9939851-256c-4d68-975e-f382ecdcda33",
+     "url": "https://www.repository.cam.ac.uk/bitstreams/f9939851-256c-4d68-975e-f382ecdcda33/download"
+    },
+    {
+     "method": "Apollo DSpace 7 REST listing (bundles / bitstreams: name, sizeBytes, checksum)",
+     "handle": "1810/273626",
+     "listed_utc": "2026-09-26T06:19:06+00:00",
+     "status": "ok",
+     "item_uuid": "a69ee514-000a-42ca-8ff7-18e3e187939d",
+     "bundle": "CC-LICENSE",
+     "name": "license_rdf",
+     "size": 908,
+     "checksum": "0175ea4a2d4caec4bbcc37e300941108",
+     "checksum_algorithm": "MD5",
+     "bitstream_uuid": "4a3b71d4-ba9b-44f9-a323-10791b73ef96",
+     "url": "https://www.repository.cam.ac.uk/bitstreams/4a3b71d4-ba9b-44f9-a323-10791b73ef96/download"
+    },
+    {
+     "method": "Apollo DSpace 7 REST listing (bundles / bitstreams: name, sizeBytes, checksum)",
+     "handle": "1810/273626",
+     "listed_utc": "2026-09-26T06:19:06+00:00",
+     "status": "ok",
+     "item_uuid": "a69ee514-000a-42ca-8ff7-18e3e187939d",
+     "bundle": "TEXT",
+     "name": "s41380-018-0023-7.pdf.txt",
+     "size": 51974,
+     "checksum": "48bceb1a6992b40639a1171aa9b759f3",
+     "checksum_algorithm": "MD5",
+     "bitstream_uuid": "daac0fe7-1911-4c5e-b9cb-c0b04ae1926e",
+     "url": "https://www.repository.cam.ac.uk/bitstreams/daac0fe7-1911-4c5e-b9cb-c0b04ae1926e/download"
+    },
+    {
+     "method": "Apollo DSpace 7 REST listing (bundles / bitstreams: name, sizeBytes, checksum)",
+     "handle": "1810/273626",
+     "listed_utc": "2026-09-26T06:19:06+00:00",
+     "status": "ok",
+     "item_uuid": "a69ee514-000a-42ca-8ff7-18e3e187939d",
+     "bundle": "TEXT",
+     "name": "RomeroGarcia_etal_2017_R1_Mol_Psych_clean.doc.txt",
+     "size": 47186,
+     "checksum": "6cc9a200e7d16a5d7b99c90c6325c0a9",
+     "checksum_algorithm": "MD5",
+     "bitstream_uuid": "cc6f3f98-b3f1-4e55-9a05-d0d5bd7921c3",
+     "url": "https://www.repository.cam.ac.uk/bitstreams/cc6f3f98-b3f1-4e55-9a05-d0d5bd7921c3/download"
+    },
+    {
+     "method": "Apollo DSpace 7 REST listing (bundles / bitstreams: name, sizeBytes, checksum)",
+     "handle": "1810/273626",
+     "listed_utc": "2026-09-26T06:19:06+00:00",
+     "status": "ok",
+     "item_uuid": "a69ee514-000a-42ca-8ff7-18e3e187939d",
+     "bundle": "TEXT",
+     "name": "RomeroGarcia_etal_2017_R1_SI_clean.docx.txt",
+     "size": 41903,
+     "checksum": "290d26e9949a860897be5e94278d55b6",
+     "checksum_algorithm": "MD5",
+     "bitstream_uuid": "1eacb087-7505-403c-a05e-b7b4d8b91ea4",
+     "url": "https://www.repository.cam.ac.uk/bitstreams/1eacb087-7505-403c-a05e-b7b4d8b91ea4/download"
+    },
+    {
+     "method": "Apollo DSpace 7 REST listing (bundles / bitstreams: name, sizeBytes, checksum)",
+     "handle": "1810/273626",
+     "listed_utc": "2026-09-26T06:19:06+00:00",
+     "status": "ok",
+     "item_uuid": "a69ee514-000a-42ca-8ff7-18e3e187939d",
+     "bundle": "THUMBNAIL",
+     "name": "s41380-018-0023-7.pdf.jpg",
+     "size": 10293,
+     "checksum": "f23875510fdb21397a44c77237acca09",
+     "checksum_algorithm": "MD5",
+     "bitstream_uuid": "482aaf16-f878-439d-a1a9-b7e3bcb952fe",
+     "url": "https://www.repository.cam.ac.uk/bitstreams/482aaf16-f878-439d-a1a9-b7e3bcb952fe/download"
+    }
+   ]
+  },
+  {
+   "target": "romerogarcia2019synaptic",
+   "target_no": 4,
+   "gate": "public atlas (not a carrier)",
+   "object": "DK-308 lh.500.aparc.annot @e351b3cf (subParcellation)",
+   "probes": [
+    {
+     "method": "GitHub git-tree listing (recursive)",
+     "repo": "RafaelRomeroGarcia/subParcellation",
+     "commit": "e351b3cf03fac04713eb915b5754e6144998f757",
+     "listed_utc": "2026-09-26T06:19:10+00:00",
+     "tree_truncated": false,
+     "url": "https://github.com/RafaelRomeroGarcia/subParcellation/blob/e351b3cf03fac04713eb915b5754e6144998f757/500mm%20parcellation%20%28308%20regions%29/lh.500.aparc.annot",
+     "path": "500mm parcellation (308 regions)/lh.500.aparc.annot",
+     "status": "ok",
+     "type": "blob",
+     "blob_sha": "7b157a280103b0d478d6d479eb8b2ff276a7d010",
+     "size": 1317779
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\romerogarcia2019synaptic\\repos\\subParcellation\\500mm parcellation (308 regions)\\lh.500.aparc.annot",
+     "listed_utc": "2026-09-26T06:19:10+00:00",
+     "status": "ok",
+     "size": 1317779,
+     "mtime_utc": "2026-09-24T19:46:27+00:00",
+     "sha256": "2f1e817da6f09f8d607127fc6958d2e722786ba35273a6992c344a682844f1da",
+     "git_blob_sha": "7b157a280103b0d478d6d479eb8b2ff276a7d010"
+    }
+   ],
+   "local_blob_equals_tree_blob": [
+    true
+   ]
+  },
+  {
+   "target": "segura2024symptommapping",
+   "target_no": 1,
+   "gate": "ungated",
+   "object": "NeuroVault 12297 image 790618 (MFG map)",
+   "probes": [
+    {
+     "method": "NeuroVault image metadata (file, file_size only) + HTTP HEAD",
+     "api_url": "https://neurovault.org/api/images/790618/",
+     "listed_utc": "2026-09-26T06:19:10+00:00",
+     "field": "file",
+     "file_url": "https://neurovault.org/media/images/12297/zstat1_ADOS2Total_dm_MFG%20iFC%20corrected%20sex%20ADOSPOS%20-%20AS%20TX.nii.nii.gz",
+     "collection_in_url_matches": true,
+     "api_file_size": 71440,
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 71440,
+     "etag": null,
+     "last_modified": "Thu, 12 Jan 2023 15:57:34 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok",
+     "head_listed_utc": "2026-09-26T06:19:10+00:00",
+     "api_size_equals_head": true
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\segura2025\\image_790618_zstat1_ADOS2Total_dm_MFG_iFC_corrected_sex_ADOSPOS_-_AS_TX.nii.nii.gz",
+     "listed_utc": "2026-09-26T06:19:11+00:00",
+     "status": "ok",
+     "size": 71440,
+     "mtime_utc": "2026-09-23T06:27:09+00:00",
+     "sha256": "802b4b6bf31136aee0507676a3ca4c14e0ba97bafe378f5b6aaddbe5c160af12",
+     "git_blob_sha": "45967d0f9590006f759d114f8d13652c12cf283b"
+    }
+   ]
+  },
+  {
+   "target": "segura2024symptommapping",
+   "target_no": 1,
+   "gate": "ungated",
+   "object": "NeuroVault 12297 image 781986 (control map)",
+   "probes": [
+    {
+     "method": "NeuroVault image metadata (file, file_size only) + HTTP HEAD",
+     "api_url": "https://neurovault.org/api/images/781986/",
+     "listed_utc": "2026-09-26T06:19:11+00:00",
+     "field": "file",
+     "file_url": "https://neurovault.org/media/images/12297/zstat1_PostHocSCA_VisualSeed2iFC_NegativeControl.nii.gz",
+     "collection_in_url_matches": true,
+     "api_file_size": 75117,
+     "status_code": 200,
+     "final_url": null,
+     "content_length": 75117,
+     "etag": null,
+     "last_modified": "Wed, 18 May 2022 10:08:20 GMT",
+     "content_type": "application/octet-stream",
+     "status": "ok",
+     "head_listed_utc": "2026-09-26T06:19:11+00:00",
+     "api_size_equals_head": true
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\segura2025\\image_781986_zstat1_PostHocSCA_VisualSeed2iFC_NegativeControl.nii.gz",
+     "listed_utc": "2026-09-26T06:19:12+00:00",
+     "status": "ok",
+     "size": 75117,
+     "mtime_utc": "2026-09-23T06:27:11+00:00",
+     "sha256": "0c476e8e8fa227edc6fb0007c4eccd92e5376361b497f836fef3d0cd8c1f4741",
+     "git_blob_sha": "a712d422d521807f809a853ff5c496e19b2ef7e1"
+    }
+   ]
+  },
+  {
+   "target": "moreau2020mutations",
+   "target_no": 18,
+   "gate": "ungated",
+   "object": "Supplementary_Table_S1.xlsx @9e8af9c1 (sheets 1_16p11.2Del, 3_22q11.2Del)",
+   "probes": [
+    {
+     "method": "GitHub git-tree listing (recursive)",
+     "repo": "kkumar-iitkgp-livia/GeneExp_and_CNV_FCsignatures",
+     "commit": "9e8af9c1ea094247ba1ee8824daeb7339a0a0d0e",
+     "listed_utc": "2026-09-26T06:19:12+00:00",
+     "tree_truncated": false,
+     "url": "https://github.com/kkumar-iitkgp-livia/GeneExp_and_CNV_FCsignatures/blob/9e8af9c1ea094247ba1ee8824daeb7339a0a0d0e/data/Supplementary_Table_S1.xlsx",
+     "path": "data/Supplementary_Table_S1.xlsx",
+     "status": "ok",
+     "type": "blob",
+     "blob_sha": "7a8b62be9b4f182f6a78e378ad1b270c1aa9ec21",
+     "size": 468991
+    },
+    {
+     "method": "local file already on disk (hashed only, not parsed)",
+     "path": "E:\\data\\asdg\\moreau2020mutations\\repo_GeneExp_and_CNV_FCsignatures\\data\\Supplementary_Table_S1.xlsx",
+     "listed_utc": "2026-09-26T06:19:12+00:00",
+     "status": "ok",
+     "size": 468991,
+     "mtime_utc": "2026-09-24T19:53:49+00:00",
+     "sha256": "c947112ded237be43459c65f896c7ec1f120d6faaed0d5700ed63fb81e302e19",
+     "git_blob_sha": "7a8b62be9b4f182f6a78e378ad1b270c1aa9ec21"
+    }
+   ],
+   "local_blob_equals_tree_blob": [
+    true
+   ]
+  }
+ ],
+ "not_recorded": [
+  {
+   "target": "seelemeyer2025decomposing",
+   "gate": "G2",
+   "reason": "NeuroVault 13397 rejected by register 1.7 (N 535 vs 428); no registered map"
+  },
+  {
+   "target": "wan2026abide2multiplex",
+   "gate": "G1",
+   "reason": "not auditable (no map obtainable; register 2.12)"
+  },
+  {
+   "target": "berto2022connectivity",
+   "gate": "G1",
+   "reason": "not auditable (controlled PsychENCODE expression; register 2.5); no registered map"
+  },
+  {
+   "target": "xing2026interpretable",
+   "gate": "ungated",
+   "reason": "not auditable (axis region sets unpublished; register 2.11)"
+  },
+  {
+   "target": "vairam2026hyperhypo",
+   "gate": "deferred",
+   "reason": "deferred; no derived map deposited (register 2.9)"
+  },
+  {
+   "target": "mamat2025molecular",
+   "gate": "G1",
+   "reason": "bioRxiv DC1-DC4 supplements: HEAD returned no Content-Length in the draft; not re-probed (journal files govern)"
+  }
+ ],
+ "summary": {
+  "n_objects": 41,
+  "n_probes": 79,
+  "status_counts": {
+   "ok": 76,
+   "unreachable": 1,
+   "reachable, size not returned by HEAD": 2
+  },
+  "unreachable": [
+   {
+    "target": "patel2021virtual",
+    "object": "eTable 4 (supplement PDF p. 26)",
+    "method": "HTTP HEAD",
+    "url_or_path": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7450410/bin/jamapsychiatry-e202694-s001.pdf",
+    "error": "HTML page returned for a file URL (interstitial; Content-Length 0)"
+   }
+  ]
+ }
+}

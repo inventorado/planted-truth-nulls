@@ -1,0 +1,306 @@
+{
+ "what": "register DRAFT v6.8 (B S2) as revised by v6.9 / v6.10 (C1): the privacy guard's self-test (arcs/audit/src_register/privacy_guard.py); v6.11: the exemption under a bare 'ID' only",
+ "guard_sha256": "430f86dc087ee47d3e673ba280a6a54dbf79c59fe2b006eb9e283ffe7602a366",
+ "guard_rows": 20,
+ "wide_cols": 50,
+ "id_value_patterns": [
+  "HSB",
+  "UMB",
+  "AN",
+  "BTB",
+  "NUM_CODE",
+  "NUM_CODE",
+  "NDAR",
+  "SSC",
+  "SPARK",
+  "GTEX",
+  "TCGA",
+  "BIDS",
+  "GEO_SAMPLE",
+  "CODE"
+ ],
+ "n_cases": 46,
+ "n_ok": 46,
+ "n_planted": 37,
+ "n_planted_caught": 37,
+ "cases": [
+  {
+   "case": "planted: identifier-valued header, BrainSpan donor codes joined to a region",
+   "expect": "identifier-bearing (V)",
+   "got_rules": "V",
+   "ok": true
+  },
+  {
+   "case": "planted: identifier-valued header, brain-bank codes (UMB / AN, lower-case region suffix)",
+   "expect": "identifier-bearing (V)",
+   "got_rules": "V",
+   "ok": true
+  },
+  {
+   "case": "planted: identifier-valued header, sample number + region code",
+   "expect": "identifier-bearing (V)",
+   "got_rules": "V",
+   "ok": true
+  },
+  {
+   "case": "planted: identifier-valued header, generic letters+digits codes",
+   "expect": "identifier-bearing (V)",
+   "got_rules": "V",
+   "ok": true
+  },
+  {
+   "case": "planted: identifier-valued header, lower-case donor codes",
+   "expect": "identifier-bearing (V)",
+   "got_rules": "V",
+   "ok": true
+  },
+  {
+   "case": "planted: identifier values in the first data rows (NDA GUIDs, SSC, SPARK), neutral header",
+   "expect": "identifier-bearing (V)",
+   "got_rules": "V",
+   "ok": true
+  },
+  {
+   "case": "planted: per-sample GEO accessions as headers",
+   "expect": "identifier-bearing (V)",
+   "got_rules": "V",
+   "ok": true
+  },
+  {
+   "case": "planted: GTEx / TCGA / BIDS labels as headers",
+   "expect": "identifier-bearing (V)",
+   "got_rules": "V",
+   "ok": true
+  },
+  {
+   "case": "planted: a 51-column sheet with neutral headers",
+   "expect": "identifier-bearing (W)",
+   "got_rules": "W",
+   "ok": true
+  },
+  {
+   "case": "planted: identifier wording in the header",
+   "expect": "identifier-bearing (N)",
+   "got_rules": "N",
+   "ok": true
+  },
+  {
+   "case": "planted: identifier wording in a title row above the header",
+   "expect": "identifier-bearing (N)",
+   "got_rules": "N",
+   "ok": true
+  },
+  {
+   "case": "clean: a gene-level sheet (symbols shaped like codes: ZNF804A, LINC00473, KIAA0100)",
+   "expect": "clean",
+   "got_rules": "clean",
+   "ok": true
+  },
+  {
+   "case": "clean: database ids (Ensembl, Affymetrix, Illumina, RefSeq, Reactome, MeSH, KEGG, GEO series, dbSNP)",
+   "expect": "clean",
+   "got_rules": "clean",
+   "ok": true
+  },
+  {
+   "case": "clean: a 50-column sheet (the edge)",
+   "expect": "clean",
+   "got_rules": "clean",
+   "ok": true
+  },
+  {
+   "case": "planted v6.9: brain-bank codes with '.', '-' separators",
+   "expect": "identifier-bearing (V)",
+   "got_rules": "V",
+   "ok": true
+  },
+  {
+   "case": "planted v6.9: brain-bank codes with a space separator",
+   "expect": "identifier-bearing (V)",
+   "got_rules": "V",
+   "ok": true
+  },
+  {
+   "case": "planted v6.9: sample number + region code with '-' / space",
+   "expect": "identifier-bearing (V)",
+   "got_rules": "V",
+   "ok": true
+  },
+  {
+   "case": "planted v6.9: NDA GUIDs in the NDAR_INV / NDARINV forms",
+   "expect": "identifier-bearing (V)",
+   "got_rules": "NV",
+   "ok": true
+  },
+  {
+   "case": "planted v6.9: identifier wording 'Brain bank ID'",
+   "expect": "identifier-bearing (N)",
+   "got_rules": "N",
+   "ok": true
+  },
+  {
+   "case": "planted v6.9: a bare subject word over a numeric column",
+   "expect": "identifier-bearing (N)",
+   "got_rules": "N",
+   "ok": true
+  },
+  {
+   "case": "planted v6.9: a bare subject word over short codes",
+   "expect": "identifier-bearing (N)",
+   "got_rules": "N",
+   "ok": true
+  },
+  {
+   "case": "planted v6.9: identifier wording below row 6 (header zone of 20 rows)",
+   "expect": "identifier-bearing (N)",
+   "got_rules": "N",
+   "ok": true
+  },
+  {
+   "case": "clean v6.9: subject words that are not bare (a 'Sample size' column, 'subject to' text)",
+   "expect": "clean",
+   "got_rules": "clean",
+   "ok": true
+  },
+  {
+   "case": "planted v6.10: numbered-subject headers ('Patient 9', 'Subject_9')",
+   "expect": "identifier-bearing (N)",
+   "got_rules": "N",
+   "ok": true
+  },
+  {
+   "case": "planted v6.10: numbered-subject headers ('Ind9', 'Donor 99', 'Case 9')",
+   "expect": "identifier-bearing (N)",
+   "got_rules": "N",
+   "ok": true
+  },
+  {
+   "case": "planted v6.10: a bare 'ID' header over a numeric column",
+   "expect": "identifier-bearing (N)",
+   "got_rules": "N",
+   "ok": true
+  },
+  {
+   "case": "planted v6.10: a bare 'Case' header over short codes",
+   "expect": "identifier-bearing (N)",
+   "got_rules": "N",
+   "ok": true
+  },
+  {
+   "case": "planted v6.11: 'Sample' over S1 ... S19 (HGNC symbols / aliases)",
+   "expect": "identifier-bearing (N)",
+   "got_rules": "N",
+   "ok": true
+  },
+  {
+   "case": "planted v6.11: 'Donor' over HGNC-colliding B-codes",
+   "expect": "identifier-bearing (N)",
+   "got_rules": "N",
+   "ok": true
+  },
+  {
+   "case": "planted v6.11: 'Individual' over an HGNC-colliding H-code",
+   "expect": "identifier-bearing (N)",
+   "got_rules": "N",
+   "ok": true
+  },
+  {
+   "case": "planted v6.11: a bare 'ID' over text years",
+   "expect": "identifier-bearing (N)",
+   "got_rules": "N",
+   "ok": true
+  },
+  {
+   "case": "clean v6.10: a bare 'ID' header over gene symbols and Ensembl ids (not a subject column)",
+   "expect": "clean",
+   "got_rules": "clean",
+   "ok": true
+  },
+  {
+   "case": "clean v6.9: a 3-column sheet whose dimension tag claims more than 50 columns (width from the cells)",
+   "expect": "clean",
+   "got_rules": "clean",
+   "ok": true
+  },
+  {
+   "case": "planted v6.10: an understated dimension tag (A1:C2 over 60 populated columns) -> W, read whole",
+   "expect": "identifier-bearing (W)",
+   "got_rules": "W",
+   "ok": true
+  },
+  {
+   "case": "planted: a masked read of an identifier-bearing sheet returns only the declared column",
+   "expect": "undeclared cells None",
+   "got_rules": "masked",
+   "ok": true
+  },
+  {
+   "case": "planted: a masked read by a column rule (a function of the header row) hides the other columns",
+   "expect": "undeclared cells None",
+   "got_rules": "masked",
+   "ok": true
+  },
+  {
+   "case": "planted: a read of an identifier-bearing sheet with no declared columns",
+   "expect": "refused",
+   "got_rules": "refused",
+   "ok": true
+  },
+  {
+   "case": "planted: a read of an identifier-bearing sheet with a declared column missing",
+   "expect": "refused",
+   "got_rules": "refused",
+   "ok": true
+  },
+  {
+   "case": "planted: a read of an identifier-bearing sheet with no header row stated",
+   "expect": "refused",
+   "got_rules": "refused",
+   "ok": true
+  },
+  {
+   "case": "planted: a read of an identifier-bearing sheet with a header row outside the guard's zone",
+   "expect": "refused",
+   "got_rules": "refused",
+   "ok": true
+  },
+  {
+   "case": "planted: a read of an identifier-bearing sheet with a column rule returning an invalid position",
+   "expect": "refused",
+   "got_rules": "refused",
+   "ok": true
+  },
+  {
+   "case": "planted: a declared column found twice (clean sheet)",
+   "expect": "refused",
+   "got_rules": "refused",
+   "ok": true
+  },
+  {
+   "case": "planted: xlrd adapter -- an identifier-valued header flagged and masked",
+   "expect": "V, masked",
+   "got_rules": "V",
+   "ok": true
+  },
+  {
+   "case": "clean: xlrd adapter -- a gene-level module table",
+   "expect": "clean",
+   "got_rules": "clean",
+   "ok": true
+  },
+  {
+   "case": "check: HGNC approved / previous / alias symbols flagged by a specific ID_VALUE pattern",
+   "expect": "0",
+   "got_rules": "0",
+   "ok": true,
+   "n_symbols": 103137
+  },
+  {
+   "case": "check v6.10: HGNC approved / previous / alias symbols matched by the identifier wording",
+   "expect": "0",
+   "got_rules": "0",
+   "ok": true,
+   "n_symbols": 103137
+  }
+ ]
+}

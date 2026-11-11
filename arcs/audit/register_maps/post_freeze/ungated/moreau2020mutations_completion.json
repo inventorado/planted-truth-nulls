@@ -1,0 +1,39 @@
+{
+ "schema": "a1_wp3_completion_v1",
+ "key": "moreau2020mutations",
+ "gate": "ungated",
+ "date_utc": "2026-10-12T00:08:14+00:00",
+ "status": "extracted",
+ "completes": {
+  "record_path": "ungated/moreau2020mutations.json",
+  "record_sha256": "87fb8d5daa94e0c827b8d448229584987fbdef77fdd5b982e405cf7d111706d7",
+  "record_status": "refused (stage failed)",
+  "failed_stage": "run",
+  "failed_class": "KeyError",
+  "failed_where": "fetch_extract.py:1424"
+ },
+ "refusal_checks_none_held": [
+  "the record is not a stage failure after its move and deletion request",
+  "the record's object is absent or differs from its sha256",
+  "the record's identity at extraction is not an identity match",
+  "the record's quarantine entry is not the runner-built path or the identity's sha256",
+  "the carrier is absent from the quarantine",
+  "the moved carrier is still at its source path",
+  "the deletion request is absent or differs from the record",
+  "a completion record exists for another record"
+ ],
+ "object_sha256": "8ef132c71831a9cb73d456cb7d3aae6f177a67b9ccba2d6cfb25179fcccd0874",
+ "quarantine": [
+  {
+   "moved_to": "E:/data/asdg/_quarantine/ungated/moreau2020mutations",
+   "what": "the whole clone directory (RUN_PLAN_amend_3 section 8.1)",
+   "carrier_sha256": "c947112ded237be43459c65f896c7ec1f120d6faaed0d5700ed63fb81e302e19",
+   "carrier_bytes": 468991,
+   "carrier_path_sha256": "0ccf4cf65f35d0c0ad25243eca468a7ee02579905843fe27c5a4f5d64f5565a3",
+   "n_files_moved": 68
+  }
+ ],
+ "deletion_request_sha256": "50a60304aaae11b418fefd756d869cdfa502b5594d845c50c7305e5720ffc96b",
+ "source_md": "line appended",
+ "rule": "WP3 fix round 5 (RUN_PLAN section 17: a crash is fixed in code): the missing step only; nothing re-extracted, nothing moved again, no record overwritten"
+}

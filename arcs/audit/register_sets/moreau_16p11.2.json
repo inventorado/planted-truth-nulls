@@ -1,0 +1,219 @@
+{
+ "set_id": "moreau_16p11.2",
+ "status": "built",
+ "definition": "Moreau 2020 16p11.2 locus genes (repo data file)",
+ "source": {
+  "source_id": "moreau2020_locus",
+  "files": [
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\moreau2020_locus\\cnv_genes_cnv16p112.csv",
+    "sha256": "b2b9dbfbb556a465049451d3950a64bdba6f3e54145ded8de8e5284828d4e8a0"
+   }
+  ],
+  "url": "https://github.com/kkumar-iitkgp-livia/GeneExp_and_CNV_FCsignatures @ 9e8af9c1 data/cnv_genes_cnv{16p112,22q112}.csv"
+ },
+ "rule": "§1.6 source 1 (the paper's own list)",
+ "labels": [],
+ "paper_size": 24,
+ "n_raw_unique": 24,
+ "n_hgnc": 24,
+ "members_hgnc": [
+  "ALDOA",
+  "ASPHD1",
+  "CDIPT",
+  "CORO1A",
+  "DOC2A",
+  "FIMP1",
+  "GDPD3",
+  "HIRIP3",
+  "INO80E",
+  "KCTD13",
+  "KIF22",
+  "MAPK3",
+  "MAZ",
+  "MVP",
+  "PAGR1",
+  "PPP4C",
+  "PRRT2",
+  "QPRT",
+  "SEZ6L2",
+  "SPN",
+  "TAOK2",
+  "TLCD3B",
+  "TMEM219",
+  "YPEL3"
+ ],
+ "mapping": {
+  "approved": 22,
+  "previous": 2
+ },
+ "n_id_symbol_disagreements": 0,
+ "n_drops": 0,
+ "drops": [],
+ "universe": {
+  "dk-ctx": {
+   "n_in_universe": 24,
+   "n_columns": 24,
+   "columns": [
+    "ALDOA",
+    "ASPHD1",
+    "C16orf92",
+    "CDIPT",
+    "CORO1A",
+    "DOC2A",
+    "FAM57B",
+    "GDPD3",
+    "HIRIP3",
+    "INO80E",
+    "KCTD13",
+    "KIF22",
+    "MAPK3",
+    "MAZ",
+    "MVP",
+    "PAGR1",
+    "PPP4C",
+    "PRRT2",
+    "QPRT",
+    "SEZ6L2",
+    "SPN",
+    "TAOK2",
+    "TMEM219",
+    "YPEL3"
+   ],
+   "outcome": "testable"
+  },
+  "V-DK": {
+   "n_in_universe": 24,
+   "n_columns": 24,
+   "columns": [
+    "ALDOA",
+    "ASPHD1",
+    "C16orf92",
+    "CDIPT",
+    "CORO1A",
+    "DOC2A",
+    "FAM57B",
+    "GDPD3",
+    "HIRIP3",
+    "INO80E",
+    "KCTD13",
+    "KIF22",
+    "MAPK3",
+    "MAZ",
+    "MVP",
+    "PAGR1",
+    "PPP4C",
+    "PRRT2",
+    "QPRT",
+    "SEZ6L2",
+    "SPN",
+    "TAOK2",
+    "TMEM219",
+    "YPEL3"
+   ],
+   "outcome": "testable"
+  },
+  "V-AAL": {
+   "n_in_universe": 24,
+   "n_columns": 24,
+   "columns": [
+    "ALDOA",
+    "ASPHD1",
+    "C16orf92",
+    "CDIPT",
+    "CORO1A",
+    "DOC2A",
+    "FAM57B",
+    "GDPD3",
+    "HIRIP3",
+    "INO80E",
+    "KCTD13",
+    "KIF22",
+    "MAPK3",
+    "MAZ",
+    "MVP",
+    "PAGR1",
+    "PPP4C",
+    "PRRT2",
+    "QPRT",
+    "SEZ6L2",
+    "SPN",
+    "TAOK2",
+    "TMEM219",
+    "YPEL3"
+   ],
+   "outcome": "testable"
+  },
+  "MIST64": {
+   "n_in_universe": 24,
+   "n_columns": 24,
+   "columns": [
+    "ALDOA",
+    "ASPHD1",
+    "C16orf92",
+    "CDIPT",
+    "CORO1A",
+    "DOC2A",
+    "FAM57B",
+    "GDPD3",
+    "HIRIP3",
+    "INO80E",
+    "KCTD13",
+    "KIF22",
+    "MAPK3",
+    "MAZ",
+    "MVP",
+    "PAGR1",
+    "PPP4C",
+    "PRRT2",
+    "QPRT",
+    "SEZ6L2",
+    "SPN",
+    "TAOK2",
+    "TMEM219",
+    "YPEL3"
+   ],
+   "outcome": "testable"
+  }
+ },
+ "note": "native class MIST64 (primary parcels: left + midline by the atlas_info hemisphere column of the MIST64 matrix)",
+ "cells_detail": [
+  {
+   "cell": "MOR-C1",
+   "row": 615,
+   "analysis_class": "MIST64",
+   "outcome": "testable"
+  },
+  {
+   "cell": "MOR-C3",
+   "row": 617,
+   "analysis_class": "MIST64",
+   "outcome": "testable"
+  },
+  {
+   "cell": "MOR-T1",
+   "row": 618,
+   "analysis_class": "MIST64",
+   "outcome": "testable"
+  },
+  {
+   "cell": "MOR-R1",
+   "row": 620,
+   "analysis_class": "MIST64",
+   "outcome": "testable"
+  },
+  {
+   "cell": "MOR-R4",
+   "row": 623,
+   "analysis_class": "MIST64",
+   "outcome": "testable"
+  }
+ ],
+ "cells": [
+  "MOR-C1",
+  "MOR-C3",
+  "MOR-T1",
+  "MOR-R1",
+  "MOR-R4"
+ ]
+}

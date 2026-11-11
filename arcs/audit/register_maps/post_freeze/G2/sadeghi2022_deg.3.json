@@ -1,0 +1,131 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "sadeghi2022_deg",
+ "gate": "G2",
+ "url": "https://none.invalid/registered-prefix-copy",
+ "kind": "workbook",
+ "date_utc": "2026-10-20T22:27:54+00:00",
+ "pinned": {
+  "pinned_bytes": 18294004,
+  "pinned_sha256": "ef4aee97e746b5e4a9400498c9e60377911910a4ac4685932bbbd56e062a153c"
+ },
+ "url_note": "no URL registered: the incorporated draft's local copy, held to its registered prefix",
+ "fetch": {
+  "source": "pinned copy on disk",
+  "path_sha256": "fbc93b1a425e5805c43081ee244340102852e6f1cc41363a9063186b704bfdd1",
+  "screen_hits": {
+   "V": 0,
+   "N": 0
+  }
+ },
+ "identity": {
+  "facts": {
+   "bytes": 18294004,
+   "sha256": "ef4aee97e746b5e4a9400498c9e60377911910a4ac4685932bbbd56e062a153c",
+   "md5": "d2cf5e21d81fda6cac0670d7294ad621",
+   "git_blob": "bce9a944f9803604f1da85259f55719cc248d50c",
+   "has_crlf": true,
+   "git_blob_lf": "5e1b6e8d8b59811d08fe73510100d4d14cbb2e9e",
+   "bytes_lf": 18293756
+  },
+  "references": [
+   {
+    "basis": "pinned sha256",
+    "sha256": "ef4aee97e746b5e4a9400498c9e60377911910a4ac4685932bbbd56e062a153c",
+    "bytes": 18294004
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "pinned sha256",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "sheets": {
+  "n_sheets": 9,
+  "n_declared": 1,
+  "declared_found": 1,
+  "n_undeclared": 8,
+  "undeclared_not_fetched": true,
+  "name_sha256": [
+   "616d9affbe4a861b9f01ef1fb16cfa2e5f0eaf47d6f12994f4033de96fbc5730",
+   "77ba77358af21431915c62e19ef8a042c06bec4e3cd0f5112a1f538b973362a8",
+   "b93d9066863dc1e36c1560a45043a65bbc5eaf7271da6f33cf18c1c54d7b573f",
+   "72afadeeb5544cb81149a0ef2a942bff0ef1611ea7d2c5f0abf61329070253a1",
+   "f58d392a6e135586b83c54e28b84d1765f1325b903cbaec6b1d506a1b7044e93",
+   "074cc012b9ceebd572675fa9c9204bbb1dc707ddda058c8d09bde8702e3a986d",
+   "97c84149299394bcd4b6d5dd8dd151824479aa74b4cd9805ccff298cbca646ca",
+   "5e5680a79446ffab4cad412c816abaf1f536ab992973a648334584fbef8cc1a9",
+   "a409f7000a93f64a4b80c29a2032638f4bda38d92d969c47ca3408a33ab45564"
+  ],
+  "screen_hits": {
+   "V": 0,
+   "N": 0
+  },
+  "declared": [
+   {
+    "sheet_key": "deg",
+    "name_sha256": "77ba77358af21431915c62e19ef8a042c06bec4e3cd0f5112a1f538b973362a8",
+    "rules": "",
+    "identifier_bearing": false,
+    "n_rows": 157392,
+    "n_cols": 7,
+    "n_cols_dimension_tag": 7,
+    "id_wording_cells": 0,
+    "bare_subject_headers": 0,
+    "id_value_hits_total": 0,
+    "header_rows_tried": 1,
+    "header_row": 0,
+    "positions_handed": [
+     0,
+     1,
+     3,
+     6
+    ]
+   }
+  ],
+  "access_log": [
+   "77ba77358af21431915c62e19ef8a042c06bec4e3cd0f5112a1f538b973362a8"
+  ],
+  "access_log_declared_only": true,
+  "parts_opened_undeclared": 0,
+  "chartsheets": 0
+ },
+ "sheet_rule_matches": {
+  "deg": 1
+ },
+ "positions_consumed": {
+  "deg": [
+   0,
+   1,
+   3,
+   6
+  ]
+ },
+ "positions_handed": {
+  "deg": [
+   0,
+   1,
+   3,
+   6
+  ]
+ },
+ "identifier_bearing": false,
+ "extraction": {
+  "object_path": "D:/RESEARCH/asd-imaging-genetics/artifacts/audit/wp4/G2/sadeghi2022_deg/sadeghi2022_deg_extract.json",
+  "object_sha256": "e4360ddc9bd2e02c3222ca7fbce317c7ceb5e5a8777b1d38765296a2bd647802"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "extracted"
+}

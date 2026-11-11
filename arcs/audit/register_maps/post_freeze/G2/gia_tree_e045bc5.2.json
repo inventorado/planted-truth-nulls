@@ -1,0 +1,57 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "gia_tree_e045bc5",
+ "gate": "G2",
+ "url": "https://api.github.com/repos/alegiac95/METAXCAN_TWAS_ANALYSIS/git/trees/e045bc51961b0425f51bbdf54672d59222cfa8b9?recursive=1",
+ "kind": "file",
+ "date_utc": "2026-10-20T22:11:29+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "fetch": {
+  "source": "copy on disk",
+  "path": "E:/data/asdg/gia_tree_e045bc5/carrier.json"
+ },
+ "identity": {
+  "facts": {
+   "bytes": 298594,
+   "sha256": "83ac78912343b59c5a2f9fe1f4624586fb48f469334eef5741c9837beab1799b",
+   "md5": "66ef3b63b55756d467045c2f9ba9ee88",
+   "git_blob": "80ff591ea573811c5ee86284b6c3d0dcd8314aea",
+   "has_crlf": false,
+   "git_blob_lf": null,
+   "bytes_lf": null
+  },
+  "references": [
+   {
+    "basis": "sha256 of the copy on disk",
+    "bytes": 298594,
+    "sha256": "83ac78912343b59c5a2f9fe1f4624586fb48f469334eef5741c9837beab1799b"
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "sha256 of the copy on disk",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "identifier_bearing": false,
+ "extraction": {
+  "object_path": "D:/RESEARCH/asd-imaging-genetics/artifacts/audit/wp4/G2/gia_tree_e045bc5/gia_tree_e045bc5_extract.json",
+  "object_sha256": "d2b04a708bc0261588dce50d4772590325777024b9c66f0f36698b5dbf6c5f02"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "extracted"
+}

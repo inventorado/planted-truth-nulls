@@ -1,0 +1,205 @@
+{
+ "what": "A1 §14 block estimates repriced from the WP3 (ungated) measurements (pre-WP4; a1_audit.reprice)",
+ "script": "arcs/audit/src/a1_audit/reprice.py",
+ "generated_at_head": "069ca7be58f9130025613fc13ab76f519af70264",
+ "generated_utc": "2026-10-15T13:12:43+00:00",
+ "plan": {
+  "file": "arcs/audit/RUN_PLAN.md",
+  "sha256": "16c6023296fab612c34155e40d271c37258627980f12d00794e0fc09e1533823",
+  "lines_quoted": {
+   "1557": "- **Uncertainty:** estimates may be off by about 2×.",
+   "1565": "| ungated (verdict ≈ 21 / descriptor ≈ 29) | ≈ 50 | ≈ 2.7 |",
+   "1566": "| G2 (verdict ≈ 22 / descriptor ≈ 97) | ≈ 118 | ≈ 6.3 |",
+   "1567": "| G1 (without the SZ rows' infeasible legs; repriced before WP5) | ≈ 177 | ≈ 9.5 |",
+   "1568": "| ≥ 2-donor sensitivity (R11): the verdict legs again, only for classes whose parcel set changes | ≤ the verdict passes (≤ ≈ 21 / 22 / G1's) | — |",
+   "1577": "- **Overrun:** at more than 2× the block estimate the run pauses at the next checkpoint and reports. Nothing is dropped."
+  }
+ },
+ "rule": "ratio(pass) = measured checkpoint process-h of the ungated pass / its §14 estimate; repriced = §14 estimate x ratio of the same pass; pause threshold = 2 x repriced (pace.PAUSE_FACTOR; RUN_PLAN.md:1577)",
+ "why_checkpoint_process_h": "the pause counts every checkpointed task (pace.py); the row records' memory.seconds omit the G6l screen tasks (verdict / sensitivity), so the checkpoint sum is used; the row-record ratio is given beside it",
+ "why_descriptor_ratio": "the ungated descriptor overrun is the decoded-list descriptor tasks (Segura's 78 rows and MOR-T's 2: 'descriptors' + 'tabs' groups), not the Liu form rows, whose own process-h is 12.11 of 223.79; running the form rows in the pool (item 3) shortens the pass's wall time (they ran serially before the pool) but leaves the process-h ratio (and so the price) essentially as measured; the raw ratio is pinned",
+ "caveat": "the ratios are measured on a decoded-list-dominated ungated block; G2's forms differ (set-vs-map, PLS-enrichment, signed-weight; Pretzsch's large sets), so its true cost may differ either way; RUN_PLAN.md:1557 'estimates may be off by about 2x'",
+ "measured": {
+  "verdict": {
+   "row_records": 115,
+   "row_tasks_process_h": 11.50051972222222,
+   "checkpoint_process_h": 15.651023333333331,
+   "checkpoint_groups": {
+    "g6l screens": {
+     "tasks": 72,
+     "process_h": 4.150503611111112
+    },
+    "legs": {
+     "tasks": 83,
+     "process_h": 11.50051972222222
+    }
+   },
+   "wall_h": 0.9169444444444445,
+   "phase2_wall_h": 0.6608333333333334,
+   "phase2_effective_jobs": 17.403056326187468,
+   "inputs": {
+    "row_files": 200,
+    "row_files_sha256_of_sha256s": "63e3f7e002922e7b4122baebd0c720821c21f915ea34d6f6af7913dae83345c2",
+    "run_summary_sha256": "765855e2402b8fe5b978cb7e655397263ada7bbc74efe1b19ae5ed04d05f6bf8",
+    "committed_in": "7a5fef5e2b917440ca97a8add0fbbeffd6f40877",
+    "checkpoints": "artifacts/audit/a1_run/ungated/verdict (gitignored; _meta.seconds)"
+   }
+  },
+  "descriptor": {
+   "row_records": 115,
+   "row_tasks_process_h": 223.78821166666665,
+   "checkpoint_process_h": 223.7885133333334,
+   "checkpoint_groups": {
+    "descriptors": {
+     "tasks": 80,
+     "process_h": 202.33805916666674
+    },
+    "form rows": {
+     "tasks": 7,
+     "process_h": 12.108268055555556
+    },
+    "tabs": {
+     "tasks": 78,
+     "process_h": 9.342186111111111
+    }
+   },
+   "wall_h": 25.52861111111111,
+   "phase2_wall_h": 13.398888888888889,
+   "phase2_effective_jobs": 15.798343208392078,
+   "inputs": {
+    "row_files": 120,
+    "row_files_sha256_of_sha256s": "7dd076f7958b38ef87199ecf62b9e4e1d56da44973d0607e17182c82f6b684a4",
+    "run_summary_sha256": "a2e7cfd95b5677f824206773b60de244b60fc6dbbba407c17302e87e19102940",
+    "committed_in": "fcbf98f574cce6c4bba7973cbc7725a4e1ff3af2",
+    "checkpoints": "artifacts/audit/a1_run/ungated/descriptor (gitignored; _meta.seconds)"
+   }
+  },
+  "sensitivity": {
+   "row_records": 115,
+   "row_tasks_process_h": 10.515194444444445,
+   "checkpoint_process_h": 14.171265555555559,
+   "checkpoint_groups": {
+    "g6l screens": {
+     "tasks": 70,
+     "process_h": 3.6560711111111126
+    },
+    "legs": {
+     "tasks": 78,
+     "process_h": 10.515194444444445
+    }
+   },
+   "wall_h": 0.7613888888888889,
+   "phase2_wall_h": 0.5463888888888889,
+   "phase2_effective_jobs": 19.24489069649212,
+   "inputs": {
+    "row_files": 115,
+    "row_files_sha256_of_sha256s": "64c9bcfef52570e5f3ab67c510a039a2489e8447ead6f9b3aae28e2ed4692abd",
+    "run_summary_sha256": "7ac3fbb8fa8127df99e6c006d8a48517dc9da1f54ab6d79cff6be24111043d95",
+    "committed_in": "0ed00547c274c043d12be46487baca81a370d40e",
+    "checkpoints": "artifacts/audit/a1_run/ungated/sensitivity (gitignored; _meta.seconds)"
+   }
+  }
+ },
+ "ratio_checkpoint": {
+  "verdict": 0.7452868253968253,
+  "descriptor": 7.716845287356325,
+  "sensitivity": 0.6748221693121694
+ },
+ "ratio_row_records": {
+  "verdict": 0.5476437962962962,
+  "descriptor": 7.716834885057471,
+  "sensitivity": 0.500723544973545
+ },
+ "blocks": {
+  "ungated/verdict": {
+   "plan_estimate_process_h": 21.0,
+   "plan_line": 1565,
+   "ratio_applied": 0.7452868253968253,
+   "ratio_source": "ungated verdict: measured 15.651 / 21",
+   "repriced_process_h": 15.651023333333333,
+   "pause_estimate_process_h": 15.651023333333333,
+   "pause_threshold_process_h": 31.302046666666666,
+   "repriced_wall_h_at_plan_jobs": 0.8347212444444444
+  },
+  "ungated/descriptor": {
+   "plan_estimate_process_h": 29.0,
+   "plan_line": 1565,
+   "ratio_applied": 7.716845287356325,
+   "ratio_source": "ungated descriptor: measured 223.789 / 29",
+   "repriced_process_h": 223.7885133333334,
+   "pause_estimate_process_h": 223.7885133333334,
+   "pause_threshold_process_h": 447.5770266666668,
+   "repriced_wall_h_at_plan_jobs": 11.935387377777783
+  },
+  "ungated/sensitivity": {
+   "plan_estimate_process_h": 21.0,
+   "plan_line": 1568,
+   "ratio_applied": 0.6748221693121694,
+   "ratio_source": "ungated sensitivity: measured 14.171 / 21",
+   "repriced_process_h": 14.171265555555557,
+   "pause_estimate_process_h": 14.171265555555557,
+   "pause_threshold_process_h": 28.342531111111114,
+   "repriced_wall_h_at_plan_jobs": 0.7558008296296297
+  },
+  "G2/verdict": {
+   "plan_estimate_process_h": 22.0,
+   "plan_line": 1566,
+   "ratio_applied": 0.7452868253968253,
+   "ratio_source": "ungated verdict: measured 15.651 / 21",
+   "repriced_process_h": 16.396310158730156,
+   "pause_estimate_process_h": 16.396310158730156,
+   "pause_threshold_process_h": 32.79262031746031,
+   "repriced_wall_h_at_plan_jobs": 0.874469875132275
+  },
+  "G2/descriptor": {
+   "plan_estimate_process_h": 97.0,
+   "plan_line": 1566,
+   "ratio_applied": 7.716845287356325,
+   "ratio_source": "ungated descriptor: measured 223.789 / 29",
+   "repriced_process_h": 748.5339928735635,
+   "pause_estimate_process_h": 748.5339928735635,
+   "pause_threshold_process_h": 1497.067985747127,
+   "repriced_wall_h_at_plan_jobs": 39.92181295325672,
+   "alternative_ex_form_rows": {
+    "ratio": 7.299318802681995,
+    "repriced_process_h": 708.0339238601535,
+    "pause_threshold_process_h": 1416.067847720307,
+    "note": "the ungated descriptor block without its 7 form-row tasks (the Liu rows): not pinned"
+   }
+  },
+  "G2/sensitivity": {
+   "plan_estimate_process_h": 22.0,
+   "plan_line": 1568,
+   "ratio_applied": 0.6748221693121694,
+   "ratio_source": "ungated sensitivity: measured 14.171 / 21",
+   "repriced_process_h": 14.846087724867727,
+   "pause_estimate_process_h": 14.846087724867727,
+   "pause_threshold_process_h": 29.692175449735455,
+   "repriced_wall_h_at_plan_jobs": 0.7917913453262788
+  },
+  "G1/verdict": {
+   "plan_estimate_process_h": 177.0,
+   "plan_line": 1567,
+   "pause_estimate_process_h": null,
+   "range_all_at_verdict_ratio_process_h": 131.9157680952381,
+   "range_all_at_descriptor_ratio_process_h": 1365.8816158620696,
+   "note": "§14 gives G1 no verdict / descriptor split; §12 (RUN_PLAN.md:1536-1538) reprices G1 before WP5; no pause estimate is pinned, so the runner refuses a G1 pass until then"
+  },
+  "G1/descriptor": {
+   "plan_estimate_process_h": 177.0,
+   "plan_line": 1567,
+   "pause_estimate_process_h": null,
+   "range_all_at_verdict_ratio_process_h": 131.9157680952381,
+   "range_all_at_descriptor_ratio_process_h": 1365.8816158620696,
+   "note": "§14 gives G1 no verdict / descriptor split; §12 (RUN_PLAN.md:1536-1538) reprices G1 before WP5; no pause estimate is pinned, so the runner refuses a G1 pass until then"
+  },
+  "G1/sensitivity": {
+   "plan_estimate_process_h": 177.0,
+   "plan_line": 1567,
+   "pause_estimate_process_h": null,
+   "range_all_at_verdict_ratio_process_h": 131.9157680952381,
+   "range_all_at_descriptor_ratio_process_h": 1365.8816158620696,
+   "note": "§14 gives G1 no verdict / descriptor split; §12 (RUN_PLAN.md:1536-1538) reprices G1 before WP5; no pause estimate is pinned, so the runner refuses a G1 pass until then"
+  }
+ }
+}

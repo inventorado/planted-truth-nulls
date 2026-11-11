@@ -1,0 +1,24 @@
+{
+ "set_id": "psi_mouse_cholinergic_striatal_neurons",
+ "status": "not auditable (definition not applicable)",
+ "definition": "pSI.data mouse TRAP cell type 'cholinergic striatal neurons'",
+ "reason": "v4 pinned a mouse table without an orthology rule (register v6 R3; the table holds mouse symbols and section 1.6 pins no mouse -> human orthology mapping). Recorded, not used: the token rule matches 0 of the 35 mouse columns (column names are abbreviations, e.g. 'Ctx.pnoc', 'Cpu.Chat'; columns sharing any token: [])",
+ "source_checked": [
+  {
+   "path": "E:\\data\\asdg\\register_sets_src\\psi_data\\pSI.data_1.0.tar_.gz",
+   "sha256": "41387b14bf8d951c9d5d8e7c7bf1964c4112cc178dbd65561f45b029da75a5a4"
+  }
+ ],
+ "n_mouse_columns": 35,
+ "cells_detail": [
+  {
+   "cell": "MAMAT-E-SEA-cholinergic-striatum",
+   "row": 460,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  }
+ ],
+ "cells": [
+  "MAMAT-E-SEA-cholinergic-striatum"
+ ]
+}

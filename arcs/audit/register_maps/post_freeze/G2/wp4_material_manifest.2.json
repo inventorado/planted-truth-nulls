@@ -1,0 +1,982 @@
+{
+ "schema": "a1_wp4_material_manifest_v1",
+ "gate": "G2",
+ "final": true,
+ "date_utc": "2026-10-20T23:46:00+00:00",
+ "objects": {
+  "freesurfer741_fsaverage_annot": {
+   "status": "extracted",
+   "record_path": "G2/freesurfer741_fsaverage_annot.json",
+   "record_sha256": "07008e4c9c2d6207eac191714166ed24bdc34d346e23afcc3ce561d08c69294e",
+   "identity_result": null,
+   "identifier_bearing": true,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": null,
+   "member_path": "E:/data/asdg/freesurfer741_fsaverage_annot/lh.aparc.annot",
+   "member_sha256": "39b1acde9a32b4227631eb51cbcd8dff84e2138c57bf9f96d74026f2c17f1480",
+   "member_bytes": 1312250,
+   "resumed": "the member saved by an earlier run, re-hashed equal to its record (no stream)",
+   "governing_artefact_index": 0,
+   "artefacts_tried": []
+  },
+  "hcpmmp1_figshare_metadata": {
+   "status": "extracted",
+   "record_path": "G2/hcpmmp1_figshare_metadata.5.json",
+   "record_sha256": "96485d52453c7956f952e9157483ebe777643209787da061b42f520879dd875c",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "abbcb182447d684452e272479b9a08bf3f0918e327324a8217ed88a46b104957",
+   "object_path": "G2/hcpmmp1_figshare_metadata/hcpmmp1_figshare_metadata_extract.json",
+   "object_sha256": "cc7d251db3876cc49b9374040a9c43b8bc0e0010e72be28522c47989e1a4cd90"
+  },
+  "hcpmmp1_volume": {
+   "status": "identity recorded (no extraction declared)",
+   "record_path": "G2/hcpmmp1_volume.5.json",
+   "record_sha256": "ed589907bf0a7bcb59cb6d6a802cbef51f0a3ec1e0ae44f85e779dc8b298d795",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "99a6ae33753687e3ef37330dac7b6b9ececd46750938fb1c58e7ed7b157ba1a1"
+  },
+  "hcpmmp1_labels": {
+   "status": "extracted",
+   "record_path": "G2/hcpmmp1_labels.5.json",
+   "record_sha256": "722113a6f63c19791248f2ec33f0cdac52c09f1c130e88b640edb27908e78bec",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "d008cea4903e4047079020cf1d31f8b1fd8ca092d6ac8b060a8e71da40836e57",
+   "object_path": "G2/hcpmmp1_labels/hcpmmp1_labels_extract.json",
+   "object_sha256": "3b1aeea5ca4505958db5bf14c408074bf8e20e3650a765d65f8a002cb7cb3db3"
+  },
+  "perdonor_hcpmmp1": {
+   "status": "built",
+   "exit": 0,
+   "record_sha256": "86c9db99689db528e1d5437d46c2d9c5f4d58717223abba21b58e74bfb0df05b",
+   "resumed": true
+  },
+  "patel_etable4": {
+   "status": "extracted",
+   "record_path": "G2/patel_etable4.4.json",
+   "record_sha256": "83eda04ba63f98c4ba911280af25f67fad1f1769b44855c606a116cca5968773",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "d9da0b801a43eb14b11276ba0b2df5cb3dbe376d1c56820f6f756b504a54f2e8",
+   "object_path": "G2/patel_etable4/patel_etable4_extract.json",
+   "object_sha256": "16ab9ff09dbbf86d45bab7e71984cfafce098c9cc10c3195d64a69762837871a"
+  },
+  "giacomel_xlsx_c022a29": {
+   "status": "extracted",
+   "record_path": "G2/giacomel_xlsx_c022a29.4.json",
+   "record_sha256": "90d28fb1fcdd4a40dc276aaae3eb526f191886f717f18a346b4f338cdecf4c96",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "a4d4feecb028366c6ccd2ee06b216fc2be758e9b6cf92b039549b78ab5d888c8",
+   "object_path": "G2/giacomel_xlsx_c022a29/giacomel_xlsx_c022a29_extract.json",
+   "object_sha256": "53b87dde9805295741998cc3813901d3138e7b08fe98905b835308cf969e5e8b"
+  },
+  "hansen_enigma_ct": {
+   "status": "extracted",
+   "record_path": "G2/hansen_enigma_ct.4.json",
+   "record_sha256": "534f5488c03bba77c5e1b6b2393c507498c0a0dae7a3eda84ffd1311cf569df6",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "3140921933909a8b9b4b3489a72d253abb5de60f117b762d2b8f7fefa407f2e7",
+   "object_path": "G2/hansen_enigma_ct/hansen_enigma_ct_extract.json",
+   "object_sha256": "fc71364144558a6e42fd68a57a0855428a67d4d3ed476bea0460d2677f7f372c"
+  },
+  "hansen_gene_pc1": {
+   "status": "extracted",
+   "record_path": "G2/hansen_gene_pc1.4.json",
+   "record_sha256": "249bd361df2289096d5425967985fb55e6a3efe2ac1b246f332ed1a4b4b5bb40",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "a078a86d4e6e48980fb12bd464d7b7684a0fc21925c3a5399c8d8e8e54e599d6",
+   "object_path": "G2/hansen_gene_pc1/hansen_gene_pc1_extract.json",
+   "object_sha256": "f5ad3be794b254d6131075b66be88be625e601b83122139ed447b930b8b357bb"
+  },
+  "hansen_local_biol_predictors": {
+   "status": "extracted",
+   "record_path": "G2/hansen_local_biol_predictors.4.json",
+   "record_sha256": "385b2080e5373ddb41a49c9716325541ff1aecd6025c85117d8b60496324da60",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "d73853619b543bf9c84964933d9d2801a4d86aff777bafb23f76268eb459e502",
+   "object_path": "G2/hansen_local_biol_predictors/hansen_local_biol_predictors_extract.json",
+   "object_sha256": "075f4d110d459b13f24f01e0d1f8976425035f3bbadb1db56c472325a0eed5fa",
+   "prefix_len": 16,
+   "prefix_source": "registered (wp4_layout prefix pins)"
+  },
+  "hansen_cammoun_info": {
+   "status": "extracted",
+   "record_path": "G2/hansen_cammoun_info.4.json",
+   "record_sha256": "ba721ca008611e8c176076cdc496ecb05951e6d498875e973b10077f3a7ff92d",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "348246e7d997c3958cae46c7de0781ef005d6bcf2e85307e29ef23c8b7bd0ae0",
+   "object_path": "G2/hansen_cammoun_info/hansen_cammoun_info_extract.json",
+   "object_sha256": "0faad1c1fcee602e97ab788c2d63e32e6b417385cb6ea7fffcfc88ad599d4a50",
+   "prefix_len": 16,
+   "prefix_source": "registered (wp4_layout prefix pins)"
+  },
+  "liu_t3_cortthick": {
+   "status": "refused (carrier in quarantine; the operator moves it back)",
+   "screen_exemption": {
+    "applied": false,
+    "why": "the pinned copy's bytes are not the declared ones"
+   }
+  },
+  "liu_t3_subvol": {
+   "status": "refused (carrier in quarantine; the operator moves it back)",
+   "screen_exemption": {
+    "applied": false,
+    "why": "the pinned copy's bytes are not the declared ones"
+   }
+  },
+  "pretzsch_etable13": {
+   "status": "not auditable (definition not applicable: the declared eTable13 layout not matched)",
+   "record_path": "G2/pretzsch_etable13.4.json",
+   "record_sha256": "6b696e88d5d552c0c2e151e35fcf4849574baf85ae093a8969a03a4aaf36a98f",
+   "identity_result": "identity match",
+   "identifier_bearing": null,
+   "quarantined": false,
+   "failed_stage": "read:file",
+   "refused_reason": null,
+   "sha256": "0ef57d234055505918e4f99a674c6e446402b5c2bea69046e2c2429f60df5d67"
+  },
+  "leyhausen_777428_vol": {
+   "status": "identity recorded (no extraction declared)",
+   "record_path": "G2/leyhausen_777428_vol.4.json",
+   "record_sha256": "d7c274b4fc2e919b5df41f3512764b0222fe331bb5175f1ab1dce2498d98357d",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "3c5dfc21681e2aa279623ab7d6d2f31e98ee1fbd05ca0a4e8fb58e7e76708aff"
+  },
+  "leyhausen_777428_lh": {
+   "status": "extracted",
+   "record_path": "G2/leyhausen_777428_lh.4.json",
+   "record_sha256": "e83c85b4436a4347875fb93831b22e91e502177f9f76842e8dcd3ed93045ebad",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "5889a68733b8d541d7969bdfa8d31c859d75f646a5586839d4a539c71f2680e4",
+   "object_path": "G2/leyhausen_777428_lh/leyhausen_777428_lh_extract.json",
+   "object_sha256": "8045ce2167b7ad0ad1f6a1667ab07bbb5e9e58cdc84264087a8424cf755b5f56"
+  },
+  "leyhausen_777429_vol": {
+   "status": "identity recorded (no extraction declared)",
+   "record_path": "G2/leyhausen_777429_vol.4.json",
+   "record_sha256": "7ad72345dd0623d5515c7d845a4dbc23b1a4cdb32c9469558e9ebaed60c68f0a",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "4429d1da1981770588e1c37e072d67d51e7843694aa92462c0ac24d77a6a561d"
+  },
+  "leyhausen_777429_lh": {
+   "status": "extracted",
+   "record_path": "G2/leyhausen_777429_lh.4.json",
+   "record_sha256": "54e76ea150d2affa3ac99d186011bd5edb4a86f10836d51d9b612d2dbacb50cb",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "1299426288ba4938872621c2bac06dac39bcf2ec473dd284e5c2ef41a18fc47a",
+   "object_path": "G2/leyhausen_777429_lh/leyhausen_777429_lh_extract.json",
+   "object_sha256": "908301d203c13f17b990a40fe09d161664941e1647c23983f33438a09c20268c"
+  },
+  "leyhausen_777430_vol": {
+   "status": "identity recorded (no extraction declared)",
+   "record_path": "G2/leyhausen_777430_vol.4.json",
+   "record_sha256": "44383d367c0d0c57ab4702a8cf0ba73c425b5be7ec251487a6872d988a9547bb",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "9436a9e9061aced63eb0fcd3f54212f399722ffe8e042d0e078e3ede9932119e"
+  },
+  "leyhausen_777430_lh": {
+   "status": "extracted",
+   "record_path": "G2/leyhausen_777430_lh.4.json",
+   "record_sha256": "863b61d404e036ea20981b5915707dbec822b83f7fe73e305786e0c4672adce8",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "e6478fdab840f63ba2df5e72d817cfe388d8eecf003847cd027a238cb2344934",
+   "object_path": "G2/leyhausen_777430_lh/leyhausen_777430_lh_extract.json",
+   "object_sha256": "afe41d2388986d3f9bfe27376d7ef9b6580d911b529e51505936fdbc41135261"
+  },
+  "giacomel_xlsx_93de089": {
+   "status": "extracted",
+   "record_path": "G2/giacomel_xlsx_93de089.4.json",
+   "record_sha256": "765281362fd7aa6f37ca40ed5a14d96e5a742a1dd96a175c1b001ebe66d20730",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "15101878fd0cae3763bcdd46f4ee9c28aeece550a1d40f9de73cc049230dcea0",
+   "object_path": "G2/giacomel_xlsx_93de089/giacomel_xlsx_93de089_extract.json",
+   "object_sha256": "e944c4d13103a635d3e0dda030fa70b5fe9bd7aa244bcb71f47e337953f44287"
+  },
+  "gia_tree_e045bc5": {
+   "status": "extracted",
+   "record_path": "G2/gia_tree_e045bc5.4.json",
+   "record_sha256": "93541b33af4eb16e57b60013ae956ae2cca089273b0e71d3b865021f02c1145a",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "83ac78912343b59c5a2f9fe1f4624586fb48f469334eef5741c9837beab1799b",
+   "object_path": "G2/gia_tree_e045bc5/gia_tree_e045bc5_extract.json",
+   "object_sha256": "d2b04a708bc0261588dce50d4772590325777024b9c66f0f36698b5dbf6c5f02"
+  },
+  "gia_list_ASD_top_genes_thr_1": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_ASD_top_genes_thr_1.4.json",
+   "record_sha256": "d885b09353c75137a5665b5723c068c42367adc9386b2fbb2f5d8717e2c0b8ec",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "f415415bed1d251c8649bbc843237d3c7f0507865a027b6d7184ba8148e842be",
+   "object_path": "G2/gia_list_ASD_top_genes_thr_1/gia_list_ASD_top_genes_thr_1_extract.json",
+   "object_sha256": "4e7194e38dcfb3e82f7ba3223d18ae24ecbb8dc221e7b6934a28f8a6975b0941"
+  },
+  "gia_list_ASD_top_genes_thr_5": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_ASD_top_genes_thr_5.4.json",
+   "record_sha256": "93b98df41a0d043f7b974ae3b9dd7e8efe6c7043255bda9c791229c283458ef9",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "f133259f93d15b824e7217ad1a68ac4eff4a232590aea5af4a46534d0a84beff",
+   "object_path": "G2/gia_list_ASD_top_genes_thr_5/gia_list_ASD_top_genes_thr_5_extract.json",
+   "object_sha256": "35ceadb5d36ff62baa075e96d8e88a8f749079d0ab80fb2624e196f9ffca6ec5"
+  },
+  "gia_list_ASD_top_genes_thr_10": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_ASD_top_genes_thr_10.4.json",
+   "record_sha256": "8e87b22ca43c3a8daa018031cbb14824ce4c86c1c02ec7838c62193a3fd4e006",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "082f3bc1918bed777686e4d606f53024328fd686f54e9f69afd7ca0e938fa0c3",
+   "object_path": "G2/gia_list_ASD_top_genes_thr_10/gia_list_ASD_top_genes_thr_10_extract.json",
+   "object_sha256": "430ed07cf839a97482bac3b42850fc5e3ce077fb0cd28237c5f2cd1381168803"
+  },
+  "gia_list_ASD_top_pos_genes_thr_1": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_ASD_top_pos_genes_thr_1.4.json",
+   "record_sha256": "5e67964b2323ebfa7ed3e1a1c822dce6f58ba380d95ff532a5a6c9794d94d9a3",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "488302e6e8ca7f5bfca3fff2e96e26e157461f0ac965643e50672c6803740b24",
+   "object_path": "G2/gia_list_ASD_top_pos_genes_thr_1/gia_list_ASD_top_pos_genes_thr_1_extract.json",
+   "object_sha256": "1cf6582b15309a5cc703e93215c644167ed25ce437e3c587ef91c247d4b4740d"
+  },
+  "gia_list_ASD_top_pos_genes_thr_5": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_ASD_top_pos_genes_thr_5.4.json",
+   "record_sha256": "5338aac813c93194114e5b83a6cb87ce030f55daf43f03e94a94e4a623c04bb2",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "8657eb62a42d51e70fba2968c76dad40f81673cf2d492c0a22abfc4a44c25963",
+   "object_path": "G2/gia_list_ASD_top_pos_genes_thr_5/gia_list_ASD_top_pos_genes_thr_5_extract.json",
+   "object_sha256": "12fae0144c31d78cb08ec6f889df91915dedb781c9ad67570f090b1a2f209e8a"
+  },
+  "gia_list_ASD_top_pos_genes_thr_10": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_ASD_top_pos_genes_thr_10.4.json",
+   "record_sha256": "25935f905a457a2349d0ae7ca1efbf20baf7c45ed7a3d323220c183dded638c8",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "3312c95b04bf6408cd1cad0bbc918d104ff95550f1c2acac2565f4fb04890000",
+   "object_path": "G2/gia_list_ASD_top_pos_genes_thr_10/gia_list_ASD_top_pos_genes_thr_10_extract.json",
+   "object_sha256": "cbccaaa9965a92b52dc8585069712ac02ce5f95c7be5a4e87c229f5a22c40a27"
+  },
+  "gia_list_ASD_top_neg_genes_thr_1": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_ASD_top_neg_genes_thr_1.4.json",
+   "record_sha256": "d331c352e8ba81068fbeb9f0cc51794bdacd60678d27717b02adf22f6542bafd",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "08915d071a0a6c2f1ec312644b43b55a82cb8b6329184643973d8fd94578eee3",
+   "object_path": "G2/gia_list_ASD_top_neg_genes_thr_1/gia_list_ASD_top_neg_genes_thr_1_extract.json",
+   "object_sha256": "73abcb1acb02191363601fa2136beddd9546fccc8e3eae8e521d11937bec6abf"
+  },
+  "gia_list_ASD_top_neg_genes_thr_5": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_ASD_top_neg_genes_thr_5.4.json",
+   "record_sha256": "572b7bd88b24d73f7cd5a1f61706b11befc1b4f134f16036a506719bde893b26",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "4adcc2a1170e5b48a0851d236bb35a24c6fa6793a34d14c716e618ae344ea28c",
+   "object_path": "G2/gia_list_ASD_top_neg_genes_thr_5/gia_list_ASD_top_neg_genes_thr_5_extract.json",
+   "object_sha256": "df590a96f5498bff7a7c1322c2e296d70653ca664b53d9e5e4ae5dc2d121a4b5"
+  },
+  "gia_list_ASD_top_neg_genes_thr_10": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_ASD_top_neg_genes_thr_10.4.json",
+   "record_sha256": "5463daa3d76335064b51dfaae230af5332fc55ff2174a31998ee34fcd744607b",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "9855cc6be5abcd43829d07ef31904bc61323ffe0d22faf185b112ff56bf15bd8",
+   "object_path": "G2/gia_list_ASD_top_neg_genes_thr_10/gia_list_ASD_top_neg_genes_thr_10_extract.json",
+   "object_sha256": "23091881e82054463f441ecb0b6d82fa0da19c4bbcfd85cfec92e302e252df55"
+  },
+  "gia_list_MDD_top_pos_genes_thr_1": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_MDD_top_pos_genes_thr_1.4.json",
+   "record_sha256": "7d49c23cb7472a2bf02995105c51107991a62610a795f613aca034a325858085",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "df4376f8cd5e445d1aa10362381179bfae69d9eebe9c515bbdf0354c2bd890b3",
+   "object_path": "G2/gia_list_MDD_top_pos_genes_thr_1/gia_list_MDD_top_pos_genes_thr_1_extract.json",
+   "object_sha256": "add73f381c0b88f10117c7080cecd41454ca061a8a37e7749a190930907c46ad"
+  },
+  "gia_list_MDD_top_neg_genes_thr_10": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_MDD_top_neg_genes_thr_10.4.json",
+   "record_sha256": "76db8d112d0dbc01e42323f1057c3cc29d5026444aa241d4d302ff14a79b1ce0",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "85fa10597bbe22f228f32d7ef2bf6287385416937e9427d8cc2254660023de44",
+   "object_path": "G2/gia_list_MDD_top_neg_genes_thr_10/gia_list_MDD_top_neg_genes_thr_10_extract.json",
+   "object_sha256": "00a3a7d331ce2701169f13e13e83383276c330d98d49028dfee9e7b8ab23d719"
+  },
+  "gia_list_MDD_top_genes_thr_1": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_MDD_top_genes_thr_1.4.json",
+   "record_sha256": "d706ac8bf7a26c2226f9e4c21278144ca95b213ce996b8c29bc5a26f97fbb703",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "9ca9b56b6c2c7d6173d54262269970e755c5b90720145d6cceb1735aa4eb8493",
+   "object_path": "G2/gia_list_MDD_top_genes_thr_1/gia_list_MDD_top_genes_thr_1_extract.json",
+   "object_sha256": "dbceb7fefda54d81b5b6567d59dda407f8bc3e7a9b3ec31d6bf362df55da76cc"
+  },
+  "gia_list_MDD_top_genes_thr_5": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_MDD_top_genes_thr_5.4.json",
+   "record_sha256": "eaca675addb4f0acef6db2457155bcf5da8774fb4e11478175a0e36e7b7c136d",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "64a8ce999d9354427d1ea720ad5f1b43695046da66a1f4374c82e27f5c17ebd8",
+   "object_path": "G2/gia_list_MDD_top_genes_thr_5/gia_list_MDD_top_genes_thr_5_extract.json",
+   "object_sha256": "d663aa5ebcaa1bf2a0a224a575d8cdf1ab4642c8d251df52000905ef2ad2ed7b"
+  },
+  "gia_list_MDD_top_genes_thr_10": {
+   "status": "extracted",
+   "record_path": "G2/gia_list_MDD_top_genes_thr_10.4.json",
+   "record_sha256": "c7f4da601f9fa2de01e5a139f3dac59132a5acd3c7337f2c916521bd714b3cab",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "348335e2b8944b6dcdd6ff9c50aeeedfbc9d20575129ec4da2cb1fc2721d0396",
+   "object_path": "G2/gia_list_MDD_top_genes_thr_10/gia_list_MDD_top_genes_thr_10_extract.json",
+   "object_sha256": "227ced30c9c8908c4f6ff794d001ca71453fa202aa02cf1846bf79a5355d7d8c"
+  },
+  "gia_gedar_ASD_TPRS_thr_1": {
+   "status": "not computable (the paper's GEDAR map layout not matched)",
+   "record_path": "G2/gia_gedar_ASD_TPRS_thr_1.4.json",
+   "record_sha256": "1b3609995a82d0d4303dee2f0834f61d49fc17391ad817728c81fb4cfc6201d4",
+   "identity_result": "identity match",
+   "identifier_bearing": null,
+   "quarantined": false,
+   "failed_stage": "read:file",
+   "refused_reason": null,
+   "sha256": "58fa941a722a9ec16ce911d2d470895e0ccf6b59199f7b5997ed90881327bc67"
+  },
+  "gia_gedar_ASD_TPRS_thr_5": {
+   "status": "not computable (the paper's GEDAR map layout not matched)",
+   "record_path": "G2/gia_gedar_ASD_TPRS_thr_5.4.json",
+   "record_sha256": "c0d8b4f5245b3a39d39d06210968af3402b2dcd7b370dd9257212a0bcc3f5ba8",
+   "identity_result": "identity match",
+   "identifier_bearing": null,
+   "quarantined": false,
+   "failed_stage": "read:file",
+   "refused_reason": null,
+   "sha256": "8b33a6799f409b957678a34be42398a631152c67336d75ca0c57694f09813401"
+  },
+  "gia_gedar_ASD_TPRS_thr_10": {
+   "status": "not computable (the paper's GEDAR map layout not matched)",
+   "record_path": "G2/gia_gedar_ASD_TPRS_thr_10.4.json",
+   "record_sha256": "d1973cee21e39eb41b30bd41ec9b92d597ddd917db6b0e9f084c858177a646a4",
+   "identity_result": "identity match",
+   "identifier_bearing": null,
+   "quarantined": false,
+   "failed_stage": "read:file",
+   "refused_reason": null,
+   "sha256": "b93820fbe411f6a54029aca7eaadb2d5677d3116a0b9b17c0055b38621fa9ed6"
+  },
+  "gia_gedar_MDD_TPRS_thr_1": {
+   "status": "not computable (the paper's GEDAR map layout not matched)",
+   "record_path": "G2/gia_gedar_MDD_TPRS_thr_1.4.json",
+   "record_sha256": "5091add5f51aa79931fee9e9fec3c860be4ad179f670cc7f932d8d8a3332e707",
+   "identity_result": "identity match",
+   "identifier_bearing": null,
+   "quarantined": false,
+   "failed_stage": "read:file",
+   "refused_reason": null,
+   "sha256": "b15cc69180f015f33e72998e7f73e8e8ea784de75a9c4b9f1484b18af01e0aea"
+  },
+  "gia_gedar_MDD_TPRS_thr_5": {
+   "status": "not computable (the paper's GEDAR map layout not matched)",
+   "record_path": "G2/gia_gedar_MDD_TPRS_thr_5.4.json",
+   "record_sha256": "7d482dbf0907ac2886752c73a4f7f1d8d1a83e2f00145a7ffc5ef2896ac9e73f",
+   "identity_result": "identity match",
+   "identifier_bearing": null,
+   "quarantined": false,
+   "failed_stage": "read:file",
+   "refused_reason": null,
+   "sha256": "932a78bbc75e6b82dc3e714cf57e5f7d90045a4672f8c5e0215250e0af154d29"
+  },
+  "gia_gedar_MDD_TPRS_thr_10": {
+   "status": "not computable (the paper's GEDAR map layout not matched)",
+   "record_path": "G2/gia_gedar_MDD_TPRS_thr_10.4.json",
+   "record_sha256": "935ccb060fb4c144065567845b7f92f19735ce727d05ffd61d8cccd0cebf83e8",
+   "identity_result": "identity match",
+   "identifier_bearing": null,
+   "quarantined": false,
+   "failed_stage": "read:file",
+   "refused_reason": null,
+   "sha256": "66258b5a911b44232e7bdb9eff7283bf943ea638b624868fdbbd2ca68d07f6c8"
+  },
+  "giacomel_literature_gwas_script": {
+   "status": "refused (stage failed)",
+   "record_path": "G2/giacomel_literature_gwas_script.4.json",
+   "record_sha256": "0e53d56c8731e5943948390ef57d358bccfee2a020c80445e6e2b81f3173949c",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": "save",
+   "refused_reason": null,
+   "sha256": "9c361b5a5e0802f5ec41e75b484b854a9b3b62179b2a2388663e4111dac460af",
+   "repo_path_sha256": "ac40a37bfc384354deb38807d760411595b49a0814b4962ece1ef64009ea8121"
+  },
+  "giacomel_ahba_no_norm": {
+   "status": "identity recorded (no extraction declared)",
+   "record_path": "G2/giacomel_ahba_no_norm.4.json",
+   "record_sha256": "58ff430ff9c3e36283c6f82dded60ea4d33c15548bdccd18aa0051e401aa83c8",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "4b4ace458d3923664dc1c5d397760d7dc229d4ebf40035fc6577919b1cdffb7c",
+   "prefix_len": 16,
+   "prefix_match": true
+  },
+  "giacomel_ahpa_brain": {
+   "status": "identity recorded (no extraction declared)",
+   "record_path": "G2/giacomel_ahpa_brain.4.json",
+   "record_sha256": "56d620cf9ddd4f048906ed0f5e418c47f2352275ed45e76e5796055c840562d2",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "1b85136a7dc582ada3395132827a43b7751a3a7c585d8d2099d0cb4b59dd15cf",
+   "prefix_len": 16,
+   "prefix_match": true
+  },
+  "sadeghi2022_deg": {
+   "status": "extracted",
+   "record_path": "G2/sadeghi2022_deg.4.json",
+   "record_sha256": "f2c152e43a04b6f4832afb0b4d29e7bb9d1f7bca6367bde3972b54b269667a65",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "ef4aee97e746b5e4a9400498c9e60377911910a4ac4685932bbbd56e062a153c",
+   "object_path": "G2/sadeghi2022_deg/sadeghi2022_deg_extract.json",
+   "object_sha256": "e4360ddc9bd2e02c3222ca7fbce317c7ceb5e5a8777b1d38765296a2bd647802",
+   "listing": {
+    "found": true,
+    "name_sha256": [
+     "39b447ea98beeb77c3dd126f99e355dea9247b5a4cdd74bad7f959bc9ec58cdf",
+     "5fdbac0460473f2a64b22eec9297ce1e4682312189fde763db816f4ea854cad2"
+    ],
+    "n_names": 2
+   },
+   "prefix_len": 16,
+   "prefix_source": "registered (wp4_layout prefix pins)"
+  },
+  "r17": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)",
+   "why": "the script was not obtained"
+  },
+  "leyhausen_decoder_777428": {
+   "status": "extracted",
+   "record_path": "G2/leyhausen_decoder_777428.json",
+   "record_sha256": "1c8cb4439be49d8ab4a18dc9b8610c50666d552ae30ba23a1a098baeda91c225",
+   "identity_result": "identity recorded at download (no pre-freeze identity)",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "5789b8cfc902be606a654b7a17e985a983e23fb18393bcd6e972de25b7b2046c",
+   "object_path": "G2/leyhausen_decoder_777428/leyhausen_decoder_777428_extract.json",
+   "object_sha256": "29d70b24ded51e6be4af56bf04bf5ebfb7813f6f2d5705446bab184fe2f0ec67"
+  },
+  "leyhausen_decoder_777429": {
+   "status": "extracted",
+   "record_path": "G2/leyhausen_decoder_777429.json",
+   "record_sha256": "691668e5886fb3be3075b5cc285e3e40a4d2b53ce317191fcf1b2f07d3115e2b",
+   "identity_result": "identity recorded at download (no pre-freeze identity)",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "3017c3d961598a872bf9fb857b11dfbcaeb40fd7b3245abddce0e2006e0373a1",
+   "object_path": "G2/leyhausen_decoder_777429/leyhausen_decoder_777429_extract.json",
+   "object_sha256": "cd1ca625d58997f3248ec7ac68ecc1d11a92c6e7e8b5702215caee1b3b3b8846"
+  },
+  "leyhausen_decoder_777430": {
+   "status": "extracted",
+   "record_path": "G2/leyhausen_decoder_777430.json",
+   "record_sha256": "e165bb71a92eae7f2d2b0b9957058d09023403d8ca3850758c5aa71d49726d83",
+   "identity_result": "identity recorded at download (no pre-freeze identity)",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "refused_reason": null,
+   "sha256": "e3c217988259026179bf8aac66a79e3d5442a0ff41adc87d664ec874097e9452",
+   "object_path": "G2/leyhausen_decoder_777430/leyhausen_decoder_777430_extract.json",
+   "object_sha256": "0b8c3625737501e77e68012101b505df7fe3e5a81a1cb3f0f405ac360b328373"
+  }
+ },
+ "steps": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11
+ ],
+ "run": {
+  "commit": "6237bdbf027ee11147cde2cd3cbc4a0110d82509",
+  "launch_passed": true
+ },
+ "scratch": false,
+ "post_exposure": {
+  "label": "post-exposure version (amend_5)",
+  "readings": [
+   "R61' (Pretzsch '.' = '-')",
+   "R54' (pallidus alias; unmarked Subcortical -> left)",
+   "R58' (d) (mmc2(<n>).xlsx = the pinned Sadeghi copy)"
+  ],
+  "objects": {
+   "giacomel_xlsx_c022a29": {
+    "status": "extracted",
+    "record_path": "G2/giacomel_xlsx_c022a29_a5.json",
+    "record_sha256": "1b6f312d8581b78ab388134d36dd5940f6902cf1a9a972e1c953a405c88724fc",
+    "identity_result": "identity match",
+    "identifier_bearing": false,
+    "quarantined": false,
+    "failed_stage": null,
+    "refused_reason": null,
+    "sha256": "a4d4feecb028366c6ccd2ee06b216fc2be758e9b6cf92b039549b78ab5d888c8",
+    "object_path": "G2/giacomel_xlsx_c022a29_a5/giacomel_xlsx_c022a29_a5_extract.json",
+    "object_sha256": "cba5796418c087273cdf5f0050485c706672b7fc134768f6c674549b1910d471",
+    "object_key": "giacomel_xlsx_c022a29_a5"
+   },
+   "pretzsch_etable13": {
+    "status": "extracted",
+    "record_path": "G2/pretzsch_etable13_a5.json",
+    "record_sha256": "9381b53a30faa753007406d4dc29e48f7c60130a923dc2de01599ddba579a842",
+    "identity_result": "identity match",
+    "identifier_bearing": false,
+    "quarantined": false,
+    "failed_stage": null,
+    "refused_reason": null,
+    "sha256": "0ef57d234055505918e4f99a674c6e446402b5c2bea69046e2c2429f60df5d67",
+    "object_path": "G2/pretzsch_etable13_a5/pretzsch_etable13_a5_extract.json",
+    "object_sha256": "b3ff0f31aaea47dbe66d4717c5b9ce5d9739c83b2cc1de857078dffa1fd09ebe",
+    "object_key": "pretzsch_etable13_a5"
+   },
+   "giacomel_xlsx_93de089": {
+    "status": "extracted",
+    "record_path": "G2/giacomel_xlsx_93de089_a5.json",
+    "record_sha256": "286cac2453da204122ab8c0829b1a272b502380fedbb2092e6d50138a3648115",
+    "identity_result": "identity match",
+    "identifier_bearing": false,
+    "quarantined": false,
+    "failed_stage": null,
+    "refused_reason": null,
+    "sha256": "15101878fd0cae3763bcdd46f4ee9c28aeece550a1d40f9de73cc049230dcea0",
+    "object_path": "G2/giacomel_xlsx_93de089_a5/giacomel_xlsx_93de089_a5_extract.json",
+    "object_sha256": "2ecbe4929387fa08d5d54e4bcad7c417593c71a6af5469aee6efebaaf4f10d59",
+    "object_key": "giacomel_xlsx_93de089_a5"
+   },
+   "r17": {
+    "status": "not auditable (definition not applicable: the paper's code not runnable here)",
+    "why": "the script was not obtained"
+   }
+  },
+  "giacomel_comparison": {
+   "thickness": {
+    "n_cells_compared": 68,
+    "n_cells_differing": 0
+   },
+   "subcortical": {
+    "n_cells_compared": 14,
+    "n_cells_differing": 0
+   },
+   "governs": "93de089"
+  },
+  "labels": {
+   "line130": {
+    "r17_mdd_equals_asd": {
+     "1": null,
+     "5": null,
+     "10": null
+    },
+    "eda33ab_mdd_equals_asd": {
+     "1": false,
+     "5": false,
+     "10": false
+    },
+    "label": "the paper's script writes the ASD values into the MDD TPRS files (line 130)",
+    "cells": [
+     "GIA-MDD-DEG-MDDset-01-ctx",
+     "GIA-MDD-DEG-MDDset-01-sub",
+     "GIA-MDD-DEG-MDDset-05-ctx",
+     "GIA-MDD-DEG-MDDset-05-sub",
+     "GIA-MDD-DEG-MDDset-10-ctx",
+     "GIA-MDD-DEG-MDDset-10-sub"
+    ]
+   }
+  },
+  "sets": {
+   "manifest_sha256": "40f7aec4664dd2306955b566af9669c59d77b7bdba5dfc53c921b8c2f33613ef",
+   "manifest_name": "MANIFEST_G2.json",
+   "n_sets": 23,
+   "restatement": {
+    "n_cells": 23,
+    "n_not_testable_lt5": 0,
+    "n_in_m_not_testable_lt5": 0
+   }
+  },
+  "deg_checks": {
+   "GIA-C19": {
+    "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+   },
+   "GIA-C20": {
+    "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+   },
+   "GIA-C21": {
+    "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+   },
+   "GIA-C22": {
+    "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+   },
+   "GIA-C23": {
+    "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+   },
+   "GIA-C24": {
+    "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+   },
+   "GIA-MDD-DEG-MDDset-01-ctx": {
+    "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+   },
+   "GIA-MDD-DEG-MDDset-01-sub": {
+    "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+   },
+   "GIA-MDD-DEG-MDDset-05-ctx": {
+    "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+   },
+   "GIA-MDD-DEG-MDDset-05-sub": {
+    "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+   },
+   "GIA-MDD-DEG-MDDset-10-ctx": {
+    "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+   },
+   "GIA-MDD-DEG-MDDset-10-sub": {
+    "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+   },
+   "GIA-MDD-DEG-ASDset-01-ctx": {
+    "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+   },
+   "GIA-MDD-DEG-ASDset-01-sub": {
+    "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+   },
+   "GIA-MDD-DEG-ASDset-05-ctx": {
+    "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+   },
+   "GIA-MDD-DEG-ASDset-05-sub": {
+    "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+   },
+   "GIA-MDD-DEG-ASDset-10-ctx": {
+    "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+   },
+   "GIA-MDD-DEG-ASDset-10-sub": {
+    "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+   }
+  }
+ },
+ "pins": {
+  "references": {
+   "brainspan_cols": {
+    "sha256": "995a8e75b76459ba2bdbb51ad2db8970272f546baae14ddd3a7df6bc3ac18a01",
+    "bytes": 43050,
+    "result": "pin match"
+   },
+   "brainspan_expr": {
+    "sha256": "e8d98aa02874f6b12fe7e071f4f88435b88256b6e5c4ba1d799e7b82aad28ee2",
+    "bytes": 183262070,
+    "result": "pin match"
+   },
+   "brainspan_rows": {
+    "sha256": "dbfea0211aea42f6032084c3cdacb737943cbd786115dc5fde0f754708ae988b",
+    "bytes": 2151132,
+    "result": "pin match"
+   },
+   "dk_atlas": {
+    "sha256": "0a28c93f5967f0892810219e68edb32abcaa9fd796a217096512fb0724c20d8a",
+    "bytes": 216876,
+    "result": "pin match"
+   },
+   "dk_info": {
+    "sha256": "abb69a9bf976a153b749eb5333e92cf03d4f61f2ce3efd34e49ea6e82f18729b",
+    "bytes": 2484,
+    "result": "pin match"
+   },
+   "gamba": {
+    "sha256": "442334c3cb487625349fc6e6be6fee121dbc7bdb35b9277133c04032ee0fa53a",
+    "bytes": 268733,
+    "result": "pin match"
+   },
+   "hgnc": {
+    "sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+    "bytes": 16903161,
+    "result": "pin match"
+   }
+  },
+  "builds": {
+   "manifest_sha256": "aa16374367c9be9c1559f16973b6517a9960158aacdb17c93401812a97ae246b",
+   "builds": {
+    "primary-dk": {
+     "record_sha256": "8df7f5ed8fb844129c06890d9894115ca52aed378bc3f63abbf206b9543ec552",
+     "files": {
+      "counts": "7c98bbc22c8ab2e860985a8a8c6de08d4a4c6b24a0d9155bb5b2c4d8086cb963"
+     }
+    },
+    "perdonor-dk": {
+     "record_sha256": "1bd2ad6d630108b4180104ed62b9fa37006dc3bc53e05c1fc67ee1abaa5a859d",
+     "files": {
+      "matrix_d1": "3b6f49a47fbea91aa1dca6ab59a55ac17903883e1aded261ddadd4538456e1c6",
+      "matrix_d2": "66289d8ffdb3f9c34967c98c77724122ae450e3d5948965268c8ea390b55709a",
+      "matrix_d3": "73b079285127126d4656d92e63c9c01d91c3f839ef326c28cc0fba2cae9a7eaf",
+      "matrix_d4": "a2f0c9d01bfbb86820db4c6f33f96d05298f9b93de141396c1fe1a04127cd36a",
+      "matrix_d5": "832f9e488653ab128517aa26f5843d46d8ed0244711380b67b0248f9eebc3ba3",
+      "matrix_d6": "c9a25fdf9df143ba469e5467ae450530ab36c6dd06f344dd13d00765773bdc32",
+      "counts": "7c98bbc22c8ab2e860985a8a8c6de08d4a4c6b24a0d9155bb5b2c4d8086cb963"
+     }
+    },
+    "r12-han-c1-ourpc1": {
+     "record_sha256": "db2d69871221a263d93aa074e07b777bdb37b4198a5acada21ca7580feacd469",
+     "files": {
+      "ds_dk_ctx_perdonor.csv": "135363e814e8c0c6a5dd1b3d39de478bd60f49a47f23bb0124ce3d34abd02ce9",
+      "pc1_dk_ctx.csv": "29c1155688ed0e2205fa69063e5015a2456657b1ea39af32fbd89b87cc38b13f",
+      "pc1_loadings.csv": "a651a9547535a786119547548c999867c960c7baae58311689f276e4fd4defda"
+     }
+    }
+   }
+  },
+  "r13": {
+   "result": "pass",
+   "record_sha256": "3e5414398eae9cb16c2b2c984a21269f10f5bcbee9ddd23d28179e1f0cb922fb"
+  }
+ },
+ "giacomel_comparison": {
+  "thickness": {
+   "n_cells_compared": 68,
+   "n_cells_differing": 0
+  },
+  "subcortical": "not compared (a sheet not read)",
+  "governs": "93de089"
+ },
+ "labels": {
+  "line130": {
+   "r17_mdd_equals_asd": {
+    "1": null,
+    "5": null,
+    "10": null
+   },
+   "eda33ab_mdd_equals_asd": {
+    "1": false,
+    "5": false,
+    "10": false
+   },
+   "label": "the paper's script writes the ASD values into the MDD TPRS files (line 130)",
+   "cells": [
+    "GIA-MDD-DEG-MDDset-01-ctx",
+    "GIA-MDD-DEG-MDDset-01-sub",
+    "GIA-MDD-DEG-MDDset-05-ctx",
+    "GIA-MDD-DEG-MDDset-05-sub",
+    "GIA-MDD-DEG-MDDset-10-ctx",
+    "GIA-MDD-DEG-MDDset-10-sub"
+   ]
+  }
+ },
+ "deg_checks": {
+  "GIA-C19": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-C20": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-C21": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-C22": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-C23": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-C24": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-MDDset-01-ctx": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-MDDset-01-sub": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-MDDset-05-ctx": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-MDDset-05-sub": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-MDDset-10-ctx": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-MDDset-10-sub": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-ASDset-01-ctx": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-ASDset-01-sub": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-ASDset-05-ctx": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-ASDset-05-sub": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-ASDset-10-ctx": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  },
+  "GIA-MDD-DEG-ASDset-10-sub": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)"
+  }
+ },
+ "sets": {
+  "manifest_sha256": "40f7aec4664dd2306955b566af9669c59d77b7bdba5dfc53c921b8c2f33613ef",
+  "manifest_name": "MANIFEST_G2.2.json",
+  "n_sets": 23,
+  "restatement": {
+   "n_cells": 23,
+   "n_not_testable_lt5": 0,
+   "n_in_m_not_testable_lt5": 0
+  }
+ },
+ "counts": {
+  "built": 1,
+  "extracted": 32,
+  "identity recorded (no extraction declared)": 6,
+  "not auditable (definition not applicable: the declared eTable13 layout not matched)": 1,
+  "not auditable (definition not applicable: the paper's code not runnable here)": 1,
+  "not computable (the paper's GEDAR map layout not matched)": 6,
+  "refused (carrier in quarantine; the operator moves it back)": 2,
+  "refused (stage failed)": 1
+ },
+ "door_admitted": 86
+}

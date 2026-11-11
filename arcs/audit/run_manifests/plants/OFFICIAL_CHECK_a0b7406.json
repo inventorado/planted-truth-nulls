@@ -1,0 +1,318 @@
+{
+ "what": "completeness check of an official WP2 plant battery (WP2 review B3)",
+ "root": "../run_manifests/plants",
+ "order": [
+  "P3a",
+  "P3b",
+  "P4",
+  "P5",
+  "P6",
+  "P7",
+  "P8",
+  "P11",
+  "P12",
+  "P22",
+  "P24",
+  "P25",
+  "P26"
+ ],
+ "plants": [
+  {
+   "plant": "P3a",
+   "file": "../run_manifests/plants/P3a/plant_P3a.json",
+   "problems": [],
+   "counts": {
+    "PASS": 3,
+    "FAIL": 0,
+    "CAUGHT": 0,
+    "NOT CAUGHT": 0,
+    "not evaluated": 0,
+    "reported": 0
+   },
+   "outcome": {
+    "n_criteria": 3,
+    "n_PASS": 3,
+    "n_FAIL": 0,
+    "n_CAUGHT": 0,
+    "n_NOT_CAUGHT": 0,
+    "n_not_evaluated": 0,
+    "n_reported": 0
+   }
+  },
+  {
+   "plant": "P3b",
+   "file": "../run_manifests/plants/P3b/plant_P3b.json",
+   "problems": [],
+   "counts": {
+    "PASS": 2,
+    "FAIL": 0,
+    "CAUGHT": 0,
+    "NOT CAUGHT": 0,
+    "not evaluated": 0,
+    "reported": 1
+   },
+   "outcome": {
+    "n_criteria": 3,
+    "n_PASS": 2,
+    "n_FAIL": 0,
+    "n_CAUGHT": 0,
+    "n_NOT_CAUGHT": 0,
+    "n_not_evaluated": 0,
+    "n_reported": 1
+   }
+  },
+  {
+   "plant": "P4",
+   "file": "../run_manifests/plants/P4/plant_P4.json",
+   "problems": [],
+   "counts": {
+    "PASS": 20,
+    "FAIL": 0,
+    "CAUGHT": 0,
+    "NOT CAUGHT": 0,
+    "not evaluated": 0,
+    "reported": 0
+   },
+   "outcome": {
+    "n_criteria": 20,
+    "n_PASS": 20,
+    "n_FAIL": 0,
+    "n_CAUGHT": 0,
+    "n_NOT_CAUGHT": 0,
+    "n_not_evaluated": 0,
+    "n_reported": 0
+   }
+  },
+  {
+   "plant": "P5",
+   "file": "../run_manifests/plants/P5/plant_P5.json",
+   "problems": [],
+   "counts": {
+    "PASS": 0,
+    "FAIL": 0,
+    "CAUGHT": 0,
+    "NOT CAUGHT": 0,
+    "not evaluated": 0,
+    "reported": 3
+   },
+   "outcome": {
+    "n_criteria": 3,
+    "n_PASS": 0,
+    "n_FAIL": 0,
+    "n_CAUGHT": 0,
+    "n_NOT_CAUGHT": 0,
+    "n_not_evaluated": 0,
+    "n_reported": 3
+   }
+  },
+  {
+   "plant": "P6",
+   "file": "../run_manifests/plants/P6/plant_P6.json",
+   "problems": [],
+   "counts": {
+    "PASS": 3,
+    "FAIL": 0,
+    "CAUGHT": 0,
+    "NOT CAUGHT": 0,
+    "not evaluated": 0,
+    "reported": 0
+   },
+   "outcome": {
+    "n_criteria": 3,
+    "n_PASS": 3,
+    "n_FAIL": 0,
+    "n_CAUGHT": 0,
+    "n_NOT_CAUGHT": 0,
+    "n_not_evaluated": 0,
+    "n_reported": 0
+   }
+  },
+  {
+   "plant": "P7",
+   "file": "../run_manifests/plants/P7/plant_P7.json",
+   "problems": [],
+   "counts": {
+    "PASS": 0,
+    "FAIL": 0,
+    "CAUGHT": 0,
+    "NOT CAUGHT": 0,
+    "not evaluated": 0,
+    "reported": 2
+   },
+   "outcome": {
+    "n_criteria": 2,
+    "n_PASS": 0,
+    "n_FAIL": 0,
+    "n_CAUGHT": 0,
+    "n_NOT_CAUGHT": 0,
+    "n_not_evaluated": 0,
+    "n_reported": 2
+   }
+  },
+  {
+   "plant": "P8",
+   "file": "../run_manifests/plants/P8/plant_P8.json",
+   "problems": [],
+   "counts": {
+    "PASS": 0,
+    "FAIL": 0,
+    "CAUGHT": 0,
+    "NOT CAUGHT": 0,
+    "not evaluated": 0,
+    "reported": 1
+   },
+   "outcome": {
+    "n_criteria": 1,
+    "n_PASS": 0,
+    "n_FAIL": 0,
+    "n_CAUGHT": 0,
+    "n_NOT_CAUGHT": 0,
+    "n_not_evaluated": 0,
+    "n_reported": 1
+   }
+  },
+  {
+   "plant": "P11",
+   "file": "../run_manifests/plants/P11/plant_P11.json",
+   "problems": [],
+   "counts": {
+    "PASS": 3,
+    "FAIL": 0,
+    "CAUGHT": 0,
+    "NOT CAUGHT": 0,
+    "not evaluated": 0,
+    "reported": 0
+   },
+   "outcome": {
+    "n_criteria": 3,
+    "n_PASS": 3,
+    "n_FAIL": 0,
+    "n_CAUGHT": 0,
+    "n_NOT_CAUGHT": 0,
+    "n_not_evaluated": 0,
+    "n_reported": 0
+   }
+  },
+  {
+   "plant": "P12",
+   "file": "../run_manifests/plants/P12/plant_P12.json",
+   "problems": [],
+   "counts": {
+    "PASS": 5,
+    "FAIL": 0,
+    "CAUGHT": 0,
+    "NOT CAUGHT": 0,
+    "not evaluated": 0,
+    "reported": 5
+   },
+   "outcome": {
+    "n_criteria": 10,
+    "n_PASS": 5,
+    "n_FAIL": 0,
+    "n_CAUGHT": 0,
+    "n_NOT_CAUGHT": 0,
+    "n_not_evaluated": 0,
+    "n_reported": 5
+   }
+  },
+  {
+   "plant": "P22",
+   "file": "../run_manifests/plants/P22/plant_P22.json",
+   "problems": [],
+   "counts": {
+    "PASS": 4,
+    "FAIL": 0,
+    "CAUGHT": 0,
+    "NOT CAUGHT": 0,
+    "not evaluated": 0,
+    "reported": 0
+   },
+   "outcome": {
+    "n_criteria": 4,
+    "n_PASS": 4,
+    "n_FAIL": 0,
+    "n_CAUGHT": 0,
+    "n_NOT_CAUGHT": 0,
+    "n_not_evaluated": 0,
+    "n_reported": 0
+   }
+  },
+  {
+   "plant": "P24",
+   "file": "../run_manifests/plants/P24/plant_P24.json",
+   "problems": [],
+   "counts": {
+    "PASS": 18,
+    "FAIL": 0,
+    "CAUGHT": 0,
+    "NOT CAUGHT": 0,
+    "not evaluated": 0,
+    "reported": 0
+   },
+   "outcome": {
+    "n_criteria": 18,
+    "n_PASS": 18,
+    "n_FAIL": 0,
+    "n_CAUGHT": 0,
+    "n_NOT_CAUGHT": 0,
+    "n_not_evaluated": 0,
+    "n_reported": 0
+   }
+  },
+  {
+   "plant": "P25",
+   "file": "../run_manifests/plants/P25/plant_P25.json",
+   "problems": [],
+   "counts": {
+    "PASS": 2,
+    "FAIL": 0,
+    "CAUGHT": 8,
+    "NOT CAUGHT": 0,
+    "not evaluated": 0,
+    "reported": 0
+   },
+   "outcome": {
+    "n_criteria": 10,
+    "n_PASS": 2,
+    "n_FAIL": 0,
+    "n_CAUGHT": 8,
+    "n_NOT_CAUGHT": 0,
+    "n_not_evaluated": 0,
+    "n_reported": 0
+   }
+  },
+  {
+   "plant": "P26",
+   "file": "../run_manifests/plants/P26/plant_P26.json",
+   "problems": [],
+   "counts": {
+    "PASS": 6,
+    "FAIL": 0,
+    "CAUGHT": 5,
+    "NOT CAUGHT": 1,
+    "not evaluated": 0,
+    "reported": 0
+   },
+   "outcome": {
+    "n_criteria": 12,
+    "n_PASS": 6,
+    "n_FAIL": 0,
+    "n_CAUGHT": 5,
+    "n_NOT_CAUGHT": 1,
+    "n_not_evaluated": 0,
+    "n_reported": 0
+   }
+  }
+ ],
+ "incomplete": [],
+ "criteria_totals": {
+  "PASS": 66,
+  "FAIL": 0,
+  "CAUGHT": 13,
+  "NOT CAUGHT": 1,
+  "not evaluated": 0,
+  "reported": 12
+ },
+ "result": "every plant complete",
+ "driver_exit_code_note": "plants.driver exits 1 only on FAIL, never on 'not evaluated' or a missing plant; the fix is deferred (driver.py pinned, RUN_PLAN_amend_2 §8.1 / §8.1b)"
+}

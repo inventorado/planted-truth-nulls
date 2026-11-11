@@ -1,0 +1,71 @@
+{
+ "dk": {
+  "n_parcels": 83,
+  "n_genes": 15633,
+  "n_empty": 2,
+  "empty_parcels": [
+   72,
+   73
+  ],
+  "sha256_matrix": "9c66a2058896061fd3630fdad15abe121fc1148ac7160181b200cb0fb7d9b1b2",
+  "commit": "75ecaec2672b04aecf9b4278468acd2c446b50e5"
+ },
+ "aal": {
+  "n_parcels": 116,
+  "n_genes": 15633,
+  "n_empty": 11,
+  "empty_parcels": [
+   2502,
+   5012,
+   8102,
+   9082,
+   9100,
+   9110,
+   9120,
+   9130,
+   9140,
+   9150,
+   9170
+  ],
+  "sha256_matrix": "0dbbb50ca9a60647b7dc49477c905dbb49631be0f42f74889039f8d8d7bb6a00",
+  "commit": "75ecaec2672b04aecf9b4278468acd2c446b50e5"
+ },
+ "ho": {
+  "n_parcels": 111,
+  "n_genes": 15633,
+  "n_empty": 5,
+  "empty_parcels": [
+   3201,
+   3455,
+   4301,
+   4701,
+   4702
+  ],
+  "sha256_matrix": "e2defcbb7c6c7c841cfb488a96d41c43492da89a96e17303868fb0ff8030152a",
+  "commit": "75ecaec2672b04aecf9b4278468acd2c446b50e5"
+ },
+ "cc200": {
+  "n_parcels": 200,
+  "n_genes": 15633,
+  "n_empty": 14,
+  "empty_parcels": [
+   30,
+   38,
+   68,
+   85,
+   87,
+   113,
+   124,
+   130,
+   161,
+   163,
+   168,
+   186,
+   187,
+   194
+  ],
+  "sha256_matrix": "787eaa06e43227bf9030c93ff14d2f435bae77f9e6e78e7c4604dc6325ffecfe",
+  "commit": "75ecaec2672b04aecf9b4278468acd2c446b50e5"
+ },
+ "A2_dk_15633": true
+}

@@ -1,0 +1,96 @@
+{
+ "set_id": "notbuildable66_BUCH_ASDup",
+ "status": "not auditable (S undefined: comparator not buildable pre-freeze)",
+ "definition": "comparator of BUCH:ASDup (methods: ASD transcriptionally upregulated (asdM16 from 118) extracted from 119; figure: ASD upregulated)",
+ "reason": "comparator not buildable pre-freeze -- register 1.6 resolution rule (v6.6): R-a / R-e: the sources the paper cites for asdM16 distribute no list of its members -- ref 118 (Voineagu 2011) prints the M12 genes (Supplementary Table 14) but no M16 / tan gene table, and its Supplementary Table 2 gives module membership kME only, no assignment; ref 119 (Parikshak 2016) holds no list named asdM16 (its CTX.M16 is its own rWGCNA module); the list 'asdM16 from Vioneagu et al 2011' is distributed by Parikshak 2013 Table S1D (ref 123, cited by Buch for 'ID All', not for this set) -- R-a does not reach it; it is the near-miss view's comparator (register 1.6, v6.7)",
+ "comparator_v6_6": {
+  "paper": "buch2023asdsubgroups",
+  "paper_received": "2021-11-29",
+  "names_in_paper": {
+   "methods": "ASD transcriptionally upregulated (asdM16 from 118) extracted from 119",
+   "figure": "ASD upregulated"
+  },
+  "reference": {
+   "118": "Voineagu et al. 2011, Nature 474:380",
+   "119": "Parikshak et al. 2016, Nature 540:423"
+  },
+  "R-a_source": "refs 118 (Voineagu 2011: the module, asdM16 = M16) and 119 (Parikshak 2016: 'extracted from')",
+  "url": [
+   "https://pmc.ncbi.nlm.nih.gov/articles/instance/3607626/bin/NIHMS313080-supplement-2.xls",
+   "https://pmc.ncbi.nlm.nih.gov/articles/instance/3607626/bin/NIHMS313080-supplement-1.pdf",
+   "https://pmc.ncbi.nlm.nih.gov/articles/instance/7102905/bin/NIHMS1050915-supplement-SuppTable4.xlsx"
+  ],
+  "release": "n/a (article supplements)",
+  "R-b_release_outcome": "n/a",
+  "R-c_threshold": "n/a",
+  "R-d_names": "n/a",
+  "access_date": "2026-09-27",
+  "files": [
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\voineagu2011\\NIHMS313080-supplement-2.xls",
+    "sha256": "d8030112218aa69216f0429a522d90399b44b861e47bf92953726cfc8513f83a"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\parikshak2016\\NIHMS1050915-supplement-SuppTable4.xlsx",
+    "sha256": "7e672596530a7cae6430511e1703e9ebf9e51eaf87c83325fbe5598f41a05578"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\voineagu2011\\NIHMS313080-supplement-1.pdf",
+    "sha256": "59f2ded45c95b73af0f4c0152da530f2196d0b8e371ca7897d5444c4c6f9cfd5",
+    "note": "deleted after the Table 14 extract; its caption search found no M16 / tan gene table"
+   }
+  ],
+  "naming": {
+   "parikshak2013_quote": "We obtained asdM12 and adsM16 from a prior, independent gene expression study that profiled expression changes in ASD cortex and applied WGCNA to identify modules of dysregulated genes ASD (Voineagu et al., 2011)",
+   "parikshak2013_supplement01_quote": "'We obtained asdM12 (444 genes) and adsM16 (386 genes) from an independent gene expression study ...' (Extended Experimental Procedures; the list lengths 444 / 386 = Table S1D's columns, asserted)",
+   "voineagu2011_article": "names its modules M12 / M16; 'asdM' occurs 0 times in its text (asserted)",
+   "files": [
+    {
+     "path": "E:\\data\\asdg\\register_sets_src\\parikshak2013\\PMC3934107.html",
+     "sha256": "7afe6a87955740167737d7f41a916b8004e7070b8ece932ac955c739faadab8e"
+    },
+    {
+     "path": "E:\\data\\asdg\\register_sets_src\\parikshak2013\\NIHMS545068-supplement-01.pdf",
+     "sha256": "b4eba2e965430696cdc8d1d00be190759ecc2e5e0adafe30c7f913b18ba57feb"
+    },
+    {
+     "path": "E:\\data\\asdg\\register_sets_src\\voineagu2011\\PMC3607626.html",
+     "sha256": "20396beb644b85ca2da27a71d905dd93eb976fd9e42b3d08b1425463f03a0eec"
+    }
+   ]
+  },
+  "R-e": "R-a / R-e: the sources the paper cites for asdM16 distribute no list of its members -- ref 118 (Voineagu 2011) prints the M12 genes (Supplementary Table 14) but no M16 / tan gene table, and its Supplementary Table 2 gives module membership kME only, no assignment; ref 119 (Parikshak 2016) holds no list named asdM16 (its CTX.M16 is its own rWGCNA module); the list 'asdM16 from Vioneagu et al 2011' is distributed by Parikshak 2013 Table S1D (ref 123, cited by Buch for 'ID All', not for this set) -- R-a does not reach it; it is the near-miss view's comparator (register 1.6, v6.7)"
+ },
+ "cells_detail": [
+  {
+   "cell": "BUCH-E-ASDup-S1",
+   "row": 233,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-ASDup-S2",
+   "row": 234,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-ASDup-S3",
+   "row": 235,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-ASDup-S4",
+   "row": 236,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  }
+ ],
+ "cells": [
+  "BUCH-E-ASDup-S1",
+  "BUCH-E-ASDup-S2",
+  "BUCH-E-ASDup-S3",
+  "BUCH-E-ASDup-S4"
+ ]
+}

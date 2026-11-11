@@ -1,0 +1,112 @@
+{
+ "what": "Pretzsch 2024 eTables 3-4: the Gandal 2018 up / down rows other than PRE-D1 (SA-negative x down) and PRE-D1r (SA-negative x up); labels and gene-set identity only (no value read)",
+ "source": {
+  "path": "E:\\data\\asdg\\pretzsch2024patterns\\supplement\\jamapsychiatry-e243194-s001.pdf",
+  "sha256": "05bfe02f4d6b722905ee64084fc03cd1397f697bca1b6cff149deeca50d7b0df",
+  "pages": [
+   34,
+   35,
+   36,
+   37
+  ]
+ },
+ "script": "arcs/audit/src_register/pre_dg_rows.py",
+ "n_gandal_rows_total": 8,
+ "registered_elsewhere": [
+  "PRE-D1",
+  "PRE-D1r"
+ ],
+ "n_other_rows": 6,
+ "rows": [
+  {
+   "etable": 3,
+   "pages": [
+    34,
+    35
+   ],
+   "feature": "CT",
+   "decoded_list": "CT-positive (genes positively associated with a neurotypical maturational pattern)",
+   "row_label": "ASD_downregulatedgenes",
+   "gandal_direction": "down",
+   "set_id": "gandal2018_asd_down",
+   "set_S": "Gandal 2018 ASD-downregulated genes (register §1.6 pinned: gene-level table, ASD FDR < .05 with log2FC < 0)",
+   "direction": "two-sided (register §3.4: every other Gandal up / down row, two-sided)",
+   "proposed_cell_id": "PRE-DG-01"
+  },
+  {
+   "etable": 3,
+   "pages": [
+    34,
+    35
+   ],
+   "feature": "CT",
+   "decoded_list": "CT-positive (genes positively associated with a neurotypical maturational pattern)",
+   "row_label": "ASD_upregulated",
+   "gandal_direction": "up",
+   "set_id": "gandal2018_asd_up",
+   "set_S": "Gandal 2018 ASD-upregulated genes (register §1.6 pinned: gene-level table, ASD FDR < .05 with log2FC > 0)",
+   "direction": "two-sided (register §3.4: every other Gandal up / down row, two-sided)",
+   "proposed_cell_id": "PRE-DG-02"
+  },
+  {
+   "etable": 3,
+   "pages": [
+    34,
+    35
+   ],
+   "feature": "SA",
+   "decoded_list": "SA-positive (genes positively associated with a neurotypical maturational pattern)",
+   "row_label": "ASD_downregulatedgenes",
+   "gandal_direction": "down",
+   "set_id": "gandal2018_asd_down",
+   "set_S": "Gandal 2018 ASD-downregulated genes (register §1.6 pinned: gene-level table, ASD FDR < .05 with log2FC < 0)",
+   "direction": "two-sided (register §3.4: every other Gandal up / down row, two-sided)",
+   "proposed_cell_id": "PRE-DG-03"
+  },
+  {
+   "etable": 3,
+   "pages": [
+    34,
+    35
+   ],
+   "feature": "SA",
+   "decoded_list": "SA-positive (genes positively associated with a neurotypical maturational pattern)",
+   "row_label": "ASD_upregulated",
+   "gandal_direction": "up",
+   "set_id": "gandal2018_asd_up",
+   "set_S": "Gandal 2018 ASD-upregulated genes (register §1.6 pinned: gene-level table, ASD FDR < .05 with log2FC > 0)",
+   "direction": "two-sided (register §3.4: every other Gandal up / down row, two-sided)",
+   "proposed_cell_id": "PRE-DG-04"
+  },
+  {
+   "etable": 4,
+   "pages": [
+    36,
+    37
+   ],
+   "feature": "CT",
+   "decoded_list": "CT-negative (genes negatively associated with a neurotypical maturational pattern)",
+   "row_label": "ASD_downregulatedgenes",
+   "gandal_direction": "down",
+   "set_id": "gandal2018_asd_down",
+   "set_S": "Gandal 2018 ASD-downregulated genes (register §1.6 pinned: gene-level table, ASD FDR < .05 with log2FC < 0)",
+   "direction": "two-sided (register §3.4: every other Gandal up / down row, two-sided)",
+   "proposed_cell_id": "PRE-DG-05"
+  },
+  {
+   "etable": 4,
+   "pages": [
+    36,
+    37
+   ],
+   "feature": "CT",
+   "decoded_list": "CT-negative (genes negatively associated with a neurotypical maturational pattern)",
+   "row_label": "ASD_upregulated",
+   "gandal_direction": "up",
+   "set_id": "gandal2018_asd_up",
+   "set_S": "Gandal 2018 ASD-upregulated genes (register §1.6 pinned: gene-level table, ASD FDR < .05 with log2FC > 0)",
+   "direction": "two-sided (register §3.4: every other Gandal up / down row, two-sided)",
+   "proposed_cell_id": "PRE-DG-06"
+  }
+ ]
+}

@@ -1,0 +1,108 @@
+{
+ "what": "Peak memory and bit-identity of the Liu gene-set-only rows (forms.liu_compute) at the REAL shapes on SYNTHETIC data (pre-WP4 item 3; RUN_PLAN §4 'a job above 2.5 GB is a defect'). No real file opened.",
+ "script": "arcs/audit/src/a1_audit/tests/liu_mem_probe.py (make + measure; a fresh process per measurement = a pool worker)",
+ "synthetic_stand_in": {
+  "expression_matrix.csv_bytes": 184872229,
+  "rows": 52376,
+  "samples": 524,
+  "mapped_rows": 38343,
+  "duplicate_symbols": 387,
+  "duplicate_columns": 1137,
+  "set_m": 258,
+  "brain_genes": 2670,
+  "shapes_from": "results/a1_run/ungated/descriptor/row_0471.json inputs (counts only; fcbf98f)"
+ },
+ "old_code": "HEAD 069ca7b (git archive, run from a scratch copy)",
+ "new_code": "the pre-WP4 commit (this file's commit)",
+ "recorded_wp3_run": {
+  "rows": "471, 472, 475, 476, 477 (descriptor pass, fcbf98f)",
+  "job_measure_process_peak_working_set_bytes": 5823660032,
+  "note": "the PARENT process's lifetime peak (the rows ran in-process, jobs=1, after the parent had prepared the 78 Segura rows); flagged 'job above 2.5 GB'",
+  "task_peak_tracemalloc_bytes": {
+   "LIU-T1": 941499814,
+   "LIU-T2": 504494787
+  },
+  "seconds": {
+   "LIU-T1": 6388.964
+  }
+ },
+ "new_T1_K10000": {
+  "cell": "LIU-T1",
+  "K": 10000,
+  "shapes": {
+   "rows": 52376,
+   "samples": 524,
+   "mapped": 38343,
+   "U_stat": 36761,
+   "m": 258,
+   "samples_used": 524
+  },
+  "process_peak_working_set_after_load": 815685632,
+  "memprobe": {
+   "method": "tracemalloc (allocations traced during the task)",
+   "task_peak_bytes": 942329750,
+   "process_peak_working_set_bytes": 1439281152,
+   "job_measure": "process peak working set",
+   "defect": false,
+   "defect_rule": "a job above 2.5 GB (2.5e9 B) is a defect (RUN_PLAN §4 :382-385)"
+  },
+  "process_peak_working_set_end": 1439281152,
+  "seconds_load": 3.0,
+  "seconds_compute": 6584.3,
+  "T": 0.00010250987703388922,
+  "record_sha256": "f6d876884a6a931891f107b299d071ff4879cdaace8a3f118033852960c08508",
+  "legs": {
+   "Level-2 G1": {
+    "status": "ok",
+    "n": 10000
+   },
+   "G2": {
+    "status": "ok",
+    "n": 10000
+   },
+   "G3": {
+    "status": "ok",
+    "n": 10000
+   },
+   "G4": {
+    "status": "ok",
+    "n": 10000
+   },
+   "G5": {
+    "status": "ok",
+    "n": 10000
+   }
+  },
+  "level2": {
+   "p": {
+    "1": 0.6058394160583942,
+    "-1": 0.6203379662033797
+   },
+   "status": "ok",
+   "binding": {
+    "1": [
+     "G5"
+    ],
+    "-1": [
+     "G3"
+    ]
+   },
+   "p_reported": 0.6058394160583942
+  }
+ },
+ "bit_identity_K40": {
+  "LIU-T1": {
+   "old": "cf68f019eb6298fafdcd65a3b71dab317b9e0ff293c49c776a9e35feebee8da8",
+   "new": "cf68f019eb6298fafdcd65a3b71dab317b9e0ff293c49c776a9e35feebee8da8",
+   "old_peak_ws": 1439637504,
+   "new_peak_ws": 1438605312
+  },
+  "LIU-T2-HIP": {
+   "old": "a0e739b858317f7808c248834c1f3766d75f090c5a1955e29dd8fab86a5870ce",
+   "new": "a0e739b858317f7808c248834c1f3766d75f090c5a1955e29dd8fab86a5870ce",
+   "old_peak_ws": 1053663232,
+   "new_peak_ws": 1052823552
+  }
+ },
+ "runner_level": "dev P16 descriptor pass, rows 471-477, K site=120,...,sets=40: the old runner (jobs 3; form rows in the parent) and the new runner (jobs 3; form rows in pool workers) wrote identical outcome, status, result, seeds and inputs for all 7 rows (checked in the worker session; tests/test_prewp4.py form_rows_in_pool re-checks jobs 1 vs 3 and in-process liu_compute)"
+}

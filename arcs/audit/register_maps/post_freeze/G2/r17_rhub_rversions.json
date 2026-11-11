@@ -1,0 +1,48 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "r17_rhub_rversions",
+ "gate": "G2",
+ "url": "https://api.r-hub.io/rversions/r-versions",
+ "kind": "file",
+ "date_utc": "2026-10-17T17:40:30+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "server": {
+  "status_code": null,
+  "content_length": null,
+  "last_modified": null,
+  "etag_md5": null,
+  "head": "not made (RUN_PLAN_amend_3 R45 (a): one GET)"
+ },
+ "fetch": {
+  "source": "download",
+  "path": "E:/data/asdg/r17_rhub_rversions/carrier.json",
+  "date_utc": "2026-10-17T17:40:31+00:00",
+  "bytes": 15800,
+  "sha256": "177c6be9a6f642cc282bf3c4f197cd990a8bd2cdae10ae00dfc896efd0ebf761"
+ },
+ "identity": {
+  "facts": {
+   "bytes": 15800,
+   "sha256": "177c6be9a6f642cc282bf3c4f197cd990a8bd2cdae10ae00dfc896efd0ebf761",
+   "md5": "db440001e9f8c727d9bdff71510ffd7d",
+   "git_blob": "ead4ee05907019cabbd844f024dd02e81a0635d3",
+   "has_crlf": false,
+   "git_blob_lf": null,
+   "bytes_lf": null
+  },
+  "references": [],
+  "comparison": {
+   "result": "identity recorded at download (no pre-freeze identity)",
+   "checks": []
+  }
+ },
+ "identifier_bearing": false,
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "identity recorded (no extraction declared)"
+}

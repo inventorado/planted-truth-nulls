@@ -1,0 +1,95 @@
+{
+ "set_id": "notbuildable66_BUCH_ASDdown",
+ "status": "not auditable (S undefined: comparator not buildable pre-freeze)",
+ "definition": "comparator of BUCH:ASDdown (methods: ASD transcriptionally downregulated (asdM12 from 118) extracted from 119; figure: ASD downregulated)",
+ "reason": "comparator not buildable pre-freeze -- register 1.6 resolution rule (v6.6): R-d (v6.8, applied uniformly -- the orchestrator under the operator's standing delegation, decided after the v6.7 final re-check, post hoc, declared): the paper's names for the set ('asdM12 from 118', 'ASD downregulated') reach no list under the cited sources' own names -- ref 118 (Voineagu 2011) calls the module 'M12' and prints its genes (Supplementary Table 14), and 'asdM12' is Parikshak 2013's name for it (ref 123, which Buch cites for 'ID All', not for this set); ref 119 (Parikshak 2016) holds no list named asdM12 (its CTX.M12 is its own rWGCNA module). The bridge 'asdM12' -> M12 rests on a reference the paper does not cite for the set -- the standard that sends Tourette's, CNS autoimmune and PAG-C9 / C10 to the secondary view; v6.7 N1 had admitted it to the primary view. Table 14's list is the near-miss view's comparator (register 1.6, v6.8)",
+ "comparator_v6_6": {
+  "paper": "buch2023asdsubgroups",
+  "paper_received": "2021-11-29",
+  "names_in_paper": {
+   "methods": "ASD transcriptionally downregulated (asdM12 from 118) extracted from 119",
+   "figure": "ASD downregulated"
+  },
+  "reference": {
+   "118": "Voineagu et al. 2011, Nature 474:380",
+   "119": "Parikshak et al. 2016, Nature 540:423"
+  },
+  "R-a_source": "refs 118 (Voineagu 2011: its module M12) and 119 (Parikshak 2016: 'extracted from')",
+  "url": [
+   "https://pmc.ncbi.nlm.nih.gov/articles/instance/3607626/bin/NIHMS313080-supplement-1.pdf",
+   "https://pmc.ncbi.nlm.nih.gov/articles/instance/7102905/bin/NIHMS1050915-supplement-SuppTable4.xlsx"
+  ],
+  "release": "n/a (article supplements)",
+  "R-b_release_outcome": "n/a",
+  "R-c_threshold": "n/a",
+  "R-d_names": "n/a",
+  "access_date": "2026-09-27",
+  "files": [
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\voineagu2011\\extract\\table14_M12_genes.tsv",
+    "sha256": "b7bdefacaae389406669e8d92f2a47566edc42a67ed8519c80ddc10ad53e5d82"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\parikshak2016\\NIHMS1050915-supplement-SuppTable4.xlsx",
+    "sha256": "7e672596530a7cae6430511e1703e9ebf9e51eaf87c83325fbe5598f41a05578"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\voineagu2011\\NIHMS313080-supplement-1.pdf",
+    "sha256": "59f2ded45c95b73af0f4c0152da530f2196d0b8e371ca7897d5444c4c6f9cfd5",
+    "note": "deleted after the Table 14 extract (it also holds per-individual tables); only its sha256 is kept"
+   }
+  ],
+  "naming": {
+   "parikshak2013_quote": "We obtained asdM12 and adsM16 from a prior, independent gene expression study that profiled expression changes in ASD cortex and applied WGCNA to identify modules of dysregulated genes ASD (Voineagu et al., 2011)",
+   "parikshak2013_supplement01_quote": "'We obtained asdM12 (444 genes) and adsM16 (386 genes) from an independent gene expression study ...' (Extended Experimental Procedures; the list lengths 444 / 386 = Table S1D's columns, asserted)",
+   "voineagu2011_article": "names its modules M12 / M16; 'asdM' occurs 0 times in its text (asserted)",
+   "files": [
+    {
+     "path": "E:\\data\\asdg\\register_sets_src\\parikshak2013\\PMC3934107.html",
+     "sha256": "7afe6a87955740167737d7f41a916b8004e7070b8ece932ac955c739faadab8e"
+    },
+    {
+     "path": "E:\\data\\asdg\\register_sets_src\\parikshak2013\\NIHMS545068-supplement-01.pdf",
+     "sha256": "b4eba2e965430696cdc8d1d00be190759ecc2e5e0adafe30c7f913b18ba57feb"
+    },
+    {
+     "path": "E:\\data\\asdg\\register_sets_src\\voineagu2011\\PMC3607626.html",
+     "sha256": "20396beb644b85ca2da27a71d905dd93eb976fd9e42b3d08b1425463f03a0eec"
+    }
+   ]
+  },
+  "R-e": "R-d (v6.8, applied uniformly -- the orchestrator under the operator's standing delegation, decided after the v6.7 final re-check, post hoc, declared): the paper's names for the set ('asdM12 from 118', 'ASD downregulated') reach no list under the cited sources' own names -- ref 118 (Voineagu 2011) calls the module 'M12' and prints its genes (Supplementary Table 14), and 'asdM12' is Parikshak 2013's name for it (ref 123, which Buch cites for 'ID All', not for this set); ref 119 (Parikshak 2016) holds no list named asdM12 (its CTX.M12 is its own rWGCNA module). The bridge 'asdM12' -> M12 rests on a reference the paper does not cite for the set -- the standard that sends Tourette's, CNS autoimmune and PAG-C9 / C10 to the secondary view; v6.7 N1 had admitted it to the primary view. Table 14's list is the near-miss view's comparator (register 1.6, v6.8)"
+ },
+ "cells_detail": [
+  {
+   "cell": "BUCH-E-ASDdown-S1",
+   "row": 229,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-ASDdown-S2",
+   "row": 230,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-ASDdown-S3",
+   "row": 231,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-ASDdown-S4",
+   "row": 232,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  }
+ ],
+ "cells": [
+  "BUCH-E-ASDdown-S1",
+  "BUCH-E-ASDdown-S2",
+  "BUCH-E-ASDdown-S3",
+  "BUCH-E-ASDdown-S4"
+ ]
+}

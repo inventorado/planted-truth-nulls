@@ -1,0 +1,65 @@
+{
+ "set_id": "notbuildable66_BUCH_FMRP",
+ "status": "not auditable (S undefined: comparator not buildable pre-freeze)",
+ "definition": "comparator of BUCH:FMRP (methods: FMRP-interacting; figure: FMRP-interacting)",
+ "reason": "comparator not buildable pre-freeze -- register 1.6 resolution rule (v6.6): R-a / R-e: ref 122 (Steinberg & Webber 2013) uses the 842 FMRP targets of Darnell 2011 but distributes no list of them (Document S1: Figures S1-S5, Tables S1-S16 -- only subsets disrupted in probands, Table S14); Darnell 2011 (Cell 146:247), which Buch does not cite, distributes the 842 in its Table S2A -- R-a does not reach it; it is the near-miss view's comparator (register 1.6, v6.7 N7)",
+ "comparator_v6_6": {
+  "paper": "buch2023asdsubgroups",
+  "paper_received": "2021-11-29",
+  "names_in_paper": {
+   "methods": "FMRP-interacting",
+   "figure": "FMRP-interacting"
+  },
+  "reference": {
+   "122": "Steinberg & Webber 2013, Am J Hum Genet 93:825"
+  },
+  "R-a_source": "ref 122 (Steinberg & Webber 2013: the 842 FMRP targets of Darnell 2011)",
+  "url": [
+   "https://pmc.ncbi.nlm.nih.gov/articles/instance/3824119/bin/mmc1.pdf"
+  ],
+  "release": "n/a (article supplement)",
+  "R-b_release_outcome": "n/a",
+  "R-c_threshold": "n/a",
+  "R-d_names": "n/a",
+  "access_date": "2026-09-27",
+  "files": [
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\steinberg2013_fmrp\\mmc1.pdf",
+    "sha256": "4d335bd0da3e8804560ae1642c01d4027e05c28e2429b95a452e9be2aa2e8e3c"
+   }
+  ],
+  "R-e": "R-a / R-e: ref 122 (Steinberg & Webber 2013) uses the 842 FMRP targets of Darnell 2011 but distributes no list of them (Document S1: Figures S1-S5, Tables S1-S16 -- only subsets disrupted in probands, Table S14); Darnell 2011 (Cell 146:247), which Buch does not cite, distributes the 842 in its Table S2A -- R-a does not reach it; it is the near-miss view's comparator (register 1.6, v6.7 N7)"
+ },
+ "cells_detail": [
+  {
+   "cell": "BUCH-E-FMRP-S1",
+   "row": 237,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-FMRP-S2",
+   "row": 238,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-FMRP-S3",
+   "row": 239,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-FMRP-S4",
+   "row": 240,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  }
+ ],
+ "cells": [
+  "BUCH-E-FMRP-S1",
+  "BUCH-E-FMRP-S2",
+  "BUCH-E-FMRP-S3",
+  "BUCH-E-FMRP-S4"
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "set_id": "notbuildable66_BUCH_CNSauto",
+ "status": "not auditable (S undefined: comparator not buildable pre-freeze)",
+ "definition": "comparator of BUCH:CNSauto (methods: CNS autoimmune; figure: CNS autoimmune)",
+ "reason": "comparator not buildable pre-freeze -- register 1.6 resolution rule (v6.6): R-d: no name the paper gives reaches a term of the source by the name rule ('CNS autoimmune': tiers {'a': 0, 'b': 0, 'c_name': 0, 'c_synonym': 0}; 'CNS autoimmune': tiers {'a': 0, 'b': 0, 'c_name': 0, 'c_synonym': 0})",
+ "comparator_v6_6": {
+  "paper": "buch2023asdsubgroups",
+  "paper_received": "2021-11-29",
+  "names_in_paper": {
+   "methods": "CNS autoimmune",
+   "figure": "CNS autoimmune"
+  },
+  "reference": {
+   "129": "Shimoyama et al. 2015, Nucleic Acids Res 43:D743 (RGD disease ontology)"
+  },
+  "R-a_source": "ref 129 (RGD disease ontology): RGD's human gene -> RDO annotations (GAF 2.2) and RDO.obo",
+  "url": "https://web.archive.org/web/20240724223811id_/https://download.rgd.mcw.edu/ontology/annotated_rgd_objects_by_ontology/homo_genes_rdo; https://download.rgd.mcw.edu/ontology/disease/2024/RDO_20240720_v1.283.obo.gz",
+  "release": "RGD annotations generated 2024-07-20 (Wayback capture 20240724223811); RDO 1.283",
+  "R-b_release_outcome": "earliest archived release after the date (the uniform archive rule, v6.7 (2)): the Wayback captures of the annotation file after 2021-11-29 are 20230606133203, 20240526215239, 20240724223811, 20240908071549, 20250324170409, 20260308044433; 20230606133203, 20240526215239 are cut short by the crawler (x-archive-orig-x-crawler-content-length), so the earliest COMPLETE capture, 20240724223811 ('date-generated: 2024-07-20'), is the earliest obtainable release; the ontology of the same week from RGD's own weekly archive, RDO 1.283 (v6.6: 'release substituted', 2026-09-19, when the one capture examined was a truncated one)",
+  "R-c_threshold": "every gene annotated to the term or a descendant (is_a / part_of; RGD's ontology report shows a term's descendants' annotations by default -- 'show annotations for term's descendants' is checked), all evidence codes; a row qualified 'no_association' is not an association (1073 such rows)",
+  "R-d_names": [
+   {
+    "query": "CNS autoimmune",
+    "tier": null,
+    "id": null,
+    "name": null,
+    "label": "S undefined",
+    "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+   },
+   {
+    "query": "CNS autoimmune",
+    "tier": null,
+    "id": null,
+    "name": null,
+    "label": "S undefined",
+    "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+   }
+  ],
+  "access_date": "2026-09-27",
+  "files": [
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\rgd_wayback_2024-07-24\\homo_genes_rdo",
+    "sha256": "d64b8ea7ec1eacd4997f77a0332c92a0d3fbc1b3983e5de4588780fb786cd83c"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\rgd_wayback_2024-07-24\\extract\\RDO_20240720_v1.283.obo",
+    "sha256": "808671d49b5d17c05c64a822f7e703e48232b01f3c2e651df654e9a7c00e0d27"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\rgd_wayback_2024-07-24\\RDO_20240720_v1.283.obo.gz",
+    "sha256": "eb2a299f090abf4df7d20e3cf1ffabba65523369220d71feeccc352db15d9847"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\rgd_wayback_2024-07-24\\cdx_homo_genes_rdo.json",
+    "sha256": "21c640388a0dec9eca67a61470629d8d033cd051da0558fd08be795913f24633"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\rgd_wayback_2024-07-24\\capture_lengths.json",
+    "sha256": "43ffe0efd48b7e691bc8bc8fd14bb58fe6c811f5574a97618637318d9c55ed69"
+   }
+  ],
+  "near_miss_term_not_reached": {
+   "term": "DOID:0060004",
+   "name": "autoimmune disease of central nervous system",
+   "why_not": "the name rule makes no word-order normalisation"
+  },
+  "R-e": "R-d: no name the paper gives reaches a term of the source by the name rule ('CNS autoimmune': tiers {'a': 0, 'b': 0, 'c_name': 0, 'c_synonym': 0}; 'CNS autoimmune': tiers {'a': 0, 'b': 0, 'c_name': 0, 'c_synonym': 0})"
+ },
+ "cells_detail": [
+  {
+   "cell": "BUCH-E-CNSauto-S1",
+   "row": 248,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-CNSauto-S2",
+   "row": 249,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-CNSauto-S3",
+   "row": 250,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-CNSauto-S4",
+   "row": 251,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  }
+ ],
+ "cells": [
+  "BUCH-E-CNSauto-S1",
+  "BUCH-E-CNSauto-S2",
+  "BUCH-E-CNSauto-S3",
+  "BUCH-E-CNSauto-S4"
+ ]
+}

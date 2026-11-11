@@ -1,0 +1,637 @@
+{
+ "what": "DEV vs OFFICIAL plant case records (RUN_PLAN_amend_2 §8.2: any difference from the DEV record is reported)",
+ "spec": "RUN_PLAN_amend_2.md v2.1 (FROZEN acdb1290...) §8.2 :533-537",
+ "rule": "Records are matched on (plant, cell, case) - the case number the driver records (spec.case_of; P24 / P25: the map case; P3b: 1000 + i), unique within a cell (asserted on both sides). Every recorded field is compared except the per-process ones (VOLATILE: wall / CPU seconds, start / finish times, worker pid, peak working set and the memory flag derived from it): every per-case decision (booleans, statuses), every p and every other number, and the recorded seed keys (the `seeds` records: construction and leg entropies, integer site seeds). A record is flattened to leaf paths (dict keys joined by '/', list items by index; a list of scalars is one leaf); values are compared exactly (JSON equality; NaN equals NaN), and a numeric difference carries |dev - official| and whether it is within 1e-12 relative (REL_TOL: floating-point noise, e.g. a share computed through BLAS in another process; reported like every other difference, and counted apart from the material ones). Each difference is reported with its plant, cell, case, i, field path, category (seed key / decision / p / number / other), the DEV value, the official value and the DEV pass it came from; a field present on one side only is a difference (value \"<absent>\"). A DEV record with no official record of the same (plant, cell, case) is listed as DEV-only (not a difference: the official cases file holds the cases the official run used), and a plant whose official cases file is missing is flagged. The DEV passes are also compared among themselves on the cases they share (they must agree: same keys, same code).",
+ "dev_dirs": [
+  "../run_manifests/plants/DEV/dev1",
+  "../run_manifests/plants/DEV/dev2",
+  "../run_manifests/plants/DEV/dev3",
+  "../run_manifests/plants/DEV/dev4"
+ ],
+ "official_dir": "../run_manifests/plants",
+ "plants": [
+  "P3a",
+  "P3b",
+  "P4",
+  "P5",
+  "P6",
+  "P7",
+  "P8",
+  "P11",
+  "P12",
+  "P22",
+  "P24",
+  "P25",
+  "P26"
+ ],
+ "excluded_fields": [
+  "started",
+  "finished",
+  "seconds",
+  "cpu_seconds",
+  "peak_working_set_bytes",
+  "pid",
+  "memory_defect"
+ ],
+ "headers": {
+  "P3a": {
+   "official": {
+    "mode": "OFFICIAL",
+    "run_commit": "a0b74066259fe59f645e4cfeb5ad89e169cd6db2",
+    "stamp": null
+   },
+   "dev": {
+    "dev1": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev2": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev4": {
+     "mode": "DEV",
+     "run_commit": "9addaabfd359746e0ba6779102325ec85717df90",
+     "stamp": "DEV (launch refused: L11, L13)"
+    }
+   }
+  },
+  "P3b": {
+   "official": {
+    "mode": "OFFICIAL",
+    "run_commit": "a0b74066259fe59f645e4cfeb5ad89e169cd6db2",
+    "stamp": null
+   },
+   "dev": {
+    "dev1": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev2": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev4": {
+     "mode": "DEV",
+     "run_commit": "9addaabfd359746e0ba6779102325ec85717df90",
+     "stamp": "DEV (launch refused: L11, L13)"
+    }
+   }
+  },
+  "P4": {
+   "official": {
+    "mode": "OFFICIAL",
+    "run_commit": "a0b74066259fe59f645e4cfeb5ad89e169cd6db2",
+    "stamp": null
+   },
+   "dev": {
+    "dev1": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev2": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev4": {
+     "mode": "DEV",
+     "run_commit": "9addaabfd359746e0ba6779102325ec85717df90",
+     "stamp": "DEV (launch refused: L11, L13)"
+    }
+   }
+  },
+  "P5": {
+   "official": {
+    "mode": "OFFICIAL",
+    "run_commit": "a0b74066259fe59f645e4cfeb5ad89e169cd6db2",
+    "stamp": null
+   },
+   "dev": {
+    "dev1": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev2": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev4": {
+     "mode": "DEV",
+     "run_commit": "9addaabfd359746e0ba6779102325ec85717df90",
+     "stamp": "DEV (launch refused: L11, L13)"
+    }
+   }
+  },
+  "P6": {
+   "official": {
+    "mode": "OFFICIAL",
+    "run_commit": "a0b74066259fe59f645e4cfeb5ad89e169cd6db2",
+    "stamp": null
+   },
+   "dev": {
+    "dev1": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev2": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev4": {
+     "mode": "DEV",
+     "run_commit": "9addaabfd359746e0ba6779102325ec85717df90",
+     "stamp": "DEV (launch refused: L11, L13)"
+    }
+   }
+  },
+  "P7": {
+   "official": {
+    "mode": "OFFICIAL",
+    "run_commit": "a0b74066259fe59f645e4cfeb5ad89e169cd6db2",
+    "stamp": null
+   },
+   "dev": {
+    "dev1": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev2": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev4": {
+     "mode": "DEV",
+     "run_commit": "9addaabfd359746e0ba6779102325ec85717df90",
+     "stamp": "DEV (launch refused: L11, L13)"
+    }
+   }
+  },
+  "P8": {
+   "official": {
+    "mode": "OFFICIAL",
+    "run_commit": "a0b74066259fe59f645e4cfeb5ad89e169cd6db2",
+    "stamp": null
+   },
+   "dev": {
+    "dev1": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev2": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev4": {
+     "mode": "DEV",
+     "run_commit": "9addaabfd359746e0ba6779102325ec85717df90",
+     "stamp": "DEV (launch refused: L11, L13)"
+    }
+   }
+  },
+  "P11": {
+   "official": {
+    "mode": "OFFICIAL",
+    "run_commit": "a0b74066259fe59f645e4cfeb5ad89e169cd6db2",
+    "stamp": null
+   },
+   "dev": {
+    "dev1": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev2": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev4": {
+     "mode": "DEV",
+     "run_commit": "9addaabfd359746e0ba6779102325ec85717df90",
+     "stamp": "DEV (launch refused: L11, L13)"
+    }
+   }
+  },
+  "P12": {
+   "official": {
+    "mode": "OFFICIAL",
+    "run_commit": "a0b74066259fe59f645e4cfeb5ad89e169cd6db2",
+    "stamp": null
+   },
+   "dev": {
+    "dev1": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev2": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev4": {
+     "mode": "DEV",
+     "run_commit": "9addaabfd359746e0ba6779102325ec85717df90",
+     "stamp": "DEV (launch refused: L11, L13)"
+    }
+   }
+  },
+  "P22": {
+   "official": {
+    "mode": "OFFICIAL",
+    "run_commit": "a0b74066259fe59f645e4cfeb5ad89e169cd6db2",
+    "stamp": null
+   },
+   "dev": {
+    "dev1": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev2": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev4": {
+     "mode": "DEV",
+     "run_commit": "9addaabfd359746e0ba6779102325ec85717df90",
+     "stamp": "DEV (launch refused: L11, L13)"
+    }
+   }
+  },
+  "P24": {
+   "official": {
+    "mode": "OFFICIAL",
+    "run_commit": "a0b74066259fe59f645e4cfeb5ad89e169cd6db2",
+    "stamp": null
+   },
+   "dev": {
+    "dev1": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev2": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev3": {
+     "mode": "DEV",
+     "run_commit": "acda1eddf5e3c16281e9a5a5e0089eb332cabd21",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev4": {
+     "mode": "DEV",
+     "run_commit": "9addaabfd359746e0ba6779102325ec85717df90",
+     "stamp": "DEV (launch refused: L11, L13)"
+    }
+   }
+  },
+  "P25": {
+   "official": {
+    "mode": "OFFICIAL",
+    "run_commit": "a0b74066259fe59f645e4cfeb5ad89e169cd6db2",
+    "stamp": null
+   },
+   "dev": {
+    "dev1": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev2": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev3": {
+     "mode": "DEV",
+     "run_commit": "acda1eddf5e3c16281e9a5a5e0089eb332cabd21",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev4": {
+     "mode": "DEV",
+     "run_commit": "9addaabfd359746e0ba6779102325ec85717df90",
+     "stamp": "DEV (launch refused: L11, L13)"
+    }
+   }
+  },
+  "P26": {
+   "official": {
+    "mode": "OFFICIAL",
+    "run_commit": "a0b74066259fe59f645e4cfeb5ad89e169cd6db2",
+    "stamp": null
+   },
+   "dev": {
+    "dev1": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev2": {
+     "mode": "DEV",
+     "run_commit": "c0ba47fc0ae62f30d2c46a13b3c6ed36aa7e8bd1",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev3": {
+     "mode": "DEV",
+     "run_commit": "acda1eddf5e3c16281e9a5a5e0089eb332cabd21",
+     "stamp": "DEV (launch refused: L11, L13)"
+    },
+    "dev4": {
+     "mode": "DEV",
+     "run_commit": "9addaabfd359746e0ba6779102325ec85717df90",
+     "stamp": "DEV (launch refused: L11, L13)"
+    }
+   }
+  }
+ },
+ "totals": {
+  "dev_records": 734,
+  "compared": 734,
+  "dev_only": 0,
+  "differences": 0,
+  "records_with_differences": 0,
+  "differences_within_rel_1e_12": 0,
+  "differences_material": 0
+ },
+ "differences_by_category": {
+  "seed key": 0,
+  "decision": 0,
+  "p": 0,
+  "number": 0,
+  "other": 0
+ },
+ "plants_official_missing": [],
+ "n_dev_passes_disagree": 0,
+ "result": "no difference",
+ "by_plant": {
+  "P3a": {
+   "dev_records": 27,
+   "dev_passes": {
+    "dev1": 6,
+    "dev2": 18,
+    "dev4": 3
+   },
+   "official_cases_file": "../run_manifests/plants/P3a/cases_P3a.jsonl",
+   "official_missing": false,
+   "official_records": 60,
+   "compared": 27,
+   "dev_only": [],
+   "n_dev_only": 0,
+   "records_with_differences": 0,
+   "n_differences": 0,
+   "differences": [],
+   "dev_passes_disagree": [],
+   "n_dev_passes_disagree": 0
+  },
+  "P3b": {
+   "dev_records": 29,
+   "dev_passes": {
+    "dev1": 7,
+    "dev2": 19,
+    "dev4": 3
+   },
+   "official_cases_file": "../run_manifests/plants/P3b/cases_P3b.jsonl",
+   "official_missing": false,
+   "official_records": 302,
+   "compared": 29,
+   "dev_only": [],
+   "n_dev_only": 0,
+   "records_with_differences": 0,
+   "n_differences": 0,
+   "differences": [],
+   "dev_passes_disagree": [],
+   "n_dev_passes_disagree": 0
+  },
+  "P4": {
+   "dev_records": 90,
+   "dev_passes": {
+    "dev1": 20,
+    "dev2": 60,
+    "dev4": 10
+   },
+   "official_cases_file": "../run_manifests/plants/P4/cases_P4.jsonl",
+   "official_missing": false,
+   "official_records": 1000,
+   "compared": 90,
+   "dev_only": [],
+   "n_dev_only": 0,
+   "records_with_differences": 0,
+   "n_differences": 0,
+   "differences": [],
+   "dev_passes_disagree": [],
+   "n_dev_passes_disagree": 0
+  },
+  "P5": {
+   "dev_records": 27,
+   "dev_passes": {
+    "dev1": 6,
+    "dev2": 18,
+    "dev4": 3
+   },
+   "official_cases_file": "../run_manifests/plants/P5/cases_P5.jsonl",
+   "official_missing": false,
+   "official_records": 301,
+   "compared": 27,
+   "dev_only": [],
+   "n_dev_only": 0,
+   "records_with_differences": 0,
+   "n_differences": 0,
+   "differences": [],
+   "dev_passes_disagree": [],
+   "n_dev_passes_disagree": 0
+  },
+  "P6": {
+   "dev_records": 27,
+   "dev_passes": {
+    "dev1": 6,
+    "dev2": 18,
+    "dev4": 3
+   },
+   "official_cases_file": "../run_manifests/plants/P6/cases_P6.jsonl",
+   "official_missing": false,
+   "official_records": 60,
+   "compared": 27,
+   "dev_only": [],
+   "n_dev_only": 0,
+   "records_with_differences": 0,
+   "n_differences": 0,
+   "differences": [],
+   "dev_passes_disagree": [],
+   "n_dev_passes_disagree": 0
+  },
+  "P7": {
+   "dev_records": 18,
+   "dev_passes": {
+    "dev1": 4,
+    "dev2": 12,
+    "dev4": 2
+   },
+   "official_cases_file": "../run_manifests/plants/P7/cases_P7.jsonl",
+   "official_missing": false,
+   "official_records": 200,
+   "compared": 18,
+   "dev_only": [],
+   "n_dev_only": 0,
+   "records_with_differences": 0,
+   "n_differences": 0,
+   "differences": [],
+   "dev_passes_disagree": [],
+   "n_dev_passes_disagree": 0
+  },
+  "P8": {
+   "dev_records": 10,
+   "dev_passes": {
+    "dev1": 2,
+    "dev2": 7,
+    "dev4": 1
+   },
+   "official_cases_file": "../run_manifests/plants/P8/cases_P8.jsonl",
+   "official_missing": false,
+   "official_records": 21,
+   "compared": 10,
+   "dev_only": [],
+   "n_dev_only": 0,
+   "records_with_differences": 0,
+   "n_differences": 0,
+   "differences": [],
+   "dev_passes_disagree": [],
+   "n_dev_passes_disagree": 0
+  },
+  "P11": {
+   "dev_records": 24,
+   "dev_passes": {
+    "dev1": 6,
+    "dev2": 15,
+    "dev4": 3
+   },
+   "official_cases_file": "../run_manifests/plants/P11/cases_P11.jsonl",
+   "official_missing": false,
+   "official_records": 15,
+   "compared": 24,
+   "dev_only": [],
+   "n_dev_only": 0,
+   "records_with_differences": 0,
+   "n_differences": 0,
+   "differences": [],
+   "dev_passes_disagree": [],
+   "n_dev_passes_disagree": 0
+  },
+  "P12": {
+   "dev_records": 85,
+   "dev_passes": {
+    "dev1": 20,
+    "dev2": 55,
+    "dev4": 10
+   },
+   "official_cases_file": "../run_manifests/plants/P12/cases_P12.jsonl",
+   "official_missing": false,
+   "official_records": 125,
+   "compared": 85,
+   "dev_only": [],
+   "n_dev_only": 0,
+   "records_with_differences": 0,
+   "n_differences": 0,
+   "differences": [],
+   "dev_passes_disagree": [],
+   "n_dev_passes_disagree": 0
+  },
+  "P22": {
+   "dev_records": 20,
+   "dev_passes": {
+    "dev1": 8,
+    "dev2": 8,
+    "dev4": 4
+   },
+   "official_cases_file": "../run_manifests/plants/P22/cases_P22.jsonl",
+   "official_missing": false,
+   "official_records": 8,
+   "compared": 20,
+   "dev_only": [],
+   "n_dev_only": 0,
+   "records_with_differences": 0,
+   "n_differences": 0,
+   "differences": [],
+   "dev_passes_disagree": [],
+   "n_dev_passes_disagree": 0
+  },
+  "P24": {
+   "dev_records": 174,
+   "dev_passes": {
+    "dev1": 12,
+    "dev2": 36,
+    "dev3": 120,
+    "dev4": 6
+   },
+   "official_cases_file": "../run_manifests/plants/P24/cases_P24.jsonl",
+   "official_missing": false,
+   "official_records": 1800,
+   "compared": 174,
+   "dev_only": [],
+   "n_dev_only": 0,
+   "records_with_differences": 0,
+   "n_differences": 0,
+   "differences": [],
+   "dev_passes_disagree": [],
+   "n_dev_passes_disagree": 0
+  },
+  "P25": {
+   "dev_records": 116,
+   "dev_passes": {
+    "dev1": 8,
+    "dev2": 24,
+    "dev3": 80,
+    "dev4": 4
+   },
+   "official_cases_file": "../run_manifests/plants/P25/cases_P25.jsonl",
+   "official_missing": false,
+   "official_records": 2000,
+   "compared": 116,
+   "dev_only": [],
+   "n_dev_only": 0,
+   "records_with_differences": 0,
+   "n_differences": 0,
+   "differences": [],
+   "dev_passes_disagree": [],
+   "n_dev_passes_disagree": 0
+  },
+  "P26": {
+   "dev_records": 87,
+   "dev_passes": {
+    "dev1": 6,
+    "dev2": 18,
+    "dev3": 60,
+    "dev4": 3
+   },
+   "official_cases_file": "../run_manifests/plants/P26/cases_P26.jsonl",
+   "official_missing": false,
+   "official_records": 900,
+   "compared": 87,
+   "dev_only": [],
+   "n_dev_only": 0,
+   "records_with_differences": 0,
+   "n_differences": 0,
+   "differences": [],
+   "dev_passes_disagree": [],
+   "n_dev_passes_disagree": 0
+  }
+ },
+ "commit": "a0b74066259fe59f645e4cfeb5ad89e169cd6db2"
+}

@@ -1,0 +1,66 @@
+{
+ "set_id": "notbuildable66_PAGANI_PAG-C9",
+ "status": "not auditable (S undefined: comparator not buildable pre-freeze)",
+ "definition": "comparator of PAGANI:PAG-C9 (register: vesicle transport and release)",
+ "reason": "comparator not buildable pre-freeze -- register 1.6 resolution rule (v6.6): R-d: no name the paper gives reaches a term of the source by the name rule -- the labels Gandal prints are GeneM9 'neuronal noncoding genes'; GeneM32 'reactive astrocyte'; IsoformM37 'protein folding'; GeneM24 'blood-brain barrier membrane transport'; GeneM5 'synaptic plasticity'; GeneM7 'immune response'; GeneM8 'reactive microglia'; GeneM4 'neuronal signal transduction'; GeneM23 'oligo organelle regulation'; GeneM14 'neurite morphogenesis'; GeneM3 'neuronal energy processes'",
+ "comparator_v6_6": {
+  "paper": "pagani2026crossspecies",
+  "paper_received": "2025-04-17",
+  "names_in_paper": {
+   "register": "vesicle transport and release"
+  },
+  "reference": {
+   "16": "Gandal et al. 2022, Nature 611:532"
+  },
+  "R-a_source": "ref. 16 (Gandal 2022): the module the paper's name reaches among the labels Gandal prints (Fig. 3a / 4a; register_maps/gandal2022_module_labels.json), its members from Supplementary Data 5",
+  "url": [
+   "https://pmc.ncbi.nlm.nih.gov/articles/instance/9668748/bin/41586_2022_5377_MOESM7_ESM.xlsx",
+   "https://pmc.ncbi.nlm.nih.gov/articles/instance/9668748/bin/41586_2022_5377_MOESM8_ESM.xlsx"
+  ],
+  "release": "n/a (article supplement)",
+  "R-b_release_outcome": "n/a",
+  "R-c_threshold": "every gene of the module (Supplementary Data 5, Gene_Level)",
+  "R-d_names": [
+   {
+    "query": "vesicle transport and release",
+    "tier": null,
+    "id": null,
+    "name": null,
+    "label": "S undefined",
+    "summary": "S undefined (no name, synonym or normalised name identifies exactly one live term; tiers: a 0; b 0; c_name 0; c_synonym 0)"
+   }
+  ],
+  "access_date": "2026-09-27",
+  "files": [
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\gandal2022_nature611\\extract\\gene_level_modules.tsv",
+    "sha256": "ebeaaf745e32ff9a75642a70b911f11b4ae36a914c19db2f7965ed9bd6026857"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\gandal2022_nature611\\41586_2022_5377_MOESM7_ESM.xlsx",
+    "sha256": "a48802c835c07e872bf3f30730a304bc62e3fd60782ef80b7e1df5b78d4c03e5"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\gandal2022_nature611\\41586_2022_5377_MOESM8_ESM.xlsx",
+    "sha256": "d746b3ed5336987c5e2b1415b5ccd7ac42d4bef57b06222d87fdd7691ef3d22f"
+   },
+   {
+    "path": "arcs/audit/register_maps/gandal2022_module_labels.json",
+    "sha256": "d09cf6a97c19a46932685173468f24835c0cd97f31285ccbd783dea8fdf7bbdc"
+   }
+  ],
+  "note": "Pagani's human Methods cite [25] (Shofty 2019) for the modules, its Results and Fig. 5 ref. 16 (Gandal 2022); the register takes ref. 16 (register 3.1)",
+  "R-e": "R-d: no name the paper gives reaches a term of the source by the name rule -- the labels Gandal prints are GeneM9 'neuronal noncoding genes'; GeneM32 'reactive astrocyte'; IsoformM37 'protein folding'; GeneM24 'blood-brain barrier membrane transport'; GeneM5 'synaptic plasticity'; GeneM7 'immune response'; GeneM8 'reactive microglia'; GeneM4 'neuronal signal transduction'; GeneM23 'oligo organelle regulation'; GeneM14 'neurite morphogenesis'; GeneM3 'neuronal energy processes'"
+ },
+ "cells_detail": [
+  {
+   "cell": "PAG-C9",
+   "row": 502,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  }
+ ],
+ "cells": [
+  "PAG-C9"
+ ]
+}

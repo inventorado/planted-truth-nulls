@@ -1,0 +1,184 @@
+{
+ "set_id": "webgestalt_reactome_R-HSA-438066",
+ "status": "built (category only; S = this category ∩ the paper's 2,587 HPA brain-specific genes (repo data/brain-specific_genes.txt) is completed under gate G1)",
+ "definition": "WebGestalt Reactome category 'Unblocking of NMDA receptors, glutamate binding and activation' (R-HSA-438066)",
+ "source": {
+  "source_id": "webgestalt_current",
+  "url": "https://www.webgestalt.org/api/geneset?organism=hsapiens&database=<db>&standardId=entrezgene&fileType=<gmt|des>",
+  "files": [
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\webgestalt_current\\hsapiens_pathway_Reactome_entrezgene.gmt",
+    "sha256": "33f64f360ae9fa8a6b69633e8f33b28364bb7009cd79cacbb8e28f6f3d160e2f"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\webgestalt_current\\hsapiens_pathway_Reactome_entrezgene.des",
+    "sha256": "931cbef24697daf13f40482d6dda83b4c5528302a0f5ca36d2c8320930736dc4"
+   }
+  ],
+  "release": "WebGestalt server as fetched 2026-09-26 (no version string served; the 2022 release is not obtainable: 2022.webgestalt.org does not resolve)"
+ },
+ "rule": "the category reached by the name rule (register 1.1 / 1.6; per cell: NAME_MATCHES.json); Entrez id -> HGNC",
+ "labels": [
+  "S re-derived",
+  "release substituted"
+ ],
+ "paper_size": null,
+ "n_raw_unique": 20,
+ "n_hgnc": 20,
+ "members_hgnc": [
+  "ACTN2",
+  "CAMK2A",
+  "CAMK2B",
+  "CAMK2D",
+  "CAMK2G",
+  "DLG1",
+  "DLG2",
+  "DLG3",
+  "DLG4",
+  "GRIA1",
+  "GRIA2",
+  "GRIA3",
+  "GRIA4",
+  "GRIN1",
+  "GRIN2A",
+  "GRIN2B",
+  "GRIN2C",
+  "GRIN2D",
+  "LRRC7",
+  "NEFL"
+ ],
+ "mapping": {
+  "entrez id": 20
+ },
+ "n_id_symbol_disagreements": 0,
+ "n_drops": 0,
+ "drops": [],
+ "universe": {
+  "dk-ctx": {
+   "n_in_universe": 20,
+   "n_columns": 20,
+   "columns": [
+    "ACTN2",
+    "CAMK2A",
+    "CAMK2B",
+    "CAMK2D",
+    "CAMK2G",
+    "DLG1",
+    "DLG2",
+    "DLG3",
+    "DLG4",
+    "GRIA1",
+    "GRIA2",
+    "GRIA3",
+    "GRIA4",
+    "GRIN1",
+    "GRIN2A",
+    "GRIN2B",
+    "GRIN2C",
+    "GRIN2D",
+    "LRRC7",
+    "NEFL"
+   ],
+   "outcome": "testable"
+  },
+  "V-DK": {
+   "n_in_universe": 20,
+   "n_columns": 20,
+   "columns": [
+    "ACTN2",
+    "CAMK2A",
+    "CAMK2B",
+    "CAMK2D",
+    "CAMK2G",
+    "DLG1",
+    "DLG2",
+    "DLG3",
+    "DLG4",
+    "GRIA1",
+    "GRIA2",
+    "GRIA3",
+    "GRIA4",
+    "GRIN1",
+    "GRIN2A",
+    "GRIN2B",
+    "GRIN2C",
+    "GRIN2D",
+    "LRRC7",
+    "NEFL"
+   ],
+   "outcome": "testable"
+  },
+  "V-AAL": {
+   "n_in_universe": 20,
+   "n_columns": 20,
+   "columns": [
+    "ACTN2",
+    "CAMK2A",
+    "CAMK2B",
+    "CAMK2D",
+    "CAMK2G",
+    "DLG1",
+    "DLG2",
+    "DLG3",
+    "DLG4",
+    "GRIA1",
+    "GRIA2",
+    "GRIA3",
+    "GRIA4",
+    "GRIN1",
+    "GRIN2A",
+    "GRIN2B",
+    "GRIN2C",
+    "GRIN2D",
+    "LRRC7",
+    "NEFL"
+   ],
+   "outcome": "testable"
+  },
+  "MIST64": {
+   "n_in_universe": 20,
+   "n_columns": 20,
+   "columns": [
+    "ACTN2",
+    "CAMK2A",
+    "CAMK2B",
+    "CAMK2D",
+    "CAMK2G",
+    "DLG1",
+    "DLG2",
+    "DLG3",
+    "DLG4",
+    "GRIA1",
+    "GRIA2",
+    "GRIA3",
+    "GRIA4",
+    "GRIN1",
+    "GRIN2A",
+    "GRIN2B",
+    "GRIN2C",
+    "GRIN2D",
+    "LRRC7",
+    "NEFL"
+   ],
+   "outcome": "testable"
+  }
+ },
+ "cells_detail": [
+  {
+   "cell": "RA-09",
+   "row": 206,
+   "analysis_class": "dk-ctx | V-DK (conditional: dk-ctx if the per-gene step used the 34 left cortical DK parcels, V-DK if 34 + 7 left subcortical, per notebook 08-calculate_gen_pvals.ipynb or the journal Methods; undeterminable → not auditable (definition not applicable); register §2.6)",
+   "outcome": "testable"
+  },
+  {
+   "cell": "RA-N3-09",
+   "row": 222,
+   "analysis_class": "dk-ctx | V-DK (conditional: dk-ctx if the per-gene step used the 34 left cortical DK parcels, V-DK if 34 + 7 left subcortical, per notebook 08-calculate_gen_pvals.ipynb or the journal Methods; undeterminable → not auditable (definition not applicable); register §2.6)",
+   "outcome": "testable"
+  }
+ ],
+ "cells": [
+  "RA-09",
+  "RA-N3-09"
+ ]
+}

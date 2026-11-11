@@ -1,0 +1,83 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "leyhausen_777429_lh",
+ "gate": "G2",
+ "url": "https://neurovault.org/media/images/12301/t-map_pf.fsaverage.lh.func.gii",
+ "kind": "file",
+ "date_utc": "2026-11-02T09:07:43+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "fetch": {
+  "source": "pinned copy on disk",
+  "path_sha256": "1d8f70637a6c7c5ba0e5acec2bba7ec669426f48053883549defeee9d47a55ba",
+  "screen_hits": {
+   "V": 0,
+   "N": 0
+  }
+ },
+ "identity": {
+  "facts": {
+   "bytes": 630761,
+   "sha256": "1299426288ba4938872621c2bac06dac39bcf2ec473dd284e5c2ef41a18fc47a",
+   "md5": "c7b1d6a23851812fd80c2f4bcdf23aad",
+   "git_blob": "1b1d5ea1c4387156594b33fe905427cd6c254b0b",
+   "has_crlf": false,
+   "git_blob_lf": null,
+   "bytes_lf": null
+  },
+  "references": [
+   {
+    "basis": "sha256 of the copy on disk",
+    "bytes": 630761,
+    "sha256": "1299426288ba4938872621c2bac06dac39bcf2ec473dd284e5c2ef41a18fc47a"
+   },
+   {
+    "basis": "size only",
+    "bytes": 630761
+   },
+   {
+    "basis": "git blob",
+    "bytes": 630761,
+    "git_blob": "1b1d5ea1c4387156594b33fe905427cd6c254b0b"
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "sha256 of the copy on disk",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    },
+    {
+     "basis": "size only",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true
+    },
+    {
+     "basis": "git blob",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "identifier_bearing": false,
+ "extraction": {
+  "object_path": "D:/RESEARCH/asd-imaging-genetics/artifacts/audit/wp4/G2/leyhausen_777429_lh/leyhausen_777429_lh_extract.json",
+  "object_sha256": "908301d203c13f17b990a40fe09d161664941e1647c23983f33438a09c20268c"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "extracted"
+}

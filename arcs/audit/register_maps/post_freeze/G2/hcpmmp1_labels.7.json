@@ -1,0 +1,57 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "hcpmmp1_labels",
+ "gate": "G2",
+ "url": "https://ndownloader.figshare.com/files/5534027",
+ "kind": "file",
+ "date_utc": "2026-10-21T00:23:27+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "fetch": {
+  "source": "copy on disk",
+  "path": "E:/data/asdg/hcpmmp1_labels/carrier.txt"
+ },
+ "identity": {
+  "facts": {
+   "bytes": 2457,
+   "sha256": "d008cea4903e4047079020cf1d31f8b1fd8ca092d6ac8b060a8e71da40836e57",
+   "md5": "13dee6127b5a6248f39c4775574bfdfc",
+   "git_blob": "bb333b63469a5630d726f71002dae6db179a93e2",
+   "has_crlf": false,
+   "git_blob_lf": null,
+   "bytes_lf": null
+  },
+  "references": [
+   {
+    "basis": "served MD5",
+    "bytes": 2457,
+    "md5": "13dee6127b5a6248f39c4775574bfdfc"
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "served MD5",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "identifier_bearing": false,
+ "extraction": {
+  "object_path": "D:/RESEARCH/asd-imaging-genetics/artifacts/audit/wp4/G2/hcpmmp1_labels/hcpmmp1_labels_extract.json",
+  "object_sha256": "3b1aeea5ca4505958db5bf14c408074bf8e20e3650a765d65f8a002cb7cb3db3"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "extracted"
+}

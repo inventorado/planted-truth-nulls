@@ -1,0 +1,670 @@
+{
+ "what": "WP4 phase 2, gate G2 (a1_audit.wp4_launch)",
+ "commit": "dc1ee7383b616650ca104e9cb5130421a416e103",
+ "exit_codes": {
+  "ok": 0,
+  "refused": 2,
+  "docker": 3,
+  "paused": 4,
+  "material": 11,
+  "verdict": 21,
+  "descriptor": 22,
+  "sensitivity": 23,
+  "report": 31,
+  "sanity": 41
+ },
+ "started": "2026-10-21T20:56:57+00:00",
+ "plant_commit": "36a4fe6",
+ "steps": [
+  {
+   "step": "verdict_amend5",
+   "argv": [
+    "python.exe",
+    "-X",
+    "utf8",
+    "-u",
+    "-m",
+    "a1_audit.run",
+    "--commit",
+    "dc1ee7383b616650ca104e9cb5130421a416e103",
+    "--pass",
+    "verdict",
+    "--gate",
+    "G2",
+    "--jobs",
+    "20",
+    "--rerun-tag",
+    "amend5"
+   ],
+   "started": "2026-10-21T20:57:00+00:00",
+   "log": "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results\\a1_run\\wp4_g2_launch_logs\\dc1ee73\\verdict_amend5.log",
+   "env": {
+    "A1_G2_VERSION": "amend5"
+   },
+   "exit": 0,
+   "finished": "2026-10-21T21:58:15+00:00",
+   "seconds": 3675.4,
+   "sanity": {
+    "ok": true,
+    "expected": 100,
+    "expected_by_plan": 128,
+    "computed": 100,
+    "pending": 0,
+    "n_rows": 194,
+    "by_target": {
+     "patel2021virtual": {
+      "expected": 9,
+      "computed": 9
+     },
+     "giacomel2026cartography": {
+      "expected": 14,
+      "computed": 14
+     },
+     "pretzsch2024patterns": {
+      "expected": 48,
+      "computed": 48
+     },
+     "hansen2022local": {
+      "expected": 2,
+      "computed": 2
+     },
+     "leyhausen2024intrinsic": {
+      "expected": 27,
+      "computed": 27
+     }
+    },
+    "missing_rows": [],
+    "not_expected": {
+     "not computable (the paper's GEDAR map layout not matched)": 9,
+     "not run (the G2 material stage refused this object: refused (stage failed))": 18,
+     "not run (the G2 material stage refused this object: refused (carrier in quarantine; the operator moves it back))": 1
+    },
+    "why": null
+   }
+  },
+  {
+   "step": "material",
+   "argv": [
+    "python.exe",
+    "-X",
+    "utf8",
+    "-u",
+    "-m",
+    "a1_audit.wp4_material",
+    "run",
+    "--commit",
+    "8258a6e397e5d85d3b075eaf8a0919abb1ebd8ce"
+   ],
+   "started": "2026-10-21T01:15:47+00:00",
+   "log": "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results\\a1_run\\wp4_g2_launch_logs\\8258a6e\\material.log",
+   "exit": 0,
+   "finished": "2026-10-21T01:18:54+00:00",
+   "seconds": 187.5,
+   "adopted_from": "8258a6e397e5d85d3b075eaf8a0919abb1ebd8ce"
+  },
+  {
+   "step": "verdict",
+   "argv": [
+    "python.exe",
+    "-X",
+    "utf8",
+    "-u",
+    "-m",
+    "a1_audit.run",
+    "--commit",
+    "8258a6e397e5d85d3b075eaf8a0919abb1ebd8ce",
+    "--pass",
+    "verdict",
+    "--gate",
+    "G2",
+    "--jobs",
+    "20"
+   ],
+   "started": "2026-10-21T01:18:54+00:00",
+   "log": "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results\\a1_run\\wp4_g2_launch_logs\\8258a6e\\verdict.log",
+   "exit": 0,
+   "finished": "2026-10-21T01:59:49+00:00",
+   "seconds": 2455.2,
+   "sanity": {
+    "ok": true,
+    "expected": 46,
+    "expected_by_plan": 128,
+    "computed": 46,
+    "pending": 0,
+    "n_rows": 194,
+    "by_target": {
+     "patel2021virtual": {
+      "expected": 9,
+      "computed": 9
+     },
+     "giacomel2026cartography": {
+      "expected": 8,
+      "computed": 8
+     },
+     "hansen2022local": {
+      "expected": 2,
+      "computed": 2
+     },
+     "leyhausen2024intrinsic": {
+      "expected": 27,
+      "computed": 27
+     }
+    },
+    "missing_rows": [],
+    "not_expected": {
+     "not auditable (definition not applicable: the declared Giacomel sheet layout not matched)": 18,
+     "not computable (the paper's GEDAR map layout not matched)": 6,
+     "not auditable (definition not applicable: the paper's code not runnable here)": 9,
+     "not run (the G2 material stage refused this object: refused (carrier in quarantine; the operator moves it back))": 1,
+     "not auditable (definition not applicable: the declared eTable13 layout not matched)": 48
+    },
+    "why": null
+   },
+   "adopted_from": "8258a6e397e5d85d3b075eaf8a0919abb1ebd8ce"
+  },
+  {
+   "step": "descriptor",
+   "argv": [
+    "python.exe",
+    "-X",
+    "utf8",
+    "-u",
+    "-m",
+    "a1_audit.run",
+    "--commit",
+    "8258a6e397e5d85d3b075eaf8a0919abb1ebd8ce",
+    "--pass",
+    "descriptor",
+    "--gate",
+    "G2",
+    "--jobs",
+    "20"
+   ],
+   "started": "2026-10-21T02:00:00+00:00",
+   "log": "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results\\a1_run\\wp4_g2_launch_logs\\8258a6e\\descriptor.log",
+   "exit": 0,
+   "finished": "2026-10-21T14:30:33+00:00",
+   "seconds": 45033.0,
+   "sanity": {
+    "ok": true,
+    "expected": 44,
+    "expected_by_plan": 126,
+    "computed": 44,
+    "pending": 0,
+    "n_rows": 194,
+    "by_target": {
+     "patel2021virtual": {
+      "expected": 9,
+      "computed": 9
+     },
+     "giacomel2026cartography": {
+      "expected": 8,
+      "computed": 8
+     },
+     "leyhausen2024intrinsic": {
+      "expected": 27,
+      "computed": 27
+     }
+    },
+    "missing_rows": [],
+    "not_expected": {
+     "not auditable (definition not applicable: the declared Giacomel sheet layout not matched)": 18,
+     "not computable (the paper's GEDAR map layout not matched)": 6,
+     "not auditable (definition not applicable: the paper's code not runnable here)": 9,
+     "not run (the G2 material stage refused this object: refused (carrier in quarantine; the operator moves it back))": 1,
+     "not auditable (definition not applicable: the declared eTable13 layout not matched)": 48
+    },
+    "why": null
+   },
+   "adopted_from": "8258a6e397e5d85d3b075eaf8a0919abb1ebd8ce"
+  },
+  {
+   "step": "sensitivity",
+   "argv": [
+    "python.exe",
+    "-X",
+    "utf8",
+    "-u",
+    "-m",
+    "a1_audit.run",
+    "--commit",
+    "8258a6e397e5d85d3b075eaf8a0919abb1ebd8ce",
+    "--pass",
+    "sensitivity",
+    "--gate",
+    "G2",
+    "--jobs",
+    "20"
+   ],
+   "started": "2026-10-21T14:30:41+00:00",
+   "log": "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results\\a1_run\\wp4_g2_launch_logs\\8258a6e\\sensitivity.log",
+   "exit": 0,
+   "finished": "2026-10-21T15:25:35+00:00",
+   "seconds": 3294.3,
+   "sanity": {
+    "ok": true,
+    "expected": 46,
+    "expected_by_plan": 101,
+    "computed": 46,
+    "pending": 0,
+    "n_rows": 194,
+    "by_target": {
+     "patel2021virtual": {
+      "expected": 9,
+      "computed": 9
+     },
+     "giacomel2026cartography": {
+      "expected": 8,
+      "computed": 8
+     },
+     "hansen2022local": {
+      "expected": 2,
+      "computed": 2
+     },
+     "leyhausen2024intrinsic": {
+      "expected": 27,
+      "computed": 27
+     }
+    },
+    "missing_rows": [],
+    "not_expected": {
+     "not auditable (definition not applicable: the declared Giacomel sheet layout not matched)": 6,
+     "not run (the G2 material stage refused this object: refused (carrier in quarantine; the operator moves it back))": 1,
+     "not auditable (definition not applicable: the declared eTable13 layout not matched)": 48
+    },
+    "why": null
+   },
+   "adopted_from": "8258a6e397e5d85d3b075eaf8a0919abb1ebd8ce"
+  },
+  {
+   "step": "descriptor_amend5",
+   "argv": [
+    "python.exe",
+    "-X",
+    "utf8",
+    "-u",
+    "-m",
+    "a1_audit.run",
+    "--commit",
+    "dc1ee7383b616650ca104e9cb5130421a416e103",
+    "--pass",
+    "descriptor",
+    "--gate",
+    "G2",
+    "--jobs",
+    "20",
+    "--rerun-tag",
+    "amend5"
+   ],
+   "started": "2026-11-01T06:25:21+00:00",
+   "log": "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results\\a1_run\\wp4_g2_launch_logs\\dc1ee73\\descriptor_amend5.log",
+   "env": {
+    "A1_G2_VERSION": "amend5"
+   },
+   "exit": 0,
+   "finished": "2026-11-02T08:07:47+00:00",
+   "seconds": 92546.2,
+   "sanity": {
+    "ok": true,
+    "expected": 98,
+    "expected_by_plan": 126,
+    "computed": 98,
+    "pending": 0,
+    "n_rows": 194,
+    "by_target": {
+     "patel2021virtual": {
+      "expected": 9,
+      "computed": 9
+     },
+     "giacomel2026cartography": {
+      "expected": 14,
+      "computed": 14
+     },
+     "pretzsch2024patterns": {
+      "expected": 48,
+      "computed": 48
+     },
+     "leyhausen2024intrinsic": {
+      "expected": 27,
+      "computed": 27
+     }
+    },
+    "missing_rows": [],
+    "not_expected": {
+     "not computable (the paper's GEDAR map layout not matched)": 9,
+     "not run (the G2 material stage refused this object: refused (stage failed))": 18,
+     "not run (the G2 material stage refused this object: refused (carrier in quarantine; the operator moves it back))": 1
+    },
+    "why": null
+   }
+  },
+  {
+   "step": "sensitivity_amend5",
+   "argv": [
+    "python.exe",
+    "-X",
+    "utf8",
+    "-u",
+    "-m",
+    "a1_audit.run",
+    "--commit",
+    "dc1ee7383b616650ca104e9cb5130421a416e103",
+    "--pass",
+    "sensitivity",
+    "--gate",
+    "G2",
+    "--jobs",
+    "20",
+    "--rerun-tag",
+    "amend5"
+   ],
+   "started": "2026-11-02T08:08:07+00:00",
+   "log": "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results\\a1_run\\wp4_g2_launch_logs\\dc1ee73\\sensitivity_amend5.log",
+   "env": {
+    "A1_G2_VERSION": "amend5"
+   },
+   "exit": 0,
+   "finished": "2026-11-02T08:46:05+00:00",
+   "seconds": 2278.2,
+   "sanity": {
+    "ok": true,
+    "expected": 100,
+    "expected_by_plan": 101,
+    "computed": 100,
+    "pending": 0,
+    "n_rows": 194,
+    "by_target": {
+     "patel2021virtual": {
+      "expected": 9,
+      "computed": 9
+     },
+     "giacomel2026cartography": {
+      "expected": 14,
+      "computed": 14
+     },
+     "pretzsch2024patterns": {
+      "expected": 48,
+      "computed": 48
+     },
+     "hansen2022local": {
+      "expected": 2,
+      "computed": 2
+     },
+     "leyhausen2024intrinsic": {
+      "expected": 27,
+      "computed": 27
+     }
+    },
+    "missing_rows": [],
+    "not_expected": {
+     "not run (the G2 material stage refused this object: refused (carrier in quarantine; the operator moves it back))": 1
+    },
+    "why": null
+   }
+  },
+  {
+   "step": "report",
+   "argv": [
+    "python.exe",
+    "-X",
+    "utf8",
+    "-u",
+    "-m",
+    "a1_audit.report_cells",
+    "--gate",
+    "G2",
+    "--results-root",
+    "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results"
+   ],
+   "started": "2026-11-02T08:46:26+00:00",
+   "log": "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results\\a1_run\\wp4_g2_launch_logs\\dc1ee73\\report.log",
+   "exit": 0,
+   "finished": "2026-11-02T08:46:36+00:00",
+   "seconds": 10.0
+  }
+ ],
+ "adopted": {
+  "from": "46494975040530aba2d7af39cd5358139f5aad9e",
+  "summary": "wp4_g2_summary_4649497.json",
+  "producers": {
+   "material": "8258a6e",
+   "verdict": "8258a6e",
+   "descriptor": "8258a6e",
+   "sensitivity": "8258a6e"
+  },
+  "code_check": {
+   "8258a6e": "only arcs/audit/src/a1_audit/descriptors.py, arcs/audit/src/a1_audit/wp4_sources.py changed"
+  },
+  "changed_code": [
+   "arcs/audit/src/a1_audit/descriptors.py",
+   "arcs/audit/src/a1_audit/wp4_sources.py"
+  ],
+  "missing_steps": [],
+  "material_final": true,
+  "evidence": {
+   "primary": {
+    "verdict": {
+     "computed": 46,
+     "inputs_equal": 46,
+     "differing_rows": []
+    },
+    "descriptor": {
+     "computed": 44,
+     "inputs_equal": 44,
+     "differing_rows": []
+    },
+    "sensitivity": {
+     "computed": 46,
+     "inputs_equal": 46,
+     "differing_rows": []
+    },
+    "ok": true
+   },
+   "ok": true
+  }
+ },
+ "material": {
+  "manifest": "wp4_material_manifest.5.json",
+  "manifest_sha256": "651d90590eb9c8f4fea80d87df584fbde41b4ed4dfd341fd9672bf42ebad4a75",
+  "final": true,
+  "counts": {
+   "built": 1,
+   "extracted": 33,
+   "identity recorded (no extraction declared)": 10,
+   "not auditable (definition not applicable: the declared eTable13 layout not matched)": 1,
+   "not auditable (definition not applicable: the paper's code not runnable here)": 1,
+   "not computable (the paper's GEDAR map layout not matched)": 6,
+   "refused (carrier in quarantine; the operator moves it back)": 2
+  },
+  "door_admitted": 141,
+  "sets": {
+   "manifest_sha256": "40f7aec4664dd2306955b566af9669c59d77b7bdba5dfc53c921b8c2f33613ef",
+   "manifest_name": "MANIFEST_G2.2.json",
+   "n_sets": 23,
+   "restatement": {
+    "n_cells": 23,
+    "n_not_testable_lt5": 0,
+    "n_in_m_not_testable_lt5": 0
+   }
+  },
+  "giacomel_comparison": {
+   "thickness": {
+    "n_cells_compared": 68,
+    "n_cells_differing": 0
+   },
+   "subcortical": "not compared (a sheet not read)",
+   "governs": "93de089"
+  },
+  "deg_checks": {
+   "n": 18,
+   "passed": 0,
+   "statuses": [
+    "not auditable (definition not applicable: the paper's code not runnable here)"
+   ]
+  },
+  "r17": {
+   "status": "not auditable (definition not applicable: the paper's code not runnable here)",
+   "exit": 1,
+   "r_version": "4.5.1",
+   "bioc_version": "3.21",
+   "params_sha256": "5736368092c74721b07982df47ec2b791c13f742060fee71d4bb84789309c87e",
+   "network": "none"
+  },
+  "deviation": null,
+  "labels": {
+   "line130": {
+    "r17_mdd_equals_asd": {
+     "1": null,
+     "5": null,
+     "10": null
+    },
+    "eda33ab_mdd_equals_asd": {
+     "1": false,
+     "5": false,
+     "10": false
+    },
+    "label": "the paper's script writes the ASD values into the MDD TPRS files (line 130)",
+    "cells": [
+     "GIA-MDD-DEG-MDDset-01-ctx",
+     "GIA-MDD-DEG-MDDset-01-sub",
+     "GIA-MDD-DEG-MDDset-05-ctx",
+     "GIA-MDD-DEG-MDDset-05-sub",
+     "GIA-MDD-DEG-MDDset-10-ctx",
+     "GIA-MDD-DEG-MDDset-10-sub"
+    ]
+   }
+  }
+ },
+ "precondition_s17": "suite, P1 and plants passed at 36a4fe6; the comparison's flags explained (classified: label 86, provenance 349; 0 substantive)",
+ "precondition_diff": {
+  "result": "allowed",
+  "files": [
+   ".gitignore",
+   "NEXT_SESSION.md",
+   "arcs/audit/FROZEN.txt",
+   "arcs/audit/RUN_PLAN_amend_4.md",
+   "arcs/audit/RUN_PLAN_amend_5.md",
+   "arcs/audit/results/a1_run/s17_wp4_compare.json",
+   "arcs/audit/results/a1_run/s17_wp4_prerun_summary.json",
+   "arcs/audit/run_manifests/material/G2/incident_2026-10-17.md",
+   "arcs/audit/run_manifests/s17_wp4_classify.json",
+   "arcs/audit/run_manifests/s17_wp4_classify.py",
+   "arcs/audit/src/a1_audit/descriptors.py",
+   "arcs/audit/src/a1_audit/rbuild/r17.py",
+   "arcs/audit/src/a1_audit/report_cells.py",
+   "arcs/audit/src/a1_audit/s17_compare.py",
+   "arcs/audit/src/a1_audit/tests/test_report_cells.py",
+   "arcs/audit/src/a1_audit/tests/test_wp4_phase1.py",
+   "arcs/audit/src/a1_audit/wp4_launch.py",
+   "arcs/audit/src/a1_audit/wp4_layout.py",
+   "arcs/audit/src/a1_audit/wp4_material.py",
+   "arcs/audit/src/a1_audit/wp4_read.py",
+   "arcs/audit/src/a1_audit/wp4_scratch.py",
+   "arcs/audit/src/a1_audit/wp4_sets.py",
+   "arcs/audit/src/a1_audit/wp4_sources.py",
+   "arcs/replication/ARC.md",
+   "explore/discovery/EXPANSION_PLAN.md",
+   "explore/discovery/FINDINGS.md",
+   "explore/discovery/FROZEN.txt",
+   "explore/discovery/data_manifests/e4_natview_fetch_summary.json",
+   "explore/discovery/data_manifests/e4_natview_manifest.tsv",
+   "explore/discovery/data_manifests/e4b_bids_summary.json",
+   "explore/discovery/data_manifests/e4b_dryad_fetch_summary.json",
+   "explore/discovery/data_manifests/e4b_dryad_manifest.tsv",
+   "explore/discovery/e3_dim.py",
+   "explore/discovery/e3_dim_DESIGN.md",
+   "explore/discovery/e3_dim_inventory.py",
+   "explore/discovery/e3_dim_v2.py",
+   "explore/discovery/e3_dim_v2_DESIGN.md",
+   "explore/discovery/e4_arousal.py",
+   "explore/discovery/e4_arousal_DESIGN.md",
+   "explore/discovery/e4_arousal_DEVIATIONS.md",
+   "explore/discovery/e4_fetch.py",
+   "explore/discovery/e4b_bids.py",
+   "explore/discovery/e4b_expected.py",
+   "explore/discovery/e4b_fetch.py",
+   "explore/discovery/e4b_fmriprep.py",
+   "explore/discovery/e4b_pupil.py",
+   "explore/discovery/e4b_pupil_DESIGN.md",
+   "explore/discovery/e5_bin_sim.py",
+   "explore/discovery/e5_hetero_check.py",
+   "explore/discovery/e5_null_sim.py",
+   "explore/discovery/l7at_c5_align_check.py",
+   "explore/discovery/l7at_common.py",
+   "explore/discovery/l7at_opener_smoke.py",
+   "explore/discovery/l7at_stage0.py",
+   "explore/discovery/results/e3_dim_inventory.json",
+   "explore/discovery/results/e3_dim_selftest.json",
+   "explore/discovery/results/e3_dim_summary.json",
+   "explore/discovery/results/e3_dim_v2_selftest.json",
+   "explore/discovery/results/e3_dim_v2_summary.json",
+   "explore/discovery/results/e4_alignment.json",
+   "explore/discovery/results/e4_arousal_real.json",
+   "explore/discovery/results/e4_arousal_real_run7.json",
+   "explore/discovery/results/e4_arousal_selftest.json",
+   "explore/discovery/results/e4b_expected.json",
+   "explore/discovery/results/e4b_fmriprep_summary.json",
+   "explore/discovery/results/e4b_pupil_selftest.json",
+   "explore/discovery/results/e5_bin_sim.json",
+   "explore/discovery/results/e5_hetero_check.json",
+   "explore/discovery/results/e5_null_sim.json",
+   "explore/discovery/results/e5_null_sim_extra.json",
+   "explore/discovery/results/l7_alertness.json",
+   "explore/discovery/results/l7_alertness_c5_alignment.json",
+   "explore/discovery/results/l7_alertness_pipeline_summary.json",
+   "explore/discovery/results/l7_alertness_pipeline_summary_crash2.json",
+   "explore/discovery/results/l7_alertness_pipeline_summary_crash3.json",
+   "explore/discovery/results/l7_alertness_plants.json",
+   "explore/discovery/results/l7_alertness_stage0.json",
+   "explore/discovery/results/l7_alertness_table.csv",
+   "literature/OVERLAP_MATRIX.md",
+   "literature/PRIOR_ART.md",
+   "literature/SWEEP_LOG.md",
+   "literature/citations.bib",
+   "literature/citations.jsonl",
+   "literature/citations_overrides.jsonl",
+   "literature/notes/aschard2015adjusting.md",
+   "literature/notes/bright2017potential.md",
+   "literature/notes/chyzhyk2022how.md",
+   "literature/notes/elton2016neural.md",
+   "literature/notes/gonzalezcastillo2022ultraslow.md",
+   "literature/notes/gu2023simultaneous.md",
+   "literature/notes/lake2019functional.md",
+   "literature/notes/nilsonne2017intrinsic.md",
+   "literature/notes/plitt2015functional.md",
+   "literature/notes/pourmotabbed2025multimodal.md",
+   "literature/notes/resource-e4-arousal-datasets.md",
+   "literature/notes/resource-hbn-healthy-brain-network.md",
+   "literature/notes/saad2012trouble.md",
+   "literature/notes/shareeftrudeau2026multisession.md",
+   "literature/notes/snoek2019how.md",
+   "literature/notes/telesford2023naturalistic.md",
+   "literature/notes/westfall2016statistically.md",
+   "literature/notes/winkler2014permutationinferenceglm.md",
+   "literature/notes/yahata2016small.md"
+  ]
+ },
+ "worktree": {
+  "path": "D:\\tmp\\asdg_wt_a1_wp4_dc1ee73",
+  "state": "ready"
+ },
+ "pins": {
+  "amend4": {
+   "sha256": "d3f7275364847de88069f1ff815093adc1ca3dacf8f414eba98179920e6b4ac1",
+   "frozen_check_ok": true
+  },
+  "amend5": {
+   "sha256": "554f4e09a0f9e72141235d53f810ba300200d1c210e14692e50e372355ab1257",
+   "frozen_check_ok": true
+  },
+  "r13": {
+   "record_sha256": "3e5414398eae9cb16c2b2c984a21269f10f5bcbee9ddd23d28179e1f0cb922fb",
+   "repro_py_lf_sha256": "f9f148020c3395eed15382c4007269115da1e756a23dbb0130d3f224e323455a",
+   "wgcna_check": "PASS"
+  }
+ },
+ "twinpolis_stopped": 0,
+ "finished": "2026-11-02T08:46:36+00:00",
+ "exit": 0,
+ "result": "passed"
+}

@@ -1,0 +1,89 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "leyhausen_777429_vol",
+ "gate": "G2",
+ "url": "https://neurovault.org/media/images/12301/t-map_pf.nii.gz",
+ "kind": "file",
+ "date_utc": "2026-10-20T22:11:27+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "fetch": {
+  "source": "pinned copy on disk",
+  "path_sha256": "871f242935fd77b620045498f39598541987e8b3546ea415c2067a77b7a1f0c9",
+  "screen_hits": {
+   "V": 0,
+   "N": 0
+  }
+ },
+ "identity": {
+  "facts": {
+   "bytes": 2004019,
+   "sha256": "4429d1da1981770588e1c37e072d67d51e7843694aa92462c0ac24d77a6a561d",
+   "md5": "9f3346af282fde469c0ae5e8c6e71238",
+   "git_blob": "a1da189c7de81f26b008b61ab9f1531d835fe317",
+   "has_crlf": true,
+   "git_blob_lf": "24b777e1c3b203678267c7acc54dc934f057d6d2",
+   "bytes_lf": 2004004
+  },
+  "references": [
+   {
+    "basis": "sha256 of the copy on disk",
+    "bytes": 2004019,
+    "sha256": "4429d1da1981770588e1c37e072d67d51e7843694aa92462c0ac24d77a6a561d"
+   },
+   {
+    "basis": "size only",
+    "bytes": 2004019
+   },
+   {
+    "basis": "git blob",
+    "bytes": 2004019,
+    "git_blob": "a1da189c7de81f26b008b61ab9f1531d835fe317"
+   },
+   {
+    "basis": "size only",
+    "bytes": 2004019
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "sha256 of the copy on disk",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    },
+    {
+     "basis": "size only",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true
+    },
+    {
+     "basis": "git blob",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    },
+    {
+     "basis": "size only",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "identifier_bearing": false,
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "identity recorded (no extraction declared)"
+}

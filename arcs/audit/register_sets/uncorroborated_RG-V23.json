@@ -1,0 +1,17 @@
+{
+ "set_id": "uncorroborated_RG-V23",
+ "status": "not auditable (S undefined)",
+ "definition": "FAMILY: the second dysregulated list (as RG-15) x Validation 1 and Validation 2; not auditable (S undefined: source 1 uncorroborated; v6.5): the list's identity",
+ "reason": "register v6.5 (1) (orchestrator under the operator's standing delegation; decided after five review rounds, v6.0 -> v6.4, showed that the text criterion alone could not exclude result lists): source 1 must be corroborated -- Jaccard >= .80 with a pinned external definition of the set (sources 2-3), else a length equal to a printed size; this cell has neither, so no carrier list can be corroborated: not auditable (S undefined: source 1 uncorroborated): the 'second list of genes dysregulated in autism' is identified only in the supplement (no external definition is pinned) and the paper prints no size (v6-v6.4: S conditional on the supplements, R2)",
+ "cells_detail": [
+  {
+   "cell": "RG-V23",
+   "row": 170,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  }
+ ],
+ "cells": [
+  "RG-V23"
+ ]
+}

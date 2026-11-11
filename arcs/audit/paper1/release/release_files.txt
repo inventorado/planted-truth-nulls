@@ -1,0 +1,60 @@
+# P1 release allow-list. Paths/globs are relative to the repo root and are expanded against `git ls-tree` of --commit.
+#   pattern      include (a pattern that matches nothing is an error: the list is stale)
+#   !pattern     remove from the included set (narrow; each removal is counted in RELEASE.json)
+# '*' does not cross '/', '**' does. build_release.py then applies the hard deny list to the expanded set and
+# refuses on any match, so this file can never widen what RELEASE_POLICY.md allows.
+
+# --- frozen protocol, amendments, run plan, claims register -------------------------------------------------
+arcs/audit/prereg.md
+arcs/audit/prereg_amend_[1-7].md
+arcs/audit/prereg_review_2026-09-23.md
+arcs/audit/FROZEN.txt
+arcs/audit/RUN_PLAN.md
+arcs/audit/RUN_PLAN_amend_[1-5].md
+arcs/audit/claims_register.md
+arcs/audit/claims_register.tsv
+arcs/audit/claims_register_tsv_build.py
+arcs/audit/register_freeze_manifest.json
+
+# --- code ---------------------------------------------------------------------------------------------------
+arcs/audit/src/**
+!arcs/audit/src/a1_audit/tests/test_reprice_g1.py
+arcs/audit/src_register/**
+arcs/audit/probes/regime/**
+src/asdg/**
+env/requirements.lock
+
+# --- registers: records of map/gene-set identity (URL, size, sha256) and derived HGNC gene-symbol lists ----------
+arcs/audit/register_maps/**
+arcs/audit/register_sets/**
+!arcs/audit/register_sets/**/*G1*
+!arcs/audit/register_sets/post_freeze/*/gated_G2_GIA-C0[1-9].json
+!arcs/audit/register_sets/post_freeze/*/gated_G2_GIA-C1[0-8].json
+!arcs/audit/register_sets/post_freeze/*/gated_G2_GIA-MDD-C*.json
+!arcs/audit/register_sets/post_freeze/*/gated_G2_GIA-MDD-D10.json
+!arcs/audit/register_sets/post_freeze/*/gated_G2_GIA-MDD-U1.json
+!arcs/audit/src/a1_audit/rbuild/logs/geneoverlap_1.42.0_source.txt
+
+# --- results ------------------------------------------------------------------------------------------------
+arcs/audit/results/*.json
+arcs/audit/results/*.md
+arcs/audit/results/*.log
+arcs/audit/results/*.txt
+arcs/audit/results/data_manifests/*_SOURCE.md
+arcs/audit/results/a1_run/**
+
+# --- run manifests (plant runs, launch records, repricing and S17 check of released batches) ------------------------
+arcs/audit/run_manifests/*.json
+arcs/audit/run_manifests/*.md
+arcs/audit/run_manifests/*.py
+!arcs/audit/run_manifests/*wp5*
+arcs/audit/run_manifests/launch/**
+arcs/audit/run_manifests/R22_panther/**
+arcs/audit/run_manifests/plants/**
+!arcs/audit/run_manifests/plants/DEV/**
+
+# --- paper P1: figure and table scripts, committed outputs, figure sources -----------------------------------------
+# paper/p1_final.md, paper/p1_final.pdf and paper/refs.bib are generated from --paper-commit by build_release.py;
+# draft.md, OUTLINE.md and build_pdf.py are NOT released (internal provenance comments).
+arcs/audit/paper1/figures/**
+arcs/audit/paper1/tables/**

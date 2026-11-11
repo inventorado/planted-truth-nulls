@@ -1,0 +1,13 @@
+{
+ "check": "A5 (prereg_amend_1)",
+ "same_gene_list": true,
+ "same_parcels": true,
+ "identical_nan_pattern": true,
+ "max_abs_diff": 9.159339953157541e-15,
+ "shape": [
+  83,
+  15633
+ ],
+ "pass_": true,
+ "commit": "75ecaec2672b04aecf9b4278468acd2c446b50e5"
+}

@@ -1,0 +1,36 @@
+{
+ "schema": "a1_wp3_identity_at_use_v1",
+ "key": "brainspan",
+ "gate": "ungated",
+ "date_utc": "2026-10-11T22:40:33+00:00",
+ "files": [
+  {
+   "pin": "brainspan_expr",
+   "path": "E:/data/asdg/brainspan/genes_matrix_csv/expression_matrix.csv",
+   "bytes": 183262070,
+   "sha256": "e8d98aa02874f6b12fe7e071f4f88435b88256b6e5c4ba1d799e7b82aad28ee2",
+   "pinned_sha256": "e8d98aa02874f6b12fe7e071f4f88435b88256b6e5c4ba1d799e7b82aad28ee2",
+   "pinned_bytes": 183262070,
+   "result": "pin match"
+  },
+  {
+   "pin": "brainspan_rows",
+   "path": "E:/data/asdg/brainspan/genes_matrix_csv/rows_metadata.csv",
+   "bytes": 2151132,
+   "sha256": "dbfea0211aea42f6032084c3cdacb737943cbd786115dc5fde0f754708ae988b",
+   "pinned_sha256": "dbfea0211aea42f6032084c3cdacb737943cbd786115dc5fde0f754708ae988b",
+   "pinned_bytes": 2151132,
+   "result": "pin match"
+  },
+  {
+   "pin": "brainspan_cols",
+   "path": "E:/data/asdg/brainspan/genes_matrix_csv/columns_metadata.csv",
+   "bytes": 43050,
+   "sha256": "995a8e75b76459ba2bdbb51ad2db8970272f546baae14ddd3a7df6bc3ac18a01",
+   "pinned_sha256": "995a8e75b76459ba2bdbb51ad2db8970272f546baae14ddd3a7df6bc3ac18a01",
+   "pinned_bytes": 43050,
+   "result": "pin match"
+  }
+ ],
+ "result": "identity match"
+}

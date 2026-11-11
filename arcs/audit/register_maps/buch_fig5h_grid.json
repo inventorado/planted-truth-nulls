@@ -1,0 +1,59 @@
+{
+ "what": "Buch 2023 Fig. 5h (protein translation gene sets): the descriptor grid registered exactly as the published figure shows it (claims register v4 section 2.7; section 6 item 5, operator approval 2026-09-26: re-read of an already-seen figure). Structure, printed cell labels and marks only; no statistic beyond what the figure prints; MOESM3 and every supplement unopened.",
+ "read_utc": "2026-09-26",
+ "read_by": "asdg-worker (A1 pre-freeze work), visual read of the figure image; transcription, not computed",
+ "source": {
+  "paper": "Buch et al. 2023, Nature Neuroscience, doi 10.1038/s41593-023-01259-x (citations key buch2023asdsubgroups)",
+  "figure_image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41593-023-01259-x/MediaObjects/41593_2023_1259_Fig5_HTML.png",
+  "figure_image_bytes": 890476,
+  "figure_image_sha256": "379cafbf0651b4a4b03a91e45d783b617d7c9c0dd6a2a9d06a78acdbfc951512",
+  "figure_image_pixels": [2038, 2301],
+  "crop_read_px": {"panel_h": [1100, 1700, 2038, 2301], "zoom_on_column_1_borders": [1480, 1800, 1780, 2050]},
+  "legend_url": "https://www.nature.com/articles/s41593-023-01259-x/figures/5",
+  "image_kept": "no (scratchpad only, not in git or E:)"
+ },
+ "panel_title_as_printed": "Protein translation gene sets",
+ "encoding_as_printed": {
+  "colour_scale_title": "-log10(FDR) * direction of enrichment",
+  "colour_scale_ticks": ["4", "2", "0", "-2", "-4"],
+  "mark_key": "a solid black cell border = 'Significant enrichment' (figure key)",
+  "unmarked_cells": "dotted cell borders",
+  "legend_sentence": "Color indicates strength of negative log-transformed FDR for normalized enrichment score multiplied by the sign of the gene weight (+1 or -1)."
+ },
+ "grid_shape": {"n_rows": 5, "n_columns": 4, "n_cells": 20},
+ "rows_top_to_bottom_as_printed": ["*Ribosomal structure", "Ribosomal subunit", "Ribosome", "Cytosolic ribosome", "Cytoplasmic translation"],
+ "columns_left_to_right_as_printed": ["1", "2", "3", "4"],
+ "columns_meaning": "subgroups 1-4 (column header numbers under the panel title, as in Fig. 5c-g)",
+ "cells": [
+  {"row": "*Ribosomal structure", "subgroup": 1, "printed": "2.80", "marked": true, "tsv_cell": "BUCH-E-Trans-StructConstRibosome-S1"},
+  {"row": "*Ribosomal structure", "subgroup": 2, "printed": "0", "marked": false, "tsv_cell": "BUCH-E-Trans-StructConstRibosome-S2"},
+  {"row": "*Ribosomal structure", "subgroup": 3, "printed": "0.22", "marked": false, "tsv_cell": "BUCH-E-Trans-StructConstRibosome-S3"},
+  {"row": "*Ribosomal structure", "subgroup": 4, "printed": "0", "marked": false, "tsv_cell": "BUCH-E-Trans-StructConstRibosome-S4"},
+  {"row": "Ribosomal subunit", "subgroup": 1, "printed": "2.25", "marked": true, "tsv_cell": "BUCH-E-Trans-RibosomalSubunit-S1"},
+  {"row": "Ribosomal subunit", "subgroup": 2, "printed": "0", "marked": false, "tsv_cell": "BUCH-E-Trans-RibosomalSubunit-S2"},
+  {"row": "Ribosomal subunit", "subgroup": 3, "printed": "0.24", "marked": false, "tsv_cell": "BUCH-E-Trans-RibosomalSubunit-S3"},
+  {"row": "Ribosomal subunit", "subgroup": 4, "printed": "0", "marked": false, "tsv_cell": "BUCH-E-Trans-RibosomalSubunit-S4"},
+  {"row": "Ribosome", "subgroup": 1, "printed": "2.42", "marked": true, "tsv_cell": "BUCH-E-Trans-Ribosome-S1"},
+  {"row": "Ribosome", "subgroup": 2, "printed": "0", "marked": false, "tsv_cell": "BUCH-E-Trans-Ribosome-S2"},
+  {"row": "Ribosome", "subgroup": 3, "printed": "0.26", "marked": false, "tsv_cell": "BUCH-E-Trans-Ribosome-S3"},
+  {"row": "Ribosome", "subgroup": 4, "printed": "0", "marked": false, "tsv_cell": "BUCH-E-Trans-Ribosome-S4"},
+  {"row": "Cytosolic ribosome", "subgroup": 1, "printed": "2.94", "marked": true, "tsv_cell": "BUCH-E-Trans-CytosolicRibosome-S1"},
+  {"row": "Cytosolic ribosome", "subgroup": 2, "printed": "0", "marked": false, "tsv_cell": "BUCH-E-Trans-CytosolicRibosome-S2"},
+  {"row": "Cytosolic ribosome", "subgroup": 3, "printed": "0.61", "marked": false, "tsv_cell": "BUCH-E-Trans-CytosolicRibosome-S3"},
+  {"row": "Cytosolic ribosome", "subgroup": 4, "printed": "0.33", "marked": false, "tsv_cell": "BUCH-E-Trans-CytosolicRibosome-S4"},
+  {"row": "Cytoplasmic translation", "subgroup": 1, "printed": "1.43", "marked": true, "tsv_cell": "BUCH-E-Trans-CytoplasmicTranslation-S1"},
+  {"row": "Cytoplasmic translation", "subgroup": 2, "printed": "0.01", "marked": false, "tsv_cell": "BUCH-E-Trans-CytoplasmicTranslation-S2"},
+  {"row": "Cytoplasmic translation", "subgroup": 3, "printed": "0.23", "marked": false, "tsv_cell": "BUCH-E-Trans-CytoplasmicTranslation-S3"},
+  {"row": "Cytoplasmic translation", "subgroup": 4, "printed": "0.04", "marked": false, "tsv_cell": "BUCH-E-Trans-CytoplasmicTranslation-S4"}
+ ],
+ "marked_cells": {"n": 5, "where": "all five rows in subgroup 1; no cell of subgroups 2-4 marked", "each_cell_individually_bordered": true},
+ "agreement_with_tsv": {
+  "claims": "the 5 marked cells = TSV rows 326-330 (BUCH-E-Trans-*-S1, cell_class claim); printed values equal the draft's (2.80, 2.25, 2.42, 2.94, 1.43)",
+  "descriptors": "the 15 unmarked cells = TSV rows 422-436 (cell_class descriptor); the TSV records their published value as 'ns'; the figure prints 0 / 0.22 / 0 (row 1), 0 / 0.24 / 0 (row 2), 0 / 0.26 / 0 (row 3), 0 / 0.61 / 0.33 (row 4), 0.01 / 0.23 / 0.04 (row 5) for subgroups 2 / 3 / 4",
+  "direction": "every printed value >= 0 (positive = enrichment among positively weighted genes, the figure's encoding)"
+ },
+ "open_points": [
+  "The first row is printed '*Ribosomal structure' with an asterisk that neither the figure legend nor panel h explains; the draft and TSV read it as the GO-slim term 'structural constituent of ribosome' (GO:0003735). Other panels of Fig. 5 were not re-read (outside the approved re-read), so whether a footnote elsewhere on the figure defines the asterisk is not known here.",
+  "Row labels other than row 1 are printed as GO-style names ('Ribosomal subunit', 'Ribosome', 'Cytosolic ribosome', 'Cytoplasmic translation'); their exact PANTHER 16.0 GO-slim terms are fixed by the S-build, not by this read."
+ ]
+}

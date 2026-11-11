@@ -1,0 +1,62 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "r17_deg_MDD_1_r10",
+ "gate": "G2",
+ "url": "https://none.invalid/r17-run-output",
+ "kind": "file",
+ "date_utc": "2026-11-02T09:09:43+00:00",
+ "pinned": {
+  "pinned_bytes": 1653,
+  "pinned_sha256": "04f8d171a2e26089694670ac124b6f0949192d83b14862d0ff6293f62c0770c3"
+ },
+ "url_note": "no URL: a file the R17 run created (sha256 and size from the run's record)",
+ "fetch": {
+  "source": "pinned copy on disk",
+  "path_sha256": "c93f079d9ea4c81d14058c590f2a1493e042720b04ada8aae9a22bd9acbdd046",
+  "screen_hits": {
+   "V": 0,
+   "N": 0
+  }
+ },
+ "identity": {
+  "facts": {
+   "bytes": 1653,
+   "sha256": "04f8d171a2e26089694670ac124b6f0949192d83b14862d0ff6293f62c0770c3",
+   "md5": "1d72827166aee2b9074ca000a6462497",
+   "git_blob": "860591393a2fc97925cecd03d8fa14278f7d8471",
+   "has_crlf": false,
+   "git_blob_lf": null,
+   "bytes_lf": null
+  },
+  "references": [
+   {
+    "basis": "pinned sha256",
+    "sha256": "04f8d171a2e26089694670ac124b6f0949192d83b14862d0ff6293f62c0770c3",
+    "bytes": 1653
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "pinned sha256",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "identifier_bearing": false,
+ "extraction": {
+  "object_path": "D:/RESEARCH/asd-imaging-genetics/artifacts/audit/wp4/G2/r17_deg_MDD_1_r10/r17_deg_MDD_1_r10_extract.json",
+  "object_sha256": "08c291144ed64bcdd1f753268864815a6afdb8d64e82e1e7cf99b2a51ec0dd0b"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "extracted"
+}

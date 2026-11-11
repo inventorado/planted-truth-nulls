@@ -1,0 +1,61 @@
+{
+ "what": "R22 empirical sidedness check of PANTHER's overrepresentation test",
+ "genes": [
+  "RPL3",
+  "RPL4",
+  "RPL5",
+  "RPL7",
+  "RPL8",
+  "RPS3",
+  "RPS6",
+  "GAPDH",
+  "ACTB",
+  "TUBB",
+  "INS",
+  "ALB",
+  "EGFR",
+  "TP53",
+  "MYC"
+ ],
+ "api": "https://pantherdb.org/services/oai/pantherdb/enrich/overrep?geneInputList={genes}&organism=9606&annotDataSet={ds}&enrichmentTestType=FISHER&correction=FDR",
+ "tolerance_rel": 1e-09,
+ "datasets": {
+  "panther_pathway": {
+   "n_list_mapped": 16,
+   "n_reference": 20580,
+   "rows": 160,
+   "reproduced_one_sided": 23,
+   "reproduced_two_sided": 160,
+   "max_rel_diff_one_sided": 0.12364187257760424,
+   "max_rel_diff_two_sided": 1.5220638684091923e-10,
+   "discriminating_rows": 14,
+   "discriminating_rows_reproduced_two_sided": 14,
+   "annot_version": "PANTHER version 19.0 Released 2024-06-20",
+   "tool_release_date": 20240807,
+   "test": "FISHER",
+   "correction": "FDR",
+   "response_sha256": "1ce9f7203f8232e9f1a891bc59e7025e9f0cfccc78ffd846db121edfe2b49f70",
+   "response_gz": "overrep_panther_pathway.json.gz",
+   "annotDataSet": "ANNOT_TYPE_ID_PANTHER_PATHWAY"
+  },
+  "go_bp": {
+   "n_list_mapped": 16,
+   "n_reference": 20580,
+   "rows": 13761,
+   "reproduced_one_sided": 1048,
+   "reproduced_two_sided": 13761,
+   "max_rel_diff_one_sided": 0.619613509404124,
+   "max_rel_diff_two_sided": 2.3253254882582915e-10,
+   "discriminating_rows": 1055,
+   "discriminating_rows_reproduced_two_sided": 1055,
+   "annot_version": "GO Ontology database DOI:   Released 2026-04-28",
+   "tool_release_date": 20240807,
+   "test": "FISHER",
+   "correction": "FDR",
+   "response_sha256": "4a3d888f6c7c3c2a994d9d7faf0f8ebf9769e8fac8a1a697353747934809e8db",
+   "response_gz": "overrep_go_bp.json.gz",
+   "annotDataSet": "GO:0008150"
+  }
+ },
+ "finding": "PANTHER's overrepresentation Fisher p is two-sided (reference includes the list)"
+}

@@ -1,0 +1,1360 @@
+{
+ "what": "reproduction check or descriptive comparison of one row (RUN_PLAN §16; WP3)",
+ "stamp": null,
+ "pass": "verdict",
+ "gate": "none",
+ "plant": null,
+ "K": {
+  "site": 10000,
+  "species": 10000,
+  "permutation": 10000,
+  "sets": 10000,
+  "surr": 10000,
+  "j1_sets": 1000
+ },
+ "g6l_mode": "exact",
+ "K_plant_overrides": null,
+ "g6l_mode_text": "exact (every gene screened; RUN_PLAN §4)",
+ "threads": {
+  "OMP_NUM_THREADS": "1",
+  "OPENBLAS_NUM_THREADS": "1",
+  "MKL_NUM_THREADS": "1"
+ },
+ "threads_before": {
+  "OMP_NUM_THREADS": "1",
+  "OPENBLAS_NUM_THREADS": "1",
+  "MKL_NUM_THREADS": "1"
+ },
+ "run_identity": {
+  "run_commit": "6b8fb62190c5b2fa105f73235ba3089315a338b7",
+  "code_hash": "b31e632f3b9ad917d3476c2fcb2f7563ddad45777009117c986da8b4f3bbc258",
+  "K": {
+   "site": 10000,
+   "species": 10000,
+   "permutation": 10000,
+   "sets": 10000,
+   "surr": 10000,
+   "j1_sets": 1000
+  },
+  "g6l_mode": "exact",
+  "sources": {
+   "kind": "real-wp3",
+   "roots": {
+    "repo": "D:\\tmp\\asdg_wt_a1_wp3run_6b8fb62",
+    "data": "E:\\data\\asdg",
+    "artifacts": "D:\\tmp\\asdg_wt_a1_wp3run_6b8fb62\\artifacts\\audit\\wp3",
+    "records": "D:\\tmp\\asdg_wt_a1_wp3run_6b8fb62\\arcs\\audit\\register_maps\\post_freeze",
+    "control": "D:\\tmp\\asdg_wt_a1_wp3run_6b8fb62\\arcs\\audit\\run_manifests\\material",
+    "logs": "D:\\tmp\\asdg_wt_a1_wp3run_6b8fb62\\artifacts\\audit\\material_logs",
+    "quarantine": "E:\\data\\asdg\\_quarantine",
+    "ahba": "D:\\tmp\\asdg_wt_a1_wp3run_6b8fb62\\artifacts\\ahba",
+    "builds": "D:\\tmp\\asdg_wt_a1_wp3run_6b8fb62\\artifacts\\ahba\\a1_builds",
+    "identity_json": "D:\\tmp\\asdg_wt_a1_wp3run_6b8fb62\\arcs\\audit\\register_maps\\IDENTITY_prefreeze.json",
+    "identity_frozen": true,
+    "pins": [
+     [
+      "aal_atlas",
+      [
+       "abide1_pcp/atlases/aal_roi_atlas.nii.gz",
+       "data",
+       "40b1edfa68bccf06f608661b79655726f59485498b665bd9bac7f86394d6b9c2",
+       null
+      ]
+     ],
+     [
+      "aal_info",
+      [
+       "aal_atlas_info.csv",
+       "ahba",
+       "22e758a7fd525b641ef099028f9329f932a3ff3c1acf65416a8b4574795bf0ee",
+       null
+      ]
+     ],
+     [
+      "brainspan_cols",
+      [
+       "brainspan/genes_matrix_csv/columns_metadata.csv",
+       "data",
+       "995a8e75b76459ba2bdbb51ad2db8970272f546baae14ddd3a7df6bc3ac18a01",
+       43050
+      ]
+     ],
+     [
+      "brainspan_expr",
+      [
+       "brainspan/genes_matrix_csv/expression_matrix.csv",
+       "data",
+       "e8d98aa02874f6b12fe7e071f4f88435b88256b6e5c4ba1d799e7b82aad28ee2",
+       183262070
+      ]
+     ],
+     [
+      "brainspan_rows",
+      [
+       "brainspan/genes_matrix_csv/rows_metadata.csv",
+       "data",
+       "dbfea0211aea42f6032084c3cdacb737943cbd786115dc5fde0f754708ae988b",
+       2151132
+      ]
+     ],
+     [
+      "dk_info",
+      [
+       "dk_atlas_info.csv",
+       "ahba",
+       "abb69a9bf976a153b749eb5333e92cf03d4f61f2ce3efd34e49ea6e82f18729b",
+       null
+      ]
+     ],
+     [
+      "gamba",
+      [
+       "gamba/Background_genes_null_brain.csv",
+       "data",
+       "442334c3cb487625349fc6e6be6fee121dbc7bdb35b9277133c04032ee0fa53a",
+       268733
+      ]
+     ],
+     [
+      "go_gaf",
+      [
+       "register_sets_src/go_2024-01-17/goa_human.gaf.gz",
+       "data",
+       "3ccc83fe9e18f8c41374787b0cd3b4fb9737a849096b1be5b9f1d3de9ffa7d27",
+       null
+      ]
+     ],
+     [
+      "go_obo",
+      [
+       "register_sets_src/go_2024-01-17/go-basic.obo",
+       "data",
+       "e078d5406cc78976941578e984e0e3809bc6f4642f8fce404990f5f7c19b0c07",
+       null
+      ]
+     ],
+     [
+      "hgnc",
+      [
+       "explore_public/hgnc_complete_set/hgnc_complete_set_2026-09-04.txt",
+       "data",
+       "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+       null
+      ]
+     ],
+     [
+      "pthr16",
+      [
+       "register_sets_src/panther_16.0_goslim/PTHR16.0_human",
+       "data",
+       "d605cf6019298892dd0de04c51190879a3df25a2e1c26d23cbca6890c8d2590a",
+       null
+      ]
+     ],
+     [
+      "segura_moesm2",
+      [
+       "register_sets_src/segura2025_tables/41380_2025_3205_MOESM2_ESM.pdf",
+       "data",
+       "ff55ffe904838fe59d3575261639c0ca922e4c6cfa788e4f7df28c2459a1be93",
+       null
+      ]
+     ],
+     [
+      "segura_s4_raw",
+      [
+       "register_sets_src/segura2025_tables/tableS4_satterstrom_1046_symbols.txt",
+       "data",
+       "e1f4638c61e7fbc82a9867ffaff9c8ce8aa6683d88d784fcf9ffc81415721bea",
+       null
+      ]
+     ]
+    ],
+    "sd7_copy": [
+     "E:\\data\\asdg\\liu2026spatiotemporal\\supplement\\42003_2026_10045_MOESM3_ESM.xlsx",
+     "e2bd735c0f799d8a79f1f4f72d360d1d77a0570986a2beeb9b9be08ac8661242",
+     1442234,
+     "https://static-content.springer.com/esm/art%3A10.1038%2Fs42003-026-10045-x/MediaObjects/42003_2026_10045_MOESM3_ESM.xlsx"
+    ],
+    "moreau_clone": "E:\\data\\asdg\\moreau2020mutations\\repo_GeneExp_and_CNV_FCsignatures"
+   }
+  },
+  "seed_view": null
+ },
+ "output_root": "D:\\RESEARCH\\asd-imaging-genetics",
+ "row": 47,
+ "target_number": 1,
+ "cell_id": "SEG-C3-D38",
+ "reproduction": {
+  "kind": "reproduction descriptive (amendment 4 §2)",
+  "reading": "RUN_PLAN R22",
+  "image": 790618,
+  "decoded_list": {
+   "source": "NeuroVault decoder (mask=full)",
+   "object_sha256": "eac712b0bdfd04be860caa57c4aa7f5a11730de708b9136211256cd900d5b504",
+   "counts": {
+    "n_rows": 20787,
+    "n_kept": 20016,
+    "n_unmapped": 771,
+    "n_nonfinite_q": 0,
+    "n_rows_sharing_an_hgnc_symbol": 48,
+    "n_genes_with_more_than_one_row": 47,
+    "decoded_rows_by_t_sign": {
+     "t_positive": 530,
+     "t_negative": 962,
+     "t_zero_or_absent": 0
+    },
+    "hgnc_mapping": {
+     "alias": 7,
+     "approved": 23,
+     "entrez id": 19935,
+     "entrez id not in HGNC; symbol: unmapped symbol": 771,
+     "previous": 51
+    },
+    "n_other_columns": 3,
+    "n_other_keys": 0
+   },
+   "q_threshold": 0.05,
+   "n_genes": 1490
+  },
+  "paper_reference_n": 20787,
+  "test": "decoded list intersected with Table S4, then the GO over-representation over every live BP term (BH across the terms tested)",
+  "go_id": "GO:0035418",
+  "list_n": 113,
+  "per_reference": {
+   "GO 2024-01-17 GAF genes, HGNC-mapped (R22 primary reference)": {
+    "term": {
+     "a": 5,
+     "b": 108,
+     "c": 55,
+     "d": 19356,
+     "n_list": 113,
+     "n_term": 60,
+     "n_reference": 19524,
+     "p_greater": 2.5177401430685015e-05,
+     "p_greater_fisher_exact": 2.5177401430685015e-05,
+     "p_two_sided": 2.5177401430685015e-05,
+     "odds_ratio_sample": 16.292929292929294,
+     "odds_ratio_conditional_mle": 16.28161304945794,
+     "expected": 0.34726490473263677,
+     "fold_enrichment": 14.398230088495575,
+     "direction": "+",
+     "status": "tested",
+     "q_greater": 0.01364525238252304,
+     "q_two_sided": 0.01364525238252304,
+     "p_primary": 2.5177401430685015e-05,
+     "q_primary": 0.01364525238252304
+    },
+    "n_tested": 15175,
+    "primary": "two-sided",
+    "label": "PANTHER sidedness unverified",
+    "empirical_check": {
+     "date": "2026-10-11",
+     "script": "a1_audit/panther_sidedness_check.py",
+     "evidence": "run_manifests/R22_panther/",
+     "panther_release": "PANTHER version 19.0 Released 2024-06-20",
+     "tolerance_rel": 1e-09,
+     "panther_pathway": {
+      "rows": 160,
+      "two_sided_reproduced": 160,
+      "one_sided_reproduced": 23,
+      "discriminating_rows": 14,
+      "response_sha256": "1ce9f7203f8232e9f1a891bc59e7025e9f0cfccc78ffd846db121edfe2b49f70"
+     },
+     "go_bp": {
+      "rows": 13761,
+      "two_sided_reproduced": 13761,
+      "one_sided_reproduced": 1048,
+      "discriminating_rows": 1055
+     },
+     "result": "PANTHER's overrepresentation Fisher p is two-sided, with the reference including the list"
+    },
+    "bh_family": "the terms tested (a term with no reference gene is outside it)"
+   },
+   "PANTHER 16.0 reference (an older release)": {
+    "term": {
+     "a": 5,
+     "b": 108,
+     "c": 55,
+     "d": 19370,
+     "n_list": 113,
+     "n_term": 60,
+     "n_reference": 19538,
+     "p_greater": 2.5091875250264542e-05,
+     "p_greater_fisher_exact": 2.5091875250264542e-05,
+     "p_two_sided": 2.5091875250264542e-05,
+     "odds_ratio_sample": 16.304713804713806,
+     "odds_ratio_conditional_mle": 16.29338883930405,
+     "expected": 0.34701607124577744,
+     "fold_enrichment": 14.408554572271388,
+     "direction": "+",
+     "status": "tested",
+     "q_greater": 0.013274186009231522,
+     "q_two_sided": 0.013584562032812863,
+     "p_primary": 2.5091875250264542e-05,
+     "q_primary": 0.013584562032812863
+    },
+    "n_tested": 15159,
+    "primary": "two-sided",
+    "label": "PANTHER sidedness unverified",
+    "empirical_check": {
+     "date": "2026-10-11",
+     "script": "a1_audit/panther_sidedness_check.py",
+     "evidence": "run_manifests/R22_panther/",
+     "panther_release": "PANTHER version 19.0 Released 2024-06-20",
+     "tolerance_rel": 1e-09,
+     "panther_pathway": {
+      "rows": 160,
+      "two_sided_reproduced": 160,
+      "one_sided_reproduced": 23,
+      "discriminating_rows": 14,
+      "response_sha256": "1ce9f7203f8232e9f1a891bc59e7025e9f0cfccc78ffd846db121edfe2b49f70"
+     },
+     "go_bp": {
+      "rows": 13761,
+      "two_sided_reproduced": 13761,
+      "one_sided_reproduced": 1048,
+      "discriminating_rows": 1055
+     },
+     "result": "PANTHER's overrepresentation Fisher p is two-sided, with the reference including the list"
+    },
+    "bh_family": "the terms tested (a term with no reference gene is outside it)"
+   }
+  },
+  "published": {
+   "genes": 5,
+   "expected": 0.32,
+   "fold": 15.42,
+   "FDR": 0.00677,
+   "tokens": {
+    "genes": "5",
+    "expected": "0.32",
+    "fold": "15.42",
+    "fdr": "0.006770"
+   },
+   "source": "MOESM2 p. 39, transcribed by RUN_PLAN_amend_3 R47 (c)",
+   "object_sha256": "fa8d49518f34e06b44bcfbb123105c780b2f6c2ee339bb288d63c49e96a9ceba"
+  },
+  "jaccard_table_s6": {
+   "n_A": 113,
+   "n_B": 107,
+   "n_intersection": 107,
+   "n_union": 113,
+   "J": 0.9469026548672567,
+   "paper_B": "107 (TSV row 1)",
+   "status": "computed",
+   "rule": "RUN_PLAN_amend_3 R47 (h): A = decoded n Table S4 (no reference restriction), B = Table S6",
+   "object_sha256": "fa8d49518f34e06b44bcfbb123105c780b2f6c2ee339bb288d63c49e96a9ceba"
+  },
+  "t": "computed by the run"
+ },
+ "provenance": {
+  "run_commit": "6b8fb62190c5b2fa105f73235ba3089315a338b7",
+  "worktree": "D:\\tmp\\asdg_wt_a1_wp3run_6b8fb62",
+  "plan_sha256": "16c6023296fab612c34155e40d271c37258627980f12d00794e0fc09e1533823",
+  "amendment_sha256": {
+   "RUN_PLAN_amend_1.md": "8e06d60e8f1677ab579ebbf70db7c92f040df4c747672d71be1ce2f582f57f60",
+   "RUN_PLAN_amend_2.md": "acdb1290a676d801a174b41635c649452497dce7c04c08f484781082af7c8af7",
+   "RUN_PLAN_amend_3.md": "da3f3b8bf068b34e8a3a2c0e22cdd9fbb1af48723e61d0a805f71770ce566a0b"
+  },
+  "environments": {
+   "env/venv_ref": {
+    "pandas": "1.5.3",
+    "numpy": "1.24.4",
+    "python": "3.10.20"
+   },
+   "env/venv": {
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "python": "3.13.5"
+   }
+  },
+  "matrix_first_use": [
+   {
+    "file": "aal_expr.csv.gz",
+    "sha256_default": "ef455efb83f38a234f34dbd0e66153a8c48f6f1ac6f12bbab9d8bd1e0d3e9eac",
+    "sha256_round_trip": "0dbbb50ca9a60647b7dc49477c905dbb49631be0f42f74889039f8d8d7bb6a00",
+    "shape": [
+     116,
+     15633
+    ],
+    "rows_checked": 54,
+    "max_abs_delta": {
+     "frame in use": 1.1102230246251565e-16
+    },
+    "rule": "R35: identical index and gene order, max |delta| < 1e-12 over the rows used (RUN_PLAN_amend_1.md)",
+    "versions": {
+     "pandas": "3.0.6",
+     "numpy": "2.4.6",
+     "python": "3.13.5"
+    }
+   }
+  ],
+  "gate": null,
+  "code": {
+   "modules": {
+    "arcs/audit/src/a1_audit/__init__.py": "75e04c37e6e10ea9aa735f2a44859871e2f9abd79acf395c0cf9cd59cc04035c",
+    "arcs/audit/src/a1_audit/a3_port.py": "897ee46ab169415a1988be3d2da9e7b8141ae20dae734cdc74028292a09c6ca7",
+    "arcs/audit/src/a1_audit/adapters.py": "4a365bf6fe715eedfe5a8b2ed35a0cff087b20e2c69c7db490e2436f724508e3",
+    "arcs/audit/src/a1_audit/descriptors.py": "264a21bbf231d72b64710b0d540ce61f2cf2f0784823e0e62b60429ff3f36c81",
+    "arcs/audit/src/a1_audit/gates.py": "a034611adaf698c33bdcb425fa2e428f84bb035a332c02292a62496253449d21",
+    "arcs/audit/src/a1_audit/launch.py": "ed4cd452894fe02f6367487d75f574f5afaec37de9f481d6f3e7fd0220837f15",
+    "arcs/audit/src/a1_audit/loader.py": "fd08637ba01f56762cf2153fbe10f7ed3d07f6071500a76888831ad751bf5b5c",
+    "arcs/audit/src/a1_audit/plant_mode.py": "eb7da42b571f78ed1a2e124cc7543830223abc57682ac4983b127e974e3314b5",
+    "arcs/audit/src/a1_audit/privacy_wrap.py": "192c31c02c40357fc021d88222dca3b12fb677a90da8c1b31f65e24b86c2c5a4",
+    "arcs/audit/src/a1_audit/run.py": "9754c2ab5e2f257b6f7c84a03c558c21d83c9e2e40b1b0799734e0636eaf52c6",
+    "arcs/audit/src/a1_audit/seeds.py": "dd42feff909d462afbe07454fdefbe45001d67b94ddcdaf9414ba8bf1754bb31",
+    "arcs/audit/src/a1_audit/verdict.py": "302d02dad441205c49f60b85a6ea099c79b5b17ecdc06443f95768f284724656",
+    "arcs/audit/src/e3_plants.py": "0a605b8f60bb418889cb11240160bded398ec7df119233cbdf9701d8728305a3",
+    "src/asdg/__init__.py": "bdf00040ece97394e2e9ad9d4338e3e6a9e82fa49a055aeac52f4c103bc50433",
+    "src/asdg/brainspan.py": "9a08943196f559be616c0e95275424a54afb624806ac3038b6583f8a1c96cdaa",
+    "src/asdg/cascade.py": "a67c48cacd67e8683e3cb416c6cdfb6a3f0c62a2bdc57f49f46e99982ef2245f",
+    "src/asdg/genesets.py": "cf4e8ac4ce2b9ccb7d3876a366be0700c98dbeeeefd50352e76e6cfc39503157",
+    "src/asdg/spatial.py": "a2c15f2d5e95fafb479e8c665a6c1c6e4cfccd8ed4582b594d924b1e4a35fac1",
+    "src/asdg/species.py": "e4c31ab39fc2378ebe6183baad5696e15ca0bf36d1753570b4bef0d10eb36111",
+    "src/asdg/verdict.py": "fe0c6c578fa9403326fc36da286ce196917f9d6a6aa8dd8152052df407035318"
+   },
+   "code_hash": "b31e632f3b9ad917d3476c2fcb2f7563ddad45777009117c986da8b4f3bbc258"
+  },
+  "launch_assertions": [
+   {
+    "id": "L1",
+    "expected": {
+     "sha256": "897b2112d25455b330e2ae2adac659180d46f4825ae765b6a791d110873abdd3",
+     "source": "FROZEN.txt"
+    },
+    "observed": {
+     "blob_sha256": "897b2112d25455b330e2ae2adac659180d46f4825ae765b6a791d110873abdd3",
+     "lf_sha256": "897b2112d25455b330e2ae2adac659180d46f4825ae765b6a791d110873abdd3"
+    },
+    "ok": true,
+    "status": "pass",
+    "detail": {
+     "path": "arcs/audit/claims_register.md",
+     "worktree_cr": 0,
+     "worktree_sha256": "897b2112d25455b330e2ae2adac659180d46f4825ae765b6a791d110873abdd3",
+     "lf_sha256": "897b2112d25455b330e2ae2adac659180d46f4825ae765b6a791d110873abdd3",
+     "blob_sha256": "897b2112d25455b330e2ae2adac659180d46f4825ae765b6a791d110873abdd3",
+     "blob_cr": 0,
+     "blob_id": "8471adbe950de058186a1369f255cabfb3f5c483",
+     "checks": {
+      "sha256(LF bytes of the worktree file) == pin": true,
+      "sha256(blob at the run commit) == pin": true,
+      "FROZEN.txt has exactly one claims_register.md line, with the pin": true
+     },
+     "frozen_txt": {
+      "worktree_present": true,
+      "blob_present": true,
+      "worktree_lf_equals_blob": true,
+      "n_lines": 11
+     }
+    }
+   },
+   {
+    "id": "L2",
+    "expected": {
+     "sha256": "d6499b5d10eed39fc5bfcd8033fc5f7c7beea88f1d4b4c30fd21fed632bf8058",
+     "source": "freeze manifest; header line 2 'DRAFT ... NOT frozen' ignored"
+    },
+    "observed": {
+     "blob_sha256": "d6499b5d10eed39fc5bfcd8033fc5f7c7beea88f1d4b4c30fd21fed632bf8058",
+     "lf_sha256": "d6499b5d10eed39fc5bfcd8033fc5f7c7beea88f1d4b4c30fd21fed632bf8058"
+    },
+    "ok": true,
+    "status": "pass",
+    "detail": {
+     "path": "arcs/audit/claims_register.tsv",
+     "worktree_cr": 0,
+     "worktree_sha256": "d6499b5d10eed39fc5bfcd8033fc5f7c7beea88f1d4b4c30fd21fed632bf8058",
+     "lf_sha256": "d6499b5d10eed39fc5bfcd8033fc5f7c7beea88f1d4b4c30fd21fed632bf8058",
+     "blob_sha256": "d6499b5d10eed39fc5bfcd8033fc5f7c7beea88f1d4b4c30fd21fed632bf8058",
+     "blob_cr": 0,
+     "blob_id": "a073057315b977a64e56c89aef3037659ec3293a",
+     "checks": {
+      "sha256(LF bytes of the worktree file) == pin": true,
+      "sha256(blob at the run commit) == pin": true,
+      "the freeze manifest (at its pin) holds the TSV with the pin": true
+     }
+    }
+   },
+   {
+    "id": "L3",
+    "expected": {
+     "sha256": "38c2a507b057bf50b74c5ec348f03354afb3f4fd439ef73c295568a1e3155052",
+     "entries": 36,
+     "source": "RUN_PLAN.md §0.1 / manifest"
+    },
+    "observed": {
+     "blob_sha256": "38c2a507b057bf50b74c5ec348f03354afb3f4fd439ef73c295568a1e3155052",
+     "lf_sha256": "38c2a507b057bf50b74c5ec348f03354afb3f4fd439ef73c295568a1e3155052",
+     "entries": 36,
+     "entries_failed": 0
+    },
+    "ok": true,
+    "status": "pass",
+    "detail": {
+     "path": "arcs/audit/register_freeze_manifest.json",
+     "worktree_cr": 0,
+     "worktree_sha256": "38c2a507b057bf50b74c5ec348f03354afb3f4fd439ef73c295568a1e3155052",
+     "lf_sha256": "38c2a507b057bf50b74c5ec348f03354afb3f4fd439ef73c295568a1e3155052",
+     "blob_sha256": "38c2a507b057bf50b74c5ec348f03354afb3f4fd439ef73c295568a1e3155052",
+     "blob_cr": 0,
+     "blob_id": "2df773d0f248d5ab84ab7f4ac1fc34b7375da9ee",
+     "checks": {
+      "sha256(LF bytes of the worktree file) == pin": true,
+      "sha256(blob at the run commit) == pin": true,
+      "manifest holds 36 entries": true,
+      "entry paths unique": true,
+      "manifest's register sha256_at_build == L1 pin": true,
+      "every entry: blob at the run commit and worktree LF bytes equal its sha256 (and blob size its bytes)": true
+     },
+     "entries_failed": []
+    }
+   },
+   {
+    "id": "L4",
+    "expected": {
+     "prereg.md": "a632b852637cc9b7d104d3d225fa9c618ce6204ed3d0d7181aff6cc665ff2114",
+     "prereg_amend_1.md": "7a0dd383e7855197482501261bd7b28c49c88bb43ea17015ba78186af565b292",
+     "prereg_amend_2.md": "29c1ffdcb9d07b84c0951da705de413e35b9429b8fe0e2868fa751530bcb93af",
+     "prereg_amend_3.md": "d19f0f104dc9f451df49209589440b0cb5b21dce040a4793ced208663a2f2cf7",
+     "prereg_amend_4.md": "25114b65ca7e117c30fa6a7b631eec61f6a6e83126b9f089542b22a7bfef9f23",
+     "prereg_amend_5.md": "023bc880df1fa5832bdfc9144118de677d6a48146a89b3e4c1dc4060615684b9"
+    },
+    "observed": {
+     "prereg.md": "a632b852637cc9b7d104d3d225fa9c618ce6204ed3d0d7181aff6cc665ff2114",
+     "prereg_amend_1.md": "7a0dd383e7855197482501261bd7b28c49c88bb43ea17015ba78186af565b292",
+     "prereg_amend_2.md": "29c1ffdcb9d07b84c0951da705de413e35b9429b8fe0e2868fa751530bcb93af",
+     "prereg_amend_3.md": "d19f0f104dc9f451df49209589440b0cb5b21dce040a4793ced208663a2f2cf7",
+     "prereg_amend_4.md": "25114b65ca7e117c30fa6a7b631eec61f6a6e83126b9f089542b22a7bfef9f23",
+     "prereg_amend_5.md": "023bc880df1fa5832bdfc9144118de677d6a48146a89b3e4c1dc4060615684b9"
+    },
+    "ok": true,
+    "status": "pass",
+    "detail": {
+     "checks": {
+      "prereg.md: blob and worktree LF bytes == pin": true,
+      "FROZEN.txt line 1 names prereg.md with the pin": true,
+      "prereg_amend_1.md: blob and worktree LF bytes == pin": true,
+      "FROZEN.txt line 2 names prereg_amend_1.md with the pin": true,
+      "prereg_amend_2.md: blob and worktree LF bytes == pin": true,
+      "FROZEN.txt line 3 names prereg_amend_2.md with the pin": true,
+      "prereg_amend_3.md: blob and worktree LF bytes == pin": true,
+      "FROZEN.txt line 4 names prereg_amend_3.md with the pin": true,
+      "prereg_amend_4.md: blob and worktree LF bytes == pin": true,
+      "FROZEN.txt line 5 names prereg_amend_4.md with the pin": true,
+      "prereg_amend_5.md: blob and worktree LF bytes == pin": true,
+      "FROZEN.txt line 6 names prereg_amend_5.md with the pin": true
+     },
+     "files": {
+      "prereg.md": {
+       "path": "arcs/audit/prereg.md",
+       "worktree_cr": 0,
+       "worktree_sha256": "a632b852637cc9b7d104d3d225fa9c618ce6204ed3d0d7181aff6cc665ff2114",
+       "lf_sha256": "a632b852637cc9b7d104d3d225fa9c618ce6204ed3d0d7181aff6cc665ff2114",
+       "blob_sha256": "a632b852637cc9b7d104d3d225fa9c618ce6204ed3d0d7181aff6cc665ff2114",
+       "blob_cr": 0,
+       "blob_id": "5c1527030a1561fb2af4f1e7ee0efcffa6c019cd",
+       "checks": {
+        "sha256(LF bytes of the worktree file) == pin": true,
+        "sha256(blob at the run commit) == pin": true
+       }
+      },
+      "prereg_amend_1.md": {
+       "path": "arcs/audit/prereg_amend_1.md",
+       "worktree_cr": 0,
+       "worktree_sha256": "7a0dd383e7855197482501261bd7b28c49c88bb43ea17015ba78186af565b292",
+       "lf_sha256": "7a0dd383e7855197482501261bd7b28c49c88bb43ea17015ba78186af565b292",
+       "blob_sha256": "7a0dd383e7855197482501261bd7b28c49c88bb43ea17015ba78186af565b292",
+       "blob_cr": 0,
+       "blob_id": "82b3eee3a41279acde746cf2102d5bd80ebcdad1",
+       "checks": {
+        "sha256(LF bytes of the worktree file) == pin": true,
+        "sha256(blob at the run commit) == pin": true
+       }
+      },
+      "prereg_amend_2.md": {
+       "path": "arcs/audit/prereg_amend_2.md",
+       "worktree_cr": 0,
+       "worktree_sha256": "29c1ffdcb9d07b84c0951da705de413e35b9429b8fe0e2868fa751530bcb93af",
+       "lf_sha256": "29c1ffdcb9d07b84c0951da705de413e35b9429b8fe0e2868fa751530bcb93af",
+       "blob_sha256": "29c1ffdcb9d07b84c0951da705de413e35b9429b8fe0e2868fa751530bcb93af",
+       "blob_cr": 0,
+       "blob_id": "c5be2785c2448e709f6c7f853775d524ba8695e2",
+       "checks": {
+        "sha256(LF bytes of the worktree file) == pin": true,
+        "sha256(blob at the run commit) == pin": true
+       }
+      },
+      "prereg_amend_3.md": {
+       "path": "arcs/audit/prereg_amend_3.md",
+       "worktree_cr": 0,
+       "worktree_sha256": "d19f0f104dc9f451df49209589440b0cb5b21dce040a4793ced208663a2f2cf7",
+       "lf_sha256": "d19f0f104dc9f451df49209589440b0cb5b21dce040a4793ced208663a2f2cf7",
+       "blob_sha256": "d19f0f104dc9f451df49209589440b0cb5b21dce040a4793ced208663a2f2cf7",
+       "blob_cr": 0,
+       "blob_id": "32e1a8383707fc490c90abc91e4714732d090134",
+       "checks": {
+        "sha256(LF bytes of the worktree file) == pin": true,
+        "sha256(blob at the run commit) == pin": true
+       }
+      },
+      "prereg_amend_4.md": {
+       "path": "arcs/audit/prereg_amend_4.md",
+       "worktree_cr": 0,
+       "worktree_sha256": "25114b65ca7e117c30fa6a7b631eec61f6a6e83126b9f089542b22a7bfef9f23",
+       "lf_sha256": "25114b65ca7e117c30fa6a7b631eec61f6a6e83126b9f089542b22a7bfef9f23",
+       "blob_sha256": "25114b65ca7e117c30fa6a7b631eec61f6a6e83126b9f089542b22a7bfef9f23",
+       "blob_cr": 0,
+       "blob_id": "e92c3a5779c8fd9e72640fa3a56e1648df7ac44d",
+       "checks": {
+        "sha256(LF bytes of the worktree file) == pin": true,
+        "sha256(blob at the run commit) == pin": true
+       }
+      },
+      "prereg_amend_5.md": {
+       "path": "arcs/audit/prereg_amend_5.md",
+       "worktree_cr": 0,
+       "worktree_sha256": "023bc880df1fa5832bdfc9144118de677d6a48146a89b3e4c1dc4060615684b9",
+       "lf_sha256": "023bc880df1fa5832bdfc9144118de677d6a48146a89b3e4c1dc4060615684b9",
+       "blob_sha256": "023bc880df1fa5832bdfc9144118de677d6a48146a89b3e4c1dc4060615684b9",
+       "blob_cr": 0,
+       "blob_id": "4de7810ba9752dc224eba7ce66ae0c32e394ab6a",
+       "checks": {
+        "sha256(LF bytes of the worktree file) == pin": true,
+        "sha256(blob at the run commit) == pin": true
+       }
+      }
+     },
+     "frozen_txt": {
+      "worktree_present": true,
+      "blob_present": true,
+      "worktree_lf_equals_blob": true,
+      "n_lines": 11
+     }
+    }
+   },
+   {
+    "id": "L5",
+    "expected": {
+     "sha256": "16c6023296fab612c34155e40d271c37258627980f12d00794e0fc09e1533823",
+     "source": "FROZEN.txt"
+    },
+    "observed": {
+     "blob_sha256": "16c6023296fab612c34155e40d271c37258627980f12d00794e0fc09e1533823",
+     "lf_sha256": "16c6023296fab612c34155e40d271c37258627980f12d00794e0fc09e1533823"
+    },
+    "ok": true,
+    "status": "pass",
+    "detail": {
+     "path": "arcs/audit/RUN_PLAN.md",
+     "worktree_cr": 0,
+     "worktree_sha256": "16c6023296fab612c34155e40d271c37258627980f12d00794e0fc09e1533823",
+     "lf_sha256": "16c6023296fab612c34155e40d271c37258627980f12d00794e0fc09e1533823",
+     "blob_sha256": "16c6023296fab612c34155e40d271c37258627980f12d00794e0fc09e1533823",
+     "blob_cr": 0,
+     "blob_id": "3caf73d8bcca821fba279734c80f423335351515",
+     "checks": {
+      "sha256(LF bytes of the worktree file) == pin": true,
+      "sha256(blob at the run commit) == pin": true,
+      "FROZEN.txt has exactly one RUN_PLAN.md line, with the pin": true,
+      "the plan's blob holds 0 CR (RUN_PLAN.md:145)": true
+     },
+     "frozen_txt": {
+      "worktree_present": true,
+      "blob_present": true,
+      "worktree_lf_equals_blob": true,
+      "n_lines": 11
+     }
+    }
+   },
+   {
+    "id": "L5a",
+    "expected": {
+     "sha256": "8e06d60e8f1677ab579ebbf70db7c92f040df4c747672d71be1ce2f582f57f60",
+     "source": "FROZEN.txt"
+    },
+    "observed": {
+     "blob_sha256": "8e06d60e8f1677ab579ebbf70db7c92f040df4c747672d71be1ce2f582f57f60",
+     "lf_sha256": "8e06d60e8f1677ab579ebbf70db7c92f040df4c747672d71be1ce2f582f57f60"
+    },
+    "ok": true,
+    "status": "pass",
+    "detail": {
+     "path": "arcs/audit/RUN_PLAN_amend_1.md",
+     "worktree_cr": 0,
+     "worktree_sha256": "8e06d60e8f1677ab579ebbf70db7c92f040df4c747672d71be1ce2f582f57f60",
+     "lf_sha256": "8e06d60e8f1677ab579ebbf70db7c92f040df4c747672d71be1ce2f582f57f60",
+     "blob_sha256": "8e06d60e8f1677ab579ebbf70db7c92f040df4c747672d71be1ce2f582f57f60",
+     "blob_cr": 0,
+     "blob_id": "9da73ffec0283088c02be5f0ab694e33faf84db0",
+     "checks": {
+      "sha256(LF bytes of the worktree file) == pin": true,
+      "sha256(blob at the run commit) == pin": true,
+      "FROZEN.txt has exactly one RUN_PLAN_amend_1.md line, with the pin": true,
+      "the amendment's blob holds 0 CR (RUN_PLAN_amend_1.md L5a)": true
+     },
+     "frozen_txt": {
+      "worktree_present": true,
+      "blob_present": true,
+      "worktree_lf_equals_blob": true,
+      "n_lines": 11
+     }
+    }
+   },
+   {
+    "id": "L5b",
+    "expected": {
+     "sha256": "acdb1290a676d801a174b41635c649452497dce7c04c08f484781082af7c8af7",
+     "source": "FROZEN.txt"
+    },
+    "observed": {
+     "blob_sha256": "acdb1290a676d801a174b41635c649452497dce7c04c08f484781082af7c8af7",
+     "lf_sha256": "acdb1290a676d801a174b41635c649452497dce7c04c08f484781082af7c8af7"
+    },
+    "ok": true,
+    "status": "pass",
+    "detail": {
+     "path": "arcs/audit/RUN_PLAN_amend_2.md",
+     "worktree_cr": 0,
+     "worktree_sha256": "acdb1290a676d801a174b41635c649452497dce7c04c08f484781082af7c8af7",
+     "lf_sha256": "acdb1290a676d801a174b41635c649452497dce7c04c08f484781082af7c8af7",
+     "blob_sha256": "acdb1290a676d801a174b41635c649452497dce7c04c08f484781082af7c8af7",
+     "blob_cr": 0,
+     "blob_id": "78656d32ae59451587706860bf7e92509dcbfa39",
+     "checks": {
+      "sha256(LF bytes of the worktree file) == pin": true,
+      "sha256(blob at the run commit) == pin": true,
+      "FROZEN.txt has exactly one RUN_PLAN_amend_2.md line, with the pin": true,
+      "the amendment's blob holds 0 CR (RUN_PLAN_amend_2.md L5b)": true
+     },
+     "frozen_txt": {
+      "worktree_present": true,
+      "blob_present": true,
+      "worktree_lf_equals_blob": true,
+      "n_lines": 11
+     }
+    }
+   },
+   {
+    "id": "L5c",
+    "expected": {
+     "sha256": "da3f3b8bf068b34e8a3a2c0e22cdd9fbb1af48723e61d0a805f71770ce566a0b",
+     "source": "FROZEN.txt"
+    },
+    "observed": {
+     "blob_sha256": "da3f3b8bf068b34e8a3a2c0e22cdd9fbb1af48723e61d0a805f71770ce566a0b",
+     "lf_sha256": "da3f3b8bf068b34e8a3a2c0e22cdd9fbb1af48723e61d0a805f71770ce566a0b"
+    },
+    "ok": true,
+    "status": "pass",
+    "detail": {
+     "path": "arcs/audit/RUN_PLAN_amend_3.md",
+     "worktree_cr": 0,
+     "worktree_sha256": "da3f3b8bf068b34e8a3a2c0e22cdd9fbb1af48723e61d0a805f71770ce566a0b",
+     "lf_sha256": "da3f3b8bf068b34e8a3a2c0e22cdd9fbb1af48723e61d0a805f71770ce566a0b",
+     "blob_sha256": "da3f3b8bf068b34e8a3a2c0e22cdd9fbb1af48723e61d0a805f71770ce566a0b",
+     "blob_cr": 0,
+     "blob_id": "595afa3d13fb134b18098a905170951d967f7640",
+     "checks": {
+      "sha256(LF bytes of the worktree file) == pin": true,
+      "sha256(blob at the run commit) == pin": true,
+      "FROZEN.txt has exactly one RUN_PLAN_amend_3.md line, with the pin": true,
+      "the amendment's blob holds 0 CR (RUN_PLAN_amend_3.md L5c)": true
+     },
+     "frozen_txt": {
+      "worktree_present": true,
+      "blob_present": true,
+      "worktree_lf_equals_blob": true,
+      "n_lines": 11
+     }
+    }
+   },
+   {
+    "id": "L6",
+    "expected": {
+     "dk_expr.csv.gz": "949aeb011a202eeae768d954e868175759de1f9e9f38c54deab88b0d48fd85bf",
+     "aal_expr.csv.gz": "44ef457c99e39a5d72586f52dcc1974c5f317b665739978382683d1eb3ccd33c",
+     "mist64_expr.csv.gz": "7a7a6e22ab9f4e2238e122c609b3d77ea584eb42295afd5d70cc531b0514e153",
+     "dk_atlas_info.csv": "abb69a9bf976a153b749eb5333e92cf03d4f61f2ce3efd34e49ea6e82f18729b",
+     "aal_atlas_info.csv": "22e758a7fd525b641ef099028f9329f932a3ff3c1acf65416a8b4574795bf0ee",
+     "mist64_atlas_info.csv": "4dafc820bad33634666f37e0b20ee7cd0358ce67005af96bba87e6cc4fe3fcca"
+    },
+    "observed": {
+     "dk_expr.csv.gz": "949aeb011a202eeae768d954e868175759de1f9e9f38c54deab88b0d48fd85bf",
+     "aal_expr.csv.gz": "44ef457c99e39a5d72586f52dcc1974c5f317b665739978382683d1eb3ccd33c",
+     "mist64_expr.csv.gz": "7a7a6e22ab9f4e2238e122c609b3d77ea584eb42295afd5d70cc531b0514e153",
+     "dk_atlas_info.csv": "abb69a9bf976a153b749eb5333e92cf03d4f61f2ce3efd34e49ea6e82f18729b",
+     "aal_atlas_info.csv": "22e758a7fd525b641ef099028f9329f932a3ff3c1acf65416a8b4574795bf0ee",
+     "mist64_atlas_info.csv": "4dafc820bad33634666f37e0b20ee7cd0358ce67005af96bba87e6cc4fe3fcca"
+    },
+    "ok": true,
+    "status": "pass",
+    "detail": {
+     "checks": {
+      "dk_expr.csv.gz sha256 (raw bytes) == pin": true,
+      "dk_expr.csv.gz pin present in frozen s_build.py at the run commit": true,
+      "aal_expr.csv.gz sha256 (raw bytes) == pin": true,
+      "aal_expr.csv.gz pin present in frozen s_build.py at the run commit": true,
+      "mist64_expr.csv.gz sha256 (raw bytes) == pin": true,
+      "mist64_expr.csv.gz pin present in frozen s_build.py at the run commit": true,
+      "dk_atlas_info.csv sha256 (raw bytes) == pin": true,
+      "dk_atlas_info.csv pin present in frozen s_build.py at the run commit": true,
+      "aal_atlas_info.csv sha256 (raw bytes) == pin": true,
+      "aal_atlas_info.csv pin present in frozen s_build.py at the run commit": true,
+      "mist64_atlas_info.csv sha256 (raw bytes) == pin": true,
+      "mist64_atlas_info.csv pin present in frozen s_build.py at the run commit": true
+     },
+     "source": "src_register/s_build.py:156-165 (PIN)"
+    }
+   },
+   {
+    "id": "L7",
+    "expected": {
+     "dk": "9c66a2058896061fd3630fdad15abe121fc1148ac7160181b200cb0fb7d9b1b2",
+     "aal": "0dbbb50ca9a60647b7dc49477c905dbb49631be0f42f74889039f8d8d7bb6a00",
+     "mist64": "7f750213c2c5e02b85b0d05cdde2e095401c353cc518e21e256324542080a850"
+    },
+    "observed": {
+     "dk": "9c66a2058896061fd3630fdad15abe121fc1148ac7160181b200cb0fb7d9b1b2",
+     "aal": "0dbbb50ca9a60647b7dc49477c905dbb49631be0f42f74889039f8d8d7bb6a00",
+     "mist64": "7f750213c2c5e02b85b0d05cdde2e095401c353cc518e21e256324542080a850"
+    },
+    "ok": true,
+    "status": "pass",
+    "detail": {
+     "checks": {
+      "dk pin == its frozen source at the run commit": true,
+      "aal pin == its frozen source at the run commit": true,
+      "mist64 pin == its frozen source at the run commit": true,
+      "dk hash_pandas_object sha256 == pin": true,
+      "dk env/venv round-trip sha256 == the L7 pin (R35 chain)": true,
+      "dk env/venv_ref default-reader sha256 == R35 pin": true,
+      "dk env/venv default-reader sha256 == R35 pin": true,
+      "dk default-reader sha256 equal across env/venv and env/venv_ref": true,
+      "aal hash_pandas_object sha256 == pin": true,
+      "aal env/venv round-trip sha256 == the L7 pin (R35 chain)": true,
+      "aal env/venv_ref default-reader sha256 == R35 pin": true,
+      "aal env/venv default-reader sha256 == R35 pin": true,
+      "aal default-reader sha256 equal across env/venv and env/venv_ref": true,
+      "mist64 hash_pandas_object sha256 == pin": true,
+      "mist64 env/venv round-trip sha256 == the L7 pin (R35 chain)": true,
+      "mist64 env/venv_ref default-reader sha256 == R35 pin": true,
+      "mist64 env/venv default-reader sha256 == R35 pin": true,
+      "mist64 default-reader sha256 equal across env/venv and env/venv_ref": true,
+      "pandas, numpy and Python versions recorded for both environments (R35)": true
+     },
+     "interpreter": "D:\\RESEARCH\\asd-imaging-genetics\\env\\venv_ref\\Scripts\\python.exe",
+     "reader": "pandas.read_csv(path, index_col=0, float_precision='round_trip'); sha256(hash_pandas_object(df, index=True))",
+     "venv_ref": {
+      "pandas": "1.5.3",
+      "numpy": "1.24.4",
+      "python": "3.10.20",
+      "returncode": 0
+     },
+     "shapes": {
+      "dk": [
+       83,
+       15633
+      ],
+      "aal": [
+       116,
+       15633
+      ],
+      "mist64": [
+       64,
+       15633
+      ]
+     },
+     "errors": {
+      "dk": null,
+      "aal": null,
+      "mist64": null
+     },
+     "R35": {
+      "default_reader": "pandas.read_csv(path, index_col=0); sha256(hash_pandas_object(df, index=True))",
+      "default_reader_pins": {
+       "dk": "6707881c6b5d9e12858f654cdfb6ec9b416d352f74f36fe59c11d2088c6daebe",
+       "aal": "ef455efb83f38a234f34dbd0e66153a8c48f6f1ac6f12bbab9d8bd1e0d3e9eac",
+       "mist64": "13aa6f7df6020d6f19a37f3130b332f80f4511d9f542d2f1760f4de2a7a97997"
+      },
+      "env/venv_ref": {
+       "interpreter": "D:\\RESEARCH\\asd-imaging-genetics\\env\\venv_ref\\Scripts\\python.exe",
+       "versions": {
+        "pandas": "1.5.3",
+        "numpy": "1.24.4",
+        "python": "3.10.20"
+       },
+       "round_trip": {
+        "dk": "9c66a2058896061fd3630fdad15abe121fc1148ac7160181b200cb0fb7d9b1b2",
+        "aal": "0dbbb50ca9a60647b7dc49477c905dbb49631be0f42f74889039f8d8d7bb6a00",
+        "mist64": "7f750213c2c5e02b85b0d05cdde2e095401c353cc518e21e256324542080a850"
+       },
+       "default": {
+        "dk": "6707881c6b5d9e12858f654cdfb6ec9b416d352f74f36fe59c11d2088c6daebe",
+        "aal": "ef455efb83f38a234f34dbd0e66153a8c48f6f1ac6f12bbab9d8bd1e0d3e9eac",
+        "mist64": "13aa6f7df6020d6f19a37f3130b332f80f4511d9f542d2f1760f4de2a7a97997"
+       }
+      },
+      "env/venv": {
+       "interpreter": "D:\\RESEARCH\\asd-imaging-genetics\\env\\venv\\Scripts\\python.exe",
+       "versions": {
+        "pandas": "3.0.6",
+        "numpy": "2.4.6",
+        "python": "3.13.5"
+       },
+       "round_trip": {
+        "dk": "9c66a2058896061fd3630fdad15abe121fc1148ac7160181b200cb0fb7d9b1b2",
+        "aal": "0dbbb50ca9a60647b7dc49477c905dbb49631be0f42f74889039f8d8d7bb6a00",
+        "mist64": "7f750213c2c5e02b85b0d05cdde2e095401c353cc518e21e256324542080a850"
+       },
+       "default": {
+        "dk": "6707881c6b5d9e12858f654cdfb6ec9b416d352f74f36fe59c11d2088c6daebe",
+        "aal": "ef455efb83f38a234f34dbd0e66153a8c48f6f1ac6f12bbab9d8bd1e0d3e9eac",
+        "mist64": "13aa6f7df6020d6f19a37f3130b332f80f4511d9f542d2f1760f4de2a7a97997"
+       },
+       "errors": {
+        "dk": null,
+        "aal": null,
+        "mist64": null
+       },
+       "returncode": 0,
+       "error": null
+      }
+     },
+     "environments": {
+      "env/venv_ref": {
+       "pandas": "1.5.3",
+       "numpy": "1.24.4",
+       "python": "3.10.20"
+      },
+      "env/venv": {
+       "pandas": "3.0.6",
+       "numpy": "2.4.6",
+       "python": "3.13.5"
+      }
+     }
+    }
+   },
+   {
+    "id": "L8",
+    "expected": {
+     "e3_gates_a5.json": {
+      "blob": "1853086805b3acc9801073737029052a60d4c47a",
+      "lf": "3952430cfba27d1a49084a2fd8c7ed2e49be6ea2343e084258a4b26ae21626d6",
+      "crlf": "6d5533b3ce27211fb46788061b4b184aea071e5ddfed22888fb2747c87fbece8",
+      "K1_status": "not fired",
+      "stop": false,
+      "dirty": false,
+      "partial_certification": []
+     },
+     "gates_json": {
+      "sha256 (CRLF of e3_gates_a3.json)": "105e81f1674aaf600af8c22cefd3fc547badd74f2dba27e10f6f8315bfc857b0",
+      "blob": "fb41a15eb1b27a83e6950062c6ff17bf4ac59660",
+      "lf": "918606d85d55f582d302a4dac5d8cb07c488e9d23897408458fe22728c66aad9"
+     }
+    },
+    "observed": {
+     "e3_gates_a5.json": {
+      "blob": "1853086805b3acc9801073737029052a60d4c47a",
+      "lf": "3952430cfba27d1a49084a2fd8c7ed2e49be6ea2343e084258a4b26ae21626d6",
+      "crlf": "6d5533b3ce27211fb46788061b4b184aea071e5ddfed22888fb2747c87fbece8",
+      "worktree_raw": "3952430cfba27d1a49084a2fd8c7ed2e49be6ea2343e084258a4b26ae21626d6"
+     },
+     "e3_gates_a3.json": {
+      "blob": "fb41a15eb1b27a83e6950062c6ff17bf4ac59660",
+      "lf": "918606d85d55f582d302a4dac5d8cb07c488e9d23897408458fe22728c66aad9",
+      "crlf": "105e81f1674aaf600af8c22cefd3fc547badd74f2dba27e10f6f8315bfc857b0"
+     }
+    },
+    "ok": true,
+    "status": "pass",
+    "detail": {
+     "checks": {
+      "e3_gates_a5.json: blob id, LF and CRLF hashes": true,
+      "e3_gates_a3.json: blob id, LF and CRLF (gates_json) hashes": true,
+      "K1_status == 'not fired'": true,
+      "stop is false": true,
+      "dirty is false": true,
+      "partial_certification == []": true,
+      "gates_json.path == arcs/audit/results/e3_gates_a3.json": true,
+      "gates_json.sha256 == 105e81f1... (prereg_amend_5.md:23)": true,
+      "prereg_amend_5.md:23 (at the run commit, at its L4 pin) holds the gates_json sha256": true
+     },
+     "gates_a5": {
+      "path": "arcs/audit/results/e3_gates_a5.json",
+      "worktree_cr": 0,
+      "worktree_sha256": "3952430cfba27d1a49084a2fd8c7ed2e49be6ea2343e084258a4b26ae21626d6",
+      "lf_sha256": "3952430cfba27d1a49084a2fd8c7ed2e49be6ea2343e084258a4b26ae21626d6",
+      "crlf_rebuilt_sha256": "6d5533b3ce27211fb46788061b4b184aea071e5ddfed22888fb2747c87fbece8",
+      "blob_sha256": "3952430cfba27d1a49084a2fd8c7ed2e49be6ea2343e084258a4b26ae21626d6",
+      "blob_cr": 0,
+      "blob_id": "1853086805b3acc9801073737029052a60d4c47a",
+      "checks": {
+       "sha256(LF bytes of the worktree file) == pin": true,
+       "sha256(CRLF form rebuilt from the LF bytes) == pin": true,
+       "sha256(blob at the run commit) == pin": true,
+       "git blob id at the run commit == pin": true,
+       "full pins start with the plan's 8-hex prefixes": true
+      }
+     },
+     "gates_a3": {
+      "path": "arcs/audit/results/e3_gates_a3.json",
+      "worktree_cr": 0,
+      "worktree_sha256": "918606d85d55f582d302a4dac5d8cb07c488e9d23897408458fe22728c66aad9",
+      "lf_sha256": "918606d85d55f582d302a4dac5d8cb07c488e9d23897408458fe22728c66aad9",
+      "crlf_rebuilt_sha256": "105e81f1674aaf600af8c22cefd3fc547badd74f2dba27e10f6f8315bfc857b0",
+      "blob_sha256": "918606d85d55f582d302a4dac5d8cb07c488e9d23897408458fe22728c66aad9",
+      "blob_cr": 0,
+      "blob_id": "fb41a15eb1b27a83e6950062c6ff17bf4ac59660",
+      "checks": {
+       "sha256(LF bytes of the worktree file) == pin": true,
+       "sha256(CRLF form rebuilt from the LF bytes) == pin": true,
+       "sha256(blob at the run commit) == pin": true,
+       "git blob id at the run commit == pin": true,
+       "full pins start with the plan's 8-hex prefixes": true
+      }
+     }
+    }
+   },
+   {
+    "id": "L9",
+    "expected": {
+     "blob": "82fa016f9de7d2a649b75332882145bb32e02924",
+     "lf": "c9d8d900595a1d6ea98d9135adad4d15b8808e23ee22e000d5a917696c05cd6b",
+     "crlf": "b9ff7fed11c8b1905f86e1b77506b5dfa26fd393bd8ee6690bc47aa60921a68a"
+    },
+    "observed": {
+     "blob": "82fa016f9de7d2a649b75332882145bb32e02924",
+     "lf": "c9d8d900595a1d6ea98d9135adad4d15b8808e23ee22e000d5a917696c05cd6b",
+     "crlf": "b9ff7fed11c8b1905f86e1b77506b5dfa26fd393bd8ee6690bc47aa60921a68a"
+    },
+    "ok": true,
+    "status": "pass",
+    "detail": {
+     "path": "arcs/audit/results/e3_catch_curves_a5.json",
+     "worktree_cr": 0,
+     "worktree_sha256": "c9d8d900595a1d6ea98d9135adad4d15b8808e23ee22e000d5a917696c05cd6b",
+     "lf_sha256": "c9d8d900595a1d6ea98d9135adad4d15b8808e23ee22e000d5a917696c05cd6b",
+     "crlf_rebuilt_sha256": "b9ff7fed11c8b1905f86e1b77506b5dfa26fd393bd8ee6690bc47aa60921a68a",
+     "blob_sha256": "c9d8d900595a1d6ea98d9135adad4d15b8808e23ee22e000d5a917696c05cd6b",
+     "blob_cr": 0,
+     "blob_id": "82fa016f9de7d2a649b75332882145bb32e02924",
+     "checks": {
+      "sha256(LF bytes of the worktree file) == pin": true,
+      "sha256(CRLF form rebuilt from the LF bytes) == pin": true,
+      "sha256(blob at the run commit) == pin": true,
+      "git blob id at the run commit == pin": true,
+      "full pins start with the plan's 8-hex prefixes": true,
+      "parses as JSON": true
+     }
+    }
+   },
+   {
+    "id": "L10",
+    "expected": {
+     "scope_labels": [
+      "species leg untested (gradient): V-AAL claims with R2_grad >= .25",
+      "species leg untested (gradient): V-CC200 claims with R2_grad >= .25",
+      "brain-enrichment (N1) confound untested: V-CC200 claims with brain-enriched sets"
+     ],
+     "replica": {
+      "a": "150/1000",
+      "c": "131/1000"
+     },
+     "dk-ctx N1 label": "none"
+    },
+    "observed": {
+     "scope_labels": [
+      "species leg untested (gradient): V-AAL claims with R2_grad >= .25",
+      "species leg untested (gradient): V-CC200 claims with R2_grad >= .25",
+      "brain-enrichment (N1) confound untested: V-CC200 claims with brain-enriched sets"
+     ],
+     "replica": {
+      "a": {
+       "k": 150,
+       "n": 1000
+      },
+      "c": {
+       "k": 131,
+       "n": 1000
+      }
+     }
+    },
+    "ok": true,
+    "status": "pass",
+    "detail": {
+     "checks": {
+      "e3_gates_a5.json bytes are L8's (LF sha256 == pin)": true,
+      "exactly three scope_labels, verbatim": true,
+      "labels are gradient: V-AAL, V-CC200; N1: V-CC200": true,
+      "no scope label names dk-ctx": true,
+      "counts.scope == 3": true,
+      "replica (a) 150 / 1000, passed": true,
+      "replica (c) 131 / 1000 > .05, passed -> no dk-ctx N1 label (amendment 5 §4.4)": true
+     }
+    }
+   },
+   {
+    "id": "L11",
+    "expected": {
+     "porcelain": [],
+     "HEAD": "6b8fb62190c5b2fa105f73235ba3089315a338b7"
+    },
+    "observed": {
+     "porcelain_lines": 0,
+     "HEAD": "6b8fb62190c5b2fa105f73235ba3089315a338b7",
+     "run_commit": "6b8fb62190c5b2fa105f73235ba3089315a338b7",
+     "modules": {
+      "arcs/audit/src/a1_audit/__init__.py": "75e04c37e6e10ea9aa735f2a44859871e2f9abd79acf395c0cf9cd59cc04035c",
+      "arcs/audit/src/a1_audit/a3_port.py": "897ee46ab169415a1988be3d2da9e7b8141ae20dae734cdc74028292a09c6ca7",
+      "arcs/audit/src/a1_audit/adapters.py": "4a365bf6fe715eedfe5a8b2ed35a0cff087b20e2c69c7db490e2436f724508e3",
+      "arcs/audit/src/a1_audit/descriptors.py": "264a21bbf231d72b64710b0d540ce61f2cf2f0784823e0e62b60429ff3f36c81",
+      "arcs/audit/src/a1_audit/gates.py": "a034611adaf698c33bdcb425fa2e428f84bb035a332c02292a62496253449d21",
+      "arcs/audit/src/a1_audit/launch.py": "ed4cd452894fe02f6367487d75f574f5afaec37de9f481d6f3e7fd0220837f15",
+      "arcs/audit/src/a1_audit/loader.py": "fd08637ba01f56762cf2153fbe10f7ed3d07f6071500a76888831ad751bf5b5c",
+      "arcs/audit/src/a1_audit/plant_mode.py": "eb7da42b571f78ed1a2e124cc7543830223abc57682ac4983b127e974e3314b5",
+      "arcs/audit/src/a1_audit/privacy_wrap.py": "192c31c02c40357fc021d88222dca3b12fb677a90da8c1b31f65e24b86c2c5a4",
+      "arcs/audit/src/a1_audit/run.py": "9754c2ab5e2f257b6f7c84a03c558c21d83c9e2e40b1b0799734e0636eaf52c6",
+      "arcs/audit/src/a1_audit/seeds.py": "dd42feff909d462afbe07454fdefbe45001d67b94ddcdaf9414ba8bf1754bb31",
+      "arcs/audit/src/a1_audit/verdict.py": "302d02dad441205c49f60b85a6ea099c79b5b17ecdc06443f95768f284724656",
+      "arcs/audit/src/e3_plants.py": "0a605b8f60bb418889cb11240160bded398ec7df119233cbdf9701d8728305a3",
+      "src/asdg/__init__.py": "bdf00040ece97394e2e9ad9d4338e3e6a9e82fa49a055aeac52f4c103bc50433",
+      "src/asdg/brainspan.py": "9a08943196f559be616c0e95275424a54afb624806ac3038b6583f8a1c96cdaa",
+      "src/asdg/cascade.py": "a67c48cacd67e8683e3cb416c6cdfb6a3f0c62a2bdc57f49f46e99982ef2245f",
+      "src/asdg/genesets.py": "cf4e8ac4ce2b9ccb7d3876a366be0700c98dbeeeefd50352e76e6cfc39503157",
+      "src/asdg/spatial.py": "a2c15f2d5e95fafb479e8c665a6c1c6e4cfccd8ed4582b594d924b1e4a35fac1",
+      "src/asdg/species.py": "e4c31ab39fc2378ebe6183baad5696e15ca0bf36d1753570b4bef0d10eb36111",
+      "src/asdg/verdict.py": "fe0c6c578fa9403326fc36da286ce196917f9d6a6aa8dd8152052df407035318"
+     },
+     "code_hash": "b31e632f3b9ad917d3476c2fcb2f7563ddad45777009117c986da8b4f3bbc258"
+    },
+    "ok": true,
+    "status": "pass",
+    "detail": {
+     "checks": {
+      "run commit resolves to a commit of this repository": true,
+      "git status --porcelain (untracked included) is empty": true,
+      "HEAD == the run commit": true,
+      "no a1_audit / asdg module loaded from outside this tree": true,
+      "every loaded repository module (a1_audit, src/asdg, ...) equals its blob at the run commit": true,
+      "at least one a1_audit module recorded": true
+     },
+     "porcelain": [],
+     "foreign_modules": [],
+     "modules_differ": []
+    }
+   },
+   {
+    "id": "L12",
+    "expected": {
+     "rows": 692,
+     "m": 207,
+     "m.target": {
+      "patel2021virtual": 3,
+      "giacomel2026cartography": 14,
+      "romerogarcia2019synaptic": 3,
+      "rasero2023neurogenetics": 14,
+      "buch2023asdsubgroups": 84,
+      "mamat2025molecular": 22,
+      "liu2026spatiotemporal": 1,
+      "pagani2026crossspecies": 10,
+      "benkarim2021connectivity": 12,
+      "dear2024corticalgene": 2,
+      "pretzsch2024patterns": 4,
+      "park2021subcortico": 8,
+      "moreau2020mutations": 2,
+      "hansen2022local": 1,
+      "leyhausen2024intrinsic": 27
+     },
+     "gate": {
+      "G1": 380,
+      "G2": 194,
+      "none": 115,
+      "G1+G2": 3
+     },
+     "source": "claims_register.md:1849-1896 (§4 block)"
+    },
+    "observed": {
+     "rows": 692,
+     "m.lower": 207,
+     "m.upper": 207,
+     "m.target": {
+      "benkarim2021connectivity": 12,
+      "buch2023asdsubgroups": 84,
+      "dear2024corticalgene": 2,
+      "giacomel2026cartography": 14,
+      "hansen2022local": 1,
+      "leyhausen2024intrinsic": 27,
+      "liu2026spatiotemporal": 1,
+      "mamat2025molecular": 22,
+      "moreau2020mutations": 2,
+      "pagani2026crossspecies": 10,
+      "park2021subcortico": 8,
+      "patel2021virtual": 3,
+      "pretzsch2024patterns": 4,
+      "rasero2023neurogenetics": 14,
+      "romerogarcia2019synaptic": 3
+     },
+     "m.upper_only.target": {},
+     "gate": {
+      "G1": 380,
+      "G2": 194,
+      "none": 115,
+      "G1+G2": 3
+     }
+    },
+    "ok": true,
+    "status": "pass",
+    "detail": {
+     "checks": {
+      "TSV bytes == L2 pin": true,
+      "register bytes == L1 pin": true,
+      "rows == 692 (TSV) == block 'rows'": true,
+      "m == 207 (TSV, verdict_counted_in_m 'yes') == block 'm.lower'": true,
+      "m upper bound (TSV) == block 'm.upper'": true,
+      "m per target (TSV) == the §4 block": true,
+      "the §4 block == its transcription in launch.py": true,
+      "no upper-bound-only rows unless the block lists them": true,
+      "rows per gate: G1 380 / G2 194 / none 115 / G1+G2 3": true
+     }
+    }
+   },
+   {
+    "id": "L13",
+    "expected": {
+     "sha256": "430f86dc087ee47d3e673ba280a6a54dbf79c59fe2b006eb9e283ffe7602a366",
+     "selftest": "46 / 46"
+    },
+    "observed": {
+     "lf_sha256": "430f86dc087ee47d3e673ba280a6a54dbf79c59fe2b006eb9e283ffe7602a366",
+     "selftest": [
+      46,
+      46,
+      37,
+      37
+     ],
+     "returncode": 0
+    },
+    "ok": true,
+    "status": "pass",
+    "detail": {
+     "checks": {
+      "sha256(LF bytes of the worktree file) == pin": true,
+      "sha256(blob at the run commit) == pin": true,
+      "the freeze manifest's entry for privacy_guard.py == pin": true,
+      "self-test passes 46 / 46": true
+     },
+     "selftest": {
+      "returncode": 0,
+      "summary": [
+       "privacy guard self-test: 46 / 46 (planted failures caught 37 / 37)"
+      ],
+      "n_lines": 47,
+      "interpreter": "D:\\RESEARCH\\asd-imaging-genetics\\env\\venv\\Scripts\\python.exe",
+      "parsed": [
+       46,
+       46,
+       37,
+       37
+      ]
+     },
+     "file": {
+      "path": "arcs/audit/src_register/privacy_guard.py",
+      "worktree_cr": 0,
+      "worktree_sha256": "430f86dc087ee47d3e673ba280a6a54dbf79c59fe2b006eb9e283ffe7602a366",
+      "lf_sha256": "430f86dc087ee47d3e673ba280a6a54dbf79c59fe2b006eb9e283ffe7602a366",
+      "blob_sha256": "430f86dc087ee47d3e673ba280a6a54dbf79c59fe2b006eb9e283ffe7602a366",
+      "blob_cr": 0,
+      "blob_id": "c55fd3616b5f53cd34ad219e935ef30a1c7b05bc",
+      "checks": {
+       "sha256(LF bytes of the worktree file) == pin": true,
+       "sha256(blob at the run commit) == pin": true,
+       "the freeze manifest's entry for privacy_guard.py == pin": true,
+       "self-test passes 46 / 46": true
+      }
+     }
+    }
+   },
+   {
+    "id": "L14",
+    "expected": "carrier_test.py selftest == the frozen record; pdfplumber == 0.11.10 (G1 carrier stage)",
+    "observed": "not exercised (no G1 carrier stage)",
+    "ok": true,
+    "status": "not exercised",
+    "detail": {
+     "gate": null
+    }
+   },
+   {
+    "id": "L15",
+    "expected": "G2: step3v_open(repo); G1: g1_open(repo)",
+    "observed": "not applicable (ungated run: no gate check applies)",
+    "ok": true,
+    "status": "not applicable",
+    "detail": {}
+   }
+  ],
+  "gate_check": {
+   "id": "L15",
+   "expected": "G2: step3v_open(repo); G1: g1_open(repo)",
+   "observed": "not applicable (ungated run: no gate check applies)",
+   "ok": true,
+   "status": "not applicable",
+   "detail": {}
+  },
+  "launch_started": "2026-10-12T03:13:55+02:00",
+  "launch_finished": "2026-10-12T03:14:15+02:00",
+  "host": {
+   "node": "OMEN",
+   "system": "Windows",
+   "release": "11",
+   "machine": "AMD64",
+   "python": "3.13.5",
+   "executable": "D:\\RESEARCH\\asd-imaging-genetics\\env\\venv\\Scripts\\python.exe",
+   "numpy": "2.4.6",
+   "pandas": "3.0.6"
+  },
+  "code_recheck": {
+   "modules": {
+    "arcs/audit/src/a1_audit/__init__.py": "75e04c37e6e10ea9aa735f2a44859871e2f9abd79acf395c0cf9cd59cc04035c",
+    "arcs/audit/src/a1_audit/a3_port.py": "897ee46ab169415a1988be3d2da9e7b8141ae20dae734cdc74028292a09c6ca7",
+    "arcs/audit/src/a1_audit/adapters.py": "4a365bf6fe715eedfe5a8b2ed35a0cff087b20e2c69c7db490e2436f724508e3",
+    "arcs/audit/src/a1_audit/ahba_builds.py": "8a00e4f0a4142399e28e6d89a72f17cb3f01925dc73f029f714565aa2e569a22",
+    "arcs/audit/src/a1_audit/descriptors.py": "264a21bbf231d72b64710b0d540ce61f2cf2f0784823e0e62b60429ff3f36c81",
+    "arcs/audit/src/a1_audit/fetch_extract.py": "cf0ac51e3cb717d58757213487d45e23043f7ab1186f9f1ab9d3465ab9a8db59",
+    "arcs/audit/src/a1_audit/forms.py": "786fba4036d7cd77f4a1a350e35d1884a269464da2421ed7bf62ff609e70e8ef",
+    "arcs/audit/src/a1_audit/gates.py": "a034611adaf698c33bdcb425fa2e428f84bb035a332c02292a62496253449d21",
+    "arcs/audit/src/a1_audit/identity.py": "05ca32f7717d487dd35e36b06c46a6e4a77775eb2070099ef19ceb02891cd590",
+    "arcs/audit/src/a1_audit/launch.py": "ed4cd452894fe02f6367487d75f574f5afaec37de9f481d6f3e7fd0220837f15",
+    "arcs/audit/src/a1_audit/loader.py": "fd08637ba01f56762cf2153fbe10f7ed3d07f6071500a76888831ad751bf5b5c",
+    "arcs/audit/src/a1_audit/plant_mode.py": "eb7da42b571f78ed1a2e124cc7543830223abc57682ac4983b127e974e3314b5",
+    "arcs/audit/src/a1_audit/privacy_wrap.py": "192c31c02c40357fc021d88222dca3b12fb677a90da8c1b31f65e24b86c2c5a4",
+    "arcs/audit/src/a1_audit/real_sources.py": "c93ce81929e295897ec5e3602e1f29ef2098fab163e9033eaa07bcf29027c61a",
+    "arcs/audit/src/a1_audit/reparcel.py": "917706c1efbc9827f75dade49093fcf484641bc70dc45af87c832a76d61719e9",
+    "arcs/audit/src/a1_audit/reporting.py": "97f9834fe00a2338e1d77316e67e448c38b664c858afab9388d5e663b812935a",
+    "arcs/audit/src/a1_audit/run.py": "9754c2ab5e2f257b6f7c84a03c558c21d83c9e2e40b1b0799734e0636eaf52c6",
+    "arcs/audit/src/a1_audit/seeds.py": "dd42feff909d462afbe07454fdefbe45001d67b94ddcdaf9414ba8bf1754bb31",
+    "arcs/audit/src/a1_audit/verdict.py": "302d02dad441205c49f60b85a6ea099c79b5b17ecdc06443f95768f284724656",
+    "arcs/audit/src/a1_audit/wp3_decoder.py": "e6762ad52bb26ab2706e70b61d7f1e3516c7bd9e47c3d8472214208bf136e6d6",
+    "arcs/audit/src/a1_audit/wp3_genes.py": "7bd606e7d786e8f75191cc389fbd130f8fcc23edbffa17bbd41ca0d5ffd0c352",
+    "arcs/audit/src/a1_audit/wp3_layout.py": "84c9ca84cb14eecff8f6dcdc5cee5cc27abf2261e3257dd2bcfde84f85112fe2",
+    "arcs/audit/src/a1_audit/wp3_material.py": "61ab1052626757297a346a606649e0e0b739ddff024e1a959aceee5fa06f75e9",
+    "arcs/audit/src/a1_audit/wp3_pdf.py": "fc8d4aafbfe35359502d08cbf1d4fd6977fc33fbdb6b4b9f7c5a53ae3bf4ae9b",
+    "arcs/audit/src/a1_audit/wp3_sd7.py": "5aa56811073be0dfad7f33b8c20ba9170d25b38b1130ca6c84ba967cf3215407",
+    "arcs/audit/src/e3_plants.py": "0a605b8f60bb418889cb11240160bded398ec7df119233cbdf9701d8728305a3",
+    "arcs/audit/src_register/fetch_util.py": "19cb3453fcfd878be6411d77fd4bc1b4c63248e59fdc02ac7c961f619af91498",
+    "arcs/audit/src_register/privacy_guard.py": "430f86dc087ee47d3e673ba280a6a54dbf79c59fe2b006eb9e283ffe7602a366",
+    "src/asdg/__init__.py": "bdf00040ece97394e2e9ad9d4338e3e6a9e82fa49a055aeac52f4c103bc50433",
+    "src/asdg/brainspan.py": "9a08943196f559be616c0e95275424a54afb624806ac3038b6583f8a1c96cdaa",
+    "src/asdg/cascade.py": "a67c48cacd67e8683e3cb416c6cdfb6a3f0c62a2bdc57f49f46e99982ef2245f",
+    "src/asdg/genesets.py": "cf4e8ac4ce2b9ccb7d3876a366be0700c98dbeeeefd50352e76e6cfc39503157",
+    "src/asdg/spatial.py": "a2c15f2d5e95fafb479e8c665a6c1c6e4cfccd8ed4582b594d924b1e4a35fac1",
+    "src/asdg/species.py": "e4c31ab39fc2378ebe6183baad5696e15ca0bf36d1753570b4bef0d10eb36111",
+    "src/asdg/verdict.py": "fe0c6c578fa9403326fc36da286ce196917f9d6a6aa8dd8152052df407035318"
+   },
+   "code_hash": "e11d0c406ef87a1a39ea1b33104aaef93f89e7836730684ff6cb2a4071d09265",
+   "checked_at": "2026-10-12T03:14:24+02:00"
+  }
+ }
+}

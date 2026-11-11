@@ -1,0 +1,52 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "hcpmmp1_figshare_metadata",
+ "gate": "G2",
+ "url": "https://api.figshare.com/v2/articles/3501911",
+ "kind": "file",
+ "date_utc": "2026-10-17T17:36:12+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "server": {
+  "status_code": null,
+  "content_length": null,
+  "last_modified": null,
+  "etag_md5": null,
+  "head": "not made (RUN_PLAN_amend_3 R45 (a): one GET)"
+ },
+ "fetch": {
+  "source": "download",
+  "path": "E:/data/asdg/hcpmmp1_figshare_metadata/carrier.json",
+  "date_utc": "2026-10-17T17:36:14+00:00",
+  "bytes": 6388,
+  "sha256": "abbcb182447d684452e272479b9a08bf3f0918e327324a8217ed88a46b104957"
+ },
+ "identity": {
+  "facts": {
+   "bytes": 6388,
+   "sha256": "abbcb182447d684452e272479b9a08bf3f0918e327324a8217ed88a46b104957",
+   "md5": "88c45e018bad46439f88333b6a9699bb",
+   "git_blob": "b6bffee7bb199a67fd9642b9080e4df8da1c69d9",
+   "has_crlf": false,
+   "git_blob_lf": null,
+   "bytes_lf": null
+  },
+  "references": [],
+  "comparison": {
+   "result": "identity recorded at download (no pre-freeze identity)",
+   "checks": []
+  }
+ },
+ "identifier_bearing": false,
+ "extraction": {
+  "object_path": "D:/RESEARCH/asd-imaging-genetics/artifacts/audit/wp4/G2/hcpmmp1_figshare_metadata/hcpmmp1_figshare_metadata_extract.json",
+  "object_sha256": "cc7d251db3876cc49b9374040a9c43b8bc0e0010e72be28522c47989e1a4cd90"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "extracted"
+}

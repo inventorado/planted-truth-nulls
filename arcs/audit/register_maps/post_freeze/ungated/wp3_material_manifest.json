@@ -1,0 +1,251 @@
+{
+ "schema": "a1_wp3_material_manifest_v1",
+ "gate": "ungated",
+ "final": true,
+ "written_utc": "2026-10-12T00:08:17+00:00",
+ "run": {
+  "commit": "2770069dfe63529dd8dcb8d6a79587cfa5e9f339",
+  "launch": "passed",
+  "code_hash": "7f9f04c8cf5628de49b008c500699f3e736f2de808bf584f3d5c6868b3fd9e40"
+ },
+ "objects": {
+  "brainspan": {
+   "status": "identity match",
+   "record_path": "ungated/brainspan.json",
+   "record_sha256": "72cd7cbc8973fb501ed53db82f05d540a161ba74edfb6c3372df65a32eb0c03e",
+   "files": {
+    "brainspan_expr": "e8d98aa02874f6b12fe7e071f4f88435b88256b6e5c4ba1d799e7b82aad28ee2",
+    "brainspan_rows": "dbfea0211aea42f6032084c3cdacb737943cbd786115dc5fde0f754708ae988b",
+    "brainspan_cols": "995a8e75b76459ba2bdbb51ad2db8970272f546baae14ddd3a7df6bc3ac18a01"
+   },
+   "final": true,
+   "adopted": true
+  },
+  "segura_790618": {
+   "status": "extracted",
+   "record_path": "ungated/segura_790618.json",
+   "record_sha256": "c3806d5487ced4411aae0c802e185f5c1e1cefb41912d8e4fbf430f35fefec34",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "object_path": "ungated/segura_790618/segura_790618_extract.json",
+   "object_sha256": "21c4c321e283c4b479afe6cb24d4bf40f0837bb6cf5df7ccb00872773502c1a5",
+   "final": true,
+   "attempts_recorded": 1
+  },
+  "segura_781986": {
+   "status": "extracted",
+   "record_path": "ungated/segura_781986.json",
+   "record_sha256": "ef932c374844cb8219ff4f208d2c76fe6bb7284b95e0a41bfbeaf81c6afdf5a9",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "object_path": "ungated/segura_781986/segura_781986_extract.json",
+   "object_sha256": "6f20944b27594826b32561908fbe8deaf0ce14a83a066a1c87bef7de6dd5be54",
+   "final": true,
+   "attempts_recorded": 1
+  },
+  "moreau2020mutations": {
+   "status": "extracted",
+   "record_path": "ungated/moreau2020mutations.json",
+   "record_sha256": "87fb8d5daa94e0c827b8d448229584987fbdef77fdd5b982e405cf7d111706d7",
+   "identity_result": "identity match",
+   "identifier_bearing": true,
+   "quarantined": true,
+   "failed_stage": "run",
+   "object_path": "ungated/moreau2020mutations/moreau2020mutations_extract.json",
+   "object_sha256": "8ef132c71831a9cb73d456cb7d3aae6f177a67b9ccba2d6cfb25179fcccd0874",
+   "final": true,
+   "attempts_recorded": 1,
+   "completion_record": "ungated/moreau2020mutations_completion.json",
+   "completion_sha256": "e0bfa267ce7ef19dc23a101e5111b9ea86d9eeca33ee1e3a9398dee04213f5cc",
+   "completed_from": "refused (stage failed)"
+  },
+  "segura_moesm2": {
+   "status": "extracted",
+   "record_path": "ungated/segura_moesm2.json",
+   "record_sha256": "8bc155c936603de2575d4d02607e3901ce356dc76b1dbcfae1257b98997e2faa",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "object_path": "ungated/segura_moesm2/segura_moesm2_extract.json",
+   "object_sha256": "fa8d49518f34e06b44bcfbb123105c780b2f6c2ee339bb288d63c49e96a9ceba",
+   "final": true,
+   "attempts_recorded": 1,
+   "readback": "pass",
+   "readback_guard": {
+    "stdio_violations": 0,
+    "stdio_passed": 0,
+    "warnings": {},
+    "logging": {
+     "DEBUG": 139539
+    }
+   }
+  },
+  "liu_sd7_labels": {
+   "status": "extracted",
+   "record_path": "ungated/liu_sd7_labels.json",
+   "record_sha256": "64d301368f5c1e128bb31c4ef6fb7ac609f9b7307595e56b5d494ea468bbe0de",
+   "identity_result": "identity match",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "object_path": "ungated/liu_sd7_labels/liu_sd7_labels_extract.json",
+   "object_sha256": "5dd86cac8098affeac3af397b580b98986db6afad7536e952ad6e58e39a38be5",
+   "final": true,
+   "attempts_recorded": 1
+  },
+  "liu_sd7_values": {
+   "status": "not run (SD7 pass 2: pass 1 reads not auditable (definition not applicable: SD7 labels unmatched))",
+   "final": true
+  },
+  "liu_sd7": {
+   "status": "not auditable (definition not applicable: SD7 labels unmatched)",
+   "final": true
+  },
+  "segura_decoder_790618": {
+   "status": "extracted",
+   "record_path": "ungated/segura_decoder_790618.json",
+   "record_sha256": "477b8919c3d0de1360f900373cb6e5078f42d32f57105cdd60b531054c38e434",
+   "identity_result": "identity recorded at download (no pre-freeze identity)",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "object_path": "ungated/segura_decoder_790618/segura_decoder_790618_extract.json",
+   "object_sha256": "eac712b0bdfd04be860caa57c4aa7f5a11730de708b9136211256cd900d5b504",
+   "final": true,
+   "decided": "extracted (R45 (f): decided once)"
+  },
+  "segura_decoder_781986": {
+   "status": "extracted",
+   "record_path": "ungated/segura_decoder_781986.json",
+   "record_sha256": "c044059ddd57cd1ad22bcd6084cdf1a83f4a52dc6bf44d07493c9fd733bb36a8",
+   "identity_result": "identity recorded at download (no pre-freeze identity)",
+   "identifier_bearing": false,
+   "quarantined": false,
+   "failed_stage": null,
+   "object_path": "ungated/segura_decoder_781986/segura_decoder_781986_extract.json",
+   "object_sha256": "07128ffc8e5dfdc7be07c517d00b3e45a6bbb33a544eb74b791306c245929a2c",
+   "final": true,
+   "decided": "extracted (R45 (f): decided once)"
+  }
+ },
+ "pins": {
+  "ahba_builds": {
+   "manifest_sha256": "aa16374367c9be9c1559f16973b6517a9960158aacdb17c93401812a97ae246b",
+   "builds": {
+    "primary-dk": {
+     "record_sha256": "8df7f5ed8fb844129c06890d9894115ca52aed378bc3f63abbf206b9543ec552",
+     "files": {
+      "counts": "7c98bbc22c8ab2e860985a8a8c6de08d4a4c6b24a0d9155bb5b2c4d8086cb963"
+     }
+    },
+    "primary-aal": {
+     "record_sha256": "a4c4e3f5b50f36ca32a6da7413f601e4702498ca2c3294042b366a1cfd14278c",
+     "files": {
+      "counts": "47c7a916789de8fee47e59545c298ab487afbf085c34a7c6e4579c5a1db0827c"
+     }
+    },
+    "primary-mist64": {
+     "record_sha256": "1216969945c810fb200fd99cff2eda9abaf9e3695b4e45e1beedccf5ad70a5eb",
+     "files": {
+      "counts": "7c687628194dbb1c8e424624f973bc46575f73cb4f64a9192de821e3362a9c28"
+     }
+    },
+    "perdonor-aal": {
+     "record_sha256": "81ec74743c9f6a3fd7c0e5aabe1b4e211d9f5bd7d1b64959bce8dbff765e5b54",
+     "files": {
+      "matrix_d1": "4152a1229be2c2c9fb2e4d857eb6c547ec4a497af696ed1072923717e6750cc2",
+      "matrix_d2": "813944c0b50279f1887a39f3bc0309029423c13c5e62e2998e956276f2b1a054",
+      "matrix_d3": "0e1bb68f0b82e7f5946aba808e87542a6e26fe2e5e4178e1148ba2c19ea0faa0",
+      "matrix_d4": "66a0366d7bed1bdc44f1d93a5d18e3b28aa3259520a33422bae65826c008fcae",
+      "matrix_d5": "0537e914f90b30c381a8c55b58499ede8189d1959ecf69958751db4400ad02c1",
+      "matrix_d6": "5a9bd5e40db3c8961b32a23fd9bf32a3b316d61efb3aa500595528ca0d7bfa64",
+      "counts": "47c7a916789de8fee47e59545c298ab487afbf085c34a7c6e4579c5a1db0827c"
+     }
+    },
+    "r10-liu-dk-samples": {
+     "record_sha256": "ba439d879fabb8682815c627d4ac990003cb1a7be9dc75ab49ccfdf82f4fe2f2",
+     "files": {
+      "matrix": "7d2779f42627a88b0849c17396b937330645e4784dfd9cd6e110e7bcbadc2897"
+     }
+    }
+   }
+  },
+  "references": {
+   "hgnc": {
+    "sha256": "6f43d6ff43aa9fdfa5fb2f20a20a7cace66e6e02e2a0dcf19d9b726e2e248d20",
+    "bytes": 16903161,
+    "result": "pin match"
+   },
+   "go_obo": {
+    "sha256": "e078d5406cc78976941578e984e0e3809bc6f4642f8fce404990f5f7c19b0c07",
+    "bytes": 31183660,
+    "result": "pin match"
+   },
+   "go_gaf": {
+    "sha256": "3ccc83fe9e18f8c41374787b0cd3b4fb9737a849096b1be5b9f1d3de9ffa7d27",
+    "bytes": 11727601,
+    "result": "pin match"
+   },
+   "pthr16": {
+    "sha256": "d605cf6019298892dd0de04c51190879a3df25a2e1c26d23cbca6890c8d2590a",
+    "bytes": 28683362,
+    "result": "pin match"
+   },
+   "gamba": {
+    "sha256": "442334c3cb487625349fc6e6be6fee121dbc7bdb35b9277133c04032ee0fa53a",
+    "bytes": 268733,
+    "result": "pin match"
+   },
+   "aal_atlas": {
+    "sha256": "40b1edfa68bccf06f608661b79655726f59485498b665bd9bac7f86394d6b9c2",
+    "bytes": 15144,
+    "result": "pin match"
+   },
+   "aal_info": {
+    "sha256": "22e758a7fd525b641ef099028f9329f932a3ff3c1acf65416a8b4574795bf0ee",
+    "bytes": 3716,
+    "result": "pin match"
+   },
+   "dk_info": {
+    "sha256": "abb69a9bf976a153b749eb5333e92cf03d4f61f2ce3efd34e49ea6e82f18729b",
+    "bytes": 2484,
+    "result": "pin match"
+   },
+   "segura_s4_raw": {
+    "sha256": "e1f4638c61e7fbc82a9867ffaff9c8ce8aa6683d88d784fcf9ffc81415721bea",
+    "bytes": 6575,
+    "result": "pin match"
+   }
+  },
+  "moreau_clone": {
+   "n_files_scanned": 320,
+   "n_strings": 722857,
+   "n_pinned_inside_clone_other_than_workbook": 0
+  }
+ },
+ "code": {
+  "wp3_material.py": "61ab1052626757297a346a606649e0e0b739ddff024e1a959aceee5fa06f75e9",
+  "wp3_layout.py": "84c9ca84cb14eecff8f6dcdc5cee5cc27abf2261e3257dd2bcfde84f85112fe2",
+  "wp3_genes.py": "7bd606e7d786e8f75191cc389fbd130f8fcc23edbffa17bbd41ca0d5ffd0c352",
+  "real_sources.py": "c93ce81929e295897ec5e3602e1f29ef2098fab163e9033eaa07bcf29027c61a",
+  "wp3_repro.py": "ff5cfa7ea719d7c493e3a9a06750d717a1277e8ebc16b31e407c8e62004d348a",
+  "fetch_extract.py": "cf0ac51e3cb717d58757213487d45e23043f7ab1186f9f1ab9d3465ab9a8db59",
+  "reparcel.py": "917706c1efbc9827f75dade49093fcf484641bc70dc45af87c832a76d61719e9",
+  "identity.py": "05ca32f7717d487dd35e36b06c46a6e4a77775eb2070099ef19ceb02891cd590",
+  "privacy_wrap.py": "192c31c02c40357fc021d88222dca3b12fb677a90da8c1b31f65e24b86c2c5a4",
+  "forms.py": "786fba4036d7cd77f4a1a350e35d1884a269464da2421ed7bf62ff609e70e8ef"
+ },
+ "decoder_attempts": {
+  "declared": 3,
+  "waits_s": [
+   600,
+   1800
+  ],
+  "rule": "RUN_PLAN_amend_3 R45 (f): transport failures only, counted across runs"
+ }
+}

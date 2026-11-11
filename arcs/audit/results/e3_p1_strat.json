@@ -1,0 +1,29 @@
+{
+ "n_parcels": 34,
+ "rho": -0.8111535523300227,
+ "p_S1": 0.00019998000199980003,
+ "p_S2": 0.0021997800219978004,
+ "p_S1c": 0.00019998000199980003,
+ "p_S2c": 0.0016998300169983002,
+ "p_L1_joint": 0.0021997800219978004,
+ "p_L1_strat": 0.0016998300169983002,
+ "p_S3_vasa": 0.00029997000299970003,
+ "n_null": 10000,
+ "seed": 20260923,
+ "reproduced_committed": {
+  "parcels": true,
+  "rho": true,
+  "p_S1": true,
+  "p_S2": true
+ },
+ "criterion": {
+  "rho_in_range": true,
+  "L1_joint": true,
+  "L1_strat": true,
+  "S3": true
+ },
+ "source": "e3_p1_myelin.json (rho, S1, S2 reproduced exactly; S3 copied)",
+ "script_sha256": "9f51e311cfe2a8c919d87aecd6c74b146976a114e2952ee3d43b52db13edcec6",
+ "commit": "4fd14c4534d63f74fec73bab26e1c98e56bbf0d2",
+ "P1_pass_if_strat_adopted": true
+}

@@ -1,0 +1,182 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "giacomel_xlsx_c022a29_a5",
+ "gate": "G2",
+ "url": "https://github.com/alegiac95/METAXCAN_TWAS_ANALYSIS/blob/c022a29bb74009f870a14abc1e0e6c1c8fcfb81c/data/ENIGMA/ENIGMA_structural_organised.xlsx",
+ "kind": "workbook",
+ "date_utc": "2026-10-21T01:16:24+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "fetch": {
+  "source": "pinned copy on disk",
+  "path_sha256": "c7ecfc4e6b89a44d158fec747190e0c54685c2d6013a1456a6f6ddb3db7f8ddc",
+  "screen_hits": {
+   "V": 0,
+   "N": 0
+  }
+ },
+ "identity": {
+  "facts": {
+   "bytes": 16118,
+   "sha256": "a4d4feecb028366c6ccd2ee06b216fc2be758e9b6cf92b039549b78ab5d888c8",
+   "md5": "c5f9670d9c90617537f3878652a8acec",
+   "git_blob": "9fb55217260230200ab6839099de77a22650bd69",
+   "has_crlf": false,
+   "git_blob_lf": null,
+   "bytes_lf": null
+  },
+  "references": [
+   {
+    "basis": "git blob",
+    "bytes": 16118,
+    "git_blob": "9fb55217260230200ab6839099de77a22650bd69"
+   },
+   {
+    "basis": "sha256 of the copy on disk",
+    "bytes": 16118,
+    "sha256": "a4d4feecb028366c6ccd2ee06b216fc2be758e9b6cf92b039549b78ab5d888c8"
+   },
+   {
+    "basis": "git blob",
+    "bytes": 16118,
+    "git_blob": "9fb55217260230200ab6839099de77a22650bd69"
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "git blob",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    },
+    {
+     "basis": "sha256 of the copy on disk",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    },
+    {
+     "basis": "git blob",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "sheets": {
+  "n_sheets": 3,
+  "n_declared": 2,
+  "declared_found": 2,
+  "n_undeclared": 1,
+  "undeclared_not_fetched": true,
+  "name_sha256": [
+   "0905f7f59021c2a85f1c0a50d7c252a3e6c6ee006514f01d7264097f1fd4337a",
+   "7b5944144275ea10a17c903d2d06c015e34740dab2ea4930aeb7573b43bb635e",
+   "16c995252b9fe1a011aadf5bea4210362cd317ea2f9471392222165d812cbb8f"
+  ],
+  "screen_hits": {
+   "V": 0,
+   "N": 0
+  },
+  "declared": [
+   {
+    "sheet_key": "thickness",
+    "name_sha256": "7b5944144275ea10a17c903d2d06c015e34740dab2ea4930aeb7573b43bb635e",
+    "rules": "",
+    "identifier_bearing": false,
+    "n_rows": 35,
+    "n_cols": 8,
+    "n_cols_dimension_tag": 8,
+    "id_wording_cells": 0,
+    "bare_subject_headers": 0,
+    "id_value_hits_total": 0,
+    "header_rows_tried": 1,
+    "header_row": 0,
+    "positions_handed": [
+     0,
+     2,
+     4
+    ],
+    "n_rows_skipped_before_block": 0,
+    "n_block_rows": 34,
+    "n_cells_after_block": 0,
+    "n_after_block_matching_dk": 0,
+    "n_after_block_dropped_kind": 0
+   },
+   {
+    "sheet_key": "subcortical",
+    "name_sha256": "16c995252b9fe1a011aadf5bea4210362cd317ea2f9471392222165d812cbb8f",
+    "rules": "",
+    "identifier_bearing": false,
+    "n_rows": 8,
+    "n_cols": 8,
+    "n_cols_dimension_tag": 8,
+    "id_wording_cells": 0,
+    "bare_subject_headers": 0,
+    "id_value_hits_total": 0,
+    "header_rows_tried": 1,
+    "header_row": 0,
+    "positions_handed": [
+     0,
+     2,
+     4
+    ],
+    "n_rows_skipped_before_block": 0,
+    "n_block_rows": 7,
+    "n_cells_after_block": 0,
+    "n_after_block_matching_dk": 0,
+    "n_after_block_dropped_kind": 0
+   }
+  ],
+  "access_log": [
+   "7b5944144275ea10a17c903d2d06c015e34740dab2ea4930aeb7573b43bb635e",
+   "16c995252b9fe1a011aadf5bea4210362cd317ea2f9471392222165d812cbb8f"
+  ],
+  "access_log_declared_only": true,
+  "parts_opened_undeclared": 0,
+  "chartsheets": 0
+ },
+ "positions_consumed": {
+  "thickness": [
+   0,
+   2,
+   4
+  ],
+  "subcortical": [
+   0,
+   2,
+   4
+  ]
+ },
+ "positions_handed": {
+  "thickness": [
+   0,
+   2,
+   4
+  ],
+  "subcortical": [
+   0,
+   2,
+   4
+  ]
+ },
+ "identifier_bearing": false,
+ "extraction": {
+  "object_path": "D:/RESEARCH/asd-imaging-genetics/artifacts/audit/wp4/G2/giacomel_xlsx_c022a29_a5/giacomel_xlsx_c022a29_a5_extract.json",
+  "object_sha256": "cba5796418c087273cdf5f0050485c706672b7fc134768f6c674549b1910d471"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "extracted"
+}

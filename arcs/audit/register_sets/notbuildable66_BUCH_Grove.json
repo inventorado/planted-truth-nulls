@@ -1,0 +1,63 @@
+{
+ "set_id": "notbuildable66_BUCH_Grove",
+ "status": "not auditable (S undefined: comparator not buildable pre-freeze)",
+ "definition": "comparator of BUCH:Grove (methods: Grove et. al, ASD common variants; figure: ASD Grove et al.)",
+ "reason": "comparator not buildable pre-freeze -- register 1.6 resolution rule (v6.6): R-e: ref 19 distributes several gene lists and none as the set the paper names ('ASD common variants') -- Supplementary Table 4 (the protein-coding genes of the top loci), Table 10 (the top 25 MAGMA genes; red = Bonferroni-significant) and Table 16 (credible-SNP / Hi-C genes); the list cannot be read unambiguously",
+ "comparator_v6_6": {
+  "paper": "buch2023asdsubgroups",
+  "paper_received": "2021-11-29",
+  "names_in_paper": {
+   "methods": "Grove et. al, ASD common variants",
+   "figure": "ASD Grove et al."
+  },
+  "reference": {
+   "19": "Grove et al. 2019, Nat Genet 51:431"
+  },
+  "R-a_source": "ref 19 (Grove 2019 Supplementary Information)",
+  "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-019-0344-8/MediaObjects/41588_2019_344_MOESM1_ESM.pdf",
+  "release": "n/a",
+  "R-b_release_outcome": "n/a",
+  "R-c_threshold": "n/a",
+  "R-d_names": "n/a",
+  "access_date": "2026-09-27",
+  "files": [
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\grove2019_magma\\41588_2019_344_MOESM1_ESM.pdf",
+    "sha256": "0de06bc6576481404a98e11702872620f924231e4dbfc1f04bf910a5e6b151e7"
+   }
+  ],
+  "R-e": "R-e: ref 19 distributes several gene lists and none as the set the paper names ('ASD common variants') -- Supplementary Table 4 (the protein-coding genes of the top loci), Table 10 (the top 25 MAGMA genes; red = Bonferroni-significant) and Table 16 (credible-SNP / Hi-C genes); the list cannot be read unambiguously"
+ },
+ "cells_detail": [
+  {
+   "cell": "BUCH-E-Grove-S1",
+   "row": 357,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-Grove-S2",
+   "row": 358,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-Grove-S3",
+   "row": 359,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-Grove-S4",
+   "row": 360,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  }
+ ],
+ "cells": [
+  "BUCH-E-Grove-S1",
+  "BUCH-E-Grove-S2",
+  "BUCH-E-Grove-S3",
+  "BUCH-E-Grove-S4"
+ ]
+}

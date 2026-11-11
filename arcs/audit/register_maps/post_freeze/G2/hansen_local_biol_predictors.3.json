@@ -1,0 +1,62 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "hansen_local_biol_predictors",
+ "gate": "G2",
+ "url": "https://none.invalid/registered-prefix-copy",
+ "kind": "file",
+ "date_utc": "2026-10-20T22:27:47+00:00",
+ "pinned": {
+  "pinned_bytes": 12216,
+  "pinned_sha256": "d73853619b543bf9c84964933d9d2801a4d86aff777bafb23f76268eb459e502"
+ },
+ "url_note": "no URL registered: the incorporated draft's local copy, held to its registered prefix",
+ "fetch": {
+  "source": "pinned copy on disk",
+  "path_sha256": "213c76921cb12c3e403e9fb5c63d431fd8aad481174246c87f6387dc03836b05",
+  "screen_hits": {
+   "V": 0,
+   "N": 0
+  }
+ },
+ "identity": {
+  "facts": {
+   "bytes": 12216,
+   "sha256": "d73853619b543bf9c84964933d9d2801a4d86aff777bafb23f76268eb459e502",
+   "md5": "ca071c37a96a424fb1fa3d6068846606",
+   "git_blob": "02d5c6299bc961feeb33b9b95538d96e927f28b4",
+   "has_crlf": true,
+   "git_blob_lf": "7eb2a89f87ae4fe5533396102c2b9900a899a0fb",
+   "bytes_lf": 12148
+  },
+  "references": [
+   {
+    "basis": "pinned sha256",
+    "sha256": "d73853619b543bf9c84964933d9d2801a4d86aff777bafb23f76268eb459e502",
+    "bytes": 12216
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "pinned sha256",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "identifier_bearing": false,
+ "extraction": {
+  "object_path": "D:/RESEARCH/asd-imaging-genetics/artifacts/audit/wp4/G2/hansen_local_biol_predictors/hansen_local_biol_predictors_extract.json",
+  "object_sha256": "075f4d110d459b13f24f01e0d1f8976425035f3bbadb1db56c472325a0eed5fa"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {},
+ "status": "extracted"
+}

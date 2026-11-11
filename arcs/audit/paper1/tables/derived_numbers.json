@@ -1,0 +1,524 @@
+{
+ "inputs": {
+  "arcs/audit/results/a1_run/G2/cells.jsonl": {
+   "last_commit": "04818fb",
+   "sha256": "a8f8b4cf42813f3e6d70f0dd99f9d0f954de28c2b9024a8666c56893bfaaa78a"
+  },
+  "arcs/audit/results/a1_run/ungated/cells.jsonl": {
+   "last_commit": "09e93a9",
+   "sha256": "392adb05fa94437a9a494c4bf527d91ef50e54bffdb4c206e92266a4bf63b50d"
+  },
+  "arcs/audit/results/e3_a3_leg_diagnostics.json": {
+   "last_commit": "f6b46c3",
+   "sha256": "f898c90fc97a1d3c319a58510eb10182688257a9e1f533048d56a8d1f4f1fbdf"
+  },
+  "arcs/audit/results/e3_catch_curves_a5.json": {
+   "last_commit": "7889797",
+   "sha256": "b9ff7fed11c8b1905f86e1b77506b5dfa26fd393bd8ee6690bc47aa60921a68a"
+  },
+  "arcs/audit/results/e3_gates.json": {
+   "last_commit": "bda7450",
+   "sha256": "5c4dfb652d18d4d79e7fb3e506756ef276d0268347c84126c38cae324e2fbecf"
+  },
+  "arcs/audit/results/e3_gates_a3.json": {
+   "last_commit": "f6b46c3",
+   "sha256": "105e81f1674aaf600af8c22cefd3fc547badd74f2dba27e10f6f8315bfc857b0"
+  },
+  "arcs/audit/results/e3_p1_myelin.json": {
+   "last_commit": "4561221",
+   "sha256": "f1c76e05ae3c1a4df82441588bb9bce7c4bbd5bede5411361e9d95997a1f0fb0"
+  },
+  "arcs/audit/results/e3_p1_strat.json": {
+   "last_commit": "6501abb",
+   "sha256": "bb6e2c08b92d243bbf482f21dd358b7d23d4df31cd0b2c9b9f70df1b11b57469"
+  },
+  "arcs/audit/results/e3_realplants.json": {
+   "last_commit": "4561221",
+   "sha256": "9f371c8174376bb68398e93cdca14ddf757c589c35b8a63b984cc3ffbb38151e"
+  },
+  "arcs/audit/results/e4_r1_cao.json": {
+   "last_commit": "0e72153",
+   "sha256": "19bf9063d01671106f310f5edad768bbad088c8fa9cea191a9f3e3ff5b1f34d8"
+  },
+  "arcs/audit/src/e3_gates.py": {
+   "last_commit": "4fd14c4",
+   "sha256": "df8e87350268c06a800737a5ea6fd4f25a5ef2ac708b4064e0a3ae8a1d7989a2"
+  }
+ },
+ "numbers": {
+  "C1.beta_ours": {
+   "rounding": "3 dp",
+   "src": "results/e3_realplants.json:C1_beta.ours",
+   "value": 0.679
+  },
+  "C1.beta_wei": {
+   "rounding": "as stored",
+   "src": "results/e3_realplants.json:C1_beta.wei",
+   "value": 0.631
+  },
+  "C1.p_G3": {
+   "rounding": "3 dp",
+   "src": "results/e3_realplants.json:C1_cascade.p_G3",
+   "value": 0.014
+  },
+  "C1.p_L1_joint": {
+   "rounding": "full precision",
+   "src": "results/e3_realplants.json:C1_cascade.p_L1_joint",
+   "value": 9.999000099990002e-05
+  },
+  "J1": {
+   "rounding": "3 dp",
+   "src": "results/e3_gates.json:{adopted_level1_pair,j1_adopted,j1_state,gates.j1_joint,gates.j1_strat}; alpha from src/e3_gates.py:52; verdict catch from results/e3_catch_curves_a5.json (C-gene a=.9)",
+   "value": {
+    "adopted": false,
+    "adopted_pair": "strat",
+    "alpha": 0.05,
+    "joint": {
+     "catch": {
+      "CATCH J1[joint] aal C-gene a=0.9": {
+       "k": 229,
+       "n": 296,
+       "pass_": false,
+       "rate3": 0.774,
+       "status": "fail: 6.7% of the plants in generator cell grf30/step1 unmatched / not applicable / degenerate (> 5 %)"
+      },
+      "CATCH J1[joint] dk C-gene a=0.9": {
+       "k": 210,
+       "n": 299,
+       "pass_": false,
+       "rate3": 0.702,
+       "status": "ok"
+      }
+     },
+     "fa_all_pass": true,
+     "fa_range3": [
+      0.027,
+      0.037
+     ]
+    },
+    "state": "fail",
+    "strat": {
+     "catch": {
+      "CATCH J1[strat] aal C-gene a=0.9": {
+       "k": 292,
+       "n": 296,
+       "pass_": false,
+       "rate3": 0.986,
+       "status": "fail: 6.7% of the plants in generator cell grf30/step1 unmatched / not applicable / degenerate (> 5 %)"
+      },
+      "CATCH J1[strat] dk C-gene a=0.9": {
+       "k": 272,
+       "n": 299,
+       "pass_": true,
+       "rate3": 0.91,
+       "status": "ok"
+      }
+     },
+     "fa_all_pass": true,
+     "fa_range3": [
+      0.024,
+      0.041
+     ]
+    },
+    "verdict_catch_alpha_025": {
+     "aal": 0.666,
+     "dk": 0.585
+    }
+   }
+  },
+  "P1.p_L1_strat": {
+   "rounding": "4 dp",
+   "src": "results/e3_p1_strat.json:p_L1_strat",
+   "value": 0.0017
+  },
+  "P1.rho": {
+   "rounding": "3 dp",
+   "src": "results/e3_p1_myelin.json:rho",
+   "value": -0.811
+  },
+  "P2.beta_FC": {
+   "rounding": "3 dp",
+   "src": "results/e3_realplants.json:P2_beta_check.FC.ours",
+   "value": 0.45
+  },
+  "P2.beta_NOS": {
+   "rounding": "3 dp",
+   "src": "results/e3_realplants.json:P2_beta_check.NOS.ours",
+   "value": 0.678
+  },
+  "P2.beta_SD": {
+   "rounding": "3 dp",
+   "src": "results/e3_realplants.json:P2_beta_check.SD.ours",
+   "value": 0.637
+  },
+  "R1.our_sampler_psig_mean": {
+   "rounding": "4 dp",
+   "src": "results/e4_r1_cao.json:g2_descriptor.psig.mean",
+   "value": 0.0363
+  },
+  "R1.our_sampler_psig_meanabs": {
+   "rounding": "4 dp",
+   "src": "results/e4_r1_cao.json:g2_descriptor.psig.meanabs",
+   "value": 0.0515
+  },
+  "c_align_a07.binding_leg": {
+   "rounding": "lowest single-leg catch",
+   "src": "results/e3_a3_leg_diagnostics.json:c_align[a=.7].{naive,site,species}",
+   "value": {
+    "aal|brand-100": "parametric",
+    "aal|fill-100": "gene-side",
+    "aal|rand-25": "gene-side",
+    "dk|brand-100": "gene-side",
+    "dk|fill-100": "gene-side",
+    "dk|rand-25": "gene-side"
+   }
+  },
+  "c_align_a07.n_gene_side_binds": {
+   "rounding": "count of 6",
+   "src": "same",
+   "value": [
+    5,
+    6
+   ]
+  },
+  "cost_vs_site.C_align_a07": {
+   "rounding": "loss % 1 dp",
+   "src": "results/e3_a3_leg_diagnostics.json:c_align[a=.7].{site,verdict}",
+   "value": {
+    "aal|brand-100": {
+     "rel_loss_pct": 83.0,
+     "site": 0.622,
+     "verdict": 0.106
+    },
+    "aal|fill-100": {
+     "rel_loss_pct": 70.6,
+     "site": 0.618,
+     "verdict": 0.182
+    },
+    "aal|rand-25": {
+     "rel_loss_pct": 51.9,
+     "site": 0.724,
+     "verdict": 0.348
+    },
+    "dk|brand-100": {
+     "rel_loss_pct": 59.1,
+     "site": 0.518,
+     "verdict": 0.212
+    },
+    "dk|fill-100": {
+     "rel_loss_pct": 54.8,
+     "site": 0.438,
+     "verdict": 0.198
+    },
+    "dk|rand-25": {
+     "rel_loss_pct": 42.9,
+     "site": 0.616,
+     "verdict": 0.352
+    }
+   }
+  },
+  "cost_vs_site.C_align_a07_pct_range": {
+   "rounding": "whole %, min-max",
+   "src": "results/e3_a3_leg_diagnostics.json:c_align (6 class x kind cells at a=.7)",
+   "value": [
+    43,
+    83
+   ]
+  },
+  "cost_vs_site.C_gene_a09_pct_range": {
+   "rounding": "whole %, min-max over 2 atlas classes",
+   "src": "results/e3_catch_curves_a5.json (aal, dk; C-gene, a=.9)",
+   "value": [
+    28,
+    31
+   ]
+  },
+  "cost_vs_site.C_sp_a09_pct_max": {
+   "rounding": "whole %, max",
+   "src": "results/e3_catch_curves_a5.json (aal, dk; C-sp, a=.9)",
+   "value": 3
+  },
+  "cost_vs_site.curves": {
+   "rounding": "rates 4 dp; loss % 1 dp",
+   "src": "results/e3_catch_curves_a5.json:curves[].{rate,legs.site.rate}",
+   "value": {
+    "aal|C-gene|a=0.3": {
+     "n": 300,
+     "rel_loss_pct": 73.5,
+     "site_rate": 0.2767,
+     "verdict_rate": 0.0733
+    },
+    "aal|C-gene|a=0.6": {
+     "n": 299,
+     "rel_loss_pct": 45.4,
+     "site_rate": 0.7592,
+     "verdict_rate": 0.4147
+    },
+    "aal|C-gene|a=0.9": {
+     "n": 296,
+     "rel_loss_pct": 30.6,
+     "site_rate": 0.9595,
+     "verdict_rate": 0.6655
+    },
+    "aal|C-sp|a=0.3": {
+     "n": 300,
+     "rel_loss_pct": 81.6,
+     "site_rate": 0.2533,
+     "verdict_rate": 0.0467
+    },
+    "aal|C-sp|a=0.6": {
+     "n": 300,
+     "rel_loss_pct": 52.2,
+     "site_rate": 0.6767,
+     "verdict_rate": 0.3233
+    },
+    "aal|C-sp|a=0.9": {
+     "n": 300,
+     "rel_loss_pct": 2.7,
+     "site_rate": 0.9967,
+     "verdict_rate": 0.97
+    },
+    "dk|C-gene|a=0.3": {
+     "n": 299,
+     "rel_loss_pct": 62.7,
+     "site_rate": 0.1706,
+     "verdict_rate": 0.0635
+    },
+    "dk|C-gene|a=0.6": {
+     "n": 299,
+     "rel_loss_pct": 44.1,
+     "site_rate": 0.5084,
+     "verdict_rate": 0.2843
+    },
+    "dk|C-gene|a=0.9": {
+     "n": 299,
+     "rel_loss_pct": 28.0,
+     "site_rate": 0.8127,
+     "verdict_rate": 0.5853
+    },
+    "dk|C-sp|a=0.3": {
+     "n": 300,
+     "rel_loss_pct": 77.0,
+     "site_rate": 0.2033,
+     "verdict_rate": 0.0467
+    },
+    "dk|C-sp|a=0.6": {
+     "n": 300,
+     "rel_loss_pct": 41.4,
+     "site_rate": 0.74,
+     "verdict_rate": 0.4333
+    },
+    "dk|C-sp|a=0.9": {
+     "n": 300,
+     "rel_loss_pct": 3.0,
+     "site_rate": 1.0,
+     "verdict_rate": 0.97
+    }
+   }
+  },
+  "cost_vs_site.definition": {
+   "src": "arcs/audit/ARC.md:291-294",
+   "value": "relative loss = 1 - (verdict catch rate)/(class-stratified site-leg-alone catch rate), per class and strength; C-gene and C-sp at a=.9 from e3_catch_curves_a5, C-align at a=.7 from e3_a3_leg_diagnostics. Reproduces ARC.md:291-294 (28-31 / 43-83 / <=3)."
+  },
+  "fa_a3.by_group": {
+   "rounding": "rate = k/n with missing/blocked kept in n (non-rejections, e3_gates_a3.py:151); worst_excl = max k/(n - missing - blocked)",
+   "src": "results/e3_gates_a3.json:gates.{species_fa,verdict_fa_align,verdict_fa_existing}[].{k,n,missing_n,blocked_n,rate}",
+   "value": {
+    "species_fa": {
+     "blocked": 3980,
+     "max_missing_or_blocked": 116,
+     "max_rate": 0.022,
+     "missing": 0,
+     "n_per_stratum": [
+      1000
+     ],
+     "n_strata": 372,
+     "worst_excl": {
+      "excluded": 94,
+      "gate": "SPECIES FA dk-ctx grad w=0.9 multi-1000",
+      "k": 20,
+      "n": 1000,
+      "rate3": 0.022,
+      "rate4": 0.0221
+     }
+    },
+    "verdict_fa_align": {
+     "blocked": 0,
+     "max_missing_or_blocked": 116,
+     "max_rate": 0.019,
+     "missing": 3980,
+     "n_per_stratum": [
+      1000
+     ],
+     "n_strata": 372,
+     "worst_excl": {
+      "excluded": 36,
+      "gate": "VERDICT FA cc200 wmod w=0.9 multi-1000",
+      "k": 19,
+      "n": 1000,
+      "rate3": 0.02,
+      "rate4": 0.0197
+     }
+    },
+    "verdict_fa_existing": {
+     "blocked": 0,
+     "max_missing_or_blocked": 15,
+     "max_rate": 0.004,
+     "missing": 65,
+     "n_per_stratum": [
+      500
+     ],
+     "n_strata": 18,
+     "worst_excl": {
+      "excluded": 14,
+      "gate": "VERDICT FA cc200 F-mod step=1",
+      "k": 2,
+      "n": 500,
+      "rate3": 0.004,
+      "rate4": 0.0041
+     }
+    }
+   }
+  },
+  "fa_a3.n_verdict_strata": {
+   "rounding": "count",
+   "src": "same",
+   "value": 390
+  },
+  "table4.all_classes_42": {
+   "rounding": "counts",
+   "src": "same, all cell classes (42, as headline.json)",
+   "value": {
+    "gene null only (uniform)": {
+     "not_detectable_ok": 29,
+     "other_status": {
+      "uninformative": 1
+     },
+     "survive": 0,
+     "with_verdict": 30
+    },
+    "none": {
+     "not_detectable_ok": 2,
+     "other_status": {},
+     "survive": 0,
+     "with_verdict": 2
+    },
+    "other": {
+     "not_detectable_ok": 2,
+     "other_status": {},
+     "survive": 0,
+     "with_verdict": 2
+    },
+    "spatial null only": {
+     "not_detectable_ok": 8,
+     "other_status": {},
+     "survive": 0,
+     "with_verdict": 8
+    }
+   }
+  },
+  "table4.by_paper": {
+   "rounding": "counts",
+   "src": "results/a1_run/{G2,ungated}/cells.jsonl: claims with a verdict; target_key, frozen11_row, reading, r27[*].{labels,status,power_columns,reading_class}",
+   "value": {
+    "hansen2022local": {
+     "frozen11": false,
+     "inference_level": [
+      "none"
+     ],
+     "n": 1,
+     "power_columns": [],
+     "power_label": {
+      "not applicable (no set S: a fixed component)": 1
+     },
+     "reading": {
+      "does not pass at component level (Level 0 and site leg at .025)": 1
+     },
+     "reading_class": []
+    },
+    "leyhausen2024intrinsic": {
+     "frozen11": false,
+     "inference_level": [
+      "gene null only (uniform)"
+     ],
+     "n": 27,
+     "power_columns": [
+      "V-AAL",
+      "V-DK"
+     ],
+     "power_label": {
+      "brain-enrichment (N1) confound untested": 24,
+      "power not measured at this set size": 27,
+      "power not measured in this class": 27,
+      "species leg untested (gradient)": 8
+     },
+     "reading": {
+      "not detectable at this power": 27
+     },
+     "reading_class": [
+      "dk-ctx"
+     ]
+    },
+    "patel2021virtual": {
+     "frozen11": true,
+     "inference_level": [
+      "gene null only (uniform)"
+     ],
+     "n": 3,
+     "power_columns": [
+      "V-AAL",
+      "V-DK"
+     ],
+     "power_label": {
+      "power not measured in this class": 3
+     },
+     "reading": {
+      "not detectable at this power": 2,
+      "uninformative": 1
+     },
+     "reading_class": [
+      "dk-ctx"
+     ]
+    }
+   }
+  },
+  "table4.claims_only": {
+   "rounding": "counts",
+   "src": "results/a1_run/G2/cells.jsonl + results/a1_run/ungated/cells.jsonl (cell_class=='claim', verdict.kind present, not descriptor_row)",
+   "value": {
+    "gene null only (uniform)": {
+     "not_detectable_ok": 29,
+     "other_status": {
+      "uninformative": 1
+     },
+     "survive": 0,
+     "with_verdict": 30
+    },
+    "none": {
+     "not_detectable_ok": 1,
+     "other_status": {},
+     "survive": 0,
+     "with_verdict": 1
+    }
+   }
+  },
+  "table4.max_paper_share": {
+   "rounding": "paper, n, of",
+   "src": "same",
+   "value": [
+    "leyhausen2024intrinsic",
+    27,
+    31
+   ]
+  },
+  "table4.n_claims_with_verdict": {
+   "src": "same",
+   "value": 31
+  },
+  "table4.n_power_not_measured_in_class": {
+   "rounding": "count",
+   "src": "same; claims whose r27 labels include 'power not measured in this class'",
+   "value": 30
+  }
+ }
+}

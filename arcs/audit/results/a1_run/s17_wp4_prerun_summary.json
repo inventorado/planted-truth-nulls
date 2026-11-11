@@ -1,0 +1,192 @@
+{
+ "what": "RUN_PLAN \u00a717 pre-WP4 reruns (a1_audit.s17_launch)",
+ "commit": "36a4fe69d3be20096211e1a050770efbf96ee473",
+ "tag": "s17_wp4",
+ "analysis": "arcs/audit/run_manifests/s17_wp4_prerun.json",
+ "exit_codes": {
+  "ok": 0,
+  "refused": 2,
+  "paused": 4,
+  "suite": 10,
+  "p1": 11,
+  "plants": 20,
+  "rerun": 30,
+  "differs": 40,
+  "missing": 41
+ },
+ "started": "2026-10-16T19:33:46+00:00",
+ "steps": [
+  {
+   "step": "suite",
+   "argv": [
+    "python.exe",
+    "-X",
+    "utf8",
+    "-u",
+    "-m",
+    "a1_audit.tests.suite",
+    "--require-docker",
+    "--out",
+    "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results\\a1_run\\rerun_s17_wp4\\suite_36a4fe6.json"
+   ],
+   "started": "2026-10-16T19:33:48+00:00",
+   "log": "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results\\a1_run\\rerun_s17_wp4\\launch_logs\\36a4fe6\\suite.log",
+   "exit": 0,
+   "finished": "2026-10-16T21:05:07+00:00",
+   "seconds": 5478.8
+  },
+  {
+   "step": "p1",
+   "argv": [
+    "python.exe",
+    "-X",
+    "utf8",
+    "-u",
+    "D:\\tmp\\asdg_wt_a1_s17_36a4fe6\\arcs\\audit\\src\\a1_audit\\tests\\p1_worktree.py",
+    "--commit",
+    "36a4fe69d3be20096211e1a050770efbf96ee473",
+    "--out",
+    "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\run_manifests\\plants\\rerun_s17_wp4\\P1\\p1_worktree_36a4fe6.json"
+   ],
+   "started": "2026-10-16T21:05:07+00:00",
+   "log": "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results\\a1_run\\rerun_s17_wp4\\launch_logs\\36a4fe6\\p1.log",
+   "exit": 0,
+   "finished": "2026-10-16T21:05:48+00:00",
+   "seconds": 41.5
+  },
+  {
+   "step": "plants",
+   "argv": [
+    "python.exe",
+    "-X",
+    "utf8",
+    "-u",
+    "-m",
+    "a1_audit.plants.driver",
+    "all",
+    "--commit",
+    "36a4fe69d3be20096211e1a050770efbf96ee473",
+    "--jobs",
+    "20",
+    "--rerun-tag",
+    "s17_wp4"
+   ],
+   "started": "2026-10-16T21:05:48+00:00",
+   "log": "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results\\a1_run\\rerun_s17_wp4\\launch_logs\\36a4fe6\\plants.log",
+   "exit": 0,
+   "finished": "2026-10-16T22:43:59+00:00",
+   "seconds": 5890.7
+  },
+  {
+   "step": "rerun_verdict",
+   "argv": [
+    "python.exe",
+    "-X",
+    "utf8",
+    "-u",
+    "-m",
+    "a1_audit.run",
+    "--commit",
+    "36a4fe69d3be20096211e1a050770efbf96ee473",
+    "--pass",
+    "verdict",
+    "--gate",
+    "none",
+    "--jobs",
+    "20",
+    "--rerun-tag",
+    "s17_wp4"
+   ],
+   "started": "2026-10-16T22:44:51+00:00",
+   "log": "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results\\a1_run\\rerun_s17_wp4\\launch_logs\\36a4fe6\\rerun_verdict.log",
+   "exit": 0,
+   "finished": "2026-10-16T23:44:47+00:00",
+   "seconds": 3595.7
+  },
+  {
+   "step": "rerun_descriptor",
+   "argv": [
+    "python.exe",
+    "-X",
+    "utf8",
+    "-u",
+    "-m",
+    "a1_audit.run",
+    "--commit",
+    "36a4fe69d3be20096211e1a050770efbf96ee473",
+    "--pass",
+    "descriptor",
+    "--gate",
+    "none",
+    "--jobs",
+    "20",
+    "--rerun-tag",
+    "s17_wp4"
+   ],
+   "started": "2026-10-16T23:44:47+00:00",
+   "log": "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results\\a1_run\\rerun_s17_wp4\\launch_logs\\36a4fe6\\rerun_descriptor.log",
+   "exit": 0,
+   "finished": "2026-10-17T15:30:01+00:00",
+   "seconds": 56713.9
+  },
+  {
+   "step": "rerun_sensitivity",
+   "argv": [
+    "python.exe",
+    "-X",
+    "utf8",
+    "-u",
+    "-m",
+    "a1_audit.run",
+    "--commit",
+    "36a4fe69d3be20096211e1a050770efbf96ee473",
+    "--pass",
+    "sensitivity",
+    "--gate",
+    "none",
+    "--jobs",
+    "20",
+    "--rerun-tag",
+    "s17_wp4",
+    "--resume-after-pause",
+    "orchestrator 2026-10-17: resume; compute overrun only (30.5 vs 14.2 process-h estimate, 2x pause), no validity impact; operator rule: compute is fine"
+   ],
+   "started": "2026-10-17T17:12:14+00:00",
+   "log": "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results\\a1_run\\rerun_s17_wp4\\launch_logs\\36a4fe6\\rerun_sensitivity.log",
+   "exit": 0,
+   "finished": "2026-10-17T17:14:53+00:00",
+   "seconds": 158.9
+  },
+  {
+   "step": "compare",
+   "argv": [
+    "python.exe",
+    "-X",
+    "utf8",
+    "-u",
+    "-m",
+    "a1_audit.s17_compare",
+    "--old",
+    "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results\\a1_run\\ungated",
+    "--new",
+    "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results\\a1_run\\rerun_s17_wp4\\ungated",
+    "--out",
+    "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results\\a1_run\\s17_wp4_compare.json",
+    "--manifest",
+    "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\run_manifests\\s17_wp4_prerun.json"
+   ],
+   "started": "2026-10-17T17:14:53+00:00",
+   "log": "D:\\RESEARCH\\asd-imaging-genetics\\arcs\\audit\\results\\a1_run\\rerun_s17_wp4\\launch_logs\\36a4fe6\\compare.log",
+   "exit": 1,
+   "finished": "2026-10-17T17:14:59+00:00",
+   "seconds": 6.5
+  }
+ ],
+ "worktree": {
+  "path": "D:\\tmp\\asdg_wt_a1_s17_36a4fe6",
+  "state": "ready"
+ },
+ "finished": "2026-10-17T17:14:59+00:00",
+ "exit": 40,
+ "result": "stopped"
+}

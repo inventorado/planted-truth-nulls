@@ -1,0 +1,14 @@
+{
+ "dk": {
+  "n_parcels": 83,
+  "n_genes": 15633,
+  "n_empty": 2,
+  "empty_parcels": [
+   72,
+   73
+  ],
+  "sha256_matrix": "eb6b24f94ee75ff2e7a9a70535b2221b4750059eeaf22a621dffaf9654aa8806",
+  "commit": "0c2390f37588ff0659f73c4fb95a24b3082b4278"
+ },
+ "A2_dk_15633": true
+}

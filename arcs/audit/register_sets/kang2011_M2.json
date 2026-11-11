@@ -1,0 +1,43 @@
+{
+ "set_id": "kang2011_M2",
+ "status": "not auditable (S undefined)",
+ "definition": "Kang 2011 (Nature 478) module M2 membership (register §1.6 pinned: 'module membership table')",
+ "reason": "Kang 2011 publishes no module-membership table: Supplementary Table 9 gives each of the 29 modules' colour, size (M2: 2745 genes), hub genes and DAVID-term gene hits only; the Nature ESM (MOESM50 .xls, = the PMC NIHMS321722 tables and the hbatlas.org copy) holds no gene-by-module list. R2 examined (register v6): no gated carrier of Leyhausen or Seelemeyer can hold the paper's own module list -- their gated objects are NeuroVault images, and their supplements (mmc1.pdf, Leyhausen's mmc2.xlsx Key Resources Table) were read before the register and publish no membership (register_work drafts, section 1) -- so the conditional form does not apply",
+ "source_checked": [
+  {
+   "path": "E:\\data\\asdg\\register_sets_src\\kang2011\\41586_2011_BFnature10523_MOESM50_ESM.xls",
+   "sha256": "b2bd90951735c6db29070c774aa0c6d65158e7adc3cdd7e00da440e6286a673e"
+  },
+  {
+   "path": "E:\\data\\asdg\\register_sets_src\\kang2011\\extract\\table9_modules.tsv",
+   "sha256": "0e086e5a90eda1dec9a6ccea1a1f9f9c39cd33cc3bddc9ef47b97a3c280ac7a2"
+  }
+ ],
+ "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnature10523/MediaObjects/41586_2011_BFnature10523_MOESM50_ESM.xls",
+ "module_size": 2745,
+ "cells_detail": [
+  {
+   "cell": "LEY-M1",
+   "row": 641,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  },
+  {
+   "cell": "LEY-M3",
+   "row": 643,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  },
+  {
+   "cell": "SEE-M01",
+   "row": 672,
+   "analysis_class": "dk-ctx",
+   "outcome": null
+  }
+ ],
+ "cells": [
+  "LEY-M1",
+  "LEY-M3",
+  "SEE-M01"
+ ]
+}

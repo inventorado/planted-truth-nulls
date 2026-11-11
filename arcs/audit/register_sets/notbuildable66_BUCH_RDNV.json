@@ -1,0 +1,67 @@
+{
+ "set_id": "notbuildable66_BUCH_RDNV",
+ "status": "not auditable (S undefined: comparator not buildable pre-freeze)",
+ "definition": "comparator of BUCH:RDNV (methods: ASD rare de novo; figure: ASD RDNV)",
+ "reason": "comparator not buildable pre-freeze -- register 1.6 resolution rule (v6.6): R-e by reading (iii) (v6.9 C5, applied uniformly -- the orchestrator under the operator's standing delegation, decided after the v6.8 skeptic re-check, post hoc, declared): ref 120's Table S1 presents several gene flags (ASD65, DDD93, CHD253 and the sfari* columns it imports) and names none as the set the paper names ('ASD rare de novo' / 'ASD RDNV'); v6.6-v6.8 took ASD65 by a semantic reading of its column note ('associated with autism spectrum disorder: Sanders et al. Neuron 2015') -- a list reached by description, the standard that sends PAG-C9 / C10 to the secondary view. ASD65's 65 genes are the near-miss view's comparator (register 1.6, v6.9); the four cells are descriptor cells (m, m' unchanged)",
+ "comparator_v6_6": {
+  "paper": "buch2023asdsubgroups",
+  "paper_received": "2021-11-29",
+  "names_in_paper": {
+   "methods": "ASD rare de novo",
+   "figure": "ASD RDNV"
+  },
+  "reference": {
+   "120": "Sanders et al. 2019, Nat Med 25:1477"
+  },
+  "R-a_source": "ref 120 (Sanders 2019 Nat Med): Table S1 'List of genes', column ASD65 ('If the gene is associated with autism spectrum disorder: Sanders et al. Neuron 2015')",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8656349/bin/NIHMS1754502-supplement-Tables_S1__S2__S4.xlsx",
+  "release": "n/a (article supplement)",
+  "R-b_release_outcome": "n/a",
+  "R-c_threshold": "the source's own flag: ASD65 == 1 (its only list of ASD genes from rare de novo evidence; its sfari* columns import SFARI Gene)",
+  "R-d_names": "the paper's 'ASD rare de novo' is the source's one ASD rare-variant gene flag",
+  "access_date": "2026-09-27",
+  "files": [
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\sanders2019_rgd\\extract\\table_s1_flags.tsv",
+    "sha256": "c5792cf57dfa8c38803c15df6b50110cf054ea107cb2f828f1394c94c3ebcb08"
+   },
+   {
+    "path": "E:\\data\\asdg\\register_sets_src\\sanders2019_rgd\\NIHMS1754502-supplement-Tables_S1__S2__S4.xlsx",
+    "sha256": "9848de1d41925218a090f4275f91f20d170d1fd9fd7dd1cf258b484ca37045a1"
+   }
+  ],
+  "R-e": "R-e by reading (iii) (v6.9 C5, applied uniformly -- the orchestrator under the operator's standing delegation, decided after the v6.8 skeptic re-check, post hoc, declared): ref 120's Table S1 presents several gene flags (ASD65, DDD93, CHD253 and the sfari* columns it imports) and names none as the set the paper names ('ASD rare de novo' / 'ASD RDNV'); v6.6-v6.8 took ASD65 by a semantic reading of its column note ('associated with autism spectrum disorder: Sanders et al. Neuron 2015') -- a list reached by description, the standard that sends PAG-C9 / C10 to the secondary view. ASD65's 65 genes are the near-miss view's comparator (register 1.6, v6.9); the four cells are descriptor cells (m, m' unchanged)"
+ },
+ "cells_detail": [
+  {
+   "cell": "BUCH-E-RDNV-S1",
+   "row": 353,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-RDNV-S2",
+   "row": 354,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-RDNV-S3",
+   "row": 355,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  },
+  {
+   "cell": "BUCH-E-RDNV-S4",
+   "row": 356,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  }
+ ],
+ "cells": [
+  "BUCH-E-RDNV-S1",
+  "BUCH-E-RDNV-S2",
+  "BUCH-E-RDNV-S3",
+  "BUCH-E-RDNV-S4"
+ ]
+}

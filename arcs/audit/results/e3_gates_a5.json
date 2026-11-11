@@ -1,0 +1,341 @@
+{
+ "amendment": "prereg_amend_5 (FROZEN 2026-09-24, sha256 023bc880...)",
+ "K1_status": "not fired",
+ "reason": "none",
+ "stop": false,
+ "selftest": "pass (plants p0-p13)",
+ "gates_json": {
+  "path": "arcs/audit/results/e3_gates_a3.json",
+  "sha256": "105e81f1674aaf600af8c22cefd3fc547badd74f2dba27e10f6f8315bfc857b0"
+ },
+ "script_sha256": "ebefd0ca054d91045d9415fa0ea6dcc7d3a02027ebc12bac7c0ae2b44696581c",
+ "commit": "4274567fc192a964efa6af2aa3dfd392478b5775",
+ "dirty": false,
+ "partial_certification": [],
+ "scope_labels": [
+  "species leg untested (gradient): V-AAL claims with R2_grad >= .25",
+  "species leg untested (gradient): V-CC200 claims with R2_grad >= .25",
+  "brain-enrichment (N1) confound untested: V-CC200 claims with brain-enriched sets"
+ ],
+ "counts": {
+  "retained": 789,
+  "descriptor": 8,
+  "scope": 3
+ },
+ "failed_as_gates_under_amendment_3": [
+  {
+   "n": 1,
+   "gate": "VERDICT CATCH aal C-gene a=.9",
+   "k": 197,
+   "n_": 296,
+   "rate": 0.6655405405405406,
+   "class_under_amendment_5": "descriptor"
+  },
+  {
+   "n": 2,
+   "gate": "VERDICT CATCH dk C-gene a=.9",
+   "k": 175,
+   "n_": 299,
+   "rate": 0.5852842809364549,
+   "class_under_amendment_5": "descriptor"
+  },
+  {
+   "n": 3,
+   "gate": "POWER aal C-align a=.7 rand-25",
+   "k": 174,
+   "n_": 500,
+   "rate": 0.348,
+   "class_under_amendment_5": "descriptor"
+  },
+  {
+   "n": 4,
+   "gate": "POWER aal C-align a=.7 fill-100",
+   "k": 91,
+   "n_": 500,
+   "rate": 0.182,
+   "class_under_amendment_5": "descriptor"
+  },
+  {
+   "n": 5,
+   "gate": "POWER aal C-align a=.7 brand-100",
+   "k": 53,
+   "n_": 500,
+   "rate": 0.106,
+   "class_under_amendment_5": "descriptor"
+  },
+  {
+   "n": 6,
+   "gate": "POWER dk C-align a=.7 rand-25",
+   "k": 176,
+   "n_": 500,
+   "rate": 0.352,
+   "class_under_amendment_5": "descriptor"
+  },
+  {
+   "n": 7,
+   "gate": "POWER dk C-align a=.7 fill-100",
+   "k": 99,
+   "n_": 500,
+   "rate": 0.198,
+   "class_under_amendment_5": "descriptor"
+  },
+  {
+   "n": 8,
+   "gate": "POWER dk C-align a=.7 brand-100",
+   "k": 106,
+   "n_": 500,
+   "rate": 0.212,
+   "class_under_amendment_5": "descriptor"
+  },
+  {
+   "n": 9,
+   "gate": "ACTIVE aal grad w=.9 (max over kinds)",
+   "k": 28,
+   "n_": 1000,
+   "rate": 0.028,
+   "class_under_amendment_5": "scope"
+  },
+  {
+   "n": 10,
+   "gate": "ACTIVE cc200 grad w=.9 (max over kinds)",
+   "k": 36,
+   "n_": 1000,
+   "rate": 0.036,
+   "class_under_amendment_5": "scope"
+  },
+  {
+   "n": 11,
+   "gate": "PLANT c v2-species cc200 brain w=.9 brand-300",
+   "k": 23,
+   "n_": 1000,
+   "rate": 0.023,
+   "class_under_amendment_5": "scope"
+  }
+ ],
+ "replica_section_4_4": {
+  "a": {
+   "gate": "PLANT a naive dk-ctx mod w=.5 rand-25",
+   "kind": "mustfail",
+   "group": "planted_legs",
+   "atlas": "dk-ctx",
+   "k": 150,
+   "n": 1000,
+   "n_plants": 1000,
+   "missing_n": 0,
+   "blocked_n": 0,
+   "missing_max_cell": 0.0,
+   "by_step": {
+    "0": {
+     "k": 81,
+     "n": 500,
+     "rate": 0.162,
+     "missing": 0,
+     "blocked": 0
+    },
+    "1": {
+     "k": 69,
+     "n": 500,
+     "rate": 0.138,
+     "missing": 0,
+     "blocked": 0
+    }
+   },
+   "by_cell": {
+    "grf15|0": {
+     "k": 11,
+     "n": 100,
+     "rate": 0.11,
+     "missing": 0,
+     "blocked": 0
+    },
+    "grf15|1": {
+     "k": 12,
+     "n": 100,
+     "rate": 0.12,
+     "missing": 0,
+     "blocked": 0
+    },
+    "grf30|0": {
+     "k": 13,
+     "n": 100,
+     "rate": 0.13,
+     "missing": 0,
+     "blocked": 0
+    },
+    "grf30|1": {
+     "k": 8,
+     "n": 100,
+     "rate": 0.08,
+     "missing": 0,
+     "blocked": 0
+    },
+    "grf60|0": {
+     "k": 20,
+     "n": 100,
+     "rate": 0.2,
+     "missing": 0,
+     "blocked": 0
+    },
+    "grf60|1": {
+     "k": 19,
+     "n": 100,
+     "rate": 0.19,
+     "missing": 0,
+     "blocked": 0
+    },
+    "sar5|0": {
+     "k": 19,
+     "n": 100,
+     "rate": 0.19,
+     "missing": 0,
+     "blocked": 0
+    },
+    "sar5|1": {
+     "k": 13,
+     "n": 100,
+     "rate": 0.13,
+     "missing": 0,
+     "blocked": 0
+    },
+    "sar9|0": {
+     "k": 18,
+     "n": 100,
+     "rate": 0.18,
+     "missing": 0,
+     "blocked": 0
+    },
+    "sar9|1": {
+     "k": 17,
+     "n": 100,
+     "rate": 0.17,
+     "missing": 0,
+     "blocked": 0
+    }
+   },
+   "status": "ok",
+   "status_counts": {
+    "ok": 997,
+    "uninformative": 3
+   },
+   "rate": 0.15,
+   "pass_": true
+  },
+  "c": {
+   "gate": "PLANT c v2-species dk-ctx brain w=.9 brand-300",
+   "kind": "mustfail",
+   "group": "planted_legs",
+   "atlas": "dk-ctx",
+   "k": 131,
+   "n": 1000,
+   "n_plants": 1000,
+   "missing_n": 0,
+   "blocked_n": 0,
+   "missing_max_cell": 0.0,
+   "by_step": {
+    "0": {
+     "k": 62,
+     "n": 500,
+     "rate": 0.124,
+     "missing": 0,
+     "blocked": 0
+    },
+    "1": {
+     "k": 69,
+     "n": 500,
+     "rate": 0.138,
+     "missing": 0,
+     "blocked": 0
+    }
+   },
+   "by_cell": {
+    "grf15|0": {
+     "k": 11,
+     "n": 100,
+     "rate": 0.11,
+     "missing": 0,
+     "blocked": 0
+    },
+    "grf15|1": {
+     "k": 10,
+     "n": 100,
+     "rate": 0.1,
+     "missing": 0,
+     "blocked": 0
+    },
+    "grf30|0": {
+     "k": 11,
+     "n": 100,
+     "rate": 0.11,
+     "missing": 0,
+     "blocked": 0
+    },
+    "grf30|1": {
+     "k": 13,
+     "n": 100,
+     "rate": 0.13,
+     "missing": 0,
+     "blocked": 0
+    },
+    "grf60|0": {
+     "k": 11,
+     "n": 100,
+     "rate": 0.11,
+     "missing": 0,
+     "blocked": 0
+    },
+    "grf60|1": {
+     "k": 16,
+     "n": 100,
+     "rate": 0.16,
+     "missing": 0,
+     "blocked": 0
+    },
+    "sar5|0": {
+     "k": 10,
+     "n": 100,
+     "rate": 0.1,
+     "missing": 0,
+     "blocked": 0
+    },
+    "sar5|1": {
+     "k": 15,
+     "n": 100,
+     "rate": 0.15,
+     "missing": 0,
+     "blocked": 0
+    },
+    "sar9|0": {
+     "k": 19,
+     "n": 100,
+     "rate": 0.19,
+     "missing": 0,
+     "blocked": 0
+    },
+    "sar9|1": {
+     "k": 15,
+     "n": 100,
+     "rate": 0.15,
+     "missing": 0,
+     "blocked": 0
+    }
+   },
+   "status": "ok",
+   "status_counts": {
+    "ok": 996,
+    "uninformative": 4
+   },
+   "rate": 0.131,
+   "pass_": true,
+   "all_plants_nonok_as_nonrejection": {
+    "k": 130,
+    "n": 1000,
+    "rate": 0.13
+   }
+  }
+ },
+ "retained_failures": [],
+ "replica_inputs_sha256": {
+  "artifacts/plants_a3/dk-ctx_F-align_mod_0.5.csv.gz": "5a793f10f021f84159996281e38ac44a55e310d105133a2a8e28f2d5027c6ea0",
+  "artifacts/plants_a3/dk-ctx_F-align_brain_0.9.csv.gz": "6e06b61fd876412ebe5107d3f7e0b088123d46ea18501902b745ef0b935f43b8"
+ }
+}

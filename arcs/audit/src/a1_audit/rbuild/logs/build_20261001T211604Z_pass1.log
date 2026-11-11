@@ -1,0 +1,887 @@
+# A1 rbuild: docker build --progress=plain -t a1-audit-r:wp2-r4.4.3 --build-arg BASE=rocker/r-ver:4.4.3@sha256:3dae5d2eeddf74f10e0a81fb6b7ae350295e288000304f438b844b2c1e00fe2c --build-arg CRAN_SNAPSHOT=https://p3m.dev/cran/__linux__/noble/2025-04-10 --build-arg BIOC_VERSION=3.20 --build-arg BIOC_BINARIES=https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker D:\RESEARCH\asd-imaging-genetics\arcs\audit\src\a1_audit\rbuild
+# started 2026-10-01T21:16:04Z
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 3.38kB 0.0s done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/rocker/r-ver:4.4.3@sha256:3dae5d2eeddf74f10e0a81fb6b7ae350295e288000304f438b844b2c1e00fe2c
+#2 DONE 0.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 81B 0.0s done
+#3 DONE 0.1s
+
+#4 [internal] load build context
+#4 DONE 0.0s
+
+#5 [1/7] FROM docker.io/rocker/r-ver:4.4.3@sha256:3dae5d2eeddf74f10e0a81fb6b7ae350295e288000304f438b844b2c1e00fe2c
+#5 resolve docker.io/rocker/r-ver:4.4.3@sha256:3dae5d2eeddf74f10e0a81fb6b7ae350295e288000304f438b844b2c1e00fe2c 0.1s done
+#5 CACHED
+
+#4 [internal] load build context
+#4 transferring context: 4.61kB 0.0s done
+#4 DONE 0.1s
+
+#6 [2/7] RUN echo "options(repos = c(CRAN = 'https://p3m.dev/cran/__linux__/noble/2025-04-10'), BiocManager.check_repositories = FALSE)"         >> /usr/local/lib/R/etc/Rprofile.site
+#6 DONE 0.8s
+
+#7 [3/7] COPY install_packages.R /opt/a1_rbuild/install_packages.R
+#7 DONE 0.1s
+
+#8 [4/7] RUN Rscript /opt/a1_rbuild/install_packages.R install &&     Rscript /opt/a1_rbuild/install_packages.R record > /opt/a1_rbuild/installed_versions.tsv
+#8 0.911 Installing package into ‘/usr/local/lib/R/site-library’
+#8 0.911 (as ‘lib’ is unspecified)
+#8 3.281 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/BiocManager_1.30.25.tar.gz'
+#8 4.399 Content type 'binary/octet-stream' length 509252 bytes (497 KB)
+#8 4.399 ==================================================
+#8 4.603 downloaded 497 KB
+#8 4.603 
+#8 5.103 * installing *binary* package ‘BiocManager’ ...
+#8 5.120 * DONE (BiocManager)
+#8 5.137 
+#8 5.137 The downloaded source packages are in
+#8 5.137 	‘/tmp/RtmpzONxWh/downloaded_packages’
+#8 7.698 Bioconductor version 3.20 (BiocManager 1.30.25), R 4.4.3 (2025-02-28)
+#8 7.698 Installing package(s) 'BiocVersion'
+#8 8.317 trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/BiocVersion_3.20.0.tar.gz'
+#8 8.513 Content type 'application/gzip' length 983 bytes
+#8 8.513 ==================================================
+#8 8.513 downloaded 983 bytes
+#8 8.513 
+#8 8.823 * installing *source* package ‘BiocVersion’ ...
+#8 8.824 ** using staged installation
+#8 8.851 ** help
+#8 8.864 *** installing help indices
+#8 8.894 ** building package indices
+#8 9.187 ** testing if installed package can be loaded from temporary location
+#8 9.451 ** testing if installed package can be loaded from final location
+#8 9.695 ** testing if installed package keeps a record of temporary installation path
+#8 9.696 * DONE (BiocVersion)
+#8 9.714 
+#8 9.714 The downloaded source packages are in
+#8 9.714 	‘/tmp/RtmpzONxWh/downloaded_packages’
+#8 9.715 A1 rbuild install: pass 1; 2 of 2 named packages missing
+#8 11.56 Bioconductor version 3.20 (BiocManager 1.30.25), R 4.4.3 (2025-02-28)
+#8 11.56 Installing package(s) 'GeneOverlap', 'WGCNA'
+#8 12.49 also installing the dependencies ‘sys’, ‘utf8’, ‘fs’, ‘rappdirs’, ‘askpass’, ‘zlibbioc’, ‘UCSC.utils’, ‘GenomeInfoDbData’, ‘farver’, ‘labeling’, ‘munsell’, ‘R6’, ‘fansi’, ‘pillar’, ‘stringi’, ‘backports’, ‘cachem’, ‘mime’, ‘sass’, ‘bit’, ‘curl’, ‘openssl’, ‘XVector’, ‘GenomeInfoDb’, ‘crayon’, ‘bitops’, ‘cli’, ‘glue’, ‘isoband’, ‘lifecycle’, ‘rlang’, ‘scales’, ‘tibble’, ‘vctrs’, ‘withr’, ‘stringr’, ‘magrittr’, ‘checkmate’, ‘htmlwidgets’, ‘rstudioapi’, ‘viridisLite’, ‘digest’, ‘fastmap’, ‘bslib’, ‘evaluate’, ‘fontawesome’, ‘jquerylib’, ‘jsonlite’, ‘tinytex’, ‘xfun’, ‘yaml’, ‘highr’, ‘bit64’, ‘blob’, ‘memoise’, ‘pkgconfig’, ‘plogr’, ‘cpp11’, ‘httr’, ‘png’, ‘Biostrings’, ‘gtools’, ‘caTools’, ‘ggplot2’, ‘gtable’, ‘gridExtra’, ‘data.table’, ‘htmlTable’, ‘viridis’, ‘htmltools’, ‘base64enc’, ‘colorspace’, ‘rmarkdown’, ‘knitr’, ‘Formula’, ‘iterators’, ‘BiocGenerics’, ‘Biobase’, ‘IRanges’, ‘DBI’, ‘RSQLite’, ‘S4Vectors’, ‘KEGGREST’, ‘RColorBrewer’, ‘gplots’, ‘dynamicTreeCut’, ‘fastcluster’, ‘matrixStats’, ‘Hmisc’, ‘impute’, ‘foreach’, ‘doParallel’, ‘preprocessCore’, ‘GO.db’, ‘AnnotationDbi’, ‘Rcpp’
+#8 12.49 
+#8 12.49 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/sys_3.4.3.tar.gz'
+#8 13.59 Content type 'binary/octet-stream' length 40761 bytes (39 KB)
+#8 13.59 ==================================================
+#8 13.62 downloaded 39 KB
+#8 13.62 
+#8 13.63 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/utf8_1.2.4.tar.gz'
+#8 14.54 Content type 'binary/octet-stream' length 148180 bytes (144 KB)
+#8 14.54 ==================================================
+#8 14.62 downloaded 144 KB
+#8 14.62 
+#8 14.63 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/fs_1.6.5.tar.gz'
+#8 15.67 Content type 'binary/octet-stream' length 309916 bytes (302 KB)
+#8 15.67 ==================================================
+#8 15.76 downloaded 302 KB
+#8 15.76 
+#8 15.77 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/rappdirs_0.3.3.tar.gz'
+#8 16.82 Content type 'binary/octet-stream' length 45226 bytes (44 KB)
+#8 16.82 ==================================================
+#8 16.83 downloaded 44 KB
+#8 16.83 
+#8 16.83 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/askpass_1.2.1.tar.gz'
+#8 17.91 Content type 'binary/octet-stream' length 21919 bytes (21 KB)
+#8 17.91 ==================================================
+#8 17.91 downloaded 21 KB
+#8 17.91 
+#8 17.94 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/zlibbioc_1.52.0_R_x86_64-pc-linux-gnu.tar.gz'
+#8 18.49 Content type 'application/octet-stream' length 235529 bytes (230 KB)
+#8 18.49 ==================================================
+#8 18.98 downloaded 230 KB
+#8 18.98 
+#8 18.99 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/UCSC.utils_1.2.0_R_x86_64-pc-linux-gnu.tar.gz'
+#8 19.51 Content type 'application/octet-stream' length 293849 bytes (286 KB)
+#8 19.51 ==================================================
+#8 19.94 downloaded 286 KB
+#8 19.94 
+#8 19.96 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/GenomeInfoDbData_1.2.13_R_x86_64-pc-linux-gnu.tar.gz'
+#8 20.53 Content type 'application/octet-stream' length 12929455 bytes (12.3 MB)
+#8 20.93 ==================================================
+#8 21.60 downloaded 12.3 MB
+#8 21.60 
+#8 21.61 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/farver_2.1.2_R_x86_64-pc-linux-gnu.tar.gz'
+#8 22.19 Content type 'application/octet-stream' length 1466588 bytes (1.4 MB)
+#8 22.29 ==================================================
+#8 22.90 downloaded 1.4 MB
+#8 22.90 
+#8 22.91 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/labeling_0.4.3_R_x86_64-pc-linux-gnu.tar.gz'
+#8 23.50 Content type 'application/octet-stream' length 60930 bytes (59 KB)
+#8 23.50 ==================================================
+#8 23.64 downloaded 59 KB
+#8 23.64 
+#8 23.65 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/munsell_0.5.1_R_x86_64-pc-linux-gnu.tar.gz'
+#8 24.25 Content type 'application/octet-stream' length 243052 bytes (237 KB)
+#8 24.25 ==================================================
+#8 24.69 downloaded 237 KB
+#8 24.69 
+#8 24.70 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/R6_2.6.1.tar.gz'
+#8 25.67 Content type 'binary/octet-stream' length 86803 bytes (84 KB)
+#8 25.67 ==================================================
+#8 25.79 downloaded 84 KB
+#8 25.79 
+#8 25.80 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/fansi_1.0.6.tar.gz'
+#8 26.89 Content type 'binary/octet-stream' length 317407 bytes (309 KB)
+#8 26.89 ==================================================
+#8 27.30 downloaded 309 KB
+#8 27.30 
+#8 27.32 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/pillar_1.10.2.tar.gz'
+#8 28.53 Content type 'binary/octet-stream' length 658706 bytes (643 KB)
+#8 28.53 ==================================================
+#8 28.69 downloaded 643 KB
+#8 28.69 
+#8 28.70 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/stringi_1.8.7.tar.gz'
+#8 29.83 Content type 'binary/octet-stream' length 3294694 bytes (3.1 MB)
+#8 29.87 ==================================================
+#8 30.16 downloaded 3.1 MB
+#8 30.16 
+#8 30.17 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/backports_1.5.0_R_x86_64-pc-linux-gnu.tar.gz'
+#8 30.61 Content type 'application/octet-stream' length 115712 bytes (113 KB)
+#8 30.61 ==================================================
+#8 30.63 downloaded 113 KB
+#8 30.63 
+#8 30.64 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/cachem_1.1.0.tar.gz'
+#8 32.52 Content type 'binary/octet-stream' length 67525 bytes (65 KB)
+#8 32.52 ==================================================
+#8 32.52 downloaded 65 KB
+#8 32.52 
+#8 32.54 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/mime_0.13.tar.gz'
+#8 33.70 Content type 'binary/octet-stream' length 44564 bytes (43 KB)
+#8 33.70 ==================================================
+#8 33.73 downloaded 43 KB
+#8 33.73 
+#8 33.75 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/sass_0.4.9.tar.gz'
+#8 34.85 Content type 'binary/octet-stream' length 2456243 bytes (2.3 MB)
+#8 34.89 ==================================================
+#8 35.14 downloaded 2.3 MB
+#8 35.14 
+#8 35.14 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/bit_4.6.0_R_x86_64-pc-linux-gnu.tar.gz'
+#8 35.75 Content type 'application/octet-stream' length 628098 bytes (613 KB)
+#8 35.75 ==================================================
+#8 36.36 downloaded 613 KB
+#8 36.36 
+#8 36.37 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/curl_6.2.2.tar.gz'
+#8 37.52 Content type 'binary/octet-stream' length 782792 bytes (764 KB)
+#8 37.52 ==================================================
+#8 37.67 downloaded 764 KB
+#8 37.67 
+#8 37.68 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/openssl_2.3.2.tar.gz'
+#8 38.83 Content type 'binary/octet-stream' length 1310209 bytes (1.2 MB)
+#8 38.83 ==================================================
+#8 41.00 downloaded 1.2 MB
+#8 41.00 
+#8 41.01 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/XVector_0.46.0_R_x86_64-pc-linux-gnu.tar.gz'
+#8 41.34 Content type 'application/octet-stream' length 755918 bytes (738 KB)
+#8 41.34 ==================================================
+#8 41.57 downloaded 738 KB
+#8 41.57 
+#8 41.59 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/GenomeInfoDb_1.42.3_R_x86_64-pc-linux-gnu.tar.gz'
+#8 42.19 Content type 'application/octet-stream' length 4176518 bytes (4.0 MB)
+#8 42.49 ==================================================
+#8 43.03 downloaded 4.0 MB
+#8 43.03 
+#8 43.04 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/crayon_1.5.3.tar.gz'
+#8 44.11 Content type 'binary/octet-stream' length 163459 bytes (159 KB)
+#8 44.11 ==================================================
+#8 44.14 downloaded 159 KB
+#8 44.14 
+#8 44.15 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/bitops_1.0-9_R_x86_64-pc-linux-gnu.tar.gz'
+#8 44.73 Content type 'application/octet-stream' length 25866 bytes (25 KB)
+#8 44.73 ==================================================
+#8 44.73 downloaded 25 KB
+#8 44.73 
+#8 44.74 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/cli_3.6.4.tar.gz'
+#8 45.62 Content type 'binary/octet-stream' length 1328636 bytes (1.3 MB)
+#8 45.63 ==================================================
+#8 45.81 downloaded 1.3 MB
+#8 45.81 
+#8 45.82 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/glue_1.8.0.tar.gz'
+#8 46.88 Content type 'binary/octet-stream' length 168121 bytes (164 KB)
+#8 46.88 ==================================================
+#8 46.93 downloaded 164 KB
+#8 46.93 
+#8 46.94 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/isoband_0.2.7_R_x86_64-pc-linux-gnu.tar.gz'
+#8 47.49 Content type 'application/octet-stream' length 1644254 bytes (1.6 MB)
+#8 47.50 ==================================================
+#8 47.82 downloaded 1.6 MB
+#8 47.82 
+#8 47.83 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/lifecycle_1.0.4.tar.gz'
+#8 48.88 Content type 'binary/octet-stream' length 125006 bytes (122 KB)
+#8 48.88 ==================================================
+#8 48.94 downloaded 122 KB
+#8 48.94 
+#8 48.95 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/rlang_1.1.5.tar.gz'
+
+# exit 1 after 65 s; ended 2026-10-01T21:17:09Z
+#8 64.25 Content type 'binary/octet-stream' length 1595150 bytes (1.5 MB)
+#8 64.25 ==================================================
+#8 64.59 downloaded 1.5 MB
+#8 64.59 
+#8 64.66 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/scales_1.3.0_R_x86_64-pc-linux-gnu.tar.gz'
+#8 65.25 Content type 'application/octet-stream' length 710303 bytes (693 KB)
+#8 65.25 ==================================================
+#8 65.36 downloaded 693 KB
+#8 65.36 
+#8 65.36 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/tibble_3.2.1.tar.gz'
+#8 66.48 Content type 'binary/octet-stream' length 678504 bytes (662 KB)
+#8 66.48 ==================================================
+#8 66.66 downloaded 662 KB
+#8 66.66 
+#8 66.67 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/vctrs_0.6.5.tar.gz'
+#8 67.73 Content type 'binary/octet-stream' length 1313013 bytes (1.3 MB)
+#8 67.73 ==================================================
+#8 68.03 downloaded 1.3 MB
+#8 68.03 
+#8 68.04 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/withr_3.0.2.tar.gz'
+#8 69.09 Content type 'binary/octet-stream' length 223887 bytes (218 KB)
+#8 69.09 ==================================================
+#8 69.42 downloaded 218 KB
+#8 69.42 
+#8 69.43 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/stringr_1.5.1.tar.gz'
+#8 70.54 Content type 'binary/octet-stream' length 311167 bytes (303 KB)
+#8 70.54 ==================================================
+#8 70.65 downloaded 303 KB
+#8 70.65 
+#8 70.66 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/magrittr_2.0.3.tar.gz'
+#8 71.78 Content type 'binary/octet-stream' length 223604 bytes (218 KB)
+#8 71.78 ==================================================
+#8 71.88 downloaded 218 KB
+#8 71.88 
+#8 71.89 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/checkmate_2.3.2_R_x86_64-pc-linux-gnu.tar.gz'
+#8 72.46 Content type 'application/octet-stream' length 743873 bytes (726 KB)
+#8 72.46 ==================================================
+#8 73.06 downloaded 726 KB
+#8 73.06 
+#8 73.07 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/htmlwidgets_1.6.4.tar.gz'
+#8 74.38 Content type 'binary/octet-stream' length 815181 bytes (796 KB)
+#8 74.42 ==================================================
+#8 74.70 downloaded 796 KB
+#8 74.70 
+#8 74.72 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/rstudioapi_0.17.1.tar.gz'
+#8 75.77 Content type 'binary/octet-stream' length 317693 bytes (310 KB)
+#8 75.77 ==================================================
+#8 76.14 downloaded 310 KB
+#8 76.14 
+#8 76.16 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/viridisLite_0.4.2_R_x86_64-pc-linux-gnu.tar.gz'
+#8 76.62 Content type 'application/octet-stream' length 1297527 bytes (1.2 MB)
+#8 76.62 ==================================================
+#8 76.76 downloaded 1.2 MB
+#8 76.76 
+#8 76.77 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/digest_0.6.37.tar.gz'
+#8 77.86 Content type 'binary/octet-stream' length 227129 bytes (221 KB)
+#8 77.86 ==================================================
+#8 77.96 downloaded 221 KB
+#8 77.96 
+#8 77.97 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/fastmap_1.2.0.tar.gz'
+#8 79.07 Content type 'binary/octet-stream' length 66050 bytes (64 KB)
+#8 79.07 ==================================================
+#8 79.10 downloaded 64 KB
+#8 79.10 
+#8 79.11 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/bslib_0.9.0.tar.gz'
+#8 80.22 Content type 'binary/octet-stream' length 5666254 bytes (5.4 MB)
+#8 80.28 ==================================================
+#8 80.57 downloaded 5.4 MB
+#8 80.57 
+#8 80.58 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/evaluate_1.0.3.tar.gz'
+#8 81.68 Content type 'binary/octet-stream' length 101604 bytes (99 KB)
+#8 81.68 ==================================================
+#8 81.73 downloaded 99 KB
+#8 81.73 
+#8 81.73 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/fontawesome_0.5.3.tar.gz'
+#8 82.79 Content type 'binary/octet-stream' length 1396219 bytes (1.3 MB)
+#8 82.79 ==================================================
+#8 97.97 downloaded 1.3 MB
+#8 97.97 
+#8 97.98 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/jquerylib_0.1.4.tar.gz'
+#8 99.04 Content type 'binary/octet-stream' length 526757 bytes (514 KB)
+#8 99.04 ==================================================
+#8 99.47 downloaded 514 KB
+#8 99.47 
+#8 99.48 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/jsonlite_2.0.0.tar.gz'
+#8 100.6 Content type 'binary/octet-stream' length 1090991 bytes (1.0 MB)
+#8 100.6 ==================================================
+#8 100.9 downloaded 1.0 MB
+#8 100.9 
+#8 100.9 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/tinytex_0.56.tar.gz'
+#8 102.0 Content type 'binary/octet-stream' length 143283 bytes (139 KB)
+#8 102.0 ==================================================
+#8 102.1 downloaded 139 KB
+#8 102.1 
+#8 102.1 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/xfun_0.52.tar.gz'
+#8 103.2 Content type 'binary/octet-stream' length 591390 bytes (577 KB)
+#8 103.2 ==================================================
+#8 103.7 downloaded 577 KB
+#8 103.7 
+#8 103.7 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/yaml_2.3.10.tar.gz'
+#8 104.8 Content type 'binary/octet-stream' length 114762 bytes (112 KB)
+#8 104.8 ==================================================
+#8 104.8 downloaded 112 KB
+#8 104.8 
+#8 104.8 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/highr_0.11.tar.gz'
+#8 105.9 Content type 'binary/octet-stream' length 37489 bytes (36 KB)
+#8 105.9 ==================================================
+#8 105.9 downloaded 36 KB
+#8 105.9 
+#8 105.9 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/bit64_4.6.0-1_R_x86_64-pc-linux-gnu.tar.gz'
+#8 106.5 Content type 'application/octet-stream' length 491770 bytes (480 KB)
+#8 106.5 ==================================================
+#8 106.9 downloaded 480 KB
+#8 106.9 
+#8 106.9 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/blob_1.2.4_R_x86_64-pc-linux-gnu.tar.gz'
+#8 107.5 Content type 'application/octet-stream' length 47311 bytes (46 KB)
+#8 107.5 ==================================================
+#8 107.5 downloaded 46 KB
+#8 107.5 
+#8 107.5 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/memoise_2.0.1.tar.gz'
+#8 108.6 Content type 'binary/octet-stream' length 48801 bytes (47 KB)
+#8 108.6 ==================================================
+#8 108.6 downloaded 47 KB
+#8 108.6 
+#8 108.6 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/pkgconfig_2.0.3.tar.gz'
+#8 109.7 Content type 'binary/octet-stream' length 18130 bytes (17 KB)
+#8 109.7 ==================================================
+#8 109.7 downloaded 17 KB
+#8 109.7 
+#8 109.8 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/plogr_0.2.0_R_x86_64-pc-linux-gnu.tar.gz'
+#8 110.2 Content type 'application/octet-stream' length 13094 bytes (12 KB)
+#8 110.2 ==================================================
+#8 110.2 downloaded 12 KB
+#8 110.2 
+#8 110.3 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/cpp11_0.5.2.tar.gz'
+#8 111.4 Content type 'binary/octet-stream' length 289415 bytes (282 KB)
+#8 111.4 ==================================================
+#8 111.5 downloaded 282 KB
+#8 111.5 
+#8 111.6 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/httr_1.4.7_R_x86_64-pc-linux-gnu.tar.gz'
+#8 112.0 Content type 'application/octet-stream' length 483966 bytes (472 KB)
+#8 112.0 ==================================================
+#8 112.2 downloaded 472 KB
+#8 112.2 
+#8 112.2 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/png_0.1-8_R_x86_64-pc-linux-gnu.tar.gz'
+#8 112.8 Content type 'application/octet-stream' length 40586 bytes (39 KB)
+#8 112.8 ==================================================
+#8 112.8 downloaded 39 KB
+#8 112.8 
+#8 112.8 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/Biostrings_2.74.1_R_x86_64-pc-linux-gnu.tar.gz'
+#8 113.4 Content type 'application/octet-stream' length 14367403 bytes (13.7 MB)
+#8 113.9 ==================================================
+#8 114.6 downloaded 13.7 MB
+#8 114.6 
+#8 114.6 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/gtools_3.9.5_R_x86_64-pc-linux-gnu.tar.gz'
+#8 115.2 Content type 'application/octet-stream' length 361039 bytes (352 KB)
+#8 115.2 ==================================================
+#8 115.7 downloaded 352 KB
+#8 115.7 
+#8 115.7 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/caTools_1.18.3_R_x86_64-pc-linux-gnu.tar.gz'
+#8 116.3 Content type 'application/octet-stream' length 205124 bytes (200 KB)
+#8 116.3 ==================================================
+#8 116.8 downloaded 200 KB
+#8 116.8 
+#8 116.8 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/ggplot2_3.5.2.tar.gz'
+#8 117.9 Content type 'binary/octet-stream' length 5000959 bytes (4.8 MB)
+#8 118.0 ==================================================
+#8 118.6 downloaded 4.8 MB
+#8 118.6 
+#8 118.6 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/gtable_0.3.6_R_x86_64-pc-linux-gnu.tar.gz'
+#8 119.2 Content type 'application/octet-stream' length 222621 bytes (217 KB)
+#8 119.2 ==================================================
+#8 119.7 downloaded 217 KB
+#8 119.7 
+#8 119.7 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/gridExtra_2.3_R_x86_64-pc-linux-gnu.tar.gz'
+#8 120.3 Content type 'application/octet-stream' length 1106749 bytes (1.1 MB)
+#8 120.4 ==================================================
+#8 121.0 downloaded 1.1 MB
+#8 121.0 
+#8 121.0 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/data.table_1.17.0_R_x86_64-pc-linux-gnu.tar.gz'
+#8 121.6 Content type 'application/octet-stream' length 2695519 bytes (2.6 MB)
+#8 121.8 ==================================================
+#8 122.5 downloaded 2.6 MB
+#8 122.5 
+#8 122.5 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/htmlTable_2.4.3_R_x86_64-pc-linux-gnu.tar.gz'
+#8 123.0 Content type 'application/octet-stream' length 417871 bytes (408 KB)
+#8 123.0 ==================================================
+#8 123.5 downloaded 408 KB
+#8 123.5 
+#8 123.5 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/viridis_0.6.5_R_x86_64-pc-linux-gnu.tar.gz'
+#8 124.1 Content type 'application/octet-stream' length 3011670 bytes (2.9 MB)
+#8 124.3 ==================================================
+#8 125.0 downloaded 2.9 MB
+#8 125.0 
+#8 125.0 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/htmltools_0.5.8.1.tar.gz'
+#8 126.1 Content type 'binary/octet-stream' length 354538 bytes (346 KB)
+#8 126.1 ==================================================
+#8 126.3 downloaded 346 KB
+#8 126.3 
+#8 126.3 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/base64enc_0.1-3.tar.gz'
+#8 127.3 Content type 'binary/octet-stream' length 26593 bytes (25 KB)
+#8 127.3 ==================================================
+#8 127.3 downloaded 25 KB
+#8 127.3 
+#8 127.3 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/colorspace_2.1-1_R_x86_64-pc-linux-gnu.tar.gz'
+#8 127.8 Content type 'application/octet-stream' length 2626513 bytes (2.5 MB)
+#8 127.8 ==================================================
+#8 128.0 downloaded 2.5 MB
+#8 128.0 
+#8 128.0 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/rmarkdown_2.29.tar.gz'
+#8 129.1 Content type 'binary/octet-stream' length 2640883 bytes (2.5 MB)
+#8 129.2 ==================================================
+#8 129.4 downloaded 2.5 MB
+#8 129.4 
+#8 129.4 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/knitr_1.50.tar.gz'
+#8 130.5 Content type 'binary/octet-stream' length 1099561 bytes (1.0 MB)
+#8 130.5 ==================================================
+#8 131.3 downloaded 1.0 MB
+#8 131.3 
+#8 131.3 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/Formula_1.2-5_R_x86_64-pc-linux-gnu.tar.gz'
+#8 132.1 Content type 'application/octet-stream' length 159103 bytes (155 KB)
+#8 132.1 ==================================================
+#8 132.5 downloaded 155 KB
+#8 132.5 
+#8 132.5 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/iterators_1.0.14_R_x86_64-pc-linux-gnu.tar.gz'
+#8 133.0 Content type 'application/octet-stream' length 346447 bytes (338 KB)
+#8 133.0 ==================================================
+#8 133.5 downloaded 338 KB
+#8 133.5 
+#8 133.6 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/BiocGenerics_0.52.0_R_x86_64-pc-linux-gnu.tar.gz'
+#8 134.1 Content type 'application/octet-stream' length 634644 bytes (619 KB)
+#8 134.1 ==================================================
+#8 134.7 downloaded 619 KB
+#8 134.7 
+#8 134.7 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/Biobase_2.66.0_R_x86_64-pc-linux-gnu.tar.gz'
+#8 135.4 Content type 'application/octet-stream' length 2660487 bytes (2.5 MB)
+#8 135.6 ==================================================
+#8 136.3 downloaded 2.5 MB
+#8 136.3 
+#8 136.3 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/IRanges_2.40.1_R_x86_64-pc-linux-gnu.tar.gz'
+#8 136.9 Content type 'application/octet-stream' length 2477485 bytes (2.4 MB)
+#8 137.1 ==================================================
+#8 137.7 downloaded 2.4 MB
+#8 137.7 
+#8 137.7 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/DBI_1.2.3_R_x86_64-pc-linux-gnu.tar.gz'
+#8 138.3 Content type 'application/octet-stream' length 914661 bytes (893 KB)
+#8 138.3 ==================================================
+#8 138.5 downloaded 893 KB
+#8 138.5 
+#8 138.5 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/RSQLite_2.3.9_R_x86_64-pc-linux-gnu.tar.gz'
+#8 139.0 Content type 'application/octet-stream' length 1342869 bytes (1.3 MB)
+#8 139.0 ==================================================
+#8 139.2 downloaded 1.3 MB
+#8 139.2 
+#8 139.3 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/S4Vectors_0.44.0_R_x86_64-pc-linux-gnu.tar.gz'
+#8 139.8 Content type 'application/octet-stream' length 2740007 bytes (2.6 MB)
+#8 140.0 ==================================================
+#8 140.6 downloaded 2.6 MB
+#8 140.6 
+#8 140.7 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/KEGGREST_1.46.0_R_x86_64-pc-linux-gnu.tar.gz'
+#8 141.3 Content type 'application/octet-stream' length 411386 bytes (401 KB)
+#8 141.3 ==================================================
+#8 141.7 downloaded 401 KB
+#8 141.7 
+#8 141.8 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/RColorBrewer_1.1-3_R_x86_64-pc-linux-gnu.tar.gz'
+#8 142.4 Content type 'application/octet-stream' length 51813 bytes (50 KB)
+#8 142.4 ==================================================
+#8 142.5 downloaded 50 KB
+#8 142.5 
+#8 142.5 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/gplots_3.2.0_R_x86_64-pc-linux-gnu.tar.gz'
+#8 143.1 Content type 'application/octet-stream' length 496927 bytes (485 KB)
+#8 143.1 ==================================================
+#8 143.7 downloaded 485 KB
+#8 143.7 
+#8 143.7 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/dynamicTreeCut_1.63-1_R_x86_64-pc-linux-gnu.tar.gz'
+#8 144.2 Content type 'application/octet-stream' length 90065 bytes (87 KB)
+#8 144.2 ==================================================
+#8 144.5 downloaded 87 KB
+#8 144.5 
+#8 144.5 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/fastcluster_1.2.6_R_x86_64-pc-linux-gnu.tar.gz'
+#8 145.2 Content type 'application/octet-stream' length 186880 bytes (182 KB)
+#8 145.2 ==================================================
+#8 145.6 downloaded 182 KB
+#8 145.6 
+#8 145.6 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/matrixStats_1.5.0_R_x86_64-pc-linux-gnu.tar.gz'
+#8 146.2 Content type 'application/octet-stream' length 475029 bytes (463 KB)
+#8 146.2 ==================================================
+#8 146.8 downloaded 463 KB
+#8 146.8 
+#8 146.8 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/Hmisc_5.2-3.tar.gz'
+#8 147.9 Content type 'binary/octet-stream' length 3624823 bytes (3.5 MB)
+#8 147.9 ==================================================
+#8 148.2 downloaded 3.5 MB
+#8 148.2 
+#8 148.2 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/impute_1.80.0_R_x86_64-pc-linux-gnu.tar.gz'
+#8 148.9 Content type 'application/octet-stream' length 665832 bytes (650 KB)
+#8 148.9 ==================================================
+#8 149.6 downloaded 650 KB
+#8 149.6 
+#8 149.6 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/foreach_1.5.2_R_x86_64-pc-linux-gnu.tar.gz'
+#8 150.2 Content type 'application/octet-stream' length 139706 bytes (136 KB)
+#8 150.2 ==================================================
+#8 150.5 downloaded 136 KB
+#8 150.5 
+#8 150.5 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/doParallel_1.0.17_R_x86_64-pc-linux-gnu.tar.gz'
+#8 151.0 Content type 'application/octet-stream' length 188101 bytes (183 KB)
+#8 151.0 ==================================================
+#8 151.4 downloaded 183 KB
+#8 151.4 
+#8 151.5 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/preprocessCore_1.68.0_R_x86_64-pc-linux-gnu.tar.gz'
+#8 152.0 Content type 'application/octet-stream' length 344670 bytes (336 KB)
+#8 152.0 ==================================================
+#8 152.7 downloaded 336 KB
+#8 152.7 
+#8 152.7 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/GO.db_3.20.0_R_x86_64-pc-linux-gnu.tar.gz'
+#8 153.2 Content type 'application/octet-stream' length 26400153 bytes (25.2 MB)
+#8 153.8 ==================================================
+#8 154.9 downloaded 25.2 MB
+#8 154.9 
+#8 155.0 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/AnnotationDbi_1.68.0_R_x86_64-pc-linux-gnu.tar.gz'
+#8 155.5 Content type 'application/octet-stream' length 5223880 bytes (5.0 MB)
+#8 155.9 ==================================================
+#8 156.4 downloaded 5.0 MB
+#8 156.4 
+#8 156.4 trying URL 'https://p3m.dev/cran/__linux__/noble/2025-04-10/src/contrib/Rcpp_1.0.14.tar.gz'
+#8 171.6 Content type 'binary/octet-stream' length 2175360 bytes (2.1 MB)
+#8 171.6 ==================================================
+#8 172.2 downloaded 2.1 MB
+#8 172.2 
+#8 172.2 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/GeneOverlap_1.42.0_R_x86_64-pc-linux-gnu.tar.gz'
+#8 172.8 Content type 'application/octet-stream' length 548297 bytes (535 KB)
+#8 172.8 ==================================================
+#8 173.5 downloaded 535 KB
+#8 173.5 
+#8 173.5 trying URL 'https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker/src/contrib/WGCNA_1.73_R_x86_64-pc-linux-gnu.tar.gz'
+#8 174.1 Content type 'application/octet-stream' length 3463173 bytes (3.3 MB)
+#8 174.3 ==================================================
+#8 175.0 downloaded 3.3 MB
+#8 175.0 
+#8 175.9 begin installing package ‘sys’
+#8 175.9 begin installing package ‘utf8’
+#8 175.9 begin installing package ‘fs’
+#8 175.9 begin installing package ‘rappdirs’
+#8 176.3 * installing *binary* package ‘rappdirs’ ...
+#8 176.3 * DONE (rappdirs)
+#8 176.3 begin installing package ‘zlibbioc’
+#8 176.3 * installing *binary* package ‘sys’ ...
+#8 176.3 * DONE (sys)
+#8 176.3 begin installing package ‘GenomeInfoDbData’
+#8 176.3 * installing *binary* package ‘utf8’ ...
+#8 176.3 * DONE (utf8)
+#8 176.4 begin installing package ‘farver’
+#8 176.4 * installing *binary* package ‘fs’ ...
+#8 176.4 * DONE (fs)
+#8 176.4 begin installing package ‘labeling’
+#8 176.8 * installing *binary* package ‘zlibbioc’ ...
+#8 176.8 * DONE (zlibbioc)
+#8 176.8 begin installing package ‘R6’
+#8 176.9 * installing *binary* package ‘labeling’ ...
+#8 176.9 * DONE (labeling)
+#8 176.9 begin installing package ‘fansi’
+#8 177.0 * installing *binary* package ‘farver’ ...
+#8 177.0 * DONE (farver)
+#8 177.0 begin installing package ‘stringi’
+#8 177.3 * installing *binary* package ‘R6’ ...
+#8 177.3 * DONE (R6)
+#8 177.3 begin installing package ‘backports’
+#8 177.4 * installing *binary* package ‘fansi’ ...
+#8 177.4 * DONE (fansi)
+#8 177.4 begin installing package ‘mime’
+#8 177.5 * installing *binary* package ‘GenomeInfoDbData’ ...
+#8 177.5 * DONE (GenomeInfoDbData)
+#8 177.5 begin installing package ‘bit’
+#8 177.7 * installing *binary* package ‘backports’ ...
+#8 177.7 * DONE (backports)
+#8 177.7 begin installing package ‘curl’
+#8 177.7 * installing *binary* package ‘mime’ ...
+#8 177.7 * DONE (mime)
+#8 177.7 begin installing package ‘crayon’
+#8 177.8 * installing *binary* package ‘stringi’ ...
+#8 177.8 * DONE (stringi)
+#8 177.8 begin installing package ‘bitops’
+#8 177.9 * installing *binary* package ‘bit’ ...
+#8 177.9 * DONE (bit)
+#8 177.9 begin installing package ‘cli’
+#8 178.1 * installing *binary* package ‘crayon’ ...
+#8 178.1 * DONE (crayon)
+#8 178.1 begin installing package ‘glue’
+#8 178.2 * installing *binary* package ‘bitops’ ...
+#8 178.2 * DONE (bitops)
+#8 178.2 begin installing package ‘isoband’
+#8 178.2 * installing *binary* package ‘curl’ ...
+#8 178.2 * DONE (curl)
+#8 178.2 begin installing package ‘rlang’
+#8 178.4 * installing *binary* package ‘cli’ ...
+#8 178.4 * DONE (cli)
+#8 178.4 begin installing package ‘withr’
+#8 178.4 * installing *binary* package ‘glue’ ...
+#8 178.4 * DONE (glue)
+#8 178.4 begin installing package ‘magrittr’
+#8 178.5 * installing *binary* package ‘isoband’ ...
+#8 178.5 * DONE (isoband)
+#8 178.5 begin installing package ‘rstudioapi’
+#8 178.6 * installing *binary* package ‘rlang’ ...
+#8 178.6 * DONE (rlang)
+#8 178.6 begin installing package ‘viridisLite’
+#8 178.7 * installing *binary* package ‘withr’ ...
+#8 178.7 * DONE (withr)
+#8 178.7 begin installing package ‘digest’
+#8 178.8 * installing *binary* package ‘magrittr’ ...
+#8 178.8 * DONE (magrittr)
+#8 178.8 begin installing package ‘fastmap’
+#8 178.9 * installing *binary* package ‘rstudioapi’ ...
+#8 178.9 * DONE (rstudioapi)
+#8 178.9 * installing *binary* package ‘viridisLite’ ...
+#8 178.9 * DONE (viridisLite)
+#8 178.9 begin installing package ‘evaluate’
+#8 178.9 begin installing package ‘jsonlite’
+#8 179.1 * installing *binary* package ‘digest’ ...
+#8 179.1 * DONE (digest)
+#8 179.1 begin installing package ‘xfun’
+#8 179.1 * installing *binary* package ‘fastmap’ ...
+#8 179.1 * DONE (fastmap)
+#8 179.1 begin installing package ‘yaml’
+#8 179.3 * installing *binary* package ‘evaluate’ ...
+#8 179.3 * DONE (evaluate)
+#8 179.3 begin installing package ‘pkgconfig’
+#8 179.5 * installing *binary* package ‘jsonlite’ ...
+#8 179.5 * DONE (jsonlite)
+#8 179.5 begin installing package ‘plogr’
+#8 179.6 * installing *binary* package ‘xfun’ ...
+#8 179.6 * DONE (xfun)
+#8 179.6 begin installing package ‘cpp11’
+#8 179.6 * installing *binary* package ‘yaml’ ...
+#8 179.6 * DONE (yaml)
+#8 179.6 begin installing package ‘png’
+#8 179.7 * installing *binary* package ‘pkgconfig’ ...
+#8 179.7 * DONE (pkgconfig)
+#8 179.7 begin installing package ‘gtools’
+#8 179.9 * installing *binary* package ‘plogr’ ...
+#8 179.9 * DONE (plogr)
+#8 179.9 begin installing package ‘data.table’
+#8 180.0 * installing *binary* package ‘png’ ...
+#8 180.0 * DONE (png)
+#8 180.0 begin installing package ‘base64enc’
+#8 180.1 * installing *binary* package ‘cpp11’ ...
+#8 180.1 * DONE (cpp11)
+#8 180.1 begin installing package ‘colorspace’
+#8 180.2 * installing *binary* package ‘gtools’ ...
+#8 180.2 * DONE (gtools)
+#8 180.2 begin installing package ‘Formula’
+#8 180.4 * installing *binary* package ‘base64enc’ ...
+#8 180.4 * DONE (base64enc)
+#8 180.4 begin installing package ‘iterators’
+#8 180.7 * installing *binary* package ‘Formula’ ...
+#8 180.7 * DONE (Formula)
+#8 180.7 begin installing package ‘BiocGenerics’
+#8 181.0 * installing *binary* package ‘iterators’ ...
+#8 181.0 * DONE (iterators)
+#8 181.0 begin installing package ‘DBI’
+#8 181.0 * installing *binary* package ‘data.table’ ...
+#8 181.0 * DONE (data.table)
+#8 181.0 begin installing package ‘RColorBrewer’
+#8 181.2 * installing *binary* package ‘colorspace’ ...
+#8 181.2 * DONE (colorspace)
+#8 181.2 begin installing package ‘dynamicTreeCut’
+#8 181.3 * installing *binary* package ‘BiocGenerics’ ...
+#8 181.3 * DONE (BiocGenerics)
+#8 181.3 begin installing package ‘fastcluster’
+#8 181.4 * installing *binary* package ‘RColorBrewer’ ...
+#8 181.4 * DONE (RColorBrewer)
+#8 181.5 begin installing package ‘matrixStats’
+#8 181.6 * installing *binary* package ‘DBI’ ...
+#8 181.6 * DONE (DBI)
+#8 181.6 begin installing package ‘impute’
+#8 181.7 * installing *binary* package ‘dynamicTreeCut’ ...
+#8 181.7 * DONE (dynamicTreeCut)
+#8 181.7 begin installing package ‘preprocessCore’
+#8 181.8 * installing *binary* package ‘fastcluster’ ...
+#8 181.8 * DONE (fastcluster)
+#8 181.8 begin installing package ‘Rcpp’
+#8 182.2 * installing *binary* package ‘impute’ ...
+#8 182.2 * DONE (impute)
+#8 182.2 begin installing package ‘askpass’
+#8 182.2 * installing *binary* package ‘preprocessCore’ ...
+#8 182.2 * DONE (preprocessCore)
+#8 182.2 begin installing package ‘munsell’
+#8 182.2 * installing *binary* package ‘matrixStats’ ...
+#8 182.2 * DONE (matrixStats)
+#8 182.2 begin installing package ‘cachem’
+#8 182.5 * installing *binary* package ‘askpass’ ...
+#8 182.5 * DONE (askpass)
+#8 182.5 begin installing package ‘lifecycle’
+#8 182.6 * installing *binary* package ‘cachem’ ...
+#8 182.6 * DONE (cachem)
+#8 182.6 begin installing package ‘checkmate’
+#8 182.6 * installing *binary* package ‘munsell’ ...
+#8 182.6 * DONE (munsell)
+#8 182.6 begin installing package ‘tinytex’
+#8 182.9 * installing *binary* package ‘lifecycle’ ...
+#8 182.9 * DONE (lifecycle)
+#8 182.9 begin installing package ‘highr’
+#8 182.9 * installing *binary* package ‘tinytex’ ...
+#8 182.9 * DONE (tinytex)
+#8 182.9 begin installing package ‘bit64’
+#8 183.0 * installing *binary* package ‘checkmate’ ...
+#8 183.0 * DONE (checkmate)
+#8 183.0 begin installing package ‘caTools’
+#8 183.2 * installing *binary* package ‘highr’ ...
+#8 183.2 * DONE (highr)
+#8 183.2 begin installing package ‘htmltools’
+#8 183.3 * installing *binary* package ‘bit64’ ...
+#8 183.3 * DONE (bit64)
+#8 183.3 begin installing package ‘Biobase’
+#8 183.3 * installing *binary* package ‘caTools’ ...
+#8 183.3 * DONE (caTools)
+#8 183.4 begin installing package ‘S4Vectors’
+#8 183.6 * installing *binary* package ‘htmltools’ ...
+#8 183.6 * DONE (htmltools)
+#8 183.6 begin installing package ‘foreach’
+#8 183.7 * installing *binary* package ‘Rcpp’ ...
+#8 183.7 * DONE (Rcpp)
+#8 183.7 begin installing package ‘sass’
+#8 184.1 * installing *binary* package ‘S4Vectors’ ...
+#8 184.1 * DONE (S4Vectors)
+#8 184.1 begin installing package ‘openssl’
+#8 184.2 * installing *binary* package ‘Biobase’ ...
+#8 184.2 * DONE (Biobase)
+#8 184.2 begin installing package ‘scales’
+#8 184.2 * installing *binary* package ‘foreach’ ...
+#8 184.2 * DONE (foreach)
+#8 184.2 begin installing package ‘vctrs’
+#8 184.5 * installing *binary* package ‘sass’ ...
+#8 184.5 * DONE (sass)
+#8 184.5 begin installing package ‘fontawesome’
+#8 184.5 * installing *binary* package ‘scales’ ...
+#8 184.5 * DONE (scales)
+#8 184.5 begin installing package ‘jquerylib’
+#8 184.6 * installing *binary* package ‘openssl’ ...
+#8 184.6 * DONE (openssl)
+#8 184.6 begin installing package ‘memoise’
+#8 184.6 * installing *binary* package ‘vctrs’ ...
+#8 184.6 * DONE (vctrs)
+#8 184.6 begin installing package ‘gtable’
+#8 185.1 * installing *binary* package ‘memoise’ ...
+#8 185.1 * DONE (memoise)
+#8 185.1 begin installing package ‘knitr’
+#8 185.1 * installing *binary* package ‘fontawesome’ ...
+#8 185.1 * DONE (fontawesome)
+#8 185.1 begin installing package ‘IRanges’
+#8 185.2 * installing *binary* package ‘jquerylib’ ...
+#8 185.2 * DONE (jquerylib)
+#8 185.2 begin installing package ‘gplots’
+#8 185.2 * installing *binary* package ‘gtable’ ...
+#8 185.2 * DONE (gtable)
+#8 185.2 begin installing package ‘doParallel’
+#8 185.5 * installing *binary* package ‘doParallel’ ...
+#8 185.5 * DONE (doParallel)
+#8 185.5 begin installing package ‘pillar’
+#8 185.5 * installing *binary* package ‘gplots’ ...
+#8 185.5 * DONE (gplots)
+#8 185.5 begin installing package ‘stringr’
+#8 185.7 * installing *binary* package ‘IRanges’ ...
+#8 185.7 * DONE (IRanges)
+#8 185.7 begin installing package ‘bslib’
+#8 185.7 * installing *binary* package ‘knitr’ ...
+#8 185.7 * DONE (knitr)
+#8 185.7 begin installing package ‘blob’
+#8 185.9 * installing *binary* package ‘stringr’ ...
+#8 185.9 * DONE (stringr)
+#8 185.9 begin installing package ‘httr’
+#8 185.9 * installing *binary* package ‘pillar’ ...
+#8 185.9 * DONE (pillar)
+#8 185.9 begin installing package ‘gridExtra’
+#8 186.0 * installing *binary* package ‘blob’ ...
+#8 186.0 * DONE (blob)
+#8 186.0 begin installing package ‘GeneOverlap’
+#8 186.3 * installing *binary* package ‘httr’ ...
+#8 186.3 * DONE (httr)
+#8 186.3 begin installing package ‘tibble’
+#8 186.5 * installing *binary* package ‘gridExtra’ ...
+#8 186.5 * DONE (gridExtra)
+#8 186.5 begin installing package ‘RSQLite’
+#8 186.5 * installing *binary* package ‘GeneOverlap’ ...
+#8 186.5 * DONE (GeneOverlap)
+#8 186.5 begin installing package ‘XVector’
+#8 186.9 * installing *binary* package ‘tibble’ ...
+#8 186.9 * DONE (tibble)
+#8 186.9 begin installing package ‘UCSC.utils’
+#8 186.9 * installing *binary* package ‘XVector’ ...
+#8 186.9 * DONE (XVector)
+#8 186.9 begin installing package ‘ggplot2’
+#8 187.0 * installing *binary* package ‘RSQLite’ ...
+#8 187.0 * DONE (RSQLite)
+#8 187.2 * installing *binary* package ‘UCSC.utils’ ...
+#8 187.2 * DONE (UCSC.utils)
+#8 187.2 begin installing package ‘GenomeInfoDb’
+#8 187.5 * installing *binary* package ‘ggplot2’ ...
+#8 187.5 * DONE (ggplot2)
+#8 187.5 begin installing package ‘viridis’
+#8 187.8 * installing *binary* package ‘bslib’ ...
+#8 187.8 * DONE (bslib)
+#8 187.8 begin installing package ‘rmarkdown’
+#8 187.9 * installing *binary* package ‘viridis’ ...
+#8 187.9 * DONE (viridis)
+#8 187.9 * installing *binary* package ‘GenomeInfoDb’ ...
+#8 187.9 * DONE (GenomeInfoDb)
+#8 187.9 begin installing package ‘Biostrings’
+#8 188.9 * installing *binary* package ‘rmarkdown’ ...
+#8 188.9 * DONE (rmarkdown)
+#8 188.9 begin installing package ‘htmlwidgets’
+#8 189.0 * installing *binary* package ‘Biostrings’ ...
+#8 189.0 * DONE (Biostrings)
+#8 189.0 begin installing package ‘KEGGREST’
+#8 189.5 * installing *binary* package ‘htmlwidgets’ ...
+#8 189.5 * DONE (htmlwidgets)
+#8 189.5 begin installing package ‘htmlTable’
+#8 189.5 * installing *binary* package ‘KEGGREST’ ...
+#8 189.5 * DONE (KEGGREST)
+#8 189.5 begin installing package ‘AnnotationDbi’
+#8 190.1 * installing *binary* package ‘htmlTable’ ...
+#8 190.1 * DONE (htmlTable)
+#8 190.1 begin installing package ‘Hmisc’
+#8 190.6 * installing *binary* package ‘AnnotationDbi’ ...
+#8 190.6 * DONE (AnnotationDbi)
+#8 190.6 begin installing package ‘GO.db’
+#8 191.5 * installing *binary* package ‘Hmisc’ ...
+#8 191.5 * DONE (Hmisc)
+#8 194.5 * installing *binary* package ‘GO.db’ ...
+#8 194.5 * DONE (GO.db)
+#8 194.5 begin installing package ‘WGCNA’
+#8 195.1 * installing *binary* package ‘WGCNA’ ...
+#8 195.1 * DONE (WGCNA)
+#8 195.1 
+#8 195.1 The downloaded source packages are in
+#8 195.1 	‘/tmp/RtmpzONxWh/downloaded_packages’
+#8 204.1 A1 rbuild install: pass 2; 0 of 2 named packages missing
+#8 204.1 A1 rbuild install: done; R 4.4.3; CRAN https://p3m.dev/cran/__linux__/noble/2025-04-10; Bioconductor 3.20 (binaries https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker)
+#8 DONE 214.1s
+
+#9 [5/7] COPY packages.lock.tsv /opt/a1_rbuild/packages.lock.tsv
+#9 DONE 0.7s
+
+#10 [6/7] RUN Rscript /opt/a1_rbuild/install_packages.R verify /opt/a1_rbuild/packages.lock.tsv
+#10 1.001 A1 rbuild verify: lock empty (record mode); the helper writes the lock from this image
+#10 DONE 1.0s
+
+#11 [7/7] WORKDIR /work
+#11 DONE 0.2s
+
+#12 exporting to image
+#12 exporting layers
+#12 exporting layers 25.9s done
+#12 exporting manifest sha256:06add9903cb1b4e6275705b82ae324a12c71ca1bbda5ce716a2ea4f198b8f3cb 0.1s done
+#12 exporting config sha256:48ceb24402d920aabee6531cb6e033a30ad6b2d5473fb7cc665a506a4468c77c
+#12 exporting config sha256:48ceb24402d920aabee6531cb6e033a30ad6b2d5473fb7cc665a506a4468c77c 0.4s done
+#12 exporting attestation manifest sha256:2ca02248bdcae183d325526230be09e6d1314652c1d58bcc4cdf37d30bbd4b84
+#12 exporting attestation manifest sha256:2ca02248bdcae183d325526230be09e6d1314652c1d58bcc4cdf37d30bbd4b84 0.4s done
+#12 exporting manifest list sha256:ef702a7ee6acf7d9504b899cedc5984ff004303304744911d582c454c9e2af7c
+#12 exporting manifest list sha256:ef702a7ee6acf7d9504b899cedc5984ff004303304744911d582c454c9e2af7c 0.1s done
+#12 naming to docker.io/library/a1-audit-r:wp2-r4.4.3
+#12 naming to docker.io/library/a1-audit-r:wp2-r4.4.3 0.0s done
+#12 unpacking to docker.io/library/a1-audit-r:wp2-r4.4.3
+#12 unpacking to docker.io/library/a1-audit-r:wp2-r4.4.3 13.3s done
+#12 DONE 40.7s

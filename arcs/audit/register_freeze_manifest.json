@@ -1,0 +1,218 @@
+{
+ "what": "A1 claims register (DRAFT v6.11) freeze manifest: the sha256 of every file frozen with claims_register.md -- the TSV, its builder, the pre-freeze S-build manifest and its four tables (SEGURA_S7_TERMS, PRE_DG_ROWS, NAME_MATCHES, UNIVERSE_GENES), every register_maps/*.json and every src_register/*.py (register section 1.11). Written by the builder after all its checks passed; deterministic; repo-relative paths.",
+ "register": {
+  "path": "arcs/audit/claims_register.md",
+  "sha256_at_build": "897b2112d25455b330e2ae2adac659180d46f4825ae765b6a791d110873abdd3",
+  "sha256_section7_tsv_field_masked": "581a5f37392198d308f8accebde66c4391096ecbd85049000352ebd1d0137cc7",
+  "section7_tsv_sha256": "d6499b5d10eed39fc5bfcd8033fc5f7c7beea88f1d4b4c30fd21fed632bf8058",
+  "note": "frozen separately with bench.py freeze; a change to it needs a TSV rebuild (the TSV header records the register's sha256 with section 7's 'TSV sha256' field masked as 64 zeros, since section 7 records the TSV's sha256) and so a new manifest"
+ },
+ "counts": {
+  "tsv_rows": 692,
+  "m_lower": 207,
+  "m_upper": 207,
+  "m_secondary_near_miss": 223,
+  "interim_population": 14,
+  "population_all_gates_open_at_most": 214,
+  "composition_all_gates_open": {
+   "component-level": 14,
+   "no calibrated test": 4,
+   "not auditable": 44,
+   "not testable as stated": 40,
+   "tested (full verdict)": 3,
+   "tested (full verdict) [conditional on its carrier]": 109
+  },
+  "composition_all_gates_open_lower_view": {
+   "component-level": 14,
+   "no calibrated test": 4,
+   "not auditable": 50,
+   "not testable as stated": 34,
+   "tested (full verdict)": 3,
+   "tested (full verdict) [conditional on its carrier]": 109
+  },
+  "s_build_set_entries": 374,
+  "carrier_selftest": "141 / 141"
+ },
+ "files": [
+  {
+   "path": "arcs/audit/claims_register.tsv",
+   "bytes": 3398989,
+   "sha256": "d6499b5d10eed39fc5bfcd8033fc5f7c7beea88f1d4b4c30fd21fed632bf8058"
+  },
+  {
+   "path": "arcs/audit/claims_register_tsv_build.py",
+   "bytes": 368215,
+   "sha256": "ad1c8c24d098fb8a6d044e1d64fb8b29d9941fb52771acad93e91cc7a50c948f"
+  },
+  {
+   "path": "arcs/audit/register_sets/MANIFEST.json",
+   "bytes": 523449,
+   "sha256": "f81106f040b62a644105dce6af0fa6edf9f6ad0e1794f7631388d128f8c2f425"
+  },
+  {
+   "path": "arcs/audit/register_sets/SEGURA_S7_TERMS.json",
+   "bytes": 23620,
+   "sha256": "888c3468ef28d18239e9f383a3692154ec5b095f142a28d73d701b98429b5b96"
+  },
+  {
+   "path": "arcs/audit/register_sets/PRE_DG_ROWS.json",
+   "bytes": 3824,
+   "sha256": "c098a87984d4becaec36014efe11920be65ff910b7aa18f0745394d419763f7e"
+  },
+  {
+   "path": "arcs/audit/register_sets/NAME_MATCHES.json",
+   "bytes": 188045,
+   "sha256": "2388c791c01022b3416fa372a088e5b6d2e65023e27ac9520b0fa5eed98589e3"
+  },
+  {
+   "path": "arcs/audit/register_sets/UNIVERSE_GENES.json",
+   "bytes": 768293,
+   "sha256": "f27144b184d86ff25543613dd2f35eb304dcf26f713531fc5951e31ebbab9046"
+  },
+  {
+   "path": "arcs/audit/register_maps/buch_fig5h_grid.json",
+   "bytes": 6086,
+   "sha256": "30ec1e8c966616f18e2bebd58b744e65ec2b0458fcea10e872bfe6247327dcc5"
+  },
+  {
+   "path": "arcs/audit/register_maps/carrier_tests.json",
+   "bytes": 412007,
+   "sha256": "5ea64bcdc17e32562e0d91c38c72a3abeb4e1f8e155bb9fd4349f120056179b4"
+  },
+  {
+   "path": "arcs/audit/register_maps/carrier_tests_selftest.json",
+   "bytes": 191230,
+   "sha256": "2328beeb16b75b3bd46efa02e5cdaa2845e8fc6d7534d8cd77126a85b101d614"
+  },
+  {
+   "path": "arcs/audit/register_maps/dear_orientation.json",
+   "bytes": 1453,
+   "sha256": "476f53ef9c812b436d6cc9f0207b65235ab7e6b2155a564046b83ea666d6e830"
+  },
+  {
+   "path": "arcs/audit/register_maps/gandal2022_module_labels.json",
+   "bytes": 3185,
+   "sha256": "d09cf6a97c19a46932685173468f24835c0cd97f31285ccbd783dea8fdf7bbdc"
+  },
+  {
+   "path": "arcs/audit/register_maps/gia_mdd_paths.json",
+   "bytes": 24865,
+   "sha256": "361a62de1d96f87efd88fbf4350f49c70e097524fe640af7e77280060f157ca5"
+  },
+  {
+   "path": "arcs/audit/register_maps/IDENTITY_prefreeze.json",
+   "bytes": 57478,
+   "sha256": "6cbde63e33a94999554b5eb04f553a82fd58482d916958ff54979eb376d383e2"
+  },
+  {
+   "path": "arcs/audit/register_maps/mist64_ahba_matrix.json",
+   "bytes": 2157,
+   "sha256": "edab135da9711c9176f89c3c250f235d55d44b56b8bb986ad23ecf03029f09ab"
+  },
+  {
+   "path": "arcs/audit/register_maps/mist64_classes.json",
+   "bytes": 32662,
+   "sha256": "c8310585b471944e5fbe1f6fd9d789864fdf5fa4639df824564a77f5a034885a"
+  },
+  {
+   "path": "arcs/audit/register_maps/privacy_guard_selftest.json",
+   "bytes": 8027,
+   "sha256": "600bc3b1d04705390a0e54681569ed7e8d096432454edcfb5bb7ca9345a41704"
+  },
+  {
+   "path": "arcs/audit/register_maps/privacy_inventory_v68.json",
+   "bytes": 32348,
+   "sha256": "0106a840ee916cfce18c6061207ec13c0d7ff036049db61769915f6c59dc9171"
+  },
+  {
+   "path": "arcs/audit/src_register/carrier_labels.py",
+   "bytes": 83011,
+   "sha256": "a86d6bbdbcf8a7a3b70f540e170e8977056c9af7f48049716550538aca359be8"
+  },
+  {
+   "path": "arcs/audit/src_register/carrier_test.py",
+   "bytes": 143687,
+   "sha256": "96fedc6a6705fad948d68118b56b127ca63f75f870a7ea498d0ba03ff1b3a539"
+  },
+  {
+   "path": "arcs/audit/src_register/fetch_mist.py",
+   "bytes": 3866,
+   "sha256": "922108acfb992ef798c11fce2b0a5df6f99271bb7250aed65be00c629a3642aa"
+  },
+  {
+   "path": "arcs/audit/src_register/fetch_util.py",
+   "bytes": 2789,
+   "sha256": "19cb3453fcfd878be6411d77fd4bc1b4c63248e59fdc02ac7c961f619af91498"
+  },
+  {
+   "path": "arcs/audit/src_register/fetch_v6.py",
+   "bytes": 4704,
+   "sha256": "f9fcf88185b642fc20b4912269f1cfda1e82f170630726e14296bb5fb92425ba"
+  },
+  {
+   "path": "arcs/audit/src_register/fetch_v66.py",
+   "bytes": 39051,
+   "sha256": "8009a03851c5eec3272158771e584ff81f9cfc6e8ce9aa9421c6820d6b923ef5"
+  },
+  {
+   "path": "arcs/audit/src_register/identity_prefreeze.py",
+   "bytes": 27873,
+   "sha256": "93777e5a9a58480c92754e76694717e5612530c4c8209462f2f47a7e0b6768fc"
+  },
+  {
+   "path": "arcs/audit/src_register/mist64_ahba_matrix.py",
+   "bytes": 5168,
+   "sha256": "32cdacc002e894cd8fbfb50319158933051e954aaaa9955555e9018c72f67cc2"
+  },
+  {
+   "path": "arcs/audit/src_register/mist64_classes.py",
+   "bytes": 10336,
+   "sha256": "242d5620396b245d30d4ae3913eb21bbfcfe51ee068da34529cc643d3262bf0f"
+  },
+  {
+   "path": "arcs/audit/src_register/name_match.py",
+   "bytes": 8140,
+   "sha256": "e31d7d090aa2ef4fdd85c1ccf2179b3f3f7db525612ef5e8f9912cf0f330deae"
+  },
+  {
+   "path": "arcs/audit/src_register/plant_register_numbers.py",
+   "bytes": 4391,
+   "sha256": "c186ef7c3c28525c1ba65dd24fea09e760158346d289a10ebaadfd7dd9475ca1"
+  },
+  {
+   "path": "arcs/audit/src_register/pre_dg_rows.py",
+   "bytes": 4524,
+   "sha256": "0c082b095e1945e5ead6aaa8cbd3782bff1eeb4d189f53690b795e187ffe3edf"
+  },
+  {
+   "path": "arcs/audit/src_register/privacy_guard.py",
+   "bytes": 38810,
+   "sha256": "430f86dc087ee47d3e673ba280a6a54dbf79c59fe2b006eb9e283ffe7602a366"
+  },
+  {
+   "path": "arcs/audit/src_register/reduce_v68.py",
+   "bytes": 37781,
+   "sha256": "b72da6671f06424c78bb18eedd695f62b73b8730e60af37908e3d5e12d35a9b2"
+  },
+  {
+   "path": "arcs/audit/src_register/s_build.py",
+   "bytes": 152774,
+   "sha256": "0bea273fcb15cecabea8eb2fa8816cce0d2f6b6ac86664c0362201d3b92e5f98"
+  },
+  {
+   "path": "arcs/audit/src_register/s_build_v66.py",
+   "bytes": 107305,
+   "sha256": "f4bc7e1f584b70dc40b2bb3b80b9ef061a7eb547bf570d83a5e1bb36bcb2238e"
+  },
+  {
+   "path": "arcs/audit/src_register/s_extract.py",
+   "bytes": 27348,
+   "sha256": "30a821a034bef0b2a9082aeca784864211504c7e57b740a92f44573dcc24bf22"
+  },
+  {
+   "path": "arcs/audit/src_register/s_sources_md.py",
+   "bytes": 49662,
+   "sha256": "d4c30535648da7a3043deb64e17f8b43aaa13cdc347adc8233cd893549608fc4"
+  }
+ ]
+}

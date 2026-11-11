@@ -1,0 +1,17 @@
+{
+ "set_id": "uncorroborated_BUCH-E-Trans-StructConstRibosome-S2",
+ "status": "not auditable (S undefined)",
+ "definition": "Fig. 5h label '*Ribosomal structure' (as printed) → the PANTHER 16.0 GO-slim term (the release the paper names) the label reaches by the name rule of §§1.1 / 1.",
+ "reason": "register v6.5 (1) (orchestrator under the operator's standing delegation; decided after five review rounds, v6.0 -> v6.4, showed that the text criterion alone could not exclude result lists): source 1 must be corroborated -- Jaccard >= .80 with a pinned external definition of the set (sources 2-3), else a length equal to a printed size; this cell has neither, so no carrier list can be corroborated: not auditable (S undefined: source 1 uncorroborated): the printed label 'Ribosomal structure' reaches no name, synonym or normalised name of PANTHER 16.0 GO-slim (the release the paper names) under the name rule (register 1.1 / 1.6, R1), so sources 2-3 define no set, and the paper prints no size (v5-v6.4: S conditional on MOESM3, R2)",
+ "cells_detail": [
+  {
+   "cell": "BUCH-E-Trans-StructConstRibosome-S2",
+   "row": 422,
+   "analysis_class": "V-AAL",
+   "outcome": null
+  }
+ ],
+ "cells": [
+  "BUCH-E-Trans-StructConstRibosome-S2"
+ ]
+}

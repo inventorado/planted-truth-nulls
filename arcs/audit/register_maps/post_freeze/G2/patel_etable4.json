@@ -1,0 +1,76 @@
+{
+ "schema": "a1_post_freeze_identity_v1",
+ "key": "patel_etable4",
+ "gate": "G2",
+ "url": "https://none.invalid/no-url-registered",
+ "kind": "file",
+ "date_utc": "2026-10-17T17:39:49+00:00",
+ "pinned": {
+  "pinned_bytes": null,
+  "pinned_sha256": null
+ },
+ "url_note": "no URL registered",
+ "fetch": {
+  "source": "pinned copy on disk",
+  "path_sha256": "35cacaffc4a82f39b90bf01ec687bbfe57816c6092c2c1935c26172b5fb7f1b1",
+  "screen_hits": {
+   "V": 0,
+   "N": 0
+  }
+ },
+ "identity": {
+  "facts": {
+   "bytes": 2545816,
+   "sha256": "d9da0b801a43eb14b11276ba0b2df5cb3dbe376d1c56820f6f756b504a54f2e8",
+   "md5": "acf39fdb360ea73802a1802c4ec1735d",
+   "git_blob": "e85c3b9fb201faf20bd50480c0c0b216b1d53842",
+   "has_crlf": true,
+   "git_blob_lf": "1cb008802126f1f208853258d676fee8b2cbbfd6",
+   "bytes_lf": 2533821
+  },
+  "references": [
+   {
+    "basis": "sha256 of the copy on disk",
+    "bytes": 2545816,
+    "sha256": "d9da0b801a43eb14b11276ba0b2df5cb3dbe376d1c56820f6f756b504a54f2e8"
+   },
+   {
+    "basis": "git blob",
+    "bytes": 2545816,
+    "git_blob": "e85c3b9fb201faf20bd50480c0c0b216b1d53842"
+   }
+  ],
+  "comparison": {
+   "result": "identity match",
+   "checks": [
+    {
+     "basis": "sha256 of the copy on disk",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    },
+    {
+     "basis": "git blob",
+     "result": "identity match",
+     "lf_conversion": false,
+     "size_equal": true,
+     "hash_equal": true
+    }
+   ],
+   "lf_conversion": false
+  }
+ },
+ "identifier_bearing": false,
+ "extraction": {
+  "object_path": "D:/RESEARCH/asd-imaging-genetics/artifacts/audit/wp4/G2/patel_etable4/patel_etable4_extract.json",
+  "object_sha256": "16ab9ff09dbbf86d45bab7e71984cfafce098c9cc10c3195d64a69762837871a"
+ },
+ "stdio_violations": 0,
+ "stdio_passed": 0,
+ "warnings": {},
+ "logging": {
+  "DEBUG": 252786
+ },
+ "status": "extracted"
+}
