@@ -1,9 +1,9 @@
 {
- "built_utc": "2026-11-11T14:46:32Z",
- "bytes": 138438889,
+ "built_utc": "2026-11-11T15:28:45Z",
+ "bytes": 138445573,
  "commit": "65f44548f9a0cede412398fede79a28f461cd344",
  "commit_date": "2026-11-11",
- "doi": "10.5281/zenodo.24138836",
+ "doi": "10.5281/zenodo.24139735",
  "eol_lf_hash_also_recorded_elsewhere": [
   "arcs/audit/results/e3_catch_curves_a5.json",
   "arcs/audit/results/e3_gates_a3.json",
@@ -66,14 +66,14 @@
  "final": true,
  "paper": {
   "build_pdf_stdout": [
-   "wrote build/p1_final.md, build/p1_final.tex (448 lines); 25 cited keys in refs.bib",
+   "wrote build/p1_final.md, build/p1_final.tex (450 lines); 25 cited keys in refs.bib",
    "wrote build/p1_final.pdf"
   ],
-  "draft_sha256": "f50132b9532d88fa84c4671d99eba12a7474281871dbdaa37c0ac92f704af20a",
+  "draft_sha256": "8944e9bc8f18478ed63c4ce4ee8f81b5abc8f833c6dae9b6e76d3f1f977dcc8e",
   "title": "Calibrating gene-set nulls for imaging transcriptomics with planted truths"
  },
  "paper1_figures_tables_changed_between_commit_and_paper_commit": [],
- "paper_commit": "714278120a628a816064fcd71d9cf6d687acd628",
+ "paper_commit": "ba701c7da739054412f732b2c0e1d16672f3f71c",
  "repo_url": "https://github.com/inventorado/planted-truth-nulls",
  "scans": {
   "deny_list_hits": 0,

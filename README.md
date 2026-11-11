@@ -1,10 +1,10 @@
 # Calibrating gene-set nulls for imaging transcriptomics with planted truths
 
 Archive of the code, frozen protocol, result files and manuscript for paper P1: Calibrating gene-set nulls for imaging transcriptomics with planted truths.
-Author: Radoslav Lovecký (Arperon). Archived at https://doi.org/10.5281/zenodo.24138836; repository https://github.com/inventorado/planted-truth-nulls.
+Author: Radoslav Lovecký (Arperon). Archived at https://doi.org/10.5281/zenodo.24139735; repository https://github.com/inventorado/planted-truth-nulls.
 
 This is a curated release of one study (the "A1 audit" arc) of a larger private research repository. It was built
-from git commit `65f4454` (code and results) and `7142781` (manuscript) by
+from git commit `65f4454` (code and results) and `ba701c7` (manuscript) by
 `arcs/audit/paper1/release/build_release.py`, with the policy in `arcs/audit/paper1/release/RELEASE_POLICY.md`.
 Repository-relative paths are kept, so the paths written in the manuscript and in the result files resolve here.
 
