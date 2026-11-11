@@ -30,6 +30,20 @@
 | fa_a3.by_group | {"species_fa": {"n_strata": 372, "max_rate": 0.022, "missing": 0, "blocked": 3980, "max_missing_or_blocked": 116, "n_per_stratum": [1000], "worst_excl": {"ga... | results/e3_gates_a3.json:gates.{species_fa,verdict_fa_align,verdict_fa_existing}[].{k,n,missing_n,blocked_n,rate} | rate = k/n with missing/blocked kept in n (non-rejections, e3_gates_a3.py:151); worst_excl = max k/(n - missing - blocked) |
 | fa_a3.n_verdict_strata | 390 | same | count |
 | J1 | {"adopted_pair": "strat", "adopted": false, "state": "fail", "alpha": 0.05, "joint": {"fa_range3": [0.027, 0.037], "fa_all_pass": true, "catch": {"CATCH J1[j... | results/e3_gates.json:{adopted_level1_pair,j1_adopted,j1_state,gates.j1_joint,gates.j1_strat}; alpha from src/e3_gates.py:52; verdict catch from results/e3_catch_curves_a5.json (C-gene a=.9) | 3 dp |
+| observed_r.by_a | {"aal|C-sp|a=0.3": {"median": 0.302, "q25": 0.107, "q75": 0.456, "verdict_rate": 0.047}, "aal|C-sp|a=0.6": {"median": 0.598, "q25": 0.481, "q75": 0.689, "ver... | results/e3_observed_r_a5.json:cells[].{r.median,r.q25,r.q75,rate} | 3 dp |
+| observed_r.median.C-sp.a=0.3 | {"aal": 0.302, "dk": 0.305} | results/e3_observed_r_a5.json:cells[family=C-sp, a=0.3].r.median (aal, dk) | 3 dp |
+| observed_r.median.C-sp.a=0.6 | {"aal": 0.598, "dk": 0.585} | results/e3_observed_r_a5.json:cells[family=C-sp, a=0.6].r.median (aal, dk) | 3 dp |
+| observed_r.median.C-sp.a=0.9 | {"aal": 0.897, "dk": 0.898} | results/e3_observed_r_a5.json:cells[family=C-sp, a=0.9].r.median (aal, dk) | 3 dp |
+| observed_r.median.C-gene.a=0.3 | {"aal": 0.163, "dk": 0.191} | results/e3_observed_r_a5.json:cells[family=C-gene, a=0.3].r.median (aal, dk) | 3 dp |
+| observed_r.median.C-gene.a=0.6 | {"aal": 0.312, "dk": 0.329} | results/e3_observed_r_a5.json:cells[family=C-gene, a=0.6].r.median (aal, dk) | 3 dp |
+| observed_r.median.C-gene.a=0.9 | {"aal": 0.375, "dk": 0.448} | results/e3_observed_r_a5.json:cells[family=C-gene, a=0.9].r.median (aal, dk) | 3 dp |
+| observed_r.median_range.C-align.a=0.3 | [0.078, 0.174] | results/e3_observed_r_a5.json:c_align_cells[a=0.3].r.median (2 classes x 3 set kinds) | 3 dp, min-max over 6 cells |
+| observed_r.median_range.C-align.a=0.5 | [0.092, 0.303] | results/e3_observed_r_a5.json:c_align_cells[a=0.5].r.median (2 classes x 3 set kinds) | 3 dp, min-max over 6 cells |
+| observed_r.median_range.C-align.a=0.7 | [0.12, 0.387] | results/e3_observed_r_a5.json:c_align_cells[a=0.7].r.median (2 classes x 3 set kinds) | 3 dp, min-max over 6 cells |
+| observed_r.catch_by_bin | {"aal|C-sp": {"< .2": {"k": 0, "n": 122, "rate": 0.0}, ".2-.3": {"k": 1, "n": 51, "rate": 0.02}, ".3-.4": {"k": 7, "n": 73, "rate": 0.096}, ".4-.5": {"k": 9,... | results/e3_observed_r_a5.json:{catch_by_observed_r,c_align_catch_by_observed_r}[class|family][].{k,n,rate} | rate 3 dp; bins of signed observed r, pooled over a |
+| observed_r.C-gene.by_a_bins | {"aal": {"a=0.3": {".3-.4": {"k": 7, "n": 33, "rate": 0.212}, ".4-.5": {"k": 5, "n": 26, "rate": 0.192}, ".5-.6": {"k": 4, "n": 15, "rate": 0.267}, ".6+": {"... | results/e3_observed_r_a5.json:cells[family=C-gene].bins and catch_by_observed_r[class|C-gene]; bins .6-.7 and >= .7 summed | k / n; rate 3 dp |
+| observed_r.parametric_floor | {"aal": {"largest_r_not_rejecting": 0.268, "smallest_r_rejecting": 0.268}, "dk": {"largest_r_not_rejecting": 0.304, "smallest_r_rejecting": 0.304}} | results/e3_observed_r_a5.json:parametric_floor (from the stored one-sided parametric p of every catch plant) | 3 dp |
+| observed_r.definition | "POST HOC descriptor: r = Pearson correlation of the planted map with the set's raw mean-expression score (the statistic a study reports), from the stored pl... | src/e3_observed_r_a5.py docstring |  |
 
 ## Inputs
 
@@ -46,3 +60,4 @@
 | arcs/audit/results/e3_gates_a3.json | 105e81f1674aaf600af8c22cefd3fc547badd74f2dba27e10f6f8315bfc857b0 | f6b46c3 |
 | arcs/audit/results/e3_gates.json | 5c4dfb652d18d4d79e7fb3e506756ef276d0268347c84126c38cae324e2fbecf | bda7450 |
 | arcs/audit/src/e3_gates.py | df8e87350268c06a800737a5ea6fd4f25a5ef2ac708b4064e0a3ae8a1d7989a2 | 4fd14c4 |
+| arcs/audit/results/e3_observed_r_a5.json | 35013a3c66f87abe5b12e82668948fbfff3440aea4391606d663381e337543ad | 4341a63 |

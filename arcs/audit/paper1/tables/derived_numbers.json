@@ -24,6 +24,10 @@
    "last_commit": "f6b46c3",
    "sha256": "105e81f1674aaf600af8c22cefd3fc547badd74f2dba27e10f6f8315bfc857b0"
   },
+  "arcs/audit/results/e3_observed_r_a5.json": {
+   "last_commit": "4341a63",
+   "sha256": "35013a3c66f87abe5b12e82668948fbfff3440aea4391606d663381e337543ad"
+  },
   "arcs/audit/results/e3_p1_myelin.json": {
    "last_commit": "4561221",
    "sha256": "f1c76e05ae3c1a4df82441588bb9bce7c4bbd5bede5411361e9d95997a1f0fb0"
@@ -384,6 +388,588 @@
    "rounding": "count",
    "src": "same",
    "value": 390
+  },
+  "observed_r.C-gene.by_a_bins": {
+   "rounding": "k / n; rate 3 dp",
+   "src": "results/e3_observed_r_a5.json:cells[family=C-gene].bins and catch_by_observed_r[class|C-gene]; bins .6-.7 and >= .7 summed",
+   "value": {
+    "aal": {
+     "a=0.3": {
+      ".3-.4": {
+       "k": 7,
+       "n": 33,
+       "rate": 0.212
+      },
+      ".4-.5": {
+       "k": 5,
+       "n": 26,
+       "rate": 0.192
+      },
+      ".5-.6": {
+       "k": 4,
+       "n": 15,
+       "rate": 0.267
+      },
+      ".6+": {
+       "k": 3,
+       "n": 13,
+       "rate": 0.231
+      }
+     },
+     "a=0.6": {
+      ".3-.4": {
+       "k": 34,
+       "n": 52,
+       "rate": 0.654
+      },
+      ".4-.5": {
+       "k": 31,
+       "n": 41,
+       "rate": 0.756
+      },
+      ".5-.6": {
+       "k": 34,
+       "n": 40,
+       "rate": 0.85
+      },
+      ".6+": {
+       "k": 20,
+       "n": 22,
+       "rate": 0.909
+      }
+     },
+     "a=0.9": {
+      ".3-.4": {
+       "k": 56,
+       "n": 62,
+       "rate": 0.903
+      },
+      ".4-.5": {
+       "k": 52,
+       "n": 55,
+       "rate": 0.945
+      },
+      ".5-.6": {
+       "k": 42,
+       "n": 42,
+       "rate": 1.0
+      },
+      ".6+": {
+       "k": 32,
+       "n": 32,
+       "rate": 1.0
+      }
+     },
+     "pooled": {
+      ".3-.4": {
+       "k": 97,
+       "n": 147,
+       "rate": 0.66
+      },
+      ".4-.5": {
+       "k": 88,
+       "n": 122,
+       "rate": 0.721
+      },
+      ".5-.6": {
+       "k": 80,
+       "n": 97,
+       "rate": 0.825
+      },
+      ".6+": {
+       "k": 55,
+       "n": 67,
+       "rate": 0.821
+      }
+     }
+    },
+    "dk": {
+     "a=0.3": {
+      ".3-.4": {
+       "k": 5,
+       "n": 40,
+       "rate": 0.125
+      },
+      ".4-.5": {
+       "k": 8,
+       "n": 36,
+       "rate": 0.222
+      },
+      ".5-.6": {
+       "k": 2,
+       "n": 14,
+       "rate": 0.143
+      },
+      ".6+": {
+       "k": 4,
+       "n": 9,
+       "rate": 0.444
+      }
+     },
+     "a=0.6": {
+      ".3-.4": {
+       "k": 20,
+       "n": 58,
+       "rate": 0.345
+      },
+      ".4-.5": {
+       "k": 15,
+       "n": 39,
+       "rate": 0.385
+      },
+      ".5-.6": {
+       "k": 25,
+       "n": 38,
+       "rate": 0.658
+      },
+      ".6+": {
+       "k": 25,
+       "n": 30,
+       "rate": 0.833
+      }
+     },
+     "a=0.9": {
+      ".3-.4": {
+       "k": 23,
+       "n": 54,
+       "rate": 0.426
+      },
+      ".4-.5": {
+       "k": 31,
+       "n": 46,
+       "rate": 0.674
+      },
+      ".5-.6": {
+       "k": 44,
+       "n": 52,
+       "rate": 0.846
+      },
+      ".6+": {
+       "k": 77,
+       "n": 79,
+       "rate": 0.975
+      }
+     },
+     "pooled": {
+      ".3-.4": {
+       "k": 48,
+       "n": 152,
+       "rate": 0.316
+      },
+      ".4-.5": {
+       "k": 54,
+       "n": 121,
+       "rate": 0.446
+      },
+      ".5-.6": {
+       "k": 71,
+       "n": 104,
+       "rate": 0.683
+      },
+      ".6+": {
+       "k": 106,
+       "n": 118,
+       "rate": 0.898
+      }
+     }
+    }
+   }
+  },
+  "observed_r.by_a": {
+   "rounding": "3 dp",
+   "src": "results/e3_observed_r_a5.json:cells[].{r.median,r.q25,r.q75,rate}",
+   "value": {
+    "aal|C-gene|a=0.3": {
+     "median": 0.163,
+     "q25": -0.064,
+     "q75": 0.338,
+     "verdict_rate": 0.073
+    },
+    "aal|C-gene|a=0.6": {
+     "median": 0.312,
+     "q25": 0.15,
+     "q75": 0.456,
+     "verdict_rate": 0.415
+    },
+    "aal|C-gene|a=0.9": {
+     "median": 0.375,
+     "q25": 0.24,
+     "q75": 0.501,
+     "verdict_rate": 0.666
+    },
+    "aal|C-sp|a=0.3": {
+     "median": 0.302,
+     "q25": 0.107,
+     "q75": 0.456,
+     "verdict_rate": 0.047
+    },
+    "aal|C-sp|a=0.6": {
+     "median": 0.598,
+     "q25": 0.481,
+     "q75": 0.689,
+     "verdict_rate": 0.323
+    },
+    "aal|C-sp|a=0.9": {
+     "median": 0.897,
+     "q25": 0.88,
+     "q75": 0.914,
+     "verdict_rate": 0.97
+    },
+    "dk|C-gene|a=0.3": {
+     "median": 0.191,
+     "q25": -0.009,
+     "q75": 0.363,
+     "verdict_rate": 0.064
+    },
+    "dk|C-gene|a=0.6": {
+     "median": 0.329,
+     "q25": 0.127,
+     "q75": 0.472,
+     "verdict_rate": 0.284
+    },
+    "dk|C-gene|a=0.9": {
+     "median": 0.448,
+     "q25": 0.313,
+     "q75": 0.613,
+     "verdict_rate": 0.585
+    },
+    "dk|C-sp|a=0.3": {
+     "median": 0.305,
+     "q25": 0.119,
+     "q75": 0.454,
+     "verdict_rate": 0.047
+    },
+    "dk|C-sp|a=0.6": {
+     "median": 0.585,
+     "q25": 0.479,
+     "q75": 0.666,
+     "verdict_rate": 0.433
+    },
+    "dk|C-sp|a=0.9": {
+     "median": 0.898,
+     "q25": 0.88,
+     "q75": 0.915,
+     "verdict_rate": 0.97
+    }
+   }
+  },
+  "observed_r.catch_by_bin": {
+   "rounding": "rate 3 dp; bins of signed observed r, pooled over a",
+   "src": "results/e3_observed_r_a5.json:{catch_by_observed_r,c_align_catch_by_observed_r}[class|family][].{k,n,rate}",
+   "value": {
+    "aal|C-align": {
+     ".2-.3": {
+      "k": 51,
+      "n": 682,
+      "rate": 0.075
+     },
+     ".3-.4": {
+      "k": 171,
+      "n": 583,
+      "rate": 0.293
+     },
+     ".4-.5": {
+      "k": 127,
+      "n": 358,
+      "rate": 0.355
+     },
+     ".5-.6": {
+      "k": 108,
+      "n": 214,
+      "rate": 0.505
+     },
+     ".6-.7": {
+      "k": 71,
+      "n": 101,
+      "rate": 0.703
+     },
+     "< .2": {
+      "k": 0,
+      "n": 2519,
+      "rate": 0.0
+     },
+     ">= .7": {
+      "k": 33,
+      "n": 43,
+      "rate": 0.767
+     }
+    },
+    "aal|C-gene": {
+     ".2-.3": {
+      "k": 23,
+      "n": 146,
+      "rate": 0.158
+     },
+     ".3-.4": {
+      "k": 97,
+      "n": 147,
+      "rate": 0.66
+     },
+     ".4-.5": {
+      "k": 88,
+      "n": 122,
+      "rate": 0.721
+     },
+     ".5-.6": {
+      "k": 80,
+      "n": 97,
+      "rate": 0.825
+     },
+     ".6-.7": {
+      "k": 42,
+      "n": 48,
+      "rate": 0.875
+     },
+     "< .2": {
+      "k": 0,
+      "n": 316,
+      "rate": 0.0
+     },
+     ">= .7": {
+      "k": 13,
+      "n": 19,
+      "rate": 0.684
+     }
+    },
+    "aal|C-sp": {
+     ".2-.3": {
+      "k": 1,
+      "n": 51,
+      "rate": 0.02
+     },
+     ".3-.4": {
+      "k": 7,
+      "n": 73,
+      "rate": 0.096
+     },
+     ".4-.5": {
+      "k": 9,
+      "n": 71,
+      "rate": 0.127
+     },
+     ".5-.6": {
+      "k": 23,
+      "n": 101,
+      "rate": 0.228
+     },
+     ".6-.7": {
+      "k": 35,
+      "n": 98,
+      "rate": 0.357
+     },
+     "< .2": {
+      "k": 0,
+      "n": 122,
+      "rate": 0.0
+     },
+     ">= .7": {
+      "k": 327,
+      "n": 384,
+      "rate": 0.852
+     }
+    },
+    "dk|C-align": {
+     ".2-.3": {
+      "k": 0,
+      "n": 638,
+      "rate": 0.0
+     },
+     ".3-.4": {
+      "k": 104,
+      "n": 615,
+      "rate": 0.169
+     },
+     ".4-.5": {
+      "k": 144,
+      "n": 497,
+      "rate": 0.29
+     },
+     ".5-.6": {
+      "k": 176,
+      "n": 354,
+      "rate": 0.497
+     },
+     ".6-.7": {
+      "k": 133,
+      "n": 189,
+      "rate": 0.704
+     },
+     "< .2": {
+      "k": 0,
+      "n": 2108,
+      "rate": 0.0
+     },
+     ">= .7": {
+      "k": 88,
+      "n": 99,
+      "rate": 0.889
+     }
+    },
+    "dk|C-gene": {
+     ".2-.3": {
+      "k": 0,
+      "n": 125,
+      "rate": 0.0
+     },
+     ".3-.4": {
+      "k": 48,
+      "n": 152,
+      "rate": 0.316
+     },
+     ".4-.5": {
+      "k": 54,
+      "n": 121,
+      "rate": 0.446
+     },
+     ".5-.6": {
+      "k": 71,
+      "n": 104,
+      "rate": 0.683
+     },
+     ".6-.7": {
+      "k": 53,
+      "n": 59,
+      "rate": 0.898
+     },
+     "< .2": {
+      "k": 0,
+      "n": 277,
+      "rate": 0.0
+     },
+     ">= .7": {
+      "k": 53,
+      "n": 59,
+      "rate": 0.898
+     }
+    },
+    "dk|C-sp": {
+     ".2-.3": {
+      "k": 0,
+      "n": 56,
+      "rate": 0.0
+     },
+     ".3-.4": {
+      "k": 6,
+      "n": 72,
+      "rate": 0.083
+     },
+     ".4-.5": {
+      "k": 17,
+      "n": 101,
+      "rate": 0.168
+     },
+     ".5-.6": {
+      "k": 34,
+      "n": 100,
+      "rate": 0.34
+     },
+     ".6-.7": {
+      "k": 59,
+      "n": 110,
+      "rate": 0.536
+     },
+     "< .2": {
+      "k": 0,
+      "n": 112,
+      "rate": 0.0
+     },
+     ">= .7": {
+      "k": 319,
+      "n": 349,
+      "rate": 0.914
+     }
+    }
+   }
+  },
+  "observed_r.definition": {
+   "src": "src/e3_observed_r_a5.py docstring",
+   "value": "POST HOC descriptor: r = Pearson correlation of the planted map with the set's raw mean-expression score (the statistic a study reports), from the stored plant records; verdict catch per cell asserted equal to the registered descriptors. A bin pools plants of different planted strength; every plant in it carries a true signal."
+  },
+  "observed_r.median.C-gene.a=0.3": {
+   "rounding": "3 dp",
+   "src": "results/e3_observed_r_a5.json:cells[family=C-gene, a=0.3].r.median (aal, dk)",
+   "value": {
+    "aal": 0.163,
+    "dk": 0.191
+   }
+  },
+  "observed_r.median.C-gene.a=0.6": {
+   "rounding": "3 dp",
+   "src": "results/e3_observed_r_a5.json:cells[family=C-gene, a=0.6].r.median (aal, dk)",
+   "value": {
+    "aal": 0.312,
+    "dk": 0.329
+   }
+  },
+  "observed_r.median.C-gene.a=0.9": {
+   "rounding": "3 dp",
+   "src": "results/e3_observed_r_a5.json:cells[family=C-gene, a=0.9].r.median (aal, dk)",
+   "value": {
+    "aal": 0.375,
+    "dk": 0.448
+   }
+  },
+  "observed_r.median.C-sp.a=0.3": {
+   "rounding": "3 dp",
+   "src": "results/e3_observed_r_a5.json:cells[family=C-sp, a=0.3].r.median (aal, dk)",
+   "value": {
+    "aal": 0.302,
+    "dk": 0.305
+   }
+  },
+  "observed_r.median.C-sp.a=0.6": {
+   "rounding": "3 dp",
+   "src": "results/e3_observed_r_a5.json:cells[family=C-sp, a=0.6].r.median (aal, dk)",
+   "value": {
+    "aal": 0.598,
+    "dk": 0.585
+   }
+  },
+  "observed_r.median.C-sp.a=0.9": {
+   "rounding": "3 dp",
+   "src": "results/e3_observed_r_a5.json:cells[family=C-sp, a=0.9].r.median (aal, dk)",
+   "value": {
+    "aal": 0.897,
+    "dk": 0.898
+   }
+  },
+  "observed_r.median_range.C-align.a=0.3": {
+   "rounding": "3 dp, min-max over 6 cells",
+   "src": "results/e3_observed_r_a5.json:c_align_cells[a=0.3].r.median (2 classes x 3 set kinds)",
+   "value": [
+    0.078,
+    0.174
+   ]
+  },
+  "observed_r.median_range.C-align.a=0.5": {
+   "rounding": "3 dp, min-max over 6 cells",
+   "src": "results/e3_observed_r_a5.json:c_align_cells[a=0.5].r.median (2 classes x 3 set kinds)",
+   "value": [
+    0.092,
+    0.303
+   ]
+  },
+  "observed_r.median_range.C-align.a=0.7": {
+   "rounding": "3 dp, min-max over 6 cells",
+   "src": "results/e3_observed_r_a5.json:c_align_cells[a=0.7].r.median (2 classes x 3 set kinds)",
+   "value": [
+    0.12,
+    0.387
+   ]
+  },
+  "observed_r.parametric_floor": {
+   "rounding": "3 dp",
+   "src": "results/e3_observed_r_a5.json:parametric_floor (from the stored one-sided parametric p of every catch plant)",
+   "value": {
+    "aal": {
+     "largest_r_not_rejecting": 0.268,
+     "smallest_r_rejecting": 0.268
+    },
+    "dk": {
+     "largest_r_not_rejecting": 0.304,
+     "smallest_r_rejecting": 0.304
+    }
+   }
   },
   "table4.all_classes_42": {
    "rounding": "counts",

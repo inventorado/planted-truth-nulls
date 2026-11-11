@@ -1,12 +1,13 @@
 {
-  "title": "Calibrating gene-set nulls for imaging transcriptomics with planted truths: where coexpression-matched and spatial nulls fail, a fourth-corner fix, and a preregistered demonstration on autism claims",
+  "title": "Calibrating gene-set nulls for imaging transcriptomics with planted truths",
   "upload_type": "publication",
   "publication_type": "preprint",
   "description": "Archive for the preprint: code, frozen preregistration and amendments, claims register, result files, figure and table scripts and the manuscript. Third-party maps are not redistributed; no individual-level data are included.",
   "creators": [
     {
       "name": "Lovecký, Radoslav",
-      "affiliation": "Arperon"
+      "affiliation": "Arperon",
+      "orcid": "0009-0000-5669-920X"
     }
   ],
   "license": "cc-by-4.0",

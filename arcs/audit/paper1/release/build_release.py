@@ -31,6 +31,7 @@ DEFAULT_COMMIT = "0606369"
 AUTHOR = "Lovecký, Radoslav"
 AUTHOR_GIVEN, AUTHOR_FAMILY = "Radoslav", "Lovecký"
 AFFIL = "Arperon"
+ORCID = "0009-0000-5669-920X"                    # the author's public identifier; also in draft.md front matter
 OPERATOR_EMAIL_SHA256 = "2ab41b173f233bf003b2f385df82403c12b1a1c175533e086ebf06d3bc254450"   # sha256 of the lower-cased address; the address itself is never shipped
 EMAIL_RE = re.compile(rb"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 
@@ -395,6 +396,7 @@ authors:
   - family-names: "{AUTHOR_FAMILY}"
     given-names: "{AUTHOR_GIVEN}"
     affiliation: "{AFFIL}"
+    orcid: "https://orcid.org/{ORCID}"
 doi: "{doi}"
 repository-code: "{repo}"
 license: MIT
@@ -417,7 +419,7 @@ def zenodo_json(title, repo, release_date):
         "description": ("Archive for the preprint: code, frozen preregistration and amendments, claims register, "
                         "result files, figure and table scripts and the manuscript. Third-party maps are not "
                         "redistributed; no individual-level data are included."),
-        "creators": [{"name": AUTHOR, "affiliation": AFFIL}],
+        "creators": [{"name": AUTHOR, "affiliation": AFFIL, "orcid": ORCID}],
         "license": "cc-by-4.0",
         "access_right": "open",
         "publication_date": release_date,

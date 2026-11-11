@@ -1,10 +1,10 @@
-# Calibrating gene-set nulls for imaging transcriptomics with planted truths: where coexpression-matched and spatial nulls fail, a fourth-corner fix, and a preregistered demonstration on autism claims
+# Calibrating gene-set nulls for imaging transcriptomics with planted truths
 
-Archive of the code, frozen protocol, result files and manuscript for paper P1: Calibrating gene-set nulls for imaging transcriptomics with planted truths: where coexpression-matched and spatial nulls fail, a fourth-corner fix, and a preregistered demonstration on autism claims.
-Author: Radoslav Lovecký (Arperon). Archived at https://doi.org/10.5281/zenodo.24130310; repository https://github.com/inventorado/planted-truth-nulls.
+Archive of the code, frozen protocol, result files and manuscript for paper P1: Calibrating gene-set nulls for imaging transcriptomics with planted truths.
+Author: Radoslav Lovecký (Arperon). Archived at https://doi.org/10.5281/zenodo.24138836; repository https://github.com/inventorado/planted-truth-nulls.
 
 This is a curated release of one study (the "A1 audit" arc) of a larger private research repository. It was built
-from git commit `0606369` (code and results) and `14a1d12` (manuscript) by
+from git commit `65f4454` (code and results) and `7142781` (manuscript) by
 `arcs/audit/paper1/release/build_release.py`, with the policy in `arcs/audit/paper1/release/RELEASE_POLICY.md`.
 Repository-relative paths are kept, so the paths written in the manuscript and in the result files resolve here.
 
@@ -39,7 +39,7 @@ third-party maps, which are not redistributed; the per-row outputs it produced a
 
 ## Line endings
 Do not let git or an editor normalise line endings: hashes recorded in the archive name the exact bytes. The repository
-stores text with LF, but 13 result files were hashed (by `make_figures.py`, `derived_numbers.json`) in their CRLF form
+stores text with LF, but 14 result files were hashed (by `make_figures.py`, `derived_numbers.json`) in their CRLF form
 and are shipped in that form (`RELEASE.json`, `eol_restored_to_crlf`). `.gitattributes` sets `* -text`; use
 `git config core.autocrlf false`. `MANIFEST.sha256` (`sha256sum -c MANIFEST.sha256`) checks every file.
 

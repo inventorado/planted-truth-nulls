@@ -1,8 +1,9 @@
 ---
-title: "Calibrating gene-set nulls for imaging transcriptomics with planted truths: where coexpression-matched and spatial nulls fail, a fourth-corner fix, and a preregistered demonstration on autism claims"
+title: "Calibrating gene-set nulls for imaging transcriptomics with planted truths"
 short-title: "Calibrating imaging-transcriptomic nulls with planted truths"
 author: "Radoslav Lovecký"
 affiliation: "Arperon"
+orcid: "0009-0000-5669-920X"
 hero: figures/fig0_hero.pdf
 hero-caption: "Summary. (a) Worst false-alarm rate over planted-negative strata for each null; dashes mark the nominal level (.05; .025 for the max test). (b) Catch rate for the strongest planted gene-set signal, map-side leg alone versus the full max test. (c) Interim audit (first two release batches): the 16 population units by category. The third batch's 196 units have not run and are counted neither way; 9 rows (Dear et al., 3; Vairam, Roy et al., 6) are deferred."
 bibliography: ../../../literature/citations.bib
@@ -15,7 +16,7 @@ bibliography: ../../../literature/citations.bib
 
 **Methods.** On Allen Human Brain Atlas expression, we planted maps and gene sets of known truth and measured false-alarm and catch rates under a frozen, amended preregistration.
 
-**Results.** Joint spatial surrogates were anticonservative where tissue classes differed in mean (false-alarm rate .078–.120); class-stratified surrogates were nominal. Coexpression-matched gene nulls were anticonservative for coherent sets (.196–.210; within a brain background, .399–.442), also in Cao et al.'s own regime, above the fitted coherence crossing for published-like sets. Ecology's fourth-corner max test, with constrained map-side and gene-side legs (α = .025), stayed ≤ .019 in all 390 verdict strata (gene-side leg alone ≤ .022 in 372 more), calibrated on every informative planted stratum within stated scope limits, but caught .585–.666 of strong gene-specific plants. On a preregistered register of published autism claims, the interim result (two of three release batches) is 0 of 16 population units surviving; the third batch's 196 units have not run and are counted neither way, and 9 rows (Dear et al., 3; Vairam, Roy et al., 6) are deferred. The one tested unit could not have survived (gene-side null uninformative; power unmeasured in its class).
+**Results.** Joint spatial surrogates were anticonservative where tissue classes differed in mean (false-alarm rate .078–.120); class-stratified surrogates were nominal. Coexpression-matched gene nulls were anticonservative for coherent sets (.196–.210; within a brain background, .399–.442), also in Cao et al.'s own regime, above the fitted coherence crossing for published-like sets. Ecology's fourth-corner max test, with constrained map-side and gene-side legs (α = .025), stayed ≤ .019 in all 390 verdict strata (gene-side leg alone ≤ .022 in 372 more), calibrated on every informative planted stratum within stated scope limits. It caught .585–.666 of the strongest gene-specific plants, whose median observed map–set correlation was only .375–.448. At one observed correlation, catch rose with planted strength: for gene-specific plants at r = .4–.5, from .192–.222 for the weakest to .674–.945 for the strongest (post hoc descriptor). On a preregistered register of published autism claims, the interim result (two of three release batches) is 0 of 16 population units surviving; the third batch's 196 units have not run and are counted neither way, and 9 rows (Dear et al., 3; Vairam, Roy et al., 6) are deferred. The one tested unit could not have survived (gene-side null uninformative; power unmeasured in its class).
 
 **Conclusions.** Gene-set nulls need planted-truth calibration in the coherence regime of the sets they test; a max test holds its level there, at measured cost in power.
 
@@ -74,6 +75,8 @@ Catch families (ground truth: an association exists):
 - **Expression-aligned signal.** Map = a·z(set-specific within-class score) + .6·z(module target) + c·z(field), a ∈ {.3, .5, .7}.
 
 Each null family had n = 1,000 plants per parcellation class at m = 25 (plus m = 10 and m = 100 in AAL as descriptors); catch families had n = 300 (spatial and gene-specific) or n = 500 (expression-aligned) per cell. 
+
+For every plant the generator stored the observed correlation r between the planted map and the set's raw mean-expression score, the statistic a set-level study would report. For spatial plants the median r is close to a. For gene-specific plants it is lower, because the planted component is the part of the set's score that is specific to the set. In expression-aligned plants the planted component is the set-specific within-class score, and the map also carries the module target, which enters r without being specific to the set. We use the stored r in a post hoc descriptor (Section 3.6). 
 
 ## 2.4 Nulls evaluated
 
@@ -182,6 +185,31 @@ These qualifications are carried into the audit as scope labels on the claims th
 | gene-specific | .3 / .6 / .9 | .073 / .415 / .666 | .064 / .284 / .585 |
 | expression-aligned | .3 / .5 / .7 | range over both classes and three set kinds: .018–.074 / .060–.196 / .106–.352 | |
 
+The planted strength a is not the correlation a reader would see. For spatial plants the median observed r is close to a, though single plants scatter widely at low a. For gene-specific plants the planted component is the set's score after removing what it shares with its coexpression-matched sets and with the first three expression components, so the correlation of the map with the set's raw score is much lower: at a = .9 its median is .375 (AAL) and .448 (Desikan–Killiany). Table 2b gives the translation and Table 2c the catch rate by observed correlation and planted strength. Both are post hoc descriptors, added in version 1.1 from the stored plant records: no plant was rerun, no p-value was recomputed, and each cell's catch rate was asserted equal to Table 2.
+
+**Table 2b. Median observed map–set correlation r of the catch plants, by planted strength (post hoc descriptor).**
+
+| planted signal | a | AAL | Desikan–Killiany |
+|---|---|---|---|
+| spatial | .3 / .6 / .9 | .302 / .598 / .897 | .305 / .585 / .898 |
+| gene-specific | .3 / .6 / .9 | .163 / .312 / .375 | .191 / .329 / .448 |
+| expression-aligned | .3 / .5 / .7 | range over both classes and three set kinds: .078–.174 / .092–.303 / .120–.387 | |
+
+**Table 2c. Verdict catch rate at α = .025 for gene-specific plants, by observed r and planted strength (post hoc descriptor).** Cells are k / n (rate). r is signed in the claimed direction; plants with r below .3 are not shown (see text). DK = Desikan–Killiany.
+
+| class | a | r .3–.4 | r .4–.5 | r .5–.6 | r .6 or above |
+|---|---|---|---|---|---|
+| AAL | .3 | 7 / 33 (.212) | 5 / 26 (.192) | 4 / 15 (.267) | 3 / 13 (.231) |
+| AAL | .6 | 34 / 52 (.654) | 31 / 41 (.756) | 34 / 40 (.850) | 20 / 22 (.909) |
+| AAL | .9 | 56 / 62 (.903) | 52 / 55 (.945) | 42 / 42 (1.000) | 32 / 32 (1.000) |
+| AAL | pooled | 97 / 147 (.660) | 88 / 122 (.721) | 80 / 97 (.825) | 55 / 67 (.821) |
+| DK | .3 | 5 / 40 (.125) | 8 / 36 (.222) | 2 / 14 (.143) | 4 / 9 (.444) |
+| DK | .6 | 20 / 58 (.345) | 15 / 39 (.385) | 25 / 38 (.658) | 25 / 30 (.833) |
+| DK | .9 | 23 / 54 (.426) | 31 / 46 (.674) | 44 / 52 (.846) | 77 / 79 (.975) |
+| DK | pooled | 48 / 152 (.316) | 54 / 121 (.446) | 71 / 104 (.683) | 106 / 118 (.898) |
+
+Two things follow. First, a strong set-specific plant does not look strong: at a = .9 the median observed correlation is about .4. Second, the observed correlation alone does not decide whether a plant is caught: at one observed r, the planted strength does, and within one planted strength catch still rises with r. Among gene-specific plants with r between .4 and .5, the rule caught .192 (AAL) and .222 (Desikan–Killiany) at a = .3, against .945 and .674 at a = .9. A weak plant whose correlation was raised by the noise field's chance correlation with the set's score was mostly missed. The pooled rows therefore reflect the equal numbers of plants at each a in this design; they are not the power of the test for a published claim with that correlation. The parametric leg also sets a floor: at α = .025, one-sided, it did not reject below r = .268 (AAL) or .304 (Desikan–Killiany), so no plant below that was caught, whatever its other legs did. In AAL the floor lies below .3, and 23 of the 146 gene-specific plants with r between .2 and .3 were caught (15 of 47 at a = .9); Table 2c omits that bin. The same breakdown for spatial and expression-aligned plants is in the deposited result file `e3_observed_r_a5.md`; catch rises with planted strength there too, in all but one bin. The sets are 25 random genes (spatial, gene-specific) or the three expression-aligned set kinds, in AAL and Desikan–Killiany only.
+
 Where the power goes (Figure 4, right):
 
 - **Gene-specific signal, AAL.** The parametric leg binds: .709, against .959 for the map-side leg and .922 for the gene-side leg; verdict .666.
@@ -230,7 +258,59 @@ The remaining full-verdict claim (Patel et al., claim 3) received the full verdi
 
 No unit was component-level in form and auditable; no survival exists to carry a "calibrated evidence" or "calibration extrapolated" reading. 
 
-## 4.3 Descriptors beside the headline
+Registered descriptors beside the headline — claim-level counts, the claims with a verdict by paper (Table 4) and the interim q-values — are in Appendix A.
+
+# 5 Discussion
+
+## 5.1 What the planted truths show
+
+The two defences in current use each fail in a regime that published claims occupy. Joint spatial surrogates are anticonservative when tissue classes differ in mean, a common feature of volumetric maps that span cortex and subcortex. Coexpression-matched gene nulls are anticonservative for coherent gene sets, and the failure scales with coherence. The second result holds in Cao et al.'s own calibration regime — their matrix, near-noise maps and statistics — so it is not an artefact of our processing or of smooth maps. Their recommendation is sound for the random sets on which it was calibrated [@cao2024unraveling].
+
+We do not claim that random-gene nulls are inflated by coexpression [@fulcher2021overcoming], or that spatial nulls are inflated on smooth fields [@markello2021comparing]; both are established. Requiring both nulls is not new either [@wei2022statisticaltesting; @hillman2026netdom; @lariviere2022epilepsy; @schenetti2026enrichment], nor are intersection–union tests in neuroimaging [@nichols2005conjunction; @winkler2016npc]. Randomising phenotypes within anatomical divisions was suggested by Fulcher et al. [@fulcher2021overcoming]. What is new here is quantitative: the class-step failure of joint surrogates and the calibration of class-stratified ones; the coherence regime in which the coexpression-matched null fails; and planted-positive catch rates for imaging-transcriptomic gene-set nulls, which we have not found in prior work.
+
+## 5.2 A fourth-corner fix, and its price
+
+We recast the field's two-null practice as the fourth-corner problem and adopted its max-test solution with constraints on both legs. The gene-side leg adds a gene-side Moran spectral randomisation — to our knowledge its first use in gene-set testing — and the rule is, to our knowledge, the first such rule calibrated on planted null families built so that one leg alone is fooled and the other must hold. The α/2 level is borrowed from ter Braak et al. [@terbraak2017glm], whose correction was designed for far fewer units per side than our 15,633 genes; here it rests on the planted calibration alone.
+
+The rule is calibrated on every informative planted stratum, within stated scope limits (Section 3.5). Calibration costs power. At α = .025, the strongest gene-specific signals (a = .9; median observed correlation .448 and .375) are caught at .585 (Desikan–Killiany) and .666 (AAL); expression-aligned signals at a = .7 (median observed correlation .120–.387) at .106–.352 (AAL and Desikan–Killiany). The preregistered verdict with its additional Level-3 null J1 would have caught .623 (AAL) and .600 (Desikan–Killiany) of the same strong signals at α = .05, no more than the max test; J1 was not adopted under its frozen gate (Section 3.3) and was never tested on the expression-aligned null families.  A survival under this rule is therefore informative; a non-survival is weak evidence of anything, which is why the audit reads non-survival as "not detectable at this power". Table 2c illustrates the point: at one observed correlation, the catch rate of gene-specific plants ran from about one in five at the weakest planted strength to two thirds (Desikan–Killiany) or nearly all (AAL) at the strongest. 
+
+## 5.3 Limitations
+
+**Post-hoc amendments.** Five of the seven amendments were written after results were seen: three changed the design (2, 3, 5), two the reporting (6, 7). The design changes were the demotion of the single-gene control (2), the adoption of the max test with α/2 (3), and the move of catch and power from gates to descriptors (5). Each is declared as post hoc in its own text, with the frozen failure it answered reported beside it (Table 1; Section 3.7). The test was not changed a third time after its behaviour was seen. Amendment 6 fixed the headline rule for the full audit after the interim audit result; amendment 7 split reporting between this paper and the full audit after that result and before the third batch. 
+
+**The stop rule fired three times.** We report each firing and its resolution as they happened, not as a clean pipeline. A reader who discounts post-hoc resolutions should read Section 3 as a measurement of failure modes, which needs no resolution.
+
+**The single-gene control is unresolved.** The APOE × Alzheimer control reproduced the published slope within the preregistered band but not exactly (0.679 against 0.631). Our map was resampled from a public meta-analysis map rather than the authors' coregistered input. The cause of the unexpected gene-null rejection is not established. 
+
+**Scope.** Expression comes from six adult post-mortem donors. Calibration is measured in three volumetric classes and one cortical replica; outside them, and outside 25 ≤ m ≤ 1,000, a survival would read "calibration extrapolated". Coordinate-gradient plants did not stress the gene-side leg in two classes, and the brain-enrichment confound is untested in CC200.
+
+**The audit is partial.** Only 1 of 16 population units could be tested with the full verdict, the third batch (196 units) has not run, and 9 rows (Dear et al., 3; Vairam, Roy et al., 6) are deferred. The third release batch is reported in a follow-up and cannot change any number in this paper. 
+
+**Exposure.** The register lists everything seen before the protocol was frozen. This includes published values of the audited papers, a literature note that recomputed correlations on the ENIGMA-ASD map shared by several targets, our reproduction of Giacomel et al.'s statistics, an exploratory analysis of ABIDE I, and incidents in which material was fetched or inspected and then deleted unused. 
+
+**Preregistration timestamps.** Freeze hashes are listed in the deposited `FROZEN.txt`, and freeze times were recorded in the project's private version history. The protocol was not registered with a third party before analysis, so the deposit's own date is its first public timestamp. The preregistration and all amendments are deposited at https://doi.org/10.5281/zenodo.24138836.
+
+## 5.4 Recommendations
+
+1. Report which null each leg uses, and its calibration in the coherence and tissue-class regime of the claim at hand.
+2. For volumetric maps spanning tissue classes, generate spatial surrogates within class.
+3. Do not rely on coexpression-matched sampling for coherent sets; report the set's mean coexpression beside its gene-null p.
+4. Where both nulls are required, combine them as a max test and calibrate the combination with planted pairs, including signals aligned with dominant expression gradients.
+5. Report power on planted positives beside every non-survival, and say what observed correlation each planted strength corresponds to.
+
+# 6 Data and code availability
+
+Code, frozen protocol and amendments, the claims register, result files and figure scripts are available at https://github.com/inventorado/planted-truth-nulls, archived at https://doi.org/10.5281/zenodo.24138836. The Allen Human Brain Atlas is public. No individual-level data were used, and no controlled-access data were requested or accessed. The instrument analyses use public expression data and simulated maps. Audit inputs are group-level maps and gene lists as published by their authors and openly downloadable (journal supplements, NeuroVault, GitHub/Zenodo), named in the register; some summarise cohorts whose individual-level data are access-controlled (EU-AIMS LEAP) or registration-only (ABIDE, via ENIGMA-ASD). One public supplement (Pretzsch et al., Supplement 2) also contains per-participant LEAP tables. Only its group-level loadings were extracted, the per-participant sheets were inspected by header only and never used, and the file was then deleted.
+
+**Funding.** The author received no specific funding for this study.
+
+**Conflict of interest disclosure.** The author declares compliance with the PCI rule of having no financial conflicts of interest in relation to the content of the article.
+
+**Use of AI tools.** The analysis code, documentation and manuscript text were developed with the assistance of a large language model (Claude, Anthropic), working under the author's direction. Every number reported comes from code that was run and can be traced to a result file in the deposit; no statistic was supplied by the model. All figures are drawn by the deposited script `make_figures.py` from the result files; no image-generation model was used. The author reviewed the text and takes responsibility for it.
+
+**Version history.** Version 1.0 was deposited on 2026-11-11 (Zenodo, https://doi.org/10.5281/zenodo.24130310). Version 1.1 changes: a shorter title; two observed-correlation descriptors (Tables 2b and 2c, with the sentences in the Abstract and in Sections 2.3, 3.6, 5.2 and 5.4 that cite them), which are post hoc; the audit descriptors of the former Section 4.3 moved to Appendix A, unchanged; one sentence on figures in the AI-use statement; statements on funding and on conflicts of interest; the author's ORCID iD on the title page. No number reported in version 1.0 has changed.
+
+# Appendix A Audit descriptors beside the headline
 
 Across the frozen 11 and the nine added targets, the register holds 333 claims; 31 have received a verdict, none survives, and 226 have not yet run. 
 
@@ -249,50 +329,6 @@ The 31 claims that have received a verdict come from three papers and cluster in
 Benjamini–Hochberg q-values were computed over an interim family of 30 rows as descriptors; final q-values wait for the third batch. 
 
 Every non-surviving claim without a status flag reads "not detectable at this power". None is evidence against the published claim, and for 30 of the 31 claims power was not measured in the claim's class.
-
-# 5 Discussion
-
-## 5.1 What the planted truths show
-
-The two defences in current use each fail in a regime that published claims occupy. Joint spatial surrogates are anticonservative when tissue classes differ in mean, a common feature of volumetric maps that span cortex and subcortex. Coexpression-matched gene nulls are anticonservative for coherent gene sets, and the failure scales with coherence. The second result holds in Cao et al.'s own calibration regime — their matrix, near-noise maps and statistics — so it is not an artefact of our processing or of smooth maps. Their recommendation is sound for the random sets on which it was calibrated [@cao2024unraveling].
-
-We do not claim that random-gene nulls are inflated by coexpression [@fulcher2021overcoming], or that spatial nulls are inflated on smooth fields [@markello2021comparing]; both are established. Requiring both nulls is not new either [@wei2022statisticaltesting; @hillman2026netdom; @lariviere2022epilepsy; @schenetti2026enrichment], nor are intersection–union tests in neuroimaging [@nichols2005conjunction; @winkler2016npc]. Randomising phenotypes within anatomical divisions was suggested by Fulcher et al. [@fulcher2021overcoming]. What is new here is quantitative: the class-step failure of joint surrogates and the calibration of class-stratified ones; the coherence regime in which the coexpression-matched null fails; and planted-positive catch rates for imaging-transcriptomic gene-set nulls, which we have not found in prior work.
-
-## 5.2 A fourth-corner fix, and its price
-
-We recast the field's two-null practice as the fourth-corner problem and adopted its max-test solution with constraints on both legs. The gene-side leg adds a gene-side Moran spectral randomisation — to our knowledge its first use in gene-set testing — and the rule is, to our knowledge, the first such rule calibrated on planted null families built so that one leg alone is fooled and the other must hold. The α/2 level is borrowed from ter Braak et al. [@terbraak2017glm], whose correction was designed for far fewer units per side than our 15,633 genes; here it rests on the planted calibration alone.
-
-The rule is calibrated on every informative planted stratum, within stated scope limits (Section 3.5). Calibration costs power. At α = .025, strong gene-specific signals (a = .9) are caught at .585 (Desikan–Killiany) and .666 (AAL); expression-aligned signals at a = .7 at .106–.352 (AAL and Desikan–Killiany). The preregistered verdict with its additional Level-3 null J1 would have caught .623 (AAL) and .600 (Desikan–Killiany) of the same strong signals at α = .05, no more than the max test; J1 was not adopted under its frozen gate (Section 3.3) and was never tested on the expression-aligned null families.  A survival under this rule is therefore informative; a non-survival is weak evidence of anything, which is why the audit reads non-survival as "not detectable at this power".
-
-## 5.3 Limitations
-
-**Post-hoc amendments.** Five of the seven amendments were written after results were seen: three changed the design (2, 3, 5), two the reporting (6, 7). The design changes were the demotion of the single-gene control (2), the adoption of the max test with α/2 (3), and the move of catch and power from gates to descriptors (5). Each is declared as post hoc in its own text, with the frozen failure it answered reported beside it (Table 1; Section 3.7). The test was not changed a third time after its behaviour was seen. Amendment 6 fixed the headline rule for the full audit after the interim audit result; amendment 7 split reporting between this paper and the full audit after that result and before the third batch. 
-
-**The stop rule fired three times.** We report each firing and its resolution as they happened, not as a clean pipeline. A reader who discounts post-hoc resolutions should read Section 3 as a measurement of failure modes, which needs no resolution.
-
-**The single-gene control is unresolved.** The APOE × Alzheimer control reproduced the published slope within the preregistered band but not exactly (0.679 against 0.631). Our map was resampled from a public meta-analysis map rather than the authors' coregistered input. The cause of the unexpected gene-null rejection is not established. 
-
-**Scope.** Expression comes from six adult post-mortem donors. Calibration is measured in three volumetric classes and one cortical replica; outside them, and outside 25 ≤ m ≤ 1,000, a survival would read "calibration extrapolated". Coordinate-gradient plants did not stress the gene-side leg in two classes, and the brain-enrichment confound is untested in CC200.
-
-**The audit is partial.** Only 1 of 16 population units could be tested with the full verdict, the third batch (196 units) has not run, and 9 rows (Dear et al., 3; Vairam, Roy et al., 6) are deferred. The third release batch is reported in a follow-up and cannot change any number in this paper. 
-
-**Exposure.** The register lists everything seen before the protocol was frozen. This includes published values of the audited papers, a literature note that recomputed correlations on the ENIGMA-ASD map shared by several targets, our reproduction of Giacomel et al.'s statistics, an exploratory analysis of ABIDE I, and incidents in which material was fetched or inspected and then deleted unused. 
-
-**Preregistration timestamps.** Freeze hashes are listed in the deposited `FROZEN.txt`, and freeze times were recorded in the project's private version history. The protocol was not registered with a third party before analysis, so the deposit's own date is its first public timestamp. The preregistration and all amendments are deposited at https://doi.org/10.5281/zenodo.24130310.
-
-## 5.4 Recommendations
-
-1. Report which null each leg uses, and its calibration in the coherence and tissue-class regime of the claim at hand.
-2. For volumetric maps spanning tissue classes, generate spatial surrogates within class.
-3. Do not rely on coexpression-matched sampling for coherent sets; report the set's mean coexpression beside its gene-null p.
-4. Where both nulls are required, combine them as a max test and calibrate the combination with planted pairs, including signals aligned with dominant expression gradients.
-5. Report power on planted positives beside every non-survival.
-
-# 6 Data and code availability
-
-Code, frozen protocol and amendments, the claims register, result files and figure scripts are available at https://github.com/inventorado/planted-truth-nulls, archived at https://doi.org/10.5281/zenodo.24130310. The Allen Human Brain Atlas is public. No individual-level data were used, and no controlled-access data were requested or accessed. The instrument analyses use public expression data and simulated maps. Audit inputs are group-level maps and gene lists as published by their authors and openly downloadable (journal supplements, NeuroVault, GitHub/Zenodo), named in the register; some summarise cohorts whose individual-level data are access-controlled (EU-AIMS LEAP) or registration-only (ABIDE, via ENIGMA-ASD). One public supplement (Pretzsch et al., Supplement 2) also contains per-participant LEAP tables. Only its group-level loadings were extracted, the per-participant sheets were inspected by header only and never used, and the file was then deleted.
-
-**Use of AI tools.** The analysis code, documentation and manuscript text were developed with the assistance of a large language model (Claude, Anthropic), working under the author's direction. Every number reported comes from code that was run and can be traced to a result file in the deposit; no statistic was supplied by the model. The author reviewed the text and takes responsibility for it.
 
 # Figures
 

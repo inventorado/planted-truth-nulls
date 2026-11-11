@@ -1,9 +1,9 @@
 {
- "built_utc": "2026-11-11T08:47:22Z",
- "bytes": 138356858,
- "commit": "06063690b8ea630116af61442737565dce7e108f",
- "commit_date": "2026-11-04",
- "doi": "10.5281/zenodo.24130310",
+ "built_utc": "2026-11-11T14:46:32Z",
+ "bytes": 138438889,
+ "commit": "65f44548f9a0cede412398fede79a28f461cd344",
+ "commit_date": "2026-11-11",
+ "doi": "10.5281/zenodo.24138836",
  "eol_lf_hash_also_recorded_elsewhere": [
   "arcs/audit/results/e3_catch_curves_a5.json",
   "arcs/audit/results/e3_gates_a3.json",
@@ -19,12 +19,13 @@
   "arcs/audit/results/e3_gates.json",
   "arcs/audit/results/e3_gates_a3.json",
   "arcs/audit/results/e3_gates_a5.json",
+  "arcs/audit/results/e3_observed_r_a5.json",
   "arcs/audit/results/e3_p1_myelin.json",
   "arcs/audit/results/e3_p1_strat.json",
   "arcs/audit/results/e3_realplants.json",
   "arcs/audit/src/e3_gates_a3.py"
  ],
- "file_count": 2253,
+ "file_count": 2256,
  "files_by_arcs_audit_subdir": {
   "arcs/audit/FROZEN.txt": 1,
   "arcs/audit/RUN_PLAN.md": 1,
@@ -50,14 +51,14 @@
   "arcs/audit/register_freeze_manifest.json": 1,
   "arcs/audit/register_maps": 483,
   "arcs/audit/register_sets": 337,
-  "arcs/audit/results": 1141,
+  "arcs/audit/results": 1143,
   "arcs/audit/run_manifests": 58,
-  "arcs/audit/src": 147,
+  "arcs/audit/src": 148,
   "arcs/audit/src_register": 18
  },
  "files_by_top": {
   "(root)": 6,
-  "arcs": 2233,
+  "arcs": 2236,
   "env": 1,
   "paper": 3,
   "src": 8
@@ -65,14 +66,14 @@
  "final": true,
  "paper": {
   "build_pdf_stdout": [
-   "wrote build/p1_final.md, build/p1_final.tex (403 lines); 25 cited keys in refs.bib",
+   "wrote build/p1_final.md, build/p1_final.tex (448 lines); 25 cited keys in refs.bib",
    "wrote build/p1_final.pdf"
   ],
-  "draft_sha256": "c5b305732afc3bdd12f553501b23ae65ae068c58c8d91d23552d8f4451ebc900",
-  "title": "Calibrating gene-set nulls for imaging transcriptomics with planted truths: where coexpression-matched and spatial nulls fail, a fourth-corner fix, and a preregistered demonstration on autism claims"
+  "draft_sha256": "f50132b9532d88fa84c4671d99eba12a7474281871dbdaa37c0ac92f704af20a",
+  "title": "Calibrating gene-set nulls for imaging transcriptomics with planted truths"
  },
  "paper1_figures_tables_changed_between_commit_and_paper_commit": [],
- "paper_commit": "14a1d122c38f8edd216ebfdb5534fd84b42263d5",
+ "paper_commit": "714278120a628a816064fcd71d9cf6d687acd628",
  "repo_url": "https://github.com/inventorado/planted-truth-nulls",
  "scans": {
   "deny_list_hits": 0,
